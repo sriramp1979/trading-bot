@@ -1,0 +1,12 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(bash -n scripts/alpaca.sh)",
+      "Bash(chmod +x scripts/alpaca.sh)",
+      "Bash(chmod +x .git/hooks/pre-commit)",
+      "Bash(bash scripts/alpaca.sh account)",
+      "Bash(bash scripts/alpaca.sh positions)",
+      "Bash(bash scripts/alpaca.sh clock)"
+    ]
+  }
+}
