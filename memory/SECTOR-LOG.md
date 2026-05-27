@@ -3,7 +3,8 @@
 ## Active Sector Tracking
 | Sector | Tickers Held | Consecutive Losses | Status |
 |--------|-------------|-------------------|--------|
-| (none yet) | | 0 | OK |
+| Technology | NVDA | 0 | OK |
+| Healthcare | LLY | 0 | OK |
 
 ## Sector Exit History
 | Sector | Exit Date | Reason |
