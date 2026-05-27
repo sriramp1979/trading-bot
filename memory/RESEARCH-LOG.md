@@ -59,3 +59,37 @@ TRADE or HOLD (default HOLD if no edge)
 
 ### Decision
 TRADE — CRWD and ALAB are priority setups with clear 52-wk breakout momentum and sector tailwind. Wait for 9:35–9:45 AM open, confirm no gap-fill reversal, then size at ~15% each (~$15,000/position). AZO is conditional on earnings reaction only.
+
+---
+
+## 2026-05-27 — Pre-market Research
+
+### Account
+- Equity: $100,000
+- Cash: $100,000
+- Buying power: $200,000 (2× margin; non-marginable $100,000)
+- Daytrade count: 0
+- Open positions: none | Open orders: none
+- Week trades: 0/3
+
+### Market Context
+- S&P 500 futures: ~7,540+ (est.); S&P 500 and Nasdaq at fresh all-time highs; May 26 +0.9% session; broad risk-on continuation; Dow + S&P EW at all-time highs
+- VIX: 16.59 (May 26 close) — low/benign, risk-on environment
+- Today's catalysts: Iran peace talks progressing ("little bit of movement" Sec. of State); AI/chip rally — MU +19%, topped $1T market cap; Earnings today pre-open: HPQ, ANF, BMO; Earnings after close: CRM, SNOW, SNPS; Top sectors May 2026: Healthcare, Technology, Communication Services
+- Earnings before open: HPQ (HP Inc.), ANF (Abercrombie & Fitch), BMO (Bank of Montreal)
+- Earnings after close: CRM (Salesforce), SNOW (Snowflake), SNPS (Synopsys)
+
+### Trade Ideas
+1. NVDA (Nvidia) — AI/chip sector leader; MU +19% to $1T = rising tide for semis; secular AI infra demand; entry at open ~$140–145 (verify), stop −10% (~$127–131), target +20% (~$168–174), R:R 2:1 | Sector: Technology
+2. LLY (Eli Lilly) — Healthcare top-performing sector May 2026; GLP-1 franchise intact; diversification from Tech; entry near open (verify price), stop −10%, target +20%, R:R 2:1 | Sector: Healthcare
+3. CRM (Salesforce) — Earnings after close today; AI agentic/cloud tailwind; watch post-earnings reaction; conditional entry tomorrow on confirmed beat + guidance raise, entry on gap settle, stop −8%, target +16%, R:R 2:1 | Sector: Technology
+
+### Risk Factors
+- Markets at ATH — don't chase extended gap-ups; wait for 9:35–9:45 AM settle
+- Iran peace deal not finalized — reversal risk if talks collapse
+- CRM + SNOW earnings after close could shift Tech sentiment overnight
+- MU/AI sector already extended; NVDA may gap beyond entry range — hard pass if >2% above prior close
+- Low VIX (16.59) = complacency; any surprise negative catalyst could spike vol fast
+
+### Decision
+TRADE — Initiate NVDA (~15% ≈ $15,000) and LLY (~15% ≈ $15,000) at open if neither is extended >2% above prior close. CRM is conditional on tomorrow's post-earnings gap settle. Total deployed ~30%; leaves room to add CRWD/ALAB if they retrigger.
