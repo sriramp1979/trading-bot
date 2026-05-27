@@ -21,3 +21,11 @@ No positions yet. Bot launches tomorrow.
 | Thesis | MRVL earnings pre-open = AI semis read-through; risk-on, ATH market, NVDA sector leader | Healthcare #1 sector May 2026; GLP-1 franchise intact; diversification from Tech |
 | Buy Order | f968f99b | cde1e4d6 |
 | Stop Order | 8dedec65 | dc881393 |
+
+### May 27 — EOD Snapshot (Day 1, Wednesday)
+**Portfolio:** $100,073.03 | **Cash:** $71,126.87 (71.1%) | **Day P&L:** +$73.03 (+0.07%) | **Phase P&L:** +$73.03 (+0.07%)
+| Ticker | Shares | Entry | Close | Day Chg | Unrealized P&L | Stop |
+|--------|--------|-------|-------|---------|----------------|------|
+| NVDA | 70 | $212.15 | $212.44 | -1.13% | +$20.12 | $191.99 |
+| LLY | 13 | $1,078.65 | $1,082.72 | +1.69% | +$52.91 | $983.70 |
+**Notes:** First live trading day; opened NVDA (AI semi leader) and LLY (GLP-1 healthcare) with 10% trailing GTC stops on both. Both positions slightly green at close — LLY led on sector strength, NVDA held despite modest day decline. Portfolio 71% cash, slightly under 75–85% deployment target; monitor for entry opportunity tomorrow.
