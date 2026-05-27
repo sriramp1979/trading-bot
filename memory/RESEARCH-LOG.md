@@ -73,23 +73,24 @@ TRADE — CRWD and ALAB are priority setups with clear 52-wk breakout momentum a
 - Week trades: 0/3
 
 ### Market Context
-- S&P 500 futures: ~7,540+ (est.); S&P 500 and Nasdaq at fresh all-time highs; May 26 +0.9% session; broad risk-on continuation; Dow + S&P EW at all-time highs
-- VIX: 16.59 (May 26 close) — low/benign, risk-on environment
-- Today's catalysts: Iran peace talks progressing ("little bit of movement" Sec. of State); AI/chip rally — MU +19%, topped $1T market cap; Earnings today pre-open: HPQ, ANF, BMO; Earnings after close: CRM, SNOW, SNPS; Top sectors May 2026: Healthcare, Technology, Communication Services
-- Earnings before open: HPQ (HP Inc.), ANF (Abercrombie & Fitch), BMO (Bank of Montreal)
+- S&P 500 futures: ~7,540+ (est.); May 26 closed +0.9% (DJI +431, SPX +45, COMP +119, RUT +28); Dow + S&P EW at all-time highs; broad risk-on continuation
+- VIX: 16.59 (May 26 close) — low/benign; avg May 2026: ~17.26 per FRED
+- Today's catalysts: Iran peace talks progressing ("little bit of movement" — Sec. of State); MRVL (Marvell) reports pre-open — key AI chip read-through; Q1 S&P 500 earnings season tracking strong: 74% top-line beat, 82% EPS beat, +27.49% EPS growth y/y (472 co's in); MU +19% to $1T cap (prior session) = semis bull
+- Earnings before open: MRVL (Marvell Technology), HPQ (HP Inc.), ANF (Abercrombie & Fitch), BMO (Bank of Montreal), DKS (DICK's Sporting Goods), BBWI (Bath & Body Works), A (Agilent)
 - Earnings after close: CRM (Salesforce), SNOW (Snowflake), SNPS (Synopsys)
 
 ### Trade Ideas
-1. NVDA (Nvidia) — AI/chip sector leader; MU +19% to $1T = rising tide for semis; secular AI infra demand; entry at open ~$140–145 (verify), stop −10% (~$127–131), target +20% (~$168–174), R:R 2:1 | Sector: Technology
-2. LLY (Eli Lilly) — Healthcare top-performing sector May 2026; GLP-1 franchise intact; diversification from Tech; entry near open (verify price), stop −10%, target +20%, R:R 2:1 | Sector: Healthcare
-3. CRM (Salesforce) — Earnings after close today; AI agentic/cloud tailwind; watch post-earnings reaction; conditional entry tomorrow on confirmed beat + guidance raise, entry on gap settle, stop −8%, target +16%, R:R 2:1 | Sector: Technology
+1. NVDA (Nvidia) — AI/chip sector leader; MU +19% to $1T + MRVL report today = sector catalyst stack; entry at open (verify, reject if >+2% gap); stop −10%, target +20%, R:R 2:1 | Sector: Technology
+2. LLY (Eli Lilly) — Healthcare top-performing sector May 2026; GLP-1 franchise intact; diversification from concentrated Tech; entry near open (verify price), stop −10%, target +20%, R:R 2:1 | Sector: Healthcare
+3. CRM (Salesforce) — Reports after close today; AI agentic/cloud tailwind; conditional entry TOMORROW on confirmed beat + guidance raise; entry on gap settle, stop −8%, target +16%, R:R 2:1 | Sector: Technology
 
 ### Risk Factors
 - Markets at ATH — don't chase extended gap-ups; wait for 9:35–9:45 AM settle
 - Iran peace deal not finalized — reversal risk if talks collapse
-- CRM + SNOW earnings after close could shift Tech sentiment overnight
-- MU/AI sector already extended; NVDA may gap beyond entry range — hard pass if >2% above prior close
-- Low VIX (16.59) = complacency; any surprise negative catalyst could spike vol fast
+- CRM + SNOW after-close earnings could shift Tech sentiment overnight into May 28
+- NVDA may gap beyond entry range if MRVL beats big — hard pass if >+2% above prior close
+- Low VIX = complacency; any negative surprise (Iran, CPI revision, earnings miss) spikes vol fast
+- CRWD/ALAB still valid secondary setups from May 26 if they pull back to entry ranges
 
 ### Decision
-TRADE — Initiate NVDA (~15% ≈ $15,000) and LLY (~15% ≈ $15,000) at open if neither is extended >2% above prior close. CRM is conditional on tomorrow's post-earnings gap settle. Total deployed ~30%; leaves room to add CRWD/ALAB if they retrigger.
+TRADE — NVDA (~15% ≈ $15,000) and LLY (~15% ≈ $15,000) at open if neither gaps >+2%. CRM conditional on tomorrow post-earnings gap settle. CRWD/ALAB secondary if they pull back to May 26 entry ranges. Total deployed ~30–60% depending on how many trigger.
