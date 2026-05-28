@@ -29,3 +29,12 @@ No positions yet. Bot launches tomorrow.
 | NVDA | 70 | $212.15 | $212.44 | -1.13% | +$20.12 | $191.99 |
 | LLY | 13 | $1,078.65 | $1,082.72 | +1.69% | +$52.91 | $983.70 |
 **Notes:** First live trading day; opened NVDA (AI semi leader) and LLY (GLP-1 healthcare) with 10% trailing GTC stops on both. Both positions slightly green at close — LLY led on sector strength, NVDA held despite modest day decline. Portfolio 71% cash, slightly under 75–85% deployment target; monitor for entry opportunity tomorrow.
+
+## 2026-05-28 — market-open (no trades)
+
+**Portfolio:** $100,483.02 | **Cash:** $71,126.87 (70.8%) | **Day P&L:** +$396.19 (+0.39%) | **Phase P&L:** +$483.02 (+0.48%)
+| Ticker | Shares | Entry | Current | Day Chg | Unrealized P&L | Stop |
+|--------|--------|-------|---------|---------|----------------|------|
+| LLY | 13 | $1,078.65 | $1,107.85 | +2.30% | +$379.60 | 10% trail (HWM $1,108.80 → stop $997.92) |
+| NVDA | 70 | $212.15 | $213.67 | +0.50% | +$105.87 | 10% trail (HWM $213.93 → stop $192.54) |
+**Decision:** HOLD — geopolitical risk elevated (US-Iran), earnings minefield tonight (DELL/COST/MDB/ADSK), PCE macro data due, only 1 trade slot remaining. XOM quotes wide spread ($142/$157); reassess at midday. Preserving final slot for confirmed gap-settle Friday post-DELL/COST.
