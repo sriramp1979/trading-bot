@@ -94,3 +94,41 @@ TRADE — CRWD and ALAB are priority setups with clear 52-wk breakout momentum a
 
 ### Decision
 TRADE — NVDA (~15% ≈ $15,000) and LLY (~15% ≈ $15,000) at open if neither gaps >+2%. CRM conditional on tomorrow post-earnings gap settle. CRWD/ALAB secondary if they pull back. Total deployed ~30% initially, up to ~60% if secondaries trigger.
+
+---
+
+## 2026-05-28 — Pre-market Research
+
+### Account
+- Equity: $99,952.57 (−$134.26 vs. yesterday close)
+- Cash: $71,126.87 | Deployed: $28,825.70 (28.8% — below 75–85% target)
+- Buying power: $171,079.44
+- Daytrade count: 0
+- Open positions: NVDA (70 sh, −$51.98 / −0.35%), LLY (13 sh, +$4.55 / +0.03%)
+- Stops active: NVDA trailing 10% GTC @ $191.99 (HWM $213.32) | LLY trailing 10% GTC @ $983.70 (HWM $1,093)
+- Week trades: 2/3 (1 slot remaining)
+
+### Market Context
+- S&P 500 futures: 7,538.50 (range 7,532–7,551; flat/muted pre-market)
+- VIX: 16.86 (−0.15 / −0.88%) — moderate; calm but elevated vs. prior days
+- Today's catalysts:
+  - **Geopolitical risk**: Renewed US-Iran missile exchanges; ceasefire hopes extinguished → risk-off headwind
+  - **Macro data**: PCE Prices, Personal Income/Spending, GDP Q2 2nd estimate, Durable Goods, Initial Claims all due today
+  - **Earnings after close**: DELL, COST, MDB, ADSK, NTAP, OKTA, BBY, BURL, DLTR — heavy overnight gap risk
+- NVDA pre-market: ~$211.34 (range $208.78–$216.50 today); LLY: ~$1,079
+
+### Trade Ideas
+1. **XOM (ExxonMobil)** — US-Iran escalation = oil spike catalyst; energy sector not yet held (status OK); entry $114–116, stop −10% (~$103), target +20% (~$138), R:R 2:1 | Sector: Energy
+2. **DELL** — AI server earnings tonight; strong data-center demand tailwind; conditional entry TOMORROW on confirmed beat + guidance raise; gap settle entry, stop −8%, target +16%, R:R 2:1 | Sector: Technology
+3. **CRM (Salesforce)** — May 27 conditional idea; if beat confirmed pre-market, gap-settle entry today; stop −8%, target +16%, R:R 2:1 | Sector: Technology (would be 2nd Tech position — check 20% cap per slot)
+
+### Risk Factors
+- US-Iran missiles could escalate further — broad risk-off if situation worsens; avoid adding exposure pre-open
+- 7+ companies reporting tonight — overnight gap risk on any new position entered today
+- Only 1 trade slot remaining this week — must be high-conviction or wait for next week's reset
+- Deployment at 28.8% — well below 75–85% target; urgency to deploy, but not into a risky tape
+- PCE / GDP data today could reprice rate expectations and whip tech sector
+- NVDA slightly below entry (−0.35%) and today's range shows $208 support — watch closely
+
+### Decision
+HOLD — geopolitical risk elevated, earnings minefield tonight, and only 1 trade slot left. Preserve the slot for a confirmed post-DELL or post-COST gap-settle entry Friday. XOM / energy remains the highest-conviction new-sector idea if oil accelerates on Iran news intraday. Will reassess at midday scan.
