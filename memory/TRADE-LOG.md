@@ -38,3 +38,11 @@ No positions yet. Bot launches tomorrow.
 | LLY | 13 | $1,078.65 | $1,107.85 | +2.30% | +$379.60 | 10% trail (HWM $1,108.80 → stop $997.92) |
 | NVDA | 70 | $212.15 | $213.67 | +0.50% | +$105.87 | 10% trail (HWM $213.93 → stop $192.54) |
 **Decision:** HOLD — geopolitical risk elevated (US-Iran), earnings minefield tonight (DELL/COST/MDB/ADSK), PCE macro data due, only 1 trade slot remaining. XOM quotes wide spread ($142/$157); reassess at midday. Preserving final slot for confirmed gap-settle Friday post-DELL/COST.
+
+### May 28 — EOD Snapshot (Day 2, Thursday)
+**Portfolio:** $100,753.98 | **Cash:** $71,126.87 (70.6%) | **Day P&L:** +$667.15 (+0.67%) | **Phase P&L:** +$753.98 (+0.75%)
+| Ticker | Shares | Entry | Close | Day Chg | Unrealized P&L | Stop |
+|--------|--------|-------|-------|---------|----------------|------|
+| LLY | 13 | $1,078.65 | $1,126.00 | +3.98% | +$615.55 | $1,034.19 (HWM $1,149.10) |
+| NVDA | 70 | $212.15 | $214.13 | +0.72% | +$138.43 | $193.97 (HWM $215.52) |
+**Notes:** LLY surged +3.98% on continued healthcare/GLP-1 momentum, now +4.39% unrealized; trailing stop ratcheted to $1,034.19. NVDA held positive (+0.72%) with AI semis firm; stop tightened to $193.97. Preserved final weekly trade slot for post-DELL/COST gap-settle entry on Friday.
