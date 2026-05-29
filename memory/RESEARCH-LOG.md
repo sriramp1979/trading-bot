@@ -132,3 +132,50 @@ TRADE — NVDA (~15% ≈ $15,000) and LLY (~15% ≈ $15,000) at open if neither 
 
 ### Decision
 HOLD — geopolitical risk elevated, earnings minefield tonight, and only 1 trade slot left. Preserve the slot for a confirmed post-DELL or post-COST gap-settle entry Friday. XOM / energy remains the highest-conviction new-sector idea if oil accelerates on Iran news intraday. Will reassess at midday scan.
+
+---
+
+## 2026-05-29 — Pre-market Research
+
+### Account
+- Equity: $100,832.09 (+$59.32 vs. May 28 close $100,772.77)
+- Cash: $71,126.87 | Deployed: $29,705.22 (29.5% of equity — below 75–85% target)
+- Buying power: $171,958.96
+- Daytrade count: 0
+- Open positions: LLY (13 sh, +$653.77 / +4.66%), NVDA (70 sh, +$178.32 / +1.20%)
+- Stops active: LLY 10% trail GTC @ $1,034.19 (HWM $1,149.10) | NVDA 10% trail GTC @ $193.97 (HWM $215.52)
+- Week trades: 2/3 (1 slot remaining — last day of week)
+
+### Positions
+| Ticker | Shares | Entry | Current | Unrealized P&L | Stop | HWM |
+|--------|--------|-------|---------|----------------|------|-----|
+| LLY | 13 | $1,078.65 | $1,128.94 | +$653.77 (+4.66%) | $1,034.19 (10% trail) | $1,149.10 |
+| NVDA | 70 | $212.15 | $214.70 | +$178.32 (+1.20%) | $193.97 (10% trail) | $215.52 |
+
+### Market Context
+- S&P 500 futures: ~7,585 (+0.3% premarket); Dow + S&P EW near all-time highs; rally driven by chip strength + Iran peace hopes
+- VIX: 15.74 (−3.38% from 16.29 prior close) — low; risk-on environment
+- Today's catalysts: Iran ceasefire holding (sporadic fire overnight; US officials confident truce intact); Chicago PMI due; Advanced International Trade in Goods, Retail/Wholesale Inventories; Mfg PMI 55.3 (highest since May '22, prices paid jumped to 79.5); Consumer Sentiment 44.8 (3rd consecutive monthly decline, macro soft-landing risk)
+- Earnings before open: none major (DELL/COST/MDB/ADSK reported after May 28 close; results now available)
+- Earnings after close: none major — clean tape going into weekend
+
+### Position News
+- **LLY**: CVS restoring Zepbound as preferred commercial formulary Oct 1 + adding oral pill Foundayo as co-preferred → massive market access expansion; Phase 1b data for Verve-102 (LDL gene-editing, single infusion) positive; heading for best month in 2026; Buy consensus (19 analysts); GF Value $1,383 vs. current $1,129 = 18.5% discount. Thesis strengthening.
+- **NVDA**: Hit $236 ATH May 15; pulled back ~9.3% to $214; Q1 revenue $81.6B (record), data center +69% YoY; Vera Rubin AI chip generating investor excitement; $0.25 dividend ex-date Jun 4; avg analyst PT $304.59 (+43% upside). Thesis intact — consolidating off ATH.
+
+### Trade Ideas
+1. **DELL** (Technology) — Post-earnings gap-settle if AI server revenue confirmed beat; enter only if stock holds above gap-open level at 10:00 AM; stop −8%, target +16%, R:R 2:1; **CONDITIONAL** on verified beat/guidance raise — adds Tech sector concentration (already have NVDA)
+2. **META** (Communication Services) — Top sector May 2026; AI ad-revenue compounding; no current Communication Services exposure = adds diversification; entry 9:35–9:45 AM open or intraday pullback; stop −10%, target +20%, R:R 2:1 | Sector: Communication Services
+3. **COST** (Consumer Staples) — Post-earnings gap-settle (reported May 28 after close); defensive diversification layer to Tech/Healthcare book; conditional on earnings beat; stop −8%, target +16%, R:R 2:1 | Sector: Consumer Staples
+
+### Risk Factors
+- Only 1 trade slot remaining this week — must deploy into highest-conviction name only
+- Friday + Iran geopolitical weekend risk → headline gap risk over weekend
+- Market at ATH; chasing extended gap-ups carries elevated reversal risk
+- Consumer Sentiment 44.8 (multi-year low) — macro deterioration risk under surface of ATH
+- NVDA 9.3% off $236 ATH — if broader Tech rotation resumes, stop $193.97 may trigger
+- Deployment at 29.5% (well below 75–85% target) — urgency to deploy; but Friday + limited slot argues for patience
+- Mfg PMI prices-paid spike (79.5) = input inflation concern; could reprice rate cuts
+
+### Decision
+HOLD — Preserve the final weekly trade slot. Both LLY and NVDA are green with intact theses and tight trailing stops. Weekend Iran risk + ATH tape + Consumer Sentiment deterioration = unfavorable Friday entry risk-reward. Plan to deploy into META + 1 additional position (Mon/Tue) next week to close the gap from 29.5% to 75–85% deployment target, using fresh 3/3 weekly trade slots.
