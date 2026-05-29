@@ -46,3 +46,11 @@ No positions yet. Bot launches tomorrow.
 | LLY | 13 | $1,078.65 | $1,126.00 | +3.98% | +$615.55 | $1,034.19 (HWM $1,149.10) |
 | NVDA | 70 | $212.15 | $214.13 | +0.72% | +$138.43 | $193.97 (HWM $215.52) |
 **Notes:** LLY surged +3.98% on continued healthcare/GLP-1 momentum, now +4.39% unrealized; trailing stop ratcheted to $1,034.19. NVDA held positive (+0.72%) with AI semis firm; stop tightened to $193.97. Preserved final weekly trade slot for post-DELL/COST gap-settle entry on Friday.
+
+### May 29 — EOD Snapshot (Day 3, Friday)
+**Portfolio:** $100,356.37 | **Cash:** $71,126.87 (70.9%) | **Day P&L:** -$397.61 (-0.39%) | **Phase P&L:** +$356.37 (+0.36%)
+| Ticker | Shares | Entry | Close | Day Chg | Unrealized P&L | Stop |
+|--------|--------|-------|-------|---------|----------------|------|
+| LLY | 13 | $1,078.65 | $1,105.00 | -1.93% | +$342.55 | $1,034.19 (HWM $1,149.10) |
+| NVDA | 70 | $212.15 | $212.35 | -0.89% | +$13.82 | $196.07 (HWM $217.86) |
+**Notes:** Both positions pulled back on Friday — LLY -1.93% retracing Thursday's GLP-1 surge, NVDA -0.89% on mild tech selling; both remain profitable above entry. Trailing stops current: NVDA stop advanced to $196.07 (HWM $217.86), LLY stop holds at $1,034.19 (HWM $1,149.10). Weekend hold; 1 trade slot remains — assess DELL/COST post-earnings gap-settle for Monday entry opportunity.
