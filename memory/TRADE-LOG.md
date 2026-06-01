@@ -70,3 +70,12 @@ No positions yet. Bot launches tomorrow.
 | Thesis | NVDA PC chip for PCs announced today; HPE is direct beneficiary; premarket surge confirmed; fresh sub-sector vs AI datacenter play (NVDA already held); Technology sector OK (0 consecutive losses) |
 | Buy Order | d4d08f5a |
 | Stop Order | 916de16b |
+
+### Jun 01 — EOD Snapshot (Day 4, Monday)
+**Portfolio:** $106,578.67 | **Cash:** $51,359.42 (48.2%) | **Day P&L:** +$6,222.30 (+6.20%) | **Phase P&L:** +$6,578.67 (+6.58%)
+| Ticker | Shares | Entry | Close | Day Chg | Unrealized P&L | Stop |
+|--------|--------|-------|-------|---------|----------------|------|
+| HPE | 440 | $44.93 | $57.79 | +34.27% | +$5,660.15 | $43.17 (HWM $47.97) LAGGING |
+| LLY | 13 | $1,078.65 | $1,081.90 | -2.09% | +$42.25 | $1,034.19 (HWM $1,149.10) |
+| NVDA | 70 | $212.15 | $224.86 | +6.50% | +$889.36 | $202.38 (HWM $224.87) |
+**Notes:** HPE surged +34.27% on NVDA AI chip-for-PCs announcement, adding $5,660 unrealized day-1 gain on new position; HPE trailing stop HWM lagging at $47.97 (stop $43.17) vs close $57.79 — ACTION REQUIRED: cancel and replace HPE stop with new 10% trail GTC (correct stop ~$52.01). Portfolio cash 48.2%, below 75-85% target; NVDA advanced stop to $202.38 (HWM $224.87).
