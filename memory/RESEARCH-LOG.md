@@ -179,3 +179,46 @@ HOLD — geopolitical risk elevated, earnings minefield tonight, and only 1 trad
 
 ### Decision
 HOLD — Preserve the final weekly trade slot. Both LLY and NVDA are green with intact theses and tight trailing stops. Weekend Iran risk + ATH tape + Consumer Sentiment deterioration = unfavorable Friday entry risk-reward. Plan to deploy into META + 1 additional position (Mon/Tue) next week to close the gap from 29.5% to 75–85% deployment target, using fresh 3/3 weekly trade slots.
+
+---
+
+## 2026-06-01 — Pre-market Research
+
+### Account
+- Equity: $100,653.27 | Cash: $71,126.87 | Deployed: $29,526.40 (29.3% — below 75–85% target)
+- Buying power: $171,780.14 | Daytrade count: 0
+- Open positions: LLY (13 sh, +$174.66 / +1.25%), NVDA (70 sh, +$482.82 / +3.25%)
+- Stops active: LLY 10% trail GTC (HWM ~$1,149) | NVDA 10% trail GTC (HWM ~$217.86)
+- Week trades: 0/3 (new week reset)
+
+### Positions
+| Ticker | Shares | Entry | Current | Unrealized P&L | Stop |
+|--------|--------|-------|---------|----------------|------|
+| LLY | 13 | $1,078.65 | $1,092.09 | +$174.66 (+1.25%) | 10% trail GTC |
+| NVDA | 70 | $212.15 | $219.05 | +$482.82 (+3.25%) | 10% trail GTC |
+
+### Market Context
+- Nasdaq futures rising on record May run; S&P at all-time highs
+- Key catalyst: Jensen Huang/NVIDIA announced new PC chip → IBM +12%, ServiceNow +10%, HPE surging premarket; Qualcomm −9.6% (direct competitor impact)
+- Taylor Morrison Home (TMHC) +22.3% on Berkshire all-cash acquisition — not actionable (already priced in)
+- Energy sector YTD leader +22%; Iran tensions disrupting Strait of Hormuz → oil prices rising
+- Technology, Industrials, Materials leading; Healthcare weakening in momentum terms
+
+### Position News
+- **NVDA**: +3.7% today on Jensen Huang new PC chip announcement — thesis accelerating; analyst avg PT $296–309; ex-div Jun 4 ($0.25)
+- **LLY**: −1.2% today giving back Thursday surge; thesis intact (GLP-1, CVS formulary win)
+
+### Trade Ideas
+1. **HPE** (Technology) — Direct beneficiary of NVDA's new PC chip announcement; premarket surge confirmed; sector OK (0 consecutive losses); entry ~$45 market, stop 10% trail (~$40.50), target $54 (+20%), R:R 2:1
+2. **XOM** (Energy) — Leading sector YTD +22%, Iran/oil catalyst — SKIPPED: bid/ask spread 5.3% ($139.65/$147.44), too wide at open
+3. **AMD** (Technology) — AI momentum, 70% 1Y return — SKIPPED: spread 3.1% ($494/$510), too wide at open
+4. **NOW** (Technology) — +10% premarket on NVDA catalyst — SKIPPED: quote anomalous ($136/$140 vs historical pricing)
+
+### Risk Factors
+- Market at ATH — chasing gap-ups carries reversal risk; HPE gap already partially realized premarket
+- Technology sector concentration (NVDA + HPE = 2 tech positions)
+- Deployment remains low even after 1 trade (~49%); need 2 more positions this week
+- Wide spreads across energy/semiconductor names suggest early-session illiquidity
+
+### Decision
+BUY HPE — 440 shares ~$45 (~$19,800, 19.7% of equity). Clear catalyst, acceptable spread, fresh tech sub-sector (PC infrastructure vs AI data-center NVDA). Preserve 2 trade slots for energy/diversification later this week once spreads tighten.

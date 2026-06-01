@@ -1,6 +1,7 @@
 # Trade Log
 
 ## Week of 2026-05-25 | Trades: 2/3
+## Week of 2026-06-01 | Trades: 1/3
 
 ## Day 0 — EOD Snapshot (pre-launch baseline)
 **Portfolio:** $100,000.00 | **Cash:** $100,000.00 (100%) | **Day P&L:** $0 | **Phase P&L:** $0
@@ -54,3 +55,18 @@ No positions yet. Bot launches tomorrow.
 | LLY | 13 | $1,078.65 | $1,105.00 | -1.93% | +$342.55 | $1,034.19 (HWM $1,149.10) |
 | NVDA | 70 | $212.15 | $212.35 | -0.89% | +$13.82 | $196.07 (HWM $217.86) |
 **Notes:** Both positions pulled back on Friday — LLY -1.93% retracing Thursday's GLP-1 surge, NVDA -0.89% on mild tech selling; both remain profitable above entry. Trailing stops current: NVDA stop advanced to $196.07 (HWM $217.86), LLY stop holds at $1,034.19 (HWM $1,149.10). Weekend hold; 1 trade slot remains — assess DELL/COST post-earnings gap-settle for Monday entry opportunity.
+
+## 2026-06-01 — market-open trades
+
+| Field | HPE |
+|-------|-----|
+| Side | BUY |
+| Shares | 440 |
+| Entry | $44.926 |
+| Stop | 10% trailing GTC (HWM $45.045 → stop $40.54) |
+| Target | $53.91 (+20%) |
+| R:R | 2:1 |
+| Sector | Technology |
+| Thesis | NVDA PC chip for PCs announced today; HPE is direct beneficiary; premarket surge confirmed; fresh sub-sector vs AI datacenter play (NVDA already held); Technology sector OK (0 consecutive losses) |
+| Buy Order | d4d08f5a |
+| Stop Order | 916de16b |
