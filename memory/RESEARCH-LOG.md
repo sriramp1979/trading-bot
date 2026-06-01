@@ -179,3 +179,58 @@ HOLD — geopolitical risk elevated, earnings minefield tonight, and only 1 trad
 
 ### Decision
 HOLD — Preserve the final weekly trade slot. Both LLY and NVDA are green with intact theses and tight trailing stops. Weekend Iran risk + ATH tape + Consumer Sentiment deterioration = unfavorable Friday entry risk-reward. Plan to deploy into META + 1 additional position (Mon/Tue) next week to close the gap from 29.5% to 75–85% deployment target, using fresh 3/3 weekly trade slots.
+
+---
+
+## 2026-06-01 — Pre-market Research
+
+### Account
+- Equity: $100,421.77 (+$150.10 vs. May 29 close $100,271.67)
+- Cash: $71,126.87 | Deployed: $29,294.90 (29.2% — well below 75–85% target)
+- Buying power: $171,548.64
+- Daytrade count: 0
+- Open positions: NVDA (70 sh, +$183.22 / +1.23%), LLY (13 sh, +$238.55 / +1.70%)
+- Stops active: NVDA trailing 10% GTC @ $196.07 (HWM $217.86) | LLY trailing 10% GTC @ $1,034.19 (HWM $1,149.10)
+- Week trades: 0/3 (fresh week — 3 slots available)
+
+### Positions
+| Ticker | Shares | Entry | Current | Unrealized P&L | Stop | HWM |
+|--------|--------|-------|---------|----------------|------|-----|
+| NVDA | 70 | $212.15 | $214.77 | +$183.22 (+1.23%) | $196.07 (10% trail) | $217.86 |
+| LLY | 13 | $1,078.65 | $1,097.00 | +$238.55 (+1.70%) | $1,034.19 (10% trail) | $1,149.10 |
+
+### Market Context
+- S&P 500 futures: +0.3% premarket — positive open; building on May's record rally; AI/tech leading
+- VIX: 15.32 (May 29 close) — low/benign; calmer than last week's 16.29; risk-on
+- Today's catalysts:
+  - **NVDA Computex** (major): Jensen Huang unveiled RTX Spark (first PC chip — NVDA/MSFT/MediaTek partnership, Arm-based, 128GB unified memory, Blackwell GPU + N1X CPU); Vera Rubin AI data-center chips now in "full production"; Dell delivering NVL72 racks to CoreWeave confirmed
+  - **LLY catalyst** (major): CVS Caremark lifting new-to-market restriction on Foundayo (oral GLP-1) effective TODAY — all three largest PBMs now cover full Lilly obesity portfolio; France first EU country to reimburse obesity meds (Mounjaro) mid-June; BofA raised PT $1,133 → $1,251 (Buy); $3.8B vaccine acquisition spree
+  - **ISM Manufacturing Index** due today — watch vs. prior 55.3; prices-paid spike (79.5) last month = inflation risk
+  - **Construction Spending** today; **NFP (nonfarm payrolls)** Friday — key rate-expectation mover
+  - **Fed**: mid-June policy meeting under new Chair Kevin Warsh; market recalibrating rate-cut path
+  - **Geopolitical**: US-Iran peace negotiations advancing; WTI crude -9% last week → margin tailwind for corporates
+- Earnings before open: none major
+- Earnings after close: none flagged
+
+### Position News
+- **NVDA**: Computex keynote is directly bullish — Vera Rubin in full production, entry into PC chip market (new TAM), Dell partnership validated; stock up +1.72% premarket ($214.77 vs. $211.14 close). HWM $217.86 potentially challenged today. Thesis strengthening.
+- **LLY**: CVS Foundayo coverage live TODAY; France EU reimbursement catalyst mid-June; BofA raised PT to $1,251 (+14% vs current). Stock at $1,097 (−0.72% premarket off $1,105 close); 4.5% below HWM $1,149.10 — trailing stop at $1,034.19 safe. Thesis very strong.
+
+### Trade Ideas
+1. **META** (Communication Services) — Carry from May 29 plan; AI ad-revenue compounding + broad June momentum; BofA top pick; adds new sector (no CommSvc exposure); entry $640 range at 9:35–9:45 AM settle; stop −10% (~$576), target +20% (~$768), R:R 2:1 | Size: ~$19,000 (~19% portfolio)
+2. **DELL** (Technology) — Fresh catalyst: Vera Rubin in full production + confirmed NVL72 rack delivery to CoreWeave; pick-and-shovel AI server play; conditional entry only if gap <+3% at open; stop −10%, target +20%, R:R 2:1 | Size: ~$14,000 (~14% portfolio; smaller given Tech concentration) | Sector: Technology
+3. **GEV** (Industrials) — GE Vernova; power infrastructure for AI data center build-out; new sector = diversification; conditional on ISM Manufacturing positive print today; entry post-10 AM data; stop −10%, target +20%, R:R 2:1 | Size: ~$14,000 (~14% portfolio) | Sector: Industrials
+
+If all 3 execute: deployed ≈ $76,300 / $100,422 = **76%** — within 75–85% target. Reserves 3rd slot for GEV or higher-conviction name.
+
+### Risk Factors
+- Tech concentration: NVDA + DELL = two Tech positions; DELL only on conviction/no excessive gap-up
+- NVDA below its $217.86 HWM — Computex could push new HWM or trigger profit-taking
+- NFP Friday — hot print could reset rate-cut expectations and spike VIX
+- ISM Manufacturing: prices-paid was 79.5 in May (input inflation concern); watch today's print
+- LLY 4.5% below HWM — retracing; stop $1,034.19 intact but watch intraday if weakness continues
+- VIX 15.32 = low/complacent; any negative surprise spikes vol fast
+- Computex gap-up risk on DELL — hard pass if >+3%; don't chase
+
+### Decision
+TRADE — Deploy META (~19%) and DELL (~14%) at open (9:35–9:45 AM after price settles). Reserve 3rd weekly slot for GEV post-ISM data or highest-conviction setup by Tue/Wed. DELL conditional: skip if gap >+3%. Target: 75–80% deployed by EOD today.
