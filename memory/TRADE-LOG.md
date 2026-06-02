@@ -79,3 +79,11 @@ No positions yet. Bot launches tomorrow.
 | LLY | 13 | $1,078.65 | $1,081.90 | -2.09% | +$42.25 | $1,034.19 (HWM $1,149.10) |
 | NVDA | 70 | $212.15 | $224.86 | +6.50% | +$889.36 | $202.38 (HWM $224.87) |
 **Notes:** HPE surged +34.27% on NVDA AI chip-for-PCs announcement, adding $5,660 unrealized day-1 gain on new position; HPE trailing stop HWM lagging at $47.97 (stop $43.17) vs close $57.79 — ACTION REQUIRED: cancel and replace HPE stop with new 10% trail GTC (correct stop ~$52.01). Portfolio cash 48.2%, below 75-85% target; NVDA advanced stop to $202.38 (HWM $224.87).
+
+### Jun 02 — EOD Snapshot (Day 5, Tuesday)
+**Portfolio:** $106,253.17 | **Cash:** $76,800.22 (72.3%) | **Day P&L:** -$325.50 (-0.31%) | **Phase P&L:** +$6,253.17 (+6.25%)
+| Ticker | Shares | Entry | Close | Day Chg | Unrealized P&L | Stop |
+|--------|--------|-------|-------|---------|----------------|------|
+| LLY | 13 | $1,078.65 | $1,064.25 | -1.66% | -$187.20 | $1,034.19 (HWM $1,149.10) |
+| NVDA | 70 | $212.15 | $223.16 | -0.53% | +$770.52 | $209.05 (HWM $232.28) |
+**Notes:** HPE exited today near $57.82 (440 shares, ~$5,673 realized gain from $44.93 entry), leaving portfolio at 27.7% deployed — well below 75-85% target. LLY (-1.66%) and NVDA (-0.53%) pulled back modestly; both above stops with NVDA stop advanced to $209.05 (HWM $232.28). ACTION REQUIRED: identify 2-3 new positions to redeploy ~$45K and restore deployment target.
