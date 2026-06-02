@@ -27,40 +27,7 @@ Format each entry:
 ### Decision
 TRADE or HOLD (default HOLD if no edge)
 
----
-
-## 2026-05-26 — Pre-market Research
-
-### Account
-- Equity: $100,000
-- Cash: $100,000
-- Buying power: $200,000 (2× margin; non-marginable $100,000)
-- Daytrade count: 0
-- Open positions: none | Open orders: none
-- Week trades: 0/3
-
-### Market Context
-- S&P 500 futures: ~7,473 last close (May 22); pre-market range 7,467–7,524; Dow + S&P EW hitting all-time highs
-- VIX: 16.68 (−0.02, −0.12%) — low/benign, risk-on environment
-- Today's catalysts: Iran nuclear-deal talks progress → broad risk-on; Kevin Warsh oath ceremony; May consumer confidence data (9 AM ET); Manufacturing PMI 55.3 (highest since May 2022); first trading day back after Memorial Day weekend
-- Earnings before open: AutoZone (AZO); Zscaler (ZS) after close
-
-### Trade Ideas
-1. CRWD (CrowdStrike) — Cybersecurity momentum breakout; 52-wk high at $666.40 (+$18.17); sector in full momentum; entry $665–670, stop $600 (−10%), target $800 (+20%), R:R 2:1 | Sector: Technology
-2. ALAB (Astera Labs) — AI infrastructure; 52-wk high at $311.40 (+$13.56); secular AI demand tailwind; entry $310–315, stop $280 (−10%), target $380 (+22%), R:R 2.2:1 | Sector: Technology
-3. AZO (AutoZone) — Earnings catalyst today; consumer discretionary strength; watch post-open reaction; entry only on beat + guidance raise, stop −8%, target +16%, R:R 2:1 | Sector: Consumer Discretionary
-
-### Risk Factors
-- First day back from holiday — volume may be thin pre-open; gap-up risk on both CRWD and ALAB (don't chase)
-- Consumer confidence print at 9 AM could swing tone
-- Both CRWD and ALAB already up large pre-market; wait for intraday pullback to entry range
-- Manufacturing PMI strength already priced in from Friday
-- ZS earnings after close — avoid holding into report
-
-### Decision
-TRADE — CRWD and ALAB are priority setups with clear 52-wk breakout momentum and sector tailwind. Wait for 9:35–9:45 AM open, confirm no gap-fill reversal, then size at ~15% each (~$15,000/position). AZO is conditional on earnings reaction only.
-
----
+--- TRIMMED 2026-06-02 ---
 
 ## 2026-05-27 — Pre-market Research
 
@@ -222,3 +189,52 @@ HOLD — Preserve the final weekly trade slot. Both LLY and NVDA are green with 
 
 ### Decision
 BUY HPE — 440 shares ~$45 (~$19,800, 19.7% of equity). Clear catalyst, acceptable spread, fresh tech sub-sector (PC infrastructure vs AI data-center NVDA). Preserve 2 trade slots for energy/diversification later this week once spreads tighten.
+
+---
+
+## 2026-06-02 — Pre-market Research
+
+### Account
+- Equity: $107,366.12 | Cash: $51,359.42 | Deployed: $56,006.70 (52.2% — below 75–85% target)
+- Buying power: $158,725.54 | Daytrade count: 0
+- Open positions: HPE (440 sh, +$6,236.55 / +31.55%), NVDA (70 sh, +$1,138.02 / +7.66%), LLY (13 sh, −$8.45 / −0.06%)
+- Week trades: 1/3 used (HPE Jun 1); 2 slots remaining
+
+### Positions
+| Ticker | Shares | Entry | Current | Unrealized P&L | Stop | HWM |
+|--------|--------|-------|---------|----------------|------|-----|
+| HPE | 440 | $44.926 | $59.10 | +$6,236.55 (+31.55%) | $43.17 ⚠️ LAGGING | $47.97 |
+| NVDA | 70 | $212.15 | $228.41 | +$1,138.02 (+7.66%) | $202.38 (10% trail) | $224.87 |
+| LLY | 13 | $1,078.65 | $1,078.00 | −$8.45 (−0.06%) | $1,034.19 (10% trail) | $1,149.10 |
+
+⚠️ **ACTION REQUIRED — HPE stop**: HWM stuck at $47.97, stop $43.17 vs current $59.10. Correct stop = $53.19 (10% below current). Cancel order 916de16b and replace with new 10% trailing GTC before open.
+
+### Market Context
+- S&P 500 futures: −0.07% (flat/slightly lower); geopolitical uncertainty weighing; 48% Polymarket probability of green open
+- VIX: ~16.05 (Jun 1 close, +4.77%) — moderate/elevated; risk-off undertone
+- Oil: WTI +5.93%, Brent +4.24% — Iran threatening to block Strait of Hormuz → energy names bid
+- JOLTS job openings data today; NFP Friday — macro data could reprice Fed expectations
+- COMPUTEX 2026 (Jun 2–5, Taipei): Jensen Huang keynote today; RTX Spark chip (AI for laptops) announced; DSX factory playbook revealed
+- Earnings today: PANW (after close), DG, ULTA, VSCO; Earnings Wed: AVGO (Broadcom — key AI read-through)
+
+### Position News
+- **HPE**: Blowout Q2 2026 — EPS $0.79 vs $0.54 est (+46% beat); Rev $10.68B vs $9.89B est; AI systems orders $1.8B record backlog; networking up double-digits; raised FY2026 EPS guidance $3.35–$3.45. Thesis accelerating — AI server demand outpacing estimates.
+- **NVDA**: Computex keynote today; RTX Spark chip expands AI to PC market; ex-div Jun 4 ($0.25/sh); analyst avg PT $296.81 (+30% upside from $228). Thesis intact and catalyst-rich week.
+- **LLY**: Thesis intact — CVS Caremark reinstating Zepbound as preferred commercial formulary (Oct 1); France first EU country to reimburse obesity meds (mid-Jun); BoA PT raised to $1,251 (+16% upside from $1,078). Stock flat; consolidating after May +14% run.
+
+### Trade Ideas
+1. **XOM** (Energy) — WTI +5.93% on Iran/Hormuz; Energy sector not held (status OK); new-sector diversification reduces Tech concentration; entry $115–117, stop 10% trail GTC (~$104), target +20% (~$140), R:R 2:1 | Sector: Energy — PRIMARY WATCHLIST
+2. **PANW** (Technology) — Reports earnings tonight; cybersecurity demand rising on geopolitical tensions; pre-earnings momentum; entry settle 9:35–9:45, stop −10%, target +20%, R:R 2:1 | Sector: Technology (would be 3rd Tech slot — concentration risk; avoid unless spread tight)
+3. **AVGO** (Technology) — Reports earnings Wed Jun 4; AI infrastructure play adjacent to NVDA/HPE thesis; conditional on pre-earnings pullback to support; stop −10%, target +20%, R:R 2:1 | Sector: Technology
+
+### Risk Factors
+- Iran/Hormuz escalation → oil spike risks broader inflation repricing; market not fully pricing conflict risk
+- HPE trailing stop severely lagging — must fix before open or gap-reversal risk unprotected (~$4,400 excess exposure)
+- VIX 16+ and rising → uncertainty elevated; poor time to add risk-on positions
+- JOLTS today + NFP Friday → data-driven vol spikes possible
+- Tech overconcentration: NVDA + HPE already = 2/5–6 max positions (33%+ of book in one sector)
+- NVDA ex-div Jun 4 → potential post-Computex sell-the-news pressure
+- Deployment 52.2% — below target, but adding into geopolitical uncertainty = poor R:R
+
+### Decision
+HOLD — fix HPE stop first (urgent operational priority). Geopolitical uncertainty + elevated VIX + JOLTS data today = unfavorable entry environment. XOM is primary candidate if oil holds gains and market stabilizes mid-session; will reassess at midday scan. Preserve 2 trade slots.
