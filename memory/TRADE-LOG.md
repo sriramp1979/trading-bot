@@ -1,7 +1,7 @@
 # Trade Log
 
 ## Week of 2026-05-25 | Trades: 2/3
-## Week of 2026-06-01 | Trades: 1/3
+## Week of 2026-06-01 | Trades: 2/3
 
 ## Day 0 — EOD Snapshot (pre-launch baseline)
 **Portfolio:** $100,000.00 | **Cash:** $100,000.00 (100%) | **Day P&L:** $0 | **Phase P&L:** $0
@@ -87,3 +87,20 @@ No positions yet. Bot launches tomorrow.
 | LLY | 13 | $1,078.65 | $1,064.25 | -1.66% | -$187.20 | $1,034.19 (HWM $1,149.10) |
 | NVDA | 70 | $212.15 | $223.16 | -0.53% | +$770.52 | $209.05 (HWM $232.28) |
 **Notes:** HPE exited today near $57.82 (440 shares, ~$5,673 realized gain from $44.93 entry), leaving portfolio at 27.7% deployed — well below 75-85% target. LLY (-1.66%) and NVDA (-0.53%) pulled back modestly; both above stops with NVDA stop advanced to $209.05 (HWM $232.28). ACTION REQUIRED: identify 2-3 new positions to redeploy ~$45K and restore deployment target.
+
+## 2026-06-03 — market-open trades
+
+| Field | META |
+|-------|------|
+| Side | BUY |
+| Shares | 24 |
+| Entry | $610.88 |
+| Stop | 10% trailing GTC (HWM $609.25 → stop $548.33) | Order 81af7e7b |
+| Target | $733.06 (+20%) |
+| R:R | ~2:1 |
+| Sector | Communication Services |
+| Thesis | AI-monetized ad revenue compounding; new sector diversification from Tech/Healthcare; VIX 15.77 risk-on; broad AI/chip rally, Iran peace deal reducing inflation pressure |
+| Buy Order | c7d5dbdd |
+| Stop Order | 81af7e7b |
+
+**AVGO skipped:** live price $480 vs research estimate $265 = >+3% gap threshold exceeded; skip per research rule.
