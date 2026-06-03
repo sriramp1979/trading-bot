@@ -104,3 +104,12 @@ No positions yet. Bot launches tomorrow.
 | Stop Order | 81af7e7b |
 
 **AVGO skipped:** live price $480 vs research estimate $265 = >+3% gap threshold exceeded; skip per research rule.
+
+### Jun 03 — EOD Snapshot (Day 6, Wednesday)
+**Portfolio:** $106,102.34 | **Cash:** $62,139.02 (58.6%) | **Day P&L:** -$150.83 (-0.14%) | **Phase P&L:** +$6,102.34 (+6.10%)
+| Ticker | Shares | Entry | Close | Day Chg | Unrealized P&L | Stop |
+|--------|--------|-------|-------|---------|----------------|------|
+| LLY | 13 | $1,078.65 | $1,078.78 | +1.38% | +$1.69 | $1,034.19 (HWM $1,149.10) |
+| META | 24 | $610.88 | $621.17 | +3.94% | +$246.96 | $561.74 (HWM $624.15) |
+| NVDA | 70 | $212.15 | $214.73 | -3.63% | +$180.42 | $209.05 (HWM $232.28) |
+**Notes:** META entered today at $610.88 closing +3.94% at $621.17, adding $247 unrealized in new Communication Services sector. NVDA pulled back -3.63% to $214.73 but holds well above stop $209.05; LLY +1.38% recovery. Portfolio deployed 41.4% — below 75-85% target with 1 trade slot remaining this week; identify 1 high-conviction entry Thursday.
