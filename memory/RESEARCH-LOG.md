@@ -27,42 +27,7 @@ Format each entry:
 ### Decision
 TRADE or HOLD (default HOLD if no edge)
 
---- TRIMMED 2026-06-02 ---
-
-## 2026-05-27 — Pre-market Research
-
-### Account
-- Equity: $100,000
-- Cash: $100,000
-- Buying power: $200,000 (2× margin; non-marginable $100,000)
-- Daytrade count: 0
-- Open positions: none | Open orders: none
-- Week trades: 0/3
-
-### Market Context
-- S&P 500 futures: climbing in premarket; May 26 close 7,473.47 (+27.75/+0.37%); Dow + S&P EW at fresh all-time highs; risk-on continues post-holiday
-- VIX: 16.59 (May 26 close) — low/benign; no spike
-- Today's catalysts: Iran peace talks advancing (Trump: "will end very quickly"); MRVL (Marvell) reports pre-open — key AI chip read-through; Q1 earnings strong: 74% top-line beat, 82% EPS beat, +27.49% EPS growth y/y (472 co's in); top May 2026 sectors: Healthcare, Technology, Communication Services
-- Earnings before open: MRVL, HPQ, ANF, BMO, DKS, BBWI, A (Agilent)
-- Earnings after close: CRM (Salesforce), SNOW (Snowflake), SNPS (Synopsys)
-
-### Trade Ideas
-1. NVDA (Nvidia) — AI/chip sector leader; MRVL report today = semis read-through catalyst; entry at open, reject if >+2% gap; stop −10%, target +20%, R:R 2:1 | Sector: Technology
-2. LLY (Eli Lilly) — Healthcare #1 performing sector May 2026; GLP-1 franchise intact; diversification from Tech; entry near open, stop −10%, target +20%, R:R 2:1 | Sector: Healthcare
-3. CRM (Salesforce) — Reports after close today; AI agentic/cloud tailwind; conditional entry TOMORROW on confirmed beat + guidance raise; entry on gap settle, stop −8%, target +16%, R:R 2:1 | Sector: Technology
-
-### Risk Factors
-- Markets at ATH — no chasing extended gap-ups; wait for 9:35–9:45 AM settle
-- Iran peace deal not finalized — reversal risk if talks collapse
-- CRM + SNOW after-close tonight could shift overnight Tech sentiment into May 28
-- NVDA: hard pass if MRVL beat drives >+2% gap above prior close
-- Low VIX = complacency; any negative surprise spikes vol fast
-- CRWD/ALAB secondary setups from May 26 remain valid if they pull back to entry ranges
-
-### Decision
-TRADE — NVDA (~15% ≈ $15,000) and LLY (~15% ≈ $15,000) at open if neither gaps >+2%. CRM conditional on tomorrow post-earnings gap settle. CRWD/ALAB secondary if they pull back. Total deployed ~30% initially, up to ~60% if secondaries trigger.
-
----
+--- TRIMMED 2026-06-03 ---
 
 ## 2026-05-28 — Pre-market Research
 
@@ -238,3 +203,53 @@ BUY HPE — 440 shares ~$45 (~$19,800, 19.7% of equity). Clear catalyst, accepta
 
 ### Decision
 HOLD — fix HPE stop first (urgent operational priority). Geopolitical uncertainty + elevated VIX + JOLTS data today = unfavorable entry environment. XOM is primary candidate if oil holds gains and market stabilizes mid-session; will reassess at midday scan. Preserve 2 trade slots.
+
+---
+
+## 2026-06-03 — Pre-market Research
+
+### Account
+- Equity: $106,113.58 | Cash: $76,800.14 | Deployed: $29,313.44 (27.6% — well below 75–85% target)
+- Buying power: $182,913.72 | Daytrade count: 0
+- Open positions: LLY (13 sh, −$179.01 / −1.28%), NVDA (70 sh, +$619.32 / +4.17%)
+- Week trades: 1/3 used (HPE Jun 1 entry/Jun 2 exit); 2 slots remaining
+
+### Positions
+| Ticker | Shares | Entry | Current | Unrealized P&L | Stop | HWM |
+|--------|--------|-------|---------|----------------|------|-----|
+| LLY | 13 | $1,078.65 | $1,064.88 | −$179.01 (−1.28%) | $1,034.19 (10% trail) ⚠️ 2.9% buffer | $1,149.10 |
+| NVDA | 70 | $212.15 | $221.00 | +$619.32 (+4.17%) | $209.05 (10% trail) | $232.28 |
+
+### Market Context
+- S&P 500 futures: S&P closed at record 7,609.78 on Jun 2 (first close above 7,600); AI/chip rally intact; Iran peace deal → oil −10% → lower inflation → bullish growth stocks
+- VIX: 15.77 (Jun 2 close) — very low/benign; risk-on environment
+- Today's catalysts:
+  - **AVGO (Broadcom)** earnings today — key AI chip/networking read-through; AI custom chip + Ethernet fabric for hyperscalers
+  - ADP Employment Change (macro data)
+  - ISM Non-Manufacturing Index + Factory Orders
+  - EIA Crude Oil Inventories
+  - Iran peace deal confirmed → oil prices declining → favorable for growth/tech valuations
+  - Computex 2026 week (Jun 2–5) — ongoing AI chip announcements
+
+### Position News
+- **LLY**: Q1 EPS $8.55 beat by +25% vs est $6.85; rev +56% YoY; FY2026 guidance raised +$2B to $82–85B; $1.26B licensing deal signed Jun 1 (Hanmi Pharma intestinal treatment); stock range today $1,052–$1,082 — consolidating; thesis intact but stop is tight (2.9% buffer)
+- **NVDA**: Vera Rubin custom CPU for agentic AI computing announced at Computex; committed 50%+ FCF return to shareholders; analyst consensus Buy, avg PT $298.32 (+35% upside); ex-div Jun 4 ($0.25/sh)
+
+### Trade Ideas
+1. **META** (Communication Services) — AI-monetized ad revenue compounding; new sector = diversification from Tech/Healthcare book; VIX 15.77 = ideal risk-on entry; entry 9:35–9:45 AM open ~$685, stop 10% trail GTC (~$617), target +20% (~$822), R:R 2:1 | Sector: Communication Services — PRIMARY
+2. **AVGO** (Technology) — Earnings catalyst today; AI custom chips + Ethernet networking for hyperscalers; conditional entry ONLY on confirmed beat + gap-settle 9:35–10:00 AM; entry ~$265 gap-settle, stop 10% trail GTC (~$239), target +20% (~$318), R:R 2:1 | Sector: Technology (3rd tech slot — concentration risk; only if spread tight)
+3. **AMD** (Technology) — AI/data center GPU momentum with Computex tailwind; lower-conviction backup if AVGO spread is wide; entry ~$160, stop 10% trail (~$144), target +20% (~$192), R:R 2:1 | Sector: Technology
+
+### Risk Factors
+- LLY only 2.9% above stop ($1,034.19) — intraday weakness could trigger exit; monitor closely
+- Tech concentration risk: adding AVGO = 3 Tech positions (NVDA + AVGO + possible AMD); stay at 2 Tech max unless AVGO is strong isolated catalyst
+- ADP + ISM today → macro miss could pressure broad market
+- AVGO earnings binary — do NOT buy pre-open; wait for confirmed post-earnings gap-settle
+- NVDA ex-div tomorrow (Jun 4) → minor sell-the-news pressure possible
+- Deployment urgency (27.6%) — need to act this week but not into poor setups
+
+### Decision
+TRADE — 2 entries planned this week using both remaining slots:
+1. **META** at open (primary, new sector, ~$15K / 14% of equity) — no earnings binary risk
+2. **AVGO** conditional on confirmed post-earnings gap-settle (secondary, ~$15K / 14%) — skip if gap >+3% or spread wide
+Combined deployment after both: ~$59K (55.6%) — still below target but meaningful progress; reassess adding 1 more at midday if tape holds.
