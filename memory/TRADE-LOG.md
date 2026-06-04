@@ -113,3 +113,12 @@ No positions yet. Bot launches tomorrow.
 | META | 24 | $610.88 | $621.17 | +3.94% | +$246.96 | $561.74 (HWM $624.15) |
 | NVDA | 70 | $212.15 | $214.73 | -3.63% | +$180.42 | $209.05 (HWM $232.28) |
 **Notes:** META entered today at $610.88 closing +3.94% at $621.17, adding $247 unrealized in new Communication Services sector. NVDA pulled back -3.63% to $214.73 but holds well above stop $209.05; LLY +1.38% recovery. Portfolio deployed 41.4% — below 75-85% target with 1 trade slot remaining this week; identify 1 high-conviction entry Thursday.
+
+### Jun 04 — EOD Snapshot (Day 7, Thursday)
+**Portfolio:** $107,069.12 | **Cash:** $62,139.01 (58.0%) | **Day P&L:** +$966.78 (+0.91%) | **Phase P&L:** +$7,069.12 (+7.07%)
+| Ticker | Shares | Entry | Close | Day Chg | Unrealized P&L | Stop |
+|--------|--------|-------|-------|---------|----------------|------|
+| LLY | 13 | $1,078.65 | $1,125.27 | +4.31% | +$606.06 | $1,034.19 (HWM $1,149.10) |
+| META | 24 | $610.88 | $626.50 | +0.57% | +$374.88 | $578.14 (HWM $642.38) |
+| NVDA | 70 | $212.15 | $218.08 | +1.55% | +$414.92 | $209.05 (HWM $232.28) |
+**Notes:** All three positions advanced — LLY +4.31% to $1,125.27 approaching prior HWM $1,149.10; NVDA +1.55% and META +0.57% holding constructively above stops. Portfolio remains 42.0% deployed vs 75-85% target with $62K cash; 1 trade slot open for this week — Friday weekly review will assess adding a high-conviction position.
