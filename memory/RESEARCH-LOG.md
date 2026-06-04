@@ -27,45 +27,7 @@ Format each entry:
 ### Decision
 TRADE or HOLD (default HOLD if no edge)
 
---- TRIMMED 2026-06-03 ---
-
-## 2026-05-28 — Pre-market Research
-
-### Account
-- Equity: $99,952.57 (−$134.26 vs. yesterday close)
-- Cash: $71,126.87 | Deployed: $28,825.70 (28.8% — below 75–85% target)
-- Buying power: $171,079.44
-- Daytrade count: 0
-- Open positions: NVDA (70 sh, −$51.98 / −0.35%), LLY (13 sh, +$4.55 / +0.03%)
-- Stops active: NVDA trailing 10% GTC @ $191.99 (HWM $213.32) | LLY trailing 10% GTC @ $983.70 (HWM $1,093)
-- Week trades: 2/3 (1 slot remaining)
-
-### Market Context
-- S&P 500 futures: 7,538.50 (range 7,532–7,551; flat/muted pre-market)
-- VIX: 16.86 (−0.15 / −0.88%) — moderate; calm but elevated vs. prior days
-- Today's catalysts:
-  - **Geopolitical risk**: Renewed US-Iran missile exchanges; ceasefire hopes extinguished → risk-off headwind
-  - **Macro data**: PCE Prices, Personal Income/Spending, GDP Q2 2nd estimate, Durable Goods, Initial Claims all due today
-  - **Earnings after close**: DELL, COST, MDB, ADSK, NTAP, OKTA, BBY, BURL, DLTR — heavy overnight gap risk
-- NVDA pre-market: ~$211.34 (range $208.78–$216.50 today); LLY: ~$1,079
-
-### Trade Ideas
-1. **XOM (ExxonMobil)** — US-Iran escalation = oil spike catalyst; energy sector not yet held (status OK); entry $114–116, stop −10% (~$103), target +20% (~$138), R:R 2:1 | Sector: Energy
-2. **DELL** — AI server earnings tonight; strong data-center demand tailwind; conditional entry TOMORROW on confirmed beat + guidance raise; gap settle entry, stop −8%, target +16%, R:R 2:1 | Sector: Technology
-3. **CRM (Salesforce)** — May 27 conditional idea; if beat confirmed pre-market, gap-settle entry today; stop −8%, target +16%, R:R 2:1 | Sector: Technology (would be 2nd Tech position — check 20% cap per slot)
-
-### Risk Factors
-- US-Iran missiles could escalate further — broad risk-off if situation worsens; avoid adding exposure pre-open
-- 7+ companies reporting tonight — overnight gap risk on any new position entered today
-- Only 1 trade slot remaining this week — must be high-conviction or wait for next week's reset
-- Deployment at 28.8% — well below 75–85% target; urgency to deploy, but not into a risky tape
-- PCE / GDP data today could reprice rate expectations and whip tech sector
-- NVDA slightly below entry (−0.35%) and today's range shows $208 support — watch closely
-
-### Decision
-HOLD — geopolitical risk elevated, earnings minefield tonight, and only 1 trade slot left. Preserve the slot for a confirmed post-DELL or post-COST gap-settle entry Friday. XOM / energy remains the highest-conviction new-sector idea if oil accelerates on Iran news intraday. Will reassess at midday scan.
-
----
+--- TRIMMED 2026-06-04 ---
 
 ## 2026-05-29 — Pre-market Research
 
@@ -253,3 +215,53 @@ TRADE — 2 entries planned this week using both remaining slots:
 1. **META** at open (primary, new sector, ~$15K / 14% of equity) — no earnings binary risk
 2. **AVGO** conditional on confirmed post-earnings gap-settle (secondary, ~$15K / 14%) — skip if gap >+3% or spread wide
 Combined deployment after both: ~$59K (55.6%) — still below target but meaningful progress; reassess adding 1 more at midday if tape holds.
+
+---
+
+## 2026-06-04 — Pre-market Research
+
+### Account
+- Equity: $106,151.10 | Cash: $62,139.01 | Deployed: $44,012.09 (41.5% — below 75–85% target)
+- Buying power: $62,139.01 | Daytrade count: 0
+- Open positions: LLY (13 sh, +$225.55 / +1.61%), META (24 sh, +$197.28 / +1.35%), NVDA (70 sh, +$55.01 / +0.37%)
+- Stops active: LLY 10% trail GTC @ $1,034.19 (HWM $1,149.10) | META 10% trail GTC @ $561.74 (HWM $624.15) | NVDA 10% trail GTC @ $209.05 (HWM $232.28)
+- Week trades: 1/3 used (META Jun 3); 2 slots remaining
+
+### Positions
+| Ticker | Shares | Entry | Current | Unrealized P&L | Stop | HWM |
+|--------|--------|-------|---------|----------------|------|-----|
+| LLY | 13 | $1,078.65 | $1,096.00 | +$225.55 (+1.61%) | $1,034.19 (10% trail) | $1,149.10 |
+| META | 24 | $610.88 | $619.10 | +$197.28 (+1.35%) | $561.74 (10% trail) | $624.15 |
+| NVDA | 70 | $212.15 | $212.94 | +$55.01 (+0.37%) ⚠️ | $209.05 (10% trail) | $232.28 |
+
+### Market Context
+- S&P 500 futures: −0.43% premarket; US-Iran military clash overnight reversed peace deal → oil +2%+ to 1.5-week high; geopolitical risk-off headwind
+- VIX: ~16.05 (rising from 15.77 Jun 3 close) — moderate; geopolitical risk pushing higher
+- Today's catalysts:
+  - **Iran-US clash**: Military exchange overnight; oil +2%, WTI 1.5-week high → energy bid; risk-off for growth
+  - **AVGO −13%**: Broadcom Q2 revenue miss in extended trading → semis under pressure
+  - **CRWD −10%**: CrowdStrike weak guidance miss; cybersecurity sector weakness
+  - **Macro data**: Nonfarm productivity (Q1), Challenger job cuts due today
+  - **Earnings before open**: CIEN, PL, LULU
+  - **SpaceX IPO**: Roadshow underway; pricing expected Jun 11 (~$1.75T valuation)
+
+### Position News
+- **LLY**: BofA raised PT to $1,251 (Buy maintained); CVS reinstating Zepbound as preferred commercial formulary Oct 1; France first EU country to reimburse obesity meds mid-Jun; 3 acquisitions up to $3.8B announced (pipeline expansion). Trading $1,053–$1,093 today. Thesis strengthening.
+- **META**: Premarket −0.74% (~$618.40 vs $622.98 close); Arete upgraded to Buy PT $735 (Jun 2); Q1 EPS $10.44 beat est by 57%; AI business agent platform expanding. Minor pullback; thesis intact.
+- **NVDA**: **EX-DIVIDEND DATE** ($0.25/sh) → minor downward price adjustment expected at open; NVDA-MSFT AI partnership deepening; AVGO −13% miss pressuring broad semis; stop $209.05 is only 1.86% below current $212.94 ⚠️
+
+### Trade Ideas
+1. **XOM (ExxonMobil)** — Iran-US clash = oil +2% direct catalyst; Energy not held (status OK); new-sector diversification; entry $117–120, stop 10% trail GTC (~$107), target +20% (~$140), R:R 2:1 | Sector: Energy — PRIMARY
+2. **MSFT (Microsoft)** — NVDA-MSFT deepening AI partnership; Copilot monetization accelerating; unaffected by AVGO miss (different architecture); entry ~$490–510, stop 10% trail GTC, target +20%, R:R 2:1 | Sector: Technology (2nd Tech slot — check 20% cap)
+3. **JPM (JPMorgan Chase)** — Financials diversification; no sector exposure yet; backup if energy/tech spreads too wide at open; entry TBD, stop 10% trail GTC, target +20%, R:R 2:1 | Sector: Financials
+
+### Risk Factors
+- NVDA: Ex-div day + AVGO −13% sector pressure + stop only 1.86% above current price → stop $209.05 at real risk today; monitor closely at open
+- Iran-US clash: risk-off environment; poor tape for adding new positions pre-open
+- AVGO −13%, CRWD −10%: broad risk-off for growth/tech stocks; potential rotation out of semis
+- S&P futures −0.43% and VIX rising: unfavorable entry environment
+- 2 trade slots remaining this week — preserve for high-conviction setups only
+- Deployment at 41.5% — urgency to close gap to 75–85% but not into volatile open
+
+### Decision
+CONDITIONAL TRADE — **XOM only** if: (1) oil holds +2% or gains by 9:35 AM open, (2) spread <1.5%. Energy is sole sector that directly benefits from Iran escalation catalyst. All other new entries (MSFT, JPM) HOLD pending market stabilization post-open. NVDA stop proximity is the primary watch item — if price approaches $210 intraday, prepare for potential stop-out at $209.05. Weekly capacity: 2 slots remain.
