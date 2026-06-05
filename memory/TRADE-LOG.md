@@ -122,3 +122,11 @@ No positions yet. Bot launches tomorrow.
 | META | 24 | $610.88 | $626.50 | +0.57% | +$374.88 | $578.14 (HWM $642.38) |
 | NVDA | 70 | $212.15 | $218.08 | +1.55% | +$414.92 | $209.05 (HWM $232.28) |
 **Notes:** All three positions advanced — LLY +4.31% to $1,125.27 approaching prior HWM $1,149.10; NVDA +1.55% and META +0.57% holding constructively above stops. Portfolio remains 42.0% deployed vs 75-85% target with $62K cash; 1 trade slot open for this week — Friday weekly review will assess adding a high-conviction position.
+
+### Jun 05 — EOD Snapshot (Day 8, Friday)
+**Portfolio:** $105,643.04 | **Cash:** $76,771.86 (72.7%) | **Day P&L:** -$1,426.08 (-1.33%) | **Phase P&L:** +$5,643.04 (+5.64%)
+| Ticker | Shares | Entry | Close | Day Chg | Unrealized P&L | Stop |
+|--------|--------|-------|-------|---------|----------------|------|
+| LLY | 13 | $1,078.65 | $1,131.50 | +0.55% | +$687.05 | $1,049.60 (HWM $1,166.23) |
+| META | 24 | $610.88 | $590.07 | -5.98% | -$499.44 | $578.14 (HWM $642.38) |
+**Notes:** NVDA trailing stop triggered today at ~$209.05 (70 shares), realizing ~-$217 loss and freeing ~$14.6K cash; META sold off -5.98% to $590.07, holding above stop $578.14 but only $11.93 cushion — watch closely Monday. Portfolio deployed 27.3% vs 75-85% target; pre-market Mon Jun 08 must identify 2-3 high-conviction entries to redeploy ~$50K.
