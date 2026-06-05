@@ -3,7 +3,7 @@
 ## Active Sector Tracking
 | Sector | Tickers Held | Consecutive Losses | Status |
 |--------|-------------|-------------------|--------|
-| Technology | NVDA | 0 | OK |
+| Technology | — | 1 | OK |
 | Healthcare | LLY | 0 | OK |
 | Communication Services | META | 0 | OK |
 
