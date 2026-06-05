@@ -27,54 +27,7 @@ Format each entry:
 ### Decision
 TRADE or HOLD (default HOLD if no edge)
 
---- TRIMMED 2026-06-04 ---
-
-## 2026-05-29 — Pre-market Research
-
-### Account
-- Equity: $100,832.09 (+$59.32 vs. May 28 close $100,772.77)
-- Cash: $71,126.87 | Deployed: $29,705.22 (29.5% of equity — below 75–85% target)
-- Buying power: $171,958.96
-- Daytrade count: 0
-- Open positions: LLY (13 sh, +$653.77 / +4.66%), NVDA (70 sh, +$178.32 / +1.20%)
-- Stops active: LLY 10% trail GTC @ $1,034.19 (HWM $1,149.10) | NVDA 10% trail GTC @ $193.97 (HWM $215.52)
-- Week trades: 2/3 (1 slot remaining — last day of week)
-
-### Positions
-| Ticker | Shares | Entry | Current | Unrealized P&L | Stop | HWM |
-|--------|--------|-------|---------|----------------|------|-----|
-| LLY | 13 | $1,078.65 | $1,128.94 | +$653.77 (+4.66%) | $1,034.19 (10% trail) | $1,149.10 |
-| NVDA | 70 | $212.15 | $214.70 | +$178.32 (+1.20%) | $193.97 (10% trail) | $215.52 |
-
-### Market Context
-- S&P 500 futures: ~7,585 (+0.3% premarket); Dow + S&P EW near all-time highs; rally driven by chip strength + Iran peace hopes
-- VIX: 15.74 (−3.38% from 16.29 prior close) — low; risk-on environment
-- Today's catalysts: Iran ceasefire holding (sporadic fire overnight; US officials confident truce intact); Chicago PMI due; Advanced International Trade in Goods, Retail/Wholesale Inventories; Mfg PMI 55.3 (highest since May '22, prices paid jumped to 79.5); Consumer Sentiment 44.8 (3rd consecutive monthly decline, macro soft-landing risk)
-- Earnings before open: none major (DELL/COST/MDB/ADSK reported after May 28 close; results now available)
-- Earnings after close: none major — clean tape going into weekend
-
-### Position News
-- **LLY**: CVS restoring Zepbound as preferred commercial formulary Oct 1 + adding oral pill Foundayo as co-preferred → massive market access expansion; Phase 1b data for Verve-102 (LDL gene-editing, single infusion) positive; heading for best month in 2026; Buy consensus (19 analysts); GF Value $1,383 vs. current $1,129 = 18.5% discount. Thesis strengthening.
-- **NVDA**: Hit $236 ATH May 15; pulled back ~9.3% to $214; Q1 revenue $81.6B (record), data center +69% YoY; Vera Rubin AI chip generating investor excitement; $0.25 dividend ex-date Jun 4; avg analyst PT $304.59 (+43% upside). Thesis intact — consolidating off ATH.
-
-### Trade Ideas
-1. **DELL** (Technology) — Post-earnings gap-settle if AI server revenue confirmed beat; enter only if stock holds above gap-open level at 10:00 AM; stop −8%, target +16%, R:R 2:1; **CONDITIONAL** on verified beat/guidance raise — adds Tech sector concentration (already have NVDA)
-2. **META** (Communication Services) — Top sector May 2026; AI ad-revenue compounding; no current Communication Services exposure = adds diversification; entry 9:35–9:45 AM open or intraday pullback; stop −10%, target +20%, R:R 2:1 | Sector: Communication Services
-3. **COST** (Consumer Staples) — Post-earnings gap-settle (reported May 28 after close); defensive diversification layer to Tech/Healthcare book; conditional on earnings beat; stop −8%, target +16%, R:R 2:1 | Sector: Consumer Staples
-
-### Risk Factors
-- Only 1 trade slot remaining this week — must deploy into highest-conviction name only
-- Friday + Iran geopolitical weekend risk → headline gap risk over weekend
-- Market at ATH; chasing extended gap-ups carries elevated reversal risk
-- Consumer Sentiment 44.8 (multi-year low) — macro deterioration risk under surface of ATH
-- NVDA 9.3% off $236 ATH — if broader Tech rotation resumes, stop $193.97 may trigger
-- Deployment at 29.5% (well below 75–85% target) — urgency to deploy; but Friday + limited slot argues for patience
-- Mfg PMI prices-paid spike (79.5) = input inflation concern; could reprice rate cuts
-
-### Decision
-HOLD — Preserve the final weekly trade slot. Both LLY and NVDA are green with intact theses and tight trailing stops. Weekend Iran risk + ATH tape + Consumer Sentiment deterioration = unfavorable Friday entry risk-reward. Plan to deploy into META + 1 additional position (Mon/Tue) next week to close the gap from 29.5% to 75–85% deployment target, using fresh 3/3 weekly trade slots.
-
----
+--- TRIMMED 2026-06-05 ---
 
 ## 2026-06-01 — Pre-market Research
 
@@ -265,3 +218,53 @@ Combined deployment after both: ~$59K (55.6%) — still below target but meaning
 
 ### Decision
 CONDITIONAL TRADE — **XOM only** if: (1) oil holds +2% or gains by 9:35 AM open, (2) spread <1.5%. Energy is sole sector that directly benefits from Iran escalation catalyst. All other new entries (MSFT, JPM) HOLD pending market stabilization post-open. NVDA stop proximity is the primary watch item — if price approaches $210 intraday, prepare for potential stop-out at $209.05. Weekly capacity: 2 slots remain.
+
+---
+
+## 2026-06-05 — Pre-market Research
+
+### Account
+- Equity: $107,018.87 | Cash: $62,139.01 | Deployed: $44,879.86 (41.9% — below 75–85% target)
+- Buying power: $338,315.76 (4x margin) | Daytrade count: 0
+- Open positions: LLY (13 sh, +$719.55 / +5.13%), META (24 sh, +$351.84 / +2.40%), NVDA (70 sh, +$274.22 / +1.85%)
+- Stops active: LLY 10% trail GTC @ $1,034.19 (HWM $1,149.10) | META 10% trail GTC @ $578.14 (HWM $642.38) | NVDA 10% trail GTC @ $209.05 (HWM $232.28)
+- Week trades: 2/3 used (HPE Jun 1, META Jun 3); 1 slot remaining
+
+### Positions
+| Ticker | Shares | Entry | Current | Unrealized P&L | Stop | HWM |
+|--------|--------|-------|---------|----------------|------|-----|
+| LLY | 13 | $1,078.65 | $1,134.00 | +$719.55 (+5.13%) | $1,034.19 (10% trail) | $1,149.10 |
+| META | 24 | $610.88 | $625.54 | +$351.84 (+2.40%) | $578.14 (10% trail) | $642.38 |
+| NVDA | 70 | $212.15 | $216.07 | +$274.22 (+1.85%) | $209.05 (10% trail) ⚠️ 3.25% buffer | $232.28 |
+
+### Market Context
+- S&P 500 futures: ES −0.10% premarket at 7,550.75 (opened 7,546.50); slight weakness from US-Iran renewed military exchange; oil +2% WTI to 1.5-week high
+- VIX: 15.40 (Jun 4 close, −4.11%); low/benign — risk-on despite geopolitical noise
+- Today's catalysts:
+  - **May NFP (Jobs Report)**: 85,000 jobs expected (vs 115,000 April) — historically light; key market-moving data today
+  - **US-Iran renewed military exchange**: Oil +2% WTI; energy sector bid; risk-off for growth
+  - **AVGO (Broadcom) double-digit plunge**: Earnings disappointment → broad tech sector headwind
+  - **Lebanon ceasefire**: Treasury yields falling → homebuilders (KBH, DHI, LEN) bid premarket
+  - **COMPUTEX 2026 final day**: Jensen Huang keynote wrap-up; AI PC/RTX Spark narrative concludes
+- Earnings before open: none major
+
+### Position News
+- **LLY**: Premarket +0.78% at $1,134 — approaching prior HWM $1,149.10. $10B acquisition strategy expansion announced (oncology focus). TRIUMPH-1 Retatrutide obesity trial progress. German investment cut (€2.3B → €1.1B) — U.S. manufacturing focus. GF Score 98; thesis strengthening.
+- **META**: Intraday −0.32% at $625.54. Meta Business Agent launched globally (AI customer service, 1M+ enterprises on WhatsApp/Messenger). Quarterly dividend $0.525/share declared (ex-Jun-15, pay-Jun-25). Minor pullback within intact uptrend.
+- **NVDA**: Intraday −1.18% at $216.07. Computex 2026 final day. Kumo AI acquisition ($400M, predictive AI software). Senate Banking Committee invited CEO Jensen Huang to testify Jun 11 (China/export controls). AVGO miss creating sector headwind. ⚠️ Stop $209.05 = only 3.25% below current price — most vulnerable position.
+
+### Trade Ideas
+1. **DHI (D.R. Horton)** — Consumer Discretionary — Lebanon ceasefire + weak NFP (85K expected) = yield decline = homebuilder relief rally; entry ~$145–148, stop 10% trail GTC (~$132), target +20% (~$177), R:R 2:1 | Sector: Consumer Discretionary — NEW SECTOR, no current exposure
+2. **XOM (ExxonMobil)** — Energy — US-Iran conflict = oil +2% direct catalyst; Energy not held (status OK); entry ~$118–120, stop 10% trail GTC (~$107), target +20% (~$143), R:R 2:1 | Sector: Energy — NEW SECTOR, high geopolitical volatility risk
+3. **GOOGL (Alphabet)** — Communication Services — AI search monetization; same sector as META = concentration risk; lower priority; skip unless thesis is uniquely differentiated
+
+### Risk Factors
+- **NFP binary risk**: Jobs print could move market sharply; 85K expected (very light); beat = yields rise = growth/tech pressure; miss = recession fear
+- **NVDA stop proximity**: 3.25% buffer at $209.05; AVGO miss = sector headwind; Jensen Huang Senate testimony Jun 11 = China/export control overhang — most vulnerable position this week
+- **US-Iran escalation**: Renewed military exchange = weekend headline risk; oil volatility
+- **AVGO −10%+ miss**: Tech selectivity signal; validates caution on sector concentration adds
+- **Friday dynamics**: Lower volume, wider intraday swings; avoid chasing gap-opens
+- **Deployment 41.9%**: Below 75–85% target; but adding into jobs-day volatility + geopolitical risk = poor R:R
+
+### Decision
+HOLD — Friday jobs report + US-Iran geopolitical risk + AVGO tech sector headwind = unfavorable environment for final weekly trade slot. All three positions green with intact theses. NVDA stop proximity ($209.05 / 3.25% buffer) is the watch item — no action unless stop triggers. Preserve final slot for Mon/Tue next week when post-jobs tape clarity returns. Primary candidates next week: DHI (homebuilder, Consumer Discretionary) or XOM (energy) for sector diversification to close deployment gap toward 75–85% target.
