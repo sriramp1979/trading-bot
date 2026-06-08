@@ -27,48 +27,7 @@ Format each entry:
 ### Decision
 TRADE or HOLD (default HOLD if no edge)
 
---- TRIMMED 2026-06-05 ---
-
-## 2026-06-01 — Pre-market Research
-
-### Account
-- Equity: $100,653.27 | Cash: $71,126.87 | Deployed: $29,526.40 (29.3% — below 75–85% target)
-- Buying power: $171,780.14 | Daytrade count: 0
-- Open positions: LLY (13 sh, +$174.66 / +1.25%), NVDA (70 sh, +$482.82 / +3.25%)
-- Stops active: LLY 10% trail GTC (HWM ~$1,149) | NVDA 10% trail GTC (HWM ~$217.86)
-- Week trades: 0/3 (new week reset)
-
-### Positions
-| Ticker | Shares | Entry | Current | Unrealized P&L | Stop |
-|--------|--------|-------|---------|----------------|------|
-| LLY | 13 | $1,078.65 | $1,092.09 | +$174.66 (+1.25%) | 10% trail GTC |
-| NVDA | 70 | $212.15 | $219.05 | +$482.82 (+3.25%) | 10% trail GTC |
-
-### Market Context
-- Nasdaq futures rising on record May run; S&P at all-time highs
-- Key catalyst: Jensen Huang/NVIDIA announced new PC chip → IBM +12%, ServiceNow +10%, HPE surging premarket; Qualcomm −9.6% (direct competitor impact)
-- Taylor Morrison Home (TMHC) +22.3% on Berkshire all-cash acquisition — not actionable (already priced in)
-- Energy sector YTD leader +22%; Iran tensions disrupting Strait of Hormuz → oil prices rising
-- Technology, Industrials, Materials leading; Healthcare weakening in momentum terms
-
-### Position News
-- **NVDA**: +3.7% today on Jensen Huang new PC chip announcement — thesis accelerating; analyst avg PT $296–309; ex-div Jun 4 ($0.25)
-- **LLY**: −1.2% today giving back Thursday surge; thesis intact (GLP-1, CVS formulary win)
-
-### Trade Ideas
-1. **HPE** (Technology) — Direct beneficiary of NVDA's new PC chip announcement; premarket surge confirmed; sector OK (0 consecutive losses); entry ~$45 market, stop 10% trail (~$40.50), target $54 (+20%), R:R 2:1
-2. **XOM** (Energy) — Leading sector YTD +22%, Iran/oil catalyst — SKIPPED: bid/ask spread 5.3% ($139.65/$147.44), too wide at open
-3. **AMD** (Technology) — AI momentum, 70% 1Y return — SKIPPED: spread 3.1% ($494/$510), too wide at open
-4. **NOW** (Technology) — +10% premarket on NVDA catalyst — SKIPPED: quote anomalous ($136/$140 vs historical pricing)
-
-### Risk Factors
-- Market at ATH — chasing gap-ups carries reversal risk; HPE gap already partially realized premarket
-- Technology sector concentration (NVDA + HPE = 2 tech positions)
-- Deployment remains low even after 1 trade (~49%); need 2 more positions this week
-- Wide spreads across energy/semiconductor names suggest early-session illiquidity
-
-### Decision
-BUY HPE — 440 shares ~$45 (~$19,800, 19.7% of equity). Clear catalyst, acceptable spread, fresh tech sub-sector (PC infrastructure vs AI data-center NVDA). Preserve 2 trade slots for energy/diversification later this week once spreads tighten.
+--- TRIMMED 2026-06-08 ---
 
 ---
 
@@ -268,3 +227,58 @@ CONDITIONAL TRADE — **XOM only** if: (1) oil holds +2% or gains by 9:35 AM ope
 
 ### Decision
 HOLD — Friday jobs report + US-Iran geopolitical risk + AVGO tech sector headwind = unfavorable environment for final weekly trade slot. All three positions green with intact theses. NVDA stop proximity ($209.05 / 3.25% buffer) is the watch item — no action unless stop triggers. Preserve final slot for Mon/Tue next week when post-jobs tape clarity returns. Primary candidates next week: DHI (homebuilder, Consumer Discretionary) or XOM (energy) for sector diversification to close deployment gap toward 75–85% target.
+
+---
+
+## 2026-06-08 — Pre-market Research
+
+### Account
+- Equity: $106,331.28 | Cash: $76,771.83 | Deployed: $29,559.45 (27.8% — well below 75–85% target)
+- Buying power: $183,103.11 (RegT) | Daytrade count: 0
+- Open positions: LLY (13 sh, +$1,278.55 / +9.12%), META (24 sh, −$402.67 / −2.75%)
+- Stops active: LLY 10% trail GTC @ $1,049.60 (HWM $1,166.23 → updating to $1,177 at open) | META 10% trail GTC @ $578.14 (HWM $642.38)
+- Week trades: 0/3 (new week reset)
+- ⚠️ **NVDA stopped out Friday** at $209.05 (realized ~−$217 loss); NVDA slot is freed
+- ⚠️ **Deployment gate ACTIVE**: deployed 27.8% vs 75–85% target; VIX ~15.40 (below 22) + futures −0.15% (above −2%) → must add ≥1 position today
+
+### Positions
+| Ticker | Shares | Entry | Current (pre-mkt) | Unrealized P&L | Stop | HWM |
+|--------|--------|-------|-------------------|----------------|------|-----|
+| LLY | 13 | $1,078.65 | $1,177.00 | +$1,278.55 (+9.12%) | $1,049.60 → ~$1,059.30 ↑ | $1,166.23 → $1,177.00 ↑ |
+| META | 24 | $610.88 | $594.10 | −$402.67 (−2.75%) ⚠️ | $578.14 (2.69% buffer) | $642.38 |
+
+### Market Context
+- S&P 500 futures: ~7,389–7,400 (−0.15%, essentially flat); Treasury yields elevated from blowout May NFP
+- VIX: ~15.40 (Jun 5 close) — benign; no gate condition triggered
+- Today's catalysts:
+  - **Alphabet $85B equity raise**: Largest equity offering in history; AI capex arms race intensifying → direct GPU/cloud demand tailwind for NVDA, ORCL
+  - **Meta equity offering rumor**: ~$64.2B raise being explored (spokesperson: "pure speculation"); caused META −5.98% Friday; MSFT and AMZN now exploring similar raises
+  - **Blowout May NFP**: Jobs beat drove Treasury yield spike → growth/tech headwind; already priced as of Friday
+  - **AVGO lackluster guidance**: Broadcom miss still weighing on semis post-Friday; sector selectivity elevated
+  - **Campbell's (CPB)** earnings before open today — minor market-moving event
+  - **Oracle (ORCL)** earnings June 10 — 2 days out; AI cloud catalyst
+  - **CPI release June 10**: Major macro event this week; any upside surprise = rate hike repricing risk
+
+### Position News
+- **LLY**: Q1 2026 revenue +56% to $19.8B (beat); FY2026 guidance raised to $82–85B; Phase 3 retatrutide data promising; ~60% GLP-1 market share; pre-market +4.03% to $1,177 (new HWM); trailing stop will auto-ratchet to ~$1,059.30. Thesis accelerating — no action needed.
+- **META**: Equity raise speculation (~$64.2B) drove −5.98% Friday to $590.07; pre-market +0.19% to ~$594. Only $15.96/share (2.69%) above trailing stop $578.14. Spokesperson denies but overhang persists. Let stop work — do NOT manually exit; if stop triggers ~$578 it closes cleanly. Thesis: intact unless offering is confirmed.
+
+### Trade Ideas
+1. **NVDA (Technology)** — Re-entry. Catalyst: Alphabet $85B + Meta $64B AI raises = massive incremental GPU demand; NVDA is sole dominant AI GPU supplier; blowout NFP suggests strong economy = corporate AI capex holds. Entry: ~$215–218 (confirm spread <1.5% at 9:35), stop 10% trail GTC (~$194–196), target $250 (+15–17%), R:R ~1.7:1 | Sector: Technology (1 consec. loss → OK) — PRIMARY
+2. **GS (Goldman Sachs, Financials)** — IB fee catalyst: Alphabet $85B + Meta $64B + MSFT/AMZN exploring raises = generational equity underwriting wave; GS is premier lead-left underwriter; rising yields support Financials NIM. Entry: confirm live price at open (~$600–650 est.), stop 10% trail GTC, target +15–20%, R:R 2:1 | Sector: Financials (0 losses, no current exposure) — PRIMARY
+3. **ORCL (Oracle, Technology)** — Oracle Cloud Infrastructure (OCI) gaining share; all Big Tech AI raises = more OCI spend; earnings June 10 as near-term catalyst. Entry: confirm at open (~$185–200 est.), stop 10% trail GTC, target +15–20%, R:R 2:1 | Sector: Technology (1 loss → OK; would be 2nd new Tech slot this week) — SECONDARY, enter only if spreads tight and NVDA filled cleanly
+
+### Risk Factors
+- **META stop proximity**: 2.69% cushion; equity offering confirmation would likely break $578 stop — monitor for news confirmation during session
+- **CPI June 10**: Hot print = yields spike = growth/tech selloff; avoid adding too much duration-sensitive tech exposure ahead of print
+- **Yields elevated**: Blowout NFP already repriced rates higher; environment is less accommodative for high-multiple growth
+- **AVGO sector headwind**: Semis broadly weaker; NVDA re-entry conviction rests on its unique GPU dominance vs diversified chip names
+- **2 tech ideas (NVDA + ORCL)**: Would bring Tech to 2 new positions in a sector with 1 existing loss — only enter ORCL as 3rd trade if conviction is high and tape is constructive
+- **Equity offering overhang**: META, potentially MSFT, AMZN all considering dilutive raises; Communication Services and Technology sectors could face intermittent selling pressure
+
+### Decision
+TRADE — Deployment gate mandatory (27.8% deployed, gate conditions not met). Target: 3 new positions to bring deployed to ~78–84%. Execution plan:
+1. **NVDA**: Enter at 9:35–9:40 open; confirm spread <1.5%; size ~$18–19K (~85 shares at $216); place 10% trail stop GTC immediately
+2. **GS**: Enter at 9:35–9:40; confirm live price + spread <1.5%; size ~$18–20K; place 10% trail stop GTC immediately
+3. **ORCL**: Enter only after NVDA + GS filled cleanly and tape constructive; size ~$18–19K; if spreads wide or tape soft, defer to midday scan
+If only 2 fill cleanly: still satisfies deployment gate; 3rd slot preserved for Tuesday.
