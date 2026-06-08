@@ -268,3 +268,51 @@ CONDITIONAL TRADE — **XOM only** if: (1) oil holds +2% or gains by 9:35 AM ope
 
 ### Decision
 HOLD — Friday jobs report + US-Iran geopolitical risk + AVGO tech sector headwind = unfavorable environment for final weekly trade slot. All three positions green with intact theses. NVDA stop proximity ($209.05 / 3.25% buffer) is the watch item — no action unless stop triggers. Preserve final slot for Mon/Tue next week when post-jobs tape clarity returns. Primary candidates next week: DHI (homebuilder, Consumer Discretionary) or XOM (energy) for sector diversification to close deployment gap toward 75–85% target.
+
+---
+
+## 2026-06-08 — Pre-market Research (inline)
+
+### Account
+- Equity: $105,841.07 | Cash: $76,771.83 | Deployed: $29,069.24 (27.5% — well below 75–85% target)
+- Buying power: $388,481.19 | Daytrade count: 0
+- Open positions: LLY (13 sh, +$1,042 / +7.43%), META (24 sh, −$669 / −4.56%)
+- Week trades: 2/3 used; 1 slot remaining
+- META near stop: current $584, stop $578.14 ($5.86 buffer)
+
+### Positions
+| Ticker | Shares | Entry | Current | Unrealized P&L | Stop |
+|--------|--------|-------|---------|----------------|------|
+| LLY | 13 | $1,078.65 | $1,158.81 | +$1,042.02 (+7.43%) | 10% trail GTC |
+| META | 24 | $610.88 | $584.00 | −$669.12 (−4.56%) | $578.14 GTC |
+
+### Market Context
+- S&P 500 futures: +0.6% — modest rebound after Friday's slide
+- Rising Mideast tensions; market open and rising
+- Nasdaq futures edging higher; risk-on tone
+- Deployment gate triggered: <60% deployed → MUST add ≥1 position (strategy rule 12); no VIX >22 or gap-down exclusion
+
+### Today's Catalysts
+- **MRVL (Marvell Technology)**: +9% premarket — added to S&P 500, effective June 22; forced index-fund buying through inclusion date; AI chip leader
+- **GLW (Corning)**: +9.3% premarket — Amazon multibillion optical fiber deal; SKIPPED (spread $179/$193 = 7.1%, too wide)
+- **MU (Micron)**: +7.1% premarket — AI/tech momentum; not researched in depth
+- **AAPL**: +0.36% — WWDC kicking off, modest
+- **META**: Arete Research upgrade to Buy, PT $735 (from $614) — but stock near stop, holding
+
+### Sector Assessment
+- Healthcare (LLY): Leading sector, OK — holding ✓
+- Communication Services (META): Lagging, near stop — watch
+- Technology (MRVL target): 1 consecutive loss (NVDA), Status OK — eligible
+
+### Trade Ideas
+1. **MRVL** (Technology) — S&P 500 inclusion (Jun 22) = forced index-fund buying catalyst; AI chip demand intact; premarket +9% confirms momentum; entry ~$285 market, stop 10% trail GTC (~$256.50), target $342 (+20%), R:R 2:1 | APPROVED
+2. **GLW** (Materials/Technology) — Amazon fiber deal is strong catalyst, but spread 7.1% — SKIPPED
+
+### Risk Factors
+- Buying after a 9% gap-up; partial reversal risk early session
+- 1 trade slot consumed — no more trades this week after this
+- META near stop — possible stop-out freeing cash but not a concern for entry sizing
+- Technology sector has 1 consecutive loss (NVDA); second loss would trigger EXIT
+
+### Decision
+TRADE — BUY MRVL 74 shares ~$285. S&P 500 inclusion is a durable 2-week catalyst with forced-buying tailwind. Deployment gate requires adding ≥1 position. This uses the final weekly trade slot. After fill: 10% trailing stop GTC immediately.

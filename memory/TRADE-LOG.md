@@ -1,7 +1,7 @@
 # Trade Log
 
 ## Week of 2026-05-25 | Trades: 2/3
-## Week of 2026-06-01 | Trades: 2/3
+## Week of 2026-06-01 | Trades: 3/3
 
 ## Day 0 — EOD Snapshot (pre-launch baseline)
 **Portfolio:** $100,000.00 | **Cash:** $100,000.00 (100%) | **Day P&L:** $0 | **Phase P&L:** $0
@@ -130,3 +130,18 @@ No positions yet. Bot launches tomorrow.
 | LLY | 13 | $1,078.65 | $1,131.50 | +0.55% | +$687.05 | $1,049.60 (HWM $1,166.23) |
 | META | 24 | $610.88 | $590.07 | -5.98% | -$499.44 | $578.14 (HWM $642.38) |
 **Notes:** NVDA trailing stop triggered today at ~$209.05 (70 shares), realizing ~-$217 loss and freeing ~$14.6K cash; META sold off -5.98% to $590.07, holding above stop $578.14 but only $11.93 cushion — watch closely Monday. Portfolio deployed 27.3% vs 75-85% target; pre-market Mon Jun 08 must identify 2-3 high-conviction entries to redeploy ~$50K.
+
+## 2026-06-08 — market-open trades
+
+| Field | MRVL |
+|-------|------|
+| Side | BUY |
+| Shares | 74 |
+| Entry | $286.90 |
+| Stop | 10% trailing GTC (~$258.78, HWM $287.53) |
+| Target | $344.28 (+20%) |
+| R:R | 2:1 |
+| Sector | Technology |
+| Thesis | S&P 500 index addition effective Jun 22 — forced index-fund buying through inclusion date; AI chip momentum +9% premarket on announcement; deployment gate required ≥1 new position (27.5% deployed < 60%) |
+| Buy Order | dc76e580 |
+| Stop Order | c8d4dfbf |
