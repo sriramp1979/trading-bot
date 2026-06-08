@@ -2,6 +2,7 @@
 
 ## Week of 2026-05-25 | Trades: 2/3
 ## Week of 2026-06-01 | Trades: 2/3
+## Week of 2026-06-08 | Trades: 1/3
 
 ## Day 0 — EOD Snapshot (pre-launch baseline)
 **Portfolio:** $100,000.00 | **Cash:** $100,000.00 (100%) | **Day P&L:** $0 | **Phase P&L:** $0
@@ -130,3 +131,26 @@ No positions yet. Bot launches tomorrow.
 | LLY | 13 | $1,078.65 | $1,131.50 | +0.55% | +$687.05 | $1,049.60 (HWM $1,166.23) |
 | META | 24 | $610.88 | $590.07 | -5.98% | -$499.44 | $578.14 (HWM $642.38) |
 **Notes:** NVDA trailing stop triggered today at ~$209.05 (70 shares), realizing ~-$217 loss and freeing ~$14.6K cash; META sold off -5.98% to $590.07, holding above stop $578.14 but only $11.93 cushion — watch closely Monday. Portfolio deployed 27.3% vs 75-85% target; pre-market Mon Jun 08 must identify 2-3 high-conviction entries to redeploy ~$50K.
+
+## 2026-06-08 — market-open trades
+
+| Field | MRVL |
+|-------|------|
+| Side | BUY |
+| Shares | 74 |
+| Entry | $286.90 |
+| Stop | 10% trailing GTC (HWM $304.96 → stop $274.46) |
+| Target | $344.28 (+20%) |
+| R:R | ~2:1 |
+| Sector | Technology (Semiconductors) |
+| Thesis | AI custom silicon demand; strong MRVL earnings catalyst; sector momentum in semis; redeployment from NVDA stop-out; 47.5% deployed vs 75-85% target |
+| Stop Order | c8d4dfbf |
+
+### Jun 08 — EOD Snapshot (Day 9, Monday)
+**Portfolio:** $105,797.85 | **Cash:** $55,540.97 (52.5%) | **Day P&L:** +$154.81 (+0.15%) | **Phase P&L:** +$5,797.85 (+5.80%)
+| Ticker | Shares | Entry | Close | Day Chg | Unrealized P&L | Stop |
+|--------|--------|-------|-------|---------|----------------|------|
+| LLY | 13 | $1,078.65 | $1,148.51 | +1.51% | +$908.18 | $1,064.46 (HWM $1,182.73) |
+| META | 24 | $610.88 | $585.41 | -1.28% | -$611.35 | $578.14 (HWM $642.38) |
+| MRVL | 74 | $286.90 | $287.52 | +9.13% | +$45.62 | $274.46 (HWM $304.96) |
+**Notes:** MRVL entered today at $286.90 (74 shares, ~$21.2K, Semiconductors), surging to HWM $304.96 intraday before settling at $287.52 with trailing stop at $274.46. LLY +1.51% to $1,148.51 with stop advanced to $1,064.46 (HWM $1,182.73); META -1.28% to $585.41, only $7.27 above stop $578.14 — exit likely on next down leg. Portfolio 47.5% deployed vs 75-85% target; 2 trade slots remain this week — identify 1-2 entries to close gap.
