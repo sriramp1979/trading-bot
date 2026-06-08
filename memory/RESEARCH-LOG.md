@@ -268,3 +268,14 @@ CONDITIONAL TRADE — **XOM only** if: (1) oil holds +2% or gains by 9:35 AM ope
 
 ### Decision
 HOLD — Friday jobs report + US-Iran geopolitical risk + AVGO tech sector headwind = unfavorable environment for final weekly trade slot. All three positions green with intact theses. NVDA stop proximity ($209.05 / 3.25% buffer) is the watch item — no action unless stop triggers. Preserve final slot for Mon/Tue next week when post-jobs tape clarity returns. Primary candidates next week: DHI (homebuilder, Consumer Discretionary) or XOM (energy) for sector diversification to close deployment gap toward 75–85% target.
+
+## 2026-06-08 — Midday Addendum
+
+### MRVL — S&P 500 Inclusion + Earnings Beat (+14% intraday)
+- **S&P 500 inclusion** announced today, effective June 22 — index fund forced buying ahead
+- **Q1 FY27 earnings**: Revenue $2.418B (+28% YoY), non-GAAP EPS $0.80; beat expectations
+- **Q2 guidance**: $2.7B (+35% YoY); FY27-28 outlook raised on AI data center ramp
+- **New product**: Teralynx T100 (102.4 Tbps AI switch chip) — sampling this quarter
+- **Position status**: Entry $286.90 → current $300.60 (+4.77%), HWM $304.96, stop $274.46 (10% trail)
+- **Thesis**: Intact and strengthened. No tightening yet (below +15% threshold). Hold.
+- **Note**: Valuation extended (P/E 99x vs 5yr median 30x) — monitor for reversal if AI sentiment shifts
