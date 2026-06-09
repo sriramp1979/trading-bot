@@ -168,3 +168,12 @@ No positions yet. Bot launches tomorrow.
 | Sector | Healthcare |
 | Thesis | LLY Phase 3 retatrutide obesity data (ADA Jun 6) lifts GLP-1 sector; NVO Ozempic/Wegovy sympathy catalyst; Healthcare sector OK (0 losses); deployment gate (47.7% deployed < 60%, VIX 19 < 22, futures +0.5%) |
 | Stop Order | 76c62674 |
+
+### Jun 09 — EOD Snapshot (Day 10, Tuesday)
+**Portfolio:** $105,178.75 | **Cash:** $54,672.49 (52.0%) | **Day P&L:** -$619.10 (-0.59%) | **Phase P&L:** +$5,178.75 (+5.18%)
+| Ticker | Shares | Entry | Close | Day Chg | Unrealized P&L | Stop |
+|--------|--------|-------|-------|---------|----------------|------|
+| LLY | 13 | $1,078.65 | $1,144.68 | -0.39% | +$858.39 | $1,064.46 (HWM $1,182.73) |
+| META | 24 | $610.88 | $585.36 | -0.01% | -$612.48 | $578.14 (HWM $642.38) |
+| NVO | 513 | $41.27 | $42.06 | +2.54% | +$404.19 | $38.08 (HWM $42.31) |
+**Notes:** MRVL trailing stop triggered today, exiting 74 shares and freeing ~$20K cash; NVO entered at $41.27 closing +2.54% at $42.06 with stop advancing to $38.08 (HWM $42.31). META flat at $585.36 with only $7.22 cushion above stop $578.14 — exit likely on next down leg; loss would free ~$14K. Portfolio 48% deployed vs 75-85% target; 1 trade slot remains this week — add 1 high-conviction entry Wednesday/Thursday to close gap.
