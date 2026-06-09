@@ -2,7 +2,7 @@
 
 ## Week of 2026-05-25 | Trades: 2/3
 ## Week of 2026-06-01 | Trades: 2/3
-## Week of 2026-06-08 | Trades: 1/3
+## Week of 2026-06-08 | Trades: 2/3
 
 ## Day 0 — EOD Snapshot (pre-launch baseline)
 **Portfolio:** $100,000.00 | **Cash:** $100,000.00 (100%) | **Day P&L:** $0 | **Phase P&L:** $0
@@ -154,3 +154,17 @@ No positions yet. Bot launches tomorrow.
 | META | 24 | $610.88 | $585.41 | -1.28% | -$611.35 | $578.14 (HWM $642.38) |
 | MRVL | 74 | $286.90 | $287.52 | +9.13% | +$45.62 | $274.46 (HWM $304.96) |
 **Notes:** MRVL entered today at $286.90 (74 shares, ~$21.2K, Semiconductors), surging to HWM $304.96 intraday before settling at $287.52 with trailing stop at $274.46. LLY +1.51% to $1,148.51 with stop advanced to $1,064.46 (HWM $1,182.73); META -1.28% to $585.41, only $7.27 above stop $578.14 — exit likely on next down leg. Portfolio 47.5% deployed vs 75-85% target; 2 trade slots remain this week — identify 1-2 entries to close gap.
+
+## 2026-06-09 — market-open trades
+
+| Field | NVO |
+|-------|-----|
+| Side | BUY |
+| Shares | 513 |
+| Entry | $41.27 |
+| Stop | 10% trailing GTC (HWM $41.39 → stop $37.25) |
+| Target | $49.53 (+20%) |
+| R:R | ~2:1 |
+| Sector | Healthcare |
+| Thesis | LLY Phase 3 retatrutide obesity data (ADA Jun 6) lifts GLP-1 sector; NVO Ozempic/Wegovy sympathy catalyst; Healthcare sector OK (0 losses); deployment gate (47.7% deployed < 60%, VIX 19 < 22, futures +0.5%) |
+| Stop Order | 76c62674 |

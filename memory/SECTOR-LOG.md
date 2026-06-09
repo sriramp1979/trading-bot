@@ -4,7 +4,7 @@
 | Sector | Tickers Held | Consecutive Losses | Status |
 |--------|-------------|-------------------|--------|
 | Technology | — | 1 | OK |
-| Healthcare | LLY | 0 | OK |
+| Healthcare | LLY, NVO | 0 | OK |
 | Communication Services | META | 0 | OK |
 
 ## Sector Exit History
