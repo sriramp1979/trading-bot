@@ -27,99 +27,7 @@ Format each entry:
 ### Decision
 TRADE or HOLD (default HOLD if no edge)
 
---- TRIMMED 2026-06-05 ---
-
-## 2026-06-01 — Pre-market Research
-
-### Account
-- Equity: $100,653.27 | Cash: $71,126.87 | Deployed: $29,526.40 (29.3% — below 75–85% target)
-- Buying power: $171,780.14 | Daytrade count: 0
-- Open positions: LLY (13 sh, +$174.66 / +1.25%), NVDA (70 sh, +$482.82 / +3.25%)
-- Stops active: LLY 10% trail GTC (HWM ~$1,149) | NVDA 10% trail GTC (HWM ~$217.86)
-- Week trades: 0/3 (new week reset)
-
-### Positions
-| Ticker | Shares | Entry | Current | Unrealized P&L | Stop |
-|--------|--------|-------|---------|----------------|------|
-| LLY | 13 | $1,078.65 | $1,092.09 | +$174.66 (+1.25%) | 10% trail GTC |
-| NVDA | 70 | $212.15 | $219.05 | +$482.82 (+3.25%) | 10% trail GTC |
-
-### Market Context
-- Nasdaq futures rising on record May run; S&P at all-time highs
-- Key catalyst: Jensen Huang/NVIDIA announced new PC chip → IBM +12%, ServiceNow +10%, HPE surging premarket; Qualcomm −9.6% (direct competitor impact)
-- Taylor Morrison Home (TMHC) +22.3% on Berkshire all-cash acquisition — not actionable (already priced in)
-- Energy sector YTD leader +22%; Iran tensions disrupting Strait of Hormuz → oil prices rising
-- Technology, Industrials, Materials leading; Healthcare weakening in momentum terms
-
-### Position News
-- **NVDA**: +3.7% today on Jensen Huang new PC chip announcement — thesis accelerating; analyst avg PT $296–309; ex-div Jun 4 ($0.25)
-- **LLY**: −1.2% today giving back Thursday surge; thesis intact (GLP-1, CVS formulary win)
-
-### Trade Ideas
-1. **HPE** (Technology) — Direct beneficiary of NVDA's new PC chip announcement; premarket surge confirmed; sector OK (0 consecutive losses); entry ~$45 market, stop 10% trail (~$40.50), target $54 (+20%), R:R 2:1
-2. **XOM** (Energy) — Leading sector YTD +22%, Iran/oil catalyst — SKIPPED: bid/ask spread 5.3% ($139.65/$147.44), too wide at open
-3. **AMD** (Technology) — AI momentum, 70% 1Y return — SKIPPED: spread 3.1% ($494/$510), too wide at open
-4. **NOW** (Technology) — +10% premarket on NVDA catalyst — SKIPPED: quote anomalous ($136/$140 vs historical pricing)
-
-### Risk Factors
-- Market at ATH — chasing gap-ups carries reversal risk; HPE gap already partially realized premarket
-- Technology sector concentration (NVDA + HPE = 2 tech positions)
-- Deployment remains low even after 1 trade (~49%); need 2 more positions this week
-- Wide spreads across energy/semiconductor names suggest early-session illiquidity
-
-### Decision
-BUY HPE — 440 shares ~$45 (~$19,800, 19.7% of equity). Clear catalyst, acceptable spread, fresh tech sub-sector (PC infrastructure vs AI data-center NVDA). Preserve 2 trade slots for energy/diversification later this week once spreads tighten.
-
----
-
-## 2026-06-02 — Pre-market Research
-
-### Account
-- Equity: $107,366.12 | Cash: $51,359.42 | Deployed: $56,006.70 (52.2% — below 75–85% target)
-- Buying power: $158,725.54 | Daytrade count: 0
-- Open positions: HPE (440 sh, +$6,236.55 / +31.55%), NVDA (70 sh, +$1,138.02 / +7.66%), LLY (13 sh, −$8.45 / −0.06%)
-- Week trades: 1/3 used (HPE Jun 1); 2 slots remaining
-
-### Positions
-| Ticker | Shares | Entry | Current | Unrealized P&L | Stop | HWM |
-|--------|--------|-------|---------|----------------|------|-----|
-| HPE | 440 | $44.926 | $59.10 | +$6,236.55 (+31.55%) | $43.17 ⚠️ LAGGING | $47.97 |
-| NVDA | 70 | $212.15 | $228.41 | +$1,138.02 (+7.66%) | $202.38 (10% trail) | $224.87 |
-| LLY | 13 | $1,078.65 | $1,078.00 | −$8.45 (−0.06%) | $1,034.19 (10% trail) | $1,149.10 |
-
-⚠️ **ACTION REQUIRED — HPE stop**: HWM stuck at $47.97, stop $43.17 vs current $59.10. Correct stop = $53.19 (10% below current). Cancel order 916de16b and replace with new 10% trailing GTC before open.
-
-### Market Context
-- S&P 500 futures: −0.07% (flat/slightly lower); geopolitical uncertainty weighing; 48% Polymarket probability of green open
-- VIX: ~16.05 (Jun 1 close, +4.77%) — moderate/elevated; risk-off undertone
-- Oil: WTI +5.93%, Brent +4.24% — Iran threatening to block Strait of Hormuz → energy names bid
-- JOLTS job openings data today; NFP Friday — macro data could reprice Fed expectations
-- COMPUTEX 2026 (Jun 2–5, Taipei): Jensen Huang keynote today; RTX Spark chip (AI for laptops) announced; DSX factory playbook revealed
-- Earnings today: PANW (after close), DG, ULTA, VSCO; Earnings Wed: AVGO (Broadcom — key AI read-through)
-
-### Position News
-- **HPE**: Blowout Q2 2026 — EPS $0.79 vs $0.54 est (+46% beat); Rev $10.68B vs $9.89B est; AI systems orders $1.8B record backlog; networking up double-digits; raised FY2026 EPS guidance $3.35–$3.45. Thesis accelerating — AI server demand outpacing estimates.
-- **NVDA**: Computex keynote today; RTX Spark chip expands AI to PC market; ex-div Jun 4 ($0.25/sh); analyst avg PT $296.81 (+30% upside from $228). Thesis intact and catalyst-rich week.
-- **LLY**: Thesis intact — CVS Caremark reinstating Zepbound as preferred commercial formulary (Oct 1); France first EU country to reimburse obesity meds (mid-Jun); BoA PT raised to $1,251 (+16% upside from $1,078). Stock flat; consolidating after May +14% run.
-
-### Trade Ideas
-1. **XOM** (Energy) — WTI +5.93% on Iran/Hormuz; Energy sector not held (status OK); new-sector diversification reduces Tech concentration; entry $115–117, stop 10% trail GTC (~$104), target +20% (~$140), R:R 2:1 | Sector: Energy — PRIMARY WATCHLIST
-2. **PANW** (Technology) — Reports earnings tonight; cybersecurity demand rising on geopolitical tensions; pre-earnings momentum; entry settle 9:35–9:45, stop −10%, target +20%, R:R 2:1 | Sector: Technology (would be 3rd Tech slot — concentration risk; avoid unless spread tight)
-3. **AVGO** (Technology) — Reports earnings Wed Jun 4; AI infrastructure play adjacent to NVDA/HPE thesis; conditional on pre-earnings pullback to support; stop −10%, target +20%, R:R 2:1 | Sector: Technology
-
-### Risk Factors
-- Iran/Hormuz escalation → oil spike risks broader inflation repricing; market not fully pricing conflict risk
-- HPE trailing stop severely lagging — must fix before open or gap-reversal risk unprotected (~$4,400 excess exposure)
-- VIX 16+ and rising → uncertainty elevated; poor time to add risk-on positions
-- JOLTS today + NFP Friday → data-driven vol spikes possible
-- Tech overconcentration: NVDA + HPE already = 2/5–6 max positions (33%+ of book in one sector)
-- NVDA ex-div Jun 4 → potential post-Computex sell-the-news pressure
-- Deployment 52.2% — below target, but adding into geopolitical uncertainty = poor R:R
-
-### Decision
-HOLD — fix HPE stop first (urgent operational priority). Geopolitical uncertainty + elevated VIX + JOLTS data today = unfavorable entry environment. XOM is primary candidate if oil holds gains and market stabilizes mid-session; will reassess at midday scan. Preserve 2 trade slots.
-
----
+--- TRIMMED 2026-06-09 ---
 
 ## 2026-06-03 — Pre-market Research
 
@@ -268,3 +176,54 @@ CONDITIONAL TRADE — **XOM only** if: (1) oil holds +2% or gains by 9:35 AM ope
 
 ### Decision
 HOLD — Friday jobs report + US-Iran geopolitical risk + AVGO tech sector headwind = unfavorable environment for final weekly trade slot. All three positions green with intact theses. NVDA stop proximity ($209.05 / 3.25% buffer) is the watch item — no action unless stop triggers. Preserve final slot for Mon/Tue next week when post-jobs tape clarity returns. Primary candidates next week: DHI (homebuilder, Consumer Discretionary) or XOM (energy) for sector diversification to close deployment gap toward 75–85% target.
+
+---
+
+## 2026-06-09 — Pre-market Research
+
+### Account
+- Equity: $107,162.40 | Cash: $55,540.96 | Deployed: $51,621.44 (48.2% — below 75–85% target)
+- Buying power: $162,703.36 (reg T) | Daytrade count: 0
+- Open positions: LLY (13 sh), META (24 sh), MRVL (74 sh)
+- Week trades: 1/3 used (MRVL Jun 8); 2 slots remaining
+
+### Positions
+| Ticker | Shares | Entry | Current | Unrealized P&L | Stop | HWM |
+|--------|--------|-------|---------|----------------|------|-----|
+| LLY | 13 | $1,078.65 | $1,160.70 | +$1,066.65 (+7.6%) | $1,064.46 (10% trail) | $1,182.73 |
+| META | 24 | $610.88 | $589.75 | −$507.12 (−3.46%) | $578.14 (10% trail) ⚠️ | $642.38 |
+| MRVL | 74 | $286.90 | $302.41 | +$1,147.48 (+5.4%) | $274.46 (10% trail) | $304.96 |
+
+⚠️ **META alert**: only $11.61 cushion above stop $578.14 (1.96% buffer) — exit likely on any down leg.
+
+### Market Context
+- S&P 500 futures: +0.35% to +0.71% (bullish premarket; ESM26 +0.71%)
+- VIX: ~19.04 (prev close 21.51 Jun 8) — declining from Monday; moderate/easing
+- Today's catalysts:
+  - **MRVL S&P 500 inclusion**: Added to S&P 500 replacing Campbell's/Pool Corp, effective Jun 22 — massive passive demand catalyst; MRVL surged 10.49% premarket
+  - **Apple WWDC 2026**: AI-powered Siri unveiled Monday — AI tech sector momentum
+  - **Amazon/Corning deal**: Multibillion optical fiber agreement for AWS data centers — AI infrastructure buildout
+  - **SpaceX IPO**: Roadshow; first trade next Friday — investor attention; capital raising from recent winners
+- CPI data tomorrow (Jun 10): key macro event; potential volatility catalyst — avoid overcommitting today
+- Earnings before open: none major
+
+### Position News
+- **MRVL**: S&P 500 inclusion announced (effective Jun 22); +10.49% premarket — index passive demand will drive buying through Jun 22. HWM $304.96 may be breached at open, advancing stop. At +15% entry ($329.94): tighten trail to 7%. At +20% entry ($344.28): tighten to 5%.
+- **LLY**: Phase 3 retatrutide (triple-agonist obesity drug) data presented at ADA 86th Scientific Sessions Jun 6 — positive results; LLY +2.1% premarket. GLP-1 thesis accelerating. Next tighten at +20% ($1,294.38 — not yet reached).
+- **META**: No positive catalyst; still trading well below HWM $642.38; stop $578.14 is 1.96% below current $589.75 — fragile. Any market weakness likely triggers exit.
+
+### Trade Ideas
+1. **NVO (Novo Nordisk)** — Healthcare — LLY's Phase 3 retatrutide data lifts entire GLP-1/obesity sector; NVO's Ozempic/Wegovy directly competitive; sympathy catalyst; sector OK (0 losses); entry ~market open 9:35 AM, stop 10% trail GTC, target +20%, R:R 2:1 | NEW sector position in Healthcare alongside LLY — acceptable (different company, different drug)
+2. **AAPL (Apple)** — Technology — WWDC 2026 AI Siri launch; AI PC + device integration narrative; sector OK (1 loss); would be 2nd Tech slot alongside MRVL; entry 9:35–9:45 AM settle (not the gap spike), stop 10% trail GTC, target +20%, R:R 2:1 | Risk: WWDC "sell the news" pattern historically common
+3. **AMZN (Amazon)** — Consumer Discretionary — AI data center expansion (Corning optical fiber deal); AWS cloud demand; new sector (no current exposure); entry ~9:35–9:45 AM, stop 10% trail GTC, target +20%, R:R 2:1 | Backup if NVO/AAPL spreads too wide
+
+### Risk Factors
+- **META stop fragility**: $578.14 stop with only 1.96% buffer — watch closely at open; if market dips, META likely exits, freeing ~$14K cash
+- **MRVL position sizing**: Currently $22,378 (20.9% of equity) — slightly over 20% limit; cannot add shares; stop likely advances today as HWM exceeded
+- **CPI tomorrow (Jun 10)**: Avoid deploying all remaining cash today; preserve 1 slot post-CPI
+- **Deployment gate rule (Rule 12)**: 48.2% deployed < 60% + VIX 19 (< 22) + futures +0.5% (no −2% gap) → **MUST add ≥1 position today**
+- **VIX 19**: Moderate; elevated vs recent lows but below 22 threshold; manageable
+- **MRVL gap-up**: If MRVL opens above $304.96 (HWM), update trailing stop HWM accordingly; monitor for tighten triggers
+
+### Decision
+TRADE — Deployment gate requires ≥1 new entry (48.2% < 60%, VIX < 22, futures positive). **PRIMARY: NVO** — clearest catalyst (LLY obesity data direct sector lift, Healthcare 0 losses, new name). **SECONDARY: AAPL** — if NVO spread is wide or gaps too far, entry settle only (not the spike). Preserve 1 slot for post-CPI opportunities (Jun 10). Target deployed ~65-70% after 1-2 entries.
