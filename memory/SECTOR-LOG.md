@@ -6,6 +6,7 @@
 | Technology | — | 1 | OK |
 | Healthcare | LLY, NVO | 0 | OK |
 | Communication Services | META | 0 | OK |
+| Consumer Discretionary | AMZN | 0 | OK |
 
 ## Sector Exit History
 | Sector | Exit Date | Reason |

@@ -2,7 +2,7 @@
 
 ## Week of 2026-05-25 | Trades: 2/3
 ## Week of 2026-06-01 | Trades: 2/3
-## Week of 2026-06-08 | Trades: 2/3
+## Week of 2026-06-08 | Trades: 3/3
 
 ## Day 0 — EOD Snapshot (pre-launch baseline)
 **Portfolio:** $100,000.00 | **Cash:** $100,000.00 (100%) | **Day P&L:** $0 | **Phase P&L:** $0
@@ -177,3 +177,17 @@ No positions yet. Bot launches tomorrow.
 | META | 24 | $610.88 | $585.36 | -0.01% | -$612.48 | $578.14 (HWM $642.38) |
 | NVO | 513 | $41.27 | $42.06 | +2.54% | +$404.19 | $38.08 (HWM $42.31) |
 **Notes:** MRVL trailing stop triggered today, exiting 74 shares and freeing ~$20K cash; NVO entered at $41.27 closing +2.54% at $42.06 with stop advancing to $38.08 (HWM $42.31). META flat at $585.36 with only $7.22 cushion above stop $578.14 — exit likely on next down leg; loss would free ~$14K. Portfolio 48% deployed vs 75-85% target; 1 trade slot remains this week — add 1 high-conviction entry Wednesday/Thursday to close gap.
+
+## 2026-06-10 — market-open trades
+
+| Field | AMZN |
+|-------|------|
+| Side | BUY |
+| Shares | 86 |
+| Entry | $242.63 |
+| Stop | 10% trailing GTC (HWM $242.47 → stop $218.22) |
+| Target | $291.16 (+20%) |
+| R:R | ~2:1 |
+| Sector | Consumer Discretionary |
+| Thesis | AWS AI infrastructure expansion (Corning optical fiber deal); CPI 4.2% in-line (matched expectations), tape stable; new sector diversification; deployment gate (48% → 68% deployed, VIX <22) |
+| Stop Order | b76fb659 |
