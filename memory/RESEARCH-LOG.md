@@ -27,7 +27,7 @@ Format each entry:
 ### Decision
 TRADE or HOLD (default HOLD if no edge)
 
---- TRIMMED 2026-06-09 ---
+--- TRIMMED 2026-06-10 ---
 
 ## 2026-06-03 — Pre-market Research
 
@@ -227,3 +227,60 @@ HOLD — Friday jobs report + US-Iran geopolitical risk + AVGO tech sector headw
 
 ### Decision
 TRADE — Deployment gate requires ≥1 new entry (48.2% < 60%, VIX < 22, futures positive). **PRIMARY: NVO** — clearest catalyst (LLY obesity data direct sector lift, Healthcare 0 losses, new name). **SECONDARY: AAPL** — if NVO spread is wide or gaps too far, entry settle only (not the spike). Preserve 1 slot for post-CPI opportunities (Jun 10). Target deployed ~65-70% after 1-2 entries.
+
+---
+
+## 2026-06-10 — Pre-market Research
+
+### Account
+- Equity: $104,865.64 | Cash: $54,672.46 | Deployed: $50,193.18 (47.8% — below 75–85% target)
+- Buying power: $159,538.10 (reg T) | Daytrade count: 0
+- Open positions: LLY (13 sh), META (24 sh), NVO (513 sh)
+- Week trades: 2/3 used (MRVL Jun 8, NVO Jun 9); 1 slot remaining
+
+### Positions
+| Ticker | Shares | Entry | Current | Unrealized P&L | Stop | HWM |
+|--------|--------|-------|---------|----------------|------|-----|
+| LLY | 13 | $1,078.65 | $1,146.06 | +$876.33 (+6.25%) | $1,064.46 (10% trail) | $1,182.73 |
+| META | 24 | $610.88 | $581.40 | −$707.52 (−4.83%) | $578.14 (10% trail) ⚠️ | $642.38 |
+| NVO | 513 | $41.27 | $41.60 | +$168.21 (+0.79%) | $38.08 (10% trail) | $42.31 |
+
+⚠️ **META critical**: only $3.26 above stop $578.14 (0.56% buffer) — stop-out near certain today.
+
+### Market Context
+- S&P 500 futures: −0.47% premarket; Polymarket 22% prob opens higher — strongly bearish lean
+- VIX: ~20.45 (Jun 9 close, +8.09% on day) — elevated and rising; risk-off conditions
+- Today's catalysts:
+  - **CPI (May, 8:30 AM ET)**: Expected 4.2% YoY — first reading above 4% since May 2023; dominant market-moving event
+  - **US-Iran military strikes**: US launched "self-defense strikes" overnight after Iranian forces downed US Apache helicopter over Strait of Hormuz — fragile ceasefire broken; geopolitical escalation risk
+  - **Oracle (ORCL) earnings today**: Key AI cloud spending barometer; AI narrative read-through
+  - **ECB rate decision Thursday**: Analysts expect rate hike — upward pressure on US yields
+  - **3-year note auction today / 10-year tomorrow**: Bond market stress with elevated yields
+  - **SpaceX IPO next Friday**: Capital rotation risk from recent winners
+- Earnings before open: none major; Oracle earnings after close
+
+### Position News
+- **LLY**: Jefferies raised PT to $1,350 (from $1,330); Phase 3 ACHIEVE program data strong; retatrutide obesity thesis intact and accelerating; premarket resilient — thesis strengthening
+- **META**: −6.25% past week, −10% YTD; EU ordered free WhatsApp access for rival AI chatbots (regulatory headwind); current $581.40 vs stop $578.14 = 0.56% buffer ⚠️; stop-out nearly certain at open; realized loss ~−$707; Communication Services 1st loss (does NOT trigger sector exit — need 2 consecutive)
+- **NVO**: ADA 2026 — CagriSema (REIMAGINE Phase 3) data presented; DKK 15B share buyback active; analyst target $47.12 (+13% upside); −1.40% intraday yesterday; GLP-1 thesis intact but macro CPI risk is headwind
+
+### Trade Ideas
+1. **MSFT (Microsoft)** — Technology — Azure AI cloud momentum; Copilot enterprise monetization accelerating; sector OK (1 loss); entry ~$472–475 post-CPI settle (~9:45 AM) ONLY if CPI ≤ 4.0%; stop 10% trail GTC (~$426), target +20% (~$567), R:R 2:1 | **CONDITIONAL on benign CPI**
+2. **AMZN (Amazon)** — Consumer Discretionary — AWS AI infrastructure expansion (Corning optical fiber deal); new sector (no current exposure = diversification); entry ~$238–242 post-CPI settle, stop 10% trail GTC (~$215), target +20% (~$288), R:R 2:1 | **CONDITIONAL on benign CPI** — backup to MSFT
+3. *(Reserve)* — If META stops out (~$14K freed) and CPI benign, 1 entry slot available; pick from above two
+
+### Risk Factors
+- **CPI (May, 4.2% expected)**: Hot print = first above 4% since May 2023; rate hike fears; VIX likely spikes above 22 (→ deployment gate exempt); broad equity selloff risk
+- **Iran military strikes**: Crude oil spike risk; geopolitical escalation; growth stocks headwind
+- **META stop (0.56% buffer)**: Virtually guaranteed stop-out today; −$707 realized loss; watch for slippage below $578.14
+- **VIX ~20.45 and rising**: Approaching deployment gate VIX > 22 threshold; may exempt gate post-CPI
+- **Futures −0.47%**: Risk-off open; avoid chasing
+- **Deployment gate**: 47.8% < 60% with VIX < 22 and futures gap > −2% → technically active; but CPI event overrides — await 8:30 AM print before any action
+- **1 trade slot remaining** this week — must not waste on low-conviction entry before CPI clarity
+
+### Decision
+HOLD pre-CPI — **CPI (8:30 AM ET) is the dominant event**. Deploying before the print violates risk discipline given geopolitical + inflation double risk. Post-CPI decision tree:
+- CPI ≤ 4.0% (benign): Enter MSFT ~9:45 AM post-settle; deployment gate requires action
+- CPI 4.0–4.2% (in-line): Pause; assess VIX reaction; enter AMZN only if tape stable
+- CPI ≥ 4.3% (hot): VIX likely > 22 → deployment gate exempt; HOLD all day
+META stop-out today is acceptable — frees ~$14K, reduces risk into volatile tape. 1 slot, 1 shot — deploy only into high-conviction post-CPI setup.
