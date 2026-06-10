@@ -191,3 +191,12 @@ No positions yet. Bot launches tomorrow.
 | Sector | Consumer Discretionary |
 | Thesis | AWS AI infrastructure expansion (Corning optical fiber deal); CPI 4.2% in-line (matched expectations), tape stable; new sector diversification; deployment gate (48% → 68% deployed, VIX <22) |
 | Stop Order | b76fb659 |
+
+### Jun 10 — EOD Snapshot (Day 11, Wednesday)
+**Portfolio:** $104,833.10 | **Cash:** $47,674.68 (45.5%) | **Day P&L:** -$345.65 (-0.33%) | **Phase P&L:** +$4,833.10 (+4.83%)
+| Ticker | Shares | Entry | Close | Day Chg | Unrealized P&L | Stop |
+|--------|--------|-------|-------|---------|----------------|------|
+| AMZN | 86 | $242.63 | $237.40 | -2.78% | -$449.78 | $218.55 (HWM $242.83) |
+| LLY | 13 | $1,078.65 | $1,135.51 | -0.80% | +$739.18 | $1,064.46 (HWM $1,182.73) |
+| NVO | 513 | $41.27 | $42.83 | +1.52% | +$799.20 | $39.63 (HWM $44.03) |
+**Notes:** META trailing stop triggered today at ~$578, exiting 24 shares for ~-$612 realized loss; AMZN entered at $242.63 but pulled back -2.78% to $237.40 with stop at $218.55 (HWM $242.83). NVO accelerated to $42.83 (+1.52%), stop advancing to $39.63 (HWM $44.03); LLY holding at $1,135.51 with ample cushion above stop $1,064.46. Weekly limit 3/3 reached — no new entries until next week; hold all positions and let stops manage risk.
