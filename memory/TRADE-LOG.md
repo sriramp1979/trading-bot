@@ -200,3 +200,14 @@ No positions yet. Bot launches tomorrow.
 | LLY | 13 | $1,078.65 | $1,135.51 | -0.80% | +$739.18 | $1,064.46 (HWM $1,182.73) |
 | NVO | 513 | $41.27 | $42.83 | +1.52% | +$799.20 | $39.63 (HWM $44.03) |
 **Notes:** META trailing stop triggered today at ~$578, exiting 24 shares for ~-$612 realized loss; AMZN entered at $242.63 but pulled back -2.78% to $237.40 with stop at $218.55 (HWM $242.83). NVO accelerated to $42.83 (+1.52%), stop advancing to $39.63 (HWM $44.03); LLY holding at $1,135.51 with ample cushion above stop $1,064.46. Weekly limit 3/3 reached — no new entries until next week; hold all positions and let stops manage risk.
+
+## 2026-06-11 — no trades (weekly limit 3/3)
+
+### Jun 11 — EOD Snapshot (Day 12, Thursday)
+**Portfolio:** $106,048.11 | **Cash:** $47,674.66 (44.9%) | **Day P&L:** +$1,215.01 (+1.16%) | **Phase P&L:** +$6,048.11 (+6.05%)
+| Ticker | Shares | Entry | Close | Day Chg | Unrealized P&L | Stop |
+|--------|--------|-------|-------|---------|----------------|------|
+| AMZN | 86 | $242.63 | $241.60 | +1.51% | -$88.58 | $218.55 (HWM $242.83) |
+| LLY | 13 | $1,078.65 | $1,160.95 | +2.16% | +$1,069.90 | $1,064.46 (HWM $1,182.73) |
+| NVO | 513 | $41.27 | $43.90 | +2.55% | +$1,348.11 | $39.70 (HWM $44.11) |
+**Notes:** All 3 positions rallied: LLY +2.16% to $1,160.95, NVO +2.55% to $43.90 (stop advancing to $39.70, HWM $44.11), AMZN recovered +1.51% to $241.60 but still below entry. Weekly limit 3/3 reached — no new entries until Monday; monitor stops and let winners run.
