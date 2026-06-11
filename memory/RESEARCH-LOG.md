@@ -27,57 +27,8 @@ Format each entry:
 ### Decision
 TRADE or HOLD (default HOLD if no edge)
 
---- TRIMMED 2026-06-10 ---
 
-## 2026-06-03 — Pre-market Research
-
-### Account
-- Equity: $106,113.58 | Cash: $76,800.14 | Deployed: $29,313.44 (27.6% — well below 75–85% target)
-- Buying power: $182,913.72 | Daytrade count: 0
-- Open positions: LLY (13 sh, −$179.01 / −1.28%), NVDA (70 sh, +$619.32 / +4.17%)
-- Week trades: 1/3 used (HPE Jun 1 entry/Jun 2 exit); 2 slots remaining
-
-### Positions
-| Ticker | Shares | Entry | Current | Unrealized P&L | Stop | HWM |
-|--------|--------|-------|---------|----------------|------|-----|
-| LLY | 13 | $1,078.65 | $1,064.88 | −$179.01 (−1.28%) | $1,034.19 (10% trail) ⚠️ 2.9% buffer | $1,149.10 |
-| NVDA | 70 | $212.15 | $221.00 | +$619.32 (+4.17%) | $209.05 (10% trail) | $232.28 |
-
-### Market Context
-- S&P 500 futures: S&P closed at record 7,609.78 on Jun 2 (first close above 7,600); AI/chip rally intact; Iran peace deal → oil −10% → lower inflation → bullish growth stocks
-- VIX: 15.77 (Jun 2 close) — very low/benign; risk-on environment
-- Today's catalysts:
-  - **AVGO (Broadcom)** earnings today — key AI chip/networking read-through; AI custom chip + Ethernet fabric for hyperscalers
-  - ADP Employment Change (macro data)
-  - ISM Non-Manufacturing Index + Factory Orders
-  - EIA Crude Oil Inventories
-  - Iran peace deal confirmed → oil prices declining → favorable for growth/tech valuations
-  - Computex 2026 week (Jun 2–5) — ongoing AI chip announcements
-
-### Position News
-- **LLY**: Q1 EPS $8.55 beat by +25% vs est $6.85; rev +56% YoY; FY2026 guidance raised +$2B to $82–85B; $1.26B licensing deal signed Jun 1 (Hanmi Pharma intestinal treatment); stock range today $1,052–$1,082 — consolidating; thesis intact but stop is tight (2.9% buffer)
-- **NVDA**: Vera Rubin custom CPU for agentic AI computing announced at Computex; committed 50%+ FCF return to shareholders; analyst consensus Buy, avg PT $298.32 (+35% upside); ex-div Jun 4 ($0.25/sh)
-
-### Trade Ideas
-1. **META** (Communication Services) — AI-monetized ad revenue compounding; new sector = diversification from Tech/Healthcare book; VIX 15.77 = ideal risk-on entry; entry 9:35–9:45 AM open ~$685, stop 10% trail GTC (~$617), target +20% (~$822), R:R 2:1 | Sector: Communication Services — PRIMARY
-2. **AVGO** (Technology) — Earnings catalyst today; AI custom chips + Ethernet networking for hyperscalers; conditional entry ONLY on confirmed beat + gap-settle 9:35–10:00 AM; entry ~$265 gap-settle, stop 10% trail GTC (~$239), target +20% (~$318), R:R 2:1 | Sector: Technology (3rd tech slot — concentration risk; only if spread tight)
-3. **AMD** (Technology) — AI/data center GPU momentum with Computex tailwind; lower-conviction backup if AVGO spread is wide; entry ~$160, stop 10% trail (~$144), target +20% (~$192), R:R 2:1 | Sector: Technology
-
-### Risk Factors
-- LLY only 2.9% above stop ($1,034.19) — intraday weakness could trigger exit; monitor closely
-- Tech concentration risk: adding AVGO = 3 Tech positions (NVDA + AVGO + possible AMD); stay at 2 Tech max unless AVGO is strong isolated catalyst
-- ADP + ISM today → macro miss could pressure broad market
-- AVGO earnings binary — do NOT buy pre-open; wait for confirmed post-earnings gap-settle
-- NVDA ex-div tomorrow (Jun 4) → minor sell-the-news pressure possible
-- Deployment urgency (27.6%) — need to act this week but not into poor setups
-
-### Decision
-TRADE — 2 entries planned this week using both remaining slots:
-1. **META** at open (primary, new sector, ~$15K / 14% of equity) — no earnings binary risk
-2. **AVGO** conditional on confirmed post-earnings gap-settle (secondary, ~$15K / 14%) — skip if gap >+3% or spread wide
-Combined deployment after both: ~$59K (55.6%) — still below target but meaningful progress; reassess adding 1 more at midday if tape holds.
-
----
+--- TRIMMED 2026-06-11 ---
 
 ## 2026-06-04 — Pre-market Research
 
@@ -284,3 +235,53 @@ HOLD pre-CPI — **CPI (8:30 AM ET) is the dominant event**. Deploying before th
 - CPI 4.0–4.2% (in-line): Pause; assess VIX reaction; enter AMZN only if tape stable
 - CPI ≥ 4.3% (hot): VIX likely > 22 → deployment gate exempt; HOLD all day
 META stop-out today is acceptable — frees ~$14K, reduces risk into volatile tape. 1 slot, 1 shot — deploy only into high-conviction post-CPI setup.
+
+---
+
+## 2026-06-11 — Pre-market Research
+
+### Account
+- Equity: $105,237 | Cash: $47,674.66 | Deployed: $57,562.34 (54.7% — below 75–85% target)
+- Buying power: $351,873.19 (4x margin) | Daytrade count: 0
+- Open positions: AMZN (86 sh), LLY (13 sh), NVO (513 sh)
+- Week trades: **3/3 USED** (MRVL Jun 8, NVO Jun 9, AMZN Jun 10) — no new entries until Mon Jun 15
+
+### Positions
+| Ticker | Shares | Entry | Current | Unrealized P&L | Stop | HWM |
+|--------|--------|-------|---------|----------------|------|-----|
+| AMZN | 86 | $242.63 | $239.80 | −$243.38 (−1.17%) | $218.55 (10% trail) | $242.83 |
+| LLY | 13 | $1,078.65 | $1,136.37 | +$750.36 (+5.35%) | $1,064.46 (10% trail) | $1,182.73 |
+| NVO | 513 | $41.27 | $43.21 | +$994.14 (+4.70%) | $39.63 (10% trail) | $44.03 |
+
+### Market Context
+- S&P 500 futures: +0.78% premarket (recovering from Wed −1.62% selloff to 7,266.99 close); Polymarket ~95% prob opens higher
+- VIX: 22.22 (Jun 10 close, +11.83%) — elevated; right at the >22 deployment-gate exemption threshold
+- Today's catalysts:
+  - **PPI (May, 8:30 AM ET)**: Expected +0.7% MoM (vs April's +1.4%); key inflation read after in-line CPI; benign print = risk-on relief
+  - **ECB rate decision**: Analysts expect rate decision today; Euro zone policy spillover
+  - **US-Iran tensions ongoing**: Trump threatening more military strikes; oil prices elevated; geopolitical overhang persists
+  - **Adobe (ADBE) earnings**: After close — AI creative tools monetization barometer
+  - **Lennar (LEN) earnings**: Homebuilder read-through; rate/housing affordability signal
+  - **Goldman Sachs AI thesis**: GS says market underestimates AI sector growth; accelerating enterprise adoption narrative
+  - **Amazon $17.5B AI borrowing**: Sustained AI infrastructure spend; supports AMZN thesis
+
+### Position News
+- **AMZN**: Premarket ~$236 (below $239.80 last close); $17.5B AI capex borrowing confirmed; stop $218.55 = 8.8% cushion — no alarm; AWS AI expansion thesis intact
+- **LLY**: $1,136.37 stable; clinical pipeline advancing (obesity/Alzheimer's); Jefferies PT $1,350 intact; thesis strong
+- **NVO**: +0.93% premarket at $43.21; Phase 3 Reimagine 1-3 trial positive (HbA1c + weight reduction in T2D adults); GLP-1 sector momentum; HWM $44.03 — stop advancing with price
+
+### Trade Ideas (for next week — no slots available today)
+1. **XOM (ExxonMobil)** — Energy — US-Iran tensions = sustained oil bid; WTI elevated; Energy sector (0 losses, OK); new sector diversification; entry ~$117–120 Mon/Tue open, stop 10% trail GTC (~$107), target +20% (~$144), R:R 2:1 | PRIMARY for next week
+2. **GOOGL (Alphabet)** — Communication Services — Goldman AI underestimation thesis; Alphabet $85B AI equity raise; sector (1 loss after META exit, still OK); entry ~$180, stop 10% trail GTC (~$162), target +20% (~$216), R:R 2:1 | SECONDARY — new name in recovering sector
+3. **MSFT (Microsoft)** — Technology — Azure AI cloud + Copilot enterprise monetization; sector (1 loss, OK); entry ~$472–480, stop 10% trail GTC (~$430), target +20% (~$575), R:R 2:1 | BACKUP if XOM/GOOGL setups don't materialize
+
+### Risk Factors
+- **Weekly limit 3/3**: Locked out of all new entries until Mon Jun 15
+- **VIX 22.22**: Elevated; at deployment-gate exemption boundary; futures recovery could pull VIX back below 22 at open
+- **US-Iran escalation**: Ongoing tit-for-tat; crude elevated; weekend headline risk for Friday close
+- **PPI data 8:30 AM**: Hot print (>0.7%) = rate fear + equities pressure; benign = relief rally continuation
+- **AMZN slightly underwater**: −1.17%; stop $218.55 at 8.8% cushion — not at risk, but monitor if tape turns negative
+- **Deployment 54.7%**: Below 75–85% target; plan 1–2 new entries Mon Jun 15 to close gap; XOM primary candidate
+
+### Decision
+HOLD — weekly limit 3/3 exhausted; no new entries permissible today regardless of setup. All three positions have intact theses and adequate stop cushions. Stops managing risk autonomously. Monitor PPI at 8:30 AM for tape signal; if benign + futures hold, begin finalizing XOM (Energy) and GOOGL (Communication Services) entry plans for Mon Jun 15 open.
