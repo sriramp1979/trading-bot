@@ -3,14 +3,16 @@
 ## Active Sector Tracking
 | Sector | Tickers Held | Consecutive Losses | Status |
 |--------|-------------|-------------------|--------|
-| Technology | — | 1 | OK |
+| Technology | — | 2 | EXIT |
 | Healthcare | LLY, NVO | 0 | OK |
-| Communication Services | META | 0 | OK |
+| Communication Services | — | 1 | OK |
 | Consumer Discretionary | AMZN | 0 | OK |
+| Energy | — | 0 | OK |
 
 ## Sector Exit History
 | Sector | Exit Date | Reason |
 |--------|-----------|--------|
+| Technology | 2026-06-09 | 2 consecutive losses: NVDA stop Jun 05 (-$217), MRVL stop Jun 09 (-$927) |
 
 ## Sector Classification
 Use these exact sector names (no variations):

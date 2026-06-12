@@ -162,3 +162,68 @@ Template for each entry:
 
 ### Overall Grade: B-
 *Alpha real (+3.22% vs S&P) driven by one exceptional HPE call. But the deployment failure is now chronic and structural — 2 consecutive weeks ending below 30% deployed. A single great trade cannot carry a portfolio that's 72% cash. Process A- (research, entries, stops all clean); deployment D (chronic, rule-level fix added); net B-.*
+
+---
+
+## Week ending 2026-06-12
+
+### Stats
+| Metric | Value |
+|--------|-------|
+| Starting portfolio | $105,643.04 |
+| Ending portfolio | $105,420.05 |
+| Week return | -$222.99 (-0.21%) |
+| S&P 500 week | +1.60% |
+| Bot vs S&P | -1.81% |
+| Phase P&L | +$5,420.05 (+5.42% from $100,000) |
+| Trades | 3 new entries (W:0 / L:2 / open:3) |
+| Win rate | 0% (0/2 closed) |
+| Best trade | NVO +6.20% unrealized |
+| Worst trade | MRVL -4.34% (closed, -$927) |
+| Profit factor | N/A (no closed winners) |
+| Deployment at week end | 54.8% ($57,745 / $105,420) — below 75–85% target |
+
+### Closed Trades
+| Ticker | Entry | Exit | P&L | Notes |
+|--------|-------|------|-----|-------|
+| MRVL | $286.90 | ~$274.37 | -$927 (-4.34%) | Entered Jun 08; stop triggered Jun 09 (1-day hold); S&P 500 inclusion bump faded fast |
+| META | $610.88 | ~$577.85 | -$793 (-3.45%) | Entered Jun 03; stop triggered Jun 10; EU regulatory pressure + Communication Services weakness |
+
+### Open Positions at Week End
+| Ticker | Entry | Close | Unrealized | Stop |
+|--------|-------|-------|------------|------|
+| LLY | $1,078.65 | $1,132.60 | +$701 (+5.00%) | $1,064.46 trail (HWM $1,182.73) |
+| NVO | $41.27 | $43.83 | +$1,312 (+6.20%) | $40.14 trail (HWM $44.60) |
+| AMZN | $242.63 | $238.80 | -$329 (-1.58%) | $219.02 trail (HWM $243.36) |
+
+### What Worked
+- Used all 3/3 weekly trade slots for the first time — inactivity bias addressed
+- Deployment gate (Rule 12) functioning as designed: forced MRVL, NVO, AMZN entries despite hesitation
+- LLY thesis materially strengthened by FDA Foundayo approval (first oral GLP-1, no food/water restrictions) — multi-week compounder intact
+- NVO GLP-1 sympathy trade +6.20% unrealized in 3 days — Healthcare sector continuing to lead
+- Stop discipline correct: MRVL and META both declined further after stop-outs; cuts were right
+
+### What Didn't Work
+- Technology sector exhausted: NVDA (Jun 05) + MRVL (Jun 09) = 2 consecutive losses → Technology now EXIT — cannot trade semis next week
+- Zero win rate on closed trades (0/2); quick stop-outs (MRVL held 1 day) erode deployment faster than entries can build it
+- Deployment remains chronically below target at 54.8% despite 3 entries — 2 stop-outs undo the progress; structural two-steps-forward-one-step-back pattern
+- AMZN entered on CPI day (Jun 10) — high-volatility macro environment gave -2.78% day-1 drawdown; now -1.58% below entry
+- Negative alpha third time in three weeks where S&P 500 outperformed (-1.81% gap this week)
+
+### Key Lessons
+- Technology sector is volatile and stop-prone in current geopolitical/rate environment — two consecutive stops in 4 trading days; respect the EXIT gate
+- Quick stop-outs create a deployment treadmill: adding 3 positions then losing 2 nets only 1 position gained
+- AMZN entry on CPI day with futures negative was avoidable risk; "one slot, one shot" should mean waiting for tape clarity, not entering into uncertainty
+- Healthcare (LLY, NVO) is the portfolio's durable backbone — GLP-1 momentum structural, not episodic; should hold through noise
+- Communication Services (META stopped) has 1 loss banked — GOOGL entry next week adds second chance, but sector is not clean
+
+### Adjustments for Next Week
+- **Technology = EXIT**: No new Technology entries until sector resets (2 consecutive wins in another sector reset this sector gate manually next review)
+- **Primary Mon Jun 15 entries**: GOOGL (Communication Services — Goldman AI thesis, sector 1 loss still OK) + XOM (Energy — Iran deal = reduced oil spike risk but sector fresh, 0 losses)
+- Deployment target: 54.8% → 75%+ in first 1–2 sessions; both new entries must execute unless VIX > 22 or futures < -2%
+- LLY tighten threshold: +15% = $1,240.45 — monitor; not yet reached. NVO tighten: +15% = $47.46 — monitor
+- AMZN: thesis intact (AWS AI capex) but -1.58% below entry; stop $219.02 has 8.4% buffer — hold, no action
+- Communication Services: use GOOGL as fresh start in sector; META exit resets the momentum clock
+
+### Overall Grade: C
+*Process discipline improved (3/3 slots used, stops honored) but results regressed: -0.21% week vs S&P +1.60%, 0% win rate on closed trades, Technology sector now EXIT after 2 quick stop-outs. Healthcare positions (LLY, NVO) are the only bright spot. Deployment at 54.8% — progress vs prior weeks' 27–29%, but still well below 75–85% target. Three weeks of negative alpha vs benchmark is a structural concern; GOOGL and XOM entries on Mon Jun 15 are mandatory.*
