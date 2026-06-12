@@ -211,3 +211,6 @@ No positions yet. Bot launches tomorrow.
 | LLY | 13 | $1,078.65 | $1,160.95 | +2.16% | +$1,069.90 | $1,064.46 (HWM $1,182.73) |
 | NVO | 513 | $41.27 | $43.90 | +2.55% | +$1,348.11 | $39.70 (HWM $44.11) |
 **Notes:** All 3 positions rallied: LLY +2.16% to $1,160.95, NVO +2.55% to $43.90 (stop advancing to $39.70, HWM $44.11), AMZN recovered +1.51% to $241.60 but still below entry. Weekly limit 3/3 reached — no new entries until Monday; monitor stops and let winners run.
+
+## 2026-06-12 — no trades (weekly limit 3/3, resets Mon Jun 15)
+Stops confirmed: AMZN $219.02 (HWM $243.36) | LLY $1,064.46 (HWM $1,182.73) | NVO $39.82 (HWM $44.25)
