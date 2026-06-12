@@ -214,3 +214,12 @@ No positions yet. Bot launches tomorrow.
 
 ## 2026-06-12 — no trades (weekly limit 3/3, resets Mon Jun 15)
 Stops confirmed: AMZN $219.02 (HWM $243.36) | LLY $1,064.46 (HWM $1,182.73) | NVO $39.82 (HWM $44.25)
+
+### Jun 12 — EOD Snapshot (Day 13, Friday)
+**Portfolio:** $105,447.93 | **Cash:** $47,674.66 (45.2%) | **Day P&L:** -$600.18 (-0.57%) | **Phase P&L:** +$5,447.93 (+5.45%)
+| Ticker | Shares | Entry | Close | Day Chg | Unrealized P&L | Stop |
+|--------|--------|-------|-------|---------|----------------|------|
+| AMZN | 86 | $242.63 | $238.40 | -1.29% | -$363.78 | $219.02 (HWM $243.36) |
+| LLY | 13 | $1,078.65 | $1,133.05 | -2.40% | +$707.20 | $1,064.46 (HWM $1,182.73) |
+| NVO | 513 | $41.27 | $43.94 | -0.05% | +$1,368.63 | $40.14 (HWM $44.60) |
+**Notes:** Broad Friday pullback; LLY -2.40% to $1,133.05 (well above stop $1,064.46) and AMZN -1.29% to $238.40 (still below entry). NVO essentially flat at $43.94 with stop advancing to $40.14 (HWM $44.60). Weekly limit 3/3 exhausted — no new entries until Mon Jun 15; use weekend to identify next candidates across lagging sectors.
