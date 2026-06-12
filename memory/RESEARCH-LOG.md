@@ -28,57 +28,7 @@ Format each entry:
 TRADE or HOLD (default HOLD if no edge)
 
 
---- TRIMMED 2026-06-11 ---
-
-## 2026-06-04 — Pre-market Research
-
-### Account
-- Equity: $106,151.10 | Cash: $62,139.01 | Deployed: $44,012.09 (41.5% — below 75–85% target)
-- Buying power: $62,139.01 | Daytrade count: 0
-- Open positions: LLY (13 sh, +$225.55 / +1.61%), META (24 sh, +$197.28 / +1.35%), NVDA (70 sh, +$55.01 / +0.37%)
-- Stops active: LLY 10% trail GTC @ $1,034.19 (HWM $1,149.10) | META 10% trail GTC @ $561.74 (HWM $624.15) | NVDA 10% trail GTC @ $209.05 (HWM $232.28)
-- Week trades: 1/3 used (META Jun 3); 2 slots remaining
-
-### Positions
-| Ticker | Shares | Entry | Current | Unrealized P&L | Stop | HWM |
-|--------|--------|-------|---------|----------------|------|-----|
-| LLY | 13 | $1,078.65 | $1,096.00 | +$225.55 (+1.61%) | $1,034.19 (10% trail) | $1,149.10 |
-| META | 24 | $610.88 | $619.10 | +$197.28 (+1.35%) | $561.74 (10% trail) | $624.15 |
-| NVDA | 70 | $212.15 | $212.94 | +$55.01 (+0.37%) ⚠️ | $209.05 (10% trail) | $232.28 |
-
-### Market Context
-- S&P 500 futures: −0.43% premarket; US-Iran military clash overnight reversed peace deal → oil +2%+ to 1.5-week high; geopolitical risk-off headwind
-- VIX: ~16.05 (rising from 15.77 Jun 3 close) — moderate; geopolitical risk pushing higher
-- Today's catalysts:
-  - **Iran-US clash**: Military exchange overnight; oil +2%, WTI 1.5-week high → energy bid; risk-off for growth
-  - **AVGO −13%**: Broadcom Q2 revenue miss in extended trading → semis under pressure
-  - **CRWD −10%**: CrowdStrike weak guidance miss; cybersecurity sector weakness
-  - **Macro data**: Nonfarm productivity (Q1), Challenger job cuts due today
-  - **Earnings before open**: CIEN, PL, LULU
-  - **SpaceX IPO**: Roadshow underway; pricing expected Jun 11 (~$1.75T valuation)
-
-### Position News
-- **LLY**: BofA raised PT to $1,251 (Buy maintained); CVS reinstating Zepbound as preferred commercial formulary Oct 1; France first EU country to reimburse obesity meds mid-Jun; 3 acquisitions up to $3.8B announced (pipeline expansion). Trading $1,053–$1,093 today. Thesis strengthening.
-- **META**: Premarket −0.74% (~$618.40 vs $622.98 close); Arete upgraded to Buy PT $735 (Jun 2); Q1 EPS $10.44 beat est by 57%; AI business agent platform expanding. Minor pullback; thesis intact.
-- **NVDA**: **EX-DIVIDEND DATE** ($0.25/sh) → minor downward price adjustment expected at open; NVDA-MSFT AI partnership deepening; AVGO −13% miss pressuring broad semis; stop $209.05 is only 1.86% below current $212.94 ⚠️
-
-### Trade Ideas
-1. **XOM (ExxonMobil)** — Iran-US clash = oil +2% direct catalyst; Energy not held (status OK); new-sector diversification; entry $117–120, stop 10% trail GTC (~$107), target +20% (~$140), R:R 2:1 | Sector: Energy — PRIMARY
-2. **MSFT (Microsoft)** — NVDA-MSFT deepening AI partnership; Copilot monetization accelerating; unaffected by AVGO miss (different architecture); entry ~$490–510, stop 10% trail GTC, target +20%, R:R 2:1 | Sector: Technology (2nd Tech slot — check 20% cap)
-3. **JPM (JPMorgan Chase)** — Financials diversification; no sector exposure yet; backup if energy/tech spreads too wide at open; entry TBD, stop 10% trail GTC, target +20%, R:R 2:1 | Sector: Financials
-
-### Risk Factors
-- NVDA: Ex-div day + AVGO −13% sector pressure + stop only 1.86% above current price → stop $209.05 at real risk today; monitor closely at open
-- Iran-US clash: risk-off environment; poor tape for adding new positions pre-open
-- AVGO −13%, CRWD −10%: broad risk-off for growth/tech stocks; potential rotation out of semis
-- S&P futures −0.43% and VIX rising: unfavorable entry environment
-- 2 trade slots remaining this week — preserve for high-conviction setups only
-- Deployment at 41.5% — urgency to close gap to 75–85% but not into volatile open
-
-### Decision
-CONDITIONAL TRADE — **XOM only** if: (1) oil holds +2% or gains by 9:35 AM open, (2) spread <1.5%. Energy is sole sector that directly benefits from Iran escalation catalyst. All other new entries (MSFT, JPM) HOLD pending market stabilization post-open. NVDA stop proximity is the primary watch item — if price approaches $210 intraday, prepare for potential stop-out at $209.05. Weekly capacity: 2 slots remain.
-
----
+--- TRIMMED 2026-06-12 ---
 
 ## 2026-06-05 — Pre-market Research
 
@@ -285,3 +235,53 @@ META stop-out today is acceptable — frees ~$14K, reduces risk into volatile ta
 
 ### Decision
 HOLD — weekly limit 3/3 exhausted; no new entries permissible today regardless of setup. All three positions have intact theses and adequate stop cushions. Stops managing risk autonomously. Monitor PPI at 8:30 AM for tape signal; if benign + futures hold, begin finalizing XOM (Energy) and GOOGL (Communication Services) entry plans for Mon Jun 15 open.
+
+---
+
+## 2026-06-12 — Pre-market Research
+
+### Account
+- Equity: $106,273.50 | Cash: $47,674.66 | Deployed: $58,598.84 (55.1% — below 75–85% target)
+- Buying power: $153,948.16 (reg T) | Daytrade count: 0
+- Open positions: AMZN (86 sh), LLY (13 sh), NVO (513 sh)
+- Week trades: **3/3 USED** (MRVL Jun 8, NVO Jun 9, AMZN Jun 10) — no new entries; week resets Mon Jun 15
+
+### Positions
+| Ticker | Shares | Entry | Current | Unrealized P&L | Stop | HWM |
+|--------|--------|-------|---------|----------------|------|-----|
+| AMZN | 86 | $242.63 | $243.50 | +$74.82 (+0.36%) | $218.55 (10% trail) | $242.83 |
+| LLY | 13 | $1,078.65 | $1,164.79 | +$1,119.82 (+7.99%) | $1,064.46 (10% trail) | $1,182.73 |
+| NVO | 513 | $41.27 | $43.89 | +$1,342.98 (+6.34%) | $39.70 (10% trail) | $44.11 |
+
+### Market Context
+- S&P 500 futures: +0.18% (mildly positive; S&P 500 closed +1.75% Thu at 7,394.30 on Iran deal optimism)
+- VIX: ~19.44 (declining from Jun 10 peak 22.22; back below deployment-gate threshold)
+- Today's catalysts:
+  - **SpaceX IPO**: Priced $135/sh, $1.78T valuation — largest IPO in history; broad market sentiment lift; capital rotation risk from recent winners
+  - **Iran deal progress**: Trump confirmed US strikes called off, peace deal near completion; oil prices fell — energy sector bid weakening
+  - **U of M consumer sentiment (prelim)**: Expected 46.0 (rebound from 44.8); upside surprise possible
+  - **Semis/tech momentum**: SOXX +8% Thu; MU, AMD, INTC sharply higher; AI infrastructure narrative accelerating
+  - **LLY catalyst**: FDA approved orforglipron (Foundayo) — first oral GLP-1 pill with no food/water restrictions; beats NVO and AZ in diabetes trials; Q1 revenue +55.5%, guidance raised to $35.5–37 non-GAAP EPS
+- Earnings before open: none major
+
+### Position News
+- **LLY**: FDA Foundayo (oral GLP-1) approved — significant competitive advantage vs NVO and AstraZeneca; Q1 rev +55.5%, EPS guidance raised; thesis accelerating strongly. At +7.99% unrealized; tighten-trail threshold: +15% = $1,240.45 — not yet reached; keep 10% trail.
+- **NVO**: Diverging from LLY — adj. sales declining, cutting 9,000 jobs; Wegovy pill $2.26B with 1M+ patients but LLY competitive threat growing. Stop $39.70 (HWM $44.11); thesis intact but weakening relative to LLY — monitor.
+- **AMZN**: +0.82% premarket; no negative news; AWS AI infra thesis intact. Stop $218.55 (HWM $242.83); 10.3% buffer — safe.
+
+### Trade Ideas (for Mon Jun 15 — week resets with 3 fresh slots)
+1. **GOOGL (Alphabet)** — Communication Services — Goldman AI underestimation thesis; Google AI search monetization; sector 1 loss from META (still OK, not at 2); new name in recovering sector; entry ~$178–182, stop 10% trail GTC (~$162), target +20% (~$216), R:R 2:1 | PRIMARY
+2. **AMD (Advanced Micro Devices)** — Technology — SOXX +8% Thu; AI training/inference demand surging; semis momentum extending; sector 1 loss (OK); entry ~$190–200 post-settle (avoid gap spike), stop 10% trail GTC (~$175), target +20% (~$228), R:R 2:1 | PRIMARY — closes deployment gap
+3. **MSFT (Microsoft)** — Technology — Azure AI cloud + Copilot enterprise; more defensive than AMD; same sector (check 20% cap per position if holding AMD); entry ~$478–485, stop 10% trail GTC (~$435), target +20% (~$578), R:R 2:1 | BACKUP
+
+### Risk Factors
+- **Weekly limit 3/3**: No new entries permissible today; resets Mon Jun 15
+- **Deployment gate conflict**: 55.1% < 60% with VIX 19.44 (<22) and futures +0.18% (>−2%) → gate technically active; weekly limit (hard rule) takes precedence over gate; resolve Mon Jun 15 with 2 entries
+- **SpaceX IPO at $1.78T**: Largest IPO in history — potential capital rotation out of growth stocks on retail reallocation; short-term liquidity drag
+- **Iran deal not signed**: Peace deal "near" but not finalized; weekend headline risk if talks collapse
+- **NVO/LLY divergence**: LLY taking oral GLP-1 market share; NVO cutting jobs + declining sales; watch NVO stop $39.70 closely
+- **LLY tighten threshold**: +15% = $1,240.45; not yet reached; keep monitoring
+- **Friday thin tape**: Lower volume; momentum can extend OR reverse sharply; no chasing
+
+### Decision
+HOLD — weekly limit 3/3 exhausted; no entries permissible. All three positions green with intact theses and adequate stop cushions. **Mon Jun 15 action plan**: Deploy 2 positions — GOOGL (Communication Services, PRIMARY) + AMD (Technology, PRIMARY) — to close deployment gap from 55% → ~75%; deployment gate requires ≥1 entry at open (VIX likely <22 if Iran deal holds). LLY thesis strengthening significantly on FDA oral GLP-1 approval; NVO thesis intact but monitor relative underperformance.
