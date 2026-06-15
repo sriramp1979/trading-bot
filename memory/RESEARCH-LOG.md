@@ -28,57 +28,7 @@ Format each entry:
 TRADE or HOLD (default HOLD if no edge)
 
 
---- TRIMMED 2026-06-12 ---
-
-## 2026-06-05 — Pre-market Research
-
-### Account
-- Equity: $107,018.87 | Cash: $62,139.01 | Deployed: $44,879.86 (41.9% — below 75–85% target)
-- Buying power: $338,315.76 (4x margin) | Daytrade count: 0
-- Open positions: LLY (13 sh, +$719.55 / +5.13%), META (24 sh, +$351.84 / +2.40%), NVDA (70 sh, +$274.22 / +1.85%)
-- Stops active: LLY 10% trail GTC @ $1,034.19 (HWM $1,149.10) | META 10% trail GTC @ $578.14 (HWM $642.38) | NVDA 10% trail GTC @ $209.05 (HWM $232.28)
-- Week trades: 2/3 used (HPE Jun 1, META Jun 3); 1 slot remaining
-
-### Positions
-| Ticker | Shares | Entry | Current | Unrealized P&L | Stop | HWM |
-|--------|--------|-------|---------|----------------|------|-----|
-| LLY | 13 | $1,078.65 | $1,134.00 | +$719.55 (+5.13%) | $1,034.19 (10% trail) | $1,149.10 |
-| META | 24 | $610.88 | $625.54 | +$351.84 (+2.40%) | $578.14 (10% trail) | $642.38 |
-| NVDA | 70 | $212.15 | $216.07 | +$274.22 (+1.85%) | $209.05 (10% trail) ⚠️ 3.25% buffer | $232.28 |
-
-### Market Context
-- S&P 500 futures: ES −0.10% premarket at 7,550.75 (opened 7,546.50); slight weakness from US-Iran renewed military exchange; oil +2% WTI to 1.5-week high
-- VIX: 15.40 (Jun 4 close, −4.11%); low/benign — risk-on despite geopolitical noise
-- Today's catalysts:
-  - **May NFP (Jobs Report)**: 85,000 jobs expected (vs 115,000 April) — historically light; key market-moving data today
-  - **US-Iran renewed military exchange**: Oil +2% WTI; energy sector bid; risk-off for growth
-  - **AVGO (Broadcom) double-digit plunge**: Earnings disappointment → broad tech sector headwind
-  - **Lebanon ceasefire**: Treasury yields falling → homebuilders (KBH, DHI, LEN) bid premarket
-  - **COMPUTEX 2026 final day**: Jensen Huang keynote wrap-up; AI PC/RTX Spark narrative concludes
-- Earnings before open: none major
-
-### Position News
-- **LLY**: Premarket +0.78% at $1,134 — approaching prior HWM $1,149.10. $10B acquisition strategy expansion announced (oncology focus). TRIUMPH-1 Retatrutide obesity trial progress. German investment cut (€2.3B → €1.1B) — U.S. manufacturing focus. GF Score 98; thesis strengthening.
-- **META**: Intraday −0.32% at $625.54. Meta Business Agent launched globally (AI customer service, 1M+ enterprises on WhatsApp/Messenger). Quarterly dividend $0.525/share declared (ex-Jun-15, pay-Jun-25). Minor pullback within intact uptrend.
-- **NVDA**: Intraday −1.18% at $216.07. Computex 2026 final day. Kumo AI acquisition ($400M, predictive AI software). Senate Banking Committee invited CEO Jensen Huang to testify Jun 11 (China/export controls). AVGO miss creating sector headwind. ⚠️ Stop $209.05 = only 3.25% below current price — most vulnerable position.
-
-### Trade Ideas
-1. **DHI (D.R. Horton)** — Consumer Discretionary — Lebanon ceasefire + weak NFP (85K expected) = yield decline = homebuilder relief rally; entry ~$145–148, stop 10% trail GTC (~$132), target +20% (~$177), R:R 2:1 | Sector: Consumer Discretionary — NEW SECTOR, no current exposure
-2. **XOM (ExxonMobil)** — Energy — US-Iran conflict = oil +2% direct catalyst; Energy not held (status OK); entry ~$118–120, stop 10% trail GTC (~$107), target +20% (~$143), R:R 2:1 | Sector: Energy — NEW SECTOR, high geopolitical volatility risk
-3. **GOOGL (Alphabet)** — Communication Services — AI search monetization; same sector as META = concentration risk; lower priority; skip unless thesis is uniquely differentiated
-
-### Risk Factors
-- **NFP binary risk**: Jobs print could move market sharply; 85K expected (very light); beat = yields rise = growth/tech pressure; miss = recession fear
-- **NVDA stop proximity**: 3.25% buffer at $209.05; AVGO miss = sector headwind; Jensen Huang Senate testimony Jun 11 = China/export control overhang — most vulnerable position this week
-- **US-Iran escalation**: Renewed military exchange = weekend headline risk; oil volatility
-- **AVGO −10%+ miss**: Tech selectivity signal; validates caution on sector concentration adds
-- **Friday dynamics**: Lower volume, wider intraday swings; avoid chasing gap-opens
-- **Deployment 41.9%**: Below 75–85% target; but adding into jobs-day volatility + geopolitical risk = poor R:R
-
-### Decision
-HOLD — Friday jobs report + US-Iran geopolitical risk + AVGO tech sector headwind = unfavorable environment for final weekly trade slot. All three positions green with intact theses. NVDA stop proximity ($209.05 / 3.25% buffer) is the watch item — no action unless stop triggers. Preserve final slot for Mon/Tue next week when post-jobs tape clarity returns. Primary candidates next week: DHI (homebuilder, Consumer Discretionary) or XOM (energy) for sector diversification to close deployment gap toward 75–85% target.
-
----
+--- TRIMMED 2026-06-15 ---
 
 ## 2026-06-09 — Pre-market Research
 
@@ -285,3 +235,53 @@ HOLD — weekly limit 3/3 exhausted; no new entries permissible today regardless
 
 ### Decision
 HOLD — weekly limit 3/3 exhausted; no entries permissible. All three positions green with intact theses and adequate stop cushions. **Mon Jun 15 action plan**: Deploy 2 positions — GOOGL (Communication Services, PRIMARY) + AMD (Technology, PRIMARY) — to close deployment gap from 55% → ~75%; deployment gate requires ≥1 entry at open (VIX likely <22 if Iran deal holds). LLY thesis strengthening significantly on FDA oral GLP-1 approval; NVO thesis intact but monitor relative underperformance.
+
+---
+
+## 2026-06-15 — Pre-market Research
+
+### Account
+- Equity: $105,989.32 | Cash: $47,674.66 | Deployed: $58,314.66 (55.0% — below 60% gate ⚠️)
+- Buying power: $153,663.98 (reg T) | Daytrade count: 0
+- Open positions: AMZN (86 sh), LLY (13 sh), NVO (513 sh)
+- Week trades: **0/3** (new week — resets today)
+- Phase P&L: +$5,989.32 (+5.99%)
+
+### Positions
+| Ticker | Shares | Entry | Current | Unrealized P&L | Stop | HWM |
+|--------|--------|-------|---------|----------------|------|-----|
+| AMZN | 86 | $242.63 | $242.11 | −$44.72 (−0.21%) | $219.02 (10% trail) | $243.36 |
+| LLY | 13 | $1,078.65 | $1,132.00 | +$693.55 (+4.95%) | $1,064.46 (10% trail) | $1,182.73 |
+| NVO | 513 | $41.27 | $44.40 | +$1,604.61 (+7.58%) | $40.14 (10% trail) | $44.60 |
+
+### Market Context
+- S&P 500 futures: Sharply higher premarket; US-Iran peace deal confirmed overnight (Washington + Tehran) — global risk premium removed; stocks and bonds rallying, dollar falling
+- VIX: 17.68 (Jun 12 close, down from 19.44 Jun 11) — declining, well below 22 deployment-gate threshold; risk-on
+- Today's catalysts:
+  - **US-Iran peace deal confirmed**: Major catalyst — geopolitical risk premium removed; equities gap up; oil falling on supply-disruption relief; strongest premarket driver
+  - **Fed rate cut odds 77%**: Probability of ≥1 cut in 2026 intact; dovish macro backdrop supports risk assets
+  - **Economic data (8:30–10 AM ET)**: Empire State Manufacturing, Industrial Production, Capacity Utilization, NAHB Housing Market Index — all today; binary risk for early entries
+  - **LLY ACHIEVE-3 head-to-head**: Foundayo (orforglipron) beat NVO oral semaglutide on both HbA1c and weight-loss in T2D adults; LLY thesis accelerating, hit record $1,149.15
+- Earnings before open: none major
+
+### Position News
+- **AMZN**: EU cloud procurement review + FTC antitrust trial ongoing (regulatory headwinds); C$13.9B Canadian bond offering (AI capex financing); analyst BofA Buy PT $310; intraday +1.49% recovering from Friday −1.3% close; AWS AI thesis intact
+- **LLY**: ACHIEVE-3 confirmed Foundayo beats NVO oral semaglutide on both primary endpoints; hit record $1,149.15; thesis strongest in portfolio; tighten-trail threshold +15% = $1,240.45 — not yet reached; keep 10% trail
+- **NVO**: UK Wegovy pill approval; intraday +1.19%; LLY competitive pressure growing; stop $40.14 (HWM $44.60) = 9.6% cushion — safe; thesis intact but monitor LLY divergence
+
+### Trade Ideas
+1. **GOOGL (Alphabet)** — Communication Services — Iran peace deal + risk-on + Goldman AI underestimation thesis + Google AI search monetization; sector OK (1 loss from META, not at 2); new name diversifies CS slot; entry ~$178–182 post-settle (9:35–9:45 AM, avoid gap spike), stop 10% trail GTC (~$162), target +20% (~$215), R:R 2:1 | **PRIMARY — close deployment gap**
+2. **AMD (Advanced Micro Devices)** — Technology — Semis momentum (SOXX +8% last Thu) + AI training/inference demand + risk-on Iran deal; sector OK (1 loss, not at 2); entry ~$190–200 post-settle (avoid gap spike), stop 10% trail GTC (~$175), target +20% (~$228), R:R 2:1 | **SECONDARY — adds Tech, fills 5th slot**
+3. **JPM (JPMorgan Chase)** — Financials — Iran peace deal reduces global uncertainty + 77% rate-cut odds + risk-on = Financials tailwind; new sector, 0 consecutive losses; entry ~$280 post-settle, stop 10% trail GTC (~$252), target +20% (~$336), R:R 2:1 | BACKUP if GOOGL/AMD spreads are too wide
+
+### Risk Factors
+- **Deployment gate active**: 55.0% < 60%, VIX 17.68 < 22, futures UP → must add ≥1 position today per Rule 12
+- **Gap-up risk**: Iran peace deal causing gap opens; enter only on post-open settle (9:35–9:45 AM), never chase the spike
+- **Economic data 8:30–10 AM**: Empire State + Industrial Production — hot/cold surprise could move tape; wait for first 30 min before committing
+- **AMZN regulatory drag**: EU cloud review + FTC trial = persistent headwind; thesis dependent on AWS growth outpacing legal noise
+- **NVO/LLY divergence**: LLY accelerating, NVO defending; stop $40.14 (9.6% cushion) — currently safe but watch if LLY takes material GLP-1 share
+- **Iran deal implementation risk**: Confirmed but framework details TBD; oil volatile; gap-up could fade if headlines worsen
+- **Position sizing**: Max 20% per position (~$21,200 at current equity); GOOGL + AMD both fit within cash + sizing constraints
+
+### Decision
+TRADE — deployment gate requires ≥1 entry (55.0% < 60%, VIX 17.68 < 22, futures positive on Iran peace deal). Fresh week, 0/3 slots used. **PRIMARY: GOOGL** entry ~$178–182 post-open settle (9:35–9:45 AM); **SECONDARY: AMD** entry ~$190–200 post-settle. Target 65–72% deployed after 2 entries. Preserve 1 slot for mid-week. Do NOT enter at the gap spike — wait for settle. If data is ugly at 8:30 AM, delay entries until 9:45+ but deploy at least 1 today.
