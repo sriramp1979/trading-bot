@@ -5,7 +5,7 @@
 |--------|-------------|-------------------|--------|
 | Technology | — | 1 | OK |
 | Healthcare | LLY, NVO | 0 | OK |
-| Communication Services | META | 0 | OK |
+| Communication Services | GOOGL | 1 | OK |
 | Consumer Discretionary | AMZN | 0 | OK |
 
 ## Sector Exit History

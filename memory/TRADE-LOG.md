@@ -3,6 +3,7 @@
 ## Week of 2026-05-25 | Trades: 2/3
 ## Week of 2026-06-01 | Trades: 2/3
 ## Week of 2026-06-08 | Trades: 3/3
+## Week of 2026-06-15 | Trades: 1/3
 
 ## Day 0 — EOD Snapshot (pre-launch baseline)
 **Portfolio:** $100,000.00 | **Cash:** $100,000.00 (100%) | **Day P&L:** $0 | **Phase P&L:** $0
@@ -223,3 +224,18 @@ Stops confirmed: AMZN $219.02 (HWM $243.36) | LLY $1,064.46 (HWM $1,182.73) | NV
 | LLY | 13 | $1,078.65 | $1,133.05 | -2.40% | +$707.20 | $1,064.46 (HWM $1,182.73) |
 | NVO | 513 | $41.27 | $43.94 | -0.05% | +$1,368.63 | $40.14 (HWM $44.60) |
 **Notes:** Broad Friday pullback; LLY -2.40% to $1,133.05 (well above stop $1,064.46) and AMZN -1.29% to $238.40 (still below entry). NVO essentially flat at $43.94 with stop advancing to $40.14 (HWM $44.60). Weekly limit 3/3 exhausted — no new entries until Mon Jun 15; use weekend to identify next candidates across lagging sectors.
+
+## 2026-06-15 — market-open trades
+
+| Field | GOOGL |
+|-------|-------|
+| Side | BUY |
+| Shares | 25 (partial fill; 57 ordered, 32 cancelled — paper liquidity cap) |
+| Entry | $369.49 |
+| Stop | 10% trailing GTC (~$332.05, HWM $368.94) |
+| Target | $443.39 (+20%) |
+| R:R | 2:1 |
+| Sector | Communication Services |
+| Thesis | Iran peace deal removes geopolitical risk premium → broad risk-on gap; AI search monetization + Goldman AI underestimation thesis; deployment gate active (55% < 60%, VIX 17.68); fresh week 0/3 slots |
+| Buy Order | 5c98f067 (partial) |
+| Stop Order | c428b2b1 |
