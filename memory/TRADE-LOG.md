@@ -241,3 +241,13 @@ Stops confirmed: AMZN $219.02 (HWM $243.36) | LLY $1,064.46 (HWM $1,182.73) | NV
 | Stop Order | c428b2b1 |
 
 ## 2026-06-15 midday — All within band, no action
+
+### Jun 15 — EOD Snapshot (Day 14, Monday)
+**Portfolio:** $106,086.15 | **Cash:** $35,857.63 (33.8%) | **Day P&L:** +$638.22 (+0.60%) | **Phase P&L:** +$6,086.15 (+6.09%)
+| Ticker | Shares | Entry | Close | Day Chg | Unrealized P&L | Stop |
+|--------|--------|-------|-------|---------|----------------|------|
+| AMZN | 86 | $242.63 | $246.25 | +3.23% | +$311.32 | $223.02 (HWM $247.81) |
+| GOOGL | 32 | $369.28 | $368.83 | +2.54% | -$14.47 | $335.69 (HWM $372.99) |
+| LLY | 13 | $1,078.65 | $1,130.91 | -0.18% | +$679.38 | $1,064.46 (HWM $1,182.73) |
+| NVO | 513 | $41.27 | $43.87 | -0.02% | +$1,332.72 | $40.31 (HWM $44.79) |
+**Notes:** GOOGL added (1/3 weekly slots used) at $369.28, currently -$14.47 with 10% trailing stop at $335.69 (HWM $372.99); AMZN surged +3.23% above entry, stop advancing to $223.02 (HWM $247.81). NVO and LLY holding steady; 2/3 weekly slots remain — scan for new setups in momentum sectors.
