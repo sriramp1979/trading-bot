@@ -28,58 +28,7 @@ Format each entry:
 TRADE or HOLD (default HOLD if no edge)
 
 
---- TRIMMED 2026-06-15 ---
-
-## 2026-06-09 — Pre-market Research
-
-### Account
-- Equity: $107,162.40 | Cash: $55,540.96 | Deployed: $51,621.44 (48.2% — below 75–85% target)
-- Buying power: $162,703.36 (reg T) | Daytrade count: 0
-- Open positions: LLY (13 sh), META (24 sh), MRVL (74 sh)
-- Week trades: 1/3 used (MRVL Jun 8); 2 slots remaining
-
-### Positions
-| Ticker | Shares | Entry | Current | Unrealized P&L | Stop | HWM |
-|--------|--------|-------|---------|----------------|------|-----|
-| LLY | 13 | $1,078.65 | $1,160.70 | +$1,066.65 (+7.6%) | $1,064.46 (10% trail) | $1,182.73 |
-| META | 24 | $610.88 | $589.75 | −$507.12 (−3.46%) | $578.14 (10% trail) ⚠️ | $642.38 |
-| MRVL | 74 | $286.90 | $302.41 | +$1,147.48 (+5.4%) | $274.46 (10% trail) | $304.96 |
-
-⚠️ **META alert**: only $11.61 cushion above stop $578.14 (1.96% buffer) — exit likely on any down leg.
-
-### Market Context
-- S&P 500 futures: +0.35% to +0.71% (bullish premarket; ESM26 +0.71%)
-- VIX: ~19.04 (prev close 21.51 Jun 8) — declining from Monday; moderate/easing
-- Today's catalysts:
-  - **MRVL S&P 500 inclusion**: Added to S&P 500 replacing Campbell's/Pool Corp, effective Jun 22 — massive passive demand catalyst; MRVL surged 10.49% premarket
-  - **Apple WWDC 2026**: AI-powered Siri unveiled Monday — AI tech sector momentum
-  - **Amazon/Corning deal**: Multibillion optical fiber agreement for AWS data centers — AI infrastructure buildout
-  - **SpaceX IPO**: Roadshow; first trade next Friday — investor attention; capital raising from recent winners
-- CPI data tomorrow (Jun 10): key macro event; potential volatility catalyst — avoid overcommitting today
-- Earnings before open: none major
-
-### Position News
-- **MRVL**: S&P 500 inclusion announced (effective Jun 22); +10.49% premarket — index passive demand will drive buying through Jun 22. HWM $304.96 may be breached at open, advancing stop. At +15% entry ($329.94): tighten trail to 7%. At +20% entry ($344.28): tighten to 5%.
-- **LLY**: Phase 3 retatrutide (triple-agonist obesity drug) data presented at ADA 86th Scientific Sessions Jun 6 — positive results; LLY +2.1% premarket. GLP-1 thesis accelerating. Next tighten at +20% ($1,294.38 — not yet reached).
-- **META**: No positive catalyst; still trading well below HWM $642.38; stop $578.14 is 1.96% below current $589.75 — fragile. Any market weakness likely triggers exit.
-
-### Trade Ideas
-1. **NVO (Novo Nordisk)** — Healthcare — LLY's Phase 3 retatrutide data lifts entire GLP-1/obesity sector; NVO's Ozempic/Wegovy directly competitive; sympathy catalyst; sector OK (0 losses); entry ~market open 9:35 AM, stop 10% trail GTC, target +20%, R:R 2:1 | NEW sector position in Healthcare alongside LLY — acceptable (different company, different drug)
-2. **AAPL (Apple)** — Technology — WWDC 2026 AI Siri launch; AI PC + device integration narrative; sector OK (1 loss); would be 2nd Tech slot alongside MRVL; entry 9:35–9:45 AM settle (not the gap spike), stop 10% trail GTC, target +20%, R:R 2:1 | Risk: WWDC "sell the news" pattern historically common
-3. **AMZN (Amazon)** — Consumer Discretionary — AI data center expansion (Corning optical fiber deal); AWS cloud demand; new sector (no current exposure); entry ~9:35–9:45 AM, stop 10% trail GTC, target +20%, R:R 2:1 | Backup if NVO/AAPL spreads too wide
-
-### Risk Factors
-- **META stop fragility**: $578.14 stop with only 1.96% buffer — watch closely at open; if market dips, META likely exits, freeing ~$14K cash
-- **MRVL position sizing**: Currently $22,378 (20.9% of equity) — slightly over 20% limit; cannot add shares; stop likely advances today as HWM exceeded
-- **CPI tomorrow (Jun 10)**: Avoid deploying all remaining cash today; preserve 1 slot post-CPI
-- **Deployment gate rule (Rule 12)**: 48.2% deployed < 60% + VIX 19 (< 22) + futures +0.5% (no −2% gap) → **MUST add ≥1 position today**
-- **VIX 19**: Moderate; elevated vs recent lows but below 22 threshold; manageable
-- **MRVL gap-up**: If MRVL opens above $304.96 (HWM), update trailing stop HWM accordingly; monitor for tighten triggers
-
-### Decision
-TRADE — Deployment gate requires ≥1 new entry (48.2% < 60%, VIX < 22, futures positive). **PRIMARY: NVO** — clearest catalyst (LLY obesity data direct sector lift, Healthcare 0 losses, new name). **SECONDARY: AAPL** — if NVO spread is wide or gaps too far, entry settle only (not the spike). Preserve 1 slot for post-CPI opportunities (Jun 10). Target deployed ~65-70% after 1-2 entries.
-
----
+--- TRIMMED 2026-06-16 ---
 
 ## 2026-06-10 — Pre-market Research
 
@@ -285,3 +234,50 @@ HOLD — weekly limit 3/3 exhausted; no entries permissible. All three positions
 
 ### Decision
 TRADE — deployment gate requires ≥1 entry (55.0% < 60%, VIX 17.68 < 22, futures positive on Iran peace deal). Fresh week, 0/3 slots used. **PRIMARY: GOOGL** entry ~$178–182 post-open settle (9:35–9:45 AM); **SECONDARY: AMD** entry ~$190–200 post-settle. Target 65–72% deployed after 2 entries. Preserve 1 slot for mid-week. Do NOT enter at the gap spike — wait for settle. If data is ugly at 8:30 AM, delay entries until 9:45+ but deploy at least 1 today.
+
+## 2026-06-16 — Pre-market Research
+
+### Account
+- Equity: $106,461.95 | Cash: $35,857.62 | Deployed: $70,604.33 (66.3% — within 60% gate, below 75–85% target)
+- Buying power: $142,319.57 (reg T) | Daytrade count: 0
+- Open positions: AMZN (86 sh), GOOGL (32 sh), LLY (13 sh), NVO (513 sh)
+- Week trades: 1/3 used (GOOGL Jun 15); 2 slots remaining
+- Phase P&L: +$6,461.95 (+6.46%)
+
+### Positions
+| Ticker | Shares | Entry | Current | Unrealized P&L | Stop | HWM |
+|--------|--------|-------|---------|----------------|------|-----|
+| AMZN | 86 | $242.63 | $247.75 | +$440.32 (+2.11%) | $223.02 (10% trail) | $247.81 |
+| GOOGL | 32 | $369.28 | $368.82 | −$14.79 (−0.13%) | $335.69 (10% trail) | $372.99 |
+| LLY | 13 | $1,078.65 | $1,131.00 | +$680.55 (+4.85%) | $1,064.46 (10% trail) | $1,182.73 |
+| NVO | 513 | $41.27 | $44.43 | +$1,620.00 (+7.65%) | $40.31 (10% trail) | $44.79 |
+
+### Market Context
+- S&P 500 futures: ESM26 +1.22% premarket; broader tape flat-to-soft ahead of Fed's first meeting under new chair Kevin Warsh (decision Wed Jun 17, rates expected held, easing bias likely removed); Monday close strong (S&P +1.65%, Nasdaq +3.07%)
+- VIX: 16.20 (down from 17.68 Fri close) — well below 22 gate threshold; risk-on but complacent into Fed
+- Today's catalysts:
+  - **FOMC starts today, decision tomorrow**: New chair Kevin Warsh's first meeting; rates expected unchanged, easing bias likely dropped on hot-ish inflation/employment data — binary event risk for tomorrow, not today
+  - **Iran 60-day Strait of Hormuz deal holding**: Oil down ~4%, briefly sub-$80/bbl — continued risk-on tailwind, energy sector headwind
+  - **Econ data today**: Building Permits, Housing Starts, Export/Import Prices (8:30 AM ET)
+  - **HOOD momentum**: Record FIFA World Cup prediction-market volumes + bullish analyst actions driving multi-week recovery (not held; new-sector watchlist only)
+- Earnings before open: none major
+
+### Position News
+- **AMZN**: No fresh negative news; AWS AI infra thesis intact; +2.11% unrealized, stop $223.02 (10% cushion) — safe
+- **GOOGL**: No fresh catalyst found; flat/-0.13%, still within 1 day of entry; stop $335.69 (9% cushion) — safe, thesis (AI search monetization) unchanged
+- **LLY**: No new headline today; oral GLP-1 (Foundayo) competitive lead vs NVO intact; +4.85% unrealized; tighten-trail threshold +15% = $1,240.45 — not yet reached
+- **NVO**: No new headline today; +7.65% unrealized, closest position to +15% tighten-trail threshold ($47.46) — monitor for trail tightening to 7%
+
+### Trade Ideas (watchlist only — see Decision)
+1. **HOOD (Robinhood)** — Financials — record FIFA World Cup prediction-market volume + bullish analyst upgrades, multi-week recovery; new sector (0 losses); ref price ~$93.81 (bid, Jun 15 close), stop 10% trail (~$84.45), target +20% (~$112.60), R:R 2:1 | BACKUP — verify live quote before any entry
+2. **AMD** — Technology — AI training/inference demand, semis momentum continuation; sector has 1 consecutive loss (still OK); ref quote wide/stale (bid $519.86 / ask $574.64, paper liquidity) — needs fresh quote at open before sizing; stop 10% trail off entry, target +20%, R:R 2:1 | BACKUP, low conviction on pricing
+
+### Risk Factors
+- **FOMC tomorrow (Wed Jun 17)**: First meeting under new chair Warsh; hawkish surprise (no cuts, hot inflation language) could reverse Monday's risk-on move — avoid fresh entries into event risk
+- **Deployment 66.3%**: Above 60% gate (no forced entry) but below 75–85% target; acceptable to stay patient given Fed event tomorrow
+- **NVO near tighten threshold**: +7.65%, approaching +15% trigger to tighten trail to 7% — watch closely over next sessions
+- **HOOD/AMD pricing unreliable**: AMD quote shows abnormally wide bid/ask spread (paper data quirk) — do not size off this quote
+- **Oil decline**: Helps broad risk-on but could pressure any future Energy-sector ideas
+
+### Decision
+HOLD — deployment above 60% gate (no forced entry); FOMC decision tomorrow under new chair is the dominant near-term risk. Patience > activity: preserve both remaining weekly slots (2/3) until post-Fed clarity Wed Jun 17. All four positions green/flat with intact theses and adequate stop cushions. No position within -7%; no urgent action.
