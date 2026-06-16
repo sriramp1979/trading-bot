@@ -251,3 +251,13 @@ Stops confirmed: AMZN $219.02 (HWM $243.36) | LLY $1,064.46 (HWM $1,182.73) | NV
 | LLY | 13 | $1,078.65 | $1,130.91 | -0.18% | +$679.38 | $1,064.46 (HWM $1,182.73) |
 | NVO | 513 | $41.27 | $43.87 | -0.02% | +$1,332.72 | $40.31 (HWM $44.79) |
 **Notes:** GOOGL added (1/3 weekly slots used) at $369.28, currently -$14.47 with 10% trailing stop at $335.69 (HWM $372.99); AMZN surged +3.23% above entry, stop advancing to $223.02 (HWM $247.81). NVO and LLY holding steady; 2/3 weekly slots remain — scan for new setups in momentum sectors.
+
+### Jun 16 — EOD Snapshot (Day 15, Tuesday)
+**Portfolio:** $105,897.01 | **Cash:** $35,857.62 (33.9%) | **Day P&L:** -$189.14 (-0.18%) | **Phase P&L:** +$5,897.01 (+5.90%)
+| Ticker | Shares | Entry | Close | Day Chg | Unrealized P&L | Stop |
+|--------|--------|-------|-------|---------|----------------|------|
+| AMZN | 86 | $242.63 | $246.49 | +0.19% | +$331.96 | $224.56 (HWM $249.51) |
+| GOOGL | 32 | $369.28 | $373.12 | +1.02% | +$122.81 | $338.19 (HWM $375.77) |
+| LLY | 13 | $1,078.65 | $1,120.02 | -0.83% | +$537.81 | $1,064.46 (HWM $1,182.73) |
+| NVO | 513 | $41.27 | $43.55 | -0.84% | +$1,168.56 | $40.31 (HWM $44.79) |
+**Notes:** No new trades; 1/3 weekly slots used. AMZN and GOOGL extended gains intraday while LLY and NVO pulled back modestly, all well clear of their trailing stops. Quiet day overall — continue scanning for setups with 2/3 weekly slots remaining.
