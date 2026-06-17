@@ -264,3 +264,13 @@ Stops confirmed: AMZN $219.02 (HWM $243.36) | LLY $1,064.46 (HWM $1,182.73) | NV
 
 ## 2026-06-17 — no trades (FOMC decision day; NVO 21.7% blocks add; tech lagging; 2/3 weekly slots preserved)
 Stops confirmed (all GTC trailing 10%): AMZN $224.56 | GOOGL $338.19 | LLY $1,064.46 | NVO $40.49
+
+### Jun 17 — EOD Snapshot (Day 16, Wednesday)
+**Portfolio:** $104,800.09 | **Cash:** $35,857.62 (34.2%) | **Day P&L:** -$1,096.92 (-1.04%) | **Phase P&L:** +$4,800.09 (+4.80%)
+| Ticker | Shares | Entry | Close | Day Chg | Unrealized P&L | Stop |
+|--------|--------|-------|-------|---------|----------------|------|
+| AMZN | 86 | $242.63 | $237.68 | -3.38% | -$425.70 | $224.56 (HWM $249.51) |
+| GOOGL | 32 | $369.28 | $363.97 | -2.49% | -$170.00 | $338.19 (HWM $375.77) |
+| LLY | 13 | $1,078.65 | $1,112.50 | -0.89% | +$440.05 | $1,064.46 (HWM $1,182.73) |
+| NVO | 513 | $41.27 | $43.65 | +0.23% | +$1,219.86 | $40.50 (HWM $45.00) |
+**Notes:** FOMC decision day triggered broad tech selloff; AMZN -3.38% and GOOGL -2.49% dragged portfolio down -$1,097 (-1.04%). LLY and NVO held firm — all four positions remain well clear of trailing stops. No new trades; 2/3 weekly slots preserved for post-FOMC setup scan tomorrow.
