@@ -281,3 +281,39 @@ TRADE — deployment gate requires ≥1 entry (55.0% < 60%, VIX 17.68 < 22, futu
 
 ### Decision
 HOLD — deployment above 60% gate (no forced entry); FOMC decision tomorrow under new chair is the dominant near-term risk. Patience > activity: preserve both remaining weekly slots (2/3) until post-Fed clarity Wed Jun 17. All four positions green/flat with intact theses and adequate stop cushions. No position within -7%; no urgent action.
+
+## 2026-06-17 — Pre-market Research
+
+### Account
+- Equity: $106,179.78
+- Cash: $35,857.62 (33.8%)
+- Buying power: $142,037.40
+- Daytrade count: 0
+
+### Market Context
+- Nasdaq futures: Edge higher (risk-on, post-FOMC optimism)
+- VIX: Not retrieved — Fed decision day, elevated uncertainty
+- Today's catalysts: FOMC decision (~2 PM ET, Chair Warsh's first meeting); NVO UK oral Wegovy regulatory approval (June 16); SpaceX Cursor acquisition ($60B)
+- Earnings before open: None flagged for holdings
+
+### Existing Positions
+| Ticker | Entry | Current | Unreal P&L | Stop (GTC) | Status |
+|--------|-------|---------|-----------|------------|--------|
+| AMZN | $242.63 | $243.49 | +0.35% | $224.56 (10% trail) | OK |
+| GOOGL | $369.28 | $369.90 | +0.17% | $338.19 (10% trail) | OK |
+| LLY | $1,078.65 | $1,115.11 | +3.38% | $1,064.46 (10% trail) | OK |
+| NVO | $41.27 | $44.95 | +8.91% | $40.49 (10% trail) | OK — UK oral Wegovy approved |
+
+### Trade Ideas
+1. NVO ADD — UK oral Wegovy approval is major GLP-1 catalyst; NVO up +3.2% premarket. BLOCKED: position already 21.7% of equity (>20% max); cannot add.
+2. LLY ADD — Retatrutide cycle, Barclays Buy June 15. PASS: Healthcare sector "Weakening" per momentum mapping; employer coverage headwinds; Fed uncertainty today.
+3. New position — Tech/Comms lagging per sector rotation data; no high-conviction non-Healthcare catalyst identified; 2 slots remain for post-Fed clarity.
+
+### Risk Factors
+- **FOMC today (~2 PM ET)**: Chair Warsh's first meeting; hawkish surprise (no cut + hot inflation language) could reverse the morning risk-on tone
+- **NVO at 21.7%**: Already above 20% limit — any further rally increases concentration; monitor for tightening at +15% ($47.46) → trail to 7%
+- **Tech sector Lagging**: XLK in lagging quadrant per rotation model — GOOGL position thesis intact (AI monetization) but sector headwind present
+- **Healthcare Weakening**: XLV momentum weakening heading into mid-June; LLY retatrutide story positive but macro sector drag
+
+### Decision
+HOLD — FOMC decision pending (~2 PM ET); no new entries ahead of event risk. NVO catalyst (UK oral Wegovy) absorbed by existing position — already above 20% max, cannot add. Tech lagging, Healthcare weakening. All 4 positions healthy with intact GTC stops. Preserve 2/3 weekly slots for post-Fed entry Thursday/Friday if clarity is bullish.

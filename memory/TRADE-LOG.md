@@ -261,3 +261,6 @@ Stops confirmed: AMZN $219.02 (HWM $243.36) | LLY $1,064.46 (HWM $1,182.73) | NV
 | LLY | 13 | $1,078.65 | $1,120.02 | -0.83% | +$537.81 | $1,064.46 (HWM $1,182.73) |
 | NVO | 513 | $41.27 | $43.55 | -0.84% | +$1,168.56 | $40.31 (HWM $44.79) |
 **Notes:** No new trades; 1/3 weekly slots used. AMZN and GOOGL extended gains intraday while LLY and NVO pulled back modestly, all well clear of their trailing stops. Quiet day overall — continue scanning for setups with 2/3 weekly slots remaining.
+
+## 2026-06-17 — no trades (FOMC decision day; NVO 21.7% blocks add; tech lagging; 2/3 weekly slots preserved)
+Stops confirmed (all GTC trailing 10%): AMZN $224.56 | GOOGL $338.19 | LLY $1,064.46 | NVO $40.49
