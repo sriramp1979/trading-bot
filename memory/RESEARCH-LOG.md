@@ -28,64 +28,7 @@ Format each entry:
 TRADE or HOLD (default HOLD if no edge)
 
 
---- TRIMMED 2026-06-16 ---
-
-## 2026-06-10 — Pre-market Research
-
-### Account
-- Equity: $104,865.64 | Cash: $54,672.46 | Deployed: $50,193.18 (47.8% — below 75–85% target)
-- Buying power: $159,538.10 (reg T) | Daytrade count: 0
-- Open positions: LLY (13 sh), META (24 sh), NVO (513 sh)
-- Week trades: 2/3 used (MRVL Jun 8, NVO Jun 9); 1 slot remaining
-
-### Positions
-| Ticker | Shares | Entry | Current | Unrealized P&L | Stop | HWM |
-|--------|--------|-------|---------|----------------|------|-----|
-| LLY | 13 | $1,078.65 | $1,146.06 | +$876.33 (+6.25%) | $1,064.46 (10% trail) | $1,182.73 |
-| META | 24 | $610.88 | $581.40 | −$707.52 (−4.83%) | $578.14 (10% trail) ⚠️ | $642.38 |
-| NVO | 513 | $41.27 | $41.60 | +$168.21 (+0.79%) | $38.08 (10% trail) | $42.31 |
-
-⚠️ **META critical**: only $3.26 above stop $578.14 (0.56% buffer) — stop-out near certain today.
-
-### Market Context
-- S&P 500 futures: −0.47% premarket; Polymarket 22% prob opens higher — strongly bearish lean
-- VIX: ~20.45 (Jun 9 close, +8.09% on day) — elevated and rising; risk-off conditions
-- Today's catalysts:
-  - **CPI (May, 8:30 AM ET)**: Expected 4.2% YoY — first reading above 4% since May 2023; dominant market-moving event
-  - **US-Iran military strikes**: US launched "self-defense strikes" overnight after Iranian forces downed US Apache helicopter over Strait of Hormuz — fragile ceasefire broken; geopolitical escalation risk
-  - **Oracle (ORCL) earnings today**: Key AI cloud spending barometer; AI narrative read-through
-  - **ECB rate decision Thursday**: Analysts expect rate hike — upward pressure on US yields
-  - **3-year note auction today / 10-year tomorrow**: Bond market stress with elevated yields
-  - **SpaceX IPO next Friday**: Capital rotation risk from recent winners
-- Earnings before open: none major; Oracle earnings after close
-
-### Position News
-- **LLY**: Jefferies raised PT to $1,350 (from $1,330); Phase 3 ACHIEVE program data strong; retatrutide obesity thesis intact and accelerating; premarket resilient — thesis strengthening
-- **META**: −6.25% past week, −10% YTD; EU ordered free WhatsApp access for rival AI chatbots (regulatory headwind); current $581.40 vs stop $578.14 = 0.56% buffer ⚠️; stop-out nearly certain at open; realized loss ~−$707; Communication Services 1st loss (does NOT trigger sector exit — need 2 consecutive)
-- **NVO**: ADA 2026 — CagriSema (REIMAGINE Phase 3) data presented; DKK 15B share buyback active; analyst target $47.12 (+13% upside); −1.40% intraday yesterday; GLP-1 thesis intact but macro CPI risk is headwind
-
-### Trade Ideas
-1. **MSFT (Microsoft)** — Technology — Azure AI cloud momentum; Copilot enterprise monetization accelerating; sector OK (1 loss); entry ~$472–475 post-CPI settle (~9:45 AM) ONLY if CPI ≤ 4.0%; stop 10% trail GTC (~$426), target +20% (~$567), R:R 2:1 | **CONDITIONAL on benign CPI**
-2. **AMZN (Amazon)** — Consumer Discretionary — AWS AI infrastructure expansion (Corning optical fiber deal); new sector (no current exposure = diversification); entry ~$238–242 post-CPI settle, stop 10% trail GTC (~$215), target +20% (~$288), R:R 2:1 | **CONDITIONAL on benign CPI** — backup to MSFT
-3. *(Reserve)* — If META stops out (~$14K freed) and CPI benign, 1 entry slot available; pick from above two
-
-### Risk Factors
-- **CPI (May, 4.2% expected)**: Hot print = first above 4% since May 2023; rate hike fears; VIX likely spikes above 22 (→ deployment gate exempt); broad equity selloff risk
-- **Iran military strikes**: Crude oil spike risk; geopolitical escalation; growth stocks headwind
-- **META stop (0.56% buffer)**: Virtually guaranteed stop-out today; −$707 realized loss; watch for slippage below $578.14
-- **VIX ~20.45 and rising**: Approaching deployment gate VIX > 22 threshold; may exempt gate post-CPI
-- **Futures −0.47%**: Risk-off open; avoid chasing
-- **Deployment gate**: 47.8% < 60% with VIX < 22 and futures gap > −2% → technically active; but CPI event overrides — await 8:30 AM print before any action
-- **1 trade slot remaining** this week — must not waste on low-conviction entry before CPI clarity
-
-### Decision
-HOLD pre-CPI — **CPI (8:30 AM ET) is the dominant event**. Deploying before the print violates risk discipline given geopolitical + inflation double risk. Post-CPI decision tree:
-- CPI ≤ 4.0% (benign): Enter MSFT ~9:45 AM post-settle; deployment gate requires action
-- CPI 4.0–4.2% (in-line): Pause; assess VIX reaction; enter AMZN only if tape stable
-- CPI ≥ 4.3% (hot): VIX likely > 22 → deployment gate exempt; HOLD all day
-META stop-out today is acceptable — frees ~$14K, reduces risk into volatile tape. 1 slot, 1 shot — deploy only into high-conviction post-CPI setup.
-
----
+--- TRIMMED 2026-06-17 ---
 
 ## 2026-06-11 — Pre-market Research
 
@@ -281,3 +224,62 @@ TRADE — deployment gate requires ≥1 entry (55.0% < 60%, VIX 17.68 < 22, futu
 
 ### Decision
 HOLD — deployment above 60% gate (no forced entry); FOMC decision tomorrow under new chair is the dominant near-term risk. Patience > activity: preserve both remaining weekly slots (2/3) until post-Fed clarity Wed Jun 17. All four positions green/flat with intact theses and adequate stop cushions. No position within -7%; no urgent action.
+
+---
+
+## 2026-06-17 — Pre-market Research
+
+### Account
+- Equity: $106,244.25 | Cash: $35,857.62 | Deployed: $70,386.63 (66.2% — above 60% gate, below 75–85% target)
+- Buying power: $142,101.87 (reg T) | Daytrade count: 0
+- Open positions: AMZN (86 sh), GOOGL (32 sh), LLY (13 sh), NVO (513 sh)
+- Week trades: 1/3 used (GOOGL Jun 15); 2 slots remaining
+- Phase P&L: +$6,244.25 (+6.24%)
+
+### Positions
+| Ticker | Shares | Entry | Current | Unrealized P&L | Stop | HWM |
+|--------|--------|-------|---------|----------------|------|-----|
+| AMZN | 86 | $242.63 | $245.88 | +$279.50 (+1.34%) | $224.56 (10% trail) | $249.51 |
+| GOOGL | 32 | $369.28 | $370.90 | +$51.77 (+0.44%) | $338.19 (10% trail, 25 sh ⚠️) | $375.77 |
+| LLY | 13 | $1,078.65 | $1,121.11 | +$551.98 (+3.94%) | $1,064.46 (10% trail) | $1,182.73 |
+| NVO | 513 | $41.27 | $44.44 | +$1,625.13 (+7.68%) | $40.31 (10% trail) | $44.79 |
+
+⚠️ **GOOGL stop gap**: GTC trailing stop covers only 25/32 shares — 7 shares unprotected.
+
+### Market Context
+- S&P 500 futures: +0.28% pre-market (S&P 500 closed 7,511.35 yesterday, −0.57%); Polymarket 78% prob opens higher
+- VIX: 16.11 (−0.56%) — calm, well below 22 gate threshold
+- Today's catalysts:
+  - **FOMC decision 2 PM ET** (dominant event): New chair Kevin Warsh's first rate decision; hold at 3.5–3.75% expected; markets watching for easing-bias removal in statement and dot-plot — binary event for rate-sensitive names
+  - **Iran deal holding**: 60-day Strait of Hormuz agreement intact; continued risk-on tailwind, oil soft
+  - **Earnings today**: CarMax (KMX), Jabil (JBL) — no direct portfolio read-through
+  - **Econ data**: Business Inventories, EIA crude inventory report
+- Earnings before open: none major
+
+### Position News
+- **AMZN**: No fresh negative news; AWS +28% YoY Q1 2026 (fastest in 15 qtrs); HWM $249.51 — thesis intact; BofA PT $310 (Strong Buy)
+- **GOOGL**: $1.5B Alabama data center expansion; Android 17 rollout; next earnings Jul 28; ⚠️ 7 of 32 shares have no stop order — place additional trailing stop or cancel/replace for full 32 shares
+- **LLY**: Barclays Buy rating reaffirmed Jun 15; retatrutide (Phase 3) and Jaypirca (BRUIN CLL-322, −45% risk of progression) advancing; employer GLP-1 coverage headwind emerging for 2027 (modest near-term impact); HWM $1,182.73 = −5.2% from peak; thesis intact
+- **NVO**: +2.04% pre-market; UK Wegovy tablet approved; China Wegovy pill approval filing; DKK buyback active; ⚠️ IT security incident reported (unauthorized access to limited internal systems — immaterial operationally); near HWM $44.79; tighten-trail threshold +15% = $47.46 — approaching but not yet triggered
+
+### Trade Ideas
+1. **AMD (Advanced Micro Devices)** — Technology — AI training/inference demand; semis momentum; sector 1 consecutive loss (OK); post-Fed entry only (2:15 PM ET) if Warsh neutral-to-dovish and tape stable; entry ~$165–175 (need fresh quote at 2:15 PM), stop 10% trail GTC, target +20%, R:R 2:1 | **PRIMARY — fills 5th slot, boosts deployment to ~73%**
+2. **HOOD (Robinhood)** — Financials — record FIFA World Cup prediction-market volumes + bullish analyst upgrades; new sector (0 losses); post-Fed entry only; ref $93–95, stop 10% trail GTC (~$84–86), target +20% (~$112–114), R:R 2:1 | **SECONDARY** — validate live quote before sizing
+3. *(Hold slot 3 in reserve)* — Maximum 1 new trade today to preserve flexibility; second slot carries to next week if no high-conviction setup materializes post-Fed
+
+### Risk Factors
+- **FOMC 2 PM ET**: Warsh hawkish language (inflation above target, no cuts signaled) → growth stocks could reprice; hold all entries until statement digested
+- **GOOGL partial stop** ⚠️: 7/32 shares unprotected — immediate action needed (add GTC trailing stop for 7 shares at ≥3% above current price)
+- **NVO tighten threshold approaching**: +7.68% unrealized; +15% trigger ($47.46) requires trail tighten to 7%; not triggered yet — monitor
+- **LLY 2027 employer coverage risk**: Headwind if employer health plan exclusions widen; 2026 revenue largely unaffected; thesis intact short-term
+- **NVO IT security incident**: Minor/contained per company disclosure; does not change GLP-1 thesis; monitor for material escalation
+- **Deployment 66.2%**: Below 75–85% target; post-Fed slot can close gap toward 70–73%
+
+### Decision
+HOLD pre-Fed — FOMC 2 PM ET is the dominant event. Do not deploy ahead of Warsh's statement.
+Post-Fed decision tree:
+- Warsh neutral/dovish (hold + signals future cuts): Enter AMD ~2:15 PM post-settle; target deployment ~73%
+- Warsh hawkish (removes easing bias, hot inflation tone): HOLD; no new entries; let stops protect
+- Tape volatile post-announcement: Wait for 30-min settle before any entry
+
+Immediate action: Place trailing stop order for remaining 7 GOOGL shares (GTC, 10% trail) to close stop gap.
