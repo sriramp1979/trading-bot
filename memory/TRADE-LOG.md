@@ -279,3 +279,13 @@ Stops confirmed (all GTC trailing 10%): AMZN $224.56 | GOOGL $338.19 | LLY $1,06
 **GOOGL stop gap fixed**: Placed 10% trailing stop GTC for 7 unprotected shares (Order 54525197, stop $326.03, HWM $362.26). All 32 GOOGL shares now covered: 25 sh (c428b2b1, stop $338.19, HWM $375.77) + 7 sh (54525197, stop $326.03, HWM $362.26).
 Stops confirmed (all GTC trailing 10%): AMZN $224.56 (HWM $249.51) | GOOGL 25sh $338.19 + 7sh $326.03 | LLY $1,064.46 (HWM $1,182.73) | NVO $40.50 (HWM $44.997)
 **Mon Jun 23 action plan**: NVDA (Technology PRIMARY) if ACN beat confirmed + Nasdaq holds; JPM (Financials SECONDARY — rate-hike beneficiary); target 75–80% deployed. 2/3 weekly slots reset.
+
+### Jun 18 — EOD Snapshot (Day 17, Thursday)
+**Portfolio:** $105,028.74 | **Cash:** $35,857.62 (34.1%) | **Day P&L:** +$228.65 (+0.22%) | **Phase P&L:** +$5,028.74 (+5.03%)
+| Ticker | Shares | Entry | Close | Day Chg | Unrealized P&L | Stop |
+|--------|--------|-------|-------|---------|----------------|------|
+| AMZN | 86 | $242.63 | $243.70 | +2.61% | +$92.02 | $224.56 (HWM $249.51) |
+| GOOGL | 32 | $369.28 | $367.97 | +1.15% | -$42.15 | 25sh $338.19 + 7sh $332.53 |
+| LLY | 13 | $1,078.65 | $1,101.31 | -0.96% | +$294.58 | $1,064.46 (HWM $1,182.73) |
+| NVO | 513 | $41.27 | $43.19 | -0.76% | +$983.88 | $40.50 (HWM $44.997) |
+**Notes:** Partial recovery +$228.65 (+0.22%) after yesterday's FOMC selloff; AMZN bounced +2.61% while GOOGL recovered +1.15%, LLY and NVO edged lower but held well above stops. Last trading day before Juneteenth 3-day weekend — all GTC stops confirmed, GOOGL fully covered (25sh + 7sh); next trading day Mon Jun 23 with 2/3 weekly slots and NVDA/JPM targets.
