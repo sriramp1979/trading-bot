@@ -274,3 +274,8 @@ Stops confirmed (all GTC trailing 10%): AMZN $224.56 | GOOGL $338.19 | LLY $1,06
 | LLY | 13 | $1,078.65 | $1,112.50 | -0.89% | +$440.05 | $1,064.46 (HWM $1,182.73) |
 | NVO | 513 | $41.27 | $43.65 | +0.23% | +$1,219.86 | $40.50 (HWM $45.00) |
 **Notes:** FOMC decision day triggered broad tech selloff; AMZN -3.38% and GOOGL -2.49% dragged portfolio down -$1,097 (-1.04%). LLY and NVO held firm — all four positions remain well clear of trailing stops. No new trades; 2/3 weekly slots preserved for post-FOMC setup scan tomorrow.
+
+## 2026-06-18 — no new trades (3-day weekend + hawkish Fed overhang; deployment 65.7% above 60% gate)
+**GOOGL stop gap fixed**: Placed 10% trailing stop GTC for 7 unprotected shares (Order 54525197, stop $326.03, HWM $362.26). All 32 GOOGL shares now covered: 25 sh (c428b2b1, stop $338.19, HWM $375.77) + 7 sh (54525197, stop $326.03, HWM $362.26).
+Stops confirmed (all GTC trailing 10%): AMZN $224.56 (HWM $249.51) | GOOGL 25sh $338.19 + 7sh $326.03 | LLY $1,064.46 (HWM $1,182.73) | NVO $40.50 (HWM $44.997)
+**Mon Jun 23 action plan**: NVDA (Technology PRIMARY) if ACN beat confirmed + Nasdaq holds; JPM (Financials SECONDARY — rate-hike beneficiary); target 75–80% deployed. 2/3 weekly slots reset.
