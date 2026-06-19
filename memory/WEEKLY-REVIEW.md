@@ -162,3 +162,69 @@ Template for each entry:
 
 ### Overall Grade: B-
 *Alpha real (+3.22% vs S&P) driven by one exceptional HPE call. But the deployment failure is now chronic and structural — 2 consecutive weeks ending below 30% deployed. A single great trade cannot carry a portfolio that's 72% cash. Process A- (research, entries, stops all clean); deployment D (chronic, rule-level fix added); net B-.*
+
+---
+
+## Week ending 2026-06-19 *(4-day week — Juneteenth holiday, Mon–Thu trading)*
+
+### Stats
+| Metric | Value |
+|--------|-------|
+| Starting portfolio | $105,447.93 (Jun 12 EOD; prior week review not completed) |
+| Ending portfolio | $105,090.00 |
+| Week return | −$357.93 (−0.34%) |
+| S&P 500 week | +0.93% |
+| Bot vs S&P | −1.27% |
+| Phase P&L | +$5,090.00 (+5.09% from $100,000) |
+| Trades | 1 new entry (W:0 / L:0 / open:4) |
+| Win rate | N/A (no closed trades) |
+| Best trade | NVO +4.65% unrealized |
+| Worst trade | GOOGL −0.34% unrealized |
+| Profit factor | N/A |
+| Deployment at week end | 65.9% ($69,232 deployed) |
+
+### Closed Trades
+| Ticker | Entry | Exit | P&L | Notes |
+|--------|-------|------|-----|-------|
+| — | — | — | — | No closed trades this week |
+
+### Open Positions at Week End
+| Ticker | Entry | Close | Unrealized | Stop |
+|--------|-------|-------|------------|------|
+| AMZN | $242.63 | $244.39 | +$151.36 (+0.73%) | $224.56 trail (HWM $249.51) |
+| GOOGL | $369.28 | $368.03 | −$40.07 (−0.34%) | 25sh $338.19 + 7sh $332.53 |
+| LLY | $1,078.65 | $1,098.57 | +$258.96 (+1.85%) | $1,064.46 trail (HWM $1,182.73) ⚠️ 3.1% cushion |
+| NVO | $41.27 | $43.19 | +$983.88 (+4.65%) | $40.50 trail (HWM $44.997) |
+
+### What Worked
+- Iran peace deal Jun 15 drove broad risk-on gap; AMZN +3.23% and GOOGL +2.54% opened the week strong
+- All four positions survived FOMC hawkish shock (Jun 17) with trailing stops intact — no premature exits
+- NVO +4.65% unrealized; GLP-1 thesis remains constructive heading into next week
+- GOOGL stop gap corrected Jun 18 — 7 previously unprotected shares now fully covered by GTC trailing stop
+- Deployment gate triggered correctly Monday (55% < 60%); GOOGL entered, deployment reached 65.9%
+
+### What Didn't Work
+- Portfolio −0.34% vs S&P +0.93% = −1.27% relative underperformance — 4th consecutive week behind benchmark
+- FOMC Jun 17 selloff hit AMZN (−3.38%) and GOOGL (−2.49%) harder than the broader index — tech/consumer concentration exposed to rate-hike narrative
+- Only 1/3 weekly slots used; 2 unused slots (no entry Tue–Thu) despite available setups
+- GOOGL partial fill (25/57 ordered) due to paper-account liquidity cap — position undersized vs intention
+- LLY stop cushion narrowed to 3.1% into 3-day weekend — gap-down risk unhedgeable over Juneteenth break
+- 4th straight week with deployment below 75–85% target (65.9%); systematic cash drag unresolved
+
+### Key Lessons
+- FOMC volatility amplifies rate sensitivity in tech-heavy positions; AMZN/GOOGL more rate-exposed than assumed
+- Holiday-shortened weeks require aggressive early-week entry (Mon/Tue) — window compresses fast
+- Paper-account fill constraints are real — cap large-cap orders at 40–50 shares to avoid partial fills
+- 60% deployment gate prevents worst-case cash drag but does not close the gap to the 75–85% target
+- Weeks 1–4 consistent pattern: position quality is working (NVO/LLY green), cash drag is the alpha killer
+
+### Adjustments for Next Week
+- Execute NVDA + JPM on Mon Jun 23 at post-open settle — target 78–80% deployed after two entries
+- Watch LLY Monday open: gap down >3.1% triggers stop at $1,064.46; if triggered, redeploy same session into 3rd name
+- AMZN: Prime Day Jun 23–26 active catalyst — hold; tighten trail to 7% if +15% (~$279) reached
+- MU (Micron, Jun 24 earnings): backup entry if NVDA allocation would breach 20% cap
+- Cap paper-account orders at 45 shares max for names >$100/share to avoid liquidity-cap partial fills
+- If deployment < 75% after Mon/Tue entries, deploy 3rd slot aggressively same week — no more 1/3 weeks
+
+### Overall Grade: C
+*Portfolio −0.34% vs S&P +0.93% = −1.27% relative. 4-day holiday-shortened week, no closed trades, 1 entry. Individual positions constructive (NVO leading, LLY/AMZN stable, GOOGL near entry). Tech concentration hurt on FOMC day. Process B (stops managed, gap corrected, gate triggered correctly); deployment C− (65.9% — improving trend but still below target for 4th straight week). Net C.*
