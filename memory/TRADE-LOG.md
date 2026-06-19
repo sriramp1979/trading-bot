@@ -289,3 +289,15 @@ Stops confirmed (all GTC trailing 10%): AMZN $224.56 (HWM $249.51) | GOOGL 25sh 
 | LLY | 13 | $1,078.65 | $1,101.31 | -0.96% | +$294.58 | $1,064.46 (HWM $1,182.73) |
 | NVO | 513 | $41.27 | $43.19 | -0.76% | +$983.88 | $40.50 (HWM $44.997) |
 **Notes:** Partial recovery +$228.65 (+0.22%) after yesterday's FOMC selloff; AMZN bounced +2.61% while GOOGL recovered +1.15%, LLY and NVO edged lower but held well above stops. Last trading day before Juneteenth 3-day weekend — all GTC stops confirmed, GOOGL fully covered (25sh + 7sh); next trading day Mon Jun 23 with 2/3 weekly slots and NVDA/JPM targets.
+
+## 2026-06-19 — Juneteenth holiday, market closed; no trades
+
+### Jun 19 — EOD Snapshot (Day 18, Friday — Juneteenth, market closed)
+**Portfolio:** $105,090.00 | **Cash:** $35,857.62 (34.1%) | **Day P&L:** +$61.26 (+0.06%) | **Phase P&L:** +$5,090.00 (+5.09%)
+| Ticker | Shares | Entry | Close | Day Chg | Unrealized P&L | Stop |
+|--------|--------|-------|-------|---------|----------------|------|
+| AMZN | 86 | $242.63 | $244.39 | — | +$151.36 (+0.73%) | $224.56 (HWM $249.51) |
+| GOOGL | 32 | $369.28 | $368.03 | — | -$40.07 (-0.34%) | 25sh $338.19 + 7sh $332.53 |
+| LLY | 13 | $1,078.65 | $1,098.57 | — | +$258.96 (+1.85%) | $1,064.46 (HWM $1,182.73) |
+| NVO | 513 | $41.27 | $43.19 | — | +$983.88 (+4.65%) | $40.50 (HWM $44.997) |
+**Notes:** Juneteenth — market closed, no activity. All four GTC trailing stops confirmed active. Mon Jun 23: target NVDA (Technology PRIMARY, if ACN beat + Nasdaq holds) and JPM (Financials SECONDARY); 2/3 weekly slots, push deployment from 65.8% toward 75–80%.
