@@ -28,57 +28,7 @@ Format each entry:
 TRADE or HOLD (default HOLD if no edge)
 
 
---- TRIMMED 2026-06-18 ---
-
-## 2026-06-12 — Pre-market Research
-
-### Account
-- Equity: $106,273.50 | Cash: $47,674.66 | Deployed: $58,598.84 (55.1% — below 75–85% target)
-- Buying power: $153,948.16 (reg T) | Daytrade count: 0
-- Open positions: AMZN (86 sh), LLY (13 sh), NVO (513 sh)
-- Week trades: **3/3 USED** (MRVL Jun 8, NVO Jun 9, AMZN Jun 10) — no new entries; week resets Mon Jun 15
-
-### Positions
-| Ticker | Shares | Entry | Current | Unrealized P&L | Stop | HWM |
-|--------|--------|-------|---------|----------------|------|-----|
-| AMZN | 86 | $242.63 | $243.50 | +$74.82 (+0.36%) | $218.55 (10% trail) | $242.83 |
-| LLY | 13 | $1,078.65 | $1,164.79 | +$1,119.82 (+7.99%) | $1,064.46 (10% trail) | $1,182.73 |
-| NVO | 513 | $41.27 | $43.89 | +$1,342.98 (+6.34%) | $39.70 (10% trail) | $44.11 |
-
-### Market Context
-- S&P 500 futures: +0.18% (mildly positive; S&P 500 closed +1.75% Thu at 7,394.30 on Iran deal optimism)
-- VIX: ~19.44 (declining from Jun 10 peak 22.22; back below deployment-gate threshold)
-- Today's catalysts:
-  - **SpaceX IPO**: Priced $135/sh, $1.78T valuation — largest IPO in history; broad market sentiment lift; capital rotation risk from recent winners
-  - **Iran deal progress**: Trump confirmed US strikes called off, peace deal near completion; oil prices fell — energy sector bid weakening
-  - **U of M consumer sentiment (prelim)**: Expected 46.0 (rebound from 44.8); upside surprise possible
-  - **Semis/tech momentum**: SOXX +8% Thu; MU, AMD, INTC sharply higher; AI infrastructure narrative accelerating
-  - **LLY catalyst**: FDA approved orforglipron (Foundayo) — first oral GLP-1 pill with no food/water restrictions; beats NVO and AZ in diabetes trials; Q1 revenue +55.5%, guidance raised to $35.5–37 non-GAAP EPS
-- Earnings before open: none major
-
-### Position News
-- **LLY**: FDA Foundayo (oral GLP-1) approved — significant competitive advantage vs NVO and AstraZeneca; Q1 rev +55.5%, EPS guidance raised; thesis accelerating strongly. At +7.99% unrealized; tighten-trail threshold: +15% = $1,240.45 — not yet reached; keep 10% trail.
-- **NVO**: Diverging from LLY — adj. sales declining, cutting 9,000 jobs; Wegovy pill $2.26B with 1M+ patients but LLY competitive threat growing. Stop $39.70 (HWM $44.11); thesis intact but weakening relative to LLY — monitor.
-- **AMZN**: +0.82% premarket; no negative news; AWS AI infra thesis intact. Stop $218.55 (HWM $242.83); 10.3% buffer — safe.
-
-### Trade Ideas (for Mon Jun 15 — week resets with 3 fresh slots)
-1. **GOOGL (Alphabet)** — Communication Services — Goldman AI underestimation thesis; Google AI search monetization; sector 1 loss from META (still OK, not at 2); new name in recovering sector; entry ~$178–182, stop 10% trail GTC (~$162), target +20% (~$216), R:R 2:1 | PRIMARY
-2. **AMD (Advanced Micro Devices)** — Technology — SOXX +8% Thu; AI training/inference demand surging; semis momentum extending; sector 1 loss (OK); entry ~$190–200 post-settle (avoid gap spike), stop 10% trail GTC (~$175), target +20% (~$228), R:R 2:1 | PRIMARY — closes deployment gap
-3. **MSFT (Microsoft)** — Technology — Azure AI cloud + Copilot enterprise; more defensive than AMD; same sector (check 20% cap per position if holding AMD); entry ~$478–485, stop 10% trail GTC (~$435), target +20% (~$578), R:R 2:1 | BACKUP
-
-### Risk Factors
-- **Weekly limit 3/3**: No new entries permissible today; resets Mon Jun 15
-- **Deployment gate conflict**: 55.1% < 60% with VIX 19.44 (<22) and futures +0.18% (>−2%) → gate technically active; weekly limit (hard rule) takes precedence over gate; resolve Mon Jun 15 with 2 entries
-- **SpaceX IPO at $1.78T**: Largest IPO in history — potential capital rotation out of growth stocks on retail reallocation; short-term liquidity drag
-- **Iran deal not signed**: Peace deal "near" but not finalized; weekend headline risk if talks collapse
-- **NVO/LLY divergence**: LLY taking oral GLP-1 market share; NVO cutting jobs + declining sales; watch NVO stop $39.70 closely
-- **LLY tighten threshold**: +15% = $1,240.45; not yet reached; keep monitoring
-- **Friday thin tape**: Lower volume; momentum can extend OR reverse sharply; no chasing
-
-### Decision
-HOLD — weekly limit 3/3 exhausted; no entries permissible. All three positions green with intact theses and adequate stop cushions. **Mon Jun 15 action plan**: Deploy 2 positions — GOOGL (Communication Services, PRIMARY) + AMD (Technology, PRIMARY) — to close deployment gap from 55% → ~75%; deployment gate requires ≥1 entry at open (VIX likely <22 if Iran deal holds). LLY thesis strengthening significantly on FDA oral GLP-1 approval; NVO thesis intact but monitor relative underperformance.
-
----
+--- TRIMMED 2026-06-19 ---
 
 ## 2026-06-15 — Pre-market Research
 
@@ -269,3 +219,59 @@ HOLD — **3-day weekend + hawkish Fed overhang = asymmetric risk for new entrie
 **Critical maintenance item**: Fix GOOGL stop gap (7 unprotected shares) before open — place additional trailing stop GTC for 7 GOOGL shares at 10% trail.
 
 **Mon Jun 23 action plan (3 fresh slots)**: NVDA (Technology, PRIMARY) if ACN beats + Nasdaq holds; JPM (Financials, SECONDARY — rate-hike beneficiary); MSFT (Technology, BACKUP). Target 75–80% deployed after 1–2 entries next week.
+
+## 2026-06-19 — Pre-market Research (Juneteenth — Market CLOSED; next trading day Mon Jun 23)
+
+### Account
+- Equity: $105,090 | Cash: $35,857.62 (34.1%) | Deployed: $69,232.38 (65.9% — above 60% gate, below 75–85% target)
+- Buying power: $140,947.62 (reg T) | Daytrade count: 0
+- Open positions: AMZN (86 sh), GOOGL (32 sh), LLY (13 sh), NVO (513 sh)
+- Week trades: fresh reset — 3/3 slots available starting Mon Jun 23
+- Phase P&L: +$5,090 (+5.09%) | Day 18
+
+### Positions
+| Ticker | Shares | Entry | Current | Unrealized P&L | Stop | HWM |
+|--------|--------|-------|---------|----------------|------|-----|
+| AMZN | 86 | $242.63 | $244.39 | +$151.36 (+0.73%) | $224.56 (10% trail) | $249.51 |
+| GOOGL | 32 | $369.28 | $368.03 | −$40.07 (−0.34%) | 25sh $338.19 / 7sh $332.53 (10% trail) | $375.77 / $369.48 |
+| LLY | 13 | $1,078.65 | $1,098.57 | +$258.96 (+1.85%) | $1,064.46 (10% trail) ⚠️ 3.1% cushion | $1,182.73 |
+| NVO | 513 | $41.27 | $43.19 | +$983.88 (+4.65%) | $40.50 (10% trail) | $44.997 |
+
+### Market Context
+- S&P 500 futures: Market closed (Juneteenth federal holiday); no standard trading; post-FOMC recovery attempt in progress
+- VIX: ~16.40 (Jun 18 close) — below 22 gate threshold; moderate, risk-on lean
+- Today's catalysts: No trading — long-weekend research run for Mon Jun 23 open
+- Week of Jun 23 key events:
+  - **Amazon Prime Day Jun 23–26**: Starts midnight PT Monday; 4-day event = direct near-term catalyst for AMZN (revenue/visibility)
+  - **Micron (MU) earnings Jun 24**: AI memory / HBM3E cycle read-through; semiconductor sentiment barometer
+  - **Fed bank stress test results Jun 24**: Financials catalyst; JPM likely passes cleanly
+  - **May new home sales Jun 24**: Housing/consumer macro read
+  - **Q1 GDP revision + May PCE (late week)**: Inflation data; hot PCE could reignite rate-hike fears
+
+### Position News
+- **AMZN** ($244.39, +0.73%): Prime Day Jun 23–26 is direct near-term catalyst; AWS growth +24% vs +22% estimate (beat); BofA Buy PT $310; stop $224.56 at 8.1% cushion — safe. Thesis accelerating.
+- **GOOGL** ($368.03, −0.34%): Alphabet raised $84.75B capital (oversubscribed), doubled cloud backlog to $460B, beat earnings by 94%, analyst targets raised to $493; all 10 analysts Buy/Strong Buy. Stop 25sh $338.19 / 7sh $332.53 — 8.1–10% cushions; thesis strongly intact; −0.34% vs entry is noise.
+- **LLY** ($1,098.57, +1.85%): Retatrutide Phase 3 data positive; oral GLP-1 Foundayo progressing; FDA-approved Ebglyss; 30-day return +17.28%. ⚠️ Stop $1,064.46 only 3.1% cushion (stock pulled back 7.1% from HWM $1,182.73) — monitor for stop-out risk Monday open. Thesis intact but stop tight.
+- **NVO** ($43.19, +4.65%): Oral Wegovy pill in development; facing LLY competition in GLP-1; analyst Buy PT $47.36 (+10% upside); data breach concern flagged in press. Stop $40.50 at 6.2% cushion — safe.
+
+### Trade Ideas
+1. **NVDA (Nvidia)** — Technology — AI GPU cycle: GOOGL $190B + AMZN $200B capex = massive data center demand; ACN beat (Jun 18) confirmed AI consulting demand; Nasdaq recovering from FOMC shock; sector OK (1 loss); entry 9:35–9:45 AM post-open settle, 10% trail GTC, target +20%, R:R 2:1 | Size ~10–12% (~$10.5–12.6K); verify price at open | **PRIMARY**
+2. **JPM (JPMorgan Chase)** — Financials — Hawkish Fed (rate hike expected late 2026) expands NIM; stress test results Jun 24 near-term catalyst; new sector (0 losses, diversification); entry post-settle, 10% trail GTC, target +15–20%, R:R 2:1 | **SECONDARY**
+3. **MU (Micron)** — Technology — AI memory (HBM3E) demand; earnings Jun 24 upside catalyst potential; same sector as NVDA — check combined weight vs 20% cap; entry only if semis extend Monday; **BACKUP**
+
+### Risk Factors
+- **LLY stop 3.1% cushion** ⚠️: Gap down >3.1% on Monday triggers stop at $1,064.46 (below entry → ~−$185 loss); healthcare sector weak; monitor at open
+- **Hawkish Fed overhang**: 9/18 FOMC officials favor 2026 rate hike; multiple compression for high-P/E tech (AMZN, GOOGL)
+- **Weekend headline risk**: NVO data breach concern in press; Iran deal implementation; geopolitical tail risk over 3-day weekend unhedgeable
+- **Deployment 65.9%**: Above 60% gate (no forced entry Monday unless drops below 60% at open); below 75–85% target — NVDA + JPM would close gap to ~78%
+- **May PCE late week**: Hot reading validates hawkish Fed narrative; could pressure growth stocks mid-week after entries
+- **NVO data breach**: Details unclear; could weigh on stock if material; stop $40.50 at 6.2% cushion provides buffer
+
+### Decision
+HOLD — market closed (Juneteenth federal holiday). No action possible today. All 4 GTC trailing stops confirmed in place.
+
+**Mon Jun 23 action plan (3/3 fresh weekly slots)**:
+- **NVDA (PRIMARY)** — enter 9:35–9:45 AM post-open settle; confirm Nasdaq direction + AMZN Prime Day momentum positive
+- **JPM (SECONDARY)** — enter post-settle; Jun 24 stress tests near-term catalyst; Financials sector new exposure
+- Target: 75–80% deployed after 1–2 entries
+- ⚠️ Watch LLY at open: if gapping down >3%, may auto-stop at $1,064.46; if stopped, redeploy freed cash into 3rd idea
