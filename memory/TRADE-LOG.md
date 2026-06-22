@@ -319,4 +319,11 @@ Stops confirmed (all GTC trailing 10%): AMZN $224.56 (HWM $249.51) | GOOGL 25sh 
 | Buy Order | d5d2c799 | b4489fef |
 | Stop Order | 22208778 | 91ec700a |
 
+## 2026-06-22 — midday exit: GOOGL
+
+- **EXIT GOOGL** | 32 shares | Entry $369.28 | Exit ~$345.65 | Realized P&L: ~-$756 (-6.4%)
+- **Reason:** Thesis broken — $84.75B secondary equity offering (buybacks suspended, 47% FCF decline YoY), key AI talent departures (DeepMind VP John Jumper → Anthropic; Gemini co-lead Noam Shazeer → OpenAI), regulatory/antitrust pressure; exited before auto-stop to preserve capital
+- Cancelled stops: 54525197 (7sh, $332.53) and c428b2b1 (25sh, $338.19)
+- Communication Services: 2 consecutive losses → sector EXIT
+
 **Post-trade state:** Equity $105,192.25 | Cash $15,024.51 (14.3%) | Deployed $90,167.74 (85.7%) | Positions: AMZN, GOOGL, LLY, NVO, NVDA, JPM (6/6 max) | DT count: 0

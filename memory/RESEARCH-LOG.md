@@ -279,3 +279,18 @@ HOLD — market closed (Juneteenth federal holiday). No action possible today. A
 
 ### Decision
 TRADE — VIX 16.78 < 22, futures +0.98%, deployment 66.0% above 60% gate but below 75–85% target. Fresh week, 3/3 slots available. Semi sector has high-conviction catalyst. **PRIMARY: NVDA** entry 9:35–9:45 AM post-open settle (avoid index-rebalance spike); confirm Nasdaq direction first. **SECONDARY: JPM** post-settle if NVDA fills cleanly. Target 75–78% deployed after 2 entries. ⚠️ Monitor LLY at open — 3.4% stop cushion; if stopped out, redeploy freed capital into 3rd idea. Do NOT trade MU ahead of Wednesday earnings.
+
+### Afternoon Addendum — 2026-06-22 Midday Scan
+
+**GOOGL** (EXITED midday ~$345.65, -6.4%):
+- $84.75B secondary equity offering → buybacks suspended; 47% FCF decline YoY to $10.1B
+- DeepMind VP / Nobel laureate John Jumper departed to Anthropic; Gemini co-lead Noam Shazeer departed to OpenAI
+- Antitrust + regulatory overhang intensifying
+- **Thesis broken** — exited all 32sh before auto-stop; Communication Services → EXIT (2 consecutive losses)
+
+**AMZN** (HOLD, $233.54, -3.7% unrealized):
+- FTC antitrust complaint targeting $70B advertising business (highest-margin segment); state AGs co-filing
+- EU Commission designating AWS as DMA "gatekeeper" — interoperability requirements, up to 10% global turnover penalty
+- Heavy CapEx overhang ($200B+ AI/robotics); insider selling $51.6M (zero buys)
+- Near-term Prime Day catalyst intact; Strong Buy consensus target $312.99 (63 analysts)
+- **Hold** — regulatory risks real but not thesis-breaking for near-term; stop at $224.56 (3.8% cushion) provides protection

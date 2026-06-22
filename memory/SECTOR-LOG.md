@@ -5,13 +5,14 @@
 |--------|-------------|-------------------|--------|
 | Technology | NVDA | 1 | OK |
 | Healthcare | LLY, NVO | 0 | OK |
-| Communication Services | GOOGL | 1 | OK |
+| Communication Services | — | 2 | EXIT |
 | Consumer Discretionary | AMZN | 0 | OK |
 | Financials | JPM | 0 | OK |
 
 ## Sector Exit History
 | Sector | Exit Date | Reason |
 |--------|-----------|--------|
+| Communication Services | 2026-06-22 | 2 consecutive losses (META stop-out Jun 11, GOOGL thesis-break exit Jun 22 — dilution + FCF collapse + AI talent flight) |
 
 ## Sector Classification
 Use these exact sector names (no variations):
