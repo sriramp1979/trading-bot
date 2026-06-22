@@ -327,3 +327,14 @@ Stops confirmed (all GTC trailing 10%): AMZN $224.56 (HWM $249.51) | GOOGL 25sh 
 - Communication Services: 2 consecutive losses → sector EXIT
 
 **Post-trade state:** Equity $105,192.25 | Cash $15,024.51 (14.3%) | Deployed $90,167.74 (85.7%) | Positions: AMZN, GOOGL, LLY, NVO, NVDA, JPM (6/6 max) | DT count: 0
+
+### Jun 22 — EOD Snapshot (Day 19, Monday)
+**Portfolio:** $104,648.13 | **Cash:** $26,069.47 (24.9%) | **Day P&L:** -$441.87 (-0.42%) | **Phase P&L:** +$4,648.13 (+4.65%)
+| Ticker | Shares | Entry | Close | Day Chg | Unrealized P&L | Stop |
+|--------|--------|-------|-------|---------|----------------|------|
+| AMZN | 86 | $242.63 | $233.20 | -4.58% | -$810.98 (-3.89%) | $224.56 (HWM $249.51) |
+| JPM | 31 | $327.63 | $331.92 | +2.06% | +$133.03 (+1.31%) | $299.49 (HWM $332.77) |
+| LLY | 13 | $1,078.65 | $1,104.34 | +0.53% | +$333.97 (+2.38%) | $1,064.46 (HWM $1,182.73) |
+| NVDA | 50 | $213.53 | $208.68 | -0.95% | -$242.70 (-2.27%) | $192.59 (HWM $213.99) |
+| NVO | 513 | $41.27 | $45.67 | +5.74% | +$2,256.12 (+10.66%) | $41.81 (HWM $46.45) |
+**Notes:** Added NVDA (50sh @$213.53) and JPM (31sh @$327.63) per plan; exited GOOGL at -6.4% on thesis break (secondary offering + AI talent exodus), Communication Services sector now on EXIT list. AMZN fell sharply -4.58% to $233.20, at -3.89% from entry — watch for -7% manual cut threshold; NVO surged +5.74% to $45.67 raising HWM to $46.45. Portfolio 75.1% deployed, 1 weekly trade slot remaining; JPM stress test results due Jun 24 as near-term catalyst.
