@@ -301,3 +301,22 @@ Stops confirmed (all GTC trailing 10%): AMZN $224.56 (HWM $249.51) | GOOGL 25sh 
 | LLY | 13 | $1,078.65 | $1,098.57 | — | +$258.96 (+1.85%) | $1,064.46 (HWM $1,182.73) |
 | NVO | 513 | $41.27 | $43.19 | — | +$983.88 (+4.65%) | $40.50 (HWM $44.997) |
 **Notes:** Juneteenth — market closed, no activity. All four GTC trailing stops confirmed active. Mon Jun 23: target NVDA (Technology PRIMARY, if ACN beat + Nasdaq holds) and JPM (Financials SECONDARY); 2/3 weekly slots, push deployment from 65.8% toward 75–80%.
+
+## Week of 2026-06-22 | Trades: 2/3
+
+## 2026-06-22 — market-open trades
+
+| Field | NVDA | JPM |
+|-------|------|-----|
+| Side | BUY | BUY |
+| Shares | 50 | 31 |
+| Entry | $213.534 | $327.626 |
+| Stop | 10% trailing GTC ($192.20, HWM $213.56) | 10% trailing GTC ($295.07, HWM $327.86) |
+| Target | $256.24 (+20%) | $376.77–$393.15 (+15–20%) |
+| R:R | 2:1 | 1.5:1–2:1 |
+| Sector | Technology | Financials |
+| Thesis | Semiconductor surge (Intel +10.64% Apple chip partnership, SK Hynix record MktCap, DRAM ETF +3%); AI GPU capex GOOGL $190B + AMZN $200B; ACN beat Jun 18 confirmed AI demand; sector OK (1 loss) | Fed dot plots lean toward rate hike = NIM expansion; bank stress test results Jun 24 near-term catalyst; new sector exposure (0 losses); risk-on backdrop |
+| Buy Order | d5d2c799 | b4489fef |
+| Stop Order | 22208778 | 91ec700a |
+
+**Post-trade state:** Equity $105,192.25 | Cash $15,024.51 (14.3%) | Deployed $90,167.74 (85.7%) | Positions: AMZN, GOOGL, LLY, NVO, NVDA, JPM (6/6 max) | DT count: 0

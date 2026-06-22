@@ -3,10 +3,11 @@
 ## Active Sector Tracking
 | Sector | Tickers Held | Consecutive Losses | Status |
 |--------|-------------|-------------------|--------|
-| Technology | — | 1 | OK |
+| Technology | NVDA | 1 | OK |
 | Healthcare | LLY, NVO | 0 | OK |
 | Communication Services | GOOGL | 1 | OK |
 | Consumer Discretionary | AMZN | 0 | OK |
+| Financials | JPM | 0 | OK |
 
 ## Sector Exit History
 | Sector | Exit Date | Reason |
