@@ -338,3 +338,11 @@ Stops confirmed (all GTC trailing 10%): AMZN $224.56 (HWM $249.51) | GOOGL 25sh 
 | NVDA | 50 | $213.53 | $208.68 | -0.95% | -$242.70 (-2.27%) | $192.59 (HWM $213.99) |
 | NVO | 513 | $41.27 | $45.67 | +5.74% | +$2,256.12 (+10.66%) | $41.81 (HWM $46.45) |
 **Notes:** Added NVDA (50sh @$213.53) and JPM (31sh @$327.63) per plan; exited GOOGL at -6.4% on thesis break (secondary offering + AI talent exodus), Communication Services sector now on EXIT list. AMZN fell sharply -4.58% to $233.20, at -3.89% from entry — watch for -7% manual cut threshold; NVO surged +5.74% to $45.67 raising HWM to $46.45. Portfolio 75.1% deployed, 1 weekly trade slot remaining; JPM stress test results due Jun 24 as near-term catalyst.
+
+### Jun 23 — Midday Scan (Day 20, Tuesday)
+- **No action taken** — no positions at -7% cut or +15% trail-tighten thresholds
+- **NVDA** $202.24 (−5.29% from entry): Global AI chip sector selloff (AMD, MU also down); no company-specific news; Bernstein still Buy; thesis intact; stop $192.59; gap to cut: $3.66
+- **AMZN** $234.83 (−3.22% from entry): Prime Day live Jun 23–26 as planned; recovering from pre-market lows; FTC ad probe (pre-existing risk); AWS +28% growth; BofA Buy $310; thesis intact; stop $224.56; gap to cut: $9.18
+- **NVO** $46.515 (+12.70%): HWM updated to $47.12 today; stop $42.408; +15% tighten threshold $47.46 not breached — no stop change
+- **JPM** $334.36 (+2.05%): Thesis intact; bank stress test results tomorrow Jun 24 @ 4pm EDT; stop $301.41
+- **LLY** $1,093.84 (+1.41%): Thesis intact; stop $1,064.46

@@ -311,3 +311,9 @@ HOLD — Tech selloff (-1.43% futures, Nasdaq under pressure) plus geopolitical 
 - NVDA: If trades through $198.58 (−7% from entry $213.53) → SELL manually before stop at $192.59
 - AMZN: If trades through $225.65 (−7% from entry $242.63) → SELL manually (Prime Day catalyst is near-term support but regulatory + tech selloff risk real)
 - NVO: If trades through $47.46 (+15% from entry $41.27) → Replace 10% trail GTC with 7% trail GTC per strategy rules
+
+### Jun 23 — Midday Addendum (~12:00 ET)
+- **NVDA**: Global AI chip sector selloff (NVDA, AMD, MU all declining together); no company-specific negative catalyst; Bernstein maintains Buy; analyst consensus $324.95 target; recent positive announcements (Halos for Robotics, BioNeMo Agent Toolkit); thesis intact
+- **AMZN**: Prime Day underway (Jun 23–26, 27 countries, 35+ categories); stock recovering intraday from -4.75% low; Q1 revenue $181.5B +17% YoY, AWS +28%; BofA Buy $310, consensus Strong Buy $319.14; FTC ad probe noted (pre-existing risk, not new); thesis intact
+- **NVO**: HWM reached $47.12 intraday (stop auto-updated); still below +15% tighten threshold ($47.46); no new material news
+- **Conclusion**: All positions HOLD; no cuts, no stop tightening, no thesis breaks identified
