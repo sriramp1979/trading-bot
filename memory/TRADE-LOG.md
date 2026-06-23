@@ -338,3 +338,14 @@ Stops confirmed (all GTC trailing 10%): AMZN $224.56 (HWM $249.51) | GOOGL 25sh 
 | NVDA | 50 | $213.53 | $208.68 | -0.95% | -$242.70 (-2.27%) | $192.59 (HWM $213.99) |
 | NVO | 513 | $41.27 | $45.67 | +5.74% | +$2,256.12 (+10.66%) | $41.81 (HWM $46.45) |
 **Notes:** Added NVDA (50sh @$213.53) and JPM (31sh @$327.63) per plan; exited GOOGL at -6.4% on thesis break (secondary offering + AI talent exodus), Communication Services sector now on EXIT list. AMZN fell sharply -4.58% to $233.20, at -3.89% from entry — watch for -7% manual cut threshold; NVO surged +5.74% to $45.67 raising HWM to $46.45. Portfolio 75.1% deployed, 1 weekly trade slot remaining; JPM stress test results due Jun 24 as near-term catalyst.
+
+### Jun 23 — EOD Snapshot (Day 20, Tuesday)
+**Portfolio:** $105,242.60 | **Cash:** $26,069.45 (24.8%) | **Day P&L:** +$594.47 (+0.57%) | **Phase P&L:** +$5,242.60 (+5.24%)
+| Ticker | Shares | Entry | Close | Day Chg | Unrealized P&L | Stop |
+|--------|--------|-------|-------|---------|----------------|------|
+| AMZN | 86 | $242.63 | $234.31 | +0.65% | -$715.52 (-3.43%) | $224.56 (HWM $249.51) |
+| JPM | 31 | $327.63 | $334.14 | +0.80% | +$201.93 (+1.99%) | $301.82 (HWM $335.36) |
+| LLY | 13 | $1,078.65 | $1,105.00 | +0.27% | +$342.55 (+2.44%) | $1,064.46 (HWM $1,182.73) |
+| NVDA | 50 | $213.53 | $200.05 | -4.12% | -$674.20 (-6.31%) | $192.59 (HWM $213.99) |
+| NVO | 513 | $41.27 | $47.36 | +3.23% | +$3,124.06 (+14.76%) | $42.69 (HWM $47.43) |
+**Notes:** No trades today. NVDA fell -4.12% to $200.05, now -6.31% from entry — approaching -7% manual cut threshold, watch closely at open Jun 24. NVO +3.23% to $47.36 at +14.76% unrealized — at +15% tighten trail to 7% (~$44.07 stop); JPM stress test results due Jun 24 as near-term catalyst for JPM (+1.99% unrealized).
