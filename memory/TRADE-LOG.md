@@ -391,3 +391,14 @@ NVO hit +15% tighten trigger (HWM $47.53 > threshold $47.46):
 - NVO: Already tightened to 7% trail at market open. No further action until +20% ($49.53).
 - JPM: Stress test results at 4 PM EDT — catalyst watch.
 - All theses intact. Micron earnings tonight is the key binary event.
+
+### Jun 24 — EOD Snapshot (Day 21, Wednesday)
+**Portfolio:** $105,407.77 | **Cash:** $26,069.45 (24.7%) | **Day P&L:** +$165.17 (+0.16%) | **Phase P&L:** +$5,407.77 (+5.41%)
+| Ticker | Shares | Entry | Close | Day Chg | Unrealized P&L | Stop |
+|--------|--------|-------|-------|---------|----------------|------|
+| AMZN | 86 | $242.63 | $234.53 | +0.18% | −$696.94 (−3.34%) | $224.56 (10% trail) |
+| JPM | 31 | $327.63 | $334.48 | +0.10% | +$212.47 (+2.09%) | $301.82 (10% trail) |
+| LLY | 13 | $1,078.65 | $1,113.00 | +0.54% | +$446.55 (+3.19%) | $1,064.46 (10% trail) |
+| NVDA | 50 | $213.53 | $200.30 | +0.13% | −$661.90 (−6.20%) ⚠️ | $192.59 (10% trail) |
+| NVO | 513 | $41.27 | $47.40 | −0.04% | +$3,143.61 (+14.85%) | $44.31 (7% trail) |
+**Notes:** Micron earnings after close tonight are the key binary for NVDA (−6.2%, stop at $192.59 with $7.71 cushion). NVO 7% trail locked with HWM $47.65; no action until +20% ($49.53). No trades today; 1 weekly slot remaining.
