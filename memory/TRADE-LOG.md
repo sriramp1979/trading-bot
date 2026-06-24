@@ -349,3 +349,28 @@ Stops confirmed (all GTC trailing 10%): AMZN $224.56 (HWM $249.51) | GOOGL 25sh 
 | NVDA | 50 | $213.53 | $200.05 | -4.12% | -$674.20 (-6.31%) | $192.59 (HWM $213.99) |
 | NVO | 513 | $41.27 | $47.36 | +3.23% | +$3,124.06 (+14.76%) | $42.69 (HWM $47.43) |
 **Notes:** No trades today. NVDA fell -4.12% to $200.05, now -6.31% from entry — approaching -7% manual cut threshold, watch closely at open Jun 24. NVO +3.23% to $47.36 at +14.76% unrealized — at +15% tighten trail to 7% (~$44.07 stop); JPM stress test results due Jun 24 as near-term catalyst for JPM (+1.99% unrealized).
+
+## 2026-06-24 — market-open (Day 21, Wednesday)
+
+**Decision:** HOLD — No new trades. Final weekly slot (2/3) reserved for post-event clarity: JPM bank stress test 4 PM EDT + Micron earnings after close → act at Jun 25 open if warranted. Deployed 75.3% — within 75–85% target; no deployment gate trigger.
+
+### Stop Maintenance — NVO Trail Tighten
+
+NVO hit +15% tighten trigger (HWM $47.53 > threshold $47.46):
+- **Cancelled:** order 76c62674 (10% trail, stop $42.78, HWM $47.53)
+- **Placed:** order 37a0ac69 (7% trail, stop ~$44.12, HWM $47.45)
+- **Protection gain:** +$1.34/sh × 513 = +$687 additional downside protected
+
+### Live Snapshot (09:35 ET)
+**Account:** Equity $105,705.89 | Cash $26,069.45 (24.7%) | Deployed 75.3% | DT count 0
+
+| Ticker | Shares | Entry | Price | Unrealized | Stop |
+|--------|--------|-------|-------|------------|------|
+| AMZN | 86 | $242.63 | $236.36 | −$539 (−2.58%) | $224.56 (10% trail, HWM $249.51) |
+| JPM | 31 | $327.63 | $331.92 | +$133 (+1.31%) | $301.82 (10% trail, HWM $335.36) |
+| LLY | 13 | $1,078.65 | $1,127.22 | +$631 (+4.50%) | $1,064.46 (10% trail, HWM $1,182.73) |
+| NVDA | 50 | $213.53 | $200.89 | −$632 (−5.92%) ⚠️ | $192.59 (10% trail, HWM $213.99) |
+| NVO | 513 | $41.27 | $47.42 | +$3,154 (+14.90%) | $44.12 (7% trail ↑ tightened) |
+
+⚠️ NVDA: $2.30 cushion to −7% manual cut ($198.59). Watch Micron after close — beat = recovery thesis; miss = prepare Jun 25 exit.
+**Monitor:** NVO if new HWM → stop auto-updates. JPM stress test 4 PM EDT → if clean pass, potential Jun 25 add using final weekly slot.
