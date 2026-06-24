@@ -374,3 +374,20 @@ NVO hit +15% tighten trigger (HWM $47.53 > threshold $47.46):
 
 ⚠️ NVDA: $2.30 cushion to −7% manual cut ($198.59). Watch Micron after close — beat = recovery thesis; miss = prepare Jun 25 exit.
 **Monitor:** NVO if new HWM → stop auto-updates. JPM stress test 4 PM EDT → if clean pass, potential Jun 25 add using final weekly slot.
+
+### Midday Scan — 12:02 ET
+
+**No action taken.**
+
+| Ticker | Price | P/L | Status |
+|--------|-------|-----|--------|
+| AMZN | $241.64 | −0.41% | Within band |
+| JPM | $333.16 | +1.69% | Within band |
+| LLY | $1,105.78 | +2.51% | Within band |
+| NVDA | $200.77 | −5.98% ⚠️ | Outside band — $2.18 cushion to cut |
+| NVO | $47.34 | +14.69% | 7% trail active (HWM $47.59, stop $44.25) |
+
+- NVDA: Intraday low ~$198.65 (vs $198.59 cut trigger) — nearly triggered. No breach. Holding for Micron earnings (after close). 10% trail stop at $192.59 provides floor.
+- NVO: Already tightened to 7% trail at market open. No further action until +20% ($49.53).
+- JPM: Stress test results at 4 PM EDT — catalyst watch.
+- All theses intact. Micron earnings tonight is the key binary event.

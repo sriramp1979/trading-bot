@@ -337,3 +337,21 @@ HOLD — Futures bouncing but two binary events today (bank stress tests 4 PM + 
 - NVDA: If trades through $198.59 (−7% from $213.53) intraday → SELL manually before auto-stop at $192.59
 - NVO: If trades through $47.46 (+15% from $41.27) intraday → Cancel 10% trail GTC (order 76c62674), place 7% trail GTC for 513 shares
 - JPM: Watch stress test result at 4 PM EDT; if strong beat consensus → note for potential Jun 25 add using final weekly slot
+
+### Afternoon Addendum — 12:02 ET
+
+**NVDA Intraday Risk:**
+- Intraday low ~$198.65 — within $0.07 of the −7% manual cut trigger ($198.59)
+- Alpaca live price recovered to $200.77 at noon; cushion restored to $2.18
+- Thesis intact but highly fragile
+
+**Micron (MU) Earnings — Key Risk Flag:**
+- Reports after close today; earnings call 4:30 PM EDT
+- Analyst consensus EPS: $19.95–$20.28 vs Micron's own guidance $19.15 ± $0.40 — **consensus is ~5% above top of Micron's guidance**
+- MU has surged 244% in 2026 → elevated expectations embedded in price
+- Miss scenario: AI-memory demand narrative hurt → chip-sector sell-off → NVDA likely opens below $198.59 (−7% cut level) → **prepare to cut NVDA at Jun 25 open**
+- Beat scenario: chip-sector bounce → NVDA recovery → hold; potential JPM add if stress test also clean
+
+**JPM Stress Test (4 PM EDT):**
+- No surprises expected; clean pass likely → JPM buyback/dividend talk = near-term tailwind
+- If clean + NVDA holds → use final weekly trade slot at Jun 25 open for JPM add or Financials name
