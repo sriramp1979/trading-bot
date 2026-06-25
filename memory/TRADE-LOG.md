@@ -424,3 +424,13 @@ NVO hit +15% tighten trigger (HWM $47.53 > threshold $47.46):
 - NVO: 7% trail already active; next tighten at +20% ($49.53); no action.
 - JPM, LLY: theses intact; within band; no action.
 - Deployed 66.1% — below 75–85% target; 1 weekly slot open; monitor for re-entry tomorrow (Technology sector now EXIT — no chip plays).
+
+### Jun 25 — EOD Snapshot (Day 22, Thursday)
+**Portfolio:** $104,624.80 | **Cash:** $35,699.29 (34.1%) | **Day P&L:** −$782.97 (−0.74%) | **Phase P&L:** +$4,624.80 (+4.62%)
+| Ticker | Shares | Entry | Close | Day Chg | Unrealized P&L | Stop |
+|--------|--------|-------|-------|---------|----------------|------|
+| AMZN | 86 | $242.63 | $227.12 | −3.05% | −$1,333.86 (−6.39%) ⚠️ | $224.56 (10% trail, HWM $249.51) |
+| JPM | 31 | $327.63 | $335.15 | +0.51% | +$233.24 (+2.30%) | $309.10 (10% trail, HWM $343.45) |
+| LLY | 13 | $1,078.65 | $1,125.06 | +0.70% | +$603.33 (+4.30%) | $1,064.46 (10% trail, HWM $1,182.73) |
+| NVO | 513 | $41.27 | $47.52 | +0.23% | +$3,205.17 (+15.14%) | $44.86 (7% trail, HWM $48.24) |
+**Notes:** NVDA trailing stop triggered at open (−9.8% realized; Micron "sell the news" chip selloff); Technology sector now EXIT after 2 consecutive losses. AMZN deteriorating at −6.39% unrealized (close $227.12), stop at $224.56 provides $2.56 floor; Prime Day thesis intact but watching closely. Deployed 65.9% — below 75–85% target; 1 weekly trade slot remains; no new buys until non-Technology sector momentum confirms.
