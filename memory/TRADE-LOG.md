@@ -402,3 +402,25 @@ NVO hit +15% tighten trigger (HWM $47.53 > threshold $47.46):
 | NVDA | 50 | $213.53 | $200.30 | +0.13% | −$661.90 (−6.20%) ⚠️ | $192.59 (10% trail) |
 | NVO | 513 | $41.27 | $47.40 | −0.04% | +$3,143.61 (+14.85%) | $44.31 (7% trail) |
 **Notes:** Micron earnings after close tonight are the key binary for NVDA (−6.2%, stop at $192.59 with $7.71 cushion). NVO 7% trail locked with HWM $47.65; no action until +20% ($49.53). No trades today; 1 weekly slot remaining.
+
+### Jun 25 — NVDA Trailing Stop Triggered (9:59 AM ET)
+- **CLOSED:** NVDA 50 sh @ $192.60 (10% trailing stop, HWM $213.99)
+- **Entry:** $213.53 → **Exit:** $192.60 | **Realized P&L:** −$1,046.86 (−9.8%)
+- **Cause:** Micron Q3 beat but stock −13% "sell the news" triggered chip-sector sympathy selloff; NVDA broke through $192.59 stop intraday
+- **Sector:** Technology — 2nd consecutive loss → Status = EXIT
+
+### Jun 25 — Midday Scan (12:02 ET, Day 22, Thursday)
+**Account:** Equity $105,207.36 | Cash $35,699.29 (33.9%) | Deployed 66.1% | Day P&L: −$141.97 | Phase P&L: +$5,207.36 (+5.21%)
+
+| Ticker | Shares | Entry | Price | Unrealized | Stop |
+|--------|--------|-------|-------|------------|------|
+| AMZN | 86 | $242.63 | $229.28 | −$1,148 (−5.50%) ⚠️ | $224.56 (10% trail, HWM $249.51) |
+| JPM | 31 | $327.63 | $338.66 | +$342 (+3.37%) | $309.10 (10% trail, HWM $343.45) |
+| LLY | 13 | $1,078.65 | $1,140.13 | +$799 (+5.70%) | $1,064.46 (10% trail, HWM $1,182.73) |
+| NVO | 513 | $41.27 | $47.78 | +$3,336 (+15.76%) | $44.86 (7% trail, HWM $48.24) |
+
+- NVDA: stopped out at open; logged above. Technology sector → EXIT.
+- AMZN: −5.50%, outside −5% band; manual cut at $225.65 (cushion $3.63); Prime Day thesis intact; no action.
+- NVO: 7% trail already active; next tighten at +20% ($49.53); no action.
+- JPM, LLY: theses intact; within band; no action.
+- Deployed 66.1% — below 75–85% target; 1 weekly slot open; monitor for re-entry tomorrow (Technology sector now EXIT — no chip plays).
