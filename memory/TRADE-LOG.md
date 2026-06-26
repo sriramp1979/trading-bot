@@ -302,7 +302,7 @@ Stops confirmed (all GTC trailing 10%): AMZN $224.56 (HWM $249.51) | GOOGL 25sh 
 | NVO | 513 | $41.27 | $43.19 | — | +$983.88 (+4.65%) | $40.50 (HWM $44.997) |
 **Notes:** Juneteenth — market closed, no activity. All four GTC trailing stops confirmed active. Mon Jun 23: target NVDA (Technology PRIMARY, if ACN beat + Nasdaq holds) and JPM (Financials SECONDARY); 2/3 weekly slots, push deployment from 65.8% toward 75–80%.
 
-## Week of 2026-06-22 | Trades: 2/3
+## Week of 2026-06-22 | Trades: 3/3
 
 ## 2026-06-22 — market-open trades
 
@@ -434,3 +434,22 @@ NVO hit +15% tighten trigger (HWM $47.53 > threshold $47.46):
 | LLY | 13 | $1,078.65 | $1,125.06 | +0.70% | +$603.33 (+4.30%) | $1,064.46 (10% trail, HWM $1,182.73) |
 | NVO | 513 | $41.27 | $47.52 | +0.23% | +$3,205.17 (+15.14%) | $44.86 (7% trail, HWM $48.24) |
 **Notes:** NVDA trailing stop triggered at open (−9.8% realized; Micron "sell the news" chip selloff); Technology sector now EXIT after 2 consecutive losses. AMZN deteriorating at −6.39% unrealized (close $227.12), stop at $224.56 provides $2.56 floor; Prime Day thesis intact but watching closely. Deployed 65.9% — below 75–85% target; 1 weekly trade slot remains; no new buys until non-Technology sector momentum confirms.
+
+## 2026-06-26 — market-open trades
+
+| Field | WMT |
+|-------|-----|
+| Side | BUY |
+| Shares | 165 |
+| Entry | $117.58 |
+| Stop | 10% trailing GTC ($105.95, HWM $117.72) |
+| Target | $140 (+19%) |
+| R:R | 2:1 |
+| Sector | Consumer Staples |
+| Thesis | Defensive posture into hawkish Core PCE environment; oil decline → logistics cost reduction; AI-driven retail efficiency; value consumers trading down from tariff/inflation pressure; sector new (0 losses); satisfies deployment gate (deployed 65.9% → 84.5%) |
+| Buy Order | 12284076 |
+| Stop Order | b8da43fd |
+
+**Post-trade state:** Equity ~$104,861 | Cash ~$16,285 | Deployed ~84.5% (5/6 positions) | Weekly trades: 3/3 (week closed) | DT count: 0
+- AMZN: $227.93 at open (+0.40%), above $225.65 manual cut threshold — no action needed; Prime Day final day catalyst intact
+- XOM: skipped — abnormal bid/ask spread at open ($136.69/$144.32, 5.3% wide); also would have been 4th trade (over weekly limit)
