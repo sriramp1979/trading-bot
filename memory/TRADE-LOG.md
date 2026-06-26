@@ -302,7 +302,7 @@ Stops confirmed (all GTC trailing 10%): AMZN $224.56 (HWM $249.51) | GOOGL 25sh 
 | NVO | 513 | $41.27 | $43.19 | — | +$983.88 (+4.65%) | $40.50 (HWM $44.997) |
 **Notes:** Juneteenth — market closed, no activity. All four GTC trailing stops confirmed active. Mon Jun 23: target NVDA (Technology PRIMARY, if ACN beat + Nasdaq holds) and JPM (Financials SECONDARY); 2/3 weekly slots, push deployment from 65.8% toward 75–80%.
 
-## Week of 2026-06-22 | Trades: 2/3
+## Week of 2026-06-22 | Trades: 3/3
 
 ## 2026-06-22 — market-open trades
 
@@ -459,3 +459,14 @@ NVO hit +15% tighten trigger (HWM $47.53 > threshold $47.46):
 - WMT: Entered today at open; −0.47% vs entry; thesis intact.
 - No losers at −7%. No stops tightened. All theses intact.
 - Deployed 84.6% — within 75–85% target ✓. Week trades: 3/3 (full).
+
+### Jun 26 — EOD Snapshot (Day 23, Friday)
+**Portfolio:** $105,818.79 | **Cash:** $16,298.57 (15.4%) | **Day P&L:** +$1,193.99 (+1.14%) | **Phase P&L:** +$5,818.79 (+5.82%)
+| Ticker | Shares | Entry | Close | Day Chg | Unrealized P&L | Stop |
+|--------|--------|-------|-------|---------|----------------|------|
+| AMZN | 86 | $242.63 | $231.70 | +2.07% | −$939.98 (−4.51%) | $224.56 (10% trail, HWM $249.51) |
+| JPM | 31 | $327.63 | $328.63 | −1.94% | +$31.14 (+0.31%) | $309.10 (10% trail, HWM $343.45) |
+| LLY | 13 | $1,078.65 | $1,208.12 | +7.13% | +$1,683.11 (+12.00%) | $1,094.18 (10% trail, HWM $1,215.76) |
+| NVO | 513 | $41.27 | $48.07 | +0.90% | +$3,487.32 (+16.47%) | $45.11 (7% trail, HWM $48.50) |
+| WMT | 165 | $117.58 | $115.40 | −0.33% | −$359.70 (−1.85%) | $105.98 (10% trail, HWM $117.75) |
+**Notes:** WMT entered at open ($117.58, 165 sh); slightly underwater −1.85% but Consumer Staples / defensive thesis intact. LLY surged +7.13% on fundamental catalysts, HWM updated to $1,215.76 / stop $1,094.18; tighten threshold +15% = $1,240.45 not yet reached. Week trades 3/3 full; deployed 84.6% within target; all stops GTC; no action required until Mon.
