@@ -434,3 +434,28 @@ NVO hit +15% tighten trigger (HWM $47.53 > threshold $47.46):
 | LLY | 13 | $1,078.65 | $1,125.06 | +0.70% | +$603.33 (+4.30%) | $1,064.46 (10% trail, HWM $1,182.73) |
 | NVO | 513 | $41.27 | $47.52 | +0.23% | +$3,205.17 (+15.14%) | $44.86 (7% trail, HWM $48.24) |
 **Notes:** NVDA trailing stop triggered at open (−9.8% realized; Micron "sell the news" chip selloff); Technology sector now EXIT after 2 consecutive losses. AMZN deteriorating at −6.39% unrealized (close $227.12), stop at $224.56 provides $2.56 floor; Prime Day thesis intact but watching closely. Deployed 65.9% — below 75–85% target; 1 weekly trade slot remains; no new buys until non-Technology sector momentum confirms.
+
+### Jun 26 — WMT New Position (Day 23, Friday, ~9:38 AM ET)
+- **NEW ENTRY:** WMT 165 sh @ $117.58 — Consumer Staples
+- **Rationale:** Deployment gate triggered (65.9% deployed, VIX 18.68 <22, futures −0.2% not <−2%); PCE print in-line/benign; Consumer Staples defensive in rate-uncertainty environment; oil decline reduces WMT logistics costs; value consumers trading down from tariff/inflation pressure
+- **Stop:** 10% trailing GTC; HWM $117.75; stop $105.975
+- **Week trades:** 3/3 (JPM Jun 22, NVDA Jun 23, WMT Jun 26)
+
+### Jun 26 — Midday Scan (12:03 ET, Day 23, Friday)
+**Account:** Equity $106,134.47 | Cash $16,298.57 (15.4%) | Deployed 84.6% | Day P&L: +$1,424.33 (+1.36%) | Phase P&L: +$6,134.47 (+6.13%)
+
+| Ticker | Shares | Entry | Price | Unrealized | Stop |
+|--------|--------|-------|-------|------------|------|
+| AMZN | 86 | $242.63 | $232.40 | −$877 (−4.22%) | $224.56 (10% trail, HWM $249.51) |
+| JPM | 31 | $327.63 | $332.575 | +$153 (+1.51%) | $309.10 (10% trail, HWM $343.45) |
+| LLY | 13 | $1,078.65 | $1,204.55 | +$1,637 (+11.67%) | $1,086.83 (10% trail, HWM $1,207.59) |
+| NVO | 513 | $41.27 | $48.075 | +$3,490 (+16.48%) | $45.105 (7% trail, HWM $48.50) |
+| WMT | 165 | $117.58 | $117.025 | −$92 (−0.47%) | $105.975 (10% trail, HWM $117.75) |
+
+- AMZN: Recovered from yesterday's close ($227.12 → $232.40, +2.37% intraday); now −4.22%; Prime Day $26.3B record spend confirmed; manual cut at $225.65 no longer urgent; thesis intact.
+- LLY: +6.82% intraday on multiple fundamental catalysts (see Research Log addendum); HWM updated to $1,207.59; tighten threshold +15% = $1,240.45 — not yet reached; NO action.
+- NVO: +16.48%; 7% trail active (HWM $48.50, stop $45.105); tighten at +20% = $49.53 — not yet reached; NO action.
+- JPM: +1.51%; ex-dividend Jul 6; earnings Jul 14; thesis intact.
+- WMT: Entered today at open; −0.47% vs entry; thesis intact.
+- No losers at −7%. No stops tightened. All theses intact.
+- Deployed 84.6% — within 75–85% target ✓. Week trades: 3/3 (full).

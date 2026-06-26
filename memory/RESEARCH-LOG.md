@@ -368,3 +368,14 @@ TRADE — Deployment gate triggered (65.9% deployed, VIX 18.68, futures −0.2%)
 - ⚠️ AMZN: If opens ≤ $225.65 (−7% from entry) → sell 86 shares manually; do NOT wait for $224.56 stop
 - 8:30 AM PCE: If ≤ 3.4% → enter WMT (~$19.5k, 10% trail GTC, 1 weekly slot). If >3.4% → skip; redeploy Mon Jun 29
 - NVO: If trades through $49.53 (+20%) → replace 7% trail GTC with 5% trail GTC for 513 shares
+
+### Jun 26 — Afternoon Addendum (Midday Scan, ~12:03 ET)
+**LLY +6.82% intraday — catalysts confirmed:**
+- Retatrutide Phase 3 results: substantial weight loss + improvements in knee OA, sleep apnea, type 2 diabetes; validates triple-agonist pipeline
+- EMA positive opinion for Jaypirca (pirtobrutinib) in CLL across all therapy lines; EU Commission decision expected ~Q3 2026
+- All major U.S. PBMs (incl. CVS Caremark) now covering Lilly obesity portfolio from Jun 1 — structural demand expansion
+- Leerink PT $1,232 (raised Jun 25) — $27 above current price; upside intact
+
+**Assessment:** Thesis intact and strengthened; all catalysts fundamental. HWM auto-updated to $1,207.59 (10% trail); tighten to 7% at $1,240.45 (+15% from entry). No action today.
+
+**WMT entry confirmed:** 165 sh @ $117.58 at open; PCE print in-line enabled entry; Consumer Staples defensive positioning. Deployed to 84.6% — within target range.
