@@ -470,3 +470,21 @@ NVO hit +15% tighten trigger (HWM $47.53 > threshold $47.46):
 | NVO | 513 | $41.27 | $48.07 | +0.90% | +$3,487.32 (+16.47%) | $45.11 (7% trail, HWM $48.50) |
 | WMT | 165 | $117.58 | $115.40 | −0.33% | −$359.70 (−1.85%) | $105.98 (10% trail, HWM $117.75) |
 **Notes:** WMT entered at open ($117.58, 165 sh); slightly underwater −1.85% but Consumer Staples / defensive thesis intact. LLY surged +7.13% on fundamental catalysts, HWM updated to $1,215.76 / stop $1,094.18; tighten threshold +15% = $1,240.45 not yet reached. Week trades 3/3 full; deployed 84.6% within target; all stops GTC; no action required until Mon.
+
+### Jun 29 — Midday Scan (12:04 ET, Day 24, Monday)
+**Account:** Equity ~$106,555 | Cash: $16,299 (15.3%) | Deployed 84.7% | Day P&L: ~+$736 (+0.70%) | Phase P&L: ~+$6,555 (+6.56%)
+
+| Ticker | Shares | Entry | Price | Unrealized | Stop |
+|--------|--------|-------|-------|------------|------|
+| AMZN | 86 | $242.63 | $241.06 | −$135 (−0.65%) | $227.27 (10% trail, HWM $252.53) |
+| JPM | 31 | $327.63 | $331.84 | +$131 (+1.29%) | $309.10 (10% trail, HWM $343.45) |
+| LLY | 13 | $1,078.65 | $1,211.16 | +$1,723 (+12.29%) | $1,114.20 (10% trail, HWM $1,238.00) |
+| NVO | 513 | $41.27 | $47.955 | +$3,428 (+16.19%) | $45.105 (7% trail, HWM $48.50) |
+| WMT | 165 | $117.58 | $114.50 | −$508 (−2.62%) | $105.975 (10% trail, HWM $117.75) |
+
+- LLY: HWM auto-updated $1,215.76 → $1,238.00 intraday; stop raised to $1,114.20; tighten threshold +15% = $1,240.45 not yet reached (current $1,211.16); no action.
+- NVO: 7% trail already active (tightened previously); next tighten at +20% = $49.53 (gap $1.58); no action.
+- AMZN: HWM auto-updated $249.51 → $252.53; stop raised to $227.27; recovering strongly +3.60% intraday; Prime Day thesis intact; no action.
+- JPM: +1.29%; ex-div Jul 6, earnings Jul 14; thesis intact; no action.
+- WMT: −2.62%; Consumer Staples defensive thesis intact; stop $105.975 (cushion 7.4%); no action.
+- No losers at −7%. No stop tighten thresholds crossed. All theses intact. No manual actions taken. Week trades: 0/3.
