@@ -471,6 +471,8 @@ NVO hit +15% tighten trigger (HWM $47.53 > threshold $47.46):
 | WMT | 165 | $117.58 | $115.40 | −0.33% | −$359.70 (−1.85%) | $105.98 (10% trail, HWM $117.75) |
 **Notes:** WMT entered at open ($117.58, 165 sh); slightly underwater −1.85% but Consumer Staples / defensive thesis intact. LLY surged +7.13% on fundamental catalysts, HWM updated to $1,215.76 / stop $1,094.18; tighten threshold +15% = $1,240.45 not yet reached. Week trades 3/3 full; deployed 84.6% within target; all stops GTC; no action required until Mon.
 
+## Week of 2026-06-29 | Trades: 0/3
+
 ### Jun 29 — Midday Scan (12:04 ET, Day 24, Monday)
 **Account:** Equity ~$106,555 | Cash: $16,299 (15.3%) | Deployed 84.7% | Day P&L: ~+$736 (+0.70%) | Phase P&L: ~+$6,555 (+6.56%)
 
@@ -488,3 +490,14 @@ NVO hit +15% tighten trigger (HWM $47.53 > threshold $47.46):
 - JPM: +1.29%; ex-div Jul 6, earnings Jul 14; thesis intact; no action.
 - WMT: −2.62%; Consumer Staples defensive thesis intact; stop $105.975 (cushion 7.4%); no action.
 - No losers at −7%. No stop tighten thresholds crossed. All theses intact. No manual actions taken. Week trades: 0/3.
+
+### Jun 29 — EOD Snapshot (Day 24, Monday)
+**Portfolio:** $106,855.15 | **Cash:** $16,298.56 (15.3%) | **Day P&L:** +$1,036.36 (+0.98%) | **Phase P&L:** +$6,855.15 (+6.86%)
+| Ticker | Shares | Entry | Close | Day Chg | Unrealized P&L | Stop |
+|--------|--------|-------|-------|---------|----------------|------|
+| AMZN | 86 | $242.63 | $239.90 | +3.10% | −$234.78 (−1.13%) | $227.27 (10% trail, HWM $252.53) |
+| JPM | 31 | $327.63 | $331.39 | +0.71% | +$116.76 (+1.15%) | $309.10 (10% trail, HWM $343.45) |
+| LLY | 13 | $1,078.65 | $1,226.00 | +1.48% | +$1,915.55 (+13.66%) | $1,114.20 (10% trail, HWM $1,238.00) |
+| NVO | 513 | $41.27 | $48.34 | +0.56% | +$3,625.83 (+17.13%) | $45.11 (7% trail, HWM $48.50) |
+| WMT | 165 | $117.58 | $114.64 | −0.91% | −$485.10 (−2.50%) | $105.98 (10% trail, HWM $117.75) |
+**Notes:** AMZN recovered +3.10% intraday (HWM raised to $252.53, stop $227.27); LLY +1.48% to $1,226.00 (unrealized +13.66%; tighten threshold $1,240.45 nearly reached, watch tomorrow). NVO at +17.13% unrealized (tighten at +20%=$49.53 still pending, only $1.19 away); WMT slipped −0.91% to $114.64 (−2.50% unrealized, stop $105.98, cushion 7.5%). No trades; 0/3 weekly; deployed 84.7%; all GTC stops intact.
