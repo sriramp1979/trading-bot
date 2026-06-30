@@ -521,3 +521,14 @@ NVO hit +15% tighten trigger (HWM $47.53 > threshold $47.46):
 - **JPM**: Ex-div Jul 6 ($1.50/sh), earnings Jul 14 — thesis intact.
 - **WMT**: −3.29% unrealized; stop $105.975 (cushion 6.8%); Consumer Staples thesis intact.
 - No manual actions taken. Week trades: 0/3. All GTC stops intact.
+
+### Jun 30 — EOD Snapshot (Day 25, Tuesday)
+**Portfolio:** $105,802.57 | **Cash:** $16,298.56 (15.4%) | **Day P&L:** −$1,052.58 (−0.99%) | **Phase P&L:** +$5,802.57 (+5.80%)
+| Ticker | Shares | Entry | Close | Day Chg | Unrealized P&L | Stop |
+|--------|--------|-------|-------|---------|----------------|------|
+| AMZN | 86 | $242.63 | $238.12 | −0.84% | −$387.86 (−1.86%) | $227.27 (10% trail, HWM $252.53) |
+| JPM | 31 | $327.63 | $326.95 | −0.74% | −$20.96 (−0.21%) | $309.10 (10% trail, HWM $343.45) |
+| LLY | 13 | $1,078.65 | $1,199.43 | −2.48% | +$1,570.14 (+11.20%) | $1,114.20 (10% trail, HWM $1,238.00) |
+| NVO | 513 | $41.27 | $47.95 | −0.81% | +$3,426.02 (+16.18%) | $45.21 (7% trail, HWM $48.62) |
+| WMT | 165 | $117.58 | $113.39 | −1.06% | −$691.35 (−3.56%) | $105.98 (10% trail, HWM $117.75) |
+**Notes:** Broad pullback day across all 5 positions, quarter-end rebalancing pressure likely culprit. LLY −2.48% (Verzenios/Innovent China-deal dip continuing, Q2 fundamentals intact); NVO −0.81% (no news, GLP-1 share intact). No trades; 0/3 weekly; deployed 84.6%; all GTC stops intact.
