@@ -501,3 +501,23 @@ NVO hit +15% tighten trigger (HWM $47.53 > threshold $47.46):
 | NVO | 513 | $41.27 | $48.34 | +0.56% | +$3,625.83 (+17.13%) | $45.11 (7% trail, HWM $48.50) |
 | WMT | 165 | $117.58 | $114.64 | −0.91% | −$485.10 (−2.50%) | $105.98 (10% trail, HWM $117.75) |
 **Notes:** AMZN recovered +3.10% intraday (HWM raised to $252.53, stop $227.27); LLY +1.48% to $1,226.00 (unrealized +13.66%; tighten threshold $1,240.45 nearly reached, watch tomorrow). NVO at +17.13% unrealized (tighten at +20%=$49.53 still pending, only $1.19 away); WMT slipped −0.91% to $114.64 (−2.50% unrealized, stop $105.98, cushion 7.5%). No trades; 0/3 weekly; deployed 84.7%; all GTC stops intact.
+
+### Jun 30 — Midday Scan (12:02 ET, Day 25, Tuesday — Quarter-End)
+**Account:** Equity ~$106,208 | Cash: $16,299 (15.3%) | Deployed 84.7% | Day P&L: −$650 (−0.61%) | Phase P&L: ~+$6,208 (+6.21%)
+
+| Ticker | Shares | Entry | Price | Unrealized | Stop |
+|--------|--------|-------|-------|------------|------|
+| AMZN | 86 | $242.63 | $239.77 | −$246 (−1.18%) | $227.27 (10% trail, HWM $252.53) |
+| JPM | 31 | $327.63 | $328.17 | +$17 (+0.17%) | $309.10 (10% trail, HWM $343.45) |
+| LLY | 13 | $1,078.65 | $1,208.04 | +$1,682 (+12.0%) | $1,114.20 (10% trail, HWM $1,238.00) |
+| NVO | 513 | $41.27 | $48.075 | +$3,490 (+16.5%) | $45.21 (7% trail, HWM $48.618) |
+| WMT | 165 | $117.58 | $113.71 | −$639 (−3.29%) | $105.975 (10% trail, HWM $117.75) |
+
+- **Cut losers**: None at −7%. No action.
+- **Stop tighten**: NVO +16.5% — 7% trail already active; +20% threshold $49.53 not reached (gap $1.45); no action. LLY +12.0% — +15% threshold $1,240.45 not reached (gap $32.41); no action.
+- **LLY −1.78% intraday**: Q2 confirmed strong (Mounjaro $8.7B +125% YoY, Zepbound $4.1B +80% YoY, total sales $19.8B +56%; guidance raised $82–85B). Dip due to Verzenios/Innovent China deal announcement (non-core). Thesis INTACT.
+- **NVO −0.55% intraday**: No material news. GLP-1 market share 54.6% intact. Thesis INTACT.
+- **AMZN**: Prime Day $26.3B record, AWS GPU pricing raised — thesis intact.
+- **JPM**: Ex-div Jul 6 ($1.50/sh), earnings Jul 14 — thesis intact.
+- **WMT**: −3.29% unrealized; stop $105.975 (cushion 6.8%); Consumer Staples thesis intact.
+- No manual actions taken. Week trades: 0/3. All GTC stops intact.
