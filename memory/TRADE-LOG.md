@@ -551,3 +551,14 @@ NVO hit +15% tighten trigger (HWM $47.53 > threshold $47.46):
 - ⚠️ **NVO $0.46 from +20% tighten** ($49.53 trigger; current $49.07). If crossed intraday: cancel 7% trail GTC (order 37a0ac69), place 5% trail GTC for 513 shares.
 
 **Environment note:** CLICKUP_API_KEY/CLICKUP_WORKSPACE_ID/CLICKUP_CHANNEL_ID all missing from env this run — no trades fired so STEP 7 was a no-op regardless, but ClickUp alerting is unavailable if needed later today.
+
+## 2026-07-01 — midday exit: WMT
+
+- **EXIT WMT** | 165 shares | Entry $117.58 | Exit $107.631636 | Realized P&L: -$1,641.48 (-8.47%)
+- **Reason:** Cut at -7% manual threshold per rule (breached at open, confirmed -8.47% at midday scan)
+- Cancelled stop: b8da43fd (165sh, 10% trail, $105.975) — cancelled first since shares were held_for_orders, blocking the close; then closed
+- Consumer Staples: 1st loss in sector → Consecutive Losses = 1, Status = OK
+
+**Post-trade state:** AMZN -0.23%, JPM +2.16%, LLY +10.43%, NVO +19.29% (all within band or below +20% tighten trigger) — no other action taken. Positions: AMZN, JPM, LLY, NVO (4/6). Deployed slot opened.
+
+**Environment note:** CLICKUP_API_KEY/CLICKUP_WORKSPACE_ID/CLICKUP_CHANNEL_ID missing from env this run — notification printed to console only (see below).

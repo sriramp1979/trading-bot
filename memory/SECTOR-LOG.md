@@ -8,6 +8,7 @@
 | Communication Services | — | 2 | EXIT |
 | Consumer Discretionary | AMZN | 0 | OK |
 | Financials | JPM | 0 | OK |
+| Consumer Staples | — | 1 | OK |
 
 ## Sector Exit History
 | Sector | Exit Date | Reason |
