@@ -532,3 +532,22 @@ NVO hit +15% tighten trigger (HWM $47.53 > threshold $47.46):
 | NVO | 513 | $41.27 | $47.95 | −0.81% | +$3,426.02 (+16.18%) | $45.21 (7% trail, HWM $48.62) |
 | WMT | 165 | $117.58 | $113.39 | −1.06% | −$691.35 (−3.56%) | $105.98 (10% trail, HWM $117.75) |
 **Notes:** Broad pullback day across all 5 positions, quarter-end rebalancing pressure likely culprit. LLY −2.48% (Verzenios/Innovent China-deal dip continuing, Q2 fundamentals intact); NVO −0.81% (no news, GLP-1 share intact). No trades; 0/3 weekly; deployed 84.6%; all GTC stops intact.
+
+## 2026-07-01 — market-open (no trades)
+
+**Portfolio:** $105,516.86 | **Cash:** $16,298.56 (15.4%) | Deployed 84.6% | Daytrade count: 0
+| Ticker | Shares | Entry | Current | Unrealized P&L | Stop |
+|--------|--------|-------|---------|----------------|------|
+| AMZN | 86 | $242.63 | $238.54 | −$351.74 (−1.69%) | $227.27 (10% trail, HWM $252.53) |
+| JPM | 31 | $327.63 | $326.49 | −$35.37 (−0.35%) | $309.10 (10% trail, HWM $343.45) |
+| LLY | 13 | $1,078.65 | $1,189.64 | +$1,442.87 (+10.29%) | $1,114.20 (10% trail, HWM $1,238.00) |
+| NVO | 513 | $41.27 | $49.07 | +$4,000.32 (+18.89%) ⚠️ | $45.849 (7% trail, HWM $49.30) |
+| WMT | 165 | $117.58 | $108.75 | −$1,456.95 (−7.51%) 🛑 | $105.975 (10% trail, HWM $117.75) |
+
+**Decision:** HOLD — No new trades. 5/6 slots filled, 84.6% deployed (within 75–85% target), 0/3 weekly trades used. Contingent ideas CAT and XOM (today's research log) require an open slot — none available; not executed. CAT/XOM quotes also came back with abnormally wide spreads (CAT $973.75/$1050, XOM $129.01/$137.37) vs. researched entry ranges — would need re-validation before any future entry regardless.
+
+**Flags for midday review:**
+- 🛑 **WMT breached −7% manual-cut threshold** (−7.51%, $108.75 vs. $117.58 entry) intraday at open. Cutting losers at −7% is midday-scan scope (not market-open); flagging now since the breach happened right at the bell, well ahead of the scheduled midday check — real risk of further slippage in the interim.
+- ⚠️ **NVO $0.46 from +20% tighten** ($49.53 trigger; current $49.07). If crossed intraday: cancel 7% trail GTC (order 37a0ac69), place 5% trail GTC for 513 shares.
+
+**Environment note:** CLICKUP_API_KEY/CLICKUP_WORKSPACE_ID/CLICKUP_CHANNEL_ID all missing from env this run — no trades fired so STEP 7 was a no-op regardless, but ClickUp alerting is unavailable if needed later today.
