@@ -562,3 +562,13 @@ NVO hit +15% tighten trigger (HWM $47.53 > threshold $47.46):
 **Post-trade state:** AMZN -0.23%, JPM +2.16%, LLY +10.43%, NVO +19.29% (all within band or below +20% tighten trigger) — no other action taken. Positions: AMZN, JPM, LLY, NVO (4/6). Deployed slot opened.
 
 **Environment note:** CLICKUP_API_KEY/CLICKUP_WORKSPACE_ID/CLICKUP_CHANNEL_ID missing from env this run — notification printed to console only (see below).
+
+### Jul 01 — EOD Snapshot (Day 26, Wednesday)
+**Portfolio:** $105,574.56 | **Cash:** $34,057.78 (32.3%) | **Day P&L:** −$228.01 (−0.22%) | **Phase P&L:** +$5,574.56 (+5.57%)
+| Ticker | Shares | Entry | Close | Day Chg | Unrealized P&L | Stop |
+|--------|--------|-------|-------|---------|----------------|------|
+| AMZN | 86 | $242.63 | $241.18 | +1.19% | −$124.70 (−0.60%) | $227.27 (10% trail, HWM $252.53) |
+| JPM | 31 | $327.63 | $330.76 | +1.05% | +$97.00 (+0.96%) | $309.10 (10% trail, HWM $343.45) |
+| LLY | 13 | $1,078.65 | $1,191.74 | −0.64% | +$1,470.17 (+10.48%) | $1,114.20 (10% trail, HWM $1,238.00) |
+| NVO | 513 | $41.27 | $48.79 | +1.77% | +$3,856.68 (+18.22%) | $46.08 (7% trail, HWM $49.55) |
+**Notes:** WMT cut at −7% rule intraday, only trade today (−$1,641.48 realized); 4/6 slots filled, deployed 67.7% (below 75-85% target after WMT exit). NVO +18.2%, nearing +20% tighten trigger; all other GTC stops intact, no other breaches.
