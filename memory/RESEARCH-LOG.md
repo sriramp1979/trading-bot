@@ -27,90 +27,7 @@ Format each entry:
 ### Decision
 TRADE or HOLD (default HOLD if no edge)
 
---- TRIMMED 2026-06-30 ---
-
-## 2026-06-24 — Pre-market Research
-
-### Account
-- Equity: $104,944.05 | Cash: $26,069.45 (24.8%) | Deployed: $78,874.60 (75.2% — within 75–85% target)
-- Buying power: $325,126.68 (day-trade) / $131,013.50 (reg T) | Daytrade count: 0
-- Open positions: AMZN (86 sh), JPM (31 sh), LLY (13 sh), NVDA (50 sh), NVO (513 sh) — 5/6 slots used
-- Week trades: 2/3 (NVDA + JPM added Jun 22); **1 slot remaining**
-- Phase P&L: +$4,944.05 (+4.94%) | Day 21
-
-### Positions
-| Ticker | Shares | Entry | Current | Unrealized P&L | Stop | HWM |
-|--------|--------|-------|---------|----------------|------|-----|
-| AMZN | 86 | $242.63 | $233.43 | −$791.20 (−3.79%) | $224.56 (10% trail) | $249.51 |
-| JPM | 31 | $327.63 | $333.30 | +$175.89 (+1.73%) | $301.82 (10% trail) | $335.36 |
-| LLY | 13 | $1,078.65 | $1,108.00 | +$381.55 (+2.72%) | $1,064.46 (10% trail) | $1,182.73 |
-| NVDA | 50 | $213.53 | $201.30 | −$611.52 (−5.73%) ⚠️ | $192.59 (10% trail) | $213.99 |
-| NVO | 513 | $41.27 | $46.78 | +$2,825.55 (+13.35%) | $42.69 (10% trail) | $47.43 |
-
-⚠️ **NVDA manual cut threshold**: −7% = $198.59; current $201.30 — gap to cut: $2.71. Bouncing +0.63% premarket from yesterday's close $200.04.
-⚠️ **NVO tighten trigger**: +15% from entry = $47.46; HWM already $47.43 ($0.03 below trigger); if NVO hits $47.46 intraday → tighten trail 10% → 7% (stop ~$44.14).
-
-### Market Context
-- S&P 500 futures: Pointing higher after 2 consecutive sessions of tech-driven losses; Polymarket 71% probability of positive open; bargain-hunting tone
-- VIX: ~17.28 (Jun 22 close) — below 22 gate threshold; not an entry gate trigger
-- Today's catalysts:
-  - **Fed bank stress test results (4 PM EDT)**: 32 lenders including JPM; Fed froze buffers so capital requirements unchanged, but clean pass expected to unlock JPM buyback/dividend talk — direct near-term catalyst for JPM
-  - **Micron (MU) earnings after close**: AI memory / HBM3E cycle; trading at ~$1,145 with elevated expectations; high-conviction beat = chip-sector bounce → NVDA recovery; miss = NVDA at -7% cut risk overnight
-  - **May New Home Sales**: Housing/consumer macro read; market-neutral unless big surprise
-  - **EIA Crude Oil Inventories**: Oil-market read; indirect macro
-  - **AI chip selloff partially priced in**: Korean market −10% (semiconductor-heavy) dragged US tech yesterday; some of that pain already absorbed
-  - **2-year Treasury 4.18–4.21%**: Hawkish rate environment persists; multiple compression on high-P/E tech ongoing
-  - **US/Iran MOU**: Headline risk remains; any disruption = oil spike + risk-off
-- Earnings before open: None major; Paychex (PAYX) and Jefferies (JEF) — no direct impact on holdings
-
-### Position News
-- **AMZN** ($233.43, −3.79%): Prime Day Jun 23–26 running (4-day event, earliest-ever); BofA Buy PT $310; FTC/EU DMA headwinds real but near-term Prime Day revenue visibility intact; manual cut threshold $225.65 at $7.78 cushion — meaningfully safer than yesterday's projected open; HOLD
-- **JPM** ($333.30, +1.73%): **Bank stress test results TODAY at 4 PM EDT** — strongest near-term catalyst in portfolio; JPM passed 2025 test and raised dividend +7% post-test; hawkish rate environment = NIM expansion tailwind; JPM HWM $335.36 within reach; HOLD into catalyst
-- **LLY** ($1,108.00, +2.72%): No fresh news; oral GLP-1 Foundayo competitive lead intact; stop $1,064.46 at 3.8% cushion — still tight but stable; retatrutide Phase 3 thesis intact; HOLD
-- **NVDA** ($201.30, −5.73%): ⚠️ Most at-risk position; Micron earnings tonight are binary read-through — beat = chip-sector bounce, could pull NVDA back above entry range; miss = NVDA likely trades through −7% cut ($198.59) tomorrow open; bouncing +0.63% in premarket today; Halos for Robotics / European AI supercomputer announcements provide LT thesis support; stop at $192.59; HOLD today, monitor Micron result
-- **NVO** ($46.78, +13.35%): Wegovy Pill prescriptions accelerating; Nordea Buy reiteration; pulled back −1.35% from yesterday's HWM $47.43; approaching +15% tighten threshold $47.46 (only $0.68 above current); if NVO reclaims $47.46 intraday → cancel 10% trail GTC and replace with 7% trail GTC (estimated new stop ~$44.14); HOLD
-
-### Trade Ideas
-1. **NVO trail tighten (maintenance — no trade slot used)** — If NVO trades through $47.46 intraday, cancel order 76c62674 and place new 7% trail GTC (513 shares); new stop ~$44.14 based on HWM; protects $2,800+ unrealized gain
-2. **JPM add or new Financials name (post-stress-test, Jun 25)** — If stress tests confirm JPM clean pass and Financials react positively Thursday, use final weekly slot to add to JPM or open a 6th position in Financials sector; only viable if NVDA holds (no -7% exit today to free a slot); setup conditional on today's 4 PM result
-3. **NVDA hold + Micron read-through** — Do NOT sell today unless $198.59 manual cut breached; if Micron beats after close tonight, NVDA likely bounces at Jun 25 open providing a potential recovery; if Micron misses → prepare to exit NVDA at open Jun 25 per -7% rule (protect remaining ~$2.71 cushion)
-
-### Risk Factors
-- **⚠️ NVDA −5.73%**: Manual cut at $198.59; gap $2.71; any adverse Micron surprise after close tonight or renewed tech selloff intraday could push through cut level
-- **Micron earnings binary risk**: Elevated expectations (MU at ~$1,145 vs $460 a quarter ago); miss = AI-memory demand narrative hurt = semiconductor complex sells off = NVDA breach risk
-- **NVO tighten window**: If NVO hits $47.46 and continues to new HWM, the 7% trail should be placed; failure to tighten leaves ~$1,800 of the $2,825 unrealized gain unprotected versus 10% trail scenario
-- **Communication Services EXIT**: Sector locked out (2 consecutive losses); no new buys
-- **LLY stop 3.8% cushion**: Tight; no fresh adverse news but any gap down >3.8% triggers stop at $1,064.46; below LLY entry → loss
-- **1 weekly slot remaining**: Final slot for this week; do not use until Micron result + stress test clarity are both known
-- **2-year Treasury 4.18–4.21%**: Hawkish overhang; multiple compression on AMZN/NVDA ongoing; any hot PCE (late week) reignites rate-hike fears
-- **Iran MOU disruption**: Oil spike + geopolitical risk-off remains tail risk; could spike VIX above 22 gate
-
-### Decision
-HOLD — Futures bouncing but two binary events today (bank stress tests 4 PM + Micron after close) warrant patience. Deployment 75.2% within 75–85% target; no deployment gate trigger. Reserve final weekly slot for post-event clarity (Jun 25 open).
-
-**Active monitoring required:**
-- NVDA: If trades through $198.59 (−7% from $213.53) intraday → SELL manually before auto-stop at $192.59
-- NVO: If trades through $47.46 (+15% from $41.27) intraday → Cancel 10% trail GTC (order 76c62674), place 7% trail GTC for 513 shares
-- JPM: Watch stress test result at 4 PM EDT; if strong beat consensus → note for potential Jun 25 add using final weekly slot
-
-### Afternoon Addendum — 12:02 ET
-
-**NVDA Intraday Risk:**
-- Intraday low ~$198.65 — within $0.07 of the −7% manual cut trigger ($198.59)
-- Alpaca live price recovered to $200.77 at noon; cushion restored to $2.18
-- Thesis intact but highly fragile
-
-**Micron (MU) Earnings — Key Risk Flag:**
-- Reports after close today; earnings call 4:30 PM EDT
-- Analyst consensus EPS: $19.95–$20.28 vs Micron's own guidance $19.15 ± $0.40 — **consensus is ~5% above top of Micron's guidance**
-- MU has surged 244% in 2026 → elevated expectations embedded in price
-- Miss scenario: AI-memory demand narrative hurt → chip-sector sell-off → NVDA likely opens below $198.59 (−7% cut level) → **prepare to cut NVDA at Jun 25 open**
-- Beat scenario: chip-sector bounce → NVDA recovery → hold; potential JPM add if stress test also clean
-
-**JPM Stress Test (4 PM EDT):**
-- No surprises expected; clean pass likely → JPM buyback/dividend talk = near-term tailwind
-- If clean + NVDA holds → use final weekly trade slot at Jun 25 open for JPM add or Financials name
-
+--- TRIMMED 2026-07-01 ---
 
 ## 2026-06-25 — Pre-market Research
 
@@ -378,3 +295,66 @@ HOLD — 84.7% deployed within 75–85% target; VIX 18.41 below 22 gate; futures
 - WMT: If drops below $109.35 (−7% from $117.58) → sell 165 shares manually before auto-stop $105.98
 - AMZN: If drops below $225.65 (−7% from $242.63) → sell 86 shares manually
 - 10:00 AM Consumer Confidence: Weak reading → reassess WMT manual cut cushion
+
+## 2026-07-01 — Pre-market Research
+
+### Account
+- Equity: $106,181.92 | Cash: $16,298.56 (15.35%) | Deployed: $89,883.36 (84.65% — within 75–85% target)
+- Buying power: $316,867.65 (day-trade) / $122,480.48 (reg T) | Daytrade count: 0
+- Open positions: AMZN (86 sh), JPM (31 sh), LLY (13 sh), NVO (513 sh), WMT (165 sh) — 5/6 slots used
+- Week trades: 0/3 (week of Jun 29) — 3 slots remaining
+- Phase P&L: +$6,181.92 (+6.18%) | Day 26
+
+### Positions
+| Ticker | Shares | Entry | Current | Unrealized P&L | Stop | HWM |
+|--------|--------|-------|---------|----------------|------|-----|
+| AMZN | 86 | $242.63 | $239.18 | −$296.70 (−1.42%) | $227.27 (10% trail) | $252.53 |
+| JPM | 31 | $327.63 | $326.47 | −$35.84 (−0.35%) | $309.10 (10% trail) | $343.45 |
+| LLY | 13 | $1,078.65 | $1,204.00 | +$1,629.55 (+11.62%) | $1,114.20 (10% trail) | $1,238.00 |
+| NVO | 513 | $41.27 | $48.37 | +$3,641.22 (+17.20%) ⚠️ | $45.21 (7% trail) | $48.618 |
+| WMT | 165 | $117.58 | $113.50 | −$673.20 (−3.47%) | $105.975 (10% trail) | $117.75 |
+
+⚠️ **NVO tighten trigger**: +20% from entry = $49.53; current $48.37 — **gap: $1.16**. If NVO crosses $49.53 intraday → cancel 7% trail GTC (order 37a0ac69), place 5% trail GTC for 513 shares (est. stop ≈ $47.05).
+**LLY tighten trigger**: +15% from entry = $1,240.45; current $1,204.00 — gap $36.45. Not close; no action expected today.
+
+### Market Context
+- S&P 500 futures: −0.38% premarket; Polymarket implies only 27% probability of a higher open — mildly risk-off tone after S&P closed its best quarter since Q2 2020 (Q2 +14.9%, H1 +9.6%)
+- VIX: ~16.45 (−6.80%) — below 22 gate threshold; calm
+- Today's catalysts:
+  - **ISM Manufacturing PMI + ADP June employment (today)**: Key macro reads ahead of Friday's June payrolls report; miss on either = broad risk-off, Industrials/cyclical pressure
+  - **June construction spending, General Mills (GIS) earnings**: Minor, no direct portfolio read-through
+  - **Holiday-shortened week**: Markets closed Fri Jul 3 for July 4th observance — thinner post-PMI/ADP liquidity into the long weekend
+  - **Tech sector rotation continuing**: Selling pressure/volatility in Tech this week despite lower oil and yields; money flowing to other sectors (Tech already EXIT — no direct impact)
+  - **Earnings season is next major broad catalyst**: Absent a Middle East flare-up, markets likely range-bound until Q2 earnings begin in ~2 weeks (JPM reports Jul 14)
+- Earnings before open: GIS (not held); none for portfolio names
+
+### Position News
+- **AMZN** ($239.18, −1.42%): New $1B Forward Deployed Engineering org announced; $2.25M FTC settlement (FCRA, immaterial); summer Prime savings ahead of Jul 4; Strong Buy consensus, PT $316; stock only +2% YTD after giving back earlier gains; next earnings Jul 30; manual cut $225.65 (cushion 5.7%); HOLD
+- **JPM** ($326.47, −0.35%): CEO succession news — Petno/Rohrbaugh named Co-Presidents, Lake to retire; $1.50 dividend confirmed ex-date Jul 6; Q2 earnings call Jul 14; $1.5T Security & Resiliency Initiative extended to Canada; manual cut $304.69 (cushion 6.7%); HOLD
+- **LLY** ($1,204.00, +11.62%): Medicare GLP-1 Bridge program launches today (Zepbound/Foundayo, $50/mo copay, ~20M eligible patients) — structural demand tailwind; EMA backed Jaypirca for CLL (EU approval path); 2026 PT $1,218.72 near current price; stop $1,114.20 (cushion 7.5%); HOLD
+- **NVO** ($48.37, +17.20%): ⚠️ $1.16 from +20% tighten; buybacks accelerating under DKK 15B program; Jefferies reiterated Hold; 2026 guidance improved (sales/profit contraction narrowed to −4% to −12%); Wegovy pill ex-US launch H2 2026 pending approvals; 54.6% GLP-1 share intact; stop $45.21 (cushion 6.5%); HOLD — tighten if $49.53 hit
+- **WMT** ($113.50, −3.47%): Down 5 straight sessions; long-term nuclear power deal for perishable distribution network announced (no near-term impact); Buy consensus, PT $138.85; next earnings Aug 20; manual cut $109.35 (cushion 3.7%) — tightest cushion in portfolio; HOLD, monitor closely
+
+### Trade Ideas (contingent on slot opening — at 5/6 position max)
+1. **CAT (Caterpillar)** — Industrials — Today's ISM Manufacturing PMI is a direct catalyst; new sector for the book (0 losses). Entry ~$440–450 if a slot opens; stop 10% trail; target $515–525 (+15–17%); R:R ~2:1. Only viable if a position exits.
+2. **XOM (ExxonMobil)** — Energy — Diversification away from Tech/Healthcare-heavy book; sector unused (0 losses); FCF yield supports buyback/dividend. Entry ~$109–113 if a slot opens; stop 10% trail; target $130 (+15–18%); R:R ~1.8:1. Only viable if a position exits.
+3. **Hold slot** — Deployed 84.65% (top of 75–85% target); 5/6 positions filled; no deployment gate trigger. Preserve capacity for post-PMI/ADP clarity or a cleaner setup next week.
+
+### Risk Factors
+- ⚠️ **NVO $1.16 from +20% tighten ($49.53)**: If crossed → cancel 7% trail GTC (order 37a0ac69), place 5% trail GTC for 513 shares
+- **WMT cushion to manual cut only 3.7%**: Tightest in portfolio; 5 straight down days; if it opens or trades below $109.35 → sell 165 sh manually before auto-stop $105.975
+- **ISM Manufacturing PMI + ADP today**: Miss on either reignites growth-scare narrative ahead of Friday payrolls; broad risk-off would pressure AMZN/WMT further
+- **Polymarket 27% probability of higher open**: Notably bearish positioning signal for today's session
+- **Holiday-shortened week**: Thin liquidity into Fri Jul 3 close; avoid chasing moves
+- **JPM ex-dividend Jul 6**: $1.50/sh mechanical drop next Monday; not a thesis change
+- **Technology + Communication Services EXIT**: No new buys in either sector
+- **5/6 slots in use, 84.65% deployed**: No new trades without an exit; deployment gate not triggered (>60%)
+
+### Decision
+HOLD — Futures mildly negative (−0.38%), Polymarket only 27% odds of a green open, but VIX 16.45 is calm and no thesis has broken. 84.65% deployed is within target; no deployment gate trigger. ISM PMI + ADP today warrant patience before committing the final slot. Week trades 0/3 — no new positions needed today.
+
+**Active monitoring required at open:**
+- NVO: If crosses $49.53 (+20% from $41.27) → cancel 7% trail GTC (order 37a0ac69), place 5% trail GTC for 513 shares
+- WMT: If drops below $109.35 (−7% from $117.58) → sell 165 shares manually before auto-stop $105.975
+- AMZN: If drops below $225.65 (−7% from $242.63) → sell 86 shares manually before auto-stop $227.27
+- ISM PMI / ADP (releases today): Hot miss → reassess WMT/AMZN cushions intraday
