@@ -572,3 +572,27 @@ NVO hit +15% tighten trigger (HWM $47.53 > threshold $47.46):
 | LLY | 13 | $1,078.65 | $1,191.74 | −0.64% | +$1,470.17 (+10.48%) | $1,114.20 (10% trail, HWM $1,238.00) |
 | NVO | 513 | $41.27 | $48.79 | +1.77% | +$3,856.68 (+18.22%) | $46.08 (7% trail, HWM $49.55) |
 **Notes:** WMT cut at −7% rule intraday, only trade today (−$1,641.48 realized); 4/6 slots filled, deployed 67.7% (below 75-85% target after WMT exit). NVO +18.2%, nearing +20% tighten trigger; all other GTC stops intact, no other breaches.
+
+## 2026-07-02 — market-open (no new trades)
+
+**Decision:** HOLD — no new entries. Per today's research log: June jobs report (nonfarm payrolls) releases today ahead of Fri Jul 3 holiday closure; preserving capital for post-data clarity. Deployed 68.0% is below 75–85% target but above the 60% gate floor, so no forced add. Week trades 0/3 — 3 slots remain.
+
+### Stop Maintenance — NVO Trail Tighten
+
+NVO crossed +20% tighten trigger (HWM $50.18 > threshold $49.53, confirmed live at $50.09/+21.37%):
+- **Cancelled:** order 37a0ac69 (7% trail, stop $46.667307, HWM $50.18)
+- **Placed:** order e1c950f4 (5% trail, stop $47.57125, HWM $50.075)
+- **Protection gain:** +$0.90/sh × 513 = +$464 additional downside protected
+
+**Live Snapshot (09:37 ET):**
+**Account:** Equity $106,509.87 | Cash $34,057.74 (32.0%) | Deployed 68.0% | Daytrade count: 0
+| Ticker | Shares | Entry | Current | Unrealized P&L | Stop |
+|--------|--------|-------|---------|----------------|------|
+| AMZN | 86 | $242.63 | $242.74 | +$9.46 (+0.05%) | $227.27 (10% trail, HWM $252.53) |
+| JPM | 31 | $327.63 | $334.53 | +$213.87 (+2.11%) | $309.10 (10% trail, HWM $343.45) |
+| LLY | 13 | $1,078.65 | $1,193.08 | +$1,487.59 (+10.61%) | $1,114.20 (10% trail, HWM $1,238.00) |
+| NVO | 513 | $41.27 | $50.09 | +$4,523.58 (+21.37%) | $47.57125 (5% trail ↑ tightened, HWM $50.075) |
+
+**Notes:** No new trades — 4/6 slots filled, only action was overdue NVO stop tighten (7%→5%). AMZN/JPM/LLY theses intact, no breaches. Awaiting 8:30 AM jobs report reaction; no forced action from deployment gate.
+
+**Environment note:** CLICKUP_API_KEY/CLICKUP_WORKSPACE_ID/CLICKUP_CHANNEL_ID missing from env this run and scripts/clickup.sh does not exist — no trades fired so STEP 7 is a no-op regardless.
