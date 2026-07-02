@@ -614,3 +614,15 @@ NVO crossed +20% tighten trigger (HWM $50.18 > threshold $49.53, confirmed live 
 - No manual actions taken. Week trades: 0/3. All GTC stops intact.
 
 **Environment note:** CLICKUP_API_KEY/CLICKUP_WORKSPACE_ID/CLICKUP_CHANNEL_ID missing from env this run — no action taken so STEP 7 is a no-op regardless.
+
+### Jul 02 — EOD Snapshot (Day 27, Thursday)
+**Portfolio:** $106,799.67 | **Cash:** $34,057.74 (31.9%) | **Day P&L:** +$1,225.11 (+1.16%) | **Phase P&L:** +$6,799.67 (+6.80%)
+| Ticker | Shares | Entry | Close | Day Chg | Unrealized P&L | Stop |
+|--------|--------|-------|-------|---------|----------------|------|
+| AMZN | 86 | $242.63 | $242.21 | +0.21% | −$35.80 (−0.17%) | $227.27 (10% trail, HWM $252.53) |
+| JPM | 31 | $327.63 | $334.47 | +0.12% | +$212.16 (+2.09%) | $309.10 (10% trail, HWM $343.45) |
+| LLY | 13 | $1,078.65 | $1,211.98 | +1.70% | +$1,733.29 (+12.36%) | $1,114.20 (10% trail, HWM $1,238.00) |
+| NVO | 513 | $41.27 | $50.30 | +3.14% | +$4,631.31 (+21.87%) | $48.35 (5% trail, HWM $50.895) |
+**Notes:** No new trades, week 0/3. NVO stop already tightened to 5% at market-open, holding above +20% band. AMZN/JPM/LLY/NVO all extending gains, no breaches on any GTC stop.
+
+**Environment note:** CLICKUP_API_KEY/CLICKUP_WORKSPACE_ID/CLICKUP_CHANNEL_ID missing from env this run — ClickUp notification skipped, console-only per Step 5.
