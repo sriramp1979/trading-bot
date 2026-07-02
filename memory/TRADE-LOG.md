@@ -596,3 +596,21 @@ NVO crossed +20% tighten trigger (HWM $50.18 > threshold $49.53, confirmed live 
 **Notes:** No new trades — 4/6 slots filled, only action was overdue NVO stop tighten (7%→5%). AMZN/JPM/LLY theses intact, no breaches. Awaiting 8:30 AM jobs report reaction; no forced action from deployment gate.
 
 **Environment note:** CLICKUP_API_KEY/CLICKUP_WORKSPACE_ID/CLICKUP_CHANNEL_ID missing from env this run and scripts/clickup.sh does not exist — no trades fired so STEP 7 is a no-op regardless.
+
+### Jul 02 — Midday Scan (12:09 ET, Day 27, Thursday)
+**Account:** Deployed 68.0% | Week trades 0/3
+
+| Ticker | Shares | Entry | Price | Unrealized | Stop |
+|--------|--------|-------|-------|------------|------|
+| AMZN | 86 | $242.63 | $245.61 | +$256.28 (+1.23%) | $227.27 (10% trail, HWM $252.53) |
+| JPM | 31 | $327.63 | $334.07 | +$199.76 (+1.97%) | $309.10 (10% trail, HWM $343.45) |
+| LLY | 13 | $1,078.65 | $1,209.31 | +$1,698.58 (+12.11%) | $1,114.20 (10% trail, HWM $1,238.00) |
+| NVO | 513 | $41.27 | $50.51 | +$4,739.04 (+22.38%) | $48.35025 (5% trail, HWM $50.895) |
+
+- **Cut losers**: None at −7%. No action.
+- **Stop tighten**: NVO already tightened to 5% trail at market-open (order e1c950f4 confirmed live, HWM auto-advanced $50.075→$50.895, stop $48.35025) — tightest tier, no further action. LLY +12.11% — +15% threshold $1,240.45 not reached (gap $31.14); no action.
+- **Thesis check**: AMZN (Prime Day/AWS), JPM (ex-div Jul 6/earnings Jul 14), LLY (Medicare GLP-1 Bridge Program), NVO (Medicare obesity coverage) — all intact, no breaking news.
+- No unexplained sharp moves — no intraday research needed.
+- No manual actions taken. Week trades: 0/3. All GTC stops intact.
+
+**Environment note:** CLICKUP_API_KEY/CLICKUP_WORKSPACE_ID/CLICKUP_CHANNEL_ID missing from env this run — no action taken so STEP 7 is a no-op regardless.
