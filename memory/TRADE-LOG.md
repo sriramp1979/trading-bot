@@ -626,3 +626,4 @@ NVO crossed +20% tighten trigger (HWM $50.18 > threshold $49.53, confirmed live 
 **Notes:** No new trades, week 0/3. NVO stop already tightened to 5% at market-open, holding above +20% band. AMZN/JPM/LLY/NVO all extending gains, no breaches on any GTC stop.
 
 **Environment note:** CLICKUP_API_KEY/CLICKUP_WORKSPACE_ID/CLICKUP_CHANNEL_ID missing from env this run — ClickUp notification skipped, console-only per Step 5.
+## 2026-07-03 market-open — Market closed, skipped
