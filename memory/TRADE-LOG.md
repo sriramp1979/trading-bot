@@ -627,3 +627,6 @@ NVO crossed +20% tighten trigger (HWM $50.18 > threshold $49.53, confirmed live 
 
 **Environment note:** CLICKUP_API_KEY/CLICKUP_WORKSPACE_ID/CLICKUP_CHANNEL_ID missing from env this run — ClickUp notification skipped, console-only per Step 5.
 ## 2026-07-03 midday — Market closed, skipped
+
+### Jul 03 — EOD Snapshot (Day 28, Friday) — Market closed, skipped
+Market holiday (next open 2026-07-06 Mon). All positions unchanged (change_today: 0 across AMZN/JPM/LLY/NVO). No trades, no equity move, no stop actions. Week trades: 0/3.
