@@ -27,75 +27,7 @@ Format each entry:
 ### Decision
 TRADE or HOLD (default HOLD if no edge)
 
---- TRIMMED 2026-06-26 ---
-
-## 2026-06-22 — Pre-market Research
-
-### Account
-- Equity: $105,422.53 | Cash: $35,857.62 (34.0%) | Deployed: $69,564.91 (66.0% — above 60% gate, below 75–85% target)
-- Buying power: $141,280.15 (reg T) | Daytrade count: 0
-- Open positions: AMZN (86 sh), GOOGL (32 sh), LLY (13 sh), NVO (513 sh)
-- Week trades: 0/3 (fresh week reset)
-- Phase P&L: +$5,422.53 (+5.42%) | Day 19
-
-### Positions
-| Ticker | Shares | Entry | Current | Unrealized P&L | Stop | HWM |
-|--------|--------|-------|---------|----------------|------|-----|
-| AMZN | 86 | $242.63 | $242.34 | −$24.94 (−0.12%) | $224.56 (10% trail) | $249.51 |
-| GOOGL | 32 | $369.28 | $362.33 | −$222.47 (−1.88%) | 25sh $338.19 / 7sh $332.53 | $375.77 / $369.48 |
-| LLY | 13 | $1,078.65 | $1,102.02 | +$303.81 (+2.17%) | $1,064.46 (10% trail) ⚠️ 3.4% cushion | $1,182.73 |
-| NVO | 513 | $41.27 | $44.45 | +$1,630.26 (+7.70%) | $40.50 (10% trail) | $44.997 |
-
-### Market Context
-- S&P 500 futures: ESM26 +0.98% — bullish open; S&P 500 + Nasdaq-100 index rebalance effective today (membership changes)
-- VIX: ~16.78 (Jun 19 close) — below 22 gate threshold; moderate, risk-on lean
-- Today's catalysts:
-  - **Semiconductor surge**: Intel +10.64% on Apple chip partnership; SK Hynix surpassed Samsung to become South Korea's most-valuable company; DRAM ETF +3% premarket — broad semi sector momentum
-  - **Amazon Prime Day begins this week**: 4-day event = near-term direct revenue catalyst for AMZN
-  - **Index rebalance today**: Technical buying/selling pressure at open — use post-settle timing (9:35–9:45 AM)
-  - **Hawkish Fed overhang**: FOMC held 3.50–3.75%; dot plots lean toward 2026 rate hike — weighing on high-P/E growth names
-  - **US-Iran peace talks**: Oil down ~1.6% (Brent falling, Strait of Hormuz transits normal) — risk-on backdrop; energy sector headwind
-  - **Micron (MU) earnings Jun 25**: AI memory / HBM3E read-through — binary event risk mid-week
-- Earnings before open: None major
-
-### Position News
-- **AMZN** ($242.34, −0.12% unrealized, −0.84% intraday): Prime Day week catalyst; Amazon exploring selling Nvidia-rival chips (Bloomberg); stop $224.56 at 7.3% cushion — safe; AWS thesis intact
-- **GOOGL** ($362.33, −1.88% unrealized, −1.55% intraday): No fresh catalyst; all 32 sh protected (25sh $338.19 + 7sh $332.53); 6.7–8.2% cushions — safe; AI search monetization thesis intact
-- **LLY** ($1,102.02, +2.17% unrealized, +0.31% intraday): No fresh news; oral GLP-1 Foundayo competitive lead intact; ⚠️ stop $1,064.46 at 3.4% cushion — tight; tighten-trail threshold +15% = $1,240.45 not reached; hold 10% trail
-- **NVO** ($44.45, +7.70% unrealized, +2.92% intraday): Strong recovery; approaching +15% tighten threshold ($47.46); stop $40.50 at 8.9% cushion — safe; no specific news today
-
-### Trade Ideas
-1. **NVDA (Nvidia)** — Technology — Broad semi surge (Intel +10.64% Apple partnership, SK Hynix record market cap, DRAM ETF +3%); AI GPU capex: GOOGL $190B + AMZN $200B data center build; ACN beat Jun 18 confirmed AI consulting demand; sector OK (1 loss); entry 9:35–9:45 AM post-open settle (avoid index-rebalance spike), 10% trail GTC, target +20%, R:R 2:1 | Size ~10–12% (~$10.5–12.6K) | **PRIMARY**
-2. **JPM (JPMorgan Chase)** — Financials — Fed dot plots lean toward rate hike = NIM expansion; Jun 24 bank stress test results near-term catalyst; new sector exposure (0 losses); entry post-settle, 10% trail GTC, target +15–20%, R:R 2:1 | Size ~10% (~$10.5K) | **SECONDARY**
-3. **MU (Micron)** — Technology — AI HBM3E memory demand; +3% premarket on DRAM sector wave; ⚠️ earnings Wed Jun 25 = binary event — only enter if NVDA fills cleanly AND momentum extends strongly | BACKUP — elevated risk
-
-### Risk Factors
-- **LLY stop 3.4% cushion** ⚠️: Gap down >3.4% triggers stop at $1,064.46; healthcare sector momentum weakening; monitor at open — auto-exit possible
-- **Index rebalance today**: Technical distortions at open; no entries in first 5–10 min; wait for post-settle
-- **MU earnings Wed**: Binary event mid-week for semi sector — reduces conviction for new tech entries carrying into that date
-- **GOOGL −1.88% unrealized**: Still above stops but two red days post-FOMC; Communication Services 1 consecutive loss
-- **AMZN 7.3% stop cushion**: Prime Day catalyst should help; watch for close below $240 as deterioration signal
-- **Hawkish Fed**: Rate-hike lean compresses growth multiples; tech most exposed; deployment above 60% gate = no forced entry
-- **Deployment 66.0%**: Above 60% gate (no forced entry), below 75–85% target; NVDA + JPM push to ~75–78%
-
-### Decision
-TRADE — VIX 16.78 < 22, futures +0.98%, deployment 66.0% above 60% gate but below 75–85% target. Fresh week, 3/3 slots available. Semi sector has high-conviction catalyst. **PRIMARY: NVDA** entry 9:35–9:45 AM post-open settle (avoid index-rebalance spike); confirm Nasdaq direction first. **SECONDARY: JPM** post-settle if NVDA fills cleanly. Target 75–78% deployed after 2 entries. ⚠️ Monitor LLY at open — 3.4% stop cushion; if stopped out, redeploy freed capital into 3rd idea. Do NOT trade MU ahead of Wednesday earnings.
-
-### Afternoon Addendum — 2026-06-22 Midday Scan
-
-**GOOGL** (EXITED midday ~$345.65, -6.4%):
-- $84.75B secondary equity offering → buybacks suspended; 47% FCF decline YoY to $10.1B
-- DeepMind VP / Nobel laureate John Jumper departed to Anthropic; Gemini co-lead Noam Shazeer departed to OpenAI
-- Antitrust + regulatory overhang intensifying
-- **Thesis broken** — exited all 32sh before auto-stop; Communication Services → EXIT (2 consecutive losses)
-
-**AMZN** (HOLD, $233.54, -3.7% unrealized):
-- FTC antitrust complaint targeting $70B advertising business (highest-margin segment); state AGs co-filing
-- EU Commission designating AWS as DMA "gatekeeper" — interoperability requirements, up to 10% global turnover penalty
-- Heavy CapEx overhang ($200B+ AI/robotics); insider selling $51.6M (zero buys)
-- Near-term Prime Day catalyst intact; Strong Buy consensus target $312.99 (63 analysts)
-- **Hold** — regulatory risks real but not thesis-breaking for near-term; stop at $224.56 (3.8% cushion) provides protection
-
+--- TRIMMED 2026-07-03 ---
 
 ## 2026-06-23 — Pre-market Research
 
@@ -379,3 +311,49 @@ TRADE — Deployment gate triggered (65.9% deployed, VIX 18.68, futures −0.2%)
 **Assessment:** Thesis intact and strengthened; all catalysts fundamental. HWM auto-updated to $1,207.59 (10% trail); tighten to 7% at $1,240.45 (+15% from entry). No action today.
 
 **WMT entry confirmed:** 165 sh @ $117.58 at open; PCE print in-line enabled entry; Consumer Staples defensive positioning. Deployed to 84.6% — within target range.
+
+
+## 2026-07-03 — Pre-market Research
+
+### Account
+- Equity: $106,947.35 | Cash: $34,057.74 (31.9%) | Deployed: $72,889.61 (68.2% — above 60% gate, below 75–85% target)
+- Buying power: $141,005.09 (reg T) | Daytrade count: 0
+- Open positions: AMZN (86 sh), JPM (31 sh), LLY (13 sh), NVO (513 sh) — WMT no longer held (see Risk Factors)
+- Week trades: 0/3 (fresh week — no new entries since Jun 26)
+- Phase P&L: +$6,947.35 (+6.95%)
+
+### Positions
+| Ticker | Shares | Entry | Current | Unrealized P&L | Stop | HWM |
+|--------|--------|-------|---------|----------------|------|-----|
+| AMZN | 86 | $242.63 | $242.67 | +$3.44 (+0.02%) | $227.27 (10% trail) | $252.53 |
+| JPM | 31 | $327.63 | $334.47 | +$212.16 (+2.09%) | $309.10 (10% trail) | $343.45 |
+| LLY | 13 | $1,078.65 | $1,213.91 | +$1,758.38 (+12.54%) | $1,114.20 (10% trail) | $1,238.00 |
+| NVO | 513 | $41.27 | $50.43 | +$4,698.00 (+22.19%) | $48.35 (5% trail — tightened, +20% threshold crossed) | $50.90 |
+
+### Market Context
+- S&P 500 futures: Market **CLOSED today** — Independence Day observed (Jul 4 falls Saturday); reopens Monday Jul 6. Jul 2 close: Dow at all-time high, SPX flat.
+- VIX: 16.15 (Jul 2 close, −2.65%) — below 22 gate; calm
+- Today's catalysts: None (market closed). Carryover from Jul 2: semiconductor selloff (SOX −7% Thu, −12% over 2 days) on KOSPI/memory weakness; July FOMC rate-hike odds fell to 20% (from 30%) on soft jobs report + falling oil; Iran-US talks pushed to "earliest possible" post-funeral (Khamenei commemorations run Jul 4–9) — geopolitical tail risk to monitor into next week.
+- Earnings before open: None (market closed)
+
+### Position News
+- **AMZN** ($242.67, flat): JPMorgan raised PT to $280 on AWS demand; Wells Fargo raised to $313; $200B AI capex plan confirmed. Thesis intact.
+- **JPM** ($334.47, +2.09%): No fresh company-specific news; falling rate-hike odds are a mild NIM headwind but financials sector still 0 losses. Thesis intact.
+- **LLY** ($1,213.91, +12.54%): No fresh catalyst since Jun 26 retatrutide/Jaypirca news; HWM $1,238 is just under +15% tighten threshold ($1,240.45) — watch for tighten trigger Monday. Thesis intact.
+- **NVO** ($50.43, +22.19%): Upgraded to Buy on Wegovy sales outlook despite competitive pressure. +20% tighten already correctly applied (5% trail, stop $48.35). Thesis intact.
+
+### Trade Ideas
+No new-entry ideas today — market closed, nothing actionable. For Monday Jul 6 review:
+1. **Financials** — Sector OK (0 losses); falling rate-hike odds are a mild headwind — no fresh catalyst, do not chase.
+2. **Technology / Communication Services** — Both EXIT status (2 consecutive losses each) — semiconductor selloff (SOX −7%/−12%) reinforces staying out; no entries regardless of catalyst until sector rule clears.
+3. **Consumer Staples** — Status shows OK in SECTOR-LOG.md but WMT was closed at a loss Jul 1 and never logged (see Risk Factors) — treat as 1 consecutive loss, not 0, until reconciled.
+
+### Risk Factors
+- **Market closed today** — Independence Day observed; no trading possible. Decision is HOLD by default.
+- **Unlogged WMT exit** ⚠️: Position and order history show WMT (165 sh) was manually sold at $107.63 on 2026-07-01 (entry $117.58, **−8.5%**, worse than the −7% manual-cut rule) via market order; the GTC trailing stop was canceled same-minute. This trade is **not recorded** in TRADE-LOG.md or SECTOR-LOG.md — Consumer Staples still shows "0 consecutive losses / OK" but should reflect 1 loss. Needs manual reconciliation.
+- **Trade-log gap** ⚠️: TRADE-LOG.md has no entries between Jun 26 EOD and today (Jun 29–Jul 2 missing) despite stop orders showing activity (NVO tightened to 5% trail on Jul 2, consistent with a market-open run) — suggests recent daily workflows executed trades/stop updates but did not write log entries. Recommend the user check whether market-open/midday/EOD routines ran and log-write steps completed correctly this week.
+- **LLY stop at 14.78% cushion, nearing +15% tighten threshold** — watch Monday for auto-tighten to 7% trail.
+- **Deployment 68.2%** — above 60% gate (no forced entry), below 75–85% target; mild cash drag but not urgent given market closed.
+
+### Decision
+HOLD — market closed for Independence Day; no action possible or needed. Flag WMT/trade-log reconciliation for next session.
