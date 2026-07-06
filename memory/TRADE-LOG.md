@@ -630,3 +630,23 @@ NVO crossed +20% tighten trigger (HWM $50.18 > threshold $49.53, confirmed live 
 
 ### Jul 03 — EOD Snapshot (Day 28, Friday) — Market closed, skipped
 Market holiday (next open 2026-07-06 Mon). All positions unchanged (change_today: 0 across AMZN/JPM/LLY/NVO). No trades, no equity move, no stop actions. Week trades: 0/3.
+
+## Week of 2026-07-06 | Trades: 0/3
+
+## 2026-07-06 — market-open (no new trades)
+
+**Decision:** HOLD — no new entries. Per today's research log: deployed 67.94% is below 75–85% target but above the 60% gate floor, so no forced add. No fresh, clean catalyst-backed setup in an open (non-EXIT) sector today; RIVN (Consumer Discretionary) watch-only, already extended on the gap. Week trades 0/3 — 3 slots remain.
+
+**Live Snapshot (09:36 ET):**
+**Account:** Equity $106,221.59 | Cash $34,057.74 (32.06%) | Deployed 67.94% | Day P&L: −$725.76 (−0.68%) | Phase P&L: +$6,221.59 (+6.22%) | Daytrade count: 0
+
+| Ticker | Shares | Entry | Current | Unrealized P&L | Stop |
+|--------|--------|-------|---------|----------------|------|
+| AMZN | 86 | $242.63 | $242.90 | +$22.79 (+0.11%) | $227.27 (10% trail, HWM $252.53) |
+| JPM | 31 | $327.63 | $338.66 | +$342.05 (+3.37%) | $309.10 (10% trail, HWM $343.45) |
+| LLY | 13 | $1,078.65 | $1,203.65 | +$1,624.94 (+11.59%) | $1,114.20 (10% trail, HWM $1,238.00) |
+| NVO | 513 | $41.27 | $49.01 | +$3,969.54 (+18.75%) | $48.35025 (5% trail, HWM $50.895) |
+
+**Notes:** All 4 GTC trailing stops confirmed live and correctly tiered (NVO already at 5% tier from Jun 29 tighten). LLY +11.59%, +15% tighten trigger ($1,240.45) not yet reached — gap $36.80. No PDT-blocked stops pending from prior days. No trades fired.
+
+**Environment note:** CLICKUP_API_KEY/CLICKUP_WORKSPACE_ID/CLICKUP_CHANNEL_ID missing from env this run and scripts/clickup.sh does not exist — no trades fired so STEP 7 is a no-op regardless.
