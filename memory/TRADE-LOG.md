@@ -650,3 +650,19 @@ Market holiday (next open 2026-07-06 Mon). All positions unchanged (change_today
 **Notes:** All 4 GTC trailing stops confirmed live and correctly tiered (NVO already at 5% tier from Jun 29 tighten). LLY +11.59%, +15% tighten trigger ($1,240.45) not yet reached — gap $36.80. No PDT-blocked stops pending from prior days. No trades fired.
 
 **Environment note:** CLICKUP_API_KEY/CLICKUP_WORKSPACE_ID/CLICKUP_CHANNEL_ID missing from env this run and scripts/clickup.sh does not exist — no trades fired so STEP 7 is a no-op regardless.
+
+## 2026-07-06 midday — Reviewed (NVO outside band), no action
+
+**Trigger:** NVO at +18.68% breached the +12% early-exit band, forcing full review (AMZN +1.24%, JPM +2.56%, LLY +10.88% all within band).
+
+**Findings:**
+- No losers — nothing near -7% cut threshold.
+- NVO: already at tightest 5% trail tier (HWM $50.895, stop $48.35025) from prior tighten — pulled back intraday from this morning's +20.30% but tier correctly stays tightened, no downgrade.
+- LLY: +10.88% now (pulled back from +12.64% at open), +15% tighten trigger ($1,240.45) not reached — no action.
+- AMZN/JPM: under +15%, 10% trail unchanged, correctly tiered.
+- Thesis check: no material news on any name; LLY/NVO GLP-1 Medicare Bridge tailwind, AMZN/JPM steady — all HOLD.
+- No sharp unexplained intraday moves warranting research.
+
+**Action:** None. No new trades (week 0/3).
+
+**Environment note:** CLICKUP_API_KEY/CLICKUP_WORKSPACE_ID/CLICKUP_CHANNEL_ID missing from env this run — moot, no action taken so no notification needed.
