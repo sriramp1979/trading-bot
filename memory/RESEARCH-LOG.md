@@ -27,74 +27,7 @@ Format each entry:
 ### Decision
 TRADE or HOLD (default HOLD if no edge)
 
---- TRIMMED 2026-07-07 ---
-
-## 2026-06-30 — Pre-market Research
-
-### Account
-- Equity: $106,902.16 | Cash: $16,298.56 (15.3%) | Deployed: $90,603.60 (84.7% — within 75–85% target)
-- Buying power: $318,884.32 (day-trade) / $123,200.72 (reg T) | Daytrade count: 0
-- Open positions: AMZN (86 sh), JPM (31 sh), LLY (13 sh), NVO (513 sh), WMT (165 sh) — 5/6 slots used
-- Week trades: 0/3 (week of Jun 29; no trades Mon)
-- Phase P&L: +$6,902.16 (+6.90%) | Day 25
-
-### Positions
-| Ticker | Shares | Entry | Current | Unrealized P&L | Stop | HWM |
-|--------|--------|-------|---------|----------------|------|-----|
-| AMZN | 86 | $242.63 | $240.22 | −$207.26 (−0.99%) | $227.27 (10% trail) | $252.53 |
-| JPM | 31 | $327.63 | $330.00 | +$73.59 (+0.73%) | $309.10 (10% trail) | $343.45 |
-| LLY | 13 | $1,078.65 | $1,225.00 | +$1,902.55 (+13.57%) | $1,114.20 (10% trail) | $1,238.00 |
-| NVO | 513 | $41.27 | $48.51 | +$3,713.04 (+17.54%) ⚠️ | $45.11 (7% trail) | $48.50 |
-| WMT | 165 | $117.58 | $114.57 | −$496.65 (−2.56%) | $105.98 (10% trail) | $117.75 |
-
-⚠️ **NVO tighten trigger**: +20% from entry = $49.53; current $48.51 — **gap: $1.02**. If NVO crosses $49.53 intraday → cancel 7% trail GTC (order 37a0ac69), place 5% trail GTC for 513 shares (est. stop ≈ $47.05).
-⚠️ **LLY tighten trigger**: +15% from entry = $1,240.45; current $1,225.00 — **gap: $15.45**. If LLY crosses $1,240.45 intraday → cancel 10% trail GTC (order dc881393), place 7% trail GTC for 13 shares (est. stop ≈ $1,154).
-
-### Market Context
-- S&P 500 futures: +0.2% pre-market (S&P 500 closed 7,440.43 Mon Jun 29, +1.18%); mild green bias
-- VIX: 18.41 (Jun 29 close) — below 22 gate threshold; risk-on tone intact
-- Today's catalysts:
-  - **Quarter-end (last day Q2 2026)**: Window dressing flows — funds buy winners, trim laggards; late-session volatility likely; LLY/NVO as top portfolio winners may attract quarter-end buying
-  - **FHFA Housing Price Index + S&P Case-Shiller HPI (9:00 AM ET)**: Housing data; market-neutral unless large surprise
-  - **Chicago PMI (9:45 AM ET)**: Manufacturing activity read; strong print = Industrials bid, broad risk-on; miss = growth concern
-  - **Consumer Confidence (10:00 AM ET)**: Key for Consumer Discretionary (AMZN) and Consumer Staples (WMT) theses; strong = both supported; weak = reassess WMT cushion
-  - **Nike (NKE) earnings before open**: Consumer Discretionary read-through; beat = AMZN tailwind; miss = Consumer Discretionary sector pressure on AMZN
-  - **Constellation Brands (STZ) earnings before open**: Consumer Staples read; indirect WMT read-through
-  - **JPM ex-dividend Jul 6** (next Monday): $1.50/sh; minor ex-div price adjustment to anticipate
-  - **Tech sector rotation ongoing**: Money flowing out of Tech (EXIT) into Healthcare/Consumer/Financials — benefits all 5 holdings
-- Earnings before open: NKE, STZ (not held)
-
-### Position News
-- **AMZN** ($240.22, −0.99%): Prime Day $26.3B record confirmed; AWS GPU pricing raised; manual cut at $225.65 (cushion 6.1%); watch NKE earnings as Consumer Discretionary read; HOLD
-- **JPM** ($330.00, +0.73%): Ex-div Jul 6 ($1.50/sh); Q2 earnings Jul 14; HWM $343.45 is 4.1% above current; thesis intact; HOLD
-- **LLY** ($1,225.00, +13.57%): $15.45 from +15% tighten threshold; quarter-end window dressing may provide support; stop $1,114.20 at 9.1% cushion from current; HOLD — tighten if $1,240.45 crossed
-- **NVO** ($48.51, +17.54%): ⚠️ Only $1.02 from +20% tighten ($49.53); JPMorgan reiterated Neutral (cap on upside per sell-side); Wegovy insurance coverage expanding; 7% trail active; tighten to 5% if $49.53 hit; HOLD
-- **WMT** ($114.57, −2.56%): Manual cut at $109.35 (cushion 4.6%); Consumer Confidence data (10:00 AM) is key near-term catalyst; STZ earnings read-through; Consumer Staples thesis intact; HOLD — monitor cushion
-
-### Trade Ideas
-1. **NVO tighten (maintenance — no trade slot used)**: $1.02 gap to +20% threshold; high probability of trigger today given quarter-end momentum. When hit → cancel 7% trail GTC (order 37a0ac69), place 5% trail GTC for 513 shares (stop ≈ $47.05 from $49.53 HWM)
-2. **LLY tighten (maintenance — no trade slot used)**: $15.45 gap to +15% threshold. When hit → cancel 10% trail GTC (order dc881393), place 7% trail GTC for 13 shares (stop ≈ $1,154 from HWM)
-3. **CAT (Caterpillar) — Industrials** (contingent on slot opening): Chicago PMI catalyst today; global infrastructure tailwinds; sector available (0 losses). Entry: ~$440–450 if slot opens; stop: 10% trail GTC; target: $515–525 (+15–17%); R:R ~2:1. Only viable if a position exits
-
-### Risk Factors
-- ⚠️ **NVO only $1.02 from +20% tighten**: Must execute immediately if $49.53 reached — cancel order 37a0ac69, place 5% trail GTC
-- ⚠️ **LLY $15.45 from +15% tighten**: Monitor; quarter-end flows could close the gap quickly
-- **WMT −2.56%, cushion to manual cut 4.6%**: If Consumer Confidence (10:00 AM) disappoints → WMT could approach $109.35; sell 165 sh manually if breached
-- **NKE earnings before open**: Miss = Consumer Discretionary weakness → AMZN sympathy selling risk; AMZN cushion to manual cut 6.1%
-- **Quarter-end rebalancing volatility**: Intraday swings common on last day of quarter; do not react to mid-session noise — stay rules-based
-- **JPM ex-dividend Jul 6**: $1.50/sh mechanical price drop next Monday; normal housekeeping, not a thesis change
-- **Technology + Communication Services EXIT**: No new buys in either sector
-- **5/5-6 slots in use, 84.7% deployed**: No new trades without an exit; deployment gate not triggered
-
-### Decision
-HOLD — 84.7% deployed within 75–85% target; VIX 18.41 below 22 gate; futures +0.2%. Quarter-end day; focus is stop-tighten execution, not new entries. No thesis changes overnight. Patience > activity.
-
-**Active monitoring required at open:**
-- NVO: If crosses $49.53 (+20% from $41.27) → cancel 7% trail GTC (order 37a0ac69), place 5% trail GTC for 513 shares
-- LLY: If crosses $1,240.45 (+15% from $1,078.65) → cancel 10% trail GTC (order dc881393), place 7% trail GTC for 13 shares
-- WMT: If drops below $109.35 (−7% from $117.58) → sell 165 shares manually before auto-stop $105.98
-- AMZN: If drops below $225.65 (−7% from $242.63) → sell 86 shares manually
-- 10:00 AM Consumer Confidence: Weak reading → reassess WMT manual cut cushion
+--- TRIMMED 2026-07-08 ---
 
 ## 2026-07-01 — Pre-market Research
 
@@ -327,3 +260,61 @@ HOLD — Default patience. Deployed 68.13% is below the 75–85% target but abov
 
 ### Decision
 HOLD — Default patience. Deployed 68.29% is below the 75–85% target but above the 60% gate floor, so no forced add. Broad market tone is constructive (AI/chip rebound, Dow record) but the AI-driven momentum sits in EXIT sectors (Tech, Comm Services) and no fresh, clean catalyst exists in an open sector today. Priority: watch LLY for the +15% tighten crossing ($1,240.45); watch PEP post-earnings Thu Jul 9 as a possible Consumer Staples entry. Week trades 0/3 — full 3 slots available.
+
+## 2026-07-08 — Pre-market Research
+
+### Account
+- Equity: $106,026.52 | Cash: $34,057.74 (32.12%) | Deployed: $71,968.78 (67.88% — below 75–85% target, above 60% gate floor)
+- Buying power: $337,743.54 (day-trade) / $140,084.26 (reg T) | Daytrade count: 0
+- Open positions: AMZN (86 sh), JPM (31 sh), LLY (13 sh), NVO (513 sh) — 4/6 slots used
+- Week trades: 0/3 (week of Jul 6) — 3 slots remaining
+- Phase P&L: +$6,026.52 (+6.03%) | Day 31, Wednesday
+- Overnight: equity down from $107,255.44 (last close) to $106,026.52 (−1.15%), driven by AMZN/JPM/NVO pullback
+
+### Positions
+| Ticker | Shares | Entry | Current | Unrealized P&L | Stop | HWM |
+|--------|--------|-------|---------|----------------|------|-----|
+| AMZN | 86 | $242.63 | $242.27 | −$30.96 (−0.15%) | $227.27 (10% trail) | $252.53 |
+| JPM | 31 | $327.63 | $335.30 | +$237.89 (+2.34%) | $309.10 (10% trail) | $343.45 |
+| LLY | 13 | $1,078.65 | $1,224.64 | +$1,897.87 (+13.53%) | $1,114.20 (10% trail) | $1,238.00 |
+| NVO | 513 | $41.27 | $48.38 | +$3,646.35 (+17.22%) ⚠️ | $48.35025 (5% trail) | $50.895 |
+
+**LLY +15% tighten trigger**: $1,240.45; current $1,224.64 — gap $15.81 (1.3% away), watch closely.
+⚠️ **NVO cushion to stop nearly gone**: 5% trail stop $48.35025 vs current $48.38 — only **$0.03 (0.06%)** above the live GTC stop, tightest margin all cycle. No manual action — stop already at tightest (5%) tier; GTC will execute automatically if breached.
+
+### Market Context
+- S&P 500 futures: last confirmed close Jul 6 was a record 7,537.43 (+0.72%); ES futures last seen ~7,592.75 (+0.48%, Jul 7 session) — exact Jul 8 premarket print not yet posted, but today's Iran/oil headline (below) skews sentiment risk-off vs. that stale readout
+- VIX: ~15.9–16.4 (up ~5% intraday Jul 7) — still below the 22 gate threshold, but ticking up off recent calm
+- Today's catalysts:
+  - **Trump declared the Iran interim ceasefire/MOU "over"** — oil jumped ~6%, Brent $78.82/bbl, dollar near a 1-week high — fresh geopolitical risk-off catalyst, headline risk elevated
+  - **Semiconductor selloff continuing**: SOX index −7% today, −12% over two days — Tech remains EXIT, no direct exposure, but signals risk-appetite may be souring broadly
+  - **Fed June meeting minutes** released today — rate-path signal watch
+  - Netflix −19% YTD after dropping out of the WBD bidding war, flagged higher content costs (Communication Services — EXIT, no exposure)
+  - Levi Strauss (LEVI) earnings before open — not held
+  - Later this week: PepsiCo earnings Thu Jul 9, Delta earnings Fri Jul 10 — first real consumer/travel demand read
+- Earnings before open: LEVI (not held); none for portfolio names (JPM Jul 14, AMZN Jul 30)
+
+### Position News
+- **AMZN** ($242.27, −0.15%): Seeking to raise ≥$25B via a USD bond sale to fund AI infrastructure capex; AWS $1B Forward Deployed Engineering unit; new $20M Northrop Grumman credit + $1B IC Accelerated Modernization Framework for classified/intel workloads; Buy consensus (41 analysts); stop $227.27 (cushion 6.2%); HOLD
+- **JPM** ($335.30, +2.34%): BofA raised PT to $408 (from $362); Evercore ISI at $360 (Jul 7); Q2 earnings call Jul 14; stop $309.10 (cushion 7.8%); HOLD
+- **LLY** ($1,224.64, +13.53%): $15.81 (1.3%) from +15% tighten trigger — watch for crossing; Medicare GLP-1 Bridge program live since Jul 1; Simply Wall St flags shares ~19% undervalued post-Medicare expansion; stop $1,114.20 (cushion 9.0%); HOLD
+- **NVO** ($48.38, +17.22%): Pulled back ~2.5% intraday — now only $0.03 above its 5% trailing stop, tightest margin all cycle; DKK 15B buyback ongoing (treasury stake 0.9%); new semaglutide-implant partnership announced; 2026 guidance raised; thesis intact but cushion essentially gone — GTC stop already at tightest tier, no manual action; HOLD
+
+### Trade Ideas
+1. **LLY tighten (maintenance — no slot used)**: $15.81 gap to +15% trigger ($1,240.45). If crossed → cancel 10% trail GTC (order dc881393), place 7% trail GTC for 13 shares (est. stop ≈ $1,154)
+2. **Energy (watch only, contingent on slot)**: Oil +6% on the Iran/Trump headline; Energy sector unused (0 losses), but the move is geopolitical-headline-driven and could reverse fast — no entry today, wait for confirmation beyond a single-day spike
+3. **PEP (Consumer Staples, watch only)**: Earnings Thu Jul 9; sector has 1 loss (not EXIT); still no position ahead of the print — wait and react to the result, not the event itself
+
+### Risk Factors
+- ⚠️ **NVO trading $0.03 above its 5% trailing stop** ($48.35025) — closest margin all cycle; a further pullback triggers the GTC sell automatically; no manual action needed, already tightest tier
+- **LLY $15.81 (1.3%) from +15% tighten trigger** — monitor closely, don't miss the crossing
+- **Iran ceasefire/MOU declared "over"**: oil +6%, Brent $78.82 — fresh geopolitical risk-off catalyst, elevated headline risk today
+- **VIX ticking up ~5% intraday** (still <22 gate) — calm eroding slightly
+- **Semiconductor selloff (SOX −7% today, −12% over 2 days)** — Tech remains EXIT, no direct exposure, but a signal broader risk appetite may be souring
+- Deployed 67.88% below 75–85% target, above 60% gate floor — not forced to add
+- Technology + Communication Services remain EXIT sectors — no new buys
+- Consumer Staples has 1 consecutive loss (WMT) — one more loss triggers EXIT
+- **Environment note**: CLICKUP_API_KEY/CLICKUP_WORKSPACE_ID/CLICKUP_CHANNEL_ID missing from env this run — ClickUp alerting unavailable; no urgent items today regardless (NVO is +17% up, not a loss-cut situation)
+
+### Decision
+HOLD — Default patience. Elevated geopolitical/volatility risk today (Iran headline, oil +6%, semis −7%) argues against chasing a new position even though a slot is open (67.88% deployed, above the 60% gate floor so no forced add). NVO trading a few cents above its GTC trailing stop needs no manual action — the 5% tier will execute automatically if breached. Priority today: watch LLY for the +15% tighten crossing ($1,240.45) and monitor NVO for a possible stop-out. Week trades 0/3 — full 3 slots available.
