@@ -707,3 +707,15 @@ Market holiday (next open 2026-07-06 Mon). All positions unchanged (change_today
 **Other positions:** AMZN −0.60%, JPM +1.62% — within band, no action. NVO +19.05% — already at tightest 5% trail (order e1c950f4, stop $48.35), no change needed. No losers ≤ −7%. No thesis breaks.
 
 **Environment note:** CLICKUP_API_KEY/CLICKUP_WORKSPACE_ID/CLICKUP_CHANNEL_ID missing from env this run — action summary printed to console only, ClickUp notification skipped.
+
+### Jul 08 — EOD Snapshot (Day 31, Wednesday)
+**Portfolio:** $106,185.55 | **Cash:** $34,057.74 (32.1%) | **Day P&L:** −$275.56 (−0.26%) | **Phase P&L:** +$6,185.55 (+6.19%)
+| Ticker | Shares | Entry | Close | Day Chg | Unrealized P&L | Stop |
+|--------|--------|-------|-------|---------|----------------|------|
+| AMZN | 86 | $242.63 | $243.70 | −0.93% | +$92.02 (+0.44%) | $227.27 (10% trail, HWM $252.53) |
+| JPM | 31 | $327.63 | $330.62 | −2.54% | +$92.81 (+0.91%) | $309.10 (10% trail, HWM $343.45) |
+| LLY | 13 | $1,078.65 | $1,216.08 | −1.58% | +$1,786.59 (+12.74%) | $1,148.13 (7% trail, HWM $1,234.55) |
+| NVO | 513 | $41.27 | $48.95 | −1.39% | +$3,938.76 (+18.60%) | $48.35 (5% trail, HWM $50.895) |
+**Notes:** No new trades, week 0/3. LLY trail tightened to 7% at midday after HWM crossed the +15% trigger; new stop confirmed live. Broad pullback across all four positions today, no stop breaches, all names held.
+
+**Environment note:** CLICKUP_API_KEY/CLICKUP_WORKSPACE_ID/CLICKUP_CHANNEL_ID missing from env this run — ClickUp notification skipped, console-only per Step 5.
