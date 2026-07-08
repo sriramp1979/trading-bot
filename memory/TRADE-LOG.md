@@ -679,3 +679,21 @@ Market holiday (next open 2026-07-06 Mon). All positions unchanged (change_today
 
 **Environment note:** CLICKUP_API_KEY/CLICKUP_WORKSPACE_ID/CLICKUP_CHANNEL_ID missing from env this run — ClickUp notification skipped, console-only per Step 5.
 ## 2026-07-07 midday — No positions, skipped
+
+## 2026-07-08 — market-open (no new trades)
+
+**Decision:** HOLD — no new entries. Per today's research log: no clean catalyst-backed setup in an open (non-EXIT) sector today — only maintenance watches (LLY +15% tighten trigger not yet crossed; Energy watch-only on Iran/oil headline spike, awaiting confirmation beyond a single-day move; PEP watch-only ahead of Thu Jul 9 earnings). Deployed 67.89% is below 75–85% target but above the 60% gate floor, so no forced add. Tech and Communication Services remain sector-EXIT. Week trades 0/3 — 3 slots remain.
+
+**Live Snapshot (09:36 ET):**
+**Account:** Equity $106,079.58 | Cash $34,057.74 (32.11%) | Deployed $72,021.84 (67.89%) | Day P&L: −$1,175.86 (−1.10%) | Phase P&L: +$6,079.58 (+6.08%) | Daytrade count: 0
+
+| Ticker | Shares | Entry | Current | Unrealized P&L | Stop |
+|--------|--------|-------|---------|----------------|------|
+| AMZN | 86 | $242.63 | $241.60 | −$88.58 (−0.42%) | $227.27 (10% trail, HWM $252.53) |
+| JPM | 31 | $327.63 | $335.30 | +$237.89 (+2.34%) | $309.10 (10% trail, HWM $343.45) |
+| LLY | 13 | $1,078.65 | $1,217.96 | +$1,811.03 (+12.92%) | $1,114.20 (10% trail, HWM $1,238.00) |
+| NVO | 513 | $41.27 | $48.765 | +$3,843.86 (+18.16%) | $48.35025 (5% trail, HWM $50.895) |
+
+**Notes:** No new trades, week 0/3. LLY +12.92% — +15% tighten trigger ($1,240.45) not reached, gap $22.49 (1.8%); no action. NVO cushion to 5% trail widened slightly to $0.41 (0.85%) above stop — still tightest tier, no manual action. No stop breaches on any position.
+
+**Environment note:** CLICKUP_API_KEY/CLICKUP_WORKSPACE_ID/CLICKUP_CHANNEL_ID missing from env this run — no trades fired so STEP 7 is a no-op regardless.
