@@ -697,3 +697,13 @@ Market holiday (next open 2026-07-06 Mon). All positions unchanged (change_today
 **Notes:** No new trades, week 0/3. LLY +12.92% — +15% tighten trigger ($1,240.45) not reached, gap $22.49 (1.8%); no action. NVO cushion to 5% trail widened slightly to $0.41 (0.85%) above stop — still tightest tier, no manual action. No stop breaches on any position.
 
 **Environment note:** CLICKUP_API_KEY/CLICKUP_WORKSPACE_ID/CLICKUP_CHANNEL_ID missing from env this run — no trades fired so STEP 7 is a no-op regardless.
+
+## 2026-07-08 midday — LLY trail tightened to 7%
+
+**Trigger:** LLY HWM hit $1,249.45 intraday, exceeding the +15% tighten trigger ($1,240.45 = $1,078.65 entry × 1.15), even though price pulled back to $1,227.94 (+13.84% vs cost) by scan time. Old 10% trail stop ($1,124.505) never got tightened for that peak.
+
+**Action:** Canceled 10% trail stop (order dc881393) → placed new 7% trail GTC, 13 sh (order 5ccf23ab), new stop $1,142.24 (HWM re-pegged $1,228.21 at placement). Higher than old stop, >3% from current price — rule-compliant.
+
+**Other positions:** AMZN −0.60%, JPM +1.62% — within band, no action. NVO +19.05% — already at tightest 5% trail (order e1c950f4, stop $48.35), no change needed. No losers ≤ −7%. No thesis breaks.
+
+**Environment note:** CLICKUP_API_KEY/CLICKUP_WORKSPACE_ID/CLICKUP_CHANNEL_ID missing from env this run — action summary printed to console only, ClickUp notification skipped.
