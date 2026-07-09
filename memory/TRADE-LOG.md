@@ -719,3 +719,21 @@ Market holiday (next open 2026-07-06 Mon). All positions unchanged (change_today
 **Notes:** No new trades, week 0/3. LLY trail tightened to 7% at midday after HWM crossed the +15% trigger; new stop confirmed live. Broad pullback across all four positions today, no stop breaches, all names held.
 
 **Environment note:** CLICKUP_API_KEY/CLICKUP_WORKSPACE_ID/CLICKUP_CHANNEL_ID missing from env this run — ClickUp notification skipped, console-only per Step 5.
+
+## 2026-07-09 — market-open (no new trades)
+
+**Decision:** HOLD — no new entries. Per today's research log: no approved catalyst-backed setup, only watch items (PEP earnings today, contingent on print — no pre-positioning; LLY +20% tighten 6.5% away, maintenance only; Energy oil-spike watch-only, awaiting multi-day confirmation). Deployed 67.89% is below 75–85% target but above the 60% gate floor, so no forced add. Escalating Iran conflict (2nd day of US strikes) argues against a new position today. Tech and Communication Services remain sector-EXIT. Week trades 0/3 — 3 slots remain.
+
+**Live Snapshot (09:37 ET):**
+**Account:** Equity $106,152.10 | Cash $34,057.74 (32.08%) | Deployed $72,094.36 (67.92%) | Day P&L: +$7.46 (+0.01%) | Phase P&L: +$6,152.10 (+6.15%)
+
+| Ticker | Shares | Entry | Current | Unrealized P&L | Stop |
+|--------|--------|-------|---------|----------------|------|
+| AMZN | 86 | $242.63 | $240.92 | −$147.06 (−0.71%) | $227.27 (10% trail, HWM $252.53) |
+| JPM | 31 | $327.63 | $332.09 | +$138.23 (+1.36%) | $309.10 (10% trail, HWM $343.45) |
+| LLY | 13 | $1,078.65 | $1,228.40 | +$1,946.75 (+13.88%) | $1,148.13 (7% trail, HWM $1,234.55) |
+| NVO | 513 | $41.27 | $48.95 | +$3,938.81 (+18.60%) | $48.35025 (5% trail, HWM $50.895) |
+
+**Notes:** No PDT-blocked stops pending from prior days. All 4 GTC trailing stops confirmed live and correctly tiered. LLY +13.88%, +15% tighten trigger ($1,240.45) not yet reached — gap $12.05 (0.98% away), close but not crossed at open; midday scan to monitor. No stop breaches. No trades fired.
+
+**Environment note:** CLICKUP_API_KEY/CLICKUP_WORKSPACE_ID/CLICKUP_CHANNEL_ID missing from env and scripts/clickup.sh does not exist in this environment — no trades fired so STEP 7 is a no-op regardless.
