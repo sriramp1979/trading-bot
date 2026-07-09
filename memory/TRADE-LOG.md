@@ -753,3 +753,15 @@ Market holiday (next open 2026-07-06 Mon). All positions unchanged (change_today
 **Action:** None. No new trades (week 0/3).
 
 **Environment note:** CLICKUP_API_KEY/CLICKUP_WORKSPACE_ID/CLICKUP_CHANNEL_ID missing from env this run — moot, no action taken so no notification needed.
+
+### Jul 09 — EOD Snapshot (Day 32, Thursday)
+**Portfolio:** $106,528.14 | **Cash:** $34,057.74 (32.0%) | **Day P&L:** +$342.59 (+0.32%) | **Phase P&L:** +$6,528.14 (+6.53%)
+| Ticker | Shares | Entry | Close | Day Chg | Unrealized P&L | Stop |
+|--------|--------|-------|-------|---------|----------------|------|
+| AMZN | 86 | $242.63 | $246.75 | +1.29% | +$354.32 (+1.70%) | $227.27 (10% trail, HWM $252.53) |
+| JPM | 31 | $327.63 | $335.22 | +1.39% | +$235.41 (+2.32%) | $309.10 (10% trail, HWM $343.45) |
+| LLY | 13 | $1,078.65 | $1,216.95 | +0.09% | +$1,797.90 (+12.82%) | $1,148.13 (7% trail, HWM $1,234.55) |
+| NVO | 513 | $41.27 | $48.81 | −0.17% | +$3,865.14 (+18.26%) | $48.35 (5% trail, HWM $50.895) |
+**Notes:** No new trades, week 0/3. All 4 GTC trailing stops confirmed live and correctly tiered (LLY at 7% tier, NVO at 5% tier). No stop breaches; AMZN/JPM strength drove the day's gain, LLY/NVO roughly flat.
+
+**Environment note:** CLICKUP_API_KEY/CLICKUP_WORKSPACE_ID/CLICKUP_CHANNEL_ID missing from env this run — ClickUp notification skipped, console-only per Step 5.
