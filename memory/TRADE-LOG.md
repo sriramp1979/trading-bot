@@ -765,3 +765,15 @@ Market holiday (next open 2026-07-06 Mon). All positions unchanged (change_today
 **Notes:** No new trades, week 0/3. All 4 GTC trailing stops confirmed live and correctly tiered (LLY at 7% tier, NVO at 5% tier). No stop breaches; AMZN/JPM strength drove the day's gain, LLY/NVO roughly flat.
 
 **Environment note:** CLICKUP_API_KEY/CLICKUP_WORKSPACE_ID/CLICKUP_CHANNEL_ID missing from env this run — ClickUp notification skipped, console-only per Step 5.
+
+### Jul 10 — EOD Snapshot (Day 33, Friday)
+**Portfolio:** $106,368.63 | **Cash:** $34,057.74 (32.0%) | **Day P&L:** −$159.51 (−0.15%) | **Phase P&L:** +$6,368.63 (+6.37%)
+| Ticker | Shares | Entry | Close | Day Chg | Unrealized P&L | Stop |
+|--------|--------|-------|-------|---------|----------------|------|
+| AMZN | 86 | $242.63 | $245.54 | −0.61% | +$250.02 (+1.20%) | $227.27 (10% trail, HWM $252.53) |
+| JPM | 31 | $327.63 | $337.17 | +0.51% | +$295.84 (+2.91%) | $309.10 (10% trail, HWM $343.45) |
+| LLY | 13 | $1,078.65 | $1,188.58 | −2.33% | +$1,429.09 (+10.19%) | $1,148.13 (7% trail, HWM $1,234.55) |
+| NVO | 513 | $41.27 | $49.30 | +0.86% | +$4,118.31 (+19.45%) | $48.35 (5% trail, HWM $50.895) |
+**Notes:** No new trades, week 0/3. LLY pulled back -2.33% on the day but thesis intact, no cut threshold breach. NVO holding near +20% tighten band at 19.45%, already at tightest 5% trail tier from prior tighten — no action needed.
+
+**Environment note:** CLICKUP_API_KEY/CLICKUP_WORKSPACE_ID/CLICKUP_CHANNEL_ID missing from env this run — ClickUp notification skipped, console-only per Step 5.
