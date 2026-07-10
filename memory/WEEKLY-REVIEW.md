@@ -228,3 +228,67 @@ Template for each entry:
 
 ### Overall Grade: C
 *Portfolio −0.34% vs S&P +0.93% = −1.27% relative. 4-day holiday-shortened week, no closed trades, 1 entry. Individual positions constructive (NVO leading, LLY/AMZN stable, GOOGL near entry). Tech concentration hurt on FOMC day. Process B (stops managed, gap corrected, gate triggered correctly); deployment C− (65.9% — improving trend but still below target for 4th straight week). Net C.*
+
+---
+
+## Week ending 2026-07-10
+
+### Stats
+| Metric | Value |
+|--------|-------|
+| Starting portfolio | $106,799.67 (Jul 02 EOD; Jul 03 market closed for holiday) |
+| Ending portfolio | $106,408.10 |
+| Week return | −$391.57 (−0.37%) |
+| S&P 500 week | +1.23% (7,483.24 Jul 02 → 7,575.39 Jul 10) |
+| Bot vs S&P | −1.60% |
+| Phase P&L | +$6,408.10 (+6.41% from $100,000) |
+| Trades | 0 new entries (W:0 / L:0 / open:4) |
+| Win rate | N/A (no closed trades) |
+| Best trade | NVO +19.86% unrealized |
+| Worst trade | AMZN +1.20% unrealized |
+| Profit factor | N/A |
+| Deployment at week end | 68.0% ($72,350 deployed) |
+
+### Closed Trades
+| Ticker | Entry | Exit | P&L | Notes |
+|--------|-------|------|-----|-------|
+| — | — | — | — | No closed trades this week |
+
+### Open Positions at Week End
+| Ticker | Entry | Close | Unrealized | Stop |
+|--------|-------|-------|------------|------|
+| AMZN | $242.63 | $245.53 | +$249.40 (+1.20%) | $227.27 (10% trail, HWM $252.53) |
+| JPM | $327.63 | $336.06 | +$261.46 (+2.57%) | $309.10 (10% trail, HWM $343.45) |
+| LLY | $1,078.65 | $1,187.60 | +$1,416.35 (+10.10%) | $1,148.13 (7% trail, HWM $1,234.55) |
+| NVO | $41.27 | $49.47 | +$4,205.52 (+19.86%) | $48.35 (5% trail, HWM $50.895) |
+
+### What Worked
+- All 4 positions held gains through elevated Iran/Strait-of-Hormuz headline risk all week with zero stop breaches
+- NVO's tightest-tier (5%) trailing stop sat within 1-2% of live price for four straight sessions without getting shaken out, protecting +19.86% unrealized
+- LLY's 7% tighten (triggered midday Jul 8 after HWM crossed +15%) executed correctly and locked in extra downside protection
+- Deployment gate behaved correctly — 68% stayed above the 60% floor all week, so no forced add was required; HOLD decisions were rule-compliant, not a lapse
+- JPM and AMZN both grinding higher on constructive analyst upgrades (JPM: BofA PT $408, Evercore $360) with no thesis breaks
+
+### What Didn't Work
+- 0/3 trade slots used — 5th of the last 6 weeks with ≤1 trade; deployment has been stuck at 65-68% for essentially the entire month of July
+- Bot underperformed S&P 500 by −1.60% this week — cash drag (~$34K idle) remains the single largest recurring driver of relative underperformance across the phase
+- No fresh catalyst-backed setup found in any open sector all 5 sessions (research log logged HOLD every day Jul 06–10) — with Technology and Communication Services both locked in EXIT, the tradeable sector universe was unusually narrow
+- LLY cooled off late week (−1.58% Jul 8, −2.33% Jul 10), pulling further from its +15%/+20% tighten triggers after a strong multi-week run
+- ClickUp alerting has now been unavailable (missing credentials) for all 6 weeks of the phase — persistent unresolved operational gap
+
+### Key Lessons
+- Technology (EXIT since Jun 25) and Communication Services (EXIT since Jun 22) have both now gone 2+ weeks with zero new trades in-sector — locking out 2 of 11 sectors, including the AI/chip names that rallied this week, is a real and growing opportunity cost
+- The 60%-floor deployment gate (added Jun 05) prevents worst-case cash drag but has not closed the gap to the 75-85% target — deployment has sat at 65-68% for most of July without a single forced-add trigger
+- Patience during elevated geopolitical risk (Iran conflict, Strait of Hormuz strikes) was individually reasonable each day, but a full week of HOLD compounds cash drag even when each decision was well-reasoned
+- ClickUp alerting needs to actually get fixed — 6 straight weeks of "environment note: missing" is no longer an anomaly, it's the default state
+
+### Adjustments for Next Week
+- **Sector reset (Step 5, this review):** Technology and Communication Services both reset from EXIT → OK (2+ weeks elapsed, no new trades in either sector) — reopens both for fresh catalyst-backed setups Monday
+- **Deployment gate tightened (see TRADING-STRATEGY.md):** floor raised from 60% to 70% — 5 of the last 6 weeks ended below the 75-85% target without the old 60% floor ever triggering a forced add; a higher floor is meant to close that gap
+- If a clean setup appears in the newly-reopened Tech/Comm Services sectors, or elsewhere, use the weekly slots — 0/3 weeks are now the norm, not the exception, and that itself is a problem
+- Watch LLY: cooling off from highs (−2.33% Jul 10) — confirm thesis intact next week or treat continued downtrend as an early signal
+- NVO earnings Aug 4 — still 3+ weeks out, no action needed, flag for research log closer to the date
+- Fix ClickUp credentials/script before next Friday's review — 6 consecutive weeks unresolved
+
+### Overall Grade: C
+*Portfolio −0.37% vs S&P +1.23% = −1.60% relative, worst weekly relative gap of the phase. Process clean (no stop breaches, correct gate behavior, correct LLY tighten); but zero trades for the 5th time in 6 weeks and deployment stuck at 65-68% all month is now a chronic, unresolved structural issue. Deployment gate raised 60%→70% this week to force the issue. Net C.*

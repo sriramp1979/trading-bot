@@ -21,7 +21,7 @@ Beat the S&P 500 over the challenge window. Stocks only — no options, ever.
 9. Follow sector momentum
 10. Exit a sector after 2 consecutive failed trades
 11. Patience > activity
-12. **Deployment gate (added 2026-06-05):** If deployed < 60% at any market-open, must add ≥1 position that session unless VIX > 22 OR futures gap < -2%. Cash drag at 27-30% deployed kills benchmark alpha even when picks outperform.
+12. **Deployment gate (added 2026-06-05, floor raised 60%→70% on 2026-07-10):** If deployed < 70% at any market-open, must add ≥1 position that session unless VIX > 22 OR futures gap < -2%. Cash drag at 27-30% deployed kills benchmark alpha even when picks outperform. The 60% floor held for 5 weeks without closing the gap to the 75-85% target (deployment sat at 65-68% for most of July); raised to 70% to force the issue.
 
 ## Entry Checklist
 - Specific catalyst?
