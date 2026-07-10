@@ -765,3 +765,21 @@ Market holiday (next open 2026-07-06 Mon). All positions unchanged (change_today
 **Notes:** No new trades, week 0/3. All 4 GTC trailing stops confirmed live and correctly tiered (LLY at 7% tier, NVO at 5% tier). No stop breaches; AMZN/JPM strength drove the day's gain, LLY/NVO roughly flat.
 
 **Environment note:** CLICKUP_API_KEY/CLICKUP_WORKSPACE_ID/CLICKUP_CHANNEL_ID missing from env this run — ClickUp notification skipped, console-only per Step 5.
+
+## 2026-07-10 — market-open (no new trades)
+
+**Decision:** HOLD — no new entries. Per today's research log: no catalyst-backed setup in an open sector (Tech + Communication Services remain EXIT despite the AI/chip rebound); DAL earnings watch-only, not held. Deployed 68.0% is below 75–85% target but above the 60% gate floor, so no forced add per Rule 12. Overnight Strait of Hormuz attacks and sticky 10-yr yield (~4.58%) argue against chasing a new position. Week trades 0/3 — 3 slots remain.
+
+**Live Snapshot (09:37 ET):**
+**Account:** Equity $106,452.81 | Cash $34,057.74 (32.0%) | Deployed $72,395.07 (68.0%) | Day P&L: −$145.73 (−0.14%) | Phase P&L: +$6,452.81 (+6.45%)
+
+| Ticker | Shares | Entry | Current | Unrealized P&L | Stop |
+|--------|--------|-------|---------|----------------|------|
+| AMZN | 86 | $242.63 | $248.81 | +$531.48 (+2.55%) | $227.27 (10% trail, HWM $252.53) |
+| JPM | 31 | $327.63 | $337.88 | +$317.72 (+3.13%) | $309.10 (10% trail, HWM $343.45) |
+| LLY | 13 | $1,078.65 | $1,186.02 | +$1,395.75 (+9.95%) | $1,148.13 (7% trail, HWM $1,234.55) |
+| NVO | 513 | $41.27 | $48.93 | +$3,925.94 (+18.54%) | $48.35025 (5% trail, HWM $50.895) |
+
+**Notes:** No PDT-blocked stops pending from prior days. All 4 GTC trailing stops confirmed live and correctly tiered, no breaches. LLY pulled back from pre-market ($1,219.51→$1,186.02) but well clear of its 7% stop (3.2% cushion). NVO cushion to its 5% stop now 1.2% ($48.93 vs $48.35025) — tightest tier, no manual action, GTC will fire automatically if breached; flag for midday check. No trades fired.
+
+**Environment note:** CLICKUP_API_KEY/CLICKUP_WORKSPACE_ID/CLICKUP_CHANNEL_ID missing from env and scripts/clickup.sh does not exist in this environment — no trades fired so notification is a no-op regardless.
