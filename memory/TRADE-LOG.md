@@ -765,3 +765,19 @@ Market holiday (next open 2026-07-06 Mon). All positions unchanged (change_today
 **Notes:** No new trades, week 0/3. All 4 GTC trailing stops confirmed live and correctly tiered (LLY at 7% tier, NVO at 5% tier). No stop breaches; AMZN/JPM strength drove the day's gain, LLY/NVO roughly flat.
 
 **Environment note:** CLICKUP_API_KEY/CLICKUP_WORKSPACE_ID/CLICKUP_CHANNEL_ID missing from env this run — ClickUp notification skipped, console-only per Step 5.
+
+## 2026-07-10 midday — Reviewed (NVO outside band), no action
+
+**Trigger:** NVO at +19.80% breached the +12% early-exit band, forcing full review (AMZN +1.58%, JPM +2.62%, LLY +10.32% all within band).
+
+**Findings:**
+- No losers — nothing near -7% cut threshold.
+- NVO: +19.80%, already at tightest 5% trail tier (HWM $50.895, stop $48.35025); current $49.445 is below HWM, no downgrade (would lower the stop, prohibited).
+- LLY: +10.32% (pulled back from pre-market +13.06%, intraday -2.22%), 7% trail from prior tighten unchanged — below the +15% re-tighten trigger, correctly tiered. Checked LLY news: no negative catalyst, tracks a broad market pullback (Truist raised PT to $1,370 ahead of Q2 earnings; Canada gave a positive rec for its eczema drug). Thesis intact.
+- AMZN/JPM: under +15%, 10% trail unchanged, correctly tiered.
+- Thesis check: no thesis breaks on any name. All four HOLD.
+- No stop breaches.
+
+**Action:** None. No new trades (week 0/3).
+
+**Environment note:** CLICKUP_API_KEY/CLICKUP_WORKSPACE_ID/CLICKUP_CHANNEL_ID missing from env this run — ClickUp notification skipped, console-only (moot, no action taken).
