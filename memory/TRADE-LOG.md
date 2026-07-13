@@ -795,3 +795,13 @@ Market holiday (next open 2026-07-06 Mon). All positions unchanged (change_today
 **Notes:** No PDT-blocked stops pending from prior days. All 4 GTC trailing stops confirmed live and correctly tiered (order IDs: AMZN b76fb659, JPM 91ec700a, LLY 5ccf23ab, NVO e1c950f4). LLY cushion to its 7% stop narrowed further to 2.12% ($24.86) after continuing pullback from Friday — no manual action (GTC fires automatically), but tightest margin in the portfolio alongside NVO (1.39% cushion, already at tightest 5% tier). No stop breaches. No trades fired.
 
 **Environment note:** CLICKUP_API_KEY/CLICKUP_WORKSPACE_ID/CLICKUP_CHANNEL_ID missing from env this run — no trades fired so STEP 7 is a no-op regardless.
+
+### Jul 13 — EOD Snapshot (Day 34, Monday)
+**Portfolio:** $106,318.87 | **Cash:** $34,057.74 (32.03%) | **Day P&L:** −$49.76 (−0.05%) | **Phase P&L:** +$6,318.87 (+6.32%)
+| Ticker | Shares | Entry | Close | Day Chg | Unrealized P&L | Stop |
+|--------|--------|-------|-------|---------|----------------|------|
+| AMZN | 86 | $242.63 | $247.10 | +0.72% | +$384.42 (+1.84%) | $227.27 (10% trail, HWM $252.53) |
+| JPM | 31 | $327.63 | $334.73 | −0.52% | +$220.22 (+2.17%) | $309.10 (10% trail, HWM $343.45) |
+| LLY | 13 | $1,078.65 | $1,181.02 | −0.64% | +$1,330.81 (+9.49%) | $1,148.13 (7% trail, HWM $1,234.55) |
+| NVO | 513 | $41.27 | $49.28 | −0.40% | +$4,108.05 (+19.40%) | $48.35 (5% trail, HWM $50.90) |
+**Notes:** No new trades, week 0/3. LLY cushion to 7% stop at 2.78%, NVO cushion to 5% stop at 1.89% — both tightest tier, no manual action needed. Deployed 67.97%, below 75-85% target but above 60% gate floor.
