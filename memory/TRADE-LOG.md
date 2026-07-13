@@ -777,3 +777,21 @@ Market holiday (next open 2026-07-06 Mon). All positions unchanged (change_today
 **Notes:** No new trades, week 0/3. LLY pulled back -2.33% on the day but thesis intact, no cut threshold breach. NVO holding near +20% tighten band at 19.45%, already at tightest 5% trail tier from prior tighten — no action needed.
 
 **Environment note:** CLICKUP_API_KEY/CLICKUP_WORKSPACE_ID/CLICKUP_CHANNEL_ID missing from env this run — ClickUp notification skipped, console-only per Step 5.
+
+## 2026-07-13 — market-open (no new trades)
+
+**Decision:** HOLD — no new entries. Per today's research log: weekend Iran-US military escalation (IRGC attacked a commercial ship in the Strait of Hormuz, ceasefire broken) drove S&P futures −0.51% premarket; no catalyst-backed setup in an open sector, energy is watch-only pending multi-day confirmation. Deployed 67.99% is below 75–85% target but above the 60% gate floor, so no forced add. Tech and Communication Services remain sector-EXIT. Week trades 0/3 — 3 slots remain (new week of Jul 13).
+
+**Live Snapshot (09:36 ET):**
+**Account:** Equity $106,157.11 | Cash $34,057.74 (32.09%) | Deployed $72,099.37 (67.91%) | Day P&L: −$265.22 (−0.25%) | Phase P&L: +$6,157.11 (+6.16%)
+
+| Ticker | Shares | Entry | Current | Unrealized P&L | Stop |
+|--------|--------|-------|---------|----------------|------|
+| AMZN | 86 | $242.63 | $247.67 | +$433.44 (+2.08%) | $227.27 (10% trail, HWM $252.53) |
+| JPM | 31 | $327.63 | $335.56 | +$245.95 (+2.42%) | $309.10 (10% trail, HWM $343.45) |
+| LLY | 13 | $1,078.65 | $1,172.99 | +$1,226.42 (+8.75%) | $1,148.13 (7% trail, HWM $1,234.55) |
+| NVO | 513 | $41.27 | $49.03 | +$3,979.80 (+18.80%) | $48.35025 (5% trail, HWM $50.895) |
+
+**Notes:** No PDT-blocked stops pending from prior days. All 4 GTC trailing stops confirmed live and correctly tiered (order IDs: AMZN b76fb659, JPM 91ec700a, LLY 5ccf23ab, NVO e1c950f4). LLY cushion to its 7% stop narrowed further to 2.12% ($24.86) after continuing pullback from Friday — no manual action (GTC fires automatically), but tightest margin in the portfolio alongside NVO (1.39% cushion, already at tightest 5% tier). No stop breaches. No trades fired.
+
+**Environment note:** CLICKUP_API_KEY/CLICKUP_WORKSPACE_ID/CLICKUP_CHANNEL_ID missing from env this run — no trades fired so STEP 7 is a no-op regardless.
