@@ -843,3 +843,14 @@ Market holiday (next open 2026-07-06 Mon). All positions unchanged (change_today
 **Notes:** No PDT-blocked stops pending from prior days. OXY buy order (a3fcbc28) partially filled at 202 sh before completing to the full 285 sh a few seconds later — stop was placed only after confirming the full 285 sh position, no protection gap. Alpaca API returned 4 consecutive 504 gateway timeouts on the OXY stop-placement POST (~30s of retries) while GET endpoints (positions, orders, clock) stayed healthy throughout — verified no duplicate/stray stop orders were created before each retry; 5th attempt succeeded, single clean stop confirmed (order f32a494c). LLY/NVO Healthcare stop-outs were both profitable — sector Consecutive Losses stays at 0. Deployed rose from 30.0% to 44.90% — still below the 60% gate floor, but Strategy rule 12 only mandates adding ≥1 position when triggered, not reaching 60% in a single session; watch for a further catalyst-backed add later this week (2 slots remain, week 1/3) to keep closing the gap toward the 75-85% target.
 
 **Environment note:** CLICKUP_API_KEY/CLICKUP_WORKSPACE_ID/CLICKUP_CHANNEL_ID missing from env this run — console-only, no ClickUp notification sent.
+
+### Jul 14 — EOD Snapshot (Day 35, Tuesday)
+**Portfolio:** $105,458.29 | **Cash:** $58,107.15 (55.11%) | **Day P&L:** −$860.58 (−0.81%) | **Phase P&L:** +$5,458.29 (+5.46%)
+| Ticker | Shares | Entry | Close | Day Chg | Unrealized P&L | Stop |
+|--------|--------|-------|-------|---------|----------------|------|
+| AMZN | 86 | $242.63 | $247.23 | −0.03% | +$395.60 (+1.90%) | $227.27 (10% trail, HWM $252.53) |
+| JPM | 31 | $327.63 | $342.11 | +2.27% | +$448.90 (+4.42%) | $310.23 (10% trail, HWM $344.70) |
+| OXY | 285 | $54.96035 | $54.33 | −0.88% | −$179.65 (−1.15%) | $49.61 (10% trail, HWM $55.12) |
+**Notes:** New OXY position (Energy/Hormuz thesis) down slightly on day one, thesis intact, no stop breach. JPM extended to a fresh high, tightening its trailing stop to $310.23. Deployed ~44.9%, still below the 60% gate floor but rule 12 doesn't require closing the gap in one session — 2 add slots remain this week (1/3 used).
+
+**Environment note:** CLICKUP_API_KEY/CLICKUP_WORKSPACE_ID/CLICKUP_CHANNEL_ID missing from env this run — console-only, no ClickUp notification sent.
