@@ -805,3 +805,41 @@ Market holiday (next open 2026-07-06 Mon). All positions unchanged (change_today
 | LLY | 13 | $1,078.65 | $1,181.02 | −0.64% | +$1,330.81 (+9.49%) | $1,148.13 (7% trail, HWM $1,234.55) |
 | NVO | 513 | $41.27 | $49.28 | −0.40% | +$4,108.05 (+19.40%) | $48.35 (5% trail, HWM $50.90) |
 **Notes:** No new trades, week 0/3. LLY cushion to 7% stop at 2.78%, NVO cushion to 5% stop at 1.89% — both tightest tier, no manual action needed. Deployed 67.97%, below 75-85% target but above 60% gate floor.
+
+## Week of 2026-07-13 | Trades: 1/3
+
+## 2026-07-14 — market-open trades
+
+**Decision:** TRADE — Deployment gate forced action. LLY and NVO both stopped out via GTC trailing stop at open (profitable exits, not losses). Deployed fell to 30.0%, well below the 60% floor; VIX 17.16 and futures -0.2% don't meet the exception bar (VIX>22 or gap<-2%), so per Strategy rule 12 added 1 new position: OXY (Energy, new sector) on Strait of Hormuz blockade enforcement (Day 2 of confirmed escalation, hard 20% cargo toll starting 4pm ET today). Week trades 1/3 (week of Jul 13).
+
+**Closed positions (stopped out at open, ~9:35 AM ET):**
+| Ticker | Shares | Entry | Exit | P&L | Stop Type | Order ID |
+|--------|--------|-------|------|-----|-----------|----------|
+| LLY | 13 | $1,078.65 | $1,148.02 | +$901.81 (+6.43%) | 7% trail (HWM $1,234.55) | 5ccf23ab |
+| NVO | 513 | $41.27 | $48.321345 | +$3,617.34 (+17.09%) | 5% trail (HWM $50.895) | e1c950f4 |
+
+**New trade:**
+| Field | OXY |
+|-------|-----|
+| Shares | 285 |
+| Entry | $54.96035 (avg) |
+| Stop | 10% trailing GTC (HWM $54.895 → stop $49.4055) |
+| Target | $66.00 (+20%) |
+| R:R | 2:1 |
+| Sector | Energy |
+| Thesis | Strait of Hormuz naval blockade enforcement begins 4pm ET today (20% cargo toll on all cargo); Day 2 of confirmed escalation (Jul 13: XOM +4.43%, CVX +3.16%, OXY +3.65%), satisfying prior "wait for multi-day confirmation" caution; Evercore ISI upgraded OXY to Outperform Jul 7; consensus PT $57-65, high $75; XOM/CVX skipped on erratic 5-9% bid/ask spreads (data-quality issue, confirmed on repeat pulls) — OXY quote stayed clean/tight throughout |
+| Buy Order | a3fcbc28 |
+| Stop Order | f32a494c |
+
+**Live Snapshot (09:50 ET):**
+**Account:** Equity $105,461.23 | Cash $58,107.15 (55.10%) | Deployed $47,353.50 (44.90%) | Daytrade count: n/a — no same-day round trips
+
+| Ticker | Shares | Entry | Current | Unrealized P&L | Stop |
+|--------|--------|-------|---------|----------------|------|
+| AMZN | 86 | $242.63 | $246.08 | +$296.70 (+1.42%) | $227.27 (10% trail, HWM $252.53) |
+| JPM | 31 | $327.63 | $339.77 | +$376.31 (+3.71%) | $309.10 (10% trail, HWM $343.45) |
+| OXY | 285 | $54.96035 | $54.94 | -$5.80 (-0.04%) | $49.4055 (10% trail, HWM $54.895) |
+
+**Notes:** No PDT-blocked stops pending from prior days. OXY buy order (a3fcbc28) partially filled at 202 sh before completing to the full 285 sh a few seconds later — stop was placed only after confirming the full 285 sh position, no protection gap. Alpaca API returned 4 consecutive 504 gateway timeouts on the OXY stop-placement POST (~30s of retries) while GET endpoints (positions, orders, clock) stayed healthy throughout — verified no duplicate/stray stop orders were created before each retry; 5th attempt succeeded, single clean stop confirmed (order f32a494c). LLY/NVO Healthcare stop-outs were both profitable — sector Consecutive Losses stays at 0. Deployed rose from 30.0% to 44.90% — still below the 60% gate floor, but Strategy rule 12 only mandates adding ≥1 position when triggered, not reaching 60% in a single session; watch for a further catalyst-backed add later this week (2 slots remain, week 1/3) to keep closing the gap toward the 75-85% target.
+
+**Environment note:** CLICKUP_API_KEY/CLICKUP_WORKSPACE_ID/CLICKUP_CHANNEL_ID missing from env this run — console-only, no ClickUp notification sent.

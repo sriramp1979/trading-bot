@@ -4,11 +4,12 @@
 | Sector | Tickers Held | Consecutive Losses | Status |
 |--------|-------------|-------------------|--------|
 | Technology | — | 2 | EXIT |
-| Healthcare | LLY, NVO | 0 | OK |
+| Healthcare | — | 0 | OK |
 | Communication Services | — | 2 | EXIT |
 | Consumer Discretionary | AMZN | 0 | OK |
 | Financials | JPM | 0 | OK |
 | Consumer Staples | — | 1 | OK |
+| Energy | OXY | 0 | OK |
 
 ## Sector Exit History
 | Sector | Exit Date | Reason |

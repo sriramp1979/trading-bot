@@ -27,63 +27,7 @@ Format each entry:
 ### Decision
 TRADE or HOLD (default HOLD if no edge)
 
---- TRIMMED 2026-07-13 ---
-
-## 2026-07-07 — Pre-market Research
-
-### Account
-- Equity: $107,427.56 | Cash: $34,057.74 (31.71%) | Deployed: $73,369.82 (68.29% — below 75–85% target, above 60% gate floor)
-- Buying power: $341,666.45 (day-trade) / $141,485.30 (reg T) | Daytrade count: 0
-- Open positions: AMZN (86 sh), JPM (31 sh), LLY (13 sh), NVO (513 sh) — 4/6 slots used
-- Week trades: 0/3 (week of Jul 6) — 3 slots remaining
-- Phase P&L: +$7,427.56 (+7.43%) | Day 30, Tuesday
-
-### Positions
-| Ticker | Shares | Entry | Current | Unrealized P&L | Stop | HWM |
-|--------|--------|-------|---------|----------------|------|-----|
-| AMZN | 86 | $242.63 | $247.98 | +$459.79 (+2.20%) | $227.27 (10% trail) | $252.53 |
-| JPM | 31 | $327.63 | $340.36 | +$394.75 (+3.89%) | $309.10 (10% trail) | $343.45 |
-| LLY | 13 | $1,078.65 | $1,211.57 | +$1,727.90 (+12.32%) | $1,114.20 (10% trail) | $1,238.00 |
-| NVO | 513 | $41.27 | $50.18 | +$4,569.75 (+21.58%) | $48.35 (5% trail) | $50.895 |
-
-**LLY +15% tighten trigger**: $1,240.45; current $1,211.57 — gap $28.88 (2.4% away), watch closely.
-**NVO**: past +20% ($49.53 threshold); 5% trail already active and correctly tightest tier — no further action.
-
-### Market Context
-- S&P 500 futures: −0.25% pre-market (modest pullback after Monday's +0.72% close, S&P 500 at 7,537.43 — a new high)
-- VIX: ~15.88 (+0.44%) — calm, well below 22 gate threshold
-- Today's catalysts:
-  - AI infrastructure trade reviving: Nasdaq +1.1% Monday on chip-stock rebound; Foxconn/Hon Hai reported stronger-than-expected quarterly sales
-  - Samsung Q2 earnings due today — memory chip profit expected up ~18x YoY
-  - SpaceX (IPO'd Jun 12) joins Nasdaq-100 index effective today — technical index-flow event
-  - Dell +7.7% Monday after White House promotion of its computers
-  - OPEC+ raised crude production quotas — oil under further pressure
-  - Later this week: PepsiCo earnings Thu Jul 9, Delta earnings Fri Jul 10 — first real read on consumer/travel demand
-- Earnings before open: none for portfolio names (JPM reports Jul 14, AMZN Jul 30)
-- JPM: price target raised to $360 from $340 at Evercore ISI post ex-div
-
-### Position News
-- **AMZN** ($247.98, +2.20%): Buy consensus (41 analysts); AI seen as AWS/e-commerce margin catalyst; Prime Day lift still working through retail sales data; earnings Jul 30; stop $227.27 (cushion 8.4%); HOLD
-- **JPM** ($340.36, +3.89%): Evercore ISI raised PT to $360 (from $340) right after ex-div; Q2 earnings Jul 14, consensus $5.49 EPS / $48.7B revenue; stop $309.10 (cushion 9.2%); HOLD
-- **LLY** ($1,211.57, +12.32%): Up ~8.3% over the past week, ~1% off 52-week high ($1,238); Medicare GLP-1 Bridge program live since Jul 1; FDA picked Lilly for "PreCheck" manufacturing pilot (Lebanon, IN API plant); +15% tighten trigger 2.4% away — watch for crossing; HOLD
-- **NVO** ($50.18, +21.58%): Pulled back ~2.6% intraday Monday on profit-taking (no company-specific catalyst) after Medicare GLP-1 coverage lift; DKK 15B buyback ongoing (treasury stake now 0.9%); Jefferies reiterated Hold Jun 30; DCF suggests ~48% undervalued; 5% trail (tightest tier) already active; HOLD
-
-### Trade Ideas
-1. **Watch only — AI/chip rebound (SPX/Nasdaq)**: Foxconn beat, Dell rally, SpaceX Nasdaq-100 add — all Technology-adjacent; sector status EXIT (2 consecutive losses), no entry regardless of momentum.
-2. **Watch — PEP (PepsiCo), Consumer Staples**: Earnings Thu Jul 9 could be a catalyst for a fresh entry; sector OK (1 loss, not EXIT); no position ahead of earnings — wait for print and react to result, not the event itself.
-3. **Hold slot**: Deployed 68.29% — below 75–85% target but above the 60% gate floor, so no forced add. No clean, catalyst-backed setup in an open sector today; wait for a better entry this week (0/3 trades used).
-
-### Risk Factors
-- LLY within 2.4% of the +15% tighten trigger ($1,240.45) — monitor closely, don't miss the crossing
-- NVO gave back ~2.6% intraday Monday on profit-taking with no fresh negative catalyst — thesis intact, 5% trail already protecting gains
-- Deployed 68.29% below target band — not gate-triggered, but monitor for a clean setup to use one of the 3 weekly slots
-- OPEC+ raising crude quotas — oil weakening further; no direct portfolio exposure
-- Technology + Communication Services remain EXIT — no new buys despite AI/chip rebound momentum
-- Consumer Staples has 1 consecutive loss (WMT) — one more loss triggers EXIT; be selective if considering PEP or similar
-- **Environment note**: CLICKUP_API_KEY/CLICKUP_WORKSPACE_ID/CLICKUP_CHANNEL_ID missing from env again this run, and scripts/clickup.sh does not exist in the repo at all — ClickUp alerting has been unavailable for multiple consecutive sessions; no urgent items today regardless, but this should be fixed if alerts are ever needed
-
-### Decision
-HOLD — Default patience. Deployed 68.29% is below the 75–85% target but above the 60% gate floor, so no forced add. Broad market tone is constructive (AI/chip rebound, Dow record) but the AI-driven momentum sits in EXIT sectors (Tech, Comm Services) and no fresh, clean catalyst exists in an open sector today. Priority: watch LLY for the +15% tighten crossing ($1,240.45); watch PEP post-earnings Thu Jul 9 as a possible Consumer Staples entry. Week trades 0/3 — full 3 slots available.
+--- TRIMMED 2026-07-14 ---
 
 ## 2026-07-08 — Pre-market Research
 
@@ -303,3 +247,34 @@ HOLD — Default patience. Deployed 68.13% is below the 75–85% target but abov
 
 ### Decision
 HOLD — Default patience. Deployed 67.99% is below the 75–85% target but above the 60% gate floor, so no forced add. This weekend's actual Iran-US military clash in the Strait of Hormuz (ceasefire broken, not just rhetoric) is a materially bigger risk event than prior headline tension, landing right before a heavy week of CPI, bank earnings (including our own JPM tomorrow), and PPI — no new positions until the dust settles. Priority today: watch JPM's Tue print and LLY's narrowing 3.4% stop cushion after its pullback. Week trades 0/3 — full 3 slots available (new week of Jul 13).
+
+## 2026-07-14 — Pre-market Research
+
+### Account
+- Equity: $105,398.18 | Cash: $73,770.85 (70.0%) | Deployed: $31,627.33 (30.0% — well below 60% gate floor, DEPLOYMENT GATE TRIGGERED)
+- Buying power: $383,639.92 (day-trade) / $179,169.03 (reg T)
+- Daytrade count: not exposed by account endpoint; no same-day round trips today, PDT not a concern
+- Open positions: AMZN (86 sh), JPM (31 sh) — 2/6 slots used
+- Week trades: 0/3 (week of Jul 13) — 3 slots remaining
+- **LLY and NVO both stopped out via GTC trailing stop at market open today** (~9:35 AM ET): LLY 13 sh filled $1,148.02 (+6.43% vs $1,078.65 entry; 7% trail off HWM $1,234.55, order 5ccf23ab); NVO 513 sh filled $48.321345 (+17.09% vs $41.27 entry; 5% trail off HWM $50.895, order e1c950f4). Both profitable exits, not losses — Healthcare sector Consecutive Losses stays at 0.
+
+### Market Context
+- S&P 500 futures: -0.2% premarket, Nasdaq mixed/slightly higher — traders cautious into a heavy bank-earnings/CPI morning. Not a >-2% gap.
+- VIX: 17.16 (+14.17% overnight) — still inside the 12-20 "MID" band, below the 22 gate-exception threshold.
+- Today's catalysts: Cooler CPI (headline +3.5% y/y vs +3.8% expected) → bond yields down; US enforces a Strait of Hormuz naval blockade starting 4pm ET today (20% toll on all cargo) after the Jun 17 ceasefire fully collapsed and US forces bombed 80+ targets in Iran over the weekend; Brent/WTI both jumped ~8% Jul 13 to ~$82/$77, ~230 loaded tankers stuck in the Gulf; IBM -20% premarket on an earnings miss (Tech — EXIT sector, no impact); AMD PT raised by Wolfe.
+- Earnings before open: JPM (held) reported record Q2 — net income $21.2B ($7.70 GAAP EPS incl. one-timers; $6.14 core EPS beat $5.74 est by $0.40), revenue $57.3B vs $49.9B est, every business line record. Big-bank earnings sweep continues rest of week (BAC, GS, WFC, C).
+
+### Trade Ideas
+1. **OXY (Occidental Petroleum) — Energy, new sector entry**: Catalyst = Strait of Hormuz blockade enforcement begins today 4pm ET (20% cargo toll), 2nd consecutive day of escalation (Jul 13: XOM +4.43%, CVX +3.16%, OXY +3.65%), satisfying prior "wait for multi-day confirmation" caution; Evercore ISI upgraded OXY to Outperform Jul 7; consensus PT $57-65 (10-18% upside), high $75. Entry ~$55.05, stop 10% trail GTC (~$49.55 initial ref), target $66 (+20%), R:R 2:1. XOM/CVX quotes showed erratic 5-9% bid/ask spreads (data-quality issue, confirmed on two separate pulls) — both skipped; OXY quote stayed clean/tight ($55.04/$55.07) on both pulls.
+2. **JPM add (maintenance, no slot used)**: Record Q2 beat, but position already held and up post-earnings — no new entry, let the existing 10% trail manage the move.
+3. **Healthcare re-entry (LLY/NVO) — deferred, no slot used**: Both stopped out at open on profitable trailing stops. LLY thesis still strong (UBS raised PT to $1,425, Guggenheim to $1,273, shares near ATH) but no same-day re-chase right after a stop fill — wait for a fresh setup. NVO shows an emerging thesis crack (CagriSema device study halted, some analysts flagging 10% downside) — skip for now, not a clean re-entry.
+
+### Risk Factors
+- **Deployment gate breach**: deployed 30.0%, well below the 60% floor after two large stop-outs — forces ≥1 new position today per Strategy rule 12 (neither VIX>22 nor futures gap<-2% exception applies).
+- **US-Iran escalation live and worsening**: Hormuz blockade enforcement begins 4pm ET today; ~230 loaded tankers stuck in the Gulf; genuine tail-risk event, though OXY/energy is a direct beneficiary here, not a risk to the existing book.
+- **XOM/CVX data quality**: erratic wide quotes on both, confirmed on repeat pulls — avoided both, used OXY (clean, stable book) instead.
+- Technology and Communication Services remain sector-EXIT — no new buys there (moot today — IBM miss/SK Hynix weakness confirm avoiding tech regardless).
+- **Environment note**: CLICKUP_API_KEY/CLICKUP_WORKSPACE_ID/CLICKUP_CHANNEL_ID missing from env this run — ClickUp alerting unavailable; flagging the deployment-gate trade and Hormuz escalation directly here since ClickUp can't.
+
+### Decision
+TRADE — Deployment gate forces action (30.0% deployed vs 60% floor, no VIX/futures exception). Buy OXY (Energy, new sector) on Hormuz blockade escalation, now Day 2 confirmed with a hard enforcement mechanism kicking in this afternoon. Skip Healthcare re-entry despite two profitable stop-outs today — no same-day re-chase, and NVO shows an emerging thesis crack. Week trades 0/3 before this trade, becomes 1/3 after.
