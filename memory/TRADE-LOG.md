@@ -854,3 +854,4 @@ Market holiday (next open 2026-07-06 Mon). All positions unchanged (change_today
 **Notes:** New OXY position (Energy/Hormuz thesis) down slightly on day one, thesis intact, no stop breach. JPM extended to a fresh high, tightening its trailing stop to $310.23. Deployed ~44.9%, still below the 60% gate floor but rule 12 doesn't require closing the gap in one session — 2 add slots remain this week (1/3 used).
 
 **Environment note:** CLICKUP_API_KEY/CLICKUP_WORKSPACE_ID/CLICKUP_CHANNEL_ID missing from env this run — console-only, no ClickUp notification sent.
+## 2026-07-15 midday — All within band, no action
