@@ -27,65 +27,51 @@ Format each entry:
 ### Decision
 TRADE or HOLD (default HOLD if no edge)
 
---- TRIMMED 2026-07-14 ---
-
-## 2026-07-08 — Pre-market Research
+## 2026-07-15 — Pre-market Research
 
 ### Account
-- Equity: $106,026.52 | Cash: $34,057.74 (32.12%) | Deployed: $71,968.78 (67.88% — below 75–85% target, above 60% gate floor)
-- Buying power: $337,743.54 (day-trade) / $140,084.26 (reg T) | Daytrade count: 0
-- Open positions: AMZN (86 sh), JPM (31 sh), LLY (13 sh), NVO (513 sh) — 4/6 slots used
-- Week trades: 0/3 (week of Jul 6) — 3 slots remaining
-- Phase P&L: +$6,026.52 (+6.03%) | Day 31, Wednesday
-- Overnight: equity down from $107,255.44 (last close) to $106,026.52 (−1.15%), driven by AMZN/JPM/NVO pullback
+- Equity: $105,717.58
+- Cash: $58,107.05 (54.96%) | Deployed: $47,610.53 (45.04% — below 60% gate floor)
+- Buying power: $365,737.70 (day-trade) / $163,824.63 (reg T)
+- Daytrade count: 0
+- Open positions: AMZN (86 sh), JPM (31 sh), OXY (285 sh) — 3/6 slots used
+- Week trades: 1/3 (week of Jul 13) — 2 slots remain
 
 ### Positions
-| Ticker | Shares | Entry | Current | Unrealized P&L | Stop | HWM |
-|--------|--------|-------|---------|----------------|------|-----|
-| AMZN | 86 | $242.63 | $242.27 | −$30.96 (−0.15%) | $227.27 (10% trail) | $252.53 |
-| JPM | 31 | $327.63 | $335.30 | +$237.89 (+2.34%) | $309.10 (10% trail) | $343.45 |
-| LLY | 13 | $1,078.65 | $1,224.64 | +$1,897.87 (+13.53%) | $1,114.20 (10% trail) | $1,238.00 |
-| NVO | 513 | $41.27 | $48.38 | +$3,646.35 (+17.22%) ⚠️ | $48.35025 (5% trail) | $50.895 |
-
-**LLY +15% tighten trigger**: $1,240.45; current $1,224.64 — gap $15.81 (1.3% away), watch closely.
-⚠️ **NVO cushion to stop nearly gone**: 5% trail stop $48.35025 vs current $48.38 — only **$0.03 (0.06%)** above the live GTC stop, tightest margin all cycle. No manual action — stop already at tightest (5%) tier; GTC will execute automatically if breached.
+| Ticker | Shares | Entry | Current | Unrealized P&L | Stop |
+|--------|--------|-------|---------|----------------|------|
+| AMZN | 86 | $242.63 | $249.33 | +$576.35 (+2.76%) | $227.27 (10% trail) |
+| JPM | 31 | $327.63 | $344.00 | +$507.59 (+5.00%) | $310.23 (10% trail) |
+| OXY | 285 | $54.96035 | $54.40 | −$159.70 (−1.02%) | $49.608 (10% trail) |
 
 ### Market Context
-- S&P 500 futures: last confirmed close Jul 6 was a record 7,537.43 (+0.72%); ES futures last seen ~7,592.75 (+0.48%, Jul 7 session) — exact Jul 8 premarket print not yet posted, but today's Iran/oil headline (below) skews sentiment risk-off vs. that stale readout
-- VIX: ~15.9–16.4 (up ~5% intraday Jul 7) — still below the 22 gate threshold, but ticking up off recent calm
-- Today's catalysts:
-  - **Trump declared the Iran interim ceasefire/MOU "over"** — oil jumped ~6%, Brent $78.82/bbl, dollar near a 1-week high — fresh geopolitical risk-off catalyst, headline risk elevated
-  - **Semiconductor selloff continuing**: SOX index −7% today, −12% over two days — Tech remains EXIT, no direct exposure, but signals risk-appetite may be souring broadly
-  - **Fed June meeting minutes** released today — rate-path signal watch
-  - Netflix −19% YTD after dropping out of the WBD bidding war, flagged higher content costs (Communication Services — EXIT, no exposure)
-  - Levi Strauss (LEVI) earnings before open — not held
-  - Later this week: PepsiCo earnings Thu Jul 9, Delta earnings Fri Jul 10 — first real consumer/travel demand read
-- Earnings before open: LEVI (not held); none for portfolio names (JPM Jul 14, AMZN Jul 30)
+- S&P 500 futures: +0.11% — cooler June CPI (headline −0.4% m/m, YoY 3.5% vs 3.8% est.) cut July Fed-hike odds to 17% (from 42%)
+- VIX: ~16.5 (down ~3.9% Jul 14 close), range 16.15–17.56 — well below the 22 gate threshold
+- Today's catalysts: PPI, EIA crude inventories, Empire State Manufacturing, MBA mortgage apps; cooling inflation supporting risk appetite; Brent crude still >$84/bbl on continued U.S.-Iran strikes — bullish backdrop for OXY thesis, risk-off wildcard for broader tape
+- Earnings before open: JNJ, MS, BK, PNC, ASML, Progressive, Cintas, JB Hunt, United Airlines, Elevance Health, Kinder Morgan — none held; JPM (held) already reported Q2 beat yesterday ($6.14 EPS vs $5.85 est., $58.02B rev vs $50.19B est.) but dipped slightly premarket (sell-the-news)
 
 ### Position News
-- **AMZN** ($242.27, −0.15%): Seeking to raise ≥$25B via a USD bond sale to fund AI infrastructure capex; AWS $1B Forward Deployed Engineering unit; new $20M Northrop Grumman credit + $1B IC Accelerated Modernization Framework for classified/intel workloads; Buy consensus (41 analysts); stop $227.27 (cushion 6.2%); HOLD
-- **JPM** ($335.30, +2.34%): BofA raised PT to $408 (from $362); Evercore ISI at $360 (Jul 7); Q2 earnings call Jul 14; stop $309.10 (cushion 7.8%); HOLD
-- **LLY** ($1,224.64, +13.53%): $15.81 (1.3%) from +15% tighten trigger — watch for crossing; Medicare GLP-1 Bridge program live since Jul 1; Simply Wall St flags shares ~19% undervalued post-Medicare expansion; stop $1,114.20 (cushion 9.0%); HOLD
-- **NVO** ($48.38, +17.22%): Pulled back ~2.5% intraday — now only $0.03 above its 5% trailing stop, tightest margin all cycle; DKK 15B buyback ongoing (treasury stake 0.9%); new semaglutide-implant partnership announced; 2026 guidance raised; thesis intact but cushion essentially gone — GTC stop already at tightest tier, no manual action; HOLD
+- **AMZN** ($249.33, +2.76%): No new catalyst overnight; AI capex bond sale / AWS deals thesis intact; stop cushion 8.9%; HOLD
+- **JPM** ($344.00, +5.00%): Q2 beat on both lines yesterday, stock dipped slightly premarket (sell-the-news, not thesis-breaking); stop cushion 9.9%; HOLD
+- **OXY** ($54.40, −1.02%): Stephens cut PT to $69 (from $73), mixed vs. other analysts still constructive; oil elevated on continued Iran strikes keeps thesis intact; stop cushion 8.8%; HOLD
 
 ### Trade Ideas
-1. **LLY tighten (maintenance — no slot used)**: $15.81 gap to +15% trigger ($1,240.45). If crossed → cancel 10% trail GTC (order dc881393), place 7% trail GTC for 13 shares (est. stop ≈ $1,154)
-2. **Energy (watch only, contingent on slot)**: Oil +6% on the Iran/Trump headline; Energy sector unused (0 losses), but the move is geopolitical-headline-driven and could reverse fast — no entry today, wait for confirmation beyond a single-day spike
-3. **PEP (Consumer Staples, watch only)**: Earnings Thu Jul 9; sector has 1 loss (not EXIT); still no position ahead of the print — wait and react to the result, not the event itself
+1. **Financials earnings reaction (watch-only)** — MS, BK, PNC report before open; Financials sector 0 losses, JPM already held and beat cleanly yesterday. No pre-committed entry; would only add on a clean beat+raise with confirmed post-print strength (avoid chasing a gap). Stop 7-10% below entry, target min 2:1.
+2. **JNJ (Healthcare, watch-only)** — reports before open, sector has 0 losses and no current exposure. No pre-positioning ahead of the print; enter only on a clear beat+raise with volume confirmation.
+3. **Energy add-on (contingent)** — Iran strikes continuing, Brent >$84 keeps sector momentum intact, but OXY is the only position and Stephens just trimmed its PT; no second energy name identified with a clean catalyst today — hold at one position, reassess after PPI/inventories data.
 
 ### Risk Factors
-- ⚠️ **NVO trading $0.03 above its 5% trailing stop** ($48.35025) — closest margin all cycle; a further pullback triggers the GTC sell automatically; no manual action needed, already tightest tier
-- **LLY $15.81 (1.3%) from +15% tighten trigger** — monitor closely, don't miss the crossing
-- **Iran ceasefire/MOU declared "over"**: oil +6%, Brent $78.82 — fresh geopolitical risk-off catalyst, elevated headline risk today
-- **VIX ticking up ~5% intraday** (still <22 gate) — calm eroding slightly
-- **Semiconductor selloff (SOX −7% today, −12% over 2 days)** — Tech remains EXIT, no direct exposure, but a signal broader risk appetite may be souring
-- Deployed 67.88% below 75–85% target, above 60% gate floor — not forced to add
-- Technology + Communication Services remain EXIT sectors — no new buys
-- Consumer Staples has 1 consecutive loss (WMT) — one more loss triggers EXIT
-- **Environment note**: CLICKUP_API_KEY/CLICKUP_WORKSPACE_ID/CLICKUP_CHANNEL_ID missing from env this run — ClickUp alerting unavailable; no urgent items today regardless (NVO is +17% up, not a loss-cut situation)
+- Deployment 45.04% is below the 60% gate floor; VIX (~16.5) and futures (+0.11%) do not meet the rule-12 exception (VIX>22 or gap<-2%) — expect the market-open workflow to require adding ≥1 position today
+- Brent >$84/bbl on continued U.S.-Iran strikes — supports OXY but is headline-driven and could reverse fast either direction
+- Heavy earnings slate (JNJ, MS, BK, PNC, ASML, UAL, etc.) — premarket/open volatility risk across sectors, none held directly except JPM (already reported)
+- Tech and Communication Services remain sector-EXIT — no exposure, no action needed
 
 ### Decision
-HOLD — Default patience. Elevated geopolitical/volatility risk today (Iran headline, oil +6%, semis −7%) argues against chasing a new position even though a slot is open (67.88% deployed, above the 60% gate floor so no forced add). NVO trading a few cents above its GTC trailing stop needs no manual action — the 5% tier will execute automatically if breached. Priority today: watch LLY for the +15% tighten crossing ($1,240.45) and monitor NVO for a possible stop-out. Week trades 0/3 — full 3 slots available.
+HOLD (pre-market) — no confirmed post-earnings reaction yet to act on; defer entry decision to market-open workflow, which will also need to resolve the deployment-gate trigger (45.04% deployed, no VIX/gap exception).
+
+**Environment note:** CLICKUP_API_KEY/CLICKUP_WORKSPACE_ID/CLICKUP_CHANNEL_ID missing from env this run — console-only, no ClickUp notification sent.
+
+--- TRIMMED 2026-07-15 ---
 
 ## 2026-07-09 — Pre-market Research
 
