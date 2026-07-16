@@ -866,3 +866,14 @@ Market holiday (next open 2026-07-06 Mon). All positions unchanged (change_today
 **Notes:** No trades today, midday check found all positions within band. AMZN and JPM extended to fresh highs today, both still below the +15% tighten threshold so 10% trail holds. OXY drifted lower on no new Hormuz catalyst, no stop breach, thesis intact.
 
 **Environment note:** CLICKUP_API_KEY/CLICKUP_WORKSPACE_ID/CLICKUP_CHANNEL_ID missing from env this run — console-only, no ClickUp notification sent.
+
+### Jul 16 — EOD Snapshot (Day 37, Thursday)
+**Portfolio:** $105,521.70 | **Cash:** $58,107.05 (55.07%) | **Day P&L:** −$541.63 (−0.51%) | **Phase P&L:** +$5,521.70 (+5.52%)
+| Ticker | Shares | Entry | Close | Day Chg | Unrealized P&L | Stop |
+|--------|--------|-------|-------|---------|----------------|------|
+| AMZN | 86 | $242.63 | $249.90 | −1.99% | +$625.22 (+3.00%) | $232.27 (10% trail, HWM $258.08) |
+| JPM | 31 | $327.63 | $343.00 | −1.13% | +$476.59 (+4.69%) | $314.62 (10% trail, HWM $349.58) |
+| OXY | 285 | $54.96035 | $53.65 | −0.22% | −$373.45 (−2.38%) | $49.61 (10% trail, HWM $55.12) |
+**Notes:** No trades today. AMZN and JPM both pulled back intraday but stayed well clear of stops; AMZN's trail keeps climbing (HWM $258.08) off its recent highs. OXY drifted lower again with no fresh Hormuz catalyst — thesis intact, no stop breach.
+
+**Environment note:** CLICKUP_API_KEY/CLICKUP_WORKSPACE_ID/CLICKUP_CHANNEL_ID missing from env this run — console-only, no ClickUp notification sent.
