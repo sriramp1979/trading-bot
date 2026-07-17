@@ -806,7 +806,7 @@ Market holiday (next open 2026-07-06 Mon). All positions unchanged (change_today
 | NVO | 513 | $41.27 | $49.28 | −0.40% | +$4,108.05 (+19.40%) | $48.35 (5% trail, HWM $50.90) |
 **Notes:** No new trades, week 0/3. LLY cushion to 7% stop at 2.78%, NVO cushion to 5% stop at 1.89% — both tightest tier, no manual action needed. Deployed 67.97%, below 75-85% target but above 60% gate floor.
 
-## Week of 2026-07-13 | Trades: 1/3
+## Week of 2026-07-13 | Trades: 2/3 (corrected Jul 17 — UNH trade found unlogged, see reconciliation note below)
 
 ## 2026-07-14 — market-open trades
 
@@ -878,3 +878,30 @@ Market holiday (next open 2026-07-06 Mon). All positions unchanged (change_today
 
 **Environment note:** CLICKUP_API_KEY/CLICKUP_WORKSPACE_ID/CLICKUP_CHANNEL_ID missing from env this run — console-only, no ClickUp notification sent.
 ## 2026-07-17 midday — All within band, no action
+
+### Jul 17 — Market-Open Reconciliation (no committed log found)
+
+**Alert:** No "market-open trades 2026-07-17" commit exists in git history between pre-market (108b42e) and midday (7acf5c7), but Alpaca order history shows a live UNH trade executed at the open that was never logged anywhere in this file. Reconstructed below from Alpaca's closed-order history since the account is the only surviving record.
+
+| Time (ET) | Symbol | Side | Qty | Fill Price | Order ID |
+|-----------|--------|------|-----|------------|----------|
+| 9:39:19 | UNH | BUY | 48 | $433.78 | e0acd1e5 |
+| 9:39:28 | UNH | BUY | 48 | $434.10 | 319017c2 |
+| 9:39:42 | UNH | SELL | 48 | $433.91 | f095f573 |
+| 9:39:59 | UNH | Stop placed | 48 | 10% trail, HWM $437.47, stop $393.72 | d2619c86 |
+
+**Net effect:** Two 48-share buy orders filled 9 seconds apart (duplicate submission, same signature as the Jul 14 OXY API-flakiness incident), then a 48-share sell 14s later brought the position back to the intended 48 shares. Net position: UNH 48 sh @ avg entry $433.94, with a small realized loss (~$8.60) on the corrective round-trip plus a same-day round trip that should count for PDT tracking. This trade also uses 1 of this week's 3 slots — Week of Jul 13 corrected below from 1/3 to 2/3.
+
+**Concern:** Today's (Jul 17) pre-market research did not list UNH as a trade idea for today — the only UNH thesis on record is from Jul 16 pre-market ("enter only on a clear beat+raise with confirmed post-print strength" for that day's earnings print), which is now a day stale, and no market-open session log exists to show what confirmed today's entry. Flagging for review rather than unwinding — the position is live and has a stop in place.
+
+### Jul 17 — EOD Snapshot (Day 38, Friday)
+**Portfolio:** $105,132.91 | **Cash:** $37,276.61 (35.45%) | **Day P&L:** −$388.79 (−0.37%) | **Phase P&L:** +$5,132.91 (+5.13%)
+| Ticker | Shares | Entry | Close | Day Chg | Unrealized P&L | Stop |
+|--------|--------|-------|-------|---------|----------------|------|
+| AMZN | 86 | $242.63 | $247.01 | −1.15% | +$376.68 (+1.81%) | $232.27 (10% trail, HWM $258.08) |
+| JPM | 31 | $327.63 | $341.22 | −0.56% | +$421.41 (+4.15%) | $314.62 (10% trail, HWM $349.58) |
+| OXY | 285 | $54.96035 | $54.71 | +1.98% | −$70.38 (−0.45%) | $49.65 (10% trail, HWM $55.17) |
+| UNH | 48 | $433.94 | $425.88 | +0.59% | −$386.76 (−1.86%) | $393.72 (10% trail, HWM $437.47) |
+**Notes:** UNH surfaced via Alpaca reconciliation, not a logged market-open decision — see alert above. Deployed jumped to 64.54% (within the 60-85% band) but AMZN drifted to 20.21% of equity, marginally over the 20% max-position cap on price appreciation alone (no new shares bought) — monitor, no forced trim triggered. OXY's stop tightened to $49.65 on a fresh HWM of $55.17; JPM sits comfortably within its stop band.
+
+**Environment note:** CLICKUP_API_KEY/CLICKUP_WORKSPACE_ID/CLICKUP_CHANNEL_ID missing from env this run — console-only, no ClickUp notification sent.
