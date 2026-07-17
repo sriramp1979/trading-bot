@@ -27,6 +27,55 @@ Format each entry:
 ### Decision
 TRADE or HOLD (default HOLD if no edge)
 
+## 2026-07-17 — Pre-market Research
+
+### Account
+- Equity: $105,206.11 | Cash: $58,107.05 (55.23%) | Deployed: $47,099.06 (44.76% — below 60% gate floor)
+- Buying power: $364,305.57 (day-trade) / $163,313.16 (reg T)
+- Daytrade count: not exposed by account endpoint; no same-day round trips, PDT not a concern
+- Open positions: AMZN (86 sh), JPM (31 sh), OXY (285 sh) — 3/6 slots used
+- Week trades: 1/3 (week of Jul 13) — 2 slots remain
+- Overnight: equity down slightly from $105,525.49 (last close) to $105,206.11 (−0.30%)
+
+### Positions
+| Ticker | Shares | Entry | Current | Unrealized P&L | Stop | HWM |
+|--------|--------|-------|---------|----------------|------|-----|
+| AMZN | 86 | $242.63 | $244.51 | +$161.68 (+0.78%) | $232.274 (10% trail) | $258.0825 |
+| JPM | 31 | $327.626129 | $342.90 | +$473.49 (+4.66%) | $314.622 (10% trail) | $349.58 |
+| OXY | 285 | $54.960351 | $54.18 | −$222.40 (−1.42%) | $49.608 (10% trail) | $55.12 |
+
+Cushions to stop: AMZN 5.0%, JPM 8.2%, OXY 8.4% — none close to breach. AMZN market value $21,027.86 is 19.99% of equity — effectively at the 20% max-position cap, no further add possible there regardless of thesis.
+
+### Market Context
+- S&P 500 futures: soft premarket Friday — chip-stock selloff deepening (Nasdaq 100 futures −0.3% after underlying gauge fell 1.6% Thursday) on AI-capex-valuation doubts; rising oil and Treasury yields also weighing as Gulf/Hormuz tension rises again
+- VIX: ~16.7 (last confirmed print 16.73, Thu 8:15pm ET) — no fresh Fri print yet, still well below the 22 gate threshold
+- Today's catalysts: June housing starts, building permits, industrial production/capacity utilization, import/export prices, and July prelim U. Michigan consumer sentiment all due; Netflix −8% after-hours on guidance for a second straight quarter of slowing sales growth (Communication Services — EXIT sector, moot); continued Gulf tension lifting crude — supportive for OXY thesis, a risk-off cross-current for the broader tape via yields
+- Earnings before open: TRV, TFC, FITB — none held
+
+### Position News
+- **AMZN** ($244.51, +0.78%): Wedbush initiated Buy (Jul 15); Jefferies sees big upside; KeyBanc raised PT to $335 from $330 (Overweight); AWS Compute/ML head departure already known, not thesis-breaking; down premarket mainly on broad chip/AI-capex selloff dragging Nasdaq, not company-specific; cushion to stop narrowed to 5.0% (tightest in book) but still well above the -7% cut level (entry $242.63, currently above entry); earnings Jul 30; HOLD, watch cushion
+- **JPM** ($342.90, +4.66%): No new catalyst overnight; record Q2 beat (Jul 14) and dividend raise still the driving thesis; Dimon's $24M shipbuilding announcement (Jul 15); cushion to stop 8.2%; HOLD
+- **OXY** ($54.18, −1.42%): Buffett reiterated bullish view; Evercore ISI upgraded to Outperform (PT $65), Mizuho raised PT to $75 from $72; options flow showing 5.4x average volume with a 0.07 put/call ratio (heavy bullish bias); premarket +0.99% on renewed Gulf/Hormuz tension lifting crude; cushion to stop 8.4%; HOLD, thesis strengthening
+
+### Trade Ideas
+1. **Financials earnings reaction (watch-only)** — TRV, TFC, FITB report before open; Financials sector 0 losses, JPM already held and thesis intact. No pre-positioning; would only add on a clean beat+raise with confirmed post-print strength.
+2. **Energy add-on (contingent, no clean name yet)** — renewed Gulf/Hormuz tension and rising crude keep the OXY thesis strengthening, but AMZN is already at its 20% position cap and OXY is the only Energy name held; no second energy ticker identified with an independent catalyst today — watch only.
+3. **Hold slot** — deployed 44.76%, below the 60% gate floor; VIX (~16.7) and today's soft-but-not-cliff futures don't meet the rule-12 exception (VIX>22 or gap<-2%) on their own — expect the market-open workflow to need to address the gate against a chip-selloff/Fed-data-heavy tape. No clean catalyst-backed setup identified pre-market; 2/3 week slots remain.
+
+### Risk Factors
+- Chip-stock-led selloff dragging Nasdaq futures down on AI-capex valuation doubts — Technology remains sector-EXIT (no direct exposure) but could pressure broader risk sentiment and beta-correlated names like AMZN
+- Netflix guided to a second straight quarter of slowing sales growth, −8% after-hours — Communication Services already EXIT, moot directly, but a soft read on consumer/ad spending
+- Gulf/Hormuz tension rising again, lifting oil and Treasury yields — supportive for OXY but a headline-driven, fast-reversing risk; higher yields also a cross-current for the broader tape
+- AMZN cushion to its trailing stop has narrowed to 5.0%, the tightest in the book — no manual action needed (GTC will fire automatically if breached), but watch closely given the chip-selloff drag
+- AMZN position is already at the 20% max-position cap — no further sizing room there regardless of bullish analyst calls
+- Deployment 44.76% below the 60% gate floor with no VIX/gap exception met yet — recurring theme, defer to market-open workflow
+- Technology and Communication Services remain sector-EXIT — no new buys regardless of today's news flow
+
+### Decision
+HOLD (pre-market) — no confirmed post-earnings/data reaction yet to act on; defer entry decision to market-open workflow, which will also need to resolve the deployment-gate trigger (44.76% deployed, no VIX/gap exception yet) against today's chip-selloff, Fed-data-heavy tape. AMZN's narrowing 5.0% stop cushion is the one thing worth a specific watch at the open. Week trades 1/3 — 2 slots remain.
+
+**Environment note:** CLICKUP_API_KEY/CLICKUP_WORKSPACE_ID/CLICKUP_CHANNEL_ID missing from env this run — console-only, no ClickUp notification sent. No urgent items today regardless (all positions within stop bands, no thesis breaks).
+
 ## 2026-07-16 — Pre-market Research
 
 ### Account
@@ -118,62 +167,7 @@ HOLD (pre-market) — no confirmed post-earnings reaction yet to act on; defer e
 
 **Environment note:** CLICKUP_API_KEY/CLICKUP_WORKSPACE_ID/CLICKUP_CHANNEL_ID missing from env this run — console-only, no ClickUp notification sent.
 
---- TRIMMED 2026-07-16 ---
-
-## 2026-07-10 — Pre-market Research
-
-### Account
-- Equity: $106,835.22 | Cash: $34,057.74 (31.88%) | Deployed: $72,777.48 (68.13% — below 75–85% target, above 60% gate floor)
-- Buying power: $340,007.89 (day-trade) / $140,892.96 (reg T) | Daytrade count: 0
-- Open positions: AMZN (86 sh), JPM (31 sh), LLY (13 sh), NVO (513 sh) — 4/6 slots used
-- Week trades: 0/3 (week of Jul 6) — 3 slots remaining
-- Phase P&L: +$6,835.22 (+6.84%) | Day 33, Friday
-- Overnight: equity up slightly from $106,598.54 (last close) to $106,835.22 (+0.22%)
-
-### Positions
-| Ticker | Shares | Entry | Current | Unrealized P&L | Stop | HWM |
-|--------|--------|-------|---------|----------------|------|-----|
-| AMZN | 86 | $242.63 | $247.28 | +$399.93 (+1.92%) | $227.27 (10% trail) | $252.53 |
-| JPM | 31 | $327.63 | $336.40 | +$271.99 (+2.68%) | $309.10 (10% trail) | $343.45 |
-| LLY | 13 | $1,078.65 | $1,219.51 | +$1,831.18 (+13.06%) | $1,148.13 (7% trail) | $1,234.55 |
-| NVO | 513 | $41.27 | $49.18 | +$4,056.75 (+19.16%) | $48.35025 (5% trail) | $50.895 |
-
-**LLY +20% tighten trigger**: $1,294.38; current $1,219.51 — gap $74.87 (5.8% away), not close; 7% trail active since Jul 8 crossing.
-**NVO cushion to stop**: 5% trail stop $48.35025 vs current $49.18 — $0.83 (1.7%) above the live GTC stop; already tightest (5%) tier, no manual action, GTC will fire automatically if breached.
-
-### Market Context
-- S&P 500 futures: −0.22% early Friday — Polymarket implying only ~20% odds of an up open; caution on geopolitical backdrop and elevated inflation risk despite cooling oil after Trump said Iran signaled openness to negotiate
-- VIX: ~16.1 (opened 16.58, intraday range 15.93–17.27) — calm, well below the 22 gate threshold
-- Today's catalysts:
-  - **Delta (DAL) earnings before open** — first real travel-demand read this week; not held
-  - **Fresh overnight attacks by both sides in the Strait of Hormuz** — stocks climbing anyway Thursday on hopes it doesn't escalate to full-scale war; headline risk remains elevated into the weekend
-  - **AI-driven optimism continuing**: chip stocks led Thursday's rally, brushing aside Middle East flare-up — Tech remains EXIT, no direct exposure
-  - **10-yr Treasury yield ~4.58%**, sticky inflation signals — keeping a lid on any serious rally alongside firmer oil/crude
-- Earnings before open: DAL (not held); none for portfolio names (JPM Jul 14, AMZN Jul 30)
-
-### Position News
-- **AMZN** ($247.28, +1.92%): Plans to borrow additional $25B for data-center/AI capex; Goldman raised AWS capex estimate to $827B (2026–2028) on AI demand/supply imbalance; "Moonraker" Alexa+ upgrade project running more costly than expected; stock flatlined YTD with NVDA despite AI trade; earnings Jul 29; stop $227.27 (cushion 8.9%); HOLD
-- **JPM** ($336.40, +2.68%): Traded $330.13–338.68 Jul 9, closed $330.90; Q2 earnings Jul 14 (EPS est. $5.52, +11.3% YoY; revenue est. $48.71B, +8.4%), estimate revised up 1.3% in past 30 days; +7% past month vs S&P +1.1%, Zacks Rank #2 Buy; new small-company dealmaking team announced; stop $309.10 (cushion 8.1%); HOLD
-- **LLY** ($1,219.51, +13.06%): Near all-time highs on obesity/diabetes (Mounjaro/Zepbound) demand; 4h chart bullish, trading above all major moving averages; +20% tighten trigger 5.8% away, not urgent; stop $1,148.13 (cushion 5.9%); HOLD
-- **NVO** ($49.18, +19.16%): Oral Wegovy prescription-growth slowdown flagged ahead of earnings (Aug 4, consensus $0.68); CagriSema device study halted, refocusing investors on core obesity assets; exec Camilla Sylvest departed to a competitor board; HSBC PT raised to DKK 300 (Jul 6, Hold); DKK 15B buyback ongoing; cushion to 5% stop 1.7%, still tightest in the portfolio; HOLD
-
-### Trade Ideas
-1. **DAL (Delta), Industrials — watch only**: Earnings before open today, first travel-demand read of the week; not held, no pre-positioning ahead of the print — wait and react to the result.
-2. **AI/chip rebound (Tech) — no action**: Thursday's rally led by semis continues into today's tone, but Tech remains EXIT (2 consecutive losses) — no entry regardless of momentum.
-3. **Hold slot**: Deployed 68.13% — below 75–85% target but above the 60% gate floor, so no forced add. No clean, catalyst-backed setup in an open sector today; wait for a better entry (0/3 trades used this week).
-
-### Risk Factors
-- **Strait of Hormuz attacks overnight (both sides)** — elevated Middle East headline risk into the weekend, could reverse the "de-escalation" narrative fast
-- **Sticky inflation / 10-yr yield ~4.58%** — capping upside even as oil cools on negotiation hopes
-- **NVO cushion to its 5% trailing stop only 1.7%** — no manual action needed, GTC already at tightest tier
-- **LLY 5.8% from its +20% tighten trigger** — not urgent, keep watching
-- Deployed 68.13% below 75–85% target, above 60% gate floor — not forced to add
-- Technology + Communication Services remain EXIT sectors — no new buys despite AI/chip rebound
-- Consumer Staples has 1 consecutive loss (WMT) — one more loss triggers EXIT
-- **Environment note**: CLICKUP_API_KEY/CLICKUP_WORKSPACE_ID/CLICKUP_CHANNEL_ID missing from env this run — ClickUp alerting unavailable; no urgent items today regardless (all positions green, no stop breaches, no thesis breaks)
-
-### Decision
-HOLD — Default patience. Deployed 68.13% is below the 75–85% target but above the 60% gate floor, so no forced add. Overnight Strait of Hormuz attacks and sticky inflation argue against chasing a new position; AI/chip rebound sits in the EXIT Tech sector anyway. Priority today: watch Delta's earnings print for a travel-demand read, and keep an eye on NVO's 1.7% cushion to its 5% trail. Week trades 0/3 — full 3 slots available.
+--- TRIMMED 2026-07-17 ---
 
 ## 2026-07-13 — Pre-market Research
 
