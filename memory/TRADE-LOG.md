@@ -877,3 +877,4 @@ Market holiday (next open 2026-07-06 Mon). All positions unchanged (change_today
 **Notes:** No trades today. AMZN and JPM both pulled back intraday but stayed well clear of stops; AMZN's trail keeps climbing (HWM $258.08) off its recent highs. OXY drifted lower again with no fresh Hormuz catalyst — thesis intact, no stop breach.
 
 **Environment note:** CLICKUP_API_KEY/CLICKUP_WORKSPACE_ID/CLICKUP_CHANNEL_ID missing from env this run — console-only, no ClickUp notification sent.
+## 2026-07-17 midday — All within band, no action
