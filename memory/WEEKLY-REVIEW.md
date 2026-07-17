@@ -228,3 +228,70 @@ Template for each entry:
 
 ### Overall Grade: C
 *Portfolio −0.34% vs S&P +0.93% = −1.27% relative. 4-day holiday-shortened week, no closed trades, 1 entry. Individual positions constructive (NVO leading, LLY/AMZN stable, GOOGL near entry). Tech concentration hurt on FOMC day. Process B (stops managed, gap corrected, gate triggered correctly); deployment C− (65.9% — improving trend but still below target for 4th straight week). Net C.*
+
+---
+
+## Week ending 2026-07-17
+
+### Stats
+| Metric | Value |
+|--------|-------|
+| Starting portfolio | $106,368.63 (Jul 10 EOD) |
+| Ending portfolio | $105,113.42 |
+| Week return | −$1,255.21 (−1.18%) |
+| S&P 500 week | ≈−1.5% (semiconductor-led selloff, worst SMH week since Apr 2025) |
+| Bot vs S&P | +0.32% |
+| Phase P&L | +$5,113.42 (+5.11% from $100,000) |
+| Trades | 2 new entries (OXY, UNH) — closed this week: W:2 / L:1 / open:4 |
+| Win rate | 66.7% (2W/1L on 3 closed events — see note below) |
+| Best trade | NVO +17.09% (realized) |
+| Worst trade | UNH order-correction round trip −0.04% (−$8.60, non-strategic) |
+| Profit factor | 525.5 (distorted — denominator is a tiny operational loss, not a real losing trade) |
+| Deployment at week end | 64.5% (within 60–85% band) |
+
+### Closed Trades
+| Ticker | Entry | Exit | P&L | Notes |
+|--------|-------|------|-----|-------|
+| NVO | $41.27 | $48.32 | +$3,617.34 (+17.09%) | 5% trail stop-out Jul 14, profitable exit, Healthcare thesis played out over 7-week hold |
+| LLY | $1,078.65 | $1,148.02 | +$901.81 (+6.43%) | 7% trail stop-out Jul 14, profitable exit, Healthcare |
+| UNH (correction) | $434.10 | $433.91 | −$8.60 | Duplicate-buy correction, not a strategy trade — see governance note below |
+
+### Open Positions at Week End
+| Ticker | Entry | Close | Unrealized | Stop |
+|--------|-------|-------|------------|------|
+| AMZN | $242.63 | $247.01 | +$376.68 (+1.81%) | $232.27 trail (HWM $258.08) ⚠️ ~20.2% of equity, marginally over 20% cap on appreciation |
+| JPM | $327.63 | $341.22 | +$421.41 (+4.15%) | $314.62 trail (HWM $349.58) |
+| OXY | $54.960351 | $54.71 | −$70.38 (−0.45%) | $49.65 trail (HWM $55.17) |
+| UNH | $433.94 | $425.88 | −$386.76 (−1.86%) | $393.72 trail (HWM $437.47) — see governance note below |
+
+### Governance Note — Unlogged UNH Trade (Jul 17)
+No "market-open trades" commit exists for Jul 17 in git history. A live 48-share UNH position was only discovered via Alpaca order-history reconciliation at midday: two 48-share buys fired 9 seconds apart (duplicate submission — same failure signature as the Jul 14 OXY API-timeout incident), corrected with a same-day sell 14 seconds later. No pre-market thesis was written for Jul 17; the only UNH note on record is a day-stale Jul 16 watch-only line ("enter only on a clear beat+raise with confirmed post-print strength"). The corrective round trip also counts as a same-day round trip for PDT tracking. Position is live with a stop in place; flagged for review, not unwound.
+
+### What Worked
+- Deployment gate (rule 12) triggered correctly Jul 14 — OXY added same session when deployment fell to 30% after LLY/NVO stopped out, no lag
+- LLY and NVO trailing stops captured strong realized gains on exit: NVO +17.09%, LLY +6.43% — Healthcare thesis paid off cleanly over a multi-week hold
+- Bot beat the S&P on a relative basis this week (−1.18% vs ≈−1.5%) during a chip-led selloff — Technology has been sector-EXIT since Jun 25, so zero direct exposure to the very sector that dragged the index down
+- JPM continued to compound post-Q2 beat, +4.15% with stop trailing higher; OXY held through a stop-free week on Hormuz thesis with no breach
+
+### What Didn't Work
+- **Unlogged, undocumented UNH trade** — no market-open session log, no same-day thesis, discovered only via account reconciliation (see governance note above)
+- Duplicate buy-order execution on UNH is the *second* occurrence of this failure mode (after Jul 14 OXY) — this is a pattern, not a one-off
+- UNH corrective round trip realized a small avoidable loss (~$8.60) and consumed a PDT day-trade slot for no strategic reason
+- AMZN drifted to ~20.2% of equity, marginally over the 20% max-position cap from price appreciation alone (no new shares bought, no forced trim) — the cap's handling of organic appreciation is undefined in the strategy doc
+- Portfolio still finished the week down in absolute terms (−1.18%), even on a week the process otherwise handled well
+
+### Key Lessons
+- A missing market-open commit must be caught the same session, not reconstructed hours later from broker records — the log is supposed to be the primary record, not the account itself
+- Two duplicate-fill incidents in 4 trading days (OXY Jul 14, UNH Jul 17) indicate a structural order-idempotency gap, likely tied to retry behavior on API timeouts, not bad luck
+- Sector-EXIT discipline (Technology, Communication Services) is doing real work — it kept the book out of this week's worst-hit sector without any active decision needed
+- The 20% position cap needs explicit language on whether appreciation-driven overage should trigger a trim, or is cap-at-entry-only by design
+
+### Adjustments for Next Week
+- Add a same-session check: verify a "market-open trades" commit exists before the midday scan proceeds; escalate immediately if missing rather than waiting for reconciliation
+- Investigate the duplicate-order root cause — confirm whether a submission check (query recent orders before POSTing a new buy) is missing on timeout retries
+- Resolve the UNH position's status: no day-specific catalyst was ever confirmed for Jul 17 entry — decide keep-or-unwind based on current thesis strength, not by default
+- Clarify TRADING-STRATEGY.md rule 3 (max 20% per position): decide and document whether appreciation-driven overages require a trim
+- Technology and Communication Services sector-EXIT flags reset to OK this week (see SECTOR-LOG.md) — both eligible for fresh setups pending a real catalyst
+
+### Overall Grade: C+
+*Relative performance was solid — −1.18% vs S&P's ≈−1.5%, with sector-EXIT discipline doing real work during the chip selloff. But an untracked, duplicate-order live trade with no audit trail is a bigger risk than one week's return: this is the second duplicate-fill incident in four sessions and the first fully unlogged trade of the phase. Performance B+; process C− (broken market-open log, repeat order bug). Net C+.*

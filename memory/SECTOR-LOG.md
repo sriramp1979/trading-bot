@@ -3,9 +3,9 @@
 ## Active Sector Tracking
 | Sector | Tickers Held | Consecutive Losses | Status |
 |--------|-------------|-------------------|--------|
-| Technology | — | 2 | EXIT |
-| Healthcare | — | 0 | OK |
-| Communication Services | — | 2 | EXIT |
+| Technology | — | 0 | OK |
+| Healthcare | UNH | 0 | OK |
+| Communication Services | — | 0 | OK |
 | Consumer Discretionary | AMZN | 0 | OK |
 | Financials | JPM | 0 | OK |
 | Consumer Staples | — | 1 | OK |
@@ -16,6 +16,12 @@
 |--------|-----------|--------|
 | Communication Services | 2026-06-22 | 2 consecutive losses (META stop-out Jun 11, GOOGL thesis-break exit Jun 22 — dilution + FCF collapse + AI talent flight) |
 | Technology | 2026-06-25 | 2 consecutive losses (NVDA stop-out Jun 5, NVDA stop-out Jun 25 — Micron sell-the-news selloff dragged GPU names; chip sector multiple compression) |
+
+## Sector Reset History
+| Sector | Reset Date | Reason |
+|--------|-----------|--------|
+| Communication Services | 2026-07-17 | 2+ weeks elapsed since exit (2026-06-22), no new trades in sector — reset to OK per weekly review rule |
+| Technology | 2026-07-17 | 2+ weeks elapsed since exit (2026-06-25), no new trades in sector — reset to OK per weekly review rule |
 
 ## Sector Classification
 Use these exact sector names (no variations):
