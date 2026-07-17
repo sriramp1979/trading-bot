@@ -4,7 +4,7 @@
 | Sector | Tickers Held | Consecutive Losses | Status |
 |--------|-------------|-------------------|--------|
 | Technology | — | 2 | EXIT |
-| Healthcare | — | 0 | OK |
+| Healthcare | UNH | 0 | OK |
 | Communication Services | — | 2 | EXIT |
 | Consumer Discretionary | AMZN | 0 | OK |
 | Financials | JPM | 0 | OK |

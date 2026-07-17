@@ -76,6 +76,12 @@ HOLD (pre-market) — no confirmed post-earnings/data reaction yet to act on; de
 
 **Environment note:** CLICKUP_API_KEY/CLICKUP_WORKSPACE_ID/CLICKUP_CHANNEL_ID missing from env this run — console-only, no ClickUp notification sent. No urgent items today regardless (all positions within stop bands, no thesis breaks).
 
+### Market-Open Addendum (2026-07-17)
+- Deployment gate (rule 12) check: deployed 44.8% (<60% floor). Exception check — VIX ~17.2 (opened 17.21, range 16.15-17.56, well below 22 threshold); S&P futures gap ~-0.77% (not below -2%). Neither exception met → gate requires ≥1 new position this session.
+- Overnight/AM developments: US struck Iran facilities, Iranian oil sanction waiver revoked as of 12:01am ET Jul 17 — Hormuz tension escalating further (supportive of existing OXY thesis). Separately, AI/semiconductor unwind dragging Nasdaq/Tech lower; money rotating into defensives — XLP and XLV both leading S&P sectors, each +~2.2% intraday.
+- **New candidate: UNH (Healthcare, sector Status=OK, 0 current losses, no existing position).** Catalyst: Q2 2026 earnings beat reported Jul 16 (adj. EPS $6.38 vs $4.90 est., revenue $112.03B vs $110.85B est.), FY26 guidance raised to $19.50-$20 EPS from prior >$18.25; stock +4.61% Jul 16. Multiple sell-side price-target raises post-print (Piper Sandler to $475, BofA upgraded to Buy/$450, Morgan Stanley to $468). Today's defensive-sector rotation (XLV leading gainers) adds a second, independent tailwind on top of the earnings catalyst. Quote stabilized at ap $433.14/bp $432.11 after a wide initial indicative print — spread now tight (~0.24%), not halted/illiquid.
+- Decision: BUY UNH to satisfy rule 12. Sizing to ~20% cap given strength of catalyst and lack of existing Healthcare exposure. Stop: 10% trailing GTC per standard rule. Target: informal 2:1 R:R off the 10% stop (~$390 entry-adjusted risk) toward the post-print analyst target cluster ($450-475), well above the 2:1 minimum.
+
 ## 2026-07-16 — Pre-market Research
 
 ### Account

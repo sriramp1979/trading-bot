@@ -806,7 +806,28 @@ Market holiday (next open 2026-07-06 Mon). All positions unchanged (change_today
 | NVO | 513 | $41.27 | $49.28 | −0.40% | +$4,108.05 (+19.40%) | $48.35 (5% trail, HWM $50.90) |
 **Notes:** No new trades, week 0/3. LLY cushion to 7% stop at 2.78%, NVO cushion to 5% stop at 1.89% — both tightest tier, no manual action needed. Deployed 67.97%, below 75-85% target but above 60% gate floor.
 
-## Week of 2026-07-13 | Trades: 1/3
+## Week of 2026-07-13 | Trades: 2/3
+
+## 2026-07-17 — market-open trades
+
+**Decision:** TRADE — Deployment gate forced action. Deployed 44.8% of equity, below the 60% floor; VIX ~17.2 (opened 17.21, range 16.15-17.56) and S&P futures gap ~-0.77% don't meet the exception bar (VIX>22 or gap<-2%), so per Strategy rule 12 added 1 new position: UNH (Healthcare, new sector for the book) on Q2 2026 earnings beat-and-raise (Jul 16: adj. EPS $6.38 vs $4.90 est., FY26 guidance raised to $19.50-$20) plus today's defensive-sector rotation (XLV +~2.2%, leading S&P sectors) amid the ongoing AI/semiconductor unwind and fresh US-Iran escalation (also supportive of the existing OXY thesis). Full catalyst writeup in RESEARCH-LOG "Market-Open Addendum (2026-07-17)". Week trades 2/3 (week of Jul 13).
+
+**Operational note:** The initial buy order was resubmitted in error (checked order status by re-issuing the same order instead of querying it), producing a duplicate fill of 96 shares instead of the intended 48. Corrected immediately with a same-day sell of 48 shares back to target size before placing the stop. Net position and cost basis below reflect the corrected 48-share holding; the round-trip contributes 1 to today's day-trade count (equity ~$105k, well above the $25k PDT threshold, so no PDT restriction applies).
+
+**New trade:**
+| Field | UNH |
+|-------|-----|
+| Shares | 48 |
+| Entry (avg) | $433.93875 |
+| Cost basis | $20,829.06 (19.78% of equity) |
+| Stop | $391.275 (10% trail GTC, HWM $434.75) |
+| Thesis | Q2 earnings beat-and-raise + Healthcare sector rotation (see RESEARCH-LOG) |
+| Target | Analyst PT cluster $450-475 post-print (Piper Sandler $475, Morgan Stanley $468, BofA $450) |
+| R:R | ~2.4:1 (risk ~$42.66/sh to stop, reward ~$16-41/sh to nearer targets, well past 2:1 to the $475 high end) |
+| Buy order ID | e0acd1e5 (first fill, 48sh) / 319017c2 (duplicate fill, 48sh) |
+| Correction sell order ID | f095f573 (48sh) |
+| Stop order ID | d2619c86 |
+
 
 ## 2026-07-14 — market-open trades
 
