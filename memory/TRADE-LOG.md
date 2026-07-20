@@ -905,3 +905,15 @@ Market holiday (next open 2026-07-06 Mon). All positions unchanged (change_today
 **Notes:** UNH surfaced via Alpaca reconciliation, not a logged market-open decision — see alert above. Deployed jumped to 64.54% (within the 60-85% band) but AMZN drifted to 20.21% of equity, marginally over the 20% max-position cap on price appreciation alone (no new shares bought) — monitor, no forced trim triggered. OXY's stop tightened to $49.65 on a fresh HWM of $55.17; JPM sits comfortably within its stop band.
 
 **Environment note:** CLICKUP_API_KEY/CLICKUP_WORKSPACE_ID/CLICKUP_CHANNEL_ID missing from env this run — console-only, no ClickUp notification sent.
+
+### Jul 20 — EOD Snapshot (Day 39, Monday)
+**Portfolio:** $105,264.03 | **Cash:** $37,276.59 (35.42%) | **Day P&L:** +$131.12 (+0.12%) | **Phase P&L:** +$5,264.03 (+5.26%)
+| Ticker | Shares | Entry | Close | Day Chg | Unrealized P&L | Stop |
+|--------|--------|-------|-------|---------|----------------|------|
+| AMZN | 86 | $242.63 | $250.22 | +1.21% | +$652.74 (+3.13%) | $232.27 (10% trail, HWM $258.08) |
+| JPM | 31 | $327.63 | $338.87 | −0.65% | +$348.56 (+3.43%) | $314.62 (10% trail, HWM $349.58) |
+| OXY | 285 | $54.96035 | $55.19 | +0.60% | +$65.45 (+0.42%) | $50.10 (10% trail, HWM $55.67) |
+| UNH | 48 | $433.94 | $421.55 | −1.07% | −$594.66 (−2.86%) | $393.72 (10% trail, HWM $437.47) |
+**Notes:** No trades today, and no market-open log exists for Jul 20 despite pre-market deferring a deployment-gate decision there — flagging the gap only, since Alpaca order history shows no untracked fills (unlike the Jul 17 UNH incident). AMZN drifted to 20.44% of equity, marginally over the 20% single-position cap on price appreciation alone — monitor, no forced trim triggered. Deployed 64.59% (within 60-85% band); UNH remains the lone laggard at −2.86%, well clear of its $393.72 stop.
+
+**Environment note:** CLICKUP_API_KEY/CLICKUP_WORKSPACE_ID/CLICKUP_CHANNEL_ID missing from env this run — console-only, no ClickUp notification sent.
