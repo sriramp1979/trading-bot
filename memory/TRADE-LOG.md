@@ -914,6 +914,6 @@ Market holiday (next open 2026-07-06 Mon). All positions unchanged (change_today
 | JPM | 31 | $327.63 | $338.87 | −0.65% | +$348.56 (+3.43%) | $314.62 (10% trail, HWM $349.58) |
 | OXY | 285 | $54.96035 | $55.19 | +0.60% | +$65.45 (+0.42%) | $50.10 (10% trail, HWM $55.67) |
 | UNH | 48 | $433.94 | $421.55 | −1.07% | −$594.66 (−2.86%) | $393.72 (10% trail, HWM $437.47) |
-**Notes:** No trades today, and no market-open log exists for Jul 20 despite pre-market deferring a deployment-gate decision there — flagging the gap only, since Alpaca order history shows no untracked fills (unlike the Jul 17 UNH incident). AMZN drifted to 20.44% of equity, marginally over the 20% single-position cap on price appreciation alone — monitor, no forced trim triggered. Deployed 64.59% (within 60-85% band); UNH remains the lone laggard at −2.86%, well clear of its $393.72 stop.
+**Notes:** No trades today — pre-market called HOLD (deployed 64.53%, within the 60-85% band, no rule-12 trigger), and Alpaca order history confirms no untracked fills. No "market-open" bookkeeping commit exists for Jul 20 (unlike prior HOLD days e.g. Jul 13), a minor routine-logging gap, not a missed trade. AMZN drifted to 20.44% of equity, marginally over the 20% single-position cap on price appreciation alone — monitor, no forced trim triggered; deployed 64.59%, UNH remains the lone laggard at −2.86%, well clear of its $393.72 stop.
 
 **Environment note:** CLICKUP_API_KEY/CLICKUP_WORKSPACE_ID/CLICKUP_CHANNEL_ID missing from env this run — console-only, no ClickUp notification sent.
