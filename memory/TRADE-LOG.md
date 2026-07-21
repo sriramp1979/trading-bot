@@ -938,3 +938,15 @@ Market holiday (next open 2026-07-06 Mon). All positions unchanged (change_today
 
 **Environment note:** CLICKUP_API_KEY/CLICKUP_WORKSPACE_ID/CLICKUP_CHANNEL_ID missing from env this run — no trades fired so STEP 7 is a no-op regardless.
 ## 2026-07-21 midday — All within band, no action
+
+### Jul 21 — EOD Snapshot (Day 40, Tuesday)
+**Portfolio:** $106,297.49 | **Cash:** $37,276.59 (35.07%) | **Day P&L:** +$1,033.46 (+0.98%) | **Phase P&L:** +$6,297.49 (+6.30%)
+| Ticker | Shares | Entry | Close | Day Chg | Unrealized P&L | Stop |
+|--------|--------|-------|-------|---------|----------------|------|
+| AMZN | 86 | $242.63 | $247.4016 | −1.04% | +$410.36 (+1.97%) | $232.27425 (10% trail, HWM $258.0825) |
+| JPM | 31 | $327.626129 | $344.06 | +1.53% | +$509.45 (+5.02%) | $314.622 (10% trail, HWM $349.58) |
+| OXY | 285 | $54.960351 | $56.50 | +2.37% | +$438.80 (+2.80%) | $50.85 (10% trail, HWM $56.50) |
+| UNH | 48 | $433.93875 | $437.00 | +3.67% | +$146.94 (+0.71%) | $393.723 (10% trail, HWM $437.47) |
+**Notes:** No trades today — market-open and midday both called HOLD (deployed 64.93%, within band, no rule-12 trigger). AMZN sits at 20.02% of equity, marginally over the 20% single-position cap on price appreciation alone — monitor, no forced trim triggered. OXY's stop advanced to $50.85 on a fresh HWM of $56.50; UNH flipped to positive unrealized P&L (+0.71%) for the first time in several sessions.
+
+**Environment note:** CLICKUP_API_KEY/CLICKUP_WORKSPACE_ID/CLICKUP_CHANNEL_ID missing from env this run — console-only, no ClickUp notification sent.
