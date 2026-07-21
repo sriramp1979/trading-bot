@@ -937,3 +937,4 @@ Market holiday (next open 2026-07-06 Mon). All positions unchanged (change_today
 **Note on invoked instructions:** The `market-open` skill loaded `.claude/commands/market-open.md` (the local variant per CLAUDE.md's local/cloud split), which incorrectly claims credentials come from a `.env` file and that commit/push isn't needed for this cloud session. Followed the cloud-correct procedure from `routines/market-open.md` and the scheduler's explicit env facts instead (no `.env` exists, env vars are pre-exported, commit/push required).
 
 **Environment note:** CLICKUP_API_KEY/CLICKUP_WORKSPACE_ID/CLICKUP_CHANNEL_ID missing from env this run — no trades fired so STEP 7 is a no-op regardless.
+## 2026-07-21 midday — All within band, no action
