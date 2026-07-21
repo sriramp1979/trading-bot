@@ -917,3 +917,23 @@ Market holiday (next open 2026-07-06 Mon). All positions unchanged (change_today
 **Notes:** No trades today — pre-market called HOLD (deployed 64.53%, within the 60-85% band, no rule-12 trigger), and Alpaca order history confirms no untracked fills. No "market-open" bookkeeping commit exists for Jul 20 (unlike prior HOLD days e.g. Jul 13), a minor routine-logging gap, not a missed trade. AMZN drifted to 20.44% of equity, marginally over the 20% single-position cap on price appreciation alone — monitor, no forced trim triggered; deployed 64.59%, UNH remains the lone laggard at −2.86%, well clear of its $393.72 stop.
 
 **Environment note:** CLICKUP_API_KEY/CLICKUP_WORKSPACE_ID/CLICKUP_CHANNEL_ID missing from env this run — console-only, no ClickUp notification sent.
+
+## 2026-07-21 — market-open (no new trades)
+
+**Decision:** HOLD — no new entries. Per today's pre-market research: deployed 64.60%, within the 60-85% gate band, no rule-12 trigger. No fresh catalyst-backed setup in an open (non-EXIT) sector clears the entry checklist. Technology and Communication Services remain sector-EXIT. Week trades 0/3 (week of Jul 20) — 3 slots remain.
+
+**Live Snapshot (09:37 ET):**
+**Account:** Equity $105,351.62 | Cash $37,276.59 (35.39%) | Deployed $68,075.03 (64.61%) | Day P&L: +$107.37 (+0.10%)
+
+| Ticker | Shares | Entry | Current | Unrealized P&L | Stop |
+|--------|--------|-------|---------|----------------|------|
+| AMZN | 86 | $242.63 | $248.3625 | +$492.995 (+2.36%) | $232.27425 (10% trail, HWM $258.0825) |
+| JPM | 31 | $327.626129 | $339.21 | +$359.10 (+3.54%) | $314.622 (10% trail, HWM $349.58) |
+| OXY | 285 | $54.960351 | $55.71 | +$213.65 (+1.36%) | $50.283 (10% trail, HWM $55.87) |
+| UNH | 48 | $433.93875 | $423.245 | −$513.30 (−2.46%) | $393.723 (10% trail, HWM $437.47) |
+
+**Notes:** No PDT-blocked stops pending from prior days. All 4 GTC trailing stops confirmed live via Alpaca order query (order IDs: AMZN b76fb659, JPM 91ec700a, OXY f32a494c, UNH d2619c86). OXY's stop auto-advanced to $50.283 on a fresh HWM of $55.87. Cushions to stop: AMZN 6.48%, JPM 7.25%, OXY 9.74%, UNH 6.98% — none near breach. UNH remains net negative since entry (−2.46%) but well clear of the −7% manual cut. No trades fired.
+
+**Note on invoked instructions:** The `market-open` skill loaded `.claude/commands/market-open.md` (the local variant per CLAUDE.md's local/cloud split), which incorrectly claims credentials come from a `.env` file and that commit/push isn't needed for this cloud session. Followed the cloud-correct procedure from `routines/market-open.md` and the scheduler's explicit env facts instead (no `.env` exists, env vars are pre-exported, commit/push required).
+
+**Environment note:** CLICKUP_API_KEY/CLICKUP_WORKSPACE_ID/CLICKUP_CHANNEL_ID missing from env this run — no trades fired so STEP 7 is a no-op regardless.
