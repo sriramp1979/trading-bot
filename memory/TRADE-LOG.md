@@ -968,3 +968,4 @@ Market holiday (next open 2026-07-06 Mon). All positions unchanged (change_today
 **Notes:** No PDT-blocked stops pending from prior days. All 4 GTC trailing stops confirmed live via Alpaca order query (order IDs: AMZN b76fb659, JPM 91ec700a, OXY f32a494c, UNH d2619c86). OXY's stop auto-advanced to $51.93 on a fresh HWM of $57.70. Cushions to stop: AMZN 5.33%, JPM 8.80%, OXY 9.71%, UNH 9.63% — none near breach. No trades fired.
 
 **Environment note:** CLICKUP_API_KEY/CLICKUP_WORKSPACE_ID/CLICKUP_CHANNEL_ID missing from env this run — no trades fired so STEP 7 is a no-op regardless.
+## 2026-07-22 midday — All within band, no action
