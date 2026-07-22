@@ -950,3 +950,21 @@ Market holiday (next open 2026-07-06 Mon). All positions unchanged (change_today
 **Notes:** No trades today — market-open and midday both called HOLD (deployed 64.93%, within band, no rule-12 trigger). AMZN sits at 20.02% of equity, marginally over the 20% single-position cap on price appreciation alone — monitor, no forced trim triggered. OXY's stop advanced to $50.85 on a fresh HWM of $56.50; UNH flipped to positive unrealized P&L (+0.71%) for the first time in several sessions.
 
 **Environment note:** CLICKUP_API_KEY/CLICKUP_WORKSPACE_ID/CLICKUP_CHANNEL_ID missing from env this run — console-only, no ClickUp notification sent.
+
+## 2026-07-22 — market-open (no new trades)
+
+**Decision:** HOLD — no new entries. Per today's pre-market research: deployed 65.05%, within the 60-85% gate band, no rule-12 trigger. No fresh catalyst-backed setup in an open (non-EXIT) sector clears the entry checklist. Technology and Communication Services remain sector-EXIT. Week trades 0/3 (week of Jul 20) — 3 slots remain.
+
+**Live Snapshot (09:37 ET):**
+**Account:** Equity $106,384.51 | Cash $37,276.59 (35.04%) | Deployed $69,107.92 (64.96%) | Day P&L: +$69.19 (+0.07%)
+
+| Ticker | Shares | Entry | Current | Unrealized P&L | Stop |
+|--------|--------|-------|---------|----------------|------|
+| AMZN | 86 | $242.63 | $245.35 | +$233.92 (+1.12%) | $232.27425 (10% trail, HWM $258.0825) |
+| JPM | 31 | $327.626129 | $344.96 | +$537.35 (+5.29%) | $314.622 (10% trail, HWM $349.58) |
+| OXY | 285 | $54.960351 | $57.515 | +$728.07 (+4.65%) | $51.93 (10% trail, HWM $57.70) |
+| UNH | 48 | $433.93875 | $435.67 | +$83.10 (+0.40%) | $393.723 (10% trail, HWM $437.47) |
+
+**Notes:** No PDT-blocked stops pending from prior days. All 4 GTC trailing stops confirmed live via Alpaca order query (order IDs: AMZN b76fb659, JPM 91ec700a, OXY f32a494c, UNH d2619c86). OXY's stop auto-advanced to $51.93 on a fresh HWM of $57.70. Cushions to stop: AMZN 5.33%, JPM 8.80%, OXY 9.71%, UNH 9.63% — none near breach. No trades fired.
+
+**Environment note:** CLICKUP_API_KEY/CLICKUP_WORKSPACE_ID/CLICKUP_CHANNEL_ID missing from env this run — no trades fired so STEP 7 is a no-op regardless.
