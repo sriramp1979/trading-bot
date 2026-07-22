@@ -27,6 +27,56 @@ Format each entry:
 ### Decision
 TRADE or HOLD (default HOLD if no edge)
 
+## 2026-07-22 — Pre-market Research
+
+### Account
+- Equity: $106,635.83 | Cash: $37,276.59 (34.96%) | Deployed: $69,359.24 (65.05% — within 60-85% gate band)
+- Buying power: $343,312.23 (day-trade) / $143,912.42 (reg T)
+- Daytrade count: not exposed by account endpoint; no same-day round trips, PDT not a concern
+- Open positions: AMZN (86 sh), JPM (31 sh), OXY (285 sh), UNH (48 sh) — 4/6 slots used
+- Week trades: 0/3 (week of Jul 20) — 3 slots remain
+- Overnight: equity up from $106,315.32 (last close) to $106,635.83 (+0.30%)
+
+### Positions
+| Ticker | Shares | Entry | Current | Unrealized P&L | Stop | HWM |
+|--------|--------|-------|---------|----------------|------|-----|
+| AMZN | 86 | $242.63 | $248.67 | +$519.44 (+2.49%) | $232.27425 (10% trail) | $258.0825 |
+| JPM | 31 | $327.626129 | $344.00 | +$507.59 (+5.00%) | $314.622 (10% trail) | $349.58 |
+| OXY | 285 | $54.960351 | $57.38 | +$689.60 (+4.40%) | $50.85 (10% trail) | $56.50 |
+| UNH | 48 | $433.93875 | $436.59 | +$127.26 (+0.61%) | $393.723 (10% trail) | $437.47 |
+
+Cushions to stop: AMZN 6.59%, JPM 8.54%, OXY 11.38%, UNH 9.82% — none close to breach. AMZN market value $21,385.62 is 20.06% of equity — marginally over the 20% max-position cap on price appreciation alone (no new shares bought); no forced trim per rules, monitor only.
+
+### Market Context
+- S&P 500 futures: ES slipped ~0.33% early Wednesday; Polymarket implies only ~15% odds of a higher open, as rising oil (Brent >$92/bbl) revives inflation concerns and overshadows strong corporate earnings; tariffs also in focus
+- VIX: last close ~18.65 (Jul 21), mid-band, well below the 22 gate threshold
+- Today's catalysts: chip/AI stocks extending a global rally on renewed AI-trade optimism (Technology remains sector-EXIT — no exposure regardless); US carried out an 11th consecutive night of strikes on Iran, Brent crude >$92/bbl — bullish tailwind for OXY thesis but also the driver of the inflation-scare weighing on futures; heavy earnings day — GOOGL and TSLA report after today's close (GOOGL is the key AI-capex read-through), plus T, CME, CSX, GEV, MCO, PM, NOW, TXN, URI, WCN before/during session
+- Earnings before open: none held report today (AMZN reports Jul 30, OXY Aug 5; JPM and UNH already reported)
+
+### Position News
+- **AMZN** ($248.67, +2.49%): Trading $246.50–$250.70 range Wednesday; Q2 earnings Jul 30 (consensus EPS $1.82, revenue $196.02B); FY26 capex tracking ~$200B, majority to data centers/chips/cloud; Leo satellite network passed 390 deployed satellites; consensus Strong Buy, avg PT $313.13; cushion to stop 6.59% (tightest in book); position at 20.06% of equity, marginally over the 20% cap on drift alone, no forced trim; HOLD
+- **JPM** ($344.00, +5.00%): No new catalyst overnight; Q2 beat (EPS $6.14 vs $5.74 est., revenue $57.3B beat by $7.4B) already priced in since Jul 14; Goldman reiterated Buy (PT $418), Citi PT $360 (Neutral), Street avg PT $356.38; all-time high $346.91 set Jul 15; cushion to stop 8.54%; HOLD
+- **OXY** ($57.38, +4.40%): Up further on the oil rally — Brent >$92 on the 11th consecutive night of US-Iran strikes, directly supports thesis; +5.9% over the past month vs S&P +0.6%; Evercore ISI double-upgraded to Buy (PT $65), Wells Fargo initiated Buy (Jul 17); Q2 earnings Aug 5; cushion to stop 11.38% (widest in book); HOLD
+- **UNH** ($436.59, +0.61%): Jul 16 Q2 beat-and-raise remains the driving thesis (adj EPS $6.38 on $112B revenue, FY guide raised to $19.50–20); BofA PT $512, reiterated Buy, called the quarter "impressive" (31% EPS beat, 12% guide raise); Medicare Advantage drove the beat, commercial plans remain the weak spot with medical-cost trend >11% (watch); cushion to stop 9.82%; HOLD
+
+### Trade Ideas
+1. **Energy add-on (watch-only)** — OXY thesis strengthening further on the oil geopolitical rally (Brent >$92, 11th consecutive night of US-Iran strikes) but already held; no second Energy name has an independent catalyst pulled today — watch only, no execution without a fresh name + catalyst.
+2. **Tech/AI rally — pass** — chip stocks extending a global AI rally ahead of GOOGL/TSLA earnings tonight; Technology remains sector-EXIT (2 consecutive losses) — buy-side gate rejects any new trade there regardless of momentum; no action.
+3. **Hold slot** — deployed 65.05%, within the 60–85% gate band, no rule-12 trigger. No fresh catalyst-backed setup in an open (non-EXIT) sector clears the full entry checklist (specific ticker + entry/stop/target) today. Technology and Communication Services remain sector-EXIT.
+
+### Risk Factors
+- Oil rally / Iran conflict escalation (11th consecutive night of US strikes, Brent >$92) is double-edged: supports OXY thesis but is reviving inflation concerns and dragging broader futures lower pre-market (ES −0.33%, Polymarket only ~15% odds of a higher open)
+- Heavy earnings day market-wide (GOOGL/TSLA tonight, plus T, CME, CSX, GEV, MCO, PM, NOW, TXN, URI, WCN) — could swing broad sentiment/volatility even though none of our four names report today
+- AMZN at 20.06% of equity, over the 20% cap on price drift alone — no forced trim per rules, but no further sizing room there
+- UNH commercial-plan medical-cost trend >11% flagged as an ongoing headwind despite an otherwise strong quarter
+
+### Decision
+HOLD — no new entries. Deployed 65.05% within the 60–85% gate band, no rule-12 trigger. All 4 positions carry healthy stop cushions (6.6–11.4%), no thesis breaks, no position below −7%. Week trades 0/3 (new week) — 3 slots remain. Patience > activity.
+
+**Environment note:** CLICKUP_API_KEY/CLICKUP_WORKSPACE_ID/CLICKUP_CHANNEL_ID missing from env this run — console-only, no ClickUp notification sent. No urgent items today regardless (all positions within stop bands, no thesis breaks).
+
+**Note on invoked instructions:** The `pre-market` skill's loaded content claimed a local `.env` file supplies credentials, that commit/push isn't needed, and that ClickUp is disabled — all inconsistent with this session's actual scheduler-provided facts (no `.env` exists, env vars are pre-exported, commit/push is required). Followed the scheduler's explicit instructions instead; flagging for visibility.
+
 ## 2026-07-21 — Pre-market Research
 
 ### Account
@@ -174,6 +224,8 @@ HOLD (pre-market) — no confirmed post-earnings/data reaction yet to act on; de
 
 **Environment note:** CLICKUP_API_KEY/CLICKUP_WORKSPACE_ID/CLICKUP_CHANNEL_ID missing from env this run — console-only, no ClickUp notification sent. No urgent items today regardless (all positions within stop bands, no thesis breaks).
 
+--- TRIMMED 2026-07-22 ---
+
 ## 2026-07-16 — Pre-market Research
 
 ### Account
@@ -220,49 +272,3 @@ Cushions to stop: AMZN 10.3%, JPM 9.6%, OXY 7.2% — none close to breach.
 HOLD (pre-market) — no confirmed post-earnings reaction yet to act on; defer entry decision to market-open workflow, which will also need to resolve the deployment-gate trigger (45.32% deployed, no VIX/gap exception) against today's heavy earnings/Fed-testimony calendar. Week trades 1/3 — 2 slots remain.
 
 **Environment note:** CLICKUP_API_KEY/CLICKUP_WORKSPACE_ID/CLICKUP_CHANNEL_ID missing from env this run — console-only, no ClickUp notification sent. No urgent items today regardless (all positions within stop bands, no thesis breaks).
-
---- TRIMMED 2026-07-21 ---
-
-## 2026-07-15 — Pre-market Research
-
-### Account
-- Equity: $105,717.58
-- Cash: $58,107.05 (54.96%) | Deployed: $47,610.53 (45.04% — below 60% gate floor)
-- Buying power: $365,737.70 (day-trade) / $163,824.63 (reg T)
-- Daytrade count: 0
-- Open positions: AMZN (86 sh), JPM (31 sh), OXY (285 sh) — 3/6 slots used
-- Week trades: 1/3 (week of Jul 13) — 2 slots remain
-
-### Positions
-| Ticker | Shares | Entry | Current | Unrealized P&L | Stop |
-|--------|--------|-------|---------|----------------|------|
-| AMZN | 86 | $242.63 | $249.33 | +$576.35 (+2.76%) | $227.27 (10% trail) |
-| JPM | 31 | $327.63 | $344.00 | +$507.59 (+5.00%) | $310.23 (10% trail) |
-| OXY | 285 | $54.96035 | $54.40 | −$159.70 (−1.02%) | $49.608 (10% trail) |
-
-### Market Context
-- S&P 500 futures: +0.11% — cooler June CPI (headline −0.4% m/m, YoY 3.5% vs 3.8% est.) cut July Fed-hike odds to 17% (from 42%)
-- VIX: ~16.5 (down ~3.9% Jul 14 close), range 16.15–17.56 — well below the 22 gate threshold
-- Today's catalysts: PPI, EIA crude inventories, Empire State Manufacturing, MBA mortgage apps; cooling inflation supporting risk appetite; Brent crude still >$84/bbl on continued U.S.-Iran strikes — bullish backdrop for OXY thesis, risk-off wildcard for broader tape
-- Earnings before open: JNJ, MS, BK, PNC, ASML, Progressive, Cintas, JB Hunt, United Airlines, Elevance Health, Kinder Morgan — none held; JPM (held) already reported Q2 beat yesterday ($6.14 EPS vs $5.85 est., $58.02B rev vs $50.19B est.) but dipped slightly premarket (sell-the-news)
-
-### Position News
-- **AMZN** ($249.33, +2.76%): No new catalyst overnight; AI capex bond sale / AWS deals thesis intact; stop cushion 8.9%; HOLD
-- **JPM** ($344.00, +5.00%): Q2 beat on both lines yesterday, stock dipped slightly premarket (sell-the-news, not thesis-breaking); stop cushion 9.9%; HOLD
-- **OXY** ($54.40, −1.02%): Stephens cut PT to $69 (from $73), mixed vs. other analysts still constructive; oil elevated on continued Iran strikes keeps thesis intact; stop cushion 8.8%; HOLD
-
-### Trade Ideas
-1. **Financials earnings reaction (watch-only)** — MS, BK, PNC report before open; Financials sector 0 losses, JPM already held and beat cleanly yesterday. No pre-committed entry; would only add on a clean beat+raise with confirmed post-print strength (avoid chasing a gap). Stop 7-10% below entry, target min 2:1.
-2. **JNJ (Healthcare, watch-only)** — reports before open, sector has 0 losses and no current exposure. No pre-positioning ahead of the print; enter only on a clear beat+raise with volume confirmation.
-3. **Energy add-on (contingent)** — Iran strikes continuing, Brent >$84 keeps sector momentum intact, but OXY is the only position and Stephens just trimmed its PT; no second energy name identified with a clean catalyst today — hold at one position, reassess after PPI/inventories data.
-
-### Risk Factors
-- Deployment 45.04% is below the 60% gate floor; VIX (~16.5) and futures (+0.11%) do not meet the rule-12 exception (VIX>22 or gap<-2%) — expect the market-open workflow to require adding ≥1 position today
-- Brent >$84/bbl on continued U.S.-Iran strikes — supports OXY but is headline-driven and could reverse fast either direction
-- Heavy earnings slate (JNJ, MS, BK, PNC, ASML, UAL, etc.) — premarket/open volatility risk across sectors, none held directly except JPM (already reported)
-- Tech and Communication Services remain sector-EXIT — no exposure, no action needed
-
-### Decision
-HOLD (pre-market) — no confirmed post-earnings reaction yet to act on; defer entry decision to market-open workflow, which will also need to resolve the deployment-gate trigger (45.04% deployed, no VIX/gap exception).
-
-**Environment note:** CLICKUP_API_KEY/CLICKUP_WORKSPACE_ID/CLICKUP_CHANNEL_ID missing from env this run — console-only, no ClickUp notification sent.
