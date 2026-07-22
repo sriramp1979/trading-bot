@@ -969,3 +969,16 @@ Market holiday (next open 2026-07-06 Mon). All positions unchanged (change_today
 
 **Environment note:** CLICKUP_API_KEY/CLICKUP_WORKSPACE_ID/CLICKUP_CHANNEL_ID missing from env this run — no trades fired so STEP 7 is a no-op regardless.
 ## 2026-07-22 midday — All within band, no action
+
+### Jul 22 — EOD Snapshot (Day 41, Wednesday)
+**Portfolio:** $106,098.12 | **Cash:** $37,276.59 (35.14%) | **Day P&L:** −$199.37 (−0.19%) | **Phase P&L:** +$6,098.12 (+6.10%)
+| Ticker | Shares | Entry | Close | Day Chg | Unrealized P&L | Stop |
+|--------|--------|-------|-------|---------|----------------|------|
+| AMZN | 86 | $242.63 | $244.31 | −1.31% | +$144.48 (+0.69%) | $232.27425 (10% trail, HWM $258.0825) |
+| JPM | 31 | $327.626129 | $348.77 | +1.03% | +$655.46 (+6.45%) | $314.622 (10% trail, HWM $349.58) |
+| OXY | 285 | $54.960351 | $57.40 | +1.59% | +$695.30 (+4.44%) | $52.038 (10% trail, HWM $57.82) |
+| UNH | 48 | $433.93875 | $430.00 | −1.46% | −$189.06 (−0.91%) | $393.723 (10% trail, HWM $437.47) |
+
+**Notes:** No trades today — market-open and midday both called HOLD (deployed ~65%, within band, no rule-12 trigger). OXY's stop advanced to $52.038 on a fresh HWM of $57.82; AMZN eased back under the 20% single-position cap to 19.81% of equity. UNH remains the lone laggard (−0.91%), well clear of its $393.72 stop.
+
+**Environment note:** CLICKUP_API_KEY/CLICKUP_WORKSPACE_ID/CLICKUP_CHANNEL_ID missing from env this run — console-only, no ClickUp notification sent.
