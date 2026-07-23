@@ -983,3 +983,15 @@ Market holiday (next open 2026-07-06 Mon). All positions unchanged (change_today
 
 **Environment note:** CLICKUP_API_KEY/CLICKUP_WORKSPACE_ID/CLICKUP_CHANNEL_ID missing from env this run — console-only, no ClickUp notification sent.
 ## 2026-07-23 midday — All within band, no action
+
+### Jul 23 — EOD Snapshot (Day 42, Thursday)
+**Portfolio:** $104,823.70 | **Cash:** $57,252.67 (54.62%) | **Day P&L:** −$1,274.42 (−1.20%) | **Phase P&L:** +$4,823.70 (+4.82%)
+| Ticker | Shares | Entry | Close | Day Chg | Unrealized P&L | Stop |
+|--------|--------|-------|-------|---------|----------------|------|
+| JPM | 31 | $327.626129 | $349.65 | +0.41% | +$682.74 (+6.72%) | $314.928 (10% trail, HWM $349.92) |
+| OXY | 285 | $54.960351 | $57.6417 | +0.25% | +$764.18 (+4.88%) | $53.091 (10% trail, HWM $58.99) |
+| UNH | 48 | $433.93875 | $423.00 | −1.93% | −$525.06 (−2.52%) | $393.723 (10% trail, HWM $437.47) |
+
+**Notes:** AMZN's 10% GTC trailing stop triggered at 11:18 ET, filled 86 sh @ $232.28 (HWM $258.08) — realized loss ≈ −$890 (−4.27%); auto-exit, not a discretionary trade, week trades still 0/3. Deployed capital fell to 45.38%, below the 75-85% target band — flag for tomorrow's pre-market research. JPM/OXY still leading gains; UNH is the lone laggard but clear of its stop.
+
+**Environment note:** CLICKUP_API_KEY/CLICKUP_WORKSPACE_ID/CLICKUP_CHANNEL_ID missing from env this run — console-only, no ClickUp notification sent.
