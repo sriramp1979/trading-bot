@@ -918,6 +918,8 @@ Market holiday (next open 2026-07-06 Mon). All positions unchanged (change_today
 
 **Environment note:** CLICKUP_API_KEY/CLICKUP_WORKSPACE_ID/CLICKUP_CHANNEL_ID missing from env this run — console-only, no ClickUp notification sent.
 
+## Week of 2026-07-20 | Trades: 1/3
+
 ## 2026-07-21 — market-open (no new trades)
 
 **Decision:** HOLD — no new entries. Per today's pre-market research: deployed 64.60%, within the 60-85% gate band, no rule-12 trigger. No fresh catalyst-backed setup in an open (non-EXIT) sector clears the entry checklist. Technology and Communication Services remain sector-EXIT. Week trades 0/3 (week of Jul 20) — 3 slots remain.
@@ -995,3 +997,23 @@ Market holiday (next open 2026-07-06 Mon). All positions unchanged (change_today
 **Notes:** AMZN's 10% GTC trailing stop triggered at 11:18 ET, filled 86 sh @ $232.28 (HWM $258.08) — realized loss ≈ −$890 (−4.27%); auto-exit, not a discretionary trade, week trades still 0/3. Deployed capital fell to 45.38%, below the 75-85% target band — flag for tomorrow's pre-market research. JPM/OXY still leading gains; UNH is the lone laggard but clear of its stop.
 
 **Environment note:** CLICKUP_API_KEY/CLICKUP_WORKSPACE_ID/CLICKUP_CHANNEL_ID missing from env this run — console-only, no ClickUp notification sent.
+
+## 2026-07-24 — market-open trades
+
+| Field | OXY (add-on) |
+|-------|--------------|
+| Side | Buy |
+| Shares | 70 |
+| Entry | $57.56 |
+| Stop | $51.777 (10% GTC trail, HWM $57.53) — new-lot stop; existing 285-sh stop ($53.091, HWM $58.99) unchanged |
+| Thesis | Brent crude above $100/bbl (first time in 2 months) on Mideast escalation (projectile struck Qatar-owned LNG carrier near Oman); Evercore Jul 8 Outperform upgrade, PT $65 |
+| Target | $65 (Evercore PT) |
+| R:R | ~2:1 (risk $5.78/sh to trail stop vs. $7.44/sh reward to target) |
+
+**Decision:** BUY — deployment gate (rule 12) triggered: deployed 45.37% at pre-market, below the 60% floor, VIX 18.70 (<22) and futures +0.2% (not <−2%), no exception met. OXY was the strongest catalyst-backed candidate (Energy sector, 0 consecutive losses, OK status); JPM add-on considered as fallback but skipped — see below. Position sized to keep total OXY position at 19.52% of equity, under the 20% cap.
+
+**JPM skipped:** live quote showed an abnormal ~10% bid/ask spread (bp $332.50 / ap $368.85, both re-queried 3s apart, unchanged) vs. a liquid mega-cap norm of pennies — treated as a bad/stale quote per the "skip if spread is wide or halted" check and not traded. JPM's existing 31-sh position and stop are untouched.
+
+**Post-trade snapshot:** Equity $104,687.28 (pre-fill) | Cash → ~$53,223 | OXY total 355 sh, blended avg entry $55.472958 | Deployed rises to ~50.2% (still below 60-85% band but gate satisfied — ≥1 position added this session; remaining gap constrained by the 20%-per-position cap and no other cleared setup today).
+
+**Environment note:** CLICKUP_API_KEY/CLICKUP_WORKSPACE_ID/CLICKUP_CHANNEL_ID missing from env this run — trade summary printed to console only, no ClickUp notification sent.

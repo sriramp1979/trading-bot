@@ -6,7 +6,7 @@
 | Technology | — | 2 | EXIT |
 | Healthcare | — | 0 | OK |
 | Communication Services | — | 2 | EXIT |
-| Consumer Discretionary | AMZN | 0 | OK |
+| Consumer Discretionary | — | 1 | OK |
 | Financials | JPM | 0 | OK |
 | Consumer Staples | — | 1 | OK |
 | Energy | OXY | 0 | OK |
