@@ -228,3 +228,64 @@ Template for each entry:
 
 ### Overall Grade: C
 *Portfolio −0.34% vs S&P +0.93% = −1.27% relative. 4-day holiday-shortened week, no closed trades, 1 entry. Individual positions constructive (NVO leading, LLY/AMZN stable, GOOGL near entry). Tech concentration hurt on FOMC day. Process B (stops managed, gap corrected, gate triggered correctly); deployment C− (65.9% — improving trend but still below target for 4th straight week). Net C.*
+
+---
+
+## Week ending 2026-07-24
+
+### Stats
+| Metric | Value |
+|--------|-------|
+| Starting portfolio | $105,132.91 (Jul 17 EOD) |
+| Ending portfolio | $104,709.24 |
+| Week return | −$423.67 (−0.40%) |
+| S&P 500 week | ~−0.61% (7,457.69 → ~7,412) |
+| Bot vs S&P | +0.21% |
+| Phase P&L | +$4,709.24 (+4.71% from $100,000) |
+| Trades | 1 new entry (OXY add-on) (W:0 / L:1 / open:3) |
+| Win rate | 0% (0 of 1 closed trades) |
+| Best trade | N/A — no winning trades this week |
+| Worst trade | AMZN −4.27% (realized, GTC stop-out) |
+| Profit factor | 0.00 ($0 / $890) |
+| Deployment at week end | ~50.8% ($53,223 cash) — below 60% gate floor |
+
+### Closed Trades
+| Ticker | Entry | Exit | P&L | Notes |
+|--------|-------|------|-----|-------|
+| AMZN | $242.63 | $232.28 | −$890 (−4.27%) | 10% GTC trailing stop triggered Jul 23, 11:18 ET (HWM $258.08); auto-exit, not discretionary; Consumer Discretionary 1st loss in sector, Status stays OK |
+
+### Open Positions at Week End
+| Ticker | Entry | Close | Unrealized | Stop |
+|--------|-------|-------|------------|------|
+| JPM | $327.63 | $353.19 | +$792.37 (+7.80%) | $318.033 (10% trail, HWM $353.37) |
+| OXY | $55.47 (blended, 355sh) | $57.30 | +$648.60 (+3.29%) | 285sh $53.091 (HWM $58.99) + 70sh $52.137 (HWM $57.93) |
+| UNH | $433.94 | $420.74 | −$633.54 (−3.04%) | $393.723 (10% trail, HWM $437.47) |
+
+### What Worked
+- OXY add-on (Jul 24) correctly triggered by the deployment gate (rule 12) when deployment fell below 60% — catalyst-backed (Brent >$100/bbl, Evercore PT $65), not a forced/random fill
+- Both Jul 14 stop-outs (LLY, NVO) and the Jul 23 AMZN stop-out were profitable or loss-limiting GTC exits — trailing-stop discipline worked with zero manual intervention
+- Zero Technology/Communication Services exposure meant the portfolio was fully insulated from this week's Mag7 sell-off (GOOGL −7%, TSLA −14%, ~$800B wiped from Mag7 Thursday) — the sector-EXIT gate did exactly its job
+- Bad-quote detection caught JPM's abnormal ~10% bid/ask spread on Jul 24 and correctly skipped that add rather than trading on stale data
+- JPM remains the standout performer, +7.80% unrealized, stop ratcheting correctly
+
+### What Didn't Work
+- Deployment ended the week at ~50.8%, well below the 75–85% target — AMZN's Jul 23 stop-out freed ~$21K that only got half-redeployed (OXY add-on) before the week closed
+- UNH continues as a persistent laggard (−3.0% to −3.1% most of the week) on a stale thesis (last fresh catalyst was the Jul 16 print) — no re-underwrite done this week
+- Only 1/3 weekly trade slots used; JPM add was skipped for a valid reason (bad quote) but no backup name was queued, so the slot went unused instead of redeployed elsewhere
+- Nominal week was negative (−0.40%) — outperformance vs. S&P was real but small, not enough to offset the deployment drag
+
+### Key Lessons
+- The deployment gate is reactive (fires only after a stop-out drops cash below 60%), not preventive — cash re-accumulates from stop-outs faster than it gets redeployed same-week
+- Sector-EXIT status is now proving its value defensively: sitting out Tech/Comm Services turned this week's biggest market story (AI-capex-driven Mag7 rout) into a non-event for the portfolio
+- A rejected trade (bad quote, wide spread) should trigger an immediate search for a backup candidate in the same session, not just a pass
+
+### Adjustments for Next Week
+- **Sector reset (SECTOR-LOG.md):** Technology and Communication Services both EXIT for 4+ weeks with zero new trades in-sector — reset both to Status = OK, Consecutive Losses = 0, per the 2-week reset rule. Approach any new entries there with normal scrutiny; this week's Mag7 selloff (GOOGL, TSLA post-earnings) is a live risk factor to weigh on any fresh Tech/Comm Services setup, not a reason to keep the gate closed indefinitely.
+- Push deployment back toward 75–85%: identify 1–2 fresh catalyst-backed names early next week; 2/3 weekly slots remain open from this week's allotment reset
+- Re-underwrite UNH — if no fresh catalyst clears by midweek and it drifts toward −7%, treat the manual-cut rule as the default rather than holding on a stale thesis
+- If a trade is skipped for a data-quality reason (bad quote, wide spread), immediately scan for a same-sector or comparable backup in the same session
+
+### Overall Grade: C+
+*Portfolio −0.40% vs S&P ~−0.61% = +0.21% relative — a rare outperforming week, but on a down tape, not a strong one. Process solid: gate triggered correctly, stops behaved, bad quote correctly rejected, sector-EXIT discipline paid off by fully avoiding the week's Mag7 selloff. Deployment remains the chronic weak spot (~51%, well under target) and UNH is due for a thesis re-check. Net C+.*
+
+**Environment note:** CLICKUP_API_KEY/CLICKUP_WORKSPACE_ID/CLICKUP_CHANNEL_ID all missing from env this run — Step 6 ClickUp alert could not be sent; summary delivered via direct notification instead, matching the pattern flagged in this week's daily research/trade log entries.
