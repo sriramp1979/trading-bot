@@ -1017,3 +1017,16 @@ Market holiday (next open 2026-07-06 Mon). All positions unchanged (change_today
 **Post-trade snapshot:** Equity $104,687.28 (pre-fill) | Cash → ~$53,223 | OXY total 355 sh, blended avg entry $55.472958 | Deployed rises to ~50.2% (still below 60-85% band but gate satisfied — ≥1 position added this session; remaining gap constrained by the 20%-per-position cap and no other cleared setup today).
 
 **Environment note:** CLICKUP_API_KEY/CLICKUP_WORKSPACE_ID/CLICKUP_CHANNEL_ID missing from env this run — trade summary printed to console only, no ClickUp notification sent.
+
+### Jul 24 — EOD Snapshot (Day 43, Friday)
+**Portfolio:** $104,693.86 | **Cash:** $53,223.44 (50.84%) | **Day P&L:** −$129.84 (−0.12%) | **Phase P&L:** +$4,693.86 (+4.69%)
+
+| Ticker | Shares | Entry | Close | Day Chg | Unrealized P&L | Stop |
+|--------|--------|-------|-------|---------|----------------|------|
+| JPM | 31 | $327.626129 | $353.10 | +0.91% | +$789.69 (+7.78%) | $318.033 (10% trail, HWM $353.37) |
+| OXY | 355 | $55.472958 | $57.30 | −0.52% | +$648.60 (+3.29%) | $53.091/285sh (HWM $58.99), $52.137/70sh (HWM $57.93) |
+| UNH | 48 | $433.93875 | $420.4755 | −0.73% | −$646.24 (−3.10%) | $393.723 (10% trail, HWM $437.47) |
+
+**Notes:** Added 70 sh OXY at market open on the deployment-gate trigger (rule 12), blending the position to 355 sh at avg $55.47; deployed capital is ~49.2%, still below the 75-85% target band. JPM continues to lead with +7.78% unrealized while UNH is the lone laggard, well clear of its trailing stop. Week trades stand at 1/3 (week of Jul 20).
+
+**Environment note:** CLICKUP_API_KEY/CLICKUP_WORKSPACE_ID/CLICKUP_CHANNEL_ID missing from env this run — console-only, no ClickUp notification sent.
