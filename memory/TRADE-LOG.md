@@ -1031,3 +1031,14 @@ Market holiday (next open 2026-07-06 Mon). All positions unchanged (change_today
 
 **Environment note:** CLICKUP_API_KEY/CLICKUP_WORKSPACE_ID/CLICKUP_CHANNEL_ID missing from env this run — console-only, no ClickUp notification sent.
 ## 2026-07-27 midday — All within band, no action
+
+### Jul 27 — EOD Snapshot (Day 44, Monday)
+**Portfolio:** $103,801.79 | **Cash:** $53,223.43 (51.27%) | **Day P&L:** −$892.07 (−0.85%) | **Phase P&L:** +$3,801.79 (+3.80%)
+
+| Ticker | Shares | Entry | Close | Day Chg | Unrealized P&L | Stop |
+|--------|--------|-------|-------|---------|----------------|------|
+| JPM | 31 | $327.626129 | $356.18 | +0.84% | +$885.17 (+8.72%) | $323.145 (10% trail, HWM $359.05) |
+| OXY | 355 | $55.472958 | $54.98 | −4.05% | −$175.00 (−0.89%) | $53.091/285sh (HWM $58.99), $52.137/70sh (HWM $57.93) |
+| UNH | 48 | $433.93875 | $417.06 | −0.88% | −$810.18 (−3.89%) | $393.723 (10% trail, HWM $437.47) |
+
+**Notes:** No trades today; midday scan found all positions within band, no stop or trim actions taken. OXY dropped sharply intraday (−4.05%) narrowing its blended unrealized gain to −0.89%, while JPM continues to lead at +8.72% unrealized. Deployed capital ~48.7% of equity (below 75-85% band); week trades stand at 1/3 (week of Jul 20).
