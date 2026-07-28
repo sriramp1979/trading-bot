@@ -1061,3 +1061,14 @@ Market holiday (next open 2026-07-06 Mon). All positions unchanged (change_today
 
 **Note on invoked instructions:** The `market-open` skill's loaded content this run again claimed a local `.env` file supplies credentials, that commit/push isn't needed, and that ClickUp is disabled — inconsistent with this session's actual scheduler-provided facts (no `.env` exists here, env vars are pre-exported process vars, commit/push is required for changes to persist). Followed the scheduler's explicit instructions instead.
 ## 2026-07-28 midday — All within band, no action
+
+### Jul 28 — EOD Snapshot (Day 45, Tuesday)
+**Portfolio:** $103,793.58 | **Cash:** $53,223.43 (51.28%) | **Day P&L:** −$8.21 (−0.01%) | **Phase P&L:** +$3,793.58 (+3.79%)
+
+| Ticker | Shares | Entry | Close | Day Chg | Unrealized P&L | Stop |
+|--------|--------|-------|-------|---------|----------------|------|
+| JPM | 31 | $327.626129 | $357.35 | +0.32% | +$921.44 (+9.07%) | $323.37 (10% trail, HWM $359.30) |
+| OXY | 355 | $55.472958 | $54.00 | −1.69% | −$522.90 (−2.66%) | $53.091/285sh (HWM $58.99), $52.137/70sh (HWM $57.93) |
+| UNH | 48 | $433.93875 | $423.3813 | +1.38% | −$506.76 (−2.43%) | $393.723 (10% trail, HWM $437.47) |
+
+**Notes:** No trades today; market-open skipped on a bad/stale JPM quote and midday scan found all positions within band. Portfolio essentially flat on the day (−0.01%) as JPM's gain offset OXY/UNH softness; deployed capital ~48.7%, still below the 75-85% target band. Week trades stand at 0/3 (week of Jul 27).
