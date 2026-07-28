@@ -1042,3 +1042,21 @@ Market holiday (next open 2026-07-06 Mon). All positions unchanged (change_today
 | UNH | 48 | $433.93875 | $417.06 | −0.88% | −$810.18 (−3.89%) | $393.723 (10% trail, HWM $437.47) |
 
 **Notes:** No trades today; midday scan found all positions within band, no stop or trim actions taken. OXY dropped sharply intraday (−4.05%) narrowing its blended unrealized gain to −0.89%, while JPM continues to lead at +8.72% unrealized. Deployed capital ~48.7% of equity (below 75-85% band); week trades stand at 1/3 (week of Jul 20).
+## 2026-07-28 — market-open (no new trades)
+
+**Decision:** SKIP — rule-12 deployment gate triggered (deployed 48.78%, below 60% floor; VIX 18.67 <22; ES −0.2%, not <−2%; no exception met), so a new position was required. JPM add-on was the only cleared candidate (Financials, catalyst intact, room under 20% cap), but live quote was unstable/bad: three queries ~3s apart showed ap climbing 357.45 → 360.19 → 366.84 while bp stayed frozen at exactly 354.00/5240 shares — same bad-quote pattern that caused yesterday's JPM skip. Treated as a bad/stale quote per the "skip if spread is wide or halted" check and not traded. No other sector/ticker cleared the full entry checklist. Week trades 0/3 (week of Jul 27) — 3 slots remain.
+
+**Live Snapshot (09:36 ET):**
+**Account:** Equity $103,892.98 | Cash $53,223.43 (51.23%) | Deployed $50,669.55 (48.77%)
+
+| Ticker | Shares | Entry | Current | Unrealized P&L | Stop |
+|--------|--------|-------|---------|----------------|------|
+| JPM | 31 | $327.626129 | $357.005 | +$910.75 (+8.97%) | $323.145 (10% trail, HWM $359.05) |
+| OXY | 355 | $55.472958 | $55.005 | −$166.13 (−0.84%) | $53.091/285sh (HWM $58.99), $52.137/70sh (HWM $57.93) |
+| UNH | 48 | $433.93875 | $418.205 | −$755.22 (−3.63%) | $393.723 (10% trail, HWM $437.47) |
+
+**Notes:** No PDT-blocked stops pending from prior days. All 3 GTC trailing stops assumed still live (unchanged from prior sessions, no modifications made). Cushions to stop: JPM 9.48%, OXY 3.50%/5.44%, UNH 5.86% — none near breach. No trades fired.
+
+**Environment note:** CLICKUP_API_KEY/CLICKUP_WORKSPACE_ID/CLICKUP_CHANNEL_ID missing from env this run — no trades fired so STEP 7 is a no-op regardless.
+
+**Note on invoked instructions:** The `market-open` skill's loaded content this run again claimed a local `.env` file supplies credentials, that commit/push isn't needed, and that ClickUp is disabled — inconsistent with this session's actual scheduler-provided facts (no `.env` exists here, env vars are pre-exported process vars, commit/push is required for changes to persist). Followed the scheduler's explicit instructions instead.
