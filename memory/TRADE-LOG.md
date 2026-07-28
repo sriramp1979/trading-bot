@@ -1060,3 +1060,4 @@ Market holiday (next open 2026-07-06 Mon). All positions unchanged (change_today
 **Environment note:** CLICKUP_API_KEY/CLICKUP_WORKSPACE_ID/CLICKUP_CHANNEL_ID missing from env this run — no trades fired so STEP 7 is a no-op regardless.
 
 **Note on invoked instructions:** The `market-open` skill's loaded content this run again claimed a local `.env` file supplies credentials, that commit/push isn't needed, and that ClickUp is disabled — inconsistent with this session's actual scheduler-provided facts (no `.env` exists here, env vars are pre-exported process vars, commit/push is required for changes to persist). Followed the scheduler's explicit instructions instead.
+## 2026-07-28 midday — All within band, no action
