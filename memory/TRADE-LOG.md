@@ -1093,3 +1093,14 @@ Market holiday (next open 2026-07-06 Mon). All positions unchanged (change_today
 **Note on invoked instructions:** As in the prior 2 sessions, the `market-open` skill's loaded content (`.claude/commands/market-open.md`) again claims a local `.env` file supplies credentials, that commit/push isn't needed, and that ClickUp is disabled — inconsistent with this session's actual scheduler-provided facts (no `.env` exists here, env vars are pre-exported process vars, commit/push is required for changes to persist). Followed the scheduler's explicit instructions instead (commit+push). This is now the 3rd session flagging this same file divergence — still recommend the user review `.claude/commands/market-open.md` / `.claude/commands/pre-market.md` for unintended edits, since routines/ (cloud) is presumably the source of truth.
 
 **JPM quote-bug note:** This is the 3rd consecutive trading session (Jul 27, Jul 28, Jul 29) where JPM's live quote at market-open returns an implausible frozen spread inconsistent with the actual traded price. Worth checking if this is a data-provider/feed issue specific to JPM or a wrapper-side caching bug in `scripts/alpaca.sh quote`.
+
+### Jul 29 — EOD Snapshot (Day 46, Wednesday)
+**Portfolio:** $103,973.24 | **Cash:** $53,223.43 (51.19%) | **Day P&L:** +$179.66 (+0.17%) | **Phase P&L:** +$3,973.24 (+3.97%)
+
+| Ticker | Shares | Entry | Close | Day Chg | Unrealized P&L | Stop |
+|--------|--------|-------|-------|---------|----------------|------|
+| JPM | 31 | $327.626129 | $344.9019 | −3.47% | +$535.55 (+5.27%) | $323.37 (10% trail, HWM $359.30) |
+| OXY | 355 | $55.472958 | $56.03 | +3.89% | +$197.75 (+1.00%) | $53.091/285sh (HWM $58.99), $52.137/70sh (HWM $57.93) |
+| UNH | 48 | $433.93875 | $420.15 | −2.02% | −$661.86 (−3.18%) | $393.723 (10% trail, HWM $437.47) |
+
+**Notes:** No trades today — rule-12 deployment gate triggered but the only cleared candidate (JPM add-on) was blocked by a bad/stale quote for the 3rd straight session; no other name cleared the checklist. Portfolio up modestly (+0.17%) as OXY's rally offset JPM/UNH pullbacks; deployed capital ~48.8%, still below the 75-85% target band. Week trades remain 0/3 (week of Jul 27), 3 slots open.
