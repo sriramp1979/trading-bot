@@ -1072,3 +1072,24 @@ Market holiday (next open 2026-07-06 Mon). All positions unchanged (change_today
 | UNH | 48 | $433.93875 | $423.3813 | +1.38% | −$506.76 (−2.43%) | $393.723 (10% trail, HWM $437.47) |
 
 **Notes:** No trades today; market-open skipped on a bad/stale JPM quote and midday scan found all positions within band. Portfolio essentially flat on the day (−0.01%) as JPM's gain offset OXY/UNH softness; deployed capital ~48.7%, still below the 75-85% target band. Week trades stand at 0/3 (week of Jul 27).
+
+## 2026-07-29 — market-open (no new trades)
+
+**Decision:** SKIP — rule-12 deployment gate triggered (deployed 49.21%, below 60% floor; VIX 19.05 <22; ES +0.18%, not <−2%; no exception met), so a new position was required. JPM add-on was the only cleared candidate (Financials, catalyst intact, most headroom under the 20% cap), but the live quote was bad/stale for the 3rd consecutive session: two queries ~4s apart both returned the identical frozen ap 374.83 / bp 338.67 (a ~9.6% spread on a stock trading ~$357 per the positions endpoint), unmoved between calls — same pattern that caused the Jul 27 and Jul 28 skips. Treated as a bad/stale quote per the "skip if spread is wide or halted" check and not traded. No other sector/ticker cleared the full entry checklist today (Technology remains sector-EXIT; no independent second name in today's research). Week trades 0/3 (week of Jul 27) — 3 slots remain.
+
+**Live Snapshot (09:37 ET):**
+**Account:** Equity $104,797.75 | Cash $53,223.43 (50.79%) | Deployed $51,574.32 (49.21%)
+
+| Ticker | Shares | Entry | Current | Unrealized P&L | Stop |
+|--------|--------|-------|---------|----------------|------|
+| JPM | 31 | $327.626129 | $357.17 | +$915.86 (+9.02%) | $323.37 (10% trail, HWM $359.30) |
+| OXY | 355 | $55.472958 | $55.95 | +$169.35 (+0.86%) | $53.091/285sh (HWM $58.99), $52.137/70sh (HWM $57.93) |
+| UNH | 48 | $433.93875 | $429.70 | −$203.46 (−0.98%) | $393.723 (10% trail, HWM $437.47) |
+
+**Notes:** No PDT-blocked stops pending from prior days. All 3 GTC trailing stops assumed still live (unchanged from prior sessions, no modifications made). Cushions to stop: JPM 9.44%, OXY 5.11%/6.79%, UNH 8.42% — none near breach. No trades fired.
+
+**Environment note:** CLICKUP_API_KEY/CLICKUP_WORKSPACE_ID/CLICKUP_CHANNEL_ID missing from env this run — no trades fired so STEP 7 is a no-op regardless.
+
+**Note on invoked instructions:** As in the prior 2 sessions, the `market-open` skill's loaded content (`.claude/commands/market-open.md`) again claims a local `.env` file supplies credentials, that commit/push isn't needed, and that ClickUp is disabled — inconsistent with this session's actual scheduler-provided facts (no `.env` exists here, env vars are pre-exported process vars, commit/push is required for changes to persist). Followed the scheduler's explicit instructions instead (commit+push). This is now the 3rd session flagging this same file divergence — still recommend the user review `.claude/commands/market-open.md` / `.claude/commands/pre-market.md` for unintended edits, since routines/ (cloud) is presumably the source of truth.
+
+**JPM quote-bug note:** This is the 3rd consecutive trading session (Jul 27, Jul 28, Jul 29) where JPM's live quote at market-open returns an implausible frozen spread inconsistent with the actual traded price. Worth checking if this is a data-provider/feed issue specific to JPM or a wrapper-side caching bug in `scripts/alpaca.sh quote`.
