@@ -1104,3 +1104,4 @@ Market holiday (next open 2026-07-06 Mon). All positions unchanged (change_today
 | UNH | 48 | $433.93875 | $420.15 | −2.02% | −$661.86 (−3.18%) | $393.723 (10% trail, HWM $437.47) |
 
 **Notes:** No trades today — rule-12 deployment gate triggered but the only cleared candidate (JPM add-on) was blocked by a bad/stale quote for the 3rd straight session; no other name cleared the checklist. Portfolio up modestly (+0.17%) as OXY's rally offset JPM/UNH pullbacks; deployed capital ~48.8%, still below the 75-85% target band. Week trades remain 0/3 (week of Jul 27), 3 slots open.
+## 2026-07-30 midday — All within band, no action
