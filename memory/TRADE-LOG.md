@@ -1105,3 +1105,16 @@ Market holiday (next open 2026-07-06 Mon). All positions unchanged (change_today
 
 **Notes:** No trades today — rule-12 deployment gate triggered but the only cleared candidate (JPM add-on) was blocked by a bad/stale quote for the 3rd straight session; no other name cleared the checklist. Portfolio up modestly (+0.17%) as OXY's rally offset JPM/UNH pullbacks; deployed capital ~48.8%, still below the 75-85% target band. Week trades remain 0/3 (week of Jul 27), 3 slots open.
 ## 2026-07-30 midday — All within band, no action
+
+### Jul 30 — EOD Snapshot (Day 47, Thursday)
+**Portfolio:** $104,189.23 | **Cash:** $53,223.43 (51.08%) | **Day P&L:** +$215.99 (+0.21%) | **Phase P&L:** +$4,189.23 (+4.19%)
+
+| Ticker | Shares | Entry | Close | Day Chg | Unrealized P&L | Stop |
+|--------|--------|-------|-------|---------|----------------|------|
+| JPM | 31 | $327.626129 | $350.85 | +1.78% | +$719.94 (+7.09%) | $323.37 (10% trail, HWM $359.30) |
+| OXY | 355 | $55.472958 | $55.95 | −0.14% | +$169.35 (+0.86%) | $53.091/285sh (HWM $58.99), $52.137/70sh (HWM $57.93) |
+| UNH | 48 | $433.93875 | $421.40 | +0.20% | −$601.86 (−2.89%) | $393.723 (10% trail, HWM $437.47) |
+
+**Notes:** No trades today; midday scan found all positions within band. JPM rallied to lead unrealized gains (+7.09%), still below the +15% tighten-to-7% threshold; OXY and UNH little-changed. Week trades remain 0/3 (week of Jul 27); deployed capital ~48.9%, below the 75-85% target band.
+
+**Environment note:** CLICKUP_API_KEY/CLICKUP_WORKSPACE_ID/CLICKUP_CHANNEL_ID missing from env this run — console-only, no ClickUp notification sent.
