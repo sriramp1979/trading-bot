@@ -1118,3 +1118,24 @@ Market holiday (next open 2026-07-06 Mon). All positions unchanged (change_today
 **Notes:** No trades today; midday scan found all positions within band. JPM rallied to lead unrealized gains (+7.09%), still below the +15% tighten-to-7% threshold; OXY and UNH little-changed. Week trades remain 0/3 (week of Jul 27); deployed capital ~48.9%, below the 75-85% target band.
 
 **Environment note:** CLICKUP_API_KEY/CLICKUP_WORKSPACE_ID/CLICKUP_CHANNEL_ID missing from env this run — console-only, no ClickUp notification sent.
+
+## 2026-07-31 — market-open (no new trades)
+
+**Decision:** SKIP — rule-12 deployment gate triggered (deployed 48.92%, below 60% floor; VIX 17.09 <22; futures +0.5%, not <−2%; no exception met), so a new position was nominally required. JPM add-on was the only cleared candidate (Financials, catalyst intact, most headroom under the 20% cap), but the live quote was bad/stale for the 4th consecutive session: two queries ~1 min apart showed ap frozen at exactly 370.59 while bp jumped from 332.69 to 350.26 (5.8–10.8% spread on a stock trading ~$350.68 per the positions endpoint) — same instability pattern that caused the Jul 27/28/29 skips. Treated as a bad/stale quote per the "skip if spread is wide or halted" check and not traded. Technology (MSFT/AMZN) was today's other flagged idea — sector reset to OK on 07-24, and both names show clean, tight live quotes (MSFT spread $2.22/0.48%, AMZN spread $0.16/0.06%, neither halted) — but both are chasing an already-extended post-earnings gap (MSFT +16% in a single session Thursday); pre-market itself flagged this as conflicting with "patience > activity" and deferred rather than recommended, and no computed stop/target/R:R exists for either name. Not traded. No other sector/ticker cleared the full entry checklist today. Week trades 0/3 (week of Jul 27) — 3 slots remain.
+
+**Live Snapshot (09:38 ET):**
+**Account:** Equity $104,208.19 | Cash $53,223.43 (51.08%) | Deployed $50,984.76 (48.92%)
+
+| Ticker | Shares | Entry | Current | Unrealized P&L | Stop |
+|--------|--------|-------|---------|----------------|------|
+| JPM | 31 | $327.626129 | $350.68 | +$714.67 (+7.04%) | $323.37 (10% trail, HWM $359.30) |
+| OXY | 355 | $55.472958 | $56.24 | +$272.30 (+1.38%) | $53.091/285sh (HWM $58.99), $52.137/70sh (HWM $57.93) |
+| UNH | 48 | $433.93875 | $419.76 | −$680.58 (−3.27%) | $393.723 (10% trail, HWM $437.47) |
+
+**Notes:** No PDT-blocked stops pending from prior days. All 3 GTC trailing stops assumed still live (unchanged from prior sessions, no modifications made). Cushions to stop: JPM 7.79%, OXY 5.60%/7.29%, UNH 6.20% — none within 3% of stop, none near the −7% manual cut level. No trades fired.
+
+**Environment note:** CLICKUP_API_KEY/CLICKUP_WORKSPACE_ID/CLICKUP_CHANNEL_ID missing from env this run — no trades fired so STEP 7 is a no-op regardless.
+
+**Note on invoked instructions:** As in the prior 4 sessions, the `market-open` skill's loaded content (`.claude/commands/market-open.md`) again claims a local `.env` file supplies credentials, that commit/push isn't needed, and that ClickUp is disabled — inconsistent with this session's actual scheduler-provided facts (no `.env` exists here, env vars are pre-exported process vars, commit/push is required for changes to persist). Followed the scheduler's explicit instructions instead (commit+push). This is now the 5th+ consecutive session flagging this divergence with zero remediation — recommend the user review/fix `.claude/commands/market-open.md` and `.claude/commands/pre-market.md` directly (routines/ appears to be the correct source of truth), or the missing-ClickUp-key issue and this file drift will keep recurring indefinitely.
+
+**JPM quote-bug note:** 4th consecutive trading session (Jul 27, 28, 29, 31 — no market-open log entry found for Jul 30 to confirm/deny) where JPM's live quote at market-open returns an implausible frozen/unstable spread inconsistent with the actual traded price. Strongly suspect a wrapper-side caching bug in `scripts/alpaca.sh quote` (frozen leg + moving leg pattern repeats) rather than a genuine market condition — recommend the user investigate `scripts/alpaca.sh quote` directly, since this has now blocked the same vetted, catalyst-backed trade for a week straight.
