@@ -1119,3 +1119,16 @@ Market holiday (next open 2026-07-06 Mon). All positions unchanged (change_today
 
 **Environment note:** CLICKUP_API_KEY/CLICKUP_WORKSPACE_ID/CLICKUP_CHANNEL_ID missing from env this run — console-only, no ClickUp notification sent.
 ## 2026-07-31 midday — All within band, no action
+
+### Jul 31 — EOD Snapshot (Day 48, Friday)
+**Portfolio:** $104,334.68 | **Cash:** $53,223.43 (51.01%) | **Day P&L:** +$145.45 (+0.14%) | **Phase P&L:** +$4,334.68 (+4.33%)
+
+| Ticker | Shares | Entry | Close | Day Chg | Unrealized P&L | Stop |
+|--------|--------|-------|-------|---------|----------------|------|
+| JPM | 31 | $327.626129 | $352.99 | +0.61% | +$786.28 (+7.74%) | $323.37 (10% trail, HWM $359.30) |
+| OXY | 355 | $55.472958 | $57.0382 | +1.95% | +$555.66 (+2.82%) | $53.091/285sh (HWM $58.99), $52.137/70sh (HWM $57.93) |
+| UNH | 48 | $433.93875 | $415.00 | −1.54% | −$909.06 (−4.36%) | $393.723 (10% trail, HWM $437.47) |
+
+**Notes:** No trades today; week closes 0/3 (week of Jul 27), 3 slots unused. JPM led gains, still short of the +15% tighten-to-7% threshold; UNH remains the lone laggard at −4.36%, well clear of its −7% cut line. Deployed capital ~48.99%, still below the 75-85% target band.
+
+**Environment note:** CLICKUP_API_KEY/CLICKUP_WORKSPACE_ID/CLICKUP_CHANNEL_ID missing from env this run — console-only, no ClickUp notification sent.
