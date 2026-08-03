@@ -1132,3 +1132,18 @@ Market holiday (next open 2026-07-06 Mon). All positions unchanged (change_today
 **Notes:** No trades today; week closes 0/3 (week of Jul 27), 3 slots unused. JPM led gains, still short of the +15% tighten-to-7% threshold; UNH remains the lone laggard at −4.36%, well clear of its −7% cut line. Deployed capital ~48.99%, still below the 75-85% target band.
 
 **Environment note:** CLICKUP_API_KEY/CLICKUP_WORKSPACE_ID/CLICKUP_CHANNEL_ID missing from env this run — console-only, no ClickUp notification sent.
+
+### Aug 3 — EOD Snapshot (Day 49, Monday)
+**Portfolio:** $103,794.67 | **Cash:** $53,223.43 (51.28%) | **Day P&L:** −$540.01 (−0.52%) | **Phase P&L:** +$3,794.67 (+3.79%)
+
+| Ticker | Shares | Entry | Close | Day Chg | Unrealized P&L | Stop |
+|--------|--------|-------|-------|---------|----------------|------|
+| JPM | 31 | $327.626129 | $352.64 | +0.24% | +$775.43 (+7.64%) | $323.37 (10% trail, HWM $359.30) |
+| OXY | 355 | $55.472958 | $55.48 | −2.79% | +$2.50 (+0.01%) | $53.091/285sh (HWM $58.99), $52.137/70sh (HWM $57.93) |
+| UNH | 48 | $433.93875 | $415.50 | +0.27% | −$885.06 (−4.25%) | $393.723 (10% trail, HWM $437.47) |
+
+**Notes:** No trades today; new trading week begins (0/3, week of Aug 3). OXY pulled back sharply intraday (−2.79%), trimming its blended gain to near breakeven, while JPM continues to lead at +7.64% unrealized, still below the +15% tighten-to-7% threshold. Deployed capital ~48.7%, still below the 75-85% target band.
+
+**Environment note:** CLICKUP_API_KEY/CLICKUP_WORKSPACE_ID/CLICKUP_CHANNEL_ID missing from env this run — console-only, no ClickUp notification sent.
+
+**Environment note:** CLICKUP_API_KEY/CLICKUP_WORKSPACE_ID/CLICKUP_CHANNEL_ID missing from env this run — console-only, no ClickUp notification sent.
