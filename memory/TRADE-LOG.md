@@ -1147,3 +1147,24 @@ Market holiday (next open 2026-07-06 Mon). All positions unchanged (change_today
 **Environment note:** CLICKUP_API_KEY/CLICKUP_WORKSPACE_ID/CLICKUP_CHANNEL_ID missing from env this run — console-only, no ClickUp notification sent.
 
 **Environment note:** CLICKUP_API_KEY/CLICKUP_WORKSPACE_ID/CLICKUP_CHANNEL_ID missing from env this run — console-only, no ClickUp notification sent.
+
+## 2026-08-04 — market-open (no new trades)
+
+**Decision:** SKIP — rule-12 deployment gate triggered (deployed 48.47%, below 60% floor; VIX 15.83 <22 per pre-market research; futures +0.21%, not <−2%; no exception met), so a new position was required. JPM add-on remained the only cleared candidate (Financials, $750B housing-initiative catalyst, most headroom under 20% cap), but the live quote is bad/stale for the 4th consecutive session: two queries ~18s apart both returned an identical frozen ap 372.17 / bp 335.96 (~9.7% spread) vs. the actual traded price ~$359.20 per the positions endpoint — same pattern as Jul 27/28/29. Treated as a bad/stale quote per the "skip if spread is wide or halted" check and not traded. No other candidate cleared the entry checklist: OXY carries earnings risk this week (~Aug 6, no pre-earnings add per today's research), UNH is already near the 20% cap, and AMD (Technology) was explicitly watch-only pending tonight's earnings print. Week trades 0/3 (week of Jul 27) — 3 slots remain.
+
+**Live Snapshot (09:37 ET):**
+**Account:** Equity $103,285.56 | Cash $53,223.43 (51.53%) | Deployed $50,062.13 (48.47%) | Day P&L: −$498.84 (−0.48%)
+
+| Ticker | Shares | Entry | Current | Unrealized P&L | Stop |
+|--------|--------|-------|---------|----------------|------|
+| JPM | 31 | $327.626129 | $359.195 | +$978.64 (+9.64%) | $323.91 (10% trail, HWM $359.90) |
+| OXY | 355 | $55.472958 | $53.83 | −$583.25 (−2.96%) | $53.091/285sh (HWM $58.99), $52.137/70sh (HWM $57.93) |
+| UNH | 48 | $433.93875 | $412.86 | −$1,011.78 (−4.86%) | $393.723 (10% trail, HWM $437.47) |
+
+**Notes:** No PDT-blocked stops pending from prior days. All 4 GTC trailing stops confirmed live via Alpaca order query (order IDs: OXY 6abc1e09/70sh, UNH d2619c86, OXY f32a494c/285sh, JPM 91ec700a — JPM stop auto-advanced to $323.91 on a fresh HWM of $359.90). Cushions to stop: JPM 9.82%, OXY 1.37%/3.15%, UNH 4.64% — OXY's 285-sh lot is notably tight (1.37%) after today's sharp intraday drop (−2.96%), real risk of a stop-out if the decline continues, but the GTC order will handle it automatically per rule (never move a stop down). No position near the −7% manual cut or the +15%/+20% tighten triggers. No trades fired.
+
+**JPM quote-bug note:** This is now the 4th consecutive session (Jul 27, 28, 29, Aug 4) where JPM's live quote at market-open returns an implausible frozen spread inconsistent with the actual traded price. Still worth checking whether this is a data-provider/feed issue specific to JPM or a wrapper-side caching bug in `scripts/alpaca.sh quote`.
+
+**Environment note:** CLICKUP_API_KEY/CLICKUP_WORKSPACE_ID/CLICKUP_CHANNEL_ID missing from env this run — no trades fired so STEP 7 is a no-op regardless.
+
+**Note on invoked instructions:** The `market-open` skill again loaded `.claude/commands/market-open.md` (the local variant, per CLAUDE.md's local/cloud split) claiming a local `.env` file supplies credentials and that commit/push isn't needed — inconsistent with this session's actual scheduler-provided facts (no `.env` exists, env vars are pre-exported, commit/push required to persist). Per the prior session's confirmed finding, this is a benign static local/cloud definition mismatch (unchanged since 2026-07-10), not an injection or unauthorized edit. Followed the scheduler's explicit instructions (commit+push, env vars) as in all prior sessions.
