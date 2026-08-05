@@ -1197,3 +1197,24 @@ Market holiday (next open 2026-07-06 Mon). All positions unchanged (change_today
 **Notes:** No trades today or this week (0/3). UNH remains the lag position at −5.96%, above the −7% manual-cut threshold, GTC stop unchanged. No tighten triggers hit (JPM +9.27%, below +15%).
 
 **Environment note:** CLICKUP_API_KEY/CLICKUP_WORKSPACE_ID/CLICKUP_CHANNEL_ID missing from env this run — console-only, no ClickUp notification sent.
+
+## 2026-08-05 — market-open (no new trades)
+
+**Decision:** SKIP — rule-12 deployment gate triggered (deployed 48.60%, below 60% floor; VIX 16.5 <22 per pre-market research; ES +0.39%, not <−2%; no exception met), so a new position was required. JPM add-on remained the only cleared candidate (Financials, fresh all-time high + UBS PT raise, most headroom under 20% cap), but the live quote is bad/stale for the 5th consecutive session: two queries ~5s apart both returned an identical frozen ap 377.73 / bp 341.50 (~9.6% spread) vs. the actual traded price ~$361.17 per the positions endpoint — same pattern as Jul 27/28/29/Aug 4. Treated as a bad/stale quote per the "skip if spread is wide or halted" check and not traded. No other candidate cleared the entry checklist today: LLY/KHC watch-only (earnings today, no defensible pre-print stop), OXY no pre-earnings add (reported after Aug 4 close), UNH already near the 20% cap. Week trades 0/3 (week of Aug 3) — 3 slots remain.
+
+**Live Snapshot (09:37 ET):**
+**Account:** Equity $103,464.76 | Cash $53,223.43 (51.44%) | Deployed $50,241.33 (48.56%) | Day P&L: +$38.86 (+0.04%)
+
+| Ticker | Shares | Entry | Current | Unrealized P&L | Stop |
+|--------|--------|-------|---------|----------------|------|
+| JPM | 31 | $327.626129 | $361.17 | +$1,039.86 (+10.24%) | $326.70 (10% trail, HWM $363.00) |
+| OXY | 355 | $55.472958 | $55.02 | −$160.80 (−0.82%) | $53.091/285sh (HWM $58.99), $52.137/70sh (HWM $57.93) |
+| UNH | 48 | $433.93875 | $406.00 | −$1,341.06 (−6.44%) | $393.723 (10% trail, HWM $437.47) |
+
+**Notes:** No PDT-blocked stops pending from prior days. All 4 GTC trailing stops confirmed live via Alpaca order query (order IDs: OXY 6abc1e09/70sh, UNH d2619c86, OXY f32a494c/285sh, JPM 91ec700a). Cushions to stop: JPM 9.55%, OXY 3.55%/5.30%, UNH 3.05% — UNH now only ~0.56pp from the −7% manual-cut level, closest watch item today alongside continued OXY earnings-reaction drift. No position within the 3% "never move stop" band yet. No trades fired.
+
+**JPM quote-bug note:** 5th consecutive session (Jul 27, 28, 29, Aug 4, Aug 5) where JPM's live quote at market-open returns an implausible frozen ~10% spread inconsistent with the actual traded price, blocking the only cleared rule-12 candidate each time. Confirmed this run that `scripts/alpaca.sh quote` is a plain unmodified curl to Alpaca's `/stocks/{sym}/quotes/latest` endpoint (no client-side caching) — the stale/wide quote is coming from the data feed itself, not a wrapper bug. Likely cause: account is on Alpaca's free IEX-only market data plan, which returns single-venue top-of-book (both ap/bp tagged exchange "V") rather than consolidated NBBO — thin/stale on a NYSE-primary name like JPM. Deployment gate has now been unable to fire for 5 straight sessions on this account; capital has sat at 48-49% deployed vs. the 60% floor/75-85% target the whole time. Recommend either upgrading the Alpaca data plan to SIP, or switching the gate check to trade/last-price based validation instead of bid/ask spread, to unblock this.
+
+**Note on invoked instructions:** The `market-open` skill again loaded `.claude/commands/market-open.md` (the local variant) claiming a local `.env` file supplies credentials and that commit/push isn't needed and ClickUp is disabled — inconsistent with this session's actual scheduler-provided facts (no `.env` exists, env vars pre-exported, commit/push required, ClickUp expected). Confirmed benign, long-standing local/cloud definition mismatch (consistent with prior pre-market/market-open/midday session findings, unchanged since 2026-07-10). Followed the scheduler's explicit instructions (commit+push, env vars) as in all prior sessions.
+
+**Environment note:** CLICKUP_API_KEY/CLICKUP_WORKSPACE_ID/CLICKUP_CHANNEL_ID missing from env this run — console-only, no ClickUp notification sent (no trades fired so STEP 7 is a no-op regardless).
