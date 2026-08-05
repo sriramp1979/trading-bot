@@ -1219,3 +1219,14 @@ Market holiday (next open 2026-07-06 Mon). All positions unchanged (change_today
 
 **Environment note:** CLICKUP_API_KEY/CLICKUP_WORKSPACE_ID/CLICKUP_CHANNEL_ID missing from env this run — console-only, no ClickUp notification sent (no trades fired so STEP 7 is a no-op regardless).
 ## 2026-08-05 midday — All within band, no action
+
+### Aug 5 — EOD Snapshot (Day 51, Wednesday)
+**Portfolio:** $103,271.29 | **Cash:** $53,223.43 (51.54%) | **Day P&L:** −$195.41 (−0.19%) | **Phase P&L:** +$3,271.29 (+3.27%)
+| Ticker | Shares | Entry | Close | Day Chg | Unrealized P&L | Stop |
+|--------|--------|-------|-------|---------|----------------|------|
+| JPM | 31 | $327.626129 | $359.2875 | +0.49% | +$981.50 (+9.66%) | $326.70 (10% trail, HWM $363.00) |
+| OXY | 355 | $55.472958 | $53.82 | −2.31% | −$586.80 (−2.98%) | $53.091/285sh (HWM $58.99), $52.137/70sh (HWM $57.93) |
+| UNH | 48 | $433.93875 | $412.5801 | +1.23% | −$1,025.22 (−4.92%) | $393.723 (10% trail, HWM $437.47) |
+**Notes:** No trades today or this week (0/3, week of Aug 3). OXY's 285-sh stop lot is tight at 1.35% cushion after today's −2.31% drop, but per rule the GTC stop is unchanged (never move down). No tighten or manual-cut triggers hit (JPM +9.66% below +15%; UNH −4.92% above −7%).
+
+**Environment note:** CLICKUP_API_KEY/CLICKUP_WORKSPACE_ID/CLICKUP_CHANNEL_ID missing from env this run — console-only, no ClickUp notification sent.
