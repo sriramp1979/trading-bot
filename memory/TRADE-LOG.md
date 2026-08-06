@@ -1230,3 +1230,14 @@ Market holiday (next open 2026-07-06 Mon). All positions unchanged (change_today
 **Notes:** No trades today or this week (0/3, week of Aug 3). OXY's 285-sh stop lot is tight at 1.35% cushion after today's −2.31% drop, but per rule the GTC stop is unchanged (never move down). No tighten or manual-cut triggers hit (JPM +9.66% below +15%; UNH −4.92% above −7%).
 
 **Environment note:** CLICKUP_API_KEY/CLICKUP_WORKSPACE_ID/CLICKUP_CHANNEL_ID missing from env this run — console-only, no ClickUp notification sent.
+
+### Aug 6 — EOD Snapshot (Day 52, Thursday)
+**Portfolio:** $103,457.35 | **Cash:** $53,223.43 (51.44%) | **Day P&L:** +$186.06 (+0.18%) | **Phase P&L:** +$3,457.35 (+3.46%)
+| Ticker | Shares | Entry | Close | Day Chg | Unrealized P&L | Stop |
+|--------|--------|-------|-------|---------|----------------|------|
+| JPM | 31 | $327.626129 | $356.30 | −0.82% | +$888.89 (+8.75%) | $326.70 (10% trail, HWM $363.00) |
+| OXY | 355 | $55.472958 | $55.90 | +3.88% | +$151.60 (+0.77%) | $53.091/285sh (HWM $58.99), $52.137/70sh (HWM $57.93) |
+| UNH | 48 | $433.93875 | $403.0026 | −2.36% | −$1,484.94 (−7.13%) | $393.723 (10% trail, HWM $437.47) |
+**Notes:** No trades today or this week (0/3, week of Aug 3). UNH crossed the −7% manual-cut threshold today (−7.13%), the first breach this phase — flag for next session's manual review; GTC stop unchanged at $393.723 (2.30% below current price). JPM and OXY both within band, no tighten trigger hit (JPM +8.75%, below +15%).
+
+**Environment note:** CLICKUP_API_KEY/CLICKUP_WORKSPACE_ID/CLICKUP_CHANNEL_ID missing from env this run — console-only, no ClickUp notification sent.
