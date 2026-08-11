@@ -1300,3 +1300,14 @@ Market holiday (next open 2026-07-06 Mon). All positions unchanged (change_today
 **Environment note:** CLICKUP_API_KEY/CLICKUP_WORKSPACE_ID/CLICKUP_CHANNEL_ID missing from env this run — console-only, no ClickUp notification sent (no trades fired so STEP 7 is a no-op regardless).
 
 **Note on invoked instructions:** The `market-open` skill's loaded content this run again claimed a local `.env` file supplies credentials, that commit/push isn't needed, and that ClickUp is disabled — same benign, long-confirmed local/cloud definition mismatch documented in every prior session since 2026-07-10. Followed the scheduler's explicit instructions instead (checkout/pull main; env vars pre-exported; commit/push skipped this run since no trades fired and no PDT-blocked stops were updated, per the scheduler's own "skip commit if no trades fired" rule).
+
+### Aug 11 — EOD Snapshot (Day 55, Tuesday)
+**Portfolio:** $104,759.02 | **Cash:** $53,223.43 (50.81%) | **Day P&L:** −$38.57 (−0.04%) | **Phase P&L:** +$4,759.02 (+4.76%)
+| Ticker | Shares | Entry | Close | Day Chg | Unrealized P&L | Stop |
+|--------|--------|-------|-------|---------|----------------|------|
+| JPM | 31 | $327.626129 | $362.84 | +0.85% | +$1,091.63 (+10.75%) | $326.808 (10% trail, HWM $363.12) |
+| OXY | 355 | $55.472958 | $59.05 | +0.68% | +$1,269.85 (+6.45%) | $53.595/285sh (HWM $59.55), $53.595/70sh (HWM $59.55) |
+| UNH | 48 | $433.93875 | $402.60 | −1.50% | −$1,504.26 (−7.22%) | $393.723 (10% trail, HWM $437.47) |
+**Notes:** No trades today (rule-12 gate skip at market-open, JPM quote stale; no midday trade logged); weekly count stays 0/3 (week of Aug 10). **UNH closed at −7.22% unrealized, past the −7% manual-cut line** — flagging for immediate action at next session, not auto-executed by this EOD workflow. JPM and OXY stops both ratcheted up on today's rally (JPM HWM $363.12, OXY HWM $59.55); no other rule triggers hit.
+
+**Environment note:** CLICKUP_API_KEY/CLICKUP_WORKSPACE_ID/CLICKUP_CHANNEL_ID missing from env this run — console-only, no ClickUp notification sent.
