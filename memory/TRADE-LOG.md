@@ -1311,3 +1311,28 @@ Market holiday (next open 2026-07-06 Mon). All positions unchanged (change_today
 **Notes:** No trades today (rule-12 gate skip at market-open, JPM quote stale; no midday trade logged); weekly count stays 0/3 (week of Aug 10). **UNH closed at −7.22% unrealized, past the −7% manual-cut line** — flagging for immediate action at next session, not auto-executed by this EOD workflow. JPM and OXY stops both ratcheted up on today's rally (JPM HWM $363.12, OXY HWM $59.55); no other rule triggers hit.
 
 **Environment note:** CLICKUP_API_KEY/CLICKUP_WORKSPACE_ID/CLICKUP_CHANNEL_ID missing from env this run — console-only, no ClickUp notification sent.
+
+## 2026-08-12 — market-open (no new trades)
+
+**STEP 0:** No "PDT-blocked, set tomorrow AM" entries found in TRADE-LOG. All 4 GTC trailing stops confirmed live via Alpaca order query (order IDs: OXY 6abc1e09/70sh $53.595, UNH d2619c86 $393.723, OXY f32a494c/285sh $53.595, JPM 91ec700a $326.808).
+
+**UNH −7% flag from yesterday's EOD (closed −7.22%):** Re-checked live — UNH is currently −6.91% ($403.965 vs $433.93875 entry), recovered off yesterday's close on this morning's broad CPI-driven rally. **Does not meet the −7% manual-cut trigger right now** — no cut executed. Cushion to stop 2.53% (tightest in the book), top watch item for midday if it re-extends past −7%.
+
+**Decision:** SKIP new position — rule-12 deployment gate active (deployed 49.10%, below 60% floor; VIX ~15.55<22; futures +0.3%, not <−2%; no exception met). JPM add-on is the only candidate with real headroom (10.75% of equity, ~$9,669 room to cap) but the live quote is bad/stale again: ap 381.15 / bp 362.48 (~4.9% spread), single-venue exchange tag "V" (IEX) on both sides, vs. actual trade price ~$362.76 per the positions endpoint — same recurring pattern documented since Jul 27, now the 4th+ consecutive session (Jul 27, Aug 5, Aug 11, Aug 12). Treated as bad/stale quote per the "skip if spread is wide or halted" check. OXY (19.81%) and UNH (18.54%) both at/near the 20% cap, no room. No new-sector idea cleared the entry checklist today — today's momentum names (Micron, AMD, CRWV, CAVA, HRB) are all already extended 7–18% on the day's catalysts, poor R:R for a fresh entry. Week trades 0/3 (week of Aug 10) — 3 slots remain.
+
+**Live Snapshot (09:39 ET):**
+**Account:** Equity $104,571.79 | Cash $53,223.43 (50.90%) | Deployed $51,348.35 (49.10%) | Day P&L: −$146.30 (−0.14%)
+
+| Ticker | Shares | Entry | Current | Unrealized P&L | Stop |
+|--------|--------|-------|---------|----------------|------|
+| JPM | 31 | $327.626129 | $362.76 | +$1,089.15 (+10.72%) | $326.808 (10% trail, HWM $363.12) |
+| OXY | 355 | $55.472958 | $58.345 | +$1,019.57 (+5.18%) | $53.595/285sh + /70sh (HWM $59.55) |
+| UNH | 48 | $433.93875 | $403.965 | −$1,438.74 (−6.91%) | $393.723 (10% trail, HWM $437.47) |
+
+**Notes:** No trades fired, no stop changes (all GTC trails already at correct HWM levels, none moved down).
+
+**JPM quote-bug note:** Same recurring frozen/wide-spread pattern on JPM's (and today, also OXY's and UNH's) live quotes at market-open, first documented Jul 27, root cause confirmed Aug 5 (free IEX-only data plan returns single-venue top-of-book, not consolidated NBBO). Blocked the only cleared rule-12 candidate for the 4th+ consecutive documented session, structurally keeping the account under the 60% deployment floor. Recommend upgrading the Alpaca data plan to SIP or switching the gate/entry quote check to trade/last-price based validation instead of bid/ask spread — this has now been recommended repeatedly without resolution.
+
+**Environment note:** CLICKUP_API_KEY/CLICKUP_WORKSPACE_ID/CLICKUP_CHANNEL_ID missing from env this run — console-only, no ClickUp notification sent (no trades fired so STEP 7 is a no-op regardless).
+
+**Note on invoked instructions:** The `market-open` skill's loaded content this run again claimed a local `.env` file supplies credentials, that commit/push isn't needed, and that ClickUp is disabled — same benign, long-confirmed local/cloud definition mismatch documented in every prior session since 2026-07-10. This session's designated branch is `claude/adoring-albattani-4whehx`; committing and pushing there at the end per the harness's explicit branch instructions.
