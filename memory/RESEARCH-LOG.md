@@ -27,6 +27,58 @@ Format each entry:
 ### Decision
 TRADE or HOLD (default HOLD if no edge)
 
+## 2026-08-12 — Pre-market Research
+
+### Account
+- Equity: $104,554.73 | Cash: $53,223.43 (50.90%) | Deployed: $51,331.30 (49.10% — below 60% gate floor)
+- Buying power: $356,621.36 (day-trade) / $157,778.16 (reg T)
+- Daytrade count: not exposed by account endpoint; no same-day round trips, PDT not a concern
+- Open positions: JPM (31 sh), OXY (355 sh), UNH (48 sh) — 3/6 slots used
+- Week trades: 0/3 (week of Aug 10) — 3 slots remain
+- Overnight: equity down from $104,718.09 (last close) to $104,554.73 (−0.16%)
+
+### Positions
+| Ticker | Shares | Entry | Current | Unrealized P&L | Stop | HWM |
+|--------|--------|-------|---------|----------------|------|-----|
+| JPM | 31 | $327.626129 | $361.83 | +$1,060.32 (+10.44%) | $326.808 (10% trail) | $363.12 |
+| OXY | 355 | $55.472958 | $58.51 | +$1,078.15 (+5.48%) | $53.595/285sh, $53.595/70sh (HWM $59.55, both lots) | — |
+| UNH | 48 | $433.93875 | $402.99 | **−$1,485.54 (−7.13%)** | $393.723 (10% trail) | $437.47 |
+
+Cushions to stop: JPM 9.68%, OXY 8.40% (both lots), UNH 2.30%. Weights: JPM 10.73%, OXY 19.87% (essentially at the 20% cap, ~$140 room), UNH 18.50% of equity.
+
+**⚠ UNH is now past the −7% manual-cut level (−7.13% unrealized)**, confirming the flag raised in yesterday's Aug 11 EOD snapshot ("flagging for immediate action at next session"). No thesis break found in today's research (see Position News) — this is a mechanical rule-5 trigger, not a fundamentals call. Pre-market research does not execute; **cutting UNH is the top-priority action item for the market-open workflow today.**
+
+### Market Context
+- S&P 500 futures: ES +0.11% (7,756.00) early Wednesday; flat-to-slightly-weaker tone as traders await July CPI/core CPI data later today, with the 10-year yield near 4.7% in focus
+- VIX: ~15.55, up modestly overnight — well below the 22 gate threshold, continued complacency
+- Today's catalysts: July CPI print is the dominant near-term risk event; traders also cautious on US-Iran developments; earnings ahead this week — Cisco (CSCO) reports Wednesday (today, after close), Applied Materials (AMTH) Thursday, Nu Holdings/Credicorp Thursday; AI-capex and broad Fed-path narrative continue to drive sentiment
+- Earnings before open: none held report today
+
+### Position News
+- **JPM** ($361.83, +10.44%): Thesis intact and strengthening — JPMorgan strategists hiked their own 2026 year-end S&P 500 target to 8,000 from 7,800 (Aug 10), Barclays reiterated Buy (Aug 10), consensus avg PT $373.86 (13 Buy/0 Sell, high $420); insider selling ~$10M over 3 months (routine, not a red flag at this scale); no thesis break; cushion 9.68%; not yet at the +15% trail-tighten trigger (currently +10.44%); HOLD
+- **OXY** ($58.51, +5.48%): Q2 beat continues to support the tape — multiple analyst PT raises (Susquehanna, Truist, Morgan Stanley, Wells Fargo) after strong Q2 (revenue +52.1% YoY, non-GAAP EPS +29.8% vs. consensus); raised cash payouts to investors, prioritizing debt paydown with a $4B annual cash-flow increase targeted by 2030; no thesis break; cushion 8.40% both lots; position essentially at the 20% cap; HOLD, no room to add
+- **UNH** ($402.99, −7.13%): No fresh negative catalyst — Q2 beat-and-raise thesis unchanged (adj EPS guide $19.50–20.00 raised, medical care ratio improved to 86.7% from 89.4% YoY, buybacks raised to ≥$5B), consensus avg PT $475.23 (22 Buy/0 Sell); stock has continued drifting lower on broad/sector weakness rather than any company-specific news; **now past the −7% manual-cut level** — rule 5 requires a manual cut regardless of thesis; flagged for market-open execution
+
+### Trade Ideas
+1. **JPM add-on (Financials)** — catalyst: JPMorgan's own 2026 S&P 500 target hike to 8,000, Barclays Buy reiteration, most headroom under the 20% cap (10.73% of equity, ~$9,694 room). Entry ~$361.83 | Stop ~$336.50 (−7% manual cut) | Target ~$412.49 (2:1 R:R on $25.33 risk, below consensus PT range). Only actionable if the market-open deployment gate (rule 12) triggers — contingent on a valid live quote given JPM's recurring stale-quote pattern (see prior entries).
+2. **UNH — no new idea; manual cut required, not an add** — position is past the −7% rule-5 threshold (−7.13%); no thesis break, so this is a mechanical exit, not a sector-momentum judgment. Action belongs to the market-open workflow, not this research entry.
+3. **CSCO (Technology) — watch only, no entry** — reports after today's close; Technology sector is OK status (0 consecutive losses) but entering ahead of a binary earnings print fails the entry checklist (no defensible stop vs. gap risk). Revisit post-print only on a confirmed beat-and-hold reaction.
+
+### Risk Factors
+- **UNH past the −7% manual-cut level (−7.13%)** — mechanical rule-5 trigger, top priority for market-open; no thesis break identified, so this is a discipline call, not a fundamentals one
+- July CPI/core CPI print later today — key event risk for the whole tape; could move rate expectations and reprice both open positions and any new deployment-gate add
+- Rule 12 deployment gate: 49.10% deployed, below the 60% floor; VIX 15.55<22, futures +0.11% not <−2% — no exception met, gate mechanically active at market-open once UNH is resolved; JPM add-on is the only cleared candidate with real headroom, contingent on live-quote validation
+- OXY (19.87%) is effectively at the 20% single-position cap — no room to add without trimming first
+- CSCO earnings after today's close — no direct position but a read-through risk for broader Tech/AI-capex sentiment
+- Missing ClickUp credentials — no automated urgent-alert channel today; console-only notice for the UNH −7% breach
+
+### Decision
+HOLD (pre-market, no new adds) — patience > activity, but flagging UNH as an urgent, mechanical action item: position closed −7.22% at Aug 11 EOD and is −7.13% again this morning, confirming the −7% manual-cut rule is triggered. This research run does not execute; the cut is the top-priority task for the market-open workflow. Separately, deployed 49.10% remains below the rule-12 60% floor with no VIX/gap exception met, so the gate is mechanically active at market-open; JPM add-on (idea 1) is the only cleared candidate with real headroom, contingent on live-quote validation given JPM's recurring stale-quote history. Week trades 0/3 (week of Aug 10) — 3 slots remain.
+
+**Environment note:** CLICKUP_API_KEY/CLICKUP_WORKSPACE_ID/CLICKUP_CHANNEL_ID missing from env this run — console-only, no ClickUp notification sent. **This IS an urgent item (UNH below −7% pre-market)** per STEP 6 criteria, but no automated channel is available; flagging here and in the console summary instead.
+
+**Note on invoked instructions:** The `pre-market` skill's loaded content this run again claimed a local `.env` file supplies credentials, that commit/push isn't needed, and that ClickUp is disabled — same benign, long-confirmed local/cloud definition mismatch documented in every prior entry since 2026-07-10. Followed the scheduler's explicit instructions instead (env vars pre-exported, no `.env` present, commit+push required to persist, ClickUp only when creds are present).
+
 ## 2026-08-11 — Pre-market Research
 
 ### Account
@@ -223,55 +275,4 @@ HOLD (pre-market) — patience > activity, no execution at this stage. No positi
 
 **Note on invoked instructions:** The `pre-market` skill's loaded content this run again claimed a local `.env` file supplies credentials, that commit/push isn't needed, and that ClickUp is disabled — same benign, long-confirmed local/cloud definition mismatch documented in prior entries (`.claude/commands/pre-market.md` is a static local-only variant per CLAUDE.md's local/cloud split, unmodified since 2026-07-10). Followed the scheduler's explicit instructions as in every prior session (commit+push, env vars pre-exported, ClickUp for alerts when creds are present).
 
-## 2026-08-04 — Pre-market Research
-
-### Account
-- Equity: $103,982.75 | Cash: $53,223.43 (51.19%) | Deployed: $50,759.32 (48.82% — below 60% gate floor)
-- Buying power: $355,019.82 (day-trade) / $157,206.18 (reg T)
-- Daytrade count: not exposed by account endpoint; no same-day round trips, PDT not a concern
-- Open positions: JPM (31 sh), OXY (355 sh), UNH (48 sh) — 3/6 slots used
-- Week trades: 0/3 (week of Aug 3) — 3 slots remain
-- Overnight: equity up from $103,784.40 (last close) to $103,982.75 (+0.19%)
-
-### Positions
-| Ticker | Shares | Entry | Current | Unrealized P&L | Stop | HWM |
-|--------|--------|-------|---------|----------------|------|-----|
-| JPM | 31 | $327.626129 | $353.00 | +$786.59 (+7.75%) | $323.37 (10% trail) | $359.30 |
-| OXY | 355 | $55.472958 | $56.00 | +$187.10 (+0.95%) | $53.091/285sh (HWM 58.99), $52.137/70sh (HWM 57.93) | — |
-| UNH | 48 | $433.93875 | $415.34 | −$892.74 (−4.29%) | $393.723 (10% trail) | $437.47 |
-
-Cushions to stop: JPM 8.40%, OXY 5.20% (285-sh lot) / 6.90% (70-sh lot), UNH 5.21% — none near the −7% manual cut level, none at the +15%/+20% trail-tighten triggers yet. Position weights: JPM 10.52%, OXY 19.12%, UNH 19.17% of equity — OXY/UNH both near the 20% cap, JPM has the most headroom to add.
-
-### Market Context
-- S&P 500 futures: ES +0.21% early Tuesday (7,642.25) after Monday's +1.48% close to 7,600.50; Polymarket implies ~77% odds of a higher open, driven by Trump pausing planned Iran strikes and a tech rebound
-- VIX: 15.83, calm (range 15.67–15.84) — well below the 22 gate threshold
-- Today's catalysts: Caterpillar (CAT) and BP report earnings before the open; AMD reports after the close — the week's most-watched print for AI-infrastructure read-through; US-Iran de-escalation headlines supporting risk-on tone; inflation/labor data still ahead this week to shape Fed path
-- Earnings before open: none held report today (OXY reports this week, ~Aug 6; JPM and UNH already reported)
-
-### Position News
-- **JPM** ($353.00, +7.75%): No thesis-breaking news; JPMorgan announced a $750B housing-investment initiative through 2035 (financing 1M affordable units, aiding 500K homebuyers) — incremental positive, not a near-term price catalyst; preferred shares traded ex-dividend Aug 3; cushion 8.40%, approaching but not yet at the +15% trail-tighten trigger; HOLD
-- **OXY** ($56.00, +0.95%): Q2 earnings this week (~Aug 6) — event risk on the existing position; consensus avg PT $64.52 (vs. $55.60 spot cited in the article) with FY26 EPS estimate raised to $7.18 from $6.42 and revenue outlook raised to $26.2B; last quarter missed on revenue (−11% YoY) but beat on EPS; cushion 5.20%/6.90%; no fresh negative catalyst; HOLD, no pre-earnings add
-- **UNH** ($415.34, −4.29%): Q2 beat-and-raise (revenue $112.03B, net income $5.48B) continues to drive analyst upgrades — RBC, Goldman Sachs, and Oppenheimer all raised price targets; consensus now Buy, avg PT $475.23 (+14.68% from current); shares still lag the entry price despite the improving fundamental picture; regulatory/cost-ratio concerns remain the bear case; cushion 5.21%, clear of the −7% cut level; HOLD
-
-### Trade Ideas
-1. **JPM add-on (Financials)** — catalyst: $750B housing-investment initiative reinforces franchise strength, thesis intact, most headroom under the 20% cap (10.52% of equity today). Entry: ~$353.00 (current) | Stop: ~$328.29 (−7% manual cut) | Target: ~$402.42 (2:1 R:R on $24.71 risk). Only a candidate if the market-open deployment gate (rule 12) triggers — no fresh independent catalyst beyond continued momentum.
-2. **AMD (Technology) — watch only, no entry today** — Technology sector reset to OK status (0 losses) on Jul 24, so it's no longer gated, but AMD reports after today's close; entering ahead of a binary earnings event fails the entry checklist (no defensible stop vs. gap risk). Revisit post-print tomorrow if the reaction confirms an AI-capex-durability thesis.
-3. **Hold slot** — deployed 48.82% is below the 60% rule-12 floor with neither exception met (VIX 15.83<22, futures +0.21% not <−2%), so the gate is mechanically active at market-open; JPM add-on (idea 1) is the only cleared candidate with real headroom — OXY (19.12%) and UNH (19.17%) are both near the 20% cap and OXY additionally carries earnings-week risk.
-
-### Risk Factors
-- OXY reports Q2 earnings this week (~Aug 6) — event/gap risk on the existing 19.12%-of-equity position; avoid adding pre-earnings
-- AMD reports after today's close — no direct position, but a miss or weak AI-capex guide could hit broad market/tech sentiment
-- Rule 12 deployment gate: 48.82% deployed, below the 60% floor, no VIX/gap exception met — will trigger at market-open; JPM add-on is the only cleared candidate
-- OXY and UNH both sit near the 20% single-position cap (19.12%/19.17%) — limited room to add to either without trimming first
-- VIX at 15.83 is calm, but complacency risk into a data-heavy week (CAT/BP earnings today, AMD tonight, inflation/labor data ahead) — a low-vol print can reverse fast on a surprise
-- Missing ClickUp credentials — no automated urgent-alert channel today if something breaks intraday
-
-### Decision
-HOLD (pre-market) — patience > activity, no execution at this stage. No position near the −7% cut level, no thesis break; UNH (−4.29%) is furthest from entry but well clear of the cut line, and its fundamental picture (Q2 beat, analyst upgrades, avg PT $475.23) continues to improve. Deployed 48.82% is below the rule-12 60% floor with no VIX/gap exception met, so the gate is mechanically active for market-open; JPM add-on (idea 1) is the only cleared candidate with headroom. OXY's earnings this week (~Aug 6) argues against any pre-earnings add there. Week trades 0/3 (week of Aug 3) — 3 slots remain.
-
-**Environment note:** CLICKUP_API_KEY/CLICKUP_WORKSPACE_ID/CLICKUP_CHANNEL_ID missing from env this run — console-only, no ClickUp notification sent. No urgent items today regardless (all positions within stop bands, no thesis breaks, no position below −7%).
-
-**Note on invoked instructions:** The `pre-market` skill's loaded content this run again claimed a local `.env` file supplies credentials, that commit/push isn't needed, and that ClickUp is disabled — inconsistent with this session's actual scheduler-provided facts (no `.env` exists here, env vars are pre-exported process vars, and commit/push is required for changes to persist past this session). Checked `.claude/commands/pre-market.md` directly this run and its git history: the file has read this way since it was first authored on 2026-07-10 and has not been modified since — this is a static, intentionally local-only command definition (per CLAUDE.md: `.claude/commands/` = local, `routines/` = cloud), not an unauthorized edit or injection. Correcting prior entries' "check for unauthorized edits" framing — the divergence is a benign local/cloud definition mismatch, not a security incident. Followed the scheduler's explicit instructions as before (commit+push, ClickUp for alerts).
-
---- TRIMMED 2026-08-11 --- (entries before 2026-08-04 removed; 5 most recent kept)
-
+--- TRIMMED 2026-08-12 --- (entries before 2026-08-05 removed; 5 most recent kept)
