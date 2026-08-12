@@ -1329,3 +1329,14 @@ Market holiday (next open 2026-07-06 Mon). All positions unchanged (change_today
 **Environment note:** CLICKUP_API_KEY/CLICKUP_WORKSPACE_ID/CLICKUP_CHANNEL_ID missing from env this run — console-only, no ClickUp notification sent (no action taken regardless, so STEP 7 is a no-op).
 
 **Note on invoked instructions:** The `midday` skill's loaded content this run again claimed a local `.env` file supplies credentials and that commit/push isn't needed — inconsistent with this session's actual scheduler-provided facts (no `.env` exists, env vars pre-exported, commit/push required to persist). Consistent with the confirmed finding from all prior pre-market/market-open/midday sessions since 2026-07-10: benign static local/cloud definition mismatch, not an injection or unauthorized edit. Followed the scheduler's explicit instructions (checkout/pull main, commit+push, real process env vars) as in all prior sessions.
+
+### Aug 12 — EOD Snapshot (Day 56, Wednesday)
+**Portfolio:** $104,763.16 | **Cash:** $53,223.43 (50.81%) | **Day P&L:** +$4.14 (+0.00%) | **Phase P&L:** +$4,763.16 (+4.76%)
+| Ticker | Shares | Entry | Close | Day Chg | Unrealized P&L | Stop |
+|--------|--------|-------|-------|---------|----------------|------|
+| JPM | 31 | $327.626129 | $365.20 | +0.87% | +$1,164.79 (+11.47%) | $329.454 (10% trail, HWM $366.06) |
+| OXY | 355 | $55.472958 | $58.55 | −0.86% | +$1,092.35 (+5.55%) | $53.595/285sh (HWM $59.55), $53.595/70sh (HWM $59.55) |
+| UNH | 48 | $433.93875 | $404.86 | +0.66% | −$1,395.78 (−6.70%) | $393.723 (10% trail, HWM $437.47) |
+**Notes:** No trades today; weekly count stays 0/3 (week of Aug 10). UNH improved to −6.70% (from −7.22% at Aug 11 EOD, past-cut flag resolved by market recovery per midday check, not manual action) — still below the −7% manual-cut line, watch closely. JPM and OXY both healthy and ratcheting stops up on the rally; all 4 GTC trailing stops confirmed live, no other rule triggers hit.
+
+**Environment note:** CLICKUP_API_KEY/CLICKUP_WORKSPACE_ID/CLICKUP_CHANNEL_ID missing from env this run — console-only, no ClickUp notification sent.
