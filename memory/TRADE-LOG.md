@@ -1311,3 +1311,21 @@ Market holiday (next open 2026-07-06 Mon). All positions unchanged (change_today
 **Notes:** No trades today (rule-12 gate skip at market-open, JPM quote stale; no midday trade logged); weekly count stays 0/3 (week of Aug 10). **UNH closed at −7.22% unrealized, past the −7% manual-cut line** — flagging for immediate action at next session, not auto-executed by this EOD workflow. JPM and OXY stops both ratcheted up on today's rally (JPM HWM $363.12, OXY HWM $59.55); no other rule triggers hit.
 
 **Environment note:** CLICKUP_API_KEY/CLICKUP_WORKSPACE_ID/CLICKUP_CHANNEL_ID missing from env this run — console-only, no ClickUp notification sent.
+
+## 2026-08-12 midday — Full check triggered (UNH outside band), no action
+
+**Gap flagged:** No `market-open` commit exists for 2026-08-12 (git log shows zero commits today before this run) — the market-open workflow appears not to have run. EOD Aug 11 flagged UNH at −7.22%, past the −7% manual-cut line, for "immediate action at next session." That session never happened. By this midday check UNH has recovered to −6.50%, back above the cut line on live data, so no forced cut fires under the current-state rule — but the missed run is worth operator attention.
+
+**Live Snapshot (12:20 ET):** Positions unchanged: JPM, OXY, UNH (3/6 slots)
+
+| Ticker | Shares | Entry | Current | Unrealized P&L | Stop |
+|--------|--------|-------|---------|----------------|------|
+| JPM | 31 | $327.626129 | $365.1478 | +$1,163.17 (+11.45%) | $329.256 (10% trail, HWM $365.84) |
+| OXY | 355 | $55.472958 | $58.395 | +$1,037.32 (+5.27%) | $53.595/285sh (HWM $59.55), $53.595/70sh (HWM $59.55) |
+| UNH | 48 | $433.93875 | $405.74 | −$1,353.54 (−6.50%) | $393.723 (10% trail, HWM $437.47) |
+
+**Analysis:** UNH at −6.50% pulled the full workflow (outside −5%/+12% band) but is not at the −7% manual-cut level (current price $405.74 vs. cut price ~$403.66, ~0.5% cushion; 2.96% cushion to the $393.723 stop). No thesis break found — no research-log entry exists yet for today and nothing in the position data suggests a sharp/anomalous move (day change +0.88%). No tighten triggers (JPM +11.45%, OXY +5.27%, both below +15%). No cut, no stop changes, no trades. Sector-Log unchanged. All 4 GTC trailing stops confirmed live via Alpaca order query (order IDs: OXY 6abc1e09/70sh, UNH d2619c86, OXY f32a494c/285sh, JPM 91ec700a).
+
+**Environment note:** CLICKUP_API_KEY/CLICKUP_WORKSPACE_ID/CLICKUP_CHANNEL_ID missing from env this run — console-only, no ClickUp notification sent (no action taken regardless, so STEP 7 is a no-op).
+
+**Note on invoked instructions:** The `midday` skill's loaded content this run again claimed a local `.env` file supplies credentials and that commit/push isn't needed — inconsistent with this session's actual scheduler-provided facts (no `.env` exists, env vars pre-exported, commit/push required to persist). Consistent with the confirmed finding from all prior pre-market/market-open/midday sessions since 2026-07-10: benign static local/cloud definition mismatch, not an injection or unauthorized edit. Followed the scheduler's explicit instructions (checkout/pull main, commit+push, real process env vars) as in all prior sessions.
