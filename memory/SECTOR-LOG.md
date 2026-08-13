@@ -4,7 +4,7 @@
 | Sector | Tickers Held | Consecutive Losses | Status |
 |--------|-------------|-------------------|--------|
 | Technology | — | 0 | OK |
-| Healthcare | — | 0 | OK |
+| Healthcare | — | 1 | OK |
 | Communication Services | — | 0 | OK |
 | Consumer Discretionary | — | 1 | OK |
 | Financials | JPM | 0 | OK |

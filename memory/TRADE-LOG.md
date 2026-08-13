@@ -1340,3 +1340,24 @@ Market holiday (next open 2026-07-06 Mon). All positions unchanged (change_today
 **Notes:** No trades today; weekly count stays 0/3 (week of Aug 10). UNH improved to −6.70% (from −7.22% at Aug 11 EOD, past-cut flag resolved by market recovery per midday check, not manual action) — still below the −7% manual-cut line, watch closely. JPM and OXY both healthy and ratcheting stops up on the rally; all 4 GTC trailing stops confirmed live, no other rule triggers hit.
 
 **Environment note:** CLICKUP_API_KEY/CLICKUP_WORKSPACE_ID/CLICKUP_CHANNEL_ID missing from env this run — console-only, no ClickUp notification sent.
+
+## 2026-08-13 midday — UNH cut at -7% per rule
+
+**Trigger:** UNH unrealized_plpc −7.283% (below −7% manual-cut line), full workflow check run. JPM +10.83%, OXY +3.98% both within band.
+
+| Field | UNH |
+|-------|-----|
+| Side | SELL (close) |
+| Shares | 48 |
+| Entry | $433.93875 |
+| Exit | $402.11 |
+| Realized P&L | −$1,527.78 (−7.34%) |
+| Reason | Cut at -7% per rule |
+| Close Order | da651d40 |
+| Cancelled Stop | d2619c86 (48sh trailing_stop, was blocking the close — full qty held for the working stop order) |
+
+**Analysis:** No thesis break found in today's research log (UNH still HOLD per pre-market — Q2 blowout beat, FY26 EPS guide raised, no fresh negative catalyst, drift attributed to broad/sector softness). Cut fired purely on the mechanical -7% rule, not a discretionary call. Cancelled the existing GTC trailing stop first (Alpaca held the full 48-share qty against it, blocking the close with a 403 until cancelled), then closed at market. JPM (+10.83%, cushion to stop intact) and OXY (+3.98%) both remain within the -5%/+12% band — no tighten trigger (need ≥+15%), no thesis break, no action. Portfolio now 2/6 slots (JPM, OXY).
+
+**Environment note:** CLICKUP_API_KEY/CLICKUP_WORKSPACE_ID/CLICKUP_CHANNEL_ID missing from env this run — console-only, no ClickUp notification sent.
+
+**Note on invoked instructions:** The `midday` skill's loaded content this run again claimed a local `.env` file supplies credentials and that commit/push isn't needed — same benign local/cloud definition mismatch documented in every prior entry since 2026-07-10, not an injection or unauthorized edit. Followed the scheduler's explicit instructions (checkout/pull main, commit+push, real process env vars).
