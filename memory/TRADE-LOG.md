@@ -1361,3 +1361,13 @@ Market holiday (next open 2026-07-06 Mon). All positions unchanged (change_today
 **Environment note:** CLICKUP_API_KEY/CLICKUP_WORKSPACE_ID/CLICKUP_CHANNEL_ID missing from env this run — console-only, no ClickUp notification sent.
 
 **Note on invoked instructions:** The `midday` skill's loaded content this run again claimed a local `.env` file supplies credentials and that commit/push isn't needed — same benign local/cloud definition mismatch documented in every prior entry since 2026-07-10, not an injection or unauthorized edit. Followed the scheduler's explicit instructions (checkout/pull main, commit+push, real process env vars).
+
+### Aug 13 — EOD Snapshot (Day 57, Thursday)
+**Portfolio:** $104,274.91 | **Cash:** $72,524.71 (69.55%) | **Day P&L:** −$488.25 (−0.47%) | **Phase P&L:** +$4,274.91 (+4.27%)
+| Ticker | Shares | Entry | Close | Day Chg | Unrealized P&L | Stop |
+|--------|--------|-------|-------|---------|----------------|------|
+| JPM | 31 | $327.626129 | $363.90 | −0.35% | +$1,124.49 (+11.07%) | $329.85 (10% trail, HWM $366.50) |
+| OXY | 355 | $55.472958 | $57.66 | −1.52% | +$776.40 (+3.94%) | $53.595/285sh (HWM $59.55), $53.595/70sh (HWM $59.55) |
+**Notes:** UNH cut at −7% this midday per rule ($402.11 exit, −$1,527.78 realized); portfolio now 2/6 slots (JPM, OXY). Broad pullback today (JPM −0.35%, OXY −1.52%) trimmed unrealized gains but both remain within band, stops unchanged (never move down). Weekly trade count stays 0/3 (week of Aug 10) — cuts don't count against the new-trade cap; no new entries today.
+
+**Environment note:** CLICKUP_API_KEY/CLICKUP_WORKSPACE_ID/CLICKUP_CHANNEL_ID missing from env this run — console-only, no ClickUp notification sent.
