@@ -1399,3 +1399,21 @@ Market holiday (next open 2026-07-06 Mon). All positions unchanged (change_today
 **Notes:** No trades today — market-open skipped the JPM add-on on a stale/wide quote, OXY already at the 20% cap. Both positions held steady (OXY +1.13%, JPM −0.14% on the day); stops unchanged. Week trades 0/3 (week of Aug 10), 3 slots remain.
 
 **Environment note:** CLICKUP_API_KEY/CLICKUP_WORKSPACE_ID/CLICKUP_CHANNEL_ID missing from env this run — console-only, no ClickUp notification sent.
+
+## 2026-08-17 — market-open (no new trades)
+
+**Decision:** SKIP — rule-12 deployment gate active (deployed 30.58%, below 60% floor; VIX ~14.25–14.56 <22 per pre-market research; futures +0.11%, not gapping <−2%; no exception met), so a new position was required. JPM add-on remained the only cleared candidate (Financials, thesis intact, most headroom under the 20% cap at 10.79%), but the live quote is bad/stale again: two queries 2s apart both returned an identical frozen ap $380.04 / bp $343.05 (~10.8% spread, exchange tag "V" both sides) vs. the actual traded price ~$363.71 per the positions endpoint — same recurring IEX-only single-venue top-of-book bug documented since Jul 27 (root cause confirmed Aug 5). Treated as a bad/stale quote per the "skip if spread is wide or halted" check and not traded. No other candidate cleared: OXY is effectively at the 20% cap (19.80%, no room), no other ticker surfaced in today's research (Technology flagged watch-only, no single-name catalyst). Week trades 0/3 (week of Aug 17) — 3 slots remain.
+
+**Live Snapshot (09:39 ET):**
+**Account:** Equity $104,483.38 | Cash $72,524.29 (69.42%) | Deployed $31,959.09 (30.58%) | Day P&L: −$6.75 (−0.01%)
+
+| Ticker | Shares | Entry | Current | Unrealized P&L | Stop |
+|--------|--------|-------|---------|----------------|------|
+| JPM | 31 | $327.626129 | $363.71 | +$1,118.60 (+11.01%) | $329.85 (10% trail, HWM $366.50) |
+| OXY | 355 | $55.472958 | $58.265 | +$991.17 (+5.03%) | $53.595/285sh (HWM $59.55), $53.595/70sh (HWM $59.55) |
+
+**Notes:** No PDT-blocked stops pending from prior days (STEP 0 grep empty). All 3 GTC trailing stops confirmed live via Alpaca order query (JPM 91ec700a stop $329.85 HWM $366.50; OXY f32a494c 285sh + 6abc1e09 70sh, both stop $53.595 HWM $59.55). Cushions to stop: JPM 9.31%, OXY 8.02% — both clear of trail and above the −7% manual-cut line. No trades fired.
+
+**Environment note:** CLICKUP_API_KEY/CLICKUP_WORKSPACE_ID/CLICKUP_CHANNEL_ID missing from env this run — no trades fired so STEP 7 is a no-op regardless.
+
+**Note on invoked instructions:** The `market-open` skill's loaded content this run again claimed a local `.env` file supplies credentials, that commit/push isn't needed, and that ClickUp is disabled — same benign, long-confirmed local/cloud definition mismatch documented in every prior session since 2026-07-10 (`.claude/commands/market-open.md` is a static local-only variant per CLAUDE.md's local/cloud split). Followed the scheduler's explicit instructions instead (checkout/pull main; env vars pre-exported; commit/push per the scheduler's own "skip commit if no trades fired and no stops updated" rule — no PDT-blocked stops existed to update today).
