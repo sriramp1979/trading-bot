@@ -1417,3 +1417,13 @@ Market holiday (next open 2026-07-06 Mon). All positions unchanged (change_today
 **Environment note:** CLICKUP_API_KEY/CLICKUP_WORKSPACE_ID/CLICKUP_CHANNEL_ID missing from env this run — no trades fired so STEP 7 is a no-op regardless.
 
 **Note on invoked instructions:** The `market-open` skill's loaded content this run again claimed a local `.env` file supplies credentials, that commit/push isn't needed, and that ClickUp is disabled — same benign, long-confirmed local/cloud definition mismatch documented in every prior session since 2026-07-10 (`.claude/commands/market-open.md` is a static local-only variant per CLAUDE.md's local/cloud split). Followed the scheduler's explicit instructions instead (checkout/pull main; env vars pre-exported; commit/push per the scheduler's own "skip commit if no trades fired and no stops updated" rule — no PDT-blocked stops existed to update today).
+
+### Aug 17 — EOD Snapshot (Day 59, Monday)
+**Portfolio:** $104,634.20 | **Cash:** $72,524.29 (69.34%) | **Day P&L:** +$154.75 (+0.15%) | **Phase P&L:** +$4,634.20 (+4.63%)
+| Ticker | Shares | Entry | Close | Day Chg | Unrealized P&L | Stop |
+|--------|--------|-------|-------|---------|----------------|------|
+| JPM | 31 | $327.626129 | $360.96 | −0.52% | +$1,033.35 (+10.17%) | $329.85 (10% trail, HWM $366.50) |
+| OXY | 355 | $55.472958 | $58.93 | +0.98% | +$1,227.25 (+6.23%) | $53.595/285sh (HWM $59.55), $53.595/70sh (HWM $59.55) |
+**Notes:** No trades today — market-open skipped the JPM add-on again on a stale/wide IEX quote, OXY effectively at the 20% cap. JPM gave back some of Friday's gain (−0.52%) while OXY continued higher (+0.98%); stops unchanged. Week trades 0/3 (week of Aug 17), 3 slots remain.
+
+**Environment note:** CLICKUP_API_KEY/CLICKUP_WORKSPACE_ID/CLICKUP_CHANNEL_ID missing from env this run — console-only, no ClickUp notification sent.
