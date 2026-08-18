@@ -1427,3 +1427,23 @@ Market holiday (next open 2026-07-06 Mon). All positions unchanged (change_today
 **Notes:** No trades today — market-open skipped the JPM add-on again on a stale/wide IEX quote, OXY effectively at the 20% cap. JPM gave back some of Friday's gain (−0.52%) while OXY continued higher (+0.98%); stops unchanged. Week trades 0/3 (week of Aug 17), 3 slots remain.
 
 **Environment note:** CLICKUP_API_KEY/CLICKUP_WORKSPACE_ID/CLICKUP_CHANNEL_ID missing from env this run — console-only, no ClickUp notification sent.
+
+## 2026-08-18 — market-open trades
+
+| Field | JPM (add-on) |
+|-------|--------------|
+| Side | Buy |
+| Shares | 27 |
+| Entry | $361.86 (avg fill) |
+| Stop | $325.22 (10% GTC trail, HWM $361.36, order 695819c9) — new-lot stop; existing 31-sh stop ($329.85, HWM $366.50, order 91ec700a) unchanged |
+| Thesis | Rule-12 deployment gate: 30.92% deployed pre-trade, below 60% floor; VIX 14.25<22, futures −0.41% not gapping <−2% — no exception met, gate mechanically active. JPM add-on was the cleared candidate (Financials OK status, thesis intact — raised S&P earnings forecast, Olympics banking partner, no negative news), most headroom under the 20% cap. Live quote finally clean (ap $361.73/bp $361.38, $0.35 spread, fresh timestamp) after 3 consecutive stale/wide-quote skips blocking this same trade Aug 13, 14, 17 |
+| Target | $374.57 (analyst consensus PT, 13 buy/1 sell) |
+| R:R | Sub-standard (~0.5:1 to consensus PT, ~1:1 to −7% manual cut at $336.53) — gate-driven add near recent highs, not a fresh discretionary signal; position still solidly in profit (blended +5.30% unrealized) |
+
+**Decision:** BUY — deployment gate (rule 12) triggered, JPM add-on executed after the quote finally cleared the spread/staleness check. Sized to 27 sh to keep the position at 19.99% of equity (just under the 20% cap): existing 31 sh ($11,209.91 mkt value, 10.68%) + 27 new sh (~$9,770 cost) → blended 58 sh, avg entry $343.562586.
+
+**Post-trade snapshot:** Equity $105,014.42 | Cash $62,754.07 (59.75%) | Deployed $42,260.35 (40.24% — up from 30.92%, still below 75-85% target band but gate satisfied) | JPM 58 sh @ avg $343.562586, weight 19.99% | OXY 355 sh unchanged, weight 20.25% (over cap on appreciation only, no new buy). Week trades 1/3 (week of Aug 17).
+
+**Environment note:** CLICKUP_API_KEY/CLICKUP_WORKSPACE_ID/CLICKUP_CHANNEL_ID missing from env this run — trade summary printed to console only, no ClickUp notification sent.
+
+**Note on invoked instructions:** The `market-open` skill's loaded content this run again claimed a local `.env` file supplies credentials, that commit/push isn't needed, and that ClickUp is disabled — same benign, long-confirmed local/cloud definition mismatch documented in every prior session since 2026-07-10. Followed the scheduler's explicit instructions instead (checkout/pull main; env vars pre-exported; commit/push per the scheduler's own mandatory-if-trades-fired rule).
