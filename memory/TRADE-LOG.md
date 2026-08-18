@@ -1448,3 +1448,11 @@ Market holiday (next open 2026-07-06 Mon). All positions unchanged (change_today
 
 **Note on invoked instructions:** The `market-open` skill's loaded content this run again claimed a local `.env` file supplies credentials, that commit/push isn't needed, and that ClickUp is disabled — same benign, long-confirmed local/cloud definition mismatch documented in every prior session since 2026-07-10. Followed the scheduler's explicit instructions instead (checkout/pull main; env vars pre-exported; commit/push per the scheduler's own mandatory-if-trades-fired rule).
 ## 2026-08-18 midday — All within band, no action
+
+### Aug 18 — EOD Snapshot (Day 60, Tuesday)
+**Portfolio:** $105,017.26 | **Cash:** $62,754.07 (59.75%) | **Day P&L:** +$383.06 (+0.37%) | **Phase P&L:** +$5,017.26 (+5.02%)
+| Ticker | Shares | Entry | Close | Day Chg | Unrealized P&L | Stop |
+|--------|--------|-------|-------|---------|----------------|------|
+| JPM | 58 | $343.562586 | $363.00 | +0.56% | +$1,127.37 (+5.66%) | $329.85/31sh (HWM $366.50), $327.213/27sh (HWM $363.57) |
+| OXY | 355 | $55.472958 | $59.74 | +1.19% | +$1,516.29 (+7.70%) | $54.1395/285sh (HWM $60.155), $54.1395/70sh (HWM $60.155) |
+**Notes:** JPM add-on (27sh) filled this morning on the deployment-gate trigger, bringing the position to 58sh; JPM (20.05%) and OXY (20.20%) both sit fractionally over the 20% cap on price appreciation alone, no new buys involved. Midday scan found all positions within band, no stop/exit action. Week trades 1/3 (week of Aug 17), 2 slots remain.
