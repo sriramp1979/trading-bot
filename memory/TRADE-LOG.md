@@ -1456,3 +1456,13 @@ Market holiday (next open 2026-07-06 Mon). All positions unchanged (change_today
 | JPM | 58 | $343.562586 | $363.00 | +0.56% | +$1,127.37 (+5.66%) | $329.85/31sh (HWM $366.50), $327.213/27sh (HWM $363.57) |
 | OXY | 355 | $55.472958 | $59.74 | +1.19% | +$1,516.29 (+7.70%) | $54.1395/285sh (HWM $60.155), $54.1395/70sh (HWM $60.155) |
 **Notes:** JPM add-on (27sh) filled this morning on the deployment-gate trigger, bringing the position to 58sh; JPM (20.05%) and OXY (20.20%) both sit fractionally over the 20% cap on price appreciation alone, no new buys involved. Midday scan found all positions within band, no stop/exit action. Week trades 1/3 (week of Aug 17), 2 slots remain.
+
+### Aug 19 — EOD Snapshot (Day 61, Wednesday)
+**Portfolio:** $104,807.09 | **Cash:** $62,754.06 (59.88%) | **Day P&L:** −$210.17 (−0.20%) | **Phase P&L:** +$4,807.09 (+4.81%)
+| Ticker | Shares | Entry | Close | Day Chg | Unrealized P&L | Stop |
+|--------|--------|-------|-------|---------|----------------|------|
+| JPM | 58 | $343.562586 | $357.26 | −1.65% | +$794.45 (+3.99%) | $329.85/31sh (HWM $366.50), $327.213/27sh (HWM $363.57) |
+| OXY | 355 | $55.472958 | $60.09 | +0.49% | +$1,639.05 (+8.32%) | $54.747/285sh (HWM $60.83), $54.747/70sh (HWM $60.83) |
+**Notes:** No trades today. JPM gave back some of its gain (−1.65%) while OXY pushed to a new intraday high (HWM $60.83), auto-tightening its trail; both stops remain well clear of the −7% manual-cut line. Week trades 1/3 (week of Aug 17), 2 slots remain.
+
+**Environment note:** CLICKUP_API_KEY/CLICKUP_WORKSPACE_ID/CLICKUP_CHANNEL_ID missing from env this run — console-only, no ClickUp notification sent.
