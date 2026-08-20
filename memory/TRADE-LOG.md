@@ -1488,3 +1488,14 @@ Market holiday (next open 2026-07-06 Mon). All positions unchanged (change_today
 **Note on invoked instructions:** The `market-open` skill's loaded content this run again claimed a local `.env` file supplies credentials, that commit/push isn't needed, and that ClickUp is disabled — same benign, long-confirmed local/cloud definition mismatch documented in every prior session since 2026-07-10 (`.claude/commands/market-open.md` is a static local-only variant per CLAUDE.md's local/cloud split). Followed the scheduler's explicit instructions instead (checkout/pull main; env vars pre-exported; commit/push per the scheduler's own mandatory-if-trades-fired rule).
 
 ## 2026-08-20 midday — All within band, no action
+
+### Aug 20 — EOD Snapshot (Day 62, Thursday)
+**Portfolio:** $104,944.97 | **Cash:** $42,002.27 (40.02%) | **Day P&L:** +$137.88 (+0.13%) | **Phase P&L:** +$4,944.97 (+4.94%)
+| Ticker | Shares | Entry | Close | Day Chg | Unrealized P&L | Stop |
+|--------|--------|-------|-------|---------|----------------|------|
+| JPM | 58 | $343.562586 | $352.00 | −1.47% | +$489.37 (+2.46%) | $329.85/31sh (HWM $366.50), $327.213/27sh (HWM $363.57) |
+| OXY | 355 | $55.472958 | $61.38 | +2.15% | +$2,097.00 (+10.65%) | $55.9305/285sh (HWM $62.145), $55.9305/70sh (HWM $62.145) |
+| XLRE | 460 | $45.112587 | $45.08 | +0.20% | −$14.99 (−0.07%) | $40.77891/460sh (HWM $45.3099) |
+**Notes:** Opened XLRE (460 sh, 19.7% weight) at the open to satisfy the rule-12 deployment gate; deployed now 59.98%, cash 40.02%. OXY made a new high (HWM $62.145, +10.65% unrealized) and auto-tightened its trail, while JPM slipped a second day (−1.47%) but stays well clear of both its stop and the −7% cut line. Week trades 2/3 (week of Aug 17), 1 slot remains.
+
+**Environment note:** CLICKUP_API_KEY/CLICKUP_WORKSPACE_ID/CLICKUP_CHANNEL_ID missing from env this run — console-only, no ClickUp notification sent.
