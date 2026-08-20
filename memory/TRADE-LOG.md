@@ -1466,3 +1466,23 @@ Market holiday (next open 2026-07-06 Mon). All positions unchanged (change_today
 **Notes:** No trades today. JPM gave back some of its gain (−1.65%) while OXY pushed to a new intraday high (HWM $60.83), auto-tightening its trail; both stops remain well clear of the −7% manual-cut line. Week trades 1/3 (week of Aug 17), 2 slots remain.
 
 **Environment note:** CLICKUP_API_KEY/CLICKUP_WORKSPACE_ID/CLICKUP_CHANNEL_ID missing from env this run — console-only, no ClickUp notification sent.
+
+## 2026-08-20 — market-open trades
+
+| Field | XLRE (new position) |
+|-------|--------------------|
+| Side | Buy |
+| Shares | 460 |
+| Entry | $45.112587 (avg fill) |
+| Stop | $40.5945 (10% GTC trail, HWM $45.105, order 6393c5a6) |
+| Thesis | Rule-12 deployment gate: 40.29% deployed pre-trade, below 60% floor; VIX 14.89<22, futures +0.16% not gapping <−2% — no exception met, gate mechanically active. JPM (19.75%) and OXY (20.54%) both at/over the 20% cap with no headroom to add, so gate required a genuine third position. Real Estate (Status: OK, no prior trades) named a top-performing sector today on falling long yields (30-yr −10bps to 5.18% on Treasury buyback news) — clear rate-sensitive sector tailwind. XLRE pre-market quote was too wide/stale to size (bp $43.42/ap $46.33, ~6.7% spread); re-quoted clean at market-open (bp $45.11/ap $45.12, $0.01 spread) and cleared the entry checklist |
+| Target | Sector-momentum trade tracking XLRE/Real Estate strength on the falling-rate tailwind; no single-name PT — managed via trailing stop |
+| R:R | Gate-driven sector add, not a discretionary breakout signal; 10% trail defines downside, sized to 19.70% of equity (under 20% cap) |
+
+**Decision:** BUY — deployment gate (rule 12) triggered; both existing positions (JPM, OXY) capped with no room to add, so a fresh third position was required to satisfy the gate. XLRE (Real Estate) cleared once the quote tightened at open. Sized to 460 sh (~$20,752 cost, 19.70% of equity) to stay under the 20% cap with a buffer for slippage.
+
+**Post-trade snapshot:** Equity $105,288.65 | Cash $42,002.27 (39.89%) | Deployed $63,286.38 (60.11% — up from 40.29%, gate satisfied, crossed the 60% floor) | JPM 58 sh unchanged, weight ~19.6% | OXY 355 sh unchanged, weight ~20.8% | XLRE 460 sh @ avg $45.112587, weight 19.70%. Week trades 2/3 (week of Aug 17), 1 slot remains.
+
+**Environment note:** CLICKUP_API_KEY/CLICKUP_WORKSPACE_ID/CLICKUP_CHANNEL_ID missing from env this run — trade summary printed to console only, no ClickUp notification sent.
+
+**Note on invoked instructions:** The `market-open` skill's loaded content this run again claimed a local `.env` file supplies credentials, that commit/push isn't needed, and that ClickUp is disabled — same benign, long-confirmed local/cloud definition mismatch documented in every prior session since 2026-07-10 (`.claude/commands/market-open.md` is a static local-only variant per CLAUDE.md's local/cloud split). Followed the scheduler's explicit instructions instead (checkout/pull main; env vars pre-exported; commit/push per the scheduler's own mandatory-if-trades-fired rule).

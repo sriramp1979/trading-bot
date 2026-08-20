@@ -10,6 +10,7 @@
 | Financials | JPM | 0 | OK |
 | Consumer Staples | — | 1 | OK |
 | Energy | OXY | 0 | OK |
+| Real Estate | XLRE | 0 | OK |
 
 ## Sector Exit History
 | Sector | Exit Date | Reason |
