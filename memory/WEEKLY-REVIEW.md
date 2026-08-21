@@ -289,3 +289,66 @@ Template for each entry:
 *Portfolio −0.40% vs S&P ~−0.61% = +0.21% relative — a rare outperforming week, but on a down tape, not a strong one. Process solid: gate triggered correctly, stops behaved, bad quote correctly rejected, sector-EXIT discipline paid off by fully avoiding the week's Mag7 selloff. Deployment remains the chronic weak spot (~51%, well under target) and UNH is due for a thesis re-check. Net C+.*
 
 **Environment note:** CLICKUP_API_KEY/CLICKUP_WORKSPACE_ID/CLICKUP_CHANNEL_ID all missing from env this run — Step 6 ClickUp alert could not be sent; summary delivered via direct notification instead, matching the pattern flagged in this week's daily research/trade log entries.
+
+---
+
+## Week ending 2026-08-21
+
+### Stats
+| Metric | Value |
+|--------|-------|
+| Starting portfolio | $104,479.45 (Aug 14 EOD) |
+| Ending portfolio | $104,894.75 |
+| Week return | +$415.30 (+0.40%) |
+| S&P 500 week | ~−1.4% (7,785.76 → ~7,674) |
+| Bot vs S&P | +1.80% |
+| Phase P&L | +$4,894.75 (+4.89% from $100,000) |
+| Trades | 2 new entries (JPM add-on, XLRE new position) (W:0 / L:0 / open:3) |
+| Win rate | N/A (no closed trades) |
+| Best trade | OXY +10.50% unrealized |
+| Worst trade | XLRE −0.07% unrealized |
+| Profit factor | N/A |
+| Deployment at week end | 59.96% ($62,892 deployed) |
+
+### Closed Trades
+| Ticker | Entry | Exit | P&L | Notes |
+|--------|-------|------|-----|-------|
+| — | — | — | — | No closed trades this week |
+
+### Open Positions at Week End
+| Ticker | Entry | Close | Unrealized | Stop |
+|--------|-------|-------|------------|------|
+| JPM | $343.562586 avg (31+27 lots) | $351.62 | +$467.56 (+2.35%) | $329.85/31sh (HWM $366.50), $327.213/27sh (HWM $363.57) |
+| OXY | $55.472958 (285+70 lots) | $61.30 | +$2,068.60 (+10.50%) | $55.9305/285sh + $55.9305/70sh (HWM $62.145) |
+| XLRE | $45.112587 | $45.08 | −$14.99 (−0.07%) | $40.77891 (10% trail, HWM $45.3099) |
+
+### What Worked
+- Deployment gate (rule 12) triggered correctly twice this week — JPM add-on (Aug 18, deployed 30.92%→40.24%) and a new XLRE position (Aug 20, deployed 40.29%→60.11%) — closing out the multi-week chronic cash-drag problem flagged in every prior review
+- OXY remained the standout performer, +10.50% unrealized, repeatedly setting new HWMs (up to $62.145) with the 10% trail auto-ratcheting correctly, zero manual intervention needed
+- Stale/wide-quote discipline held: JPM add-on was correctly skipped on bad IEX quotes Aug 13, 14, and 17 before finally executing cleanly Aug 18 once the spread tightened — no forced fills on bad data
+- XLRE cleared the full entry checklist (catalyst, sector momentum, stop, target) once its pre-market wide spread (~6.7%) tightened at the open — a disciplined, non-forced gate-driven add
+- Zero closed-trade losses; all 3 positions ended the week with healthy stop cushions (6.7%–9.7%), none near the −7% manual-cut line
+
+### What Didn't Work
+- JPM (19.5%) and OXY (20.8%) are both at/over the 20% position cap on appreciation alone, with no headroom to add — concentration is building in the two best performers even as the deployment target is finally being met
+- XLRE's entry thesis (falling long-term yields) reversed almost immediately — the 30-yr yield rose +6bps the very next session (Aug 21), undercutting the rationale within 24 hours of entry
+- Only 2/3 weekly trade slots used; the 3rd was held in reserve through Friday absent a fresh catalyst — some inactivity bias persists even after the deployment gate was satisfied
+- Nominal week was only +0.40% — outperformance vs. S&P was driven mostly by the index being down (bond-market volatility), not by the bot generating fresh alpha
+- No closed trades this week means no realized-P&L data point to stress-test the trailing-stop/target framework in current conditions
+
+### Key Lessons
+- The deployment gate is now proving out as designed — starting the week at 30.6% deployed and closing near 60% shows the mechanical <60%-at-open trigger genuinely forces action rather than being talked down by "watch-only" research calls
+- Position-cap saturation (JPM, OXY both at/over 20%) means further deployment must come from new names going forward, not adds to existing winners — room in the two best performers is essentially gone
+- A rate-driven sector thesis (XLRE) can flip within a single session; treat such entries as tactical, trail-managed positions rather than high-conviction holds
+- Bond-market volatility (30-yr yield swinging ~10bps day to day) was the dominant cross-asset driver this week — equity moves tracked yield moves more than idiosyncratic stock news
+
+### Adjustments for Next Week
+- With JPM/OXY capped and XLRE's thesis under pressure, prioritize sourcing a 4th position in an uncapped, catalyst-backed sector (Healthcare, Consumer Discretionary, Industrials, Materials, Utilities all Status OK) to use the reserved slot and build toward the 5-6 position target
+- Watch XLRE closely: if the 30-yr yield continues rising, treat the rate-thesis break as a discretionary review trigger rather than waiting for the 10% trail to catch it
+- OXY at 20.8% weight: no rule action required (cap governs new buys only, not appreciation), but keep monitoring for further cap drift
+- Keep the stale/wide-quote discipline that worked well this week (JPM Aug 13/14/17 skips) — don't force fills into bad data even under deployment-gate pressure
+
+### Overall Grade: B
+*Portfolio +0.40% vs S&P ~−1.4% = +1.80% relative — solid outperformance, though driven more by a down index than fresh alpha. Process strong: deployment gate finally closed the chronic cash-drag gap (30.6%→60.0%), stale-quote discipline held, stops behaved, no losses. Held back from higher marks by JPM/OXY cap saturation limiting further deployment flexibility and XLRE's rate thesis reversing within a day of entry. Net B.*
+
+**Environment note:** CLICKUP_API_KEY/CLICKUP_WORKSPACE_ID/CLICKUP_CHANNEL_ID missing from env this run — Step 6 ClickUp alert not sent; summary printed to console per the scheduler's fallback instructions.
