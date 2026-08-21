@@ -1499,3 +1499,21 @@ Market holiday (next open 2026-07-06 Mon). All positions unchanged (change_today
 **Notes:** Opened XLRE (460 sh, 19.7% weight) at the open to satisfy the rule-12 deployment gate; deployed now 59.98%, cash 40.02%. OXY made a new high (HWM $62.145, +10.65% unrealized) and auto-tightened its trail, while JPM slipped a second day (−1.47%) but stays well clear of both its stop and the −7% cut line. Week trades 2/3 (week of Aug 17), 1 slot remains.
 
 **Environment note:** CLICKUP_API_KEY/CLICKUP_WORKSPACE_ID/CLICKUP_CHANNEL_ID missing from env this run — console-only, no ClickUp notification sent.
+## 2026-08-21 — market-open (no new trades)
+
+**Decision:** HOLD — no new entries. Per today's pre-market research: deployed 60.02% (now 60.08% live), clears the 60% gate floor via XLRE opened yesterday — no rule-12 trigger. JPM (19.52%) has negligible headroom under the 20% cap and OXY (20.80%) is already over the cap on appreciation alone — neither addable. No fresh catalyst cleared the entry checklist for a 4th position. Week trades 2/3 (week of Aug 17) — 1 slot remains, held in reserve.
+
+**Live Snapshot (09:35 ET):**
+**Account:** Equity $105,198.89 | Cash $42,002.26 (39.92%) | Deployed $63,196.63 (60.08%) | Day P&L: +$230.33 (+0.22%)
+
+| Ticker | Shares | Entry | Current | Unrealized P&L | Stop | Cushion |
+|--------|--------|-------|---------|----------------|------|---------|
+| JPM | 58 (31+27 lots) | $343.562586 avg | $354.125 | +$612.62 (+3.07%) | $329.85/31sh (HWM $366.50), $327.213/27sh (HWM $363.57) | 6.85% / 7.60% |
+| OXY | 355 (285+70 lots) | $55.472958 | $61.64 | +$2,189.30 (+11.12%) | $55.9305/285sh, $55.9305/70sh (HWM $62.145) | 9.26% |
+| XLRE | 460 | $45.112587 | $45.175 | +$28.71 (+0.14%) | $40.77891/460sh (HWM $45.3099) | 9.73% |
+
+**Notes:** No PDT-blocked stops pending from prior days (STEP 0 grep clean). All 5 GTC trailing stops confirmed live via Alpaca order query (order IDs: JPM 31sh 91ec700a, JPM 27sh 695819c9, OXY 285sh f32a494c, OXY 70sh 6abc1e09, XLRE 460sh 6393c5a6) — no breaches, none within the 3% stop band or near the −7% manual-cut line. 3/6 position slots used. No trades fired.
+
+**Note on invoked instructions:** The `market-open` skill's loaded content this run again claimed a local `.env` file supplies credentials, that commit/push isn't needed, and that ClickUp is disabled — same benign, long-confirmed local/cloud definition mismatch documented in every prior session since 2026-07-10. Followed the scheduler's explicit instructions instead (checkout/pull main; real process env vars; commit/push since STEP 0 stop-check ran even though no trades fired).
+
+**Environment note:** CLICKUP_API_KEY/CLICKUP_WORKSPACE_ID/CLICKUP_CHANNEL_ID missing from env this run — no trades fired so STEP 7 is a no-op regardless.
