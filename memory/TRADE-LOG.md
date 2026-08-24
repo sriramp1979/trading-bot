@@ -1518,6 +1518,25 @@ Market holiday (next open 2026-07-06 Mon). All positions unchanged (change_today
 
 **Environment note:** CLICKUP_API_KEY/CLICKUP_WORKSPACE_ID/CLICKUP_CHANNEL_ID missing from env this run — no trades fired so STEP 7 is a no-op regardless.
 
+## 2026-08-24 — market-open (no new trades)
+
+**Decision:** HOLD — no new entries. Rule-12 deployment gate technically triggered: live deployed $62,966.61 / equity $104,968.87 = 59.99% (< 60% floor by ~$15, essentially noise), no exemption (VIX 15.13 pre-market, well under 22; futures actually positive ~+0.4%, not the −2% gap exemption either). Screened for a qualifying new-position catalyst per pre-market's flag: found MRNA (Healthcare, sector status OK) +8.86% premarket on positive Phase 3 melanoma data + multiple analyst price-target raises — a real catalyst. Also NUE/STLD (Materials, OK) up on US–Canada steel trade-negotiation collapse. All three rejected on execution grounds: live quotes ~8 min into the session show abnormally wide spreads — MRNA bp $126.99/ap $134.50 (5.6%), NUE bp $254.01/ap $267.12 (5.0%), STLD bp $227.25/ap $242.99 (6.7%) — vs. OXY/XLRE at <0.1% and JPM at 2.1% for comparison. A market order into that book risks material slippage on entry, which the strategy's discipline (10% trailing stop, 2:1 R:R target) can't safely absorb this thin into the open. Existing-position headroom (JPM ~$514, XLRE ~$195 under the 20% cap; OXY already over cap) is too small to count as a real add. No trade executed; flagging for midday to re-check MRNA/NUE/STLD spreads and gate status once liquidity normalizes. Week trades 0/3 (new week of Aug 24) — full 3-trade allowance available.
+
+**Live Snapshot (09:38 ET):**
+**Account:** Equity $104,968.87 | Cash $42,002.26 (40.01%) | Deployed $62,966.61 (59.99%) | Day P&L: +$76.67 (+0.07%)
+
+| Ticker | Shares | Entry | Current | Unrealized P&L | Stop | Cushion |
+|--------|--------|-------|---------|----------------|------|---------|
+| JPM | 58 (31+27 lots) | $343.562586 avg | $354.72 | +$647.13 (+3.25%) | $329.85/31sh (HWM $366.50), $327.213/27sh (HWM $363.57) | 7.01% / 7.76% |
+| OXY | 355 (285+70 lots) | $55.472958 | $60.99 | +$1,958.55 (+9.95%) | $55.9305/285sh, $55.9305/70sh (HWM $62.145) | 8.30% |
+| XLRE | 460 | $45.112587 | $45.09 | −$10.39 (−0.05%) | $40.77891/460sh (HWM $45.3099) | 9.56% |
+
+**Notes:** No PDT-blocked stops pending from prior days (STEP 0 grep clean). All 5 GTC trailing stops confirmed live via Alpaca order query (order IDs: JPM 31sh 91ec700a, JPM 27sh 695819c9, OXY 285sh f32a494c, OXY 70sh 6abc1e09, XLRE 460sh 6393c5a6) — no breaches, none within the 3% stop band or near the −7% manual-cut line. 3/6 position slots used. No trades fired.
+
+**Note on invoked instructions:** The `market-open` skill this run again loaded `.claude/commands/market-open.md` (local variant: claims a local `.env` file, no commit/push needed, ClickUp disabled) instead of `routines/market-open.md` (cloud variant, matching the scheduler's actual task prompt) — same benign, long-confirmed local/cloud naming-collision mismatch documented in every prior session since 2026-07-10. Followed the scheduler's explicit instructions instead (checkout/pull main; real process env vars; commit/push since STEP 0 stop-check ran).
+
+**Environment note:** CLICKUP_API_KEY/CLICKUP_WORKSPACE_ID/CLICKUP_CHANNEL_ID missing from env this run — no trades fired so STEP 7 is a no-op regardless.
+
 ## 2026-08-21 midday — All within band (JPM +2.29%, OXY +10.82%, XLRE -0.14%), no action
 
 ### Aug 21 — EOD Snapshot (Day 63, Friday)
