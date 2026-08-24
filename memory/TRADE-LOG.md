@@ -1549,3 +1549,14 @@ Market holiday (next open 2026-07-06 Mon). All positions unchanged (change_today
 **Notes:** No trades today — market-open and midday both held, deployment gate already satisfied by yesterday's XLRE entry. All 5 GTC trailing stops confirmed live, no breaches, none within 3% band. Week trades 2/3 (week of Aug 17), 1 slot remains.
 
 **Environment note:** CLICKUP_API_KEY/CLICKUP_WORKSPACE_ID/CLICKUP_CHANNEL_ID missing from env this run — console-only, no ClickUp notification sent.
+
+### Aug 24 — EOD Snapshot (Day 64, Monday)
+**Portfolio:** $104,854.74 | **Cash:** $42,002.26 (40.06%) | **Day P&L:** −$50.84 (−0.05%) | **Phase P&L:** +$4,854.74 (+4.85%)
+| Ticker | Shares | Entry | Close | Day Chg | Unrealized P&L | Stop |
+|--------|--------|-------|-------|---------|----------------|------|
+| JPM | 58 | $343.562586 | $356.31 | +1.35% | +$739.35 (+3.71%) | $329.85/31sh (HWM $366.50), $327.213/27sh (HWM $363.57) |
+| OXY | 355 | $55.472958 | $60.02 | −2.09% | +$1,614.20 (+8.20%) | $55.9305/285sh (HWM $62.145), $55.9305/70sh (HWM $62.145) |
+| XLRE | 460 | $45.112587 | $45.39 | +0.69% | +$127.61 (+0.61%) | $40.86/460sh (HWM $45.40) |
+**Notes:** No trades today — market-open flagged MRNA/NUE/STLD catalysts but rejected all on wide spreads (5-7%), no midday log found. All 5 GTC trailing stops confirmed live, none within 3% band; XLRE's stop auto-ratcheted up to $40.86 (HWM $45.40) on a new high. Week trades 0/3 (week of Aug 24), full allowance remains.
+
+**Environment note:** CLICKUP_API_KEY/CLICKUP_WORKSPACE_ID/CLICKUP_CHANNEL_ID missing from env this run — console-only, no ClickUp notification sent.
