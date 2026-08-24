@@ -27,6 +27,56 @@ Format each entry:
 ### Decision
 TRADE or HOLD (default HOLD if no edge)
 
+## 2026-08-24 — Pre-market Research
+
+### Account
+- Equity: $104,657.66 | Cash: $42,002.26 (40.14%) | Deployed: $62,655.40 (59.87% — **below the 60% gate floor**)
+- Buying power: $343,444.16 (day-trade) / $146,659.92 (reg T)
+- Daytrade count: not exposed by account endpoint; no same-day round trips, PDT not a concern
+- Open positions: JPM (58 sh), OXY (355 sh), XLRE (460 sh) — 3/6 slots used
+- Week trades: 0/3 (new week of Aug 24) — 3 slots available
+- Overnight: equity down from $104,892.20 (last close) to $104,657.66 (−0.22%), driven by OXY pulling back intraday Friday
+
+### Positions
+| Ticker | Shares | Entry | Current | Unrealized P&L | Stop | HWM |
+|--------|--------|-------|---------|----------------|------|-----|
+| JPM | 58 (31+27 lots) | $343.562586 avg | $352.03 | +$491.11 (+2.47%) | $329.85/31sh (HWM $366.50), $327.213/27sh (HWM $363.57) | $366.50 |
+| OXY | 355 (285+70 lots) | $55.472958 | $60.5658 | +$1,807.96 (+9.18%) | $55.9305/285sh, $55.9305/70sh (HWM $62.145) | $62.145 |
+| XLRE | 460 | $45.112587 | $45.08 | −$14.99 (−0.07%) | $40.77891/460sh (HWM $45.3099) | $45.3099 |
+
+Cushions to stop: JPM 6.30%/7.05% (31/27sh lots), OXY 7.65% (both lots), XLRE 9.54% — all clear of trail, none near the −7% manual-cut line, none at +15%/+20% tighten thresholds. Weights: JPM 19.51% (~$514 headroom under 20% cap), OXY 20.55% (over cap on appreciation, no headroom), XLRE 19.82% (~$195 headroom) of equity.
+
+### Market Context
+- S&P 500 futures: −0.11% premarket Monday; prediction markets show only ~45% odds of a higher open — slightly bearish lean. Market bracing for Nvidia earnings and Jackson Hole this week
+- VIX: 15.13, down 5.50% from Friday's close (15.82 open today) — well below the 22 gate threshold
+- Today's catalysts: Nvidia earnings later this week is the dominant single-stock catalyst; Fed Chair Kevin Warsh speaks at Jackson Hole Friday (hawkish tone = bearish risk, rate-cut hints = bullish); Alibaba priced an 8%-dilutive share placement (~$10.2B) dragging Asia tech lower overnight; Samsung fell 8% on a disappointing shareholder-return estimate; Treasury yields at multi-decade highs remain an overhang on equity valuations
+- Earnings before open: none held (JPM, OXY, XLRE) report today
+
+### Position News
+- **JPM** ($352.03, +2.47% blended): No thesis break. Recent headlines are non-fundamental (ex-JPM exec advising Social Security agency, 2028 LA Olympics investment). Q2 EPS beat ($6.14 vs $5.59 est, +9.84%); nearing $1T market cap, a first for any global bank. Weight 19.51% (~$514 headroom); cushion 6.30–7.05%; HOLD
+- **OXY** ($60.5658, +9.18%): No thesis break. No fresh news surfaced today within search budget; Friday pullback (−1.2%) looks like broad-market/oil noise, not company-specific. Position over the 20% cap (20.55%), no room to add; cushion 7.65%; HOLD
+- **XLRE** ($45.08, −0.07%): No thesis break. No fresh REIT/rate-specific news surfaced today within search budget; multi-decade-high Treasury yields remain the key headwind to the falling-rate entry thesis — watch closely. Weight 19.82% (~$195 headroom, effectively capped); cushion 9.54%; HOLD
+
+### Trade Ideas
+1. **No new add identified today** — deployment gate (rule 12) technically triggers: deployed 59.87% < 60% floor, and neither exemption applies (VIX 15.13 ≪ 22; futures −0.11% ≫ −2% gap). However, today's 4-search budget covered only broad market context + existing-position news, not new-candidate screening — no specific catalyst/entry/stop/target cleared the entry checklist for a 4th position.
+2. **Existing positions have no meaningful headroom to add**: OXY is over the 20% cap (20.55%), JPM (~$514) and XLRE (~$195) headroom is too small for a real add — any gate-driven action needs to be a new (4th) position, not a top-up.
+3. **Flag for market-open workflow**: with the gate technically unmet and no exemption, market-open must either (a) screen for and execute a qualifying new position in an OK-status sector (Technology, Healthcare, Communication Services, Consumer Discretionary, Consumer Staples, Industrials, Materials, Utilities all show Status = OK), or (b) explicitly document why the gate is not actionable today (e.g., no catalyst clears the checklist) before defaulting to HOLD.
+
+### Risk Factors
+- **Deployment gate technically triggered**: 59.87% deployed < 60% floor, no VIX/futures exemption applies — needs resolution at market-open, not deferred silently
+- Nvidia earnings this week — mega-cap tech event risk that can swing the broad tape regardless of our sector exposure
+- Jackson Hole: Fed Chair Warsh speaks Friday — hawkish surprise is a market-wide downside risk
+- Alibaba dilution + Samsung disappointment dragged Asia tech lower overnight — soft global risk sentiment into the US open
+- Treasury yields at multi-decade highs — continues to pressure XLRE's falling-rate entry thesis; no reversal signal yet
+- Missing ClickUp credentials — no automated urgent-alert channel today; none needed (no position near −7%, no thesis break)
+
+### Decision
+HOLD (pre-market) — no trade executed in this research step; trade execution happens in the market-open workflow. No position near the −7% cut line or within the 3% stop band; no thesis break on any holding. **Flagging for market-open**: deployment gate (rule 12) is technically triggered at 59.87% deployed (<60% floor) with no VIX/futures exemption, but today's research budget did not surface a specific qualifying catalyst for a new position — market-open workflow should either screen further and act, or explicitly document the exception. Week trades 0/3 (new week of Aug 24) — full allowance available if a catalyst emerges.
+
+**Environment note:** CLICKUP_API_KEY/CLICKUP_WORKSPACE_ID/CLICKUP_CHANNEL_ID missing from env this run — console-only, no ClickUp notification sent. No urgent items today (all positions well within band, no thesis break, no position near the −7% cut line).
+
+**Note on invoked instructions:** The `pre-market` skill's loaded content this run again claimed a local `.env` file supplies credentials, that commit/push isn't needed, and that ClickUp is disabled — same benign, long-confirmed local/cloud definition mismatch documented in every prior entry since 2026-07-10. Followed the scheduler's explicit instructions instead (checkout/pull main, real process env vars, commit+push).
+
 ## 2026-08-21 — Pre-market Research
 
 ### Account
@@ -220,51 +270,5 @@ TRADE (flagged for market-open) — rule 12 deployment gate is mechanically acti
 
 **Note on data quality:** One search result returned an OXY quote of $46.31 (+2.71%) that conflicts with the live Alpaca quote ($59.45) and every other source found — treated as bad data (likely a mismatched ticker/exchange listing) and disregarded in favor of the authoritative Alpaca feed.
 
-## 2026-08-17 — Pre-market Research
+--- TRIMMED 2026-08-24 --- (entries before 2026-08-18 removed; 5 most recent kept)
 
-### Account
-- Equity: $104,491.59 | Cash: $72,524.29 (69.41%) | Deployed: $31,967.30 (30.59% — below 60% gate floor)
-- Buying power: $379,605.60 (day-trade) / $177,015.88 (reg T)
-- Daytrade count: not exposed by account endpoint; no same-day round trips, PDT not a concern
-- Open positions: JPM (31 sh), OXY (355 sh) — 2/6 slots used
-- Week trades: 0/3 (new week of Aug 17) — 3 slots remain
-- Overnight: equity roughly flat, $104,490.13 (last close) to $104,491.59 (+0.001%)
-
-### Positions
-| Ticker | Shares | Entry | Current | Unrealized P&L | Stop | HWM |
-|--------|--------|-------|---------|----------------|------|-----|
-| JPM | 31 | $327.626129 | $362.20 | +$1,071.79 (+10.55%) | $329.85 (10% trail) | $366.50 |
-| OXY | 355 | $55.472958 | $58.42 | +$1,046.20 (+5.31%) | $53.595/285sh (HWM 59.55), $53.595/70sh (HWM 59.55) | $59.55 |
-
-Cushions to stop: JPM 8.93%, OXY 8.26% — both clear of trail and well above the −7% manual-cut line. Weights: JPM 10.75%, OXY 19.85% of equity — OXY at the edge of the 20% cap, no room to add; JPM has the most headroom.
-
-### Market Context
-- S&P 500 futures: +0.11% premarket Monday; Polymarket implies ~62% odds of a higher open; investors weighing a strong corporate earnings outlook (heavy retail earnings week) against elevated bond yields and Middle East frictions
-- VIX: ~14.25–14.56, well below the 22 gate threshold — low-vol/complacent regime (some reports flag rising tail-hedge activity underneath the calm)
-- Today's catalysts: CPI, Empire State manufacturing, and FOMC minutes among 47 scheduled econ events; dollar fell broadly after July retail sales missed (−0.6% vs. +0.2% expected), trimming next-meeting rate-hike odds; S&P 500 and Russell 2000 at fresh all-time highs this week on the earnings stream; Middle East geopolitical risk flagged as the top downside catalyst
-- Earnings before open: none held (JPM, OXY) report today
-
-### Position News
-- **JPM** ($362.20, +10.55%): No thesis break found in today's search; no fresh negative catalyst; approaching but not yet at the +15% trail-tighten trigger; cushion 8.93%; HOLD
-- **OXY** ($58.42, +5.31%): Thesis reinforced — Q2 adjusted EPS $2.40 (beat by 29%), revenue $8.33B (beat by 15.4%), FCF $3.0B (highest since Q3 2022), debt $11.8B (lowest since Q2 2019), dividend raised 8% to $0.28/share; continued analyst PT raises (Truist $63 on Aug 10, Mizuho $78, Barclays $75); no thesis break; cushion 8.26%; HOLD
-
-### Trade Ideas
-1. **JPM add-on (Financials)** — catalyst: thesis intact, no negative news, most headroom under the 20% cap (10.75% of equity, ~$9,700 room). Entry ~$362.20 | Stop ~$336.85 (−7% manual cut) | Target ~$400 (~2:1 R:R on $25.35 risk, within prior consensus PT range). Primary candidate for the market-open deployment gate (rule 12), contingent on a valid live quote at open.
-2. **OXY — no new add today** — fundamentals strong and improving but effectively at the 20% cap (19.85%, ~$110 headroom); watch-only.
-3. **Technology — watch only, no entry** — sector status OK (0 consecutive losses, reset 2026-07-24) but no single-name catalyst with a defensible entry/stop surfaced within today's search budget; needs a dedicated look before committing capital.
-
-### Risk Factors
-- Rule 12 deployment gate: 30.59% deployed, below the 60% floor; VIX ~14.25–14.56 <22, futures +0.11% not gapping <−2% — no exception met, gate mechanically active for market-open; JPM add-on (idea 1) is the only cleared candidate with real headroom (OXY effectively capped)
-- CPI + FOMC minutes today — inflation/rate-path surprise risk sitting under a low-VIX, complacent setup; could move JPM (rate-sensitive) sharply either direction
-- Weak July retail sales already reflected in dollar weakness/reduced rate-hike odds; heavy retail earnings week could add intraday volatility
-- Middle East geopolitical tensions flagged as the top tail-risk catalyst — could spike oil/VIX with no advance warning (relevant to OXY as well)
-- Missing ClickUp credentials — no automated urgent-alert channel today
-
-### Decision
-TRADE (flagged for market-open) — rule 12 deployment gate is mechanically active: 30.59% deployed is below the 60% floor and neither exception condition is met (VIX ~14.25–14.56 <22, futures +0.11% not gapping <−2%). No position is below the −7% cut line or within the 3% stop band pre-market, so no forced action here — this is a gate-driven add, not a discretionary signal. JPM add-on (idea 1) is the cleared candidate for the market-open workflow to execute, subject to its own entry checklist (including live-quote validation) at execution time. Week trades 0/3 (week of Aug 17) — 3 slots remain.
-
-**Environment note:** CLICKUP_API_KEY/CLICKUP_WORKSPACE_ID/CLICKUP_CHANNEL_ID missing from env this run — console-only, no ClickUp notification sent. No urgent items today (both positions well within band, no thesis break, no position near the −7% cut line).
-
-**Note on invoked instructions:** The `pre-market` skill's loaded content this run again claimed a local `.env` file supplies credentials, that commit/push isn't needed, and that ClickUp is disabled — same benign, long-confirmed local/cloud definition mismatch documented in every prior entry since 2026-07-10 (`.claude/commands/pre-market.md` is a static local-only variant per CLAUDE.md's local/cloud split). Followed the scheduler's explicit instructions instead (commit+push, real process env vars, ClickUp for alerts when creds are present).
-
---- TRIMMED 2026-08-21 --- (entries before 2026-08-17 removed; 5 most recent kept)
