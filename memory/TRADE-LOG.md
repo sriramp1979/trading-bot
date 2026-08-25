@@ -1582,3 +1582,15 @@ Market holiday (next open 2026-07-06 Mon). All positions unchanged (change_today
 **Environment note:** CLICKUP_API_KEY/CLICKUP_WORKSPACE_ID/CLICKUP_CHANNEL_ID missing from env this run — trade summary printed to console only, no ClickUp notification sent.
 
 **Note on invoked instructions:** The `market-open` skill's loaded content this run again claimed a local `.env` file supplies credentials, that commit/push isn't needed, and that ClickUp is disabled — same benign, long-confirmed local/cloud definition mismatch documented in every prior session since 2026-07-10 (`.claude/commands/market-open.md` is a static local-only variant per CLAUDE.md's local/cloud split). Followed the scheduler's explicit instructions instead (checkout/pull main; env vars pre-exported; commit/push per the scheduler's own mandatory-if-trades-fired rule).
+
+### Aug 25 — EOD Snapshot (Day 65, Tuesday)
+**Portfolio:** $104,631.87 | **Cash:** $21,678.53 (20.72%) | **Day P&L:** −$222.87 (−0.21%) | **Phase P&L:** +$4,631.87 (+4.63%)
+| Ticker | Shares | Entry | Close | Day Chg | Unrealized P&L | Stop |
+|--------|--------|-------|-------|---------|----------------|------|
+| AMD | 43 | $472.644884 | $480.52 | +5.21% | +$338.63 (+1.67%) | $433.35/43sh (HWM $481.50) |
+| JPM | 58 | $343.562586 | $356.66 | +0.08% | +$759.65 (+3.81%) | $329.85/31sh (HWM $366.50), $327.213/27sh (HWM $363.57) |
+| OXY | 355 | $55.472958 | $58.42 | −2.81% | +$1,046.20 (+5.31%) | $55.9305/285sh (HWM $62.145), $55.9305/70sh (HWM $62.145) |
+| XLRE | 460 | $45.112587 | $45.36 | +0.07% | +$113.81 (+0.55%) | $40.9185/460sh (HWM $45.465) |
+**Notes:** AMD bought at market-open (rule-12 deployment gate + Raymond James upgrade catalyst); all 5 GTC trailing stops confirmed live, none within 3% band, XLRE's stop ratcheted to $40.9185 (HWM $45.465) on a new high. OXY down -2.81% intraday but unrealized P&L still +5.31%, no stop breach. NVDA earnings tomorrow (2026-08-26) flagged as a semiconductor-sector risk for AMD; week trades 1/3 (week of Aug 24), 2 slots remain.
+
+**Environment note:** CLICKUP_API_KEY/CLICKUP_WORKSPACE_ID/CLICKUP_CHANNEL_ID missing from env this run — console-only, no ClickUp notification sent.
