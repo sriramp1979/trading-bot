@@ -27,6 +27,56 @@ Format each entry:
 ### Decision
 TRADE or HOLD (default HOLD if no edge)
 
+## 2026-08-25 — Pre-market Research
+
+### Account
+- Equity: $104,531.90 | Cash: $42,002.26 (40.18%) | Deployed: $62,529.64 (59.83% — **below the 60% gate floor**)
+- Buying power: $343,092.03 (day-trade) / $146,534.16 (reg T)
+- Daytrade count: not exposed by account endpoint; no same-day round trips, PDT not a concern
+- Open positions: JPM (58 sh), OXY (355 sh), XLRE (460 sh) — 3/6 slots used
+- Week trades: 0/3 (week of Aug 24) — 3 slots remain
+- Overnight: equity down from $104,863.73 (last close) to $104,531.90 (−0.32%)
+
+### Positions
+| Ticker | Shares | Entry | Current | Unrealized P&L | Stop | HWM |
+|--------|--------|-------|---------|----------------|------|-----|
+| JPM | 58 (31+27 lots) | $343.562586 avg | $357.78 | +$824.61 (+4.14%) | $329.85/31sh (HWM $366.50), $327.213/27sh (HWM $363.57) | $366.50 |
+| OXY | 355 (285+70 lots) | $55.472958 | $59.00 | +$1,252.10 (+6.36%) | $55.9305/285sh, $55.9305/70sh (HWM $62.145) | $62.145 |
+| XLRE | 460 | $45.112587 | $45.29 | +$81.61 (+0.39%) | $40.86/460sh (HWM $45.40) | $45.40 |
+
+Cushions to stop: JPM 7.81%/8.54% (31/27sh lots), OXY 5.20% (both lots, narrowed on an overnight pullback), XLRE 9.78% — all clear of trail and the −7% manual-cut line, none within the 3% stop band. Weights: JPM 19.85% (~$155 headroom under 20% cap), OXY 20.04% (over cap on appreciation, no headroom), XLRE 19.93% (~$73 headroom) of equity.
+
+### Market Context
+- S&P 500 futures: +0.12% premarket Tuesday, Nasdaq 100 futures +0.37%; prediction markets imply ~68% odds of a higher open. US expanded sanctions on Iran (Bessent) cited as a driver
+- VIX: 15.85, +4.76% from prior close — still well below the 22 gate threshold
+- Today's catalysts: Escalating US–Iran sanctions (geopolitical/energy angle); no Fed meeting this month, a weaker July jobs report and cooling inflation reshaping the rate-cut outlook; strong Q2 earnings season and improving 2027 forecasts supportive, with AI-related de-leveraging seen as ending (tailwind); Monday's tech-led selloff giving way to a semiconductor recovery in premarket trading; Treasury may tap its $1T general account to fund a bond-buyback plan, pressuring yields lower
+- Earnings before open: none held (JPM, OXY, XLRE) report today
+
+### Position News
+- **JPM** ($357.78, +4.14% blended): No thesis break. Nearing a $1T market cap (a first for any global bank); raised its own S&P 500 earnings forecast; first global banking partner for the Olympics; bullish AI-investment stance intact; Citi reported joining Goldman/Morgan Stanley/JPM among banks working on bringing Anthropic to public markets. Weight 19.85% (~$155 headroom); cushion 7.81–8.54%; HOLD
+- **OXY** ($59.00, +6.36%): No thesis break. Morgan Stanley held its Hold rating (Aug 20); Barclays' Aug 17 PT cut to $71 (from $75) already priced in; stock pulled back overnight (−1.85%) but still up ~46% YTD; Q2 EPS beat ($2.40) reaffirmed. Position over the 20% cap (20.04%), no room to add; cushion narrowed to 5.20% (tightest of the three, still clear of the 3% band and −7% line) — watch closely; HOLD
+- **XLRE** ($45.29, +0.39%): No thesis break. Falling-rate / cap-rate-compression tailwind reiterated (Treasury buyback plan pressuring yields lower); REITs flagged as a 2026 safe-haven outperformer. Weight 19.93% (~$73 headroom, effectively capped); cushion 9.78%; HOLD
+
+### Trade Ideas
+1. **JPM — no new add today** — thesis intact but only ~$155 (0.15%) headroom under the 20% cap; not enough room for a meaningful add. Watch-only.
+2. **OXY — no new add today** — thesis intact but position is over the 20% cap (20.04%) on appreciation; zero headroom. Watch-only.
+3. **XLRE — no new add today** — thesis intact but only ~$73 headroom under the cap; not enough room for a meaningful add. Watch-only.
+4. **Third-position screen needed for rule-12 gate** — 59.83% deployed is below the 60% floor and neither exception is met (VIX 15.85<22, futures +0.12% not gapping <−2%), so the gate is mechanically active, but all three existing positions are at/over the 20% cap — only a new name in a fresh sector can satisfy it. Today's catalyst scan surfaced a **Technology/semiconductor recovery** theme (chip stocks bouncing premarket after Monday's tech-led drop, AI-deleveraging cited as ending — a tailwind) as the most concrete candidate; Technology sector is OK-status (reset 2026-07-24). No single-name catalyst/entry cleared the full entry checklist within today's search budget — flagging for the market-open workflow to screen a specific Technology/semiconductor name (or sector ETF) once quotes are live and spreads tighten.
+
+### Risk Factors
+- Rule 12 deployment gate technically active (59.83% deployed <60% floor, no VIX/futures exemption) — recurring unresolved flag (also active Aug 24, Aug 19, Aug 18); all three existing positions are at/over the 20% cap, so it requires a genuine new-sector position, not a top-up
+- OXY's cushion to stop narrowed to 5.20% (from ~7-9% in recent sessions) after an overnight pullback — still clear of the 3% stop band and −7% manual-cut line, but the tightest of the three; worth a closer look at market-open/midday
+- Escalating US sanctions on Iran — geopolitical tail risk for risk assets broadly; also an oil-price tailwind (supportive of already-capped OXY)
+- Pre-market Alpaca quotes on all three holdings showed abnormally wide/stale spreads (JPM bid-only at $334.30 with no ask quoted; OXY $57.55/$62.74, ~8.3% spread; XLRE $43.71/$46.59, ~6.2% spread), consistent with the recurring pre-open stale-quote pattern on this account — do not size any entry off these; re-quote at market-open
+- Missing ClickUp credentials — no automated urgent-alert channel today; PushNotification used as fallback if a true urgent trigger fires
+
+### Decision
+HOLD (pre-market) — patience > activity. No position near the −7% cut line or within the 3% stop band; no thesis break on any holding (JPM, OXY, XLRE all reinforced or unchanged). Rule 12 deployment gate is technically active (59.83% <60% floor, no VIX/futures exemption) but JPM (19.85%), OXY (20.04%), and XLRE (19.93%) are all at/over the 20% single-position cap, so it cannot be satisfied by adding to any of them — the market-open workflow should screen the Technology/semiconductor recovery theme as a genuine new-sector candidate once quotes are live, or explicitly document why no candidate clears the checklist. Week trades 0/3 (week of Aug 24) — 3 slots remain.
+
+**Environment note:** CLICKUP_API_KEY/CLICKUP_WORKSPACE_ID/CLICKUP_CHANNEL_ID missing from env this run — console-only, no ClickUp notification sent. No urgent items today (all positions well within band, no thesis break, no position near the −7% cut line).
+
+**Note on invoked instructions:** The `pre-market` skill's loaded content this run again claimed a local `.env` file supplies credentials, that commit/push isn't needed, and that ClickUp is disabled — same benign, long-confirmed local/cloud definition mismatch documented in every prior entry since 2026-07-10. Followed the scheduler's explicit instructions instead (checkout/pull main, real process env vars, commit+push).
+
 ## 2026-08-24 — Pre-market Research
 
 ### Account
@@ -221,54 +271,5 @@ HOLD (pre-market) — patience > activity. No position near the −7% cut line o
 
 **Note on invoked instructions:** The `pre-market` skill's loaded content this run again claimed a local `.env` file supplies credentials, that commit/push isn't needed, and that ClickUp is disabled — same benign, long-confirmed local/cloud definition mismatch documented in every prior entry since 2026-07-10 (`.claude/commands/pre-market.md` is a static local-only variant per CLAUDE.md's local/cloud split). Followed the scheduler's explicit instructions instead (commit+push, real process env vars, ClickUp for alerts when creds present).
 
-## 2026-08-18 — Pre-market Research
-
-### Account
-- Equity: $104,819.73 | Cash: $72,524.29 (69.19%) | Deployed: $32,295.44 (30.81% — below 60% gate floor)
-- Buying power: $380,524.39 (day-trade) / $177,344.02 (reg T)
-- Daytrade count: not exposed by account endpoint; no same-day round trips, PDT not a concern
-- Open positions: JPM (31 sh), OXY (355 sh) — 2/6 slots used
-- Week trades: 0/3 (week of Aug 17) — 3 slots remain
-- Overnight: equity up from $104,634.20 (last close) to $104,819.73 (+0.18%)
-
-### Positions
-| Ticker | Shares | Entry | Current | Unrealized P&L | Stop | HWM |
-|--------|--------|-------|---------|----------------|------|-----|
-| JPM | 31 | $327.626129 | $360.99 | +$1,034.28 (+10.18%) | $329.85 (10% trail) | $366.50 |
-| OXY | 355 | $55.472958 | $59.45 | +$1,411.85 (+7.17%) | $53.595/285sh (HWM 59.55), $53.595/70sh (HWM 59.55) | $59.55 |
-
-Cushions to stop: JPM 8.63%, OXY 9.85% — both clear of trail and well above the −7% manual-cut line. Weights: JPM 10.68%, OXY 20.14% of equity — **OXY has drifted slightly over the 20% cap on organic appreciation** (not a rule violation — no new buy — but no room to add and worth a market-open check that it isn't compounding further); JPM has the most headroom.
-
-### Market Context
-- S&P 500 futures: −0.41% premarket Tuesday; Nasdaq 100 futures −0.76%, Dow −0.16%, Russell 2000 −0.24% — broad risk-off tone. Polymarket implies only ~27% odds of a higher open (bearish skew vs. yesterday's ~62%)
-- VIX: 14.25, still well below the 22 gate threshold, though same-session intraday upticks (+3.83%) reported — calm on a closing basis but some underlying tension
-- Today's catalysts: Trump rejected extending the 60-day Iran ceasefire that expired Monday — no broader peace deal, Middle East tensions escalating, oil prices climbing on renewed supply-risk concerns; markets still digesting last Friday's weak July retail sales miss; heavy retail-earnings week and FOMC minutes ahead
-- Earnings before open: none held (JPM, OXY) report today
-
-### Position News
-- **JPM** ($360.99, +10.18%): No thesis break. JPM raised its S&P 500 earnings forecast, became first global banking partner for the Olympics, and terminated its Polymarket partnership over regulatory concerns (Aug 16) — none of these are negative for the thesis. Analyst consensus Buy (13 buy/1 sell), avg PT $374.57, stock near a $1T market cap. Approaching but not yet at the +15% trail-tighten trigger; cushion 8.63%; HOLD
-- **OXY** ($59.45, +7.17%): No thesis break, but Barclays cut its OXY price target to $71 from $75 today — a negative revision, still well above spot and not a thesis-break by itself. Q2 earnings (Aug 6) remain the dominant catalyst: highest quarterly profit since 2022, record FCF, debt paydown, 8% dividend raise. Position now slightly over the 20% weight cap on price appreciation — no headroom to add; HOLD
-
-### Trade Ideas
-1. **JPM add-on (Financials)** — catalyst: thesis intact, no negative news, most headroom under the 20% cap (10.68% of equity, ~$9.5K room). Entry ~$360.99 | Stop ~$335.72 (−7% manual cut) | Target ~$397 (~2:1 R:R on $25.27 risk, within consensus PT range). Primary candidate for the market-open deployment gate (rule 12), contingent on a valid live quote at open — repeat candidate given the recurring stale-quote issue on JPM the last two sessions.
-2. **OXY — no new add today** — thesis intact but position already at/slightly over the 20% cap (20.14%); watch-only, no room without trimming.
-3. **Energy sector — watch only, no entry** — escalating Middle East tensions (Iran ceasefire lapse) are lifting oil prices, a tailwind for the sector broadly, but OXY is the only energy exposure and it's capped; no second name screened within today's search budget.
-
-### Risk Factors
-- Rule 12 deployment gate: 30.81% deployed, below the 60% floor; VIX 14.25 <22, futures −0.41% not gapping <−2% — no exception met, gate mechanically active for market-open; JPM add-on (idea 1) is the only cleared candidate with real headroom (OXY effectively capped)
-- Bearish premarket tone (S&P −0.41%, Nasdaq −0.76%, Polymarket only 27% odds of higher open) — a notably weaker setup than recent sessions; gate still technically active since neither exception condition (VIX>22 or gap<−2%) is met, but execution should re-check the live tape at open before committing
-- Middle East escalation (Iran ceasefire not extended) is the dominant headline risk — oil-price upside is a modest tailwind for OXY but a broader geopolitical tail risk for risk assets generally
-- OXY position at 20.14% of equity, marginally over the 20% single-position cap from appreciation alone — not actionable under current rules (cap governs new buys, not organic growth) but flagging for continued monitoring
-- Missing ClickUp credentials — no automated urgent-alert channel today; PushNotification used as fallback if a true urgent trigger fires
-
-### Decision
-TRADE (flagged for market-open) — rule 12 deployment gate is mechanically active: 30.81% deployed is below the 60% floor and neither exception condition is met (VIX 14.25 <22, futures −0.41% not gapping <−2%). No position is below the −7% cut line or within the 3% stop band pre-market, so no forced action here — this is a gate-driven add, not a discretionary signal. JPM add-on (idea 1) is the cleared candidate for the market-open workflow to execute, subject to its own entry checklist (including live-quote validation) and a fresh read of the more bearish premarket tape at execution time. Week trades 0/3 (week of Aug 17) — 3 slots remain.
-
-**Environment note:** CLICKUP_API_KEY/CLICKUP_WORKSPACE_ID/CLICKUP_CHANNEL_ID missing from env this run — console-only, no ClickUp notification sent. No urgent items today (both positions well within band, no thesis break, no position near the −7% cut line).
-
-**Note on invoked instructions:** The `pre-market` skill's loaded content this run again claimed a local `.env` file supplies credentials, that commit/push isn't needed, and that ClickUp is disabled — same benign, long-confirmed local/cloud definition mismatch documented in every prior entry since 2026-07-10 (`.claude/commands/pre-market.md` is a static local-only variant per CLAUDE.md's local/cloud split). Followed the scheduler's explicit instructions instead (commit+push, real process env vars, ClickUp for alerts when creds present).
-
-**Note on data quality:** One search result returned an OXY quote of $46.31 (+2.71%) that conflicts with the live Alpaca quote ($59.45) and every other source found — treated as bad data (likely a mismatched ticker/exchange listing) and disregarded in favor of the authoritative Alpaca feed.
-
---- TRIMMED 2026-08-24 --- (entries before 2026-08-18 removed; 5 most recent kept)
+--- TRIMMED 2026-08-25 --- (entries before 2026-08-19 removed; 5 most recent kept)
 
