@@ -77,6 +77,16 @@ HOLD (pre-market) — patience > activity. No position near the −7% cut line o
 
 **Note on invoked instructions:** The `pre-market` skill's loaded content this run again claimed a local `.env` file supplies credentials, that commit/push isn't needed, and that ClickUp is disabled — same benign, long-confirmed local/cloud definition mismatch documented in every prior entry since 2026-07-10. Followed the scheduler's explicit instructions instead (checkout/pull main, real process env vars, commit+push).
 
+### Market-Open Screen (09:38 ET)
+Live account: Equity $104,497.88 | Cash $42,002.26 (40.19%) | Deployed $62,495.62 (59.81% — still below the 60% gate floor; VIX ~15, futures modestly positive — no exemption). JPM 19.73%, OXY 20.07%, XLRE 20.00% of equity — all at/over the 20% cap, confirming no existing position can absorb an add.
+
+Screened the flagged Technology/semiconductor theme with fresh data:
+- **AMD** — Raymond James upgraded to Strong Buy (from Outperform) today, new $641 PT implying ~40% upside from Monday's close; cited as positioned to take CPU market share from Intel. Chip stocks broadly higher premarket (Intel +3%, Nvidia +1%, SMH ETF +1%+), confirming Technology sector momentum (sector status OK, reset 2026-07-24). Live quote 09:38 ET: bid $468.14 / ask $473.84 (~1.2% spread) — tight enough for a market order.
+- SMH (sector ETF) considered as a lower-risk alternative (spread ~0.04%) but rejected in favor of AMD: entry checklist calls for a specific catalyst, and AMD's analyst upgrade is the more concrete, dated catalyst vs. a diffuse ETF momentum play.
+- Risk flagged: NVDA reports earnings tomorrow (2026-08-26) — a semiconductor-sector volatility event could move AMD independent of its own catalyst. Sized conservatively (under 20% cap, well under available cash) and protected with the standard 10% GTC trailing stop.
+
+**Decision:** BUY AMD — satisfies rule-12 deployment gate with a genuine new-sector (Technology) position, passes entry checklist (specific dated catalyst, sector momentum, defined stop, >2:1 R:R to the $641 PT). Sized to ~19.5% of equity, leaving headroom under the 20% cap. Details in TRADE-LOG.
+
 ## 2026-08-24 — Pre-market Research
 
 ### Account

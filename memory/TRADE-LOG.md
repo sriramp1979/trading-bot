@@ -1560,3 +1560,25 @@ Market holiday (next open 2026-07-06 Mon). All positions unchanged (change_today
 **Notes:** No trades today — market-open flagged MRNA/NUE/STLD catalysts but rejected all on wide spreads (5-7%), no midday log found. All 5 GTC trailing stops confirmed live, none within 3% band; XLRE's stop auto-ratcheted up to $40.86 (HWM $45.40) on a new high. Week trades 0/3 (week of Aug 24), full allowance remains.
 
 **Environment note:** CLICKUP_API_KEY/CLICKUP_WORKSPACE_ID/CLICKUP_CHANNEL_ID missing from env this run — console-only, no ClickUp notification sent.
+
+## 2026-08-25 — market-open trades
+
+| Field | AMD (new position) |
+|-------|--------------------|
+| Side | Buy |
+| Shares | 43 |
+| Entry | $472.644884 (avg fill) |
+| Stop | $425.3265 (10% GTC trail, HWM $472.585, order d1b3dd34) |
+| Thesis | Rule-12 deployment gate: 59.81% deployed pre-trade, below 60% floor; VIX ~15<22, futures modestly positive, not gapping <−2% — no exception met, gate mechanically active. JPM (19.73%), OXY (20.07%), XLRE (20.00%) all at/over the 20% cap with no headroom to add, so gate required a genuine new-sector position. Raymond James upgraded AMD to Strong Buy today (from Outperform), new $641 PT (~40% upside from Monday's close), citing AMD taking CPU share from Intel; chip sector broadly higher premarket (Intel +3%, Nvidia +1%, SMH +1%+), confirming Technology sector momentum (status OK, reset 2026-07-24). Live quote at order time: bid $468.14/ask $473.84 (~1.2% spread) — tight enough for a market order. SMH (0.04% spread) considered but passed over for AMD's more specific, dated single-name catalyst |
+| Target | $641 analyst PT (~40% upside); managed via 10% trailing stop, no discretionary sell trigger |
+| R:R | ~10% downside (trailing stop) vs. ~40% PT upside — well over the 2:1 minimum. Sized to 43 sh (~$20,324 cost, 19.45% of equity) to stay under the 20% cap with a buffer for slippage |
+
+**Decision:** BUY — deployment gate (rule 12) triggered; all three existing positions (JPM, OXY, XLRE) capped with no room to add, so a fresh fourth position was required to satisfy the gate. AMD cleared the entry checklist on a fresh, dated analyst-upgrade catalyst plus confirmed sector momentum. Sized to 43 sh (~$20,324 cost, 19.45% of equity) to stay under the 20% cap.
+
+**Risk flagged:** NVDA reports earnings tomorrow (2026-08-26) — a semiconductor-sector volatility event that could move AMD independent of its own catalyst. Standard 10% GTC trailing stop is the sole downside control; no plan to pre-emptively trim ahead of NVDA's print.
+
+**Post-trade snapshot:** Equity $104,493.19 | Cash $21,678.53 (20.75%) | Deployed $82,814.66 (79.26% — up from 59.81%, gate satisfied) | JPM 58 sh unchanged | OXY 355 sh unchanged | XLRE 460 sh unchanged | AMD 43 sh @ avg $472.644884, weight 19.45%. Week trades 1/3 (week of Aug 24), 2 slots remain. 4/6 position slots used.
+
+**Environment note:** CLICKUP_API_KEY/CLICKUP_WORKSPACE_ID/CLICKUP_CHANNEL_ID missing from env this run — trade summary printed to console only, no ClickUp notification sent.
+
+**Note on invoked instructions:** The `market-open` skill's loaded content this run again claimed a local `.env` file supplies credentials, that commit/push isn't needed, and that ClickUp is disabled — same benign, long-confirmed local/cloud definition mismatch documented in every prior session since 2026-07-10 (`.claude/commands/market-open.md` is a static local-only variant per CLAUDE.md's local/cloud split). Followed the scheduler's explicit instructions instead (checkout/pull main; env vars pre-exported; commit/push per the scheduler's own mandatory-if-trades-fired rule).
