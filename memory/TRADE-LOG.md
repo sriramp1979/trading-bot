@@ -1594,3 +1594,15 @@ Market holiday (next open 2026-07-06 Mon). All positions unchanged (change_today
 **Notes:** AMD bought at market-open (rule-12 deployment gate + Raymond James upgrade catalyst); all 5 GTC trailing stops confirmed live, none within 3% band, XLRE's stop ratcheted to $40.9185 (HWM $45.465) on a new high. OXY down -2.81% intraday but unrealized P&L still +5.31%, no stop breach. NVDA earnings tomorrow (2026-08-26) flagged as a semiconductor-sector risk for AMD; week trades 1/3 (week of Aug 24), 2 slots remain.
 
 **Environment note:** CLICKUP_API_KEY/CLICKUP_WORKSPACE_ID/CLICKUP_CHANNEL_ID missing from env this run — console-only, no ClickUp notification sent.
+
+### Aug 26 — EOD Snapshot (Day 66, Wednesday)
+**Portfolio:** $104,594.80 | **Cash:** $21,678.52 (20.73%) | **Day P&L:** −$37.07 (−0.04%) | **Phase P&L:** +$4,594.80 (+4.59%)
+| Ticker | Shares | Entry | Close | Day Chg | Unrealized P&L | Stop |
+|--------|--------|-------|-------|---------|----------------|------|
+| AMD | 43 | $472.644884 | $481.56 | +0.50% | +$383.44 (+1.89%) | $442.008/43sh (HWM $491.12) |
+| JPM | 58 | $343.562586 | $356.23 | −0.13% | +$734.53 (+3.69%) | $329.85/31sh (HWM $366.50), $327.213/27sh (HWM $363.57) |
+| OXY | 355 | $55.472958 | $58.61 | +0.34% | +$1,113.65 (+5.66%) | $55.9305/285sh (HWM $62.145), $55.9305/70sh (HWM $62.145) |
+| XLRE | 460 | $45.112587 | $45.09 | −0.60% | −$10.39 (−0.05%) | $40.9185/460sh (HWM $45.465) |
+**Notes:** No trades today; all GTC trailing stops confirmed live, none within 3% band — AMD's stop ratcheted up to $442.008 (HWM $491.12) on a new high. OXY leads unrealized gains at +5.66%; XLRE is the lone laggard, roughly flat at -0.05%. Week trades 1/3 (week of Aug 24), 2 slots remain.
+
+**Environment note:** CLICKUP_API_KEY/CLICKUP_WORKSPACE_ID/CLICKUP_CHANNEL_ID missing from env this run — console-only, no ClickUp notification sent.
