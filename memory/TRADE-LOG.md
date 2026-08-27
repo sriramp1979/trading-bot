@@ -1606,3 +1606,15 @@ Market holiday (next open 2026-07-06 Mon). All positions unchanged (change_today
 **Notes:** No trades today; all GTC trailing stops confirmed live, none within 3% band — AMD's stop ratcheted up to $442.008 (HWM $491.12) on a new high. OXY leads unrealized gains at +5.66%; XLRE is the lone laggard, roughly flat at -0.05%. Week trades 1/3 (week of Aug 24), 2 slots remain.
 
 **Environment note:** CLICKUP_API_KEY/CLICKUP_WORKSPACE_ID/CLICKUP_CHANNEL_ID missing from env this run — console-only, no ClickUp notification sent.
+
+### Aug 27 — EOD Snapshot (Day 67, Thursday)
+**Portfolio:** $104,268.67 | **Cash:** $21,678.52 (20.79%) | **Day P&L:** −$326.13 (−0.31%) | **Phase P&L:** +$4,268.67 (+4.27%)
+| Ticker | Shares | Entry | Close | Day Chg | Unrealized P&L | Stop |
+|--------|--------|-------|-------|---------|----------------|------|
+| AMD | 43 | $472.644884 | $476.40 | −0.94% | +$161.47 (+0.79%) | $442.008/43sh (HWM $491.12) |
+| JPM | 58 | $343.562586 | $354.45 | −0.57% | +$631.47 (+3.17%) | $329.85/31sh (HWM $366.50), $327.213/27sh (HWM $363.57) |
+| OXY | 355 | $55.472958 | $59.19 | +0.97% | +$1,319.55 (+6.70%) | $55.9305/285sh (HWM $62.145), $55.9305/70sh (HWM $62.145) |
+| XLRE | 460 | $45.112587 | $44.64 | −1.00% | −$217.39 (−1.05%) | $40.9185/460sh (HWM $45.465) |
+**Notes:** No trades today; broad pullback across the book with only OXY green intraday. All 4 GTC trailing stops confirmed live and unchanged (no new highs), none within 3% band. Week trades 1/3 (week of Aug 24), 2 slots remain.
+
+**Environment note:** CLICKUP_API_KEY/CLICKUP_WORKSPACE_ID/CLICKUP_CHANNEL_ID missing from env this run — console-only, no ClickUp notification sent.
