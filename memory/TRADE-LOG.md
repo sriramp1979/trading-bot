@@ -1639,3 +1639,15 @@ Market holiday (next open 2026-07-06 Mon). All positions unchanged (change_today
 
 **Environment note:** CLICKUP_API_KEY/CLICKUP_WORKSPACE_ID/CLICKUP_CHANNEL_ID missing from env this run — no trades fired so STEP 7 is a no-op regardless.
 ## 2026-08-28 midday — All within band, no action
+
+### Aug 28 — EOD Snapshot (Day 68, Friday)
+**Portfolio:** $103,893.76 | **Cash:** $21,678.52 (20.87%) | **Day P&L:** −$374.91 (−0.36%) | **Phase P&L:** +$3,893.76 (+3.89%)
+| Ticker | Shares | Entry | Close | Day Chg | Unrealized P&L | Stop |
+|--------|--------|-------|-------|---------|----------------|------|
+| AMD | 43 | $472.644884 | $465.86 | −2.27% | −$291.75 (−1.44%) | $442.008/43sh (HWM $491.12) |
+| JPM | 58 | $343.562586 | $357.62 | +0.96% | +$815.33 (+4.09%) | $329.85/31sh (HWM $366.50), $327.213/27sh (HWM $363.57) |
+| OXY | 355 | $55.472958 | $59.10 | −0.12% | +$1,287.60 (+6.54%) | $55.9305/285sh (HWM $62.145), $55.9305/70sh (HWM $62.145) |
+| XLRE | 460 | $45.112587 | $44.48 | −0.40% | −$290.99 (−1.40%) | $40.9185/460sh (HWM $45.465) |
+**Notes:** No trades today; broad pullback led by AMD (-2.27%) partly offset by JPM's gain. All 6 GTC trailing stops confirmed live, none within 3% band or near -7% cut line. Week trades 1/3 (week of Aug 24), 2 slots remain.
+
+**Environment note:** CLICKUP_API_KEY/CLICKUP_WORKSPACE_ID/CLICKUP_CHANNEL_ID missing from env this run — console-only, no ClickUp notification sent.
