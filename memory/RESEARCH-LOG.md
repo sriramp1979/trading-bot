@@ -292,3 +292,50 @@ HOLD (pre-market) — patience > activity. No position near the −7% cut line o
 
 --- TRIMMED 2026-08-27 --- (entries before 2026-08-21 removed; 5 most recent kept)
 
+## 2026-08-28 — Pre-market Research
+
+### Account
+- Equity: $104,172.39 | Cash: $21,678.52 (20.81%) | Deployed: $82,493.87 (79.19% — within 75-85% band)
+- Buying power: $317,696.92 (day-trade) / $125,850.91 (reg T)
+- Daytrade count: not exposed by account endpoint; no same-day round trips, PDT not a concern
+- Open positions: AMD (43 sh), JPM (58 sh), OXY (355 sh), XLRE (460 sh) — 4/6 slots used
+- Week trades: 1/3 (week of Aug 24) — 2 slots remain
+- Overnight: equity down slightly from $104,269.04 (last close) to $104,172.39 (-0.09%)
+
+### Positions
+| Ticker | Shares | Entry | Current | Unrealized P&L | Stop | Cushion to stop |
+|--------|--------|-------|---------|----------------|------|------------------|
+| AMD | 43 | $472.644884 | $473.54 | +$38.49 (+0.19%) | $442.008 (HWM $491.12) | 6.66% |
+| JPM | 58 (31+27 lots) | $343.562586 avg | $355.425 | +$688.02 (+3.45%) | $329.85/31sh, $327.213/27sh (HWM $366.50/$363.57) | 7.20%/7.94% |
+| OXY | 355 (285+70 lots) | $55.472958 | $59.08 | +$1,280.50 (+6.50%) | $55.9305 both lots (HWM $62.145) | 5.33% |
+| XLRE | 460 | $45.112587 | $44.66 | -$208.19 (-1.00%) | $40.9185 (HWM $45.465) | 8.38% |
+
+All 6 GTC trailing-stop orders confirmed live via `alpaca.sh orders`; none within the 3% no-touch band. Weights: AMD 19.55%, JPM 19.79%, OXY 20.13%, XLRE 19.72% — all at/near the 20% cap, no headroom to add to any existing position.
+
+### Market Context
+- S&P 500 futures: roughly flat premarket (~-0.12%), on course for a weekly advance; Dow futures edged higher
+- VIX: 14.51 (down from ~15.87 Thursday) — well below the 22 gate threshold
+- Today's catalysts: Fed Chair Kevin Warsh's Jackson Hole speech is the dominant driver — markets seeking clarity on rate strategy after his last-meeting stance created confusion. Chicago PMI at 9:45am ET, final U. Michigan consumer sentiment at 10am ET. Tech sector strength continuing off Nvidia's positive earnings/guidance. Notable movers unrelated to our book: PayPal -16% (Advent/Stripe deal collapsed), Marvell -8%, Elastic +21%
+- No earnings today for AMD, JPM, OXY, or XLRE holdings
+
+### Position News
+- **AMD** ($473.54, +0.19%): No thesis break. Riding sector-wide tech strength from NVDA's earnings beat; no new AMD-specific news since the Aug 25 Raymond James upgrade. HOLD
+- **JPM** ($355.43, +3.45% blended): No thesis break, no new catalyst surfaced this search. HOLD
+- **OXY** ($59.08, +6.50%): No thesis break, no new catalyst surfaced this search. HOLD
+- **XLRE** ($44.66, -1.00%): No thesis break surfaced this search; rate-direction sensitivity from prior notes still the key watch item into Warsh's speech. HOLD
+
+### Trade Ideas
+No new catalyst-backed idea cleared today's research budget. All 4 positions are at/near the 20% weight cap with no headroom to add. Deployment at 79.19% is within the 75-85% target band, so rule-12's <60% forced-add gate does not apply. Week trades 1/3 (week of Aug 24) — 2 slots held in reserve absent a qualifying catalyst.
+
+### Risk Factors
+- Fed Chair Warsh's Jackson Hole speech could move rates and equities sharply in either direction — relevant to XLRE's rate sensitivity
+- VIX at 14.51 is low/calm, no gate concern, but a hawkish surprise from Warsh could spike it intraday
+- No thesis-breaking news found on any of the 4 holdings in this research pass
+
+### Decision
+HOLD — patience > activity. No position near the -7% cut line or within the 3% stop band; no thesis break on any holding. No new catalyst surfaced and no position has cap headroom, so no new trade planned for market-open today absent a fresh catalyst appearing intraday.
+
+**Environment note:** CLICKUP_API_KEY/CLICKUP_WORKSPACE_ID/CLICKUP_CHANNEL_ID missing from env this run — console-only, no ClickUp notification sent. No urgent items today.
+
+**Note on invoked instructions:** Today's scheduled prompt matched `routines/market-open.md` (mandatory git commit/push, real process env vars, ClickUp alerts) but this run's `Skill` tool loaded `.claude/commands/market-open.md` instead, which claims a local `.env` file supplies credentials, that commit/push isn't needed, and that ClickUp is disabled — the same long-confirmed local/cloud definition mismatch documented in prior entries since 2026-07-10. Followed the scheduler's explicit instructions instead (checkout/pull main, real process env vars, commit+push, ClickUp when creds present — console-only fallback today since ClickUp creds are missing, matching the pattern in every prior entry this week).
+
