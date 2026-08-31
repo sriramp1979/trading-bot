@@ -1651,3 +1651,23 @@ Market holiday (next open 2026-07-06 Mon). All positions unchanged (change_today
 **Notes:** No trades today; broad pullback led by AMD (-2.27%) partly offset by JPM's gain. All 6 GTC trailing stops confirmed live, none within 3% band or near -7% cut line. Week trades 1/3 (week of Aug 24), 2 slots remain.
 
 **Environment note:** CLICKUP_API_KEY/CLICKUP_WORKSPACE_ID/CLICKUP_CHANNEL_ID missing from env this run — console-only, no ClickUp notification sent.
+
+## 2026-08-31 — market-open (no new trades)
+
+**Decision:** HOLD — no new entries, matches today's pre-market research. 4/6 position slots used, deployed 79.22% is within the 75-85% band and above the rule-12 60% floor, so no forced add. No thesis break on any holding. OXY is over the 20% cap (20.71%) on appreciation alone — no headroom, no forced trim. Week trades 0/3 (new week of Aug 31) — 3 slots available, held in reserve.
+
+**Live Snapshot (09:37 ET):**
+**Account:** Equity $104,315.63 | Cash $21,678.52 (20.78%) | Deployed $82,637.11 (79.22%) | Day P&L: +$433.91 (+0.42%)
+
+| Ticker | Shares | Entry | Current | Unrealized P&L | Stop | Cushion |
+|--------|--------|-------|---------|----------------|------|---------|
+| AMD | 43 | $472.644884 | $470.09 | -$109.86 (-0.54%) | $442.008 (HWM $491.12) | 5.97% |
+| JPM | 58 (31+27 lots) | $343.562586 avg | $355.43 | +$688.31 (+3.45%) | $329.85/31sh (HWM $366.50), $327.213/27sh (HWM $363.57) | 7.20% / 7.92% |
+| OXY | 355 (285+70 lots) | $55.472958 | $60.85 | +$1,908.85 (+9.69%) | $55.9305/285sh, $55.9305/70sh (HWM $62.145) | 8.08% |
+| XLRE | 460 | $45.112587 | $43.91 | -$553.19 (-2.67%) | $40.9185/460sh (HWM $45.465) | 6.81% |
+
+**Notes:** No PDT-blocked stops pending from prior days (STEP 0 grep clean). All 6 GTC trailing stops confirmed live via Alpaca order query (AMD d1b3dd34, JPM 31sh 91ec700a, JPM 27sh 695819c9, OXY 285sh f32a494c, OXY 70sh 6abc1e09, XLRE 460sh 6393c5a6) — no breaches, none within the 3% stop band or near the -7% manual-cut line. OXY unrealized +9.69%, not yet at the +15% tighten-trail threshold. 4/6 position slots used. No trades fired.
+
+**Note on invoked instructions:** The `market-open` skill's loaded content this run again claimed a local `.env` file supplies credentials, that commit/push isn't needed, and that ClickUp is disabled — same benign, long-confirmed local/cloud definition mismatch documented in every prior session since 2026-07-10 (`.claude/commands/market-open.md` is a static local-only variant per CLAUDE.md's local/cloud split; `routines/market-open.md` matches the scheduler's actual prompt). Followed the scheduler's explicit instructions instead (checkout/pull main; real process env vars; commit/push).
+
+**Environment note:** CLICKUP_API_KEY/CLICKUP_WORKSPACE_ID/CLICKUP_CHANNEL_ID missing from env this run — no trades fired so STEP 7 is a no-op regardless.
