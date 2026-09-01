@@ -1684,3 +1684,23 @@ Market holiday (next open 2026-07-06 Mon). All positions unchanged (change_today
 **Notes:** No trades today; AMD and OXY led gains while JPM/XLRE softened slightly. All 6 GTC trailing stops confirmed live, none within 3% band or near -7% cut line. Week trades 0/3 (week of Aug 31), 3 slots remain.
 
 **Environment note:** CLICKUP_API_KEY/CLICKUP_WORKSPACE_ID/CLICKUP_CHANNEL_ID missing from env this run — console-only, no ClickUp notification sent.
+
+## 2026-09-01 — market-open (no new trades)
+
+**Decision:** HOLD — matches today's pre-market research (no catalyst-backed new trade idea; 4/6 slots used; deployed 79.13% within the 75-85% band and above the rule-12 60% floor, so no forced add). No thesis break on any holding. Week trades 0/3 (week of Aug 31) — 3 slots held in reserve.
+
+**Live Snapshot (09:39 ET):**
+**Account:** Equity $103,863.79 | Cash $21,678.52 (20.87%) | Deployed $82,185.27 (79.13%) | Day P&L: -$359.35 (-0.34%)
+
+| Ticker | Shares | Entry | Current | Unrealized P&L | Stop | Cushion |
+|--------|--------|-------|---------|----------------|------|---------|
+| AMD | 43 | $472.644884 | $454.465 | -$781.74 (-3.85%) | $442.008 (HWM $491.12) | 2.74% |
+| JPM | 58 (31+27 lots) | $343.562586 avg | $357.64 | +$816.49 (+4.10%) | $329.85/31sh (HWM $366.50), $327.213/27sh (HWM $363.57) | 7.77% / 8.51% |
+| OXY | 355 (285+70 lots) | $55.472958 | $60.71 | +$1,859.15 (+9.44%) | $55.9305/285sh, $55.9305/70sh (HWM $62.145) | 7.87% |
+| XLRE | 460 | $45.112587 | $44.235 | -$403.69 (-1.95%) | $40.9185/460sh (HWM $45.465) | 7.50% |
+
+**Notes:** No PDT-blocked stops pending from prior days (STEP 0 grep clean). All 6 GTC trailing stops confirmed live via Alpaca order query (AMD d1b3dd34, JPM 31sh 91ec700a, JPM 27sh 695819c9, OXY 285sh f32a494c, OXY 70sh 6abc1e09, XLRE 460sh 6393c5a6) — no breaches, none at the -7% manual-cut line. **AMD's stop cushion has tightened to 2.74%** (was 4.64% at pre-market) — inside the 3% no-touch band; not itself an action trigger (that band governs placing/moving stops, not monitoring), but it is now the closest position to its stop and worth a midday check. OXY unrealized +9.44%, still short of the +15% tighten-trail threshold. No trades fired.
+
+**Note on invoked instructions:** The `market-open` skill's loaded content this run again claimed a local `.env` file supplies credentials, that commit/push isn't needed, and that ClickUp is disabled — same benign, long-confirmed local/cloud definition mismatch documented in every prior session since 2026-07-10 (`.claude/commands/market-open.md` is a static local-only variant per CLAUDE.md's local/cloud split; `routines/market-open.md` matches the scheduler's actual prompt). Followed the scheduler's explicit instructions instead (checkout/pull main; real process env vars; commit/push).
+
+**Environment note:** CLICKUP_API_KEY/CLICKUP_WORKSPACE_ID/CLICKUP_CHANNEL_ID missing from env this run — no trades fired so STEP 7 is a no-op regardless.
