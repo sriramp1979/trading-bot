@@ -1717,3 +1717,4 @@ Market holiday (next open 2026-07-06 Mon). All positions unchanged (change_today
 **Notes:** No trades today (market-open and midday both HOLD). OXY continued toward the +15% trail-tighten threshold (now +9.91%) while AMD lagged on a down day; all 6 GTC trailing stops confirmed live, none within the 3% band or near the -7% cut line. Week trades 0/3 (week of Aug 31), 3 slots remain.
 
 **Environment note:** CLICKUP_API_KEY/CLICKUP_WORKSPACE_ID/CLICKUP_CHANNEL_ID missing from env this run — console-only, no ClickUp notification sent.
+## 2026-09-02 midday — All within band, no action
