@@ -1718,3 +1718,15 @@ Market holiday (next open 2026-07-06 Mon). All positions unchanged (change_today
 
 **Environment note:** CLICKUP_API_KEY/CLICKUP_WORKSPACE_ID/CLICKUP_CHANNEL_ID missing from env this run — console-only, no ClickUp notification sent.
 ## 2026-09-02 midday — All within band, no action
+
+### Sep 2 — EOD Snapshot (Day 71, Wednesday)
+**Portfolio:** $103,562.32 | **Cash:** $21,678.52 (20.93%) | **Day P&L:** −$430.95 (−0.41%) | **Phase P&L:** +$3,562.32 (+3.56%)
+| Ticker | Shares | Entry | Close | Day Chg | Unrealized P&L | Stop |
+|--------|--------|-------|-------|---------|----------------|------|
+| AMD | 43 | $472.644884 | $456.90 | −0.59% | −$677.03 (−3.33%) | $442.008/43sh (HWM $491.12) |
+| JPM | 58 | $343.562586 | $355.57 | +0.18% | +$696.55 (+3.50%) | $329.85/31sh (HWM $366.50), $327.213/27sh (HWM $363.57) |
+| OXY | 355 | $55.472958 | $60.56 | −0.64% | +$1,805.23 (+9.17%) | $55.9305/285sh (HWM $62.145), $55.9305/70sh (HWM $62.145) |
+| XLRE | 460 | $45.112587 | $43.73 | −0.70% | −$635.99 (−3.07%) | $40.9185/460sh (HWM $45.465) |
+**Notes:** No trades today (market-open and midday both HOLD); broad pullback dragged the book red on the day. All 6 GTC trailing stops confirmed live, none within the 3% band or near the -7% cut line — AMD's cushion is tightest at 3.26%. Week trades 0/3 (week of Aug 31), 3 slots remain.
+
+**Environment note:** CLICKUP_API_KEY/CLICKUP_WORKSPACE_ID/CLICKUP_CHANNEL_ID missing from env this run — console-only, no ClickUp notification sent.
