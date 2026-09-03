@@ -1751,3 +1751,14 @@ Market holiday (next open 2026-07-06 Mon). All positions unchanged (change_today
 
 **Environment note:** CLICKUP_API_KEY/CLICKUP_WORKSPACE_ID/CLICKUP_CHANNEL_ID missing from env this run (also no scripts/clickup.sh present) — console/PushNotification fallback used given today's stop-out is a material portfolio event.
 ## 2026-09-03 midday — All within band, no action
+
+### Sep 3 — EOD Snapshot (Day 72, Thursday)
+**Portfolio:** $103,583.96 | **Cash:** $40,679.36 (39.27%) | **Day P&L:** +$21.64 (+0.02%) | **Phase P&L:** +$3,583.96 (+3.58%)
+| Ticker | Shares | Entry | Close | Day Chg | Unrealized P&L | Stop |
+|--------|--------|-------|-------|---------|----------------|------|
+| JPM | 58 | $343.562586 | $362.70 | +1.82% | +$1,109.97 (+5.57%) | $329.85/31sh (HWM $366.50), $327.213/27sh (HWM $363.57) |
+| OXY | 355 | $55.472958 | $60.60 | −0.51% | +$1,820.10 (+9.24%) | $55.9305/285sh (HWM $62.145), $55.9305/70sh (HWM $62.145) |
+| XLRE | 460 | $45.112587 | $44.25 | +1.19% | −$396.79 (−1.91%) | $40.9185/460sh (HWM $45.465) |
+**Notes:** AMD stopped out at market-open (-6.51%, pre-existing GTC trail), freeing a slot; no new trades fired (market-open and midday both HOLD). JPM and OXY both extended gains into the close — OXY still under the +15% trail-tighten trigger at +9.24%. 3/6 slots used, week trades 0/3 (week of Aug 31), 3 slots remain.
+
+**Environment note:** CLICKUP_API_KEY/CLICKUP_WORKSPACE_ID/CLICKUP_CHANNEL_ID missing from env this run — console-only, no ClickUp notification sent.
