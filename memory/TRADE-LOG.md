@@ -1750,3 +1750,4 @@ Market holiday (next open 2026-07-06 Mon). All positions unchanged (change_today
 **Note on invoked instructions:** Followed the scheduler's explicit prompt directly (checkout/pull main, real process env vars, commit+push) rather than invoking the packaged skill — consistent with every prior entry's documented local/cloud definition split since 2026-07-10.
 
 **Environment note:** CLICKUP_API_KEY/CLICKUP_WORKSPACE_ID/CLICKUP_CHANNEL_ID missing from env this run (also no scripts/clickup.sh present) — console/PushNotification fallback used given today's stop-out is a material portfolio event.
+## 2026-09-03 midday — All within band, no action
