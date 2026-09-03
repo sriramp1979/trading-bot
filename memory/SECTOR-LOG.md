@@ -3,7 +3,7 @@
 ## Active Sector Tracking
 | Sector | Tickers Held | Consecutive Losses | Status |
 |--------|-------------|-------------------|--------|
-| Technology | AMD | 0 | OK |
+| Technology | — | 1 | OK |
 | Healthcare | — | 1 | OK |
 | Communication Services | — | 0 | OK |
 | Consumer Discretionary | — | 1 | OK |

@@ -1730,3 +1730,23 @@ Market holiday (next open 2026-07-06 Mon). All positions unchanged (change_today
 **Notes:** No trades today (market-open and midday both HOLD); broad pullback dragged the book red on the day. All 6 GTC trailing stops confirmed live, none within the 3% band or near the -7% cut line — AMD's cushion is tightest at 3.26%. Week trades 0/3 (week of Aug 31), 3 slots remain.
 
 **Environment note:** CLICKUP_API_KEY/CLICKUP_WORKSPACE_ID/CLICKUP_CHANNEL_ID missing from env this run — console-only, no ClickUp notification sent.
+## 2026-09-03 — market-open (AMD stopped out, no new trades)
+
+**Decision:** HOLD on new entries — matches today's pre-market research (no catalyst-backed new trade idea; US-Iran conflict, oil near $90/bbl, and elevated yields argue caution ahead of Friday's payrolls). No thesis break on any remaining holding. Week trades 0/3 (week of Aug 31) — 3 slots held in reserve. STEP 0 grep for PDT-blocked stops: clean, none pending.
+
+**AMD Stop-Out (pre-existing GTC order, not placed this session):** 43 sh sold @ $441.88 (entry $472.644884, HWM $491.12, 10% trail stop $442.008) — realized loss -$1,322.89 (-6.51%). Order d1b3dd34, filled 2026-09-03T13:36:09Z (09:36 ET), just ahead of this run. SECTOR-LOG updated: Technology Consecutive Losses 0 → 1 (not yet EXIT; threshold is 2).
+
+**Live Snapshot (09:36 ET):**
+**Account:** Equity $103,336.09 | Cash $40,679.36 (39.37%) | Deployed $62,656.73 (60.63% — just above the rule-12 60% floor, no forced add triggered; below the 75-85% target band, driven by today's AMD exit)
+
+| Ticker | Shares | Entry | Current | Unrealized P&L | Stop | Cushion |
+|--------|--------|-------|---------|----------------|------|---------|
+| JPM | 58 (31+27 lots) | $343.562586 avg | $359.11 | +$901.75 (+4.53%) | $329.85/31sh (HWM $366.50), $327.213/27sh (HWM $363.57) | 8.15%/8.88% |
+| OXY | 355 (285+70 lots) | $55.472958 | $60.89 | +$1,923.05 (+9.76%) | $55.9305/285sh, $55.9305/70sh (HWM $62.145) | 8.15% |
+| XLRE | 460 | $45.112587 | $43.94 | -$539.39 (-2.60%) | $40.9185/460sh (HWM $45.465) | 6.88% |
+
+**Notes:** 3/6 slots used, 3 free (one freed by today's AMD stop-out). No thesis break on JPM/OXY/XLRE; OXY still approaching the +15% tighten-trail threshold (+9.76%). Deployment at 60.63% is right at the rule-12 floor — worth watching for a forced add at the next market-open if it drifts under 60% without a qualifying catalyst first. No new trades fired this session.
+
+**Note on invoked instructions:** Followed the scheduler's explicit prompt directly (checkout/pull main, real process env vars, commit+push) rather than invoking the packaged skill — consistent with every prior entry's documented local/cloud definition split since 2026-07-10.
+
+**Environment note:** CLICKUP_API_KEY/CLICKUP_WORKSPACE_ID/CLICKUP_CHANNEL_ID missing from env this run (also no scripts/clickup.sh present) — console/PushNotification fallback used given today's stop-out is a material portfolio event.
