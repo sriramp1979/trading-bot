@@ -1763,3 +1763,14 @@ Market holiday (next open 2026-07-06 Mon). All positions unchanged (change_today
 
 **Environment note:** CLICKUP_API_KEY/CLICKUP_WORKSPACE_ID/CLICKUP_CHANNEL_ID missing from env this run — console-only, no ClickUp notification sent.
 ## 2026-09-04 midday — All within band, no action
+
+### Sep 4 — EOD Snapshot (Day 73, Friday)
+**Portfolio:** $103,022.16 | **Cash:** $40,678.94 (39.49%) | **Day P&L:** −$561.80 (−0.54%) | **Phase P&L:** +$3,022.16 (+3.02%)
+| Ticker | Shares | Entry | Close | Day Chg | Unrealized P&L | Stop |
+|--------|--------|-------|-------|---------|----------------|------|
+| JPM | 58 | $343.562586 | $358.59 | −0.96% | +$871.59 (+4.37%) | $329.85/31sh (HWM $366.50), $327.213/27sh (HWM $363.57) |
+| OXY | 355 | $55.472958 | $60.04 | −0.94% | +$1,621.30 (+8.23%) | $55.9305/285sh (HWM $62.145), $55.9305/70sh (HWM $62.145) |
+| XLRE | 460 | $45.112587 | $43.98 | −0.61% | −$520.99 (−2.51%) | $40.9185/460sh (HWM $45.465) |
+**Notes:** Broad pullback across the book; no new trades (market-open/midday both HOLD). All 6 GTC trailing stops confirmed live, none within 3% band or near -7% cut line. 3/6 slots used, week trades 0/3 (week of Aug 31).
+
+**Environment note:** CLICKUP_API_KEY/CLICKUP_WORKSPACE_ID/CLICKUP_CHANNEL_ID missing from env this run — console-only, no ClickUp notification sent.
