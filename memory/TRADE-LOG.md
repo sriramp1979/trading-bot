@@ -1762,3 +1762,4 @@ Market holiday (next open 2026-07-06 Mon). All positions unchanged (change_today
 **Notes:** AMD stopped out at market-open (-6.51%, pre-existing GTC trail), freeing a slot; no new trades fired (market-open and midday both HOLD). JPM and OXY both extended gains into the close — OXY still under the +15% trail-tighten trigger at +9.24%. 3/6 slots used, week trades 0/3 (week of Aug 31), 3 slots remain.
 
 **Environment note:** CLICKUP_API_KEY/CLICKUP_WORKSPACE_ID/CLICKUP_CHANNEL_ID missing from env this run — console-only, no ClickUp notification sent.
+## 2026-09-04 midday — All within band, no action
