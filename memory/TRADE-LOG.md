@@ -1774,3 +1774,4 @@ Market holiday (next open 2026-07-06 Mon). All positions unchanged (change_today
 **Notes:** Broad pullback across the book; no new trades (market-open/midday both HOLD). All 6 GTC trailing stops confirmed live, none within 3% band or near -7% cut line. 3/6 slots used, week trades 0/3 (week of Aug 31).
 
 **Environment note:** CLICKUP_API_KEY/CLICKUP_WORKSPACE_ID/CLICKUP_CHANNEL_ID missing from env this run — console-only, no ClickUp notification sent.
+## 2026-09-07 market-open — Market closed, skipped
