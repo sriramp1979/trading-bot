@@ -1781,3 +1781,4 @@ Market holiday (next open 2026-07-06 Mon). All positions unchanged (change_today
 Market holiday (Labor Day; next open 2026-09-08 Tue). All positions unchanged (change_today: 0 across JPM/OXY/XLRE). No trades, no equity move, no stop actions. Week trades: 0/3 (new week of Sep 7).
 
 **Environment note:** CLICKUP_API_KEY/CLICKUP_WORKSPACE_ID/CLICKUP_CHANNEL_ID missing from env this run — console-only, no ClickUp notification sent.
+## 2026-09-08 midday — All within band, no action
