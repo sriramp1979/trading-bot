@@ -1794,3 +1794,14 @@ Market holiday (Labor Day; next open 2026-09-08 Tue). All positions unchanged (c
 
 **Environment note:** CLICKUP_API_KEY/CLICKUP_WORKSPACE_ID/CLICKUP_CHANNEL_ID missing from env this run — console-only, no ClickUp notification sent.
 ## 2026-09-09 midday — All within band, no action
+
+### Sep 09 — EOD Snapshot (Day 76, Wednesday)
+**Portfolio:** $102,995.19 | **Cash:** $40,678.94 (39.50%) | **Day P&L:** +$99.52 (+0.10%) | **Phase P&L:** +$2,995.19 (+3.00%)
+| Ticker | Shares | Entry | Close | Day Chg | Unrealized P&L | Stop |
+|--------|--------|-------|-------|---------|----------------|------|
+| JPM | 58 | $343.562586 | $354.63 | +0.32% | +$641.97 (+3.22%) | $329.85/31sh (HWM $366.50), $327.213/27sh (HWM $363.57) |
+| OXY | 355 | $55.472958 | $61.33 | +1.12% | +$2,079.25 (+10.56%) | $55.989/285sh (HWM $62.21), $55.989/70sh (HWM $62.21) |
+| XLRE | 460 | $45.112587 | $43.43 | −1.08% | −$776.29 (−3.74%) | $40.9185/460sh (HWM $45.465) |
+**Notes:** No trades today (market-open and midday both HOLD). OXY extended toward the +15% trail-tighten trigger (now +10.56%) while JPM added modestly and XLRE lagged on a down day. All 5 GTC trailing stops confirmed live, none within the 3% band or near the -7% cut line; 3/6 slots used, week trades 0/3 (week of Sep 7).
+
+**Environment note:** CLICKUP_API_KEY/CLICKUP_WORKSPACE_ID/CLICKUP_CHANNEL_ID missing from env this run — console-only, no ClickUp notification sent.
