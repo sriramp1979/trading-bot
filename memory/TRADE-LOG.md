@@ -1793,3 +1793,4 @@ Market holiday (Labor Day; next open 2026-09-08 Tue). All positions unchanged (c
 **Notes:** First full trading day back from the Labor Day holiday; mixed action (JPM pulled back, OXY extended gains, XLRE flat), no new trades fired. All 5 GTC trailing stops confirmed live, none within 3% band or near -7% cut line, OXY still under the +15% trail-tighten trigger at +9.33%. 3/6 slots used, week trades 0/3 (week of Sep 7).
 
 **Environment note:** CLICKUP_API_KEY/CLICKUP_WORKSPACE_ID/CLICKUP_CHANNEL_ID missing from env this run — console-only, no ClickUp notification sent.
+## 2026-09-09 midday — All within band, no action
