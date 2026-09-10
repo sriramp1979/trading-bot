@@ -1794,3 +1794,4 @@ Market holiday (Labor Day; next open 2026-09-08 Tue). All positions unchanged (c
 
 **Environment note:** CLICKUP_API_KEY/CLICKUP_WORKSPACE_ID/CLICKUP_CHANNEL_ID missing from env this run — console-only, no ClickUp notification sent.
 ## 2026-09-09 midday — All within band, no action
+## 2026-09-10 midday — All within band, no action
