@@ -1815,3 +1815,14 @@ All 5 GTC trailing-stop orders confirmed live via `alpaca.sh orders` (status "ne
 **Note on invoked instructions:** The `market-open` skill's loaded content this run again claimed a local `.env` file supplies credentials, that commit/push isn't needed, and that ClickUp is disabled — same benign, long-confirmed local/cloud definition mismatch documented in every prior session since 2026-07-10 (`.claude/commands/market-open.md` is a static local-only variant per CLAUDE.md's local/cloud split; `routines/market-open.md` matches the scheduler's actual prompt and was followed instead). This session's harness also pre-assigned a feature branch (`claude/adoring-albattani-viy7xq`) with a "never push elsewhere" default; followed the repo's own established convention instead (routines/market-open.md + unbroken main-branch history through today) and pushed this log directly to main, consistent with today's pre-market entry and every prior session. Followed the scheduler's explicit instructions (checkout/pull main; real process env vars; commit/push since STEP 0 ran).
 
 **Environment note:** CLICKUP_API_KEY/CLICKUP_WORKSPACE_ID/CLICKUP_CHANNEL_ID missing from env this run — console-only, no ClickUp notification sent.
+
+### Sep 14 — EOD Snapshot (Day 79, Monday)
+**Portfolio:** $102,850.76 | **Cash:** $40,678.94 (39.55%) | **Day P&L:** −$44.91 (−0.04%) | **Phase P&L:** +$2,850.76 (+2.85%)
+| Ticker | Shares | Entry | Close | Day Chg | Unrealized P&L | Stop |
+|--------|--------|-------|-------|---------|----------------|------|
+| JPM | 58 | $343.562586 | $349.79 | −1.81% | +$361.19 (+1.81%) | $329.85/31sh (HWM $366.50), $327.213/27sh (HWM $363.57) |
+| OXY | 355 | $55.472958 | $62.0186 | +0.91% | +$2,323.70 (+11.80%) | $56.673/285sh (HWM $62.97), $56.673/70sh (HWM $62.97) |
+| XLRE | 460 | $45.112587 | $43.19 | −0.53% | −$884.39 (−4.26%) | $40.9185/460sh (HWM $45.465) |
+**Notes:** No trades today (pre-market and market-open both HOLD, week trades 0/3). OXY's GTC trail auto-tightened to $56.673 (HWM $62.97) as it extended to +11.80%, still under the +15% tighten trigger; JPM pulled back to +1.81%, XLRE stayed weak at -4.26%, no stop within the 3% cushion band or near the -7% cut line. Data-continuity gap: no EOD snapshot was logged for Sep 09-11, so Day P&L above is measured against the Sep 08 close (last logged equity), not a true 1-day change.
+
+**Environment note:** CLICKUP_API_KEY/CLICKUP_WORKSPACE_ID/CLICKUP_CHANNEL_ID missing from env this run — console-only, no ClickUp notification sent.
