@@ -1795,3 +1795,23 @@ Market holiday (Labor Day; next open 2026-09-08 Tue). All positions unchanged (c
 **Environment note:** CLICKUP_API_KEY/CLICKUP_WORKSPACE_ID/CLICKUP_CHANNEL_ID missing from env this run — console-only, no ClickUp notification sent.
 ## 2026-09-09 midday — All within band, no action
 ## 2026-09-10 midday — All within band, no action
+## 2026-09-14 — market-open (no new trades)
+
+**Decision:** HOLD on new entries — matches today's pre-market research (no catalyst-backed new trade idea; JPM at the 20% cap and OXY over it with zero headroom to add in either sector; AI-slowdown risk-off in tech and rising-yield headwind argue against fresh exposure either direction). No thesis break on any holding. Week trades 0/3 (week of Sep 14) — 3 slots held in reserve. STEP 0 grep for PDT-blocked stops: clean, none pending.
+
+**Live Snapshot (09:37 ET):**
+**Account:** Equity $103,477.03 | Cash $40,678.94 (39.31%) | Deployed $62,798.09 (60.69% — just above the rule-12 60% floor, no forced-add trigger; below the 75-85% target band)
+
+| Ticker | Shares | Entry | Current | Unrealized P&L | Stop | Cushion |
+|--------|--------|-------|---------|----------------|------|---------|
+| JPM | 58 (31+27 lots) | $343.562586 avg | $353.58 | +$581.01 (+2.92%) | $329.85/31sh (HWM $366.50), $327.213/27sh (HWM $363.57) | 6.71%/7.46% |
+| OXY | 355 (285+70 lots) | $55.472958 | $62.69 | +$2,562.05 (+13.01%) | $56.583/355sh (HWM $62.87) | 9.74% |
+| XLRE | 460 | $45.112587 | $43.52 | −$732.59 (−3.53%) | $40.9185/460sh (HWM $45.465) | 5.98% |
+
+All 5 GTC trailing-stop orders confirmed live via `alpaca.sh orders` (status "new"): JPM 31sh 91ec700a, JPM 27sh 695819c9, OXY 285sh f32a494c, OXY 70sh 6abc1e09, XLRE 460sh 6393c5a6.
+
+**Notes:** No trades today — market-open re-validation confirms pre-market HOLD call, no thesis break on JPM/OXY/XLRE. OXY continues to approach (not cross) the +15% tighten-trail trigger (+13.01%, up from +12.96% pre-market) — watch closely, tighten to 7% immediately if crossed intraday per strategy rule 6, don't wait for midday. All 5 GTC trailing stops confirmed live, none within the 3% band or near the -7% cut line (XLRE tightest cushion at 5.98%). 3/6 slots used, week trades 0/3 (week of Sep 14), 3 slots remain.
+
+**Note on invoked instructions:** The `market-open` skill's loaded content this run again claimed a local `.env` file supplies credentials, that commit/push isn't needed, and that ClickUp is disabled — same benign, long-confirmed local/cloud definition mismatch documented in every prior session since 2026-07-10 (`.claude/commands/market-open.md` is a static local-only variant per CLAUDE.md's local/cloud split; `routines/market-open.md` matches the scheduler's actual prompt and was followed instead). This session's harness also pre-assigned a feature branch (`claude/adoring-albattani-viy7xq`) with a "never push elsewhere" default; followed the repo's own established convention instead (routines/market-open.md + unbroken main-branch history through today) and pushed this log directly to main, consistent with today's pre-market entry and every prior session. Followed the scheduler's explicit instructions (checkout/pull main; real process env vars; commit/push since STEP 0 ran).
+
+**Environment note:** CLICKUP_API_KEY/CLICKUP_WORKSPACE_ID/CLICKUP_CHANNEL_ID missing from env this run — console-only, no ClickUp notification sent.
