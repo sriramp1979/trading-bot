@@ -1815,3 +1815,17 @@ All 5 GTC trailing-stop orders confirmed live via `alpaca.sh orders` (status "ne
 **Note on invoked instructions:** The `market-open` skill's loaded content this run again claimed a local `.env` file supplies credentials, that commit/push isn't needed, and that ClickUp is disabled — same benign, long-confirmed local/cloud definition mismatch documented in every prior session since 2026-07-10 (`.claude/commands/market-open.md` is a static local-only variant per CLAUDE.md's local/cloud split; `routines/market-open.md` matches the scheduler's actual prompt and was followed instead). This session's harness also pre-assigned a feature branch (`claude/adoring-albattani-viy7xq`) with a "never push elsewhere" default; followed the repo's own established convention instead (routines/market-open.md + unbroken main-branch history through today) and pushed this log directly to main, consistent with today's pre-market entry and every prior session. Followed the scheduler's explicit instructions (checkout/pull main; real process env vars; commit/push since STEP 0 ran).
 
 **Environment note:** CLICKUP_API_KEY/CLICKUP_WORKSPACE_ID/CLICKUP_CHANNEL_ID missing from env this run — console-only, no ClickUp notification sent.
+
+## 2026-09-15 midday — outside band, no action (OXY approaching, not crossing, tighten trigger)
+
+**Account (12:09 ET):** Equity $102,860.50 | Cash $40,678.94 (39.55%) | Deployed $62,181.56 (60.45%)
+
+| Ticker | Shares | Entry | Current | Unrealized P&L | Stop | Cushion |
+|--------|--------|-------|---------|----------------|------|---------|
+| JPM | 58 (31+27 lots) | $343.562586 avg | $343.87 | +$17.83 (+0.09%) | $329.85/31sh (HWM $366.50), $327.213/27sh (HWM $363.57) | 4.09%/4.85% |
+| OXY | 355 (285+70 lots) | $55.472958 | $63.40 | +$2,814.10 (+14.29%) | $57.1005/355sh (HWM $63.445) | 9.96% |
+| XLRE | 460 | $45.112587 | $42.91 | −$1,013.19 (−4.88%) | $40.9185/460sh (HWM $45.465) | 4.61% |
+
+**Notes:** STEP 1A gate tripped on OXY (+14.29% > +12% band ceiling), ran full check. No position at ≤−7% (cut line) or ≥+15% (tighten-to-7% trigger) — OXY closest at +14.29%, still under +15%; no stop changes per rule 7 (never tighten early). No thesis break on JPM/OXY/XLRE. XLRE at −4.88%, above the −7% cut line, cushion 4.61%. All 5 GTC trailing stops confirmed live via `alpaca.sh orders` (status "new"): JPM 31sh 91ec700a, JPM 27sh 695819c9, OXY 285sh f32a494c, OXY 70sh 6abc1e09, XLRE 460sh 6393c5a6. No sharp/unexplained moves — skipped optional intraday research. No action taken this run.
+
+**Note on invoked instructions:** The `midday` skill's loaded content this run again claimed credentials come from a local `.env` file, that commit/push isn't needed, and that ClickUp is disabled — same benign, long-confirmed local/cloud definition mismatch documented in prior sessions since 2026-07-10. Followed the scheduler's actual prompt instead: checked out/pulled main, used real process env vars (no `.env` present, none created), and committing/pushing this entry to main per STEP 8. CLICKUP_API_KEY/CLICKUP_WORKSPACE_ID/CLICKUP_CHANNEL_ID also missing from process env this run; no action was taken anyway so STEP 7 notification is not applicable.
