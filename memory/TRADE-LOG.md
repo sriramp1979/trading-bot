@@ -1830,3 +1830,14 @@ All 5 GTC trailing-stop orders confirmed live via `alpaca.sh orders` (status "ne
 
 **Note on invoked instructions:** The `midday` skill's loaded content this run again claimed credentials come from a local `.env` file, that commit/push isn't needed, and that ClickUp is disabled — same benign, long-confirmed local/cloud definition mismatch documented in prior sessions since 2026-07-10. Followed the scheduler's actual prompt instead: checked out/pulled main, used real process env vars (no `.env` present, none created), and committing/pushing this entry to main per STEP 8. CLICKUP_API_KEY/CLICKUP_WORKSPACE_ID/CLICKUP_CHANNEL_ID also missing from process env this run; no action was taken anyway so STEP 7 notification is not applicable.
 ## 2026-09-16 midday — All within band, no action
+
+### Sep 16 — EOD Snapshot (Day 81, Wednesday)
+**Portfolio:** $101,684.17 | **Cash:** $40,678.94 (40.01%) | **Day P&L:** −$1,800.99 (−1.74%) | **Phase P&L:** +$1,684.17 (+1.68%)
+| Ticker | Shares | Entry | Close | Day Chg | Unrealized P&L | Stop |
+|--------|--------|-------|-------|---------|----------------|------|
+| JPM | 58 (31+27 lots) | $343.562586 avg | $348.75 | −1.06% | +$300.87 (+1.51%) | $329.85/31sh (HWM $366.50), $327.213/27sh (HWM $363.57) |
+| OXY | 355 (285+70 lots) | $55.472958 | $59.41 | −6.47% | +$1,396.83 (+7.09%) | $57.393/355sh (HWM $63.77) |
+| XLRE | 460 | $45.112587 | $42.80 | −0.63% | −$1,063.79 (−5.13%) | $40.9185/460sh (HWM $45.465) |
+**Notes:** OXY reversed sharply (−6.47% today) after approaching the +15% tighten trigger yesterday, now +7.09% unrealized with cushion to stop down to 3.39% — watch closely tomorrow. XLRE remains the laggard at −5.13%, still above the −7% manual cut line (cushion 4.4%). No trades today; no EOD snapshot was logged in TRADE-LOG since Sep 08, so Day P&L uses Alpaca's `last_equity` ($103,485.16) rather than a stale in-log baseline.
+
+**Environment note:** CLICKUP_API_KEY/CLICKUP_WORKSPACE_ID/CLICKUP_CHANNEL_ID missing from process env this run — console-only, no ClickUp notification sent.
