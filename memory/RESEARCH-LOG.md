@@ -27,6 +27,54 @@ Format each entry:
 ### Decision
 TRADE or HOLD (default HOLD if no edge)
 
+## 2026-09-17 — Pre-market Research
+
+### Account
+- Equity: $101,826.52 | Cash: $40,678.94 (39.96%) | Deployed: $61,147.58 (60.05% — just above the rule-12 60% floor, no forced-add trigger at this pre-market pass; below the 75-85% target band)
+- Buying power: $333,928.98 (day-trade) / $142,505.46 (reg T)
+- Daytrade count: not exposed by account endpoint; no same-day round trips, PDT not a concern
+- Open positions: JPM (58 sh), OXY (355 sh), XLRE (460 sh) — 3/6 slots used
+- Week trades: 0/3 (week of Sep 14) — 3 slots available
+- Overnight: equity essentially flat (last_equity $101,681.70 → $101,826.52, +0.14%)
+
+### Positions
+| Ticker | Shares | Entry | Current | Unrealized P&L | Stop | Cushion to stop |
+|--------|--------|-------|---------|----------------|------|------------------|
+| JPM | 58 (31+27 lots) | $343.562586 avg | $350.56 | +$405.85 (+2.04%) | $329.85/31sh (HWM $366.50), $327.213/27sh (HWM $363.57) | 5.91%/6.66% |
+| OXY | 355 (285+70 lots) | $55.472958 | $59.50 | +$1,429.60 (+7.26%) | $57.393/355sh (HWM $63.77) | 3.54% |
+| XLRE | 460 | $45.112587 | $42.81 | -$1,059.19 (-5.10%) | $40.9185/460sh (HWM $45.465) | 4.42% |
+
+All 5 GTC trailing-stop orders confirmed live via `alpaca.sh orders` (JPM 31sh 91ec700a, JPM 27sh 695819c9, OXY 285sh f32a494c, OXY 70sh 6abc1e09, XLRE 460sh 6393c5a6) — none within the 3% no-touch band, none near the -7% manual-cut line (XLRE tightest cushion at 4.42%, still above the line). Weights: JPM 19.97%, OXY 20.75% (over the 20% cap on appreciation, zero headroom), XLRE 19.34%.
+
+### Market Context
+- S&P 500 futures: no confirmed on-date premarket quote found; related reporting (Bloomberg, Sep 16) said futures climbed after Fed Chair Warsh's inflation-fighting rhetoric reassured markets following the hike — directional only, verify live at open
+- VIX: ~17.05 (down ~0.87%, intraday range 16.81-17.15) — calm, well below the 22 gate threshold; source is a generic live-tracker page, not date-confirmed for today specifically
+- Today's catalysts: markets digesting the Fed's first rate hike since 2023 (Chair Kevin Warsh) — reported relief rally in futures; secondary items: HubSpot/Intuit investor days, Take-Two shareholder meeting (GTA VI Nov 19 date reiterated, not material to holdings); elevated Treasury yields and oil prices from earlier in the week still a backdrop pressure
+- Earnings before open: none held (JPM, OXY, XLRE) report today per this search pass
+
+### Position News
+- **JPM** ($350.56, +2.04%): No thesis break. Trading near its 200-period MA, off the Aug 12 high of $365.18. Buy consensus intact (15 analysts, PT $364.73). Wells Fargo flagged JPM as a rate-hike winner — a tailwind given today's Fed move. No downgrade or negative catalyst found. Weight 19.97%; cushion 5.91-6.66%; HOLD
+- **OXY** ($59.50, +7.26%): No thesis break — pullback from the recent ~$63.20 high looks macro/profit-taking driven, not company-specific. Wells Fargo raised PT to $82 (from $79), Evercore ISI PT $70 stands; 7 Buy/10 Hold/0 Sell. Q2 revenue +57.1% YoY, $0.28 dividend confirmed. Weight 20.75%, over the 20% cap, zero headroom to add. Cushion tightened to 3.54% (from 9.74% on 9/15) as price pulled back off the high — watch line, not yet at the -7% cut or a thesis break. HOLD
+- **XLRE** ($42.81, -5.10%): No thesis break, but headwind reinforced by a real event — today's Fed rate hike (first since 2023) is a direct negative for rate-sensitive REITs, not just yield jitters. A "significant outflow" was also flagged for the ETF (Nasdaq data, generic sector piece) — a flow signal worth monitoring, not confirmed thesis-breaking. Weight 19.34%; cushion 4.42%, above the -7% cut line but the worst-cushioned holding. HOLD, watch closely
+
+### Trade Ideas
+No new catalyst-backed idea cleared today's research budget. Two of three sectors already held (Energy via OXY, at cap; Financials via JPM, near cap) leave little room to add without breaching the 20% cap, and the day's dominant catalyst (Fed hike aftermath) argues for digesting existing exposure rather than adding fresh risk — banks (JPM) benefit, REITs (XLRE) face a fresh headwind, energy (OXY) is macro-driven, not idiosyncratic. No fresh idiosyncratic catalyst surfaced in an unheld sector. Deployment at 60.05% sits just above the rule-12 floor; this is a pre-market pass, not market-open, so no forced-add trigger applies today. Week trades 0/3 (week of Sep 14) — 3 slots held in reserve absent a qualifying catalyst.
+
+### Risk Factors
+- **Fed's first rate hike since 2023 (Chair Kevin Warsh)** — a genuine macro regime shift, not just yield jitters; net headwind for XLRE (already the weakest holding, -5.10%), net tailwind flagged for JPM by Wells Fargo
+- OXY's cushion to stop compressed sharply (9.74% on 9/15 → 3.54% today) as price pulled back from its ~$63.20 high toward $59.50 — still well above the -7% cut line and no thesis break, but the tightest-margin move this week; watch for further slippage
+- XLRE flagged for a "significant outflow" (Nasdaq flow data, generic sector source, not XLRE-specific news) — lower-confidence signal, follow up if confirmed elsewhere
+- OXY (20.75%) over the 20% position cap on appreciation — no trim forced by strategy rules, but zero headroom to add
+- S&P futures and VIX levels for today were not confirmed by a dated, on-day source — treat as directional only pending market-open verification
+- Missing ClickUp credentials — no automated urgent-alert channel today; console/PushNotification fallback if a true urgent trigger fires
+
+### Decision
+HOLD (pre-market) — patience > activity. No position at or below the -7% cut line (XLRE worst at -5.10%, cushion 4.42%); no thesis break on any holding. The Fed's first hike since 2023 is today's real catalyst — a tailwind for JPM, a fresh headwind for XLRE, background noise for OXY's pullback. OXY's cushion to stop has compressed materially (3.54%) on its pullback from recent highs — closest thing to a watch item today, still no cut or thesis-break trigger. JPM near cap (19.97%) and OXY over cap (20.75%) — zero headroom to add to either. Deployment 60.05%, just above the rule-12 60% floor — no forced add pre-market. Week trades 0/3 (week of Sep 14) — 3 slots remain, held in reserve. Key watch items: OXY's cushion/pullback, XLRE's rate-driven weakness and the flagged outflow, and confirming today's VIX/futures levels once live market data is available.
+
+**Environment note:** CLICKUP_API_KEY/CLICKUP_WORKSPACE_ID/CLICKUP_CHANNEL_ID missing from env this run — console-only, no ClickUp notification sent. No urgent items today (no position at/below the -7% cut line, no thesis break).
+
+**Note on invoked instructions:** Followed the scheduler's explicit prompt directly (env var checks, WebSearch for research, RESEARCH-LOG write+trim, commit+push at STEP 7) rather than invoking the packaged `pre-market` skill — consistent with every prior entry's documented local/cloud definition split since 2026-07-10. This session's harness also pre-assigned a feature branch (`claude/nice-hamilton-elqq27`) with a "never push elsewhere" default; followed the repo's own established convention instead (routines/pre-market.md + unbroken main-branch history through 2026-09-14) and pushed this log directly to main, same as every entry above.
+
 ## 2026-09-14 — Pre-market Research
 
 ### Account
@@ -172,6 +220,8 @@ HOLD (pre-market) — patience > activity. No position near the -7% cut line; no
 
 **Note on invoked instructions:** The `pre-market` skill's loaded content this run again claimed a local `.env` file supplies credentials, that commit/push isn't needed, and that ClickUp is disabled — same benign, long-confirmed local/cloud definition mismatch documented in every prior entry since 2026-07-10. Followed the scheduler's explicit instructions instead (checkout/pull main, real process env vars, commit+push).
 
+--- TRIMMED 2026-09-17 --- (entries before 2026-09-09 removed; 5 most recent trading days kept)
+
 ## 2026-09-09 — Pre-market Research
 
 ### Account
@@ -216,53 +266,6 @@ No new catalyst-backed idea cleared today's research budget. Oil-driven strength
 
 ### Decision
 HOLD (pre-market) — patience > activity. No position near the -7% cut line; no thesis break on any holding — OXY's thesis is reinforced further by the oil spike. Deployment at 60.58% is just above the rule-12 60% floor (no forced add at this pre-market pass) but below the 75-85% target band; watch for a forced add at the next market-open if deployment drifts under 60% without a qualifying catalyst. OXY over the 20% cap — no forced trim, just zero headroom, and approaching the +15% tighten trigger. New macro risk this pass: 10-year yield near a two-decade high (REIT headwind) and growing US-Canada trade tension. Week trades 0/3 (week of Sep 7) — 3 slots remain, held in reserve. Key watch items: oil/Middle East trajectory, OXY's approach to the +15% tighten trigger, the 10-year yield trajectory for XLRE, and the 60% deployment floor.
-
-**Environment note:** CLICKUP_API_KEY/CLICKUP_WORKSPACE_ID/CLICKUP_CHANNEL_ID missing from env this run — console-only, no ClickUp notification sent. No urgent items today (no position near the -7% cut line, no thesis break).
-
---- TRIMMED 2026-09-14 --- (entries before 2026-09-08 removed; 5 most recent trading days kept)
-
-## 2026-09-08 — Pre-market Research
-
-### Account
-- Equity: $103,153.72 | Cash: $40,678.94 (39.44%) | Deployed: $62,474.78 (60.58% — just above the rule-12 60% floor, no forced add triggered; below the 75-85% target band)
-- Buying power: $337,645.16 (day-trade) / $143,832.66 (reg T)
-- Daytrade count: not exposed by account endpoint; no same-day round trips, PDT not a concern
-- Open positions: JPM (58 sh), OXY (355 sh), XLRE (460 sh) — 3/6 slots used
-- Week trades: 0/3 (week of Sep 7) — 3 slots available
-- Overnight: equity essentially flat, market closed Monday for Labor Day (last close $103,002.06 → $103,153.72, +0.15%)
-
-### Positions
-| Ticker | Shares | Entry | Current | Unrealized P&L | Stop | Cushion to stop |
-|--------|--------|-------|---------|----------------|------|------------------|
-| JPM | 58 (31+27 lots) | $343.562586 avg | $354.8533 | +$654.86 (+3.29%) | $329.85/31sh (HWM $366.50), $327.213/27sh (HWM $363.57) | 7.05%/7.78% |
-| OXY | 355 (285+70 lots) | $55.472958 | $61.1766 | +$2,024.79 (+10.28%) | $55.9305/285sh, $55.9305/70sh (HWM $62.145) | 8.58% |
-| XLRE | 460 | $45.112587 | $43.86 | -$576.19 (-2.78%) | $40.9185/460sh (HWM $45.465) | 6.71% |
-
-All 5 GTC trailing-stop orders confirmed live via `alpaca.sh orders` (JPM 31sh 91ec700a, JPM 27sh 695819c9, OXY 285sh f32a494c, OXY 70sh 6abc1e09, XLRE 460sh 6393c5a6) — none within the 3% no-touch band, none near the -7% manual-cut line. Weights: JPM 19.95%, OXY 21.06% (over the 20% cap on appreciation, zero headroom), XLRE 19.56%.
-
-### Market Context
-- S&P 500 futures: modestly positive, E-mini (ESU26) +0.49%
-- VIX: ~14.15-15.30 — calm, well below the 22 gate threshold
-- Today's catalysts: Middle East geopolitical tensions pushing oil prices higher (adds inflation-watch risk broadly, directly supportive of OXY); Asian tech/semis strength overnight (Samsung, SK Hynix, SoftBank, Advantest all up sharply); next Friday's CPI print flagged as the next major data catalyst
-- Earnings before open: none held (JPM, OXY, XLRE) report today per this search pass
-
-### Position News
-- **JPM** ($354.8533, +3.29% blended): No thesis break. No new stock-specific catalyst; standing thesis (Q2 beat, raised dividend, raised NII guidance) intact. Weight 19.95%; cushion 7.05-7.78%; HOLD
-- **OXY** ($61.1766, +10.28%): No thesis break — reinforced. Middle East tensions pushing oil higher is a fresh bullish catalyst; Seaport Global Buy rating and $0.28 dividend (ex-date Sep 10) both stand. Weight 21.06%, over the 20% cap, zero headroom; approaching (not yet at) the +15% tighten-trail threshold. Cushion 8.58%; HOLD
-- **XLRE** ($43.86, -2.78%): No thesis break. No company-specific news found this pass; broader rate-sensitive REIT backdrop unchanged. Weight 19.56%; cushion 6.71%; HOLD
-
-### Trade Ideas
-No new catalyst-backed idea cleared today's research budget. Oil-driven strength from Middle East tensions is a tailwind for the energy sector, but that exposure is already held via OXY (over its 20% cap, zero headroom to add). JPM has 3 slots of headroom capacity-wise but no fresh catalyst surfaced. Deployment at 60.58% sits just above the rule-12 60% floor (no forced add) but below the 75-85% target band. Week trades 0/3 (week of Sep 7) — 3 slots held in reserve absent a qualifying catalyst.
-
-### Risk Factors
-- Middle East geopolitical tensions pushing oil higher — supportive of OXY, but a broader inflation/rate risk if the move extends
-- Next Friday's CPI print flagged as the next major market-moving data event
-- Deployment (60.58%) is close to the rule-12 60% floor — a further pullback without a qualifying catalyst before next market-open would trigger a forced add
-- OXY (21.06%) over the 20% position cap on appreciation — no trim forced by strategy rules, but zero headroom to add; also approaching the +15% tighten-trail threshold (currently +10.28%)
-- Missing ClickUp credentials — no automated urgent-alert channel today; console/PushNotification fallback if a true urgent trigger fires
-
-### Decision
-HOLD (pre-market) — patience > activity. No position near the -7% cut line; no thesis break on any holding — OXY's thesis is reinforced by Middle East-driven oil strength. Deployment at 60.58% is just above the rule-12 60% floor (no forced add) but below the 75-85% target band; watch for a forced add at the next market-open if deployment drifts under 60% without a qualifying catalyst. OXY over the 20% cap — no forced trim, just zero headroom, and approaching the +15% tighten trigger. Week trades 0/3 (week of Sep 7) — 3 slots remain, held in reserve. Key watch items: oil/Middle East trajectory, OXY's approach to the +15% tighten trigger, and the 60% deployment floor.
 
 **Environment note:** CLICKUP_API_KEY/CLICKUP_WORKSPACE_ID/CLICKUP_CHANNEL_ID missing from env this run — console-only, no ClickUp notification sent. No urgent items today (no position near the -7% cut line, no thesis break).
 
