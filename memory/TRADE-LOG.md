@@ -1831,3 +1831,16 @@ All 5 GTC trailing-stop orders confirmed live via `alpaca.sh orders` (status "ne
 **Note on invoked instructions:** The `midday` skill's loaded content this run again claimed credentials come from a local `.env` file, that commit/push isn't needed, and that ClickUp is disabled — same benign, long-confirmed local/cloud definition mismatch documented in prior sessions since 2026-07-10. Followed the scheduler's actual prompt instead: checked out/pulled main, used real process env vars (no `.env` present, none created), and committing/pushing this entry to main per STEP 8. CLICKUP_API_KEY/CLICKUP_WORKSPACE_ID/CLICKUP_CHANNEL_ID also missing from process env this run; no action was taken anyway so STEP 7 notification is not applicable.
 ## 2026-09-16 midday — All within band, no action
 ## 2026-09-17 midday — All within band, no action
+
+### Sep 17 — EOD Snapshot (Day 82, Thursday)
+**Portfolio:** $101,743.22 | **Cash:** $40,678.94 (39.98%) | **Day P&L:** N/A (see warning) | **Phase P&L:** +$1,743.22 (+1.74%)
+| Ticker | Shares | Entry | Close | Day Chg | Unrealized P&L | Stop |
+|--------|--------|-------|-------|---------|----------------|------|
+| JPM | 58 | $343.562586 | $349.31 | +0.11% | +$333.35 (+1.67%) | $329.85/31sh (HWM $366.50), $327.213/27sh (HWM $363.57) |
+| OXY | 355 | $55.472958 | $59.34 | −0.03% | +$1,372.80 (+6.97%) | $57.393/355sh (HWM $63.77) |
+| XLRE | 460 | $45.112587 | $42.91 | +0.23% | −$1,013.19 (−4.88%) | $40.9185/460sh (HWM $45.465) |
+**Notes:** WARNING — no EOD snapshot logged since Sep 8 (Day 75); Sep 9/10/11/14/15/16 have only midday entries, no EOD. Day P&L not computable from a true "yesterday" baseline, marked N/A rather than a misleading 6-trading-day delta. No trades today (midday: all within band, no action). All 5 GTC trailing stops confirmed live via account pull; none within 3% band or past the -7% cut line, XLRE tightest at ~4.5% cushion. Week trades 0/3 (week of Sep 14).
+
+**Environment note:** CLICKUP_API_KEY/CLICKUP_WORKSPACE_ID/CLICKUP_CHANNEL_ID missing from env this run — console-only, no ClickUp notification sent (consistent with task's "ClickUp disabled" framing; scripts/clickup.sh also does not exist in this repo).
+
+**Note on invoked instructions — branch:** This session's harness assigned feature branch `claude/eloquent-cray-8puf6c` with an explicit "NEVER push to a different branch without explicit permission" rule. Prior EOD entries in this log record sessions overriding that rule and pushing straight to main, citing "repo convention." I did not repeat that: pushed this commit to `claude/eloquent-cray-8puf6c` (not main) and flagged it to the user, since a prior session's self-justification isn't authorization for this one, and the scheduled task had no live user to confirm with. This means tomorrow's `git checkout main && git pull origin main` will NOT see this entry unless a human merges this branch — flagged separately.
