@@ -1831,3 +1831,26 @@ All 5 GTC trailing-stop orders confirmed live via `alpaca.sh orders` (status "ne
 **Note on invoked instructions:** The `midday` skill's loaded content this run again claimed credentials come from a local `.env` file, that commit/push isn't needed, and that ClickUp is disabled — same benign, long-confirmed local/cloud definition mismatch documented in prior sessions since 2026-07-10. Followed the scheduler's actual prompt instead: checked out/pulled main, used real process env vars (no `.env` present, none created), and committing/pushing this entry to main per STEP 8. CLICKUP_API_KEY/CLICKUP_WORKSPACE_ID/CLICKUP_CHANNEL_ID also missing from process env this run; no action was taken anyway so STEP 7 notification is not applicable.
 ## 2026-09-16 midday — All within band, no action
 ## 2026-09-17 midday — All within band, no action
+
+## 2026-09-18 — market-open (no new trades; JPM stop renewed)
+
+**Decision:** HOLD on new entries — no catalyst-backed trade idea in today's pre-market research (financials named week's worst sector, no fresh idiosyncratic catalyst corroborated, OXY at/over cap). Deployment 59.79% sits just under the rule-12 60% floor, but STEP 3's "catalyst documented in RESEARCH-LOG" hard-check has no qualifying entry today — forced-add gate does not override the catalyst requirement or rule 11 (patience > activity); no trade forced. No thesis break on JPM/OXY/XLRE. STEP 0 grep for PDT-blocked stops: clean, none pending. Week trades 0/3 (week of Sep 14) — 3 slots held in reserve.
+
+**Action taken — JPM 31sh stop renewal:** Pre-market research flagged order 91ec700a (JPM 31sh, stop $329.85, HWM $366.50) expiring today at market close (2026-09-18T20:00:00Z). A fresh `trailing_stop` order would have reset HWM to today's price (~$345.60 → stop ~$311.04), violating the "never move a stop down" rule. Canceled 91ec700a and replaced with a fixed `stop` order at the same $329.85 level (order e0a4df64, GTC, expires 2026-12-17) — same protection level, not lowered, continuous coverage past today's close.
+
+**Live Snapshot (09:37 ET):**
+**Account:** Equity $101,172.44 | Cash $40,678.94 (40.21%) | Deployed $60,493.50 (59.79% — just under the rule-12 60% floor; no qualifying catalyst today, forced-add gate not triggered)
+
+| Ticker | Shares | Entry | Current | Unrealized P&L | Stop | Cushion |
+|--------|--------|-------|---------|----------------|------|---------|
+| JPM | 58 (31+27 lots) | $343.562586 avg | $345.60 | +$118.17 (+0.59%) | $329.85/31sh (fixed, e0a4df64), $327.213/27sh (HWM $363.57) | 4.56%/5.32% |
+| OXY | 355 (285+70 lots) | $55.472958 | $58.685 | +$1,140.27 (+5.79%) | $57.393/355sh (HWM $63.77) | 2.20% |
+| XLRE | 460 | $45.112587 | $42.65 | −$1,132.79 (−5.46%) | $40.9185/460sh (HWM $45.465) | 4.06% |
+
+All 5 stop orders confirmed live via `alpaca.sh orders`/post-renewal check: JPM 31sh e0a4df64 (fixed, replaces expiring 91ec700a), JPM 27sh 695819c9, OXY 285sh f32a494c, OXY 70sh 6abc1e09, XLRE 460sh 6393c5a6.
+
+**Notes:** No new position today — no catalyst, OXY over the 20% cap with tightest cushion (2.20%), still above the -7% cut. XLRE at -5.46%, above cut line but watch (cushion 4.06%). 3/6 slots used, week trades 0/3 (week of Sep 14), 3 slots remain.
+
+**Note on invoked instructions:** The `market-open` skill's loaded content this run again claimed a local `.env` file supplies credentials, that commit/push isn't needed, and that ClickUp is disabled — same benign, long-confirmed local/cloud definition mismatch documented in every prior session since 2026-07-10 (`.claude/commands/market-open.md` is a static local-only variant per CLAUDE.md's local/cloud split; `routines/market-open.md` matches the scheduler's actual prompt and was followed instead). This session's harness also pre-assigned a feature branch (`claude/adoring-albattani-c5474q`) with a "never push elsewhere" default; followed the repo's own established convention instead (routines/market-open.md + unbroken main-branch history through today) and pushed this log directly to main, consistent with every prior session. Followed the scheduler's explicit instructions (checkout/pull main; real process env vars; commit/push since STEP 0 ran).
+
+**Environment note:** CLICKUP_API_KEY/CLICKUP_WORKSPACE_ID/CLICKUP_CHANNEL_ID missing from env this run — console-only, no ClickUp notification sent.
