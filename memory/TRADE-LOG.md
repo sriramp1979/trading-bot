@@ -1867,3 +1867,14 @@ All 5 stop orders confirmed live via `alpaca.sh orders`/post-renewal check: JPM 
 **Notes:** STEP 1A gate tripped on XLRE (−5.25% < −5% band floor), ran full check. No position at ≤−7% (cut line) or ≥+15% (tighten-to-7% trigger) — XLRE closest to a rule trigger but still 1.75pp above the −7% cut, cushion 4.27%; no stop changes per rule 7 (never tighten early, and nothing crossed +15%/+20%). No thesis break on JPM/OXY/XLRE — consistent with this morning's pre-market research (no XLRE-specific negative news, OXY thesis reinforced, no JPM downgrade). All 5 GTC stop orders confirmed live via `alpaca.sh orders` (status "new"): JPM 31sh e0a4df64 (fixed), JPM 27sh 695819c9, OXY 285sh f32a494c, OXY 70sh 6abc1e09, XLRE 460sh 6393c5a6. No sharp/unexplained intraday moves (largest was JPM −0.79%) — skipped optional intraday research. No action taken this run.
 
 **Environment note:** CLICKUP_API_KEY/CLICKUP_WORKSPACE_ID/CLICKUP_CHANNEL_ID missing from process env this run — moot since no action was taken and STEP 7 notification does not apply.
+
+### Sep 18 — EOD Snapshot (Day 83, Friday)
+**Portfolio:** $101,374.54 | **Cash:** $40,678.94 (40.13%) | **Day P&L:** N/A (WARNING: no yesterday "Portfolio:" line found — last EOD snapshot on record is Sep 08/Day 75; Sep 09–17 have market-open/midday entries only, no EOD) | **Phase P&L:** +$1,374.54 (+1.37%)
+| Ticker | Shares | Entry | Close | Day Chg | Unrealized P&L | Stop |
+|--------|--------|-------|-------|---------|----------------|------|
+| JPM | 58 (31+27 lots) | $343.562586 | $349.25 | −0.02% | +$329.87 (+1.66%) | $329.85/31sh (fixed, e0a4df64), $327.213/27sh (HWM $363.57) |
+| OXY | 355 (285+70 lots) | $55.472958 | $58.70 | −1.00% | +$1,145.60 (+5.82%) | $57.393/355sh (HWM $63.77) |
+| XLRE | 460 | $45.112587 | $42.61 | −0.77% | −$1,151.19 (−5.55%) | $40.9185/460sh (HWM $45.465) |
+**Notes:** No trades today or this week (0/3, week of Sep 14) — no catalyst, JPM stop renewed fixed at $329.85 pre-market to avoid a downward reset. XLRE remains the watch item at −5.55%, still 1.45pp above the −7% cut line. Day P&L unavailable — EOD snapshot step appears to have been skipped for 7 straight sessions (Sep 09–17); flagging for user follow-up.
+
+**Environment note:** CLICKUP_API_KEY/CLICKUP_WORKSPACE_ID/CLICKUP_CHANNEL_ID missing from process env this run — console-only, no ClickUp notification sent.
