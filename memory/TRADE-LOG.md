@@ -1878,3 +1878,13 @@ All 5 stop orders confirmed live via `alpaca.sh orders`/post-renewal check: JPM 
 **Notes:** No trades today or this week (0/3, week of Sep 14) — no catalyst, JPM stop renewed fixed at $329.85 pre-market to avoid a downward reset. XLRE remains the watch item at −5.55%, still 1.45pp above the −7% cut line. Day P&L unavailable — EOD snapshot step appears to have been skipped for 7 straight sessions (Sep 09–17); flagging for user follow-up.
 
 **Environment note:** CLICKUP_API_KEY/CLICKUP_WORKSPACE_ID/CLICKUP_CHANNEL_ID missing from process env this run — console-only, no ClickUp notification sent.
+
+### Sep 21 — EOD Snapshot (Day 84, Monday)
+**Portfolio:** $101,057.05 | **Cash:** $61,043.85 (60.41%) | **Day P&L:** −$317.49 (−0.31%) | **Phase P&L:** +$1,057.05 (+1.06%)
+| Ticker | Shares | Entry | Close | Day Chg | Unrealized P&L | Stop |
+|--------|--------|-------|-------|---------|----------------|------|
+| JPM | 58 (31+27 lots) | $343.562586 | $352.10 | +0.70% | +$495.17 (+2.49%) | $329.85/31sh (fixed, e0a4df64), $327.213/27sh (HWM $363.57) |
+| XLRE | 460 | $45.112587 | $42.59 | +0.14% | −$1,160.39 (−5.59%) | $40.9185/460sh (HWM $45.465) |
+**Notes:** OXY fully stopped out today (~09:40 ET, both lots, 355sh) via GTC trailing stop — realized gain +$672.01 (+3.41%), frees 1 of 6 slots (2/6 now used). No new trades today or this week (0/3, week of Sep 21). XLRE remains the watch item at −5.59%, still 1.41pp above the −7% cut line; JPM healthy at +2.49%.
+
+**Environment note:** CLICKUP_API_KEY/CLICKUP_WORKSPACE_ID/CLICKUP_CHANNEL_ID missing from process env this run — console-only, no ClickUp notification sent.
