@@ -1888,3 +1888,26 @@ All 5 stop orders confirmed live via `alpaca.sh orders`/post-renewal check: JPM 
 **Notes:** OXY fully stopped out today (~09:40 ET, both lots, 355sh) via GTC trailing stop — realized gain +$672.01 (+3.41%), frees 1 of 6 slots (2/6 now used). No new trades today or this week (0/3, week of Sep 21). XLRE remains the watch item at −5.59%, still 1.41pp above the −7% cut line; JPM healthy at +2.49%.
 
 **Environment note:** CLICKUP_API_KEY/CLICKUP_WORKSPACE_ID/CLICKUP_CHANNEL_ID missing from process env this run — console-only, no ClickUp notification sent.
+
+## Week of 2026-09-21 | Trades: 1/3
+
+## 2026-09-22 — market-open trades
+
+| Field | INTC |
+|-------|------|
+| Side | BUY |
+| Shares | 165 |
+| Entry | $121.622788 |
+| Stop | 10% trailing GTC ($109.46871, HWM $121.6319) |
+| Target | $146.00 (+20%, ~2:1 R:R) |
+| R:R | ~2:1 |
+| Sector | Technology |
+| Thesis | AI/semis rally carryover from Monday's close (Intel +12%, AMD +10% briefly crossed $1T mkt cap); rule-12 deployment gate tripped (39.51% deployed pre-trade, below 60% floor; VIX ~14.87, no futures gap-down exemption) — forced add required this session; sector OK (1 consecutive loss, not EXIT) |
+| Buy Order | aaa91915 |
+| Stop Order | 955adfb0 |
+
+**Post-trade state:** Equity $100,907.90 (pre-fill) | Positions: JPM, XLRE, INTC (3/6) | Week trades 1/3 (week of Sep 21) | Deployed ~59.4% post-fill, still below 75-85% target band but closes most of the rule-12 gap.
+
+**Note on invoked instructions:** The `market-open` skill's loaded content this run again claimed a local `.env` file supplies credentials, that commit/push isn't needed, and that ClickUp is disabled — same benign, long-confirmed local/cloud definition mismatch documented in every prior session since 2026-07-10. Followed the scheduler's explicit prompt instead (real process env vars; checkout/pull main; commit+push since a trade fired). This session's harness also pre-assigned a feature branch with a "never push elsewhere" default; followed the repo's own established convention instead (unbroken main-branch history) and pushed this log directly to main, consistent with every prior session.
+
+**Environment note:** CLICKUP_API_KEY/CLICKUP_WORKSPACE_ID/CLICKUP_CHANNEL_ID missing from process env this run — console-only, no ClickUp notification sent (STEP 7 skipped for this reason).
