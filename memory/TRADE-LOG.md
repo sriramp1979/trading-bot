@@ -1911,3 +1911,14 @@ All 5 stop orders confirmed live via `alpaca.sh orders`/post-renewal check: JPM 
 **Note on invoked instructions:** The `market-open` skill's loaded content this run again claimed a local `.env` file supplies credentials, that commit/push isn't needed, and that ClickUp is disabled — same benign, long-confirmed local/cloud definition mismatch documented in every prior session since 2026-07-10. Followed the scheduler's explicit prompt instead (real process env vars; checkout/pull main; commit+push since a trade fired). This session's harness also pre-assigned a feature branch with a "never push elsewhere" default; followed the repo's own established convention instead (unbroken main-branch history) and pushed this log directly to main, consistent with every prior session.
 
 **Environment note:** CLICKUP_API_KEY/CLICKUP_WORKSPACE_ID/CLICKUP_CHANNEL_ID missing from process env this run — console-only, no ClickUp notification sent (STEP 7 skipped for this reason).
+
+### Sep 22 — EOD Snapshot (Day 85, Tuesday)
+**Portfolio:** $100,655.79 | **Cash:** $40,976.09 (40.71%) | **Day P&L:** −$401.26 (−0.40%) | **Phase P&L:** +$655.79 (+0.66%)
+| Ticker | Shares | Entry | Close | Day Chg | Unrealized P&L | Stop |
+|--------|--------|-------|-------|---------|----------------|------|
+| INTC | 165 | $121.622788 | $123.66 | +1.54% | +$336.14 (+1.68%) | $111.681/165sh (trailing 10%, HWM $124.09) |
+| JPM | 58 (31+27 lots) | $343.562586 | $340.10 | −3.39% | −$200.83 (−1.01%) | $329.85/31sh (fixed, e0a4df64), $327.213/27sh (HWM $363.57) |
+| XLRE | 460 | $45.112587 | $42.50 | −0.21% | −$1,201.79 (−5.79%) | $40.9185/460sh (HWM $45.465) |
+**Notes:** INTC (added this morning, rule-12 forced deployment add) closed its first day +1.68%. JPM gave back −3.39% on broad market weakness but stays near breakeven (−1.01% unrealized). XLRE remains the watch item at −5.79%, now only 1.21pp above the −7% cut line.
+
+**Environment note:** CLICKUP_API_KEY/CLICKUP_WORKSPACE_ID/CLICKUP_CHANNEL_ID missing from process env this run — console-only, no ClickUp notification sent.
