@@ -1922,3 +1922,14 @@ All 5 stop orders confirmed live via `alpaca.sh orders`/post-renewal check: JPM 
 **Notes:** INTC (added this morning, rule-12 forced deployment add) closed its first day +1.68%. JPM gave back −3.39% on broad market weakness but stays near breakeven (−1.01% unrealized). XLRE remains the watch item at −5.79%, now only 1.21pp above the −7% cut line.
 
 **Environment note:** CLICKUP_API_KEY/CLICKUP_WORKSPACE_ID/CLICKUP_CHANNEL_ID missing from process env this run — console-only, no ClickUp notification sent.
+
+### Sep 23 — EOD Snapshot (Day 86, Wednesday)
+**Portfolio:** $100,030.62 | **Cash:** $40,976.09 (40.96%) | **Day P&L:** −$625.17 (−0.62%) | **Phase P&L:** +$30.62 (+0.03%)
+| Ticker | Shares | Entry | Close | Day Chg | Unrealized P&L | Stop |
+|--------|--------|-------|-------|---------|----------------|------|
+| INTC | 165 | $121.622788 | $122.604 | −1.01% | +$161.90 (+0.81%) | $111.807/165sh (trailing 10%, HWM $124.23) |
+| JPM | 58 (31+27 lots) | $343.562586 | $337.5599 | −0.72% | −$348.16 (−1.75%) | $329.85/31sh (fixed, e0a4df64), $327.213/27sh (HWM $363.57) |
+| XLRE | 460 | $45.112587 | $41.84 | −1.55% | −$1,505.39 (−7.25%) ⚠️ | $40.9185/460sh (HWM $45.465) |
+**Notes:** XLRE breached the −7% manual cut threshold (−7.25% unrealized close) — flag for immediate action at next trading session, not actioned in this EOD-only run. No trades today; week trades hold at 1/3 (week of Sep 21). Portfolio roughly flat on the day; phase P&L barely positive at +0.03%.
+
+**Environment note:** CLICKUP_API_KEY/CLICKUP_WORKSPACE_ID/CLICKUP_CHANNEL_ID missing from process env this run — console-only, no ClickUp notification sent.
