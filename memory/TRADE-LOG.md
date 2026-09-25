@@ -1988,3 +1988,14 @@ All 5 stop orders confirmed live via `alpaca.sh orders`/post-renewal check: JPM 
 
 **Environment note:** CLICKUP_API_KEY/CLICKUP_WORKSPACE_ID/CLICKUP_CHANNEL_ID missing from process env this run — console-only, no ClickUp notification sent (STEP 7 skipped for this reason).
 ## 2026-09-25 midday — All within band, no action
+
+### Sep 25 — EOD Snapshot (Day 88, Friday)
+**Portfolio:** $100,230.54 | **Cash:** $45,043.65 (44.94%) | **Day P&L:** −$533.88 (−0.53%) | **Phase P&L:** +$230.54 (+0.23%)
+| Ticker | Shares | Entry | Close | Day Chg | Unrealized P&L | Stop |
+|--------|--------|-------|-------|---------|----------------|------|
+| INTC | 165 | $121.622788 | $122.90 | −3.53% | +$210.74 (+1.05%) | $114.696/165sh (trailing 10%, HWM $127.44) |
+| JPM | 58 (31+27 lots) | $343.562586 | $342.8648 | +1.27% | −$40.47 (−0.20%) | $329.85/31sh (fixed, e0a4df64), $327.213/27sh (HWM $363.57) |
+| META | 20 | $755.722 | $750.70 | −3.46% | −$100.44 (−0.67%) | $685.197/20sh (trailing 10%, HWM $761.33) |
+**Notes:** META (opened today) pulled back −3.46% intraday to −0.67% unrealized as the Muse-launch pop faded; INTC gave back most of yesterday's gain (−3.53% day) but holds net +1.05%; JPM ticked up +1.27%. No thesis breaks, no tighten/cut triggers (all within band), portfolio steady at 3/6 slots. Week trades hold at 2/3 (week of Sep 21).
+
+**Environment note:** CLICKUP_API_KEY/CLICKUP_WORKSPACE_ID/CLICKUP_CHANNEL_ID missing from process env this run — console-only, no ClickUp notification sent.
