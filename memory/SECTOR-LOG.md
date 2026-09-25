@@ -9,7 +9,7 @@
 | Consumer Discretionary | — | 1 | OK |
 | Financials | JPM | 0 | OK |
 | Consumer Staples | — | 1 | OK |
-| Energy | OXY | 0 | OK |
+| Energy | — | 0 | OK |
 | Real Estate | — | 1 | OK |
 
 ## Sector Exit History
@@ -43,3 +43,11 @@ Use these exact sector names (no variations):
 - After a win: reset Consecutive Losses to 0
 - At 2 consecutive losses: set Status = EXIT and add to exit history
 - Buy-side gate must reject any new trade in a sector with Status = EXIT
+
+## Data Note (2026-09-25 weekly review)
+Healthcare, Consumer Discretionary, and Consumer Staples all show "1" Consecutive Losses
+with no tickers held and no matching closed trade in TRADE-LOG.md — unverified seed values,
+not evidence of a real loss. Real Estate's XLRE cut (2026-09-24, -7.57%) was Real Estate's
+only trade ever, so its pre-existing "1" was treated the same way: this week's loss is
+logged as the sector's 1st verified loss (Status stays OK), not a 2nd. Needs a one-time
+manual audit/reset with the user rather than further automated changes.

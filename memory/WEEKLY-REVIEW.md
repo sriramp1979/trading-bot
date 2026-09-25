@@ -352,3 +352,70 @@ Template for each entry:
 *Portfolio +0.40% vs S&P ~−1.4% = +1.80% relative — solid outperformance, though driven more by a down index than fresh alpha. Process strong: deployment gate finally closed the chronic cash-drag gap (30.6%→60.0%), stale-quote discipline held, stops behaved, no losses. Held back from higher marks by JPM/OXY cap saturation limiting further deployment flexibility and XLRE's rate thesis reversing within a day of entry. Net B.*
 
 **Environment note:** CLICKUP_API_KEY/CLICKUP_WORKSPACE_ID/CLICKUP_CHANNEL_ID missing from env this run — Step 6 ClickUp alert not sent; summary printed to console per the scheduler's fallback instructions.
+
+---
+
+## Week ending 2026-09-25
+
+*Note: no review was recorded for the weeks of 2026-08-28, 09-04, 09-11, or 09-18 — daily trade/research logs continued uninterrupted through that span, but this Friday workflow appears to have not run (or not persisted) for four consecutive weeks. This entry covers only the week of 2026-09-21 per the standard weekly scope; the missing weeks were not backfilled.*
+
+### Stats
+| Metric | Value |
+|--------|-------|
+| Starting portfolio | $101,374.54 (Sep 18 EOD) |
+| Ending portfolio | $100,220.51 |
+| Week return | −$1,154.03 (−1.14%) |
+| S&P 500 week | +0.87% (7,637.76 → 7,704.13) |
+| Bot vs S&P | −2.01% |
+| Phase P&L | +$220.51 (+0.22% from $100,000) |
+| Trades | 2 new entries (INTC, META) (W:1 / L:1 / open:3) |
+| Win rate | 50% (1 of 2 closed trades) |
+| Best trade | OXY +3.41% (realized) |
+| Worst trade | XLRE −7.57% (realized) |
+| Profit factor | 0.43 ($672.01 / $1,569.79) |
+| Deployment at week end | 55.06% ($55,176.86 deployed) |
+
+### Closed Trades
+| Ticker | Entry | Exit | P&L | Notes |
+|--------|-------|------|-----|-------|
+| OXY | $55.47 (355sh, 285+70 lots) | ~$57.37 | +$672.01 (+3.41%) | 10% GTC trailing stop triggered Sep 21, ~09:40 ET; auto-exit, freed a slot for INTC's forced add the next session |
+| XLRE | $45.112587 (460sh) | $41.70 | −$1,569.79 (−7.57%) | Manual −7% cut Sep 24 midday; breach first flagged Sep 23 EOD (−7.25%), still unactioned at Sep 24 pre-market, executed ~1.5 sessions after first crossing the line; no thesis break found at any point |
+
+### Open Positions at Week End
+| Ticker | Entry | Close | Unrealized | Stop |
+|--------|-------|-------|------------|------|
+| INTC | $121.622788 | $122.9577 | +$220.26 (+1.10%) | $114.696 (10% trail, HWM $127.44) |
+| JPM | $343.562586 avg (58sh, 31+27 lots) | $342.9008 | −$38.38 (−0.19%) | $329.85/31sh (fixed) + $327.213/27sh (10% trail, HWM $363.57) |
+| META | $755.722 | $750.0299 | −$113.84 (−0.75%) | $685.197 (10% trail, HWM $761.33) |
+
+### What Worked
+- OXY's trailing stop closed out a clean +3.41% realized gain Monday, freeing a slot with zero manual intervention
+- The rule-12 deployment gate fired twice (INTC Tue, META Fri) and both times found a genuine, catalyst-backed name rather than a forced blind buy
+- No thesis breaks on any current holding — INTC's AI-CPU-demand thesis was reinforced repeatedly (Meta Muse launch, Intel pricing power), JPM's dividend raise + QIA partnership held, META's analyst-PT/Muse-launch catalyst confirmed at entry
+- Stale/wide-quote discipline held again — OKTA, AMD, and META (pre-market) were all correctly skipped on bad spreads before META cleared cleanly at the open
+- INTC ended the week as the standout, +1.10% net of Friday's giveback, after leading with a +6-9% intraweek run
+
+### What Didn't Work
+- Portfolio −1.14% vs S&P +0.87% = −2.01% relative — a real underperforming week on a rising tape, not a defensively-explained one
+- The XLRE −7% manual cut sat unactioned for roughly 1.5 sessions: first flagged Sep 23 EOD (−7.25%), flagged again as urgent at Sep 24 pre-market, only executed at Sep 24 midday. The rule is checked at scheduled scans (EOD/midday/pre-market), not continuously, so a confirmed breach can go unactioned across a full session
+- **SECTOR-LOG.md was not updated when XLRE closed at a loss** — the midday workflow that executed the cut did not increment Real Estate's Consecutive Losses count or update its Tickers Held field. Energy's row also still listed OXY as held three sessions after that stop-out. Caught and corrected in this review (see below)
+- Deployment ended the week at 55.06%, still below the 75–85% target despite two forced adds this week
+- Only 2/3 weekly trade slots used; the META add landed on the week's last session (Friday) rather than earlier in the week
+
+### Key Lessons
+- A confirmed −7% breach needs an immediate-action path, not just a flag carried into the next scheduled scan — 1.5 sessions of unmanaged downside exposure is a real risk-management gap, even though this particular breach had no thesis break behind it
+- SECTOR-LOG.md updates (Consecutive Losses, Tickers Held) must be a mandatory, non-skippable step whenever a position closes — this week it was dropped entirely for both the win (OXY/Energy) and the loss (XLRE/Real Estate)
+- The deployment gate is functioning as designed (2 forced adds, both catalyst-backed, no forced garbage fills) but still isn't closing the gap to the 75–85% target — cash from stop-outs keeps regenerating faster than it's redeployed
+- **Data-integrity finding:** SECTOR-LOG.md's Real Estate row carried a "1" Consecutive Losses value with zero prior trades in TRADE-LOG.md history (XLRE was the sector's only trade, ever). The same unverified "1" pattern also appears on Healthcare, Consumer Discretionary, and Consumer Staples — all currently untraded, with no supporting closed-trade evidence found in the trade log. Treated the pre-existing Real Estate "1" as an unverified seed value rather than a real prior loss, so this week's XLRE cut is logged as the sector's 1st verified loss (Status stays OK, not EXIT) — flagging for a one-time manual audit rather than unilaterally resetting the other three sectors
+
+### Adjustments for Next Week
+- Fix the market-open/midday workflows so a closed loss always increments SECTOR-LOG.md's Consecutive Losses (and clears Tickers Held) in the same session as the exit — no more relying on the weekly review to catch it
+- Escalate a confirmed −7% breach to same-session action rather than waiting for the next scheduled scan, if the harness allows an intraday check
+- Audit the unverified "1" Consecutive Losses seed values on Healthcare, Consumer Discretionary, and Consumer Staples in SECTOR-LOG.md — confirm with the user whether these predate the trade log or should be reset to 0
+- Push deployment from 55.06% back toward 75–85%; 3/6 slots are free (INTC, JPM, META hold 3, three slots open)
+- Source next week's adds from uncapped sectors with live momentum (Real Estate is 1 loss from EXIT — approach any new XLRE-type name with extra scrutiny)
+
+### Overall Grade: C
+*Portfolio −1.14% vs S&P +0.87% = −2.01% relative — genuine underperformance on an up week, not a defensively-explained one. Process was mixed: the deployment gate and stale-quote discipline worked exactly as designed, but the −7% cut sat unactioned for 1.5 sessions and SECTOR-LOG.md bookkeeping was dropped entirely on both this week's closes. No strategy rule change warranted (process/execution gaps, not a rule failure) — see Adjustments above for the operational fixes. Net C.*
+
+**Environment note:** CLICKUP_API_KEY/CLICKUP_WORKSPACE_ID/CLICKUP_CHANNEL_ID missing from process env this run (consistent with every session this week) — Step 6 ClickUp alert not sent; summary delivered via direct notification instead.
