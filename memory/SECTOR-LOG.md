@@ -5,7 +5,7 @@
 |--------|-------------|-------------------|--------|
 | Technology | INTC | 1 | OK |
 | Healthcare | — | 1 | OK |
-| Communication Services | — | 0 | OK |
+| Communication Services | META | 0 | OK |
 | Consumer Discretionary | — | 1 | OK |
 | Financials | JPM | 0 | OK |
 | Consumer Staples | — | 1 | OK |

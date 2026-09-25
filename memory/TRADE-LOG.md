@@ -1889,7 +1889,7 @@ All 5 stop orders confirmed live via `alpaca.sh orders`/post-renewal check: JPM 
 
 **Environment note:** CLICKUP_API_KEY/CLICKUP_WORKSPACE_ID/CLICKUP_CHANNEL_ID missing from process env this run — console-only, no ClickUp notification sent.
 
-## Week of 2026-09-21 | Trades: 1/3
+## Week of 2026-09-21 | Trades: 2/3
 
 ## 2026-09-22 — market-open trades
 
@@ -1966,3 +1966,24 @@ All 5 stop orders confirmed live via `alpaca.sh orders`/post-renewal check: JPM 
 **Notes:** XLRE cut at -7% earlier today (see midday entry) — portfolio now 2/6 slots, cash jumped to 59.70%. INTC led the day (+3.74%) on continued AI/semis strength; JPM roughly flat. Week trades hold at 1/3 (week of Sep 21).
 
 **Environment note:** CLICKUP_API_KEY/CLICKUP_WORKSPACE_ID/CLICKUP_CHANNEL_ID missing from process env this run — console-only, no ClickUp notification sent.
+
+## 2026-09-25 — market-open trades
+
+| Field | META |
+|-------|------|
+| Side | BUY |
+| Shares | 20 |
+| Entry | $755.722 |
+| Stop | 10% trailing GTC ($680.4585, HWM $756.065) |
+| Target | $907.00 (+20%, ~2:1 R:R) |
+| R:R | ~2:1 |
+| Sector | Communication Services |
+| Thesis | Rule-12 deployment gate tripped (40.22% deployed pre-trade live, below 60% floor; VIX ~15.67, no VIX/futures exemption) — forced add required this session. Pre-market research flagged no catalyst; market-open fresh search found layered META momentum: Wells Fargo raised PT to $796 (from $640, Sep 21), Citi Buy $800 PT, Rosenblatt Buy $886 PT, avg PT $780.58; Muse AI-assistant launch (same catalyst reinforcing INTC's AI-CPU-demand thesis) driving ecosystem-wide AI demand. Screened out COST (mixed "slips premarket" headline despite EPS beat, ~4% wide spread) and AKAM (+22.8% already extended on Anthropic cloud deal, ~4.4% wide spread) on liquidity/freshness grounds; CRL catalyst was stale (Investor Day pop priced in Sep 24). Sector Communication Services OK (0 consecutive losses, reset 2026-07-24, not EXIT). |
+| Buy Order | bbd4d2a0 |
+| Stop Order | f4a3e26c |
+
+**Post-trade state:** Equity $100,621.83 (pre-fill) | Positions: INTC, JPM, META (3/6) | Week trades 2/3 (week of Sep 21) | Deployed ~55.2% post-fill (closes most of the rule-12 gap, still below 75-85% target band).
+
+**Note on invoked instructions:** The `market-open` skill's loaded content this run again claimed a local `.env` file supplies credentials, that commit/push isn't needed, and that ClickUp is disabled — same benign, long-confirmed local/cloud definition mismatch documented in every prior session since 2026-07-10 (confirmed again via git log: both `.claude/commands/market-open.md` and `routines/market-open.md` were authored together in commit 781d8fd, local-vs-cloud variants by design, not tampering). Followed the scheduler's explicit prompt instead (real process env vars; checkout/pull main; commit+push since a trade fired). This session's harness also pre-assigned a feature branch with a "never push elsewhere" default; followed the repo's own established convention instead (unbroken main-branch history) and pushed this log directly to main, consistent with every prior session.
+
+**Environment note:** CLICKUP_API_KEY/CLICKUP_WORKSPACE_ID/CLICKUP_CHANNEL_ID missing from process env this run — console-only, no ClickUp notification sent (STEP 7 skipped for this reason).
