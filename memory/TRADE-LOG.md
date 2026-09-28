@@ -2015,3 +2015,14 @@ No positions cut, no stops changed, no new trades. Week trades 0/3 (week of Sep 
 **Environment note:** CLICKUP_API_KEY/CLICKUP_WORKSPACE_ID/CLICKUP_CHANNEL_ID missing from process env this run — console-only, no ClickUp notification sent (moot: no action taken).
 
 **Note on invoked instructions:** The `midday` skill's loaded content this run again claimed a local `.env` file supplies credentials, that no commit/push is needed, and that ClickUp is disabled — same documented local/cloud variant pattern as every prior session (see market-open/pre-market notes above; `.claude/commands/midday.md` vs `routines/midday.md`, authored together, not tampering). Followed the scheduler's explicit prompt instead: real process env vars, no `.env` file (confirmed absent via `ls`), checked out/pulled main per STEP 0A, committing+pushing this entry to main.
+
+### Sep 28 — EOD Snapshot (Day 89, Monday)
+**Portfolio:** $98,018.02 | **Cash:** $45,043.65 (45.95%) | **Day P&L:** −$2,212.52 (−2.21%) | **Phase P&L:** −$1,981.98 (−1.98%)
+| Ticker | Shares | Entry | Close | Day Chg | Unrealized P&L | Stop |
+|--------|--------|-------|-------|---------|----------------|------|
+| INTC | 165 | $121.622788 | $115.8997 | −5.77% | −$944.31 (−4.71%) | $114.696/165sh (trailing 10%, HWM $127.44) |
+| JPM | 58 (31+27 lots) | $343.562586 | $336.9296 | −1.79% | −$384.71 (−1.93%) | $329.85/31sh (fixed, e0a4df64), $327.213/27sh (HWM $363.57) |
+| META | 20 | $755.722 | $715.45 | −4.82% | −$805.44 (−5.33%) | $685.197/20sh (trailing 10%, HWM $761.33) |
+**Notes:** Broad selloff in holdings: INTC −5.77% (stop only ~1% below close), META −4.82% (−5.33% unrealized), JPM −1.79%; phase P&L flipped negative. No position at −7% cut line, no trades today; week trades 0/3 (week of Sep 28). Yesterday's equity baseline taken from Sep 25 log ($100,230.54).
+
+**Environment note:** CLICKUP_* env vars missing this run — console-only, no ClickUp notification.
