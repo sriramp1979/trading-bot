@@ -1999,3 +1999,19 @@ All 5 stop orders confirmed live via `alpaca.sh orders`/post-renewal check: JPM 
 **Notes:** META (opened today) pulled back −3.46% intraday to −0.67% unrealized as the Muse-launch pop faded; INTC gave back most of yesterday's gain (−3.53% day) but holds net +1.05%; JPM ticked up +1.27%. No thesis breaks, no tighten/cut triggers (all within band), portfolio steady at 3/6 slots. Week trades hold at 2/3 (week of Sep 21).
 
 **Environment note:** CLICKUP_API_KEY/CLICKUP_WORKSPACE_ID/CLICKUP_CHANNEL_ID missing from process env this run — console-only, no ClickUp notification sent.
+
+## 2026-09-28 midday — Band breach investigated (INTC), no manual action
+
+**Trigger:** Early-exit band check found INTC unrealized_plpc −5.33% ($115.14, day chg −6.39%) — below the −5%/+12% band, above the −7% manual-cut line. Full workflow check run. JPM −1.37% and META −4.79% both within band.
+
+**INTC:** Not at the −7% cut line, no manual cut. Existing 10% trailing GTC stop (955adfb0, stop $114.696, HWM $127.44) is only ~0.38% below current price — will trigger automatically on any further slide without needing manual intervention; not touched (never move a stop down). Fresh search ("INTC Intel stock news today 2026-09-28"): Apple told Mac App Store developers they may drop Intel-Mac support for apps requiring macOS 13+ (incremental/expected, not new); unconfirmed reports of delays to Intel's next-gen chip roadmap (mixed-quality sources, not verified against a primary outlet); reports of a large dilutive equity offering; broader profit-taking off the 220%-YTD rally highs. None confirmed enough to call a hard break of the AI-demand/18A-foundry thesis, and the existing stop already provides the downside protection the strategy calls for. Decision: HOLD, no manual close, no stop change.
+
+**JPM:** −1.37%, within band, dividend-raise/payments-expansion thesis intact. No action.
+
+**META:** −4.79%, within band, litigation overhang + AI-capex profit-taking (known since pre-market). No action.
+
+No positions cut, no stops changed, no new trades. Week trades 0/3 (week of Sep 28).
+
+**Environment note:** CLICKUP_API_KEY/CLICKUP_WORKSPACE_ID/CLICKUP_CHANNEL_ID missing from process env this run — console-only, no ClickUp notification sent (moot: no action taken).
+
+**Note on invoked instructions:** The `midday` skill's loaded content this run again claimed a local `.env` file supplies credentials, that no commit/push is needed, and that ClickUp is disabled — same documented local/cloud variant pattern as every prior session (see market-open/pre-market notes above; `.claude/commands/midday.md` vs `routines/midday.md`, authored together, not tampering). Followed the scheduler's explicit prompt instead: real process env vars, no `.env` file (confirmed absent via `ls`), checked out/pulled main per STEP 0A, committing+pushing this entry to main.
