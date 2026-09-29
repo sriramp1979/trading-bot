@@ -2037,3 +2037,12 @@ No positions cut, no stops changed, no new trades. Week trades 0/3 (week of Sep 
 - Sector: Energy (no EXIT). Positions 4/6.
 - Note: catalyst is estimate-revision/oil-driven, modest sizing. ClickUp env missing — no ClickUp alert.
 ## 2026-09-29 midday — All within band, no action
+
+### Sep 29 — EOD Snapshot (Day 90, Tuesday)
+**Portfolio:** $98,207.86 | **Cash:** $51,926.42 (52.87%) | **Day P&L:** +$189.84 (+0.19%) | **Phase P&L:** −$1,792.14 (−1.79%)
+| Ticker | Shares | Entry | Close | Day Chg | Unrealized P&L | Stop |
+|--------|--------|-------|-------|---------|----------------|------|
+| CVE | 390 | $30.83 | $30.96 | −0.45% | +$50.70 (+0.42%) | $28.116 (trailing 10%, HWM $31.24) |
+| JPM | 58 (31+27 lots) | $343.562586 | $335.23 | −0.40% | −$483.29 (−2.43%) | $329.85/31sh (fixed, e0a4df64), $327.213/27sh (HWM $363.57) |
+| META | 20 | $755.722 | $738.1852 | +3.15% | −$350.74 (−2.32%) | $685.197/20sh (trailing 10%, HWM $761.33) |
+**Notes:** INTC trailing stop filled 09:40 ET, 165 sh @ $114.58 (realized ≈ −$1,161, −5.8%); semis/INTC exit — sector now flat. Bought CVE 390 sh @ $30.83 at open (week trades 1/3, week of Sep 28); 3 positions, cash 52.9%. Yesterday's equity baseline $98,018.02 from Sep 28 log.
