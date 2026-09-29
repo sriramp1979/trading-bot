@@ -27,6 +27,55 @@ Format each entry:
 ### Decision
 TRADE or HOLD (default HOLD if no edge)
 
+## 2026-09-29 — Pre-market Research
+
+### Account
+- Equity: $98,203.09 | Cash: $45,043.65 (45.87%) | Deployed: $53,159.44 (54.13% — under the rule-12 60% floor; forced-add gate applies at market-open)
+- Buying power: $329,021.03 (day-trade) / $143,246.74 (reg T)
+- Daytrade count: not exposed by account endpoint; no same-day round trips, PDT not a concern
+- Open positions: INTC (165 sh), JPM (58 sh), META (20 sh) — 3/6 slots used
+- Week trades: 0/3 (week of Sep 28) — 3 slots available
+- Overnight: equity up (last_equity $98,023.22 → $98,203.09, +$179.87/+0.18%)
+
+### Positions
+| Ticker | Shares | Entry | Current | Unrealized P&L | Stop | Cushion to stop |
+|--------|--------|-------|---------|----------------|------|------------------|
+| INTC | 165 | $121.622788 | $116.32 | -$874.96 (-4.36%) | $114.696/165sh (trailing 10%, HWM $127.44) | 1.40% |
+| JPM | 58 (31+27 lots) | $343.562586 avg | $337.58 | -$346.99 (-1.74%) | $329.85/31sh (fixed, e0a4df64), $327.213/27sh (HWM $363.57) | 2.29%/3.07% |
+| META | 20 | $755.722 | $719.35 | -$727.44 (-4.81%) | $685.197/20sh (trailing 10%, HWM $761.33) | 4.75% |
+
+All 4 GTC stop orders confirmed live via `alpaca.sh orders`. Weights: INTC 19.54%, JPM 19.94%, META 14.65% of equity.
+
+### Market Context
+- S&P 500 futures: Dow/S&P futures slightly lower (SPY premarket -0.04%), Nasdaq 100 +0.12% — flat/mixed after Monday's lower close
+- VIX: ~15.87 (+6.7%, opened 16.16) — calm, well below the 22 gate threshold
+- Today's catalysts: US-Iran standoff (Trump dismissed sanction relief as "hoax") keeping oil elevated; 10Y yield 5.24%, 2Y 4.94%, ~72.5% odds of a Fed hike after October meeting; JOLTs today, GDP Final + Core PCE Wednesday; OpenAI Developer Day; **Micron (MU) Q4 results after the close — AI/semis bellwether, direct read-through risk for INTC**
+- Earnings before open: PAYX (not held); none of INTC/JPM/META
+
+### Position News
+- **INTC** ($116.32, -4.36%): Down ~4% Monday after a strong September run (~$89 → $123+). Drivers: Apple letting Mac App Store devs drop Intel-Mac support (incremental), reported $15B capital raise (dilution), profit-taking off the YTD rally. The chip-roadmap-delay claim from yesterday's follow-up item was NOT verified against a primary source in this pass (4-search budget; no primary outlet surfaced). Stop cushion only 1.40% — inside the 3% band on the *existing* order (not a new placement, no rule violation; never move a stop down). Micron after close is the key event; a stop-out is plausible on any weak print/gap. HOLD, accept automated stop.
+- **JPM** ($337.58, -1.74%): No thesis break. JPM raised its S&P 500 2026 EPS estimate to $365 (corporate resilience); dividend raise (ex-date Oct 6) intact. Weight 19.94% — at cap, no add headroom. HOLD
+- **META** ($719.35, -4.81%): No new thesis break. Down ~4% Monday, giving back part of last week's ~13% Muse/Connect rally; analyst consensus Strong Buy (avg PT ~$799). Litigation overhang (NM data-safety verdict) still open. Cushion 4.75%. HOLD
+
+### Trade Ideas
+No new catalyst-backed idea cleared this pass (4 searches used: 3 market-context + 1 combined held-ticker; none spent on fresh-name scan). Not fabricating entries without researched catalysts. Deployment (54.13%) is under the rule-12 60% floor — forced-add gate applies at market-open (VIX ~15.87, futures ~flat — neither VIX>22 nor gap<-2% exemption applies), so market-open must run a fresh-catalyst search. Caveat for that add: Micron prints after the close and rates/Fed-hike risk is elevated — prefer non-semiconductor, non-Technology-momentum sectors (Energy on oil strength / Industrials / Healthcare) and size modestly. Sector status: none in EXIT. Week trades 0/3.
+
+### Risk Factors
+- Deployment (54.13%) under rule-12 floor — forced add likely at market-open
+- INTC stop cushion 1.40% — high odds of automated stop-out; Micron earnings after close adds gap risk
+- Rates: 10Y 5.24%, ~72.5% odds of Oct Fed hike — pressure on growth/high-multiple names (META, INTC)
+- US-Iran standoff / oil volatility — event risk either way
+- JPM at position cap; META litigation overhang
+- Data: JOLTs today, GDP Final + Core PCE Wed; OpenAI Developer Day
+- ClickUp credentials missing — console/push-notification only
+
+### Decision
+HOLD (pre-market) — patience > activity. No position at/below the -7% cut line (worst: META -4.81%), no confirmed thesis break. INTC's tight cushion is handled by its existing GTC trailing stop. Market-open action item: rule-12 forced-add gate (deployment 54.13%, no exemption).
+
+**Environment note:** CLICKUP_API_KEY/CLICKUP_WORKSPACE_ID/CLICKUP_CHANNEL_ID missing from process env this run — no ClickUp alert sent. No urgent items (no position below -7%, no confirmed thesis break).
+
+**Note on session setup:** Followed the scheduler's explicit prompt (real process env vars, no `.env`, commit+push to main per STEP 7) rather than the harness's pre-assigned feature branch, consistent with prior entries.
+
 ## 2026-09-28 — Pre-market Research
 
 ### Account
@@ -179,6 +228,8 @@ HOLD (pre-market, research-only) — patience > activity, but **XLRE requires ma
 
 **Note on invoked instructions:** The `pre-market` skill's loaded content this run again claimed a local `.env` file supplies credentials and that no commit/push is needed — same benign, long-confirmed local/cloud definition mismatch documented in every prior session since 2026-07-10. Followed the scheduler's explicit prompt instead (real process env vars, no `.env` file; checkout/pull main; commit+push mandatory). This session's harness also pre-assigned a feature branch with a "never push elsewhere" default; followed the repo's own established convention instead (unbroken main-branch history) and pushed this log directly to main, consistent with every prior session.
 
+--- TRIMMED 2026-09-29 ---
+
 ## 2026-09-23 — Pre-market Research
 
 ### Account
@@ -226,54 +277,3 @@ HOLD (pre-market) — patience > activity. No position at/below the -7% cut line
 **Environment note:** CLICKUP_API_KEY/CLICKUP_WORKSPACE_ID/CLICKUP_CHANNEL_ID missing from process env this run — console-only, no ClickUp notification sent. No urgent items today (no position near the -7% cut line, no thesis break).
 
 **Note on invoked instructions:** Followed the scheduler's explicit prompt directly (env var checks, WebSearch for research, RESEARCH-LOG write+trim, commit+push at STEP 7) rather than invoking the packaged `pre-market` skill — consistent with every prior entry's documented local/cloud definition split since 2026-07-10. This session's harness also pre-assigned a feature branch (`claude/nice-hamilton-1dk9gq`) with a "never push elsewhere" default; followed the repo's own established convention instead (routines/pre-market.md + unbroken main-branch history through 2026-09-22) and pushed this log directly to main, same as every entry above.
-
---- TRIMMED 2026-09-28 ---
-
-## 2026-09-22 — Pre-market Research
-
-### Account
-- Equity: $101,074.79 | Cash: $61,043.85 (60.40%) | Deployed: $40,030.94 (39.60% — well below the rule-12 60% floor; forced-add gate applies at market-open, not this pre-market pass)
-- Buying power: $356,262.03 (day-trade) / $162,118.64 (reg T)
-- Daytrade count: not exposed by account endpoint; no same-day round trips, PDT not a concern
-- Open positions: JPM (58 sh), XLRE (460 sh) — 2/6 slots used (OXY stopped out 2026-09-21, +$672.01/+3.41% realized, frees a slot)
-- Week trades: 0/3 (week of Sep 21) — 3 slots available
-- Overnight: equity roughly flat (last_equity $101,053.57 → $101,074.79, +$21.22/+0.02%)
-
-### Positions
-| Ticker | Shares | Entry | Current | Unrealized P&L | Stop | Cushion to stop |
-|--------|--------|-------|---------|----------------|------|------------------|
-| JPM | 58 (31+27 lots) | $343.562586 avg | $351.93 | +$485.31 (+2.44%) | $329.85/31sh (fixed, e0a4df64), $327.213/27sh (HWM $363.57) | 6.27%/7.02% |
-| XLRE | 460 | $45.112587 | $42.65 | -$1,132.79 (-5.46%) | $40.9185/460sh (HWM $45.465) | 4.06% |
-
-Both GTC stop orders confirmed live via `alpaca.sh orders` (JPM 31sh e0a4df64 fixed exp. 12/17, JPM 27sh 695819c9 trailing 10% exp. 11/16, XLRE 460sh 6393c5a6 trailing 10% exp. 11/18) — none within the 3% no-touch band, none near the -7% manual-cut line. Weights: JPM 20.19% (over the 20% cap, zero headroom), XLRE 19.41% (~0.6% headroom to cap).
-
-### Market Context
-- S&P 500 futures: search returned ES ~7,767.00 (day range 7,743.25-7,771.25) with ESU26 "+0.49%" — that exact percentage has now recurred identically across three separate log dates (09-04, 09-11, this entry); treat the % as stale/cached search artifact, verify at market-open
-- VIX: ~14.87 — calm, below the 22 gate threshold, consistent with the recent 13.8-18.9 range
-- Today's catalysts: AI/semis rally carrying over from Monday's close (Intel +12%, AMD +10% and briefly crossed $1T market cap); 10-yr Treasury yield eased to ~4.96% from >5%, a tailwind for rate-sensitive names incl. XLRE; oil prices falling on Iran-diplomacy hopes; light scheduled econ data this week, quarter-end "window dressing" flows in play
-- Earnings before open: none held (JPM, XLRE) report today per this search pass
-
-### Position News
-- **JPM** ($351.93, +2.44%): No thesis break found this pass (no new negative headlines; prior positives on record — $20B QIA asset-mgmt partnership, Goldman Buy reiterated, prime-rate hikes following the Fed move). Weight 20.19%, over the 20% cap, zero headroom; cushion 6.27%/7.02%; HOLD
-- **XLRE** ($42.65, -5.46%): No thesis break — modestly reinforced. Easing 10-yr yield (~4.96%, down from >5%) is a tailwind for rate-sensitive REITs, and sector-wide strength is being driven by data-center REIT demand (XLRE holds EQIX, DLR) per today's search. Weight 19.41%, ~0.6% headroom to cap; cushion 4.06% (tightest of the two, still outside the 3% band); HOLD
-
-### Trade Ideas
-1. INTC — Technology — catalyst: AI/semis rally, +12% Monday on renewed AI-infrastructure demand; sector status OK (1 consecutive loss, not EXIT). Quote (alpaca.sh): ask $121.70/bid $121.10. Entry ~$121.70, stop ~$109.50 (-10%), target ~$146.00 (~2.1:1 R:R). Caveat: chasing a stock already up 12% in one session — confirm premarket levels/volume at market-open before sizing; not fired today.
-2. XLRE (add to existing) — Real Estate — catalyst: easing yields + data-center REIT demand reinforcing the sector tailwind. Only ~0.6% (~$600) headroom left under the 20% cap — too small to be a meaningful standalone add; noted for completeness, not actionable at size.
-3. AMD — Technology — same AI-rally catalyst, but skipped: quote showed an unusually wide bid/ask spread ($578.86 bid / $637.48 ask, ~9.2%), stock already crossed $1T market cap on the move — data quality and extension both argue against using it as today's idea.
-
-### Risk Factors
-- **Deployment gap widened sharply**: 39.60% today vs. 59.84-60.78% in the five prior pre-market passes — OXY's stop-out Monday freed ~$18.7k. Rule-12 forced-add gate will almost certainly trip at market-open (today: VIX ~14.87, no signs of a futures gap-down — neither exemption applies). INTC is the leading candidate from this pass but is chasing an already-extended move; market-open workflow should re-check premarket action before sizing.
-- JPM (20.19%) over the 20% cap, zero headroom to add; XLRE (19.41%) has only ~0.6% headroom
-- XLRE cushion (4.06%) is the tightest of the two open positions, though still well outside the 3% no-touch band and the -7% cut line
-- **Data-quality flag:** S&P futures % change ("+0.49%") reproduced identically across three separate dates now — treat as unconfirmed/stale, verify at market-open
-- Missing ClickUp credentials — no automated urgent-alert channel today; console-only, no urgent items today
-
-### Decision
-HOLD (pre-market) — patience > activity. No position near the -7% cut line (XLRE worst at -5.46%, cushion 4.06%); no thesis break on either holding (XLRE's rate-sensitive thesis modestly reinforced by easing yields). JPM (20.19%) over cap with zero headroom; XLRE (19.41%) has negligible headroom. Week trades 0/3 (week of Sep 21) — 3 slots remain, held in reserve. **Key item for market-open:** deployment at 39.60% is well below the rule-12 60% floor (no VIX/gap exemption today) — expect the forced-add gate to trip; INTC (AI-rally catalyst, entry ~$121.70/stop ~$109.50/target ~$146.00) is this pass's leading candidate, but confirm it hasn't run further and isn't over-extended before sizing at open.
-
-**Environment note:** CLICKUP_API_KEY/CLICKUP_WORKSPACE_ID/CLICKUP_CHANNEL_ID missing from env this run — console-only, no ClickUp notification sent. No urgent items today (no position near the -7% cut line, no thesis break).
-
-**Note on invoked instructions:** Followed the scheduler's explicit prompt directly (env var checks, WebSearch for research, RESEARCH-LOG write+trim, commit+push at STEP 7) rather than invoking the packaged `pre-market` skill — consistent with every prior entry's documented local/cloud definition split since 2026-07-10. This session's harness also pre-assigned a feature branch (`claude/nice-hamilton-08wtyj`) with a "never push elsewhere" default; followed the repo's own established convention instead (routines/pre-market.md + unbroken main-branch history through 2026-09-21) and pushed this log directly to main, same as every entry above.
-
-**Note on invoked instructions:** Followed the scheduler's explicit prompt directly (env var checks, WebSearch for research, RESEARCH-LOG write+trim, commit+push at STEP 7) rather than invoking the packaged `pre-market` skill — consistent with every prior entry's documented local/cloud definition split since 2026-07-10. This session's harness also pre-assigned a feature branch (`claude/nice-hamilton-c3ks8d`) with a "never push elsewhere" default; followed the repo's own established convention instead (routines/pre-market.md + unbroken main-branch history through 2026-09-18) and pushed this log directly to main, same as every entry above.
