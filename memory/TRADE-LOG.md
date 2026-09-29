@@ -2026,3 +2026,13 @@ No positions cut, no stops changed, no new trades. Week trades 0/3 (week of Sep 
 **Notes:** Broad selloff in holdings: INTC −5.77% (stop only ~1% below close), META −4.82% (−5.33% unrealized), JPM −1.79%; phase P&L flipped negative. No position at −7% cut line, no trades today; week trades 0/3 (week of Sep 28). Yesterday's equity baseline taken from Sep 25 log ($100,230.54).
 
 **Environment note:** CLICKUP_* env vars missing this run — console-only, no ClickUp notification.
+
+## Week of 2026-09-28 | Trades: 1/3
+
+### 2026-09-29 market-open — BUY CVE
+- Buy 390 sh CVE @ $30.83 (market, filled) = $12,023.70 (12.3% of equity)
+- Stop: 10% trailing GTC [15c0f7bf-e92d-4a4a-9305-37e294d8048a] → ~$27.75
+- Thesis: Rule-12 forced add (deployed 54%, VIX ~15.9, no exemption). Energy: Zacks #1 Strong Buy, current-yr EPS est +18.2% in 60d, oil elevated on US-Iran standoff. Non-semi, avoids Micron AMC risk.
+- Target: ~$37 (+20%) | R:R 2:1
+- Sector: Energy (no EXIT). Positions 4/6.
+- Note: catalyst is estimate-revision/oil-driven, modest sizing. ClickUp env missing — no ClickUp alert.

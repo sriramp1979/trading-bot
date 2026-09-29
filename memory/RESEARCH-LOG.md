@@ -277,3 +277,6 @@ HOLD (pre-market) — patience > activity. No position at/below the -7% cut line
 **Environment note:** CLICKUP_API_KEY/CLICKUP_WORKSPACE_ID/CLICKUP_CHANNEL_ID missing from process env this run — console-only, no ClickUp notification sent. No urgent items today (no position near the -7% cut line, no thesis break).
 
 **Note on invoked instructions:** Followed the scheduler's explicit prompt directly (env var checks, WebSearch for research, RESEARCH-LOG write+trim, commit+push at STEP 7) rather than invoking the packaged `pre-market` skill — consistent with every prior entry's documented local/cloud definition split since 2026-07-10. This session's harness also pre-assigned a feature branch (`claude/nice-hamilton-1dk9gq`) with a "never push elsewhere" default; followed the repo's own established convention instead (routines/pre-market.md + unbroken main-branch history through 2026-09-22) and pushed this log directly to main, same as every entry above.
+
+### 2026-09-29 market-open addendum — catalyst for CVE
+Fresh search: CVE added to Zacks Rank #1 (Strong Buy) 9/29; FY EPS consensus +18.2% over 60d; oil elevated (US-Iran). Rule-12 forced add executed: CVE 390 sh @ $30.83, 10% trailing stop.

@@ -9,7 +9,7 @@
 | Consumer Discretionary | — | 1 | OK |
 | Financials | JPM | 0 | OK |
 | Consumer Staples | — | 1 | OK |
-| Energy | — | 0 | OK |
+| Energy | CVE | 0 | OK |
 | Real Estate | — | 1 | OK |
 
 ## Sector Exit History
