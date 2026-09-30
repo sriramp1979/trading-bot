@@ -2047,3 +2047,12 @@ No positions cut, no stops changed, no new trades. Week trades 0/3 (week of Sep 
 | META | 20 | $755.722 | $738.1852 | +3.15% | −$350.74 (−2.32%) | $685.197/20sh (trailing 10%, HWM $761.33) |
 **Notes:** INTC trailing stop filled 09:40 ET, 165 sh @ $114.58 (realized ≈ −$1,161, −5.8%); semis/INTC exit — sector now flat. Bought CVE 390 sh @ $30.83 at open (week trades 1/3, week of Sep 28); 3 positions, cash 52.9%. Yesterday's equity baseline $98,018.02 from Sep 28 log.
 ## 2026-09-30 midday — All within band, no action
+
+### Sep 30 — EOD Snapshot (Day 91, Wednesday)
+**Portfolio:** $97,695.52 | **Cash:** $51,925.98 (53.15%) | **Day P&L:** −$512.34 (−0.52%) | **Phase P&L:** −$2,304.48 (−2.30%)
+| Ticker | Shares | Entry | Close | Day Chg | Unrealized P&L | Stop |
+|--------|--------|-------|-------|---------|----------------|------|
+| CVE | 390 | $30.83 | $31.08 | +0.39% | +$97.50 (+0.81%) | $28.44 (trailing 10%, HWM $31.60) |
+| JPM | 58 (31+27 lots) | $343.562586 | $330.83 | −1.24% | −$738.49 (−3.71%) | $329.85/31sh (fixed, e0a4df64), $327.213/27sh (HWM $363.57) |
+| META | 20 | $755.722 | $723.148 | −2.12% | −$651.48 (−4.31%) | $685.197/20sh (trailing 10%, HWM $761.33) |
+**Notes:** JPM closed only ~0.3% above its $329.85 fixed stop (31 sh); META −2.12%, CVE +0.39%. No trades today; week trades 1/3 (week of Sep 28), 3 positions, cash 53%. Yesterday's equity baseline $98,207.86 from Sep 29 log.
