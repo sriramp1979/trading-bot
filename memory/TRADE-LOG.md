@@ -2056,3 +2056,4 @@ No positions cut, no stops changed, no new trades. Week trades 0/3 (week of Sep 
 | JPM | 58 (31+27 lots) | $343.562586 | $330.83 | −1.24% | −$738.49 (−3.71%) | $329.85/31sh (fixed, e0a4df64), $327.213/27sh (HWM $363.57) |
 | META | 20 | $755.722 | $723.148 | −2.12% | −$651.48 (−4.31%) | $685.197/20sh (trailing 10%, HWM $761.33) |
 **Notes:** JPM closed only ~0.3% above its $329.85 fixed stop (31 sh); META −2.12%, CVE +0.39%. No trades today; week trades 1/3 (week of Sep 28), 3 positions, cash 53%. Yesterday's equity baseline $98,207.86 from Sep 29 log.
+## 2026-10-01 midday — All within band, no action
