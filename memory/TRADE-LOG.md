@@ -2065,3 +2065,4 @@ No positions cut, no stops changed, no new trades. Week trades 0/3 (week of Sep 
 | CVE | 390 | $30.83 | $31.70 | +2.00% | +$339.30 (+2.82%) | $28.6785 (trailing 10%, HWM $31.865) |
 | META | 20 | $755.722 | $726.21 | +0.14% | −$590.24 (−3.91%) | $685.197/20sh (trailing 10%, HWM $761.33) |
 **Notes:** JPM stops filled today (27 sh @ $327.17 trailing; 31 sh fixed ~$329.85), realized ≈ −$870; financials now flat. No new trades; week trades 1/3 (week of Sep 28), 2 positions, cash 72.5% — well under 75% deployment target, redeploy via Rule 12 candidates. Yesterday's equity baseline $97,695.52 from Sep 30 log.
+## 2026-10-02 midday — All within band, no action
