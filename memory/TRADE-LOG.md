@@ -2066,3 +2066,11 @@ No positions cut, no stops changed, no new trades. Week trades 0/3 (week of Sep 
 | META | 20 | $755.722 | $726.21 | +0.14% | −$590.24 (−3.91%) | $685.197/20sh (trailing 10%, HWM $761.33) |
 **Notes:** JPM stops filled today (27 sh @ $327.17 trailing; 31 sh fixed ~$329.85), realized ≈ −$870; financials now flat. No new trades; week trades 1/3 (week of Sep 28), 2 positions, cash 72.5% — well under 75% deployment target, redeploy via Rule 12 candidates. Yesterday's equity baseline $97,695.52 from Sep 30 log.
 ## 2026-10-02 midday — All within band, no action
+
+### Oct 02 — EOD Snapshot (Day 93, Friday)
+**Portfolio:** $98,166.11 | **Cash:** $70,972.11 (72.30%) | **Day P&L:** +$306.39 (+0.31%) | **Phase P&L:** −$1,833.89 (−1.83%)
+| Ticker | Shares | Entry | Close | Day Chg | Unrealized P&L | Stop |
+|--------|--------|-------|-------|---------|----------------|------|
+| CVE | 390 | $30.83 | $32.40 | +2.37% | +$612.30 (+5.09%) | $29.25 (trailing 10%, HWM $32.50) |
+| META | 20 | $755.722 | $727.90 | +0.27% | −$556.44 (−3.68%) | $685.197/20sh (trailing 10%, HWM $761.33) |
+**Notes:** No trades today; week trades 1/3 (week of Sep 28), 2 positions, cash 72.3% — still under 75% deployment target. CVE +2.37% leads, META flat-ish. Yesterday's equity baseline $97,859.72 from Oct 01 log.
