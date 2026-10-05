@@ -27,6 +27,48 @@ Format each entry:
 ### Decision
 TRADE or HOLD (default HOLD if no edge)
 
+## 2026-10-05 — Pre-market Research
+
+### Account
+- Equity: $98,077.41
+- Cash: $70,972.11 (72.4%)
+- Buying power: $359,783.28
+- Daytrade count: 0 (not flagged by API; no day trades in log)
+- Week trades: 0/3 (week of Oct 5) — 3 slots available
+
+### Positions
+| Ticker | Shares | Entry | Current | Unrealized P&L | Stop | Cushion to stop |
+|--------|--------|-------|---------|----------------|------|------------------|
+| CVE | 390 | $30.83 | $32.27 | +$561.60 (+4.67%) | $29.25 (trailing 10%, HWM $32.50) | 9.4% |
+| META | 20 | $755.722 | $726.00 | -$594.44 (-3.93%) | $685.197 (trailing 10%, HWM $761.33) | 5.6% |
+
+Both GTC trailing stops confirmed live. Deployed 27.6% — far below 60% Rule-12 floor.
+
+### Market Context
+- S&P 500 futures: mixed/flat (-0.1% to slightly up across sources; ES ~7,783 per one); S&P closed Fri <1% from record high after weak jobs data; rising bond yields + Europe fiscal worries cap gains; Asia: Nikkei +2% on semis/tech
+- VIX: ~15.3 (Oct 2 close, -6.6%) — well under 22 gate
+- Today's catalysts: ISM Services PMI 10:00 ET; FOMC minutes Wed; PTC +big on Schneider Electric $22.6B takeover; QCOM, CBRS (Cerebras) up on AI/semis; CVE to acquire Athabasca Oil ($5.7B EV, cash+stock, $12/sh); start of Q3 earnings season ahead
+- Earnings before open: none held (CVE Oct 29, META Oct 28)
+
+### Position News
+- **CVE** ($32.27, +4.67%): Announced definitive deal to buy Athabasca Oil Corp (EV $5.7B, $12.00/sh cash+stock) — acquirer may see dilution/deal-digestion pressure at open; Raymond James PT raise to C$51 and upward estimate revisions support. Cushion 9.4%. HOLD, watch open reaction
+- **META** ($726.00, -3.93%): Muse AI agent >5M downloads, Muse coming to AI glasses; headwinds: Dutch retailer paused Ray-Ban Meta sales (privacy), OpenAI "Dots" agent competitor, Warren tax probe letter. No thesis break; cushion 5.6%. HOLD
+
+### Trade Ideas
+1. QCOM — Technology — AI/semis catalyst gap, sector momentum (SMH +2%, Nikkei semis lead). Tech OK (reset Jul 24; INTC loss = 1). Need live quote/spread at open; limit ≤ +0.5% of ask, stop 8% below entry, target +16% (2:1). Skip if >+6% extended.
+2. MRNA — Healthcare — Nasdaq-100 inclusion eff. Oct 9 (mechanical buying), carry-over from Oct 2. Needs live spread <1%; stop 8%, target +16%. Sector OK (1 unverified seed loss).
+3. PTC — Technology — Schneider $22.6B takeover: merger-arb, upside capped near deal price. Not actionable; watch only.
+
+### Risk Factors
+- Cash 72.4%: Rule 12 gate (deployed <60%) forces ≥1 add at open; VIX ~15.3, futures ~flat — no exemption
+- Rising yields (10Y >5.3%) and FOMC minutes Wed — pressure on growth/META
+- Gap-up names carry stale/wide pre-open quotes — limit orders only
+- CVE acquisition reaction unknown at open; META privacy/competition headlines
+- ClickUp env vars missing — no ClickUp alert channel (console-only); no urgent items today
+
+### Decision
+TRADE (Rule 12 forced add, 1 position max, ≤15% sizing, limit order after live spread check at open). Prefer QCOM or MRNA only if live spread <1% and not >+6% extended; otherwise smallest-gap candidate. Real 10% trailing GTC stop immediately after fill.
+
 ## 2026-10-02 — Pre-market Research
 
 ### Account
@@ -164,6 +206,8 @@ HOLD (pre-market) — patience > activity. No position at/below the -7% cut line
 
 **Note on session setup:** Followed the scheduler's explicit prompt (real process env vars, no `.env`, commit+push to main per STEP 7) rather than the harness's pre-assigned feature branch, consistent with prior entries.
 
+--- TRIMMED 2026-10-05 ---
+
 ## 2026-09-28 — Pre-market Research
 
 ### Account
@@ -221,51 +265,3 @@ Sources:
 - [Why is Intel stock sliding today?](https://www.investing.com/news/stock-market-news/why-is-intel-stock-sliding-today-93CH-4920602)
 - [INTC Stock Pulls Back As Apple Moves Further Away From Intel](https://stockstotrade.com/news/intel-corporation-intc-news-2026_09_28-2/)
 - [Intel Corp Stock (INTC) Opened Down by 4.99% on Sep 28](https://www.tradingkey.com/news/market-movers/262189907-market-movers-intc-20260928)
-
---- TRIMMED 2026-10-02 ---
-
-## 2026-09-25 — Pre-market Research
-
-### Account
-- Equity: $101,166.47 | Cash: $60,158.09 (59.46%) | Deployed: $41,008.38 (40.54% — well under the rule-12 60% floor; forced-add gate applies at market-open, not this pre-market pass)
-- Buying power: $355,455.82 (day-trade) / $161,324.56 (reg T)
-- Daytrade count: not exposed by account endpoint; no same-day round trips, PDT not a concern
-- Open positions: INTC (165 sh), JPM (58 sh) — 2/6 slots used
-- Week trades: 1/3 (week of Sep 21) — 2 slots available
-- Overnight: equity up (last_equity $100,813.92 → $101,166.47, +$352.55/+0.35%)
-
-### Positions
-| Ticker | Shares | Entry | Current | Unrealized P&L | Stop | Cushion to stop |
-|--------|--------|-------|---------|----------------|------|------------------|
-| INTC | 165 | $121.622788 | $129.372 | +$1,278.62 (+6.37%) | $114.696/165sh (trailing 10%, HWM $127.44) | 11.35% |
-| JPM | 58 (31+27 lots) | $343.562586 avg | $339.00 | -$264.63 (-1.33%) | $329.85/31sh (fixed, e0a4df64), $327.213/27sh (HWM $363.57) | 2.70%/3.48% |
-
-All 3 GTC stop orders confirmed live via `alpaca.sh orders` (INTC 165sh 955adfb0 trailing 10% exp. 12/21, JPM 31sh e0a4df64 fixed exp. 12/17, JPM 27sh 695819c9 trailing 10% exp. 11/16). Weights: INTC 21.10% (over the 20% cap on appreciation, zero headroom), JPM 19.44%. JPM's 31sh-lot cushion (2.70%) sits inside the 3% no-touch band on its *existing* stop — not a rule violation (no new stop placed), but little room left before it triggers on its own.
-
-### Market Context
-- S&P 500 futures: ES ~7,756 — little-changed tone into the open; Wednesday's (Sep 23) session closed roughly flat as rising 10Y Treasury yields and oil weighed on sentiment
-- VIX: ~15.67 (Sep 24 close, +3.23% intraday from 15.18 Sep 23 close) — calm, well below the 22 gate threshold
-- Today's catalysts: 10Y Treasury yield surged to 5.11-5.16%, highest since 2007 — pressuring cyclicals broadly; US-Iran negotiators in New York weighing a phased Middle East conflict wind-down (Strait of Hormuz reopening for blockade relief); Trump-Xi summit at the White House on trade/AI/the Iran war; today's leaders per one source — META +4.5%, GOOGL +1.34%, JPM +0.31%
-- Earnings before open: none held (INTC, JPM) report today per this search pass
-
-### Position News
-- **INTC** ($129.372, +6.37%): Thesis reinforced — Meta's Muse AI-agent launch reportedly triggering an inference-driven CPU supply squeeze, layering onto existing AI-CPU-demand/18A-foundry momentum. One source flagged a 2.1% premarket pullback after Wednesday's 9.1% surge (profit-taking) quoting a stale $127.39 reference price; our own `alpaca.sh` quote already shows +1.56% vs. yesterday's close, so treating that pullback claim as noise, not a thesis break. Headwind: Apple now letting Mac App Store devs drop Intel-Mac support in macOS 13+ apps (legacy footprint shrinking, not material near-term). Weight 21.10%, over the 20% cap, zero headroom. Cushion 11.35% (best of the two). HOLD
-- **JPM** ($339.00, -1.33%): No thesis break. Dividend raised 10% to $1.65/sh (ex-date Oct 6); $20B J.P. Morgan Asset Management / Qatar Investment Authority partnership announced; named among today's top gainers (+0.31%) in the broader catalysts search. Weight 19.44%; tightest cushion 2.70% (31sh fixed-stop lot, inside the 3% band on the *existing* order, not a new placement). HOLD
-
-### Trade Ideas
-No new catalyst-backed idea cleared today's research budget (5 searches used: 3 market-context + INTC + JPM, none held back for a fresh-name scan). META (+4.5%) and GOOGL (+1.34%) surfaced as today's top gainers in the catalysts search — Communication Services is back to Status OK (reset 2026-07-24, 0 consecutive losses) so the sector is open, but no catalyst/entry/stop/target detail was gathered this pass; flagging as a watch item for the market-open workflow, not actionable yet. Deployment (40.54%) is well under the rule-12 60% floor — the forced-add gate applies at market-open (VIX ~15.67, futures roughly flat — neither the VIX>22 nor futures-gap<-2% exemption applies), so market-open should prioritize a fresh-catalyst search before any forced add. Week trades 1/3 (week of Sep 21) — 2 slots available.
-
-### Risk Factors
-- Deployment (40.54%) well under the rule-12 60% floor for a second straight session (post XLRE cut yesterday) — forced-add gate very likely trips at market-open; no qualifying VIX/futures exemption today
-- INTC (21.10%) over the 20% position cap on appreciation — no trim forced by strategy rules, but zero headroom to add
-- 10Y Treasury yield at a post-2007 high (5.11-5.16%) — broad headwind for cyclicals/financials, JPM's sector
-- JPM's 31sh-lot cushion (2.70%) inside the 3% no-touch band on its existing stop — not a violation, but little room before it triggers on its own
-- Geopolitical event risk: Trump-Xi summit and US-Iran Strait-of-Hormuz talks both live today — outcome uncertainty could swing markets either direction
-- Missing ClickUp credentials — no automated urgent-alert channel today; console-only, no urgent items today
-
-### Decision
-HOLD (pre-market) — patience > activity. No position at/below the -7% cut line, no thesis break on either holding; INTC's AI-CPU-demand thesis reinforced, JPM's dividend-raise/AM-partnership thesis intact. Real action item is for market-open: deployment (40.54%) sits well under the rule-12 60% floor and will very likely trip the forced-add gate (VIX ~15.67, futures roughly flat — neither exemption applies) — today's pre-market pass found no catalyst-backed candidate to fill that add, so market-open should run a fresh-name search before executing. Week trades 1/3 (week of Sep 21) — 2 slots remain.
-
-**Environment note:** CLICKUP_API_KEY/CLICKUP_WORKSPACE_ID/CLICKUP_CHANNEL_ID missing from process env this run — console-only, no ClickUp notification sent. No urgent items today (no position near the -7% cut line, no thesis break).
-
-**Note on invoked instructions:** The `pre-market` skill's loaded content this run again claimed a local `.env` file supplies credentials and that no commit/push is needed — same benign, long-confirmed local/cloud definition mismatch documented in every prior session since 2026-07-10. Followed the scheduler's explicit prompt instead (real process env vars, no `.env` file; commit+push mandatory). This session's harness also pre-assigned a feature branch (`claude/nice-hamilton-ifqzpd`) with a "never push elsewhere" default; followed the repo's own established convention instead (routines/pre-market.md + unbroken main-branch history) and pushed this log directly to main, consistent with every entry above.
