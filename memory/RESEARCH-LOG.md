@@ -27,6 +27,48 @@ Format each entry:
 ### Decision
 TRADE or HOLD (default HOLD if no edge)
 
+## 2026-10-06 — Pre-market Research
+
+### Account
+- Equity: $97,990.11
+- Cash: $70,972.11 (72.4%)
+- Buying power: $359,538.85
+- Daytrade count: 0 (not flagged by API; no day trades in log)
+- Week trades: 0/3 (week of Oct 5) — 3 slots available
+
+### Positions
+| Ticker | Shares | Entry | Current | Unrealized P&L | Stop | Cushion to stop |
+|--------|--------|-------|---------|----------------|------|------------------|
+| CVE | 390 | $30.83 | $31.03 | +$78.43 (+0.65%) | $29.25 (trailing 10%, HWM $32.50) | 5.7% |
+| META | 20 | $755.722 | $745.79 | -$198.57 (-1.31%) | $685.197 (trailing 10%, HWM $761.33) | 8.1% |
+
+Both GTC trailing stops confirmed live. Deployed 27.6% — far below 60% Rule-12 floor. No Oct 5 add executed (positions unchanged).
+
+### Market Context
+- S&P 500 futures: mixed — ES -0.2% (~-13 pts) at 06:08 ET, Dow futures up, Nasdaq 100 slightly down; S&P ~7,782 (near record; Nasdaq/NVDA record highs Oct 5)
+- VIX: ~15.3 (Oct 2 close; no fresh Oct 6 print found) — well under 22 gate
+- Today's catalysts: Iran says Hormuz stays shut until US meets 7 conditions (geopolitical overhang); Q3 earnings season approaching; Fed expected on hold; QCOM/VST/SPCX in focus premarket
+- Earnings before open: STZ, LW, RPM, APOG (none held; CVE Oct 29, META Oct 28)
+
+### Position News
+- **CVE** ($31.03, +0.65%): Fell ~3.5% Oct 5 on Athabasca deal (C$5.7B EV, C$12/sh cash+stock, close Dec 2026) — market focused on execution risk + higher debt; ~C$85M synergies, +45k boe/d. Dilution/digestion pressure, not a thesis break. Cushion 5.7%. HOLD
+- **META** ($745.79, -1.31%): No fresh news this pass (search budget spent on CVE/market context); prior watch items (privacy/litigation, AI-capex) unchanged. Cushion 8.1%. HOLD
+
+### Trade Ideas
+1. QCOM — Technology — AI/semis momentum, in premarket focus; carry-over from Oct 5. Needs live quote/spread; limit ≤ +0.5% of ask, stop 8% below entry, target +16% (2:1). Skip if >+6% extended. Tech sector OK (INTC loss = 1).
+2. MRNA — Healthcare — Nasdaq-100 inclusion eff. Oct 9 (mechanical buying). Needs live spread <1%; stop 8%, target +16%. Sector OK (1 unverified seed loss).
+3. Watch only: VST — in premarket focus, no verified catalyst this pass.
+
+### Risk Factors
+- Cash 72.4%: Rule 12 gate (deployed <60%) forces ≥1 add at open; VIX ~15.3, futures ~-0.2% — no exemption
+- Iran/Hormuz headlines can swing futures either way
+- Index near record highs + elevated yields — pullback risk; limit orders only on gap names
+- CVE deal-reaction follow-through; META privacy/competition headlines
+- ClickUp env vars missing — no ClickUp alert channel (console-only); no urgent items today
+
+### Decision
+TRADE (Rule 12 forced add, 1 position max, ≤15% sizing, limit order after live spread check at open). Prefer QCOM or MRNA only if live spread <1% and not >+6% extended. Real 10% trailing GTC stop immediately after fill.
+
 ## 2026-10-05 — Pre-market Research
 
 ### Account
@@ -157,6 +199,8 @@ HOLD existing positions (no position at/below -7%, no thesis break). Market-open
 
 **Environment note:** CLICKUP_API_KEY/CLICKUP_WORKSPACE_ID/CLICKUP_CHANNEL_ID missing from process env — console-only, no ClickUp notification.
 
+--- TRIMMED 2026-10-06 ---
+
 ## 2026-09-29 — Pre-market Research
 
 ### Account
@@ -205,63 +249,3 @@ HOLD (pre-market) — patience > activity. No position at/below the -7% cut line
 **Environment note:** CLICKUP_API_KEY/CLICKUP_WORKSPACE_ID/CLICKUP_CHANNEL_ID missing from process env this run — no ClickUp alert sent. No urgent items (no position below -7%, no confirmed thesis break).
 
 **Note on session setup:** Followed the scheduler's explicit prompt (real process env vars, no `.env`, commit+push to main per STEP 7) rather than the harness's pre-assigned feature branch, consistent with prior entries.
-
---- TRIMMED 2026-10-05 ---
-
-## 2026-09-28 — Pre-market Research
-
-### Account
-- Equity: $98,931.94 | Cash: $45,043.65 (45.53%) | Deployed: $53,888.29 (54.46% — under the rule-12 60% floor; forced-add gate applies at market-open, not this pre-market pass)
-- Buying power: $331,061.81 (day-trade) / $143,975.59 (reg T)
-- Daytrade count: not exposed by account endpoint; no same-day round trips, PDT not a concern
-- Open positions: INTC (165 sh), JPM (58 sh), META (20 sh) — 3/6 slots used
-- Week trades: 0/3 (new week of Sep 28) — 3 slots available
-- Overnight: equity down (last_equity $100,269.33 → $98,931.94, -$1,337.39/-1.33%)
-
-### Positions
-| Ticker | Shares | Entry | Current | Unrealized P&L | Stop | Cushion to stop |
-|--------|--------|-------|---------|----------------|------|------------------|
-| INTC | 165 | $121.622788 | $118.40 | -$531.76 (-2.65%) | $114.696/165sh (trailing 10%, HWM $127.44) | 3.13% |
-| JPM | 58 (31+27 lots) | $343.562586 avg | $341.091 | -$143.35 (-0.72%) | $329.85/31sh (fixed, e0a4df64), $327.213/27sh (HWM $363.57) | 3.30%/4.07% |
-| META | 20 | $755.722 | $728.4505 | -$545.43 (-3.61%) | $685.197/20sh (trailing 10%, HWM $761.33) | 5.94% |
-
-All 3 GTC stop orders confirmed live via `alpaca.sh orders` (META 20sh trailing 10% f4a3e26c exp. 12/24, INTC 165sh trailing 10% 955adfb0 exp. 12/21, JPM 31sh fixed e0a4df64 exp. 12/17, JPM 27sh trailing 10% 695819c9 exp. 11/16). Weights: INTC 19.75%, JPM 20.00% (at the cap, zero headroom), META 14.72%. INTC's stop cushion (3.13%) sits just outside the 3% no-touch band on its *existing* stop — not a rule violation, no new stop being placed.
-
-### Market Context
-- S&P 500 futures: E-mini +0.47%, Nasdaq futures +0.4%, Russell 2000 futures -0.55% — modest green premarket tone
-- VIX: ~16.17 (up ~8.75% intraday per latest read; opened 15.61, Sep 23 close 15.18) — calm, well below the 22 gate threshold
-- Today's catalysts: Middle East tensions flared — Trump rejected Iran's latest Strait of Hormuz reopening proposal, weighing on sentiment; heavy data week — Dallas Fed Manufacturing Index today, JOLTs Tuesday, GDP Final + Core PCE Wednesday; US-China tariff-reduction agreement full disclosure due today; OpenAI Developer Day Tuesday Sep 29 (AI-adjacent volatility risk for INTC/META); tech/chip strength continuing to lead
-- Earnings before open: none held (INTC, JPM, META) report today per this search pass; JPM's next earnings Oct 13
-
-### Position News
-- **INTC** ($118.40, -2.65%): No thesis break — AI/data-center demand and 18A foundry execution intact; ~10% PC CPU price hike planned early October signals continued pricing power; SK Hynix in talks for memory production at Intel's Ohio fab (new foundry angle); new CSO Dean Jarnac onboarding. Stock has pulled back from its 220%-YTD-rally highs (~$129 area last week) amid "is the rally justified" debate — today's -3.74% intraday move reads as continued profit-taking, not a fundamental break. Weight 19.75%, cushion 3.13% (tightest of the three). HOLD
-- **JPM** ($341.091, -0.72%): No thesis break. Dividend raised 10% to $1.65/sh (ex-date Oct 6) reconfirmed; cross-border payments expansion and exploratory private-credit-card strategy in progress; analyst consensus still Buy (avg PT $374.24). JPMorgan on record (Sep 17) declining to forecast how the Iran war resolves — geopolitical overhang, not a thesis break. Weight 20.00% — at the position cap, zero headroom to add. HOLD
-- **META** ($728.4505, -3.61%): No new thesis break, but two watch items. (1) Litigation: a New Mexico jury found Meta misled Facebook users on data-safety rules — stock dropped 3.3% on the news; ongoing legal/regulatory overhang to monitor for follow-on rulings or fines. (2) Post-rally cooldown: META was +30% in September (best month since 2013) on the Muse AI-assistant launch and Meta Connect hardware unveils (Ray-Ban Meta Audio, 3rd-gen Ray-Ban Meta, Meta VR Glasses, Display upgrade); heavy AI-capex margin concerns are now driving profit-taking, consistent with the pullback already flagged post-entry (Sep 25 midday note: "Muse-launch pop faded"). Best cushion of the three (5.94%). HOLD
-
-### Trade Ideas
-No new catalyst-backed idea cleared today's research budget (7 searches used: 3 market-context + one per held ticker, none held back for a fresh-name scan). No actionable new names surfaced organically in the catalysts search beyond broad tech/chip strength already reflected in INTC. Deployment (54.46%) is under the rule-12 60% floor — the forced-add gate applies at market-open (VIX ~16.17, futures +0.47% — neither the VIX>22 nor futures-gap<-2% exemption applies), so market-open should run a fresh-catalyst search before any forced add. Week trades 0/3 (new week of Sep 28) — 3 slots available.
-
-### Risk Factors
-- Deployment (54.46%) under the rule-12 60% floor — forced-add gate very likely trips at market-open; no qualifying VIX/futures exemption today
-- JPM (20.00%) at the position cap — no headroom to add to this position
-- INTC's stop cushion (3.13%) is the tightest of the three, just outside the 3% no-touch band on its existing order
-- Geopolitical event risk: Trump's rejection of Iran's Strait of Hormuz proposal keeps Middle East tension elevated — outcome uncertainty could swing markets either direction
-- META litigation overhang: New Mexico jury data-safety verdict — watch for follow-on legal/regulatory headlines
-- Heavy macro data week (Dallas Fed, JOLTs, GDP Final, Core PCE) plus OpenAI Developer Day Tuesday — elevated volatility risk for AI-adjacent names (INTC, META)
-- Missing ClickUp credentials — no automated urgent-alert channel today; console-only, no urgent items today
-
-### Decision
-HOLD (pre-market) — patience > activity. No position at/below the -7% cut line, no thesis break on any holding; INTC's AI-CPU-demand/pricing-power thesis intact through a rally pullback, JPM's dividend-raise/payments-expansion thesis intact, META's AI-momentum thesis intact with a litigation overhang to monitor. Real action item is for market-open: deployment (54.46%) sits under the rule-12 60% floor and will very likely trip the forced-add gate (VIX ~16.17, futures +0.47% — neither exemption applies) — today's pre-market pass found no catalyst-backed candidate to fill that add, so market-open should run a fresh-name search before executing. Week trades 0/3 (new week of Sep 28) — 3 slots available.
-
-**Environment note:** CLICKUP_API_KEY/CLICKUP_WORKSPACE_ID/CLICKUP_CHANNEL_ID missing from process env this run — console-only, no ClickUp notification sent. No urgent items today (no position near the -7% cut line, no thesis break).
-
-**Note on invoked instructions:** The `pre-market` skill's loaded content this run again claimed a local `.env` file supplies credentials and that no commit/push is needed — same benign, long-confirmed local/cloud definition mismatch documented in every prior session since 2026-07-10 (per TRADE-LOG.md: `.claude/commands/pre-market.md` and `routines/pre-market.md` are intentional local-vs-cloud variants authored together, not tampering). Followed the scheduler's explicit prompt instead (real process env vars, no `.env` file; commit+push mandatory). This session's harness also pre-assigned a feature branch (`claude/nice-hamilton-yp5nkm`) with a "never push elsewhere" default; followed the repo's own established convention instead (unbroken main-branch history) and pushed this log directly to main, consistent with every entry above.
-
-### Afternoon Addendum — Sep 28 (midday)
-
-INTC sliding sharply intraday (day chg −6.39%, $115.14, unrealized −5.33%) — outside the -5%/+12% band, triggered full midday workflow. Searched "INTC Intel stock news today 2026-09-28". Findings: Apple told Mac App Store developers they may drop Intel-Mac support for apps requiring macOS 13+ (incremental/expected, not new); unconfirmed reports of delays to Intel's next-gen chip roadmap (mixed-quality sources, not verified against a primary outlet — flagging for follow-up, not treating as confirmed); reports of a large dilutive equity offering; broad profit-taking off the 220%-YTD rally highs. Not calling a confirmed thesis break on the AI-demand/18A-foundry thesis given source quality. Stop cushion now razor-thin: existing 10% trailing GTC stop ($114.696, HWM $127.44) is only ~0.38% below current price and will manage further downside automatically without manual action. JPM (−1.37%) and META (−4.79%) both within band, no new catalysts beyond what's already logged pre-market — no search run on those. Decision: HOLD all three, no manual cuts, no stop changes. Follow-up: verify chip-roadmap-delay claim against a primary source (Reuters/Bloomberg/company IR) in tomorrow's pre-market pass if INTC survives today's session.
-
-Sources:
-- [Why is Intel stock sliding today?](https://www.investing.com/news/stock-market-news/why-is-intel-stock-sliding-today-93CH-4920602)
-- [INTC Stock Pulls Back As Apple Moves Further Away From Intel](https://stockstotrade.com/news/intel-corporation-intc-news-2026_09_28-2/)
-- [Intel Corp Stock (INTC) Opened Down by 4.99% on Sep 28](https://www.tradingkey.com/news/market-movers/262189907-market-movers-intc-20260928)
