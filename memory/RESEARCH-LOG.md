@@ -27,6 +27,48 @@ Format each entry:
 ### Decision
 TRADE or HOLD (default HOLD if no edge)
 
+## 2026-10-07 — Pre-market Research
+
+### Account
+- Equity: $98,005.01
+- Cash: $70,972.11 (72.4%)
+- Buying power: $359,580.56
+- Daytrade count: 0 (not flagged by API)
+- Week trades: 0/3 (week of Oct 5) — 3 slots available
+
+### Positions
+| Ticker | Shares | Entry | Current | Unrealized P&L | Stop | Cushion to stop |
+|--------|--------|-------|---------|----------------|------|------------------|
+| CVE | 390 | $30.83 | $31.37 | +$210.60 (+1.75%) | $29.25 (trailing 10%, HWM $32.50) | 6.8% |
+| META | 20 | $755.722 | $739.93 | -$315.84 (-2.09%) | $685.197 (trailing 10%, HWM $761.33) | 7.4% |
+
+Both GTC trailing stops confirmed live. Deployed 27.6% — far below 60% Rule-12 floor. No add executed Oct 5/6.
+
+### Market Context
+- S&P 500 futures: no Oct 7 print found (search returned stale results) — treat as unknown/flat; last close S&P ~7,780 area
+- VIX: no fresh print found; last known ~15.3 — assume well under 22 gate
+- Today's catalysts: no dated catalyst list surfaced; Q3 earnings season approaching (META Oct 29, CVE Oct 30); macro/Fed-hike odds and US-Iran/oil headlines remain the overhang
+- Earnings before open: none of CVE/META
+
+### Position News
+- **CVE** ($31.37, +1.75%): no new news; Q2 beat/raised production guidance, analyst PTs raised; Q3 earnings ~Oct 30. HOLD
+- **META** ($739.93, -2.09%): no new news; sideways since Aug high ($789), Q3 earnings Oct 29 (guide $47.5-50.5B). HOLD
+
+### Trade Ideas
+No catalyst-backed idea verified this pass (searches returned stale/undated data; not fabricating entries). Rule-12 forced add still applies at market-open (no VIX>22 / gap<-2% evidence): market-open must run a fresh-catalyst search and add ≥1 position, modest size, non-Technology preferred (Energy-adjacent / Industrials / Healthcare / Financials). Sector status: none in EXIT. Week trades 0/3.
+
+### Risk Factors
+- Deployment 27.6% under Rule-12 floor — cash drag vs benchmark
+- Rates/Fed-hike odds pressure on META
+- US-Iran/oil volatility (CVE event risk both ways)
+- Data gaps: no live futures/VIX read this run
+- ClickUp credentials missing — no alerts possible
+
+### Decision
+HOLD (pre-market) — no position near -7%, no thesis break. Market-open action item: rule-12 forced add.
+
+**Environment note:** CLICKUP_API_KEY/CLICKUP_WORKSPACE_ID/CLICKUP_CHANNEL_ID missing from process env — no ClickUp alert sent. No urgent items.
+
 ## 2026-10-06 — Pre-market Research
 
 ### Account
@@ -153,6 +195,8 @@ Both GTC trailing stops confirmed live. Deployed 27.4% — far below 60% Rule-12
 TRADE (Rule 12 forced add, 1 position max, ≤15% sizing, limit order after live spread check at open). Prefer MRNA or SNPS only if live spread <1% and not >+10% extended; otherwise smallest-gap candidate. Stops: real 10% trailing GTC immediately after fill.
 
 
+--- TRIMMED 2026-10-07 ---
+
 ## 2026-09-30 — Pre-market Research
 
 ### Account
@@ -200,52 +244,3 @@ HOLD existing positions (no position at/below -7%, no thesis break). Market-open
 **Environment note:** CLICKUP_API_KEY/CLICKUP_WORKSPACE_ID/CLICKUP_CHANNEL_ID missing from process env — console-only, no ClickUp notification.
 
 --- TRIMMED 2026-10-06 ---
-
-## 2026-09-29 — Pre-market Research
-
-### Account
-- Equity: $98,203.09 | Cash: $45,043.65 (45.87%) | Deployed: $53,159.44 (54.13% — under the rule-12 60% floor; forced-add gate applies at market-open)
-- Buying power: $329,021.03 (day-trade) / $143,246.74 (reg T)
-- Daytrade count: not exposed by account endpoint; no same-day round trips, PDT not a concern
-- Open positions: INTC (165 sh), JPM (58 sh), META (20 sh) — 3/6 slots used
-- Week trades: 0/3 (week of Sep 28) — 3 slots available
-- Overnight: equity up (last_equity $98,023.22 → $98,203.09, +$179.87/+0.18%)
-
-### Positions
-| Ticker | Shares | Entry | Current | Unrealized P&L | Stop | Cushion to stop |
-|--------|--------|-------|---------|----------------|------|------------------|
-| INTC | 165 | $121.622788 | $116.32 | -$874.96 (-4.36%) | $114.696/165sh (trailing 10%, HWM $127.44) | 1.40% |
-| JPM | 58 (31+27 lots) | $343.562586 avg | $337.58 | -$346.99 (-1.74%) | $329.85/31sh (fixed, e0a4df64), $327.213/27sh (HWM $363.57) | 2.29%/3.07% |
-| META | 20 | $755.722 | $719.35 | -$727.44 (-4.81%) | $685.197/20sh (trailing 10%, HWM $761.33) | 4.75% |
-
-All 4 GTC stop orders confirmed live via `alpaca.sh orders`. Weights: INTC 19.54%, JPM 19.94%, META 14.65% of equity.
-
-### Market Context
-- S&P 500 futures: Dow/S&P futures slightly lower (SPY premarket -0.04%), Nasdaq 100 +0.12% — flat/mixed after Monday's lower close
-- VIX: ~15.87 (+6.7%, opened 16.16) — calm, well below the 22 gate threshold
-- Today's catalysts: US-Iran standoff (Trump dismissed sanction relief as "hoax") keeping oil elevated; 10Y yield 5.24%, 2Y 4.94%, ~72.5% odds of a Fed hike after October meeting; JOLTs today, GDP Final + Core PCE Wednesday; OpenAI Developer Day; **Micron (MU) Q4 results after the close — AI/semis bellwether, direct read-through risk for INTC**
-- Earnings before open: PAYX (not held); none of INTC/JPM/META
-
-### Position News
-- **INTC** ($116.32, -4.36%): Down ~4% Monday after a strong September run (~$89 → $123+). Drivers: Apple letting Mac App Store devs drop Intel-Mac support (incremental), reported $15B capital raise (dilution), profit-taking off the YTD rally. The chip-roadmap-delay claim from yesterday's follow-up item was NOT verified against a primary source in this pass (4-search budget; no primary outlet surfaced). Stop cushion only 1.40% — inside the 3% band on the *existing* order (not a new placement, no rule violation; never move a stop down). Micron after close is the key event; a stop-out is plausible on any weak print/gap. HOLD, accept automated stop.
-- **JPM** ($337.58, -1.74%): No thesis break. JPM raised its S&P 500 2026 EPS estimate to $365 (corporate resilience); dividend raise (ex-date Oct 6) intact. Weight 19.94% — at cap, no add headroom. HOLD
-- **META** ($719.35, -4.81%): No new thesis break. Down ~4% Monday, giving back part of last week's ~13% Muse/Connect rally; analyst consensus Strong Buy (avg PT ~$799). Litigation overhang (NM data-safety verdict) still open. Cushion 4.75%. HOLD
-
-### Trade Ideas
-No new catalyst-backed idea cleared this pass (4 searches used: 3 market-context + 1 combined held-ticker; none spent on fresh-name scan). Not fabricating entries without researched catalysts. Deployment (54.13%) is under the rule-12 60% floor — forced-add gate applies at market-open (VIX ~15.87, futures ~flat — neither VIX>22 nor gap<-2% exemption applies), so market-open must run a fresh-catalyst search. Caveat for that add: Micron prints after the close and rates/Fed-hike risk is elevated — prefer non-semiconductor, non-Technology-momentum sectors (Energy on oil strength / Industrials / Healthcare) and size modestly. Sector status: none in EXIT. Week trades 0/3.
-
-### Risk Factors
-- Deployment (54.13%) under rule-12 floor — forced add likely at market-open
-- INTC stop cushion 1.40% — high odds of automated stop-out; Micron earnings after close adds gap risk
-- Rates: 10Y 5.24%, ~72.5% odds of Oct Fed hike — pressure on growth/high-multiple names (META, INTC)
-- US-Iran standoff / oil volatility — event risk either way
-- JPM at position cap; META litigation overhang
-- Data: JOLTs today, GDP Final + Core PCE Wed; OpenAI Developer Day
-- ClickUp credentials missing — console/push-notification only
-
-### Decision
-HOLD (pre-market) — patience > activity. No position at/below the -7% cut line (worst: META -4.81%), no confirmed thesis break. INTC's tight cushion is handled by its existing GTC trailing stop. Market-open action item: rule-12 forced-add gate (deployment 54.13%, no exemption).
-
-**Environment note:** CLICKUP_API_KEY/CLICKUP_WORKSPACE_ID/CLICKUP_CHANNEL_ID missing from process env this run — no ClickUp alert sent. No urgent items (no position below -7%, no confirmed thesis break).
-
-**Note on session setup:** Followed the scheduler's explicit prompt (real process env vars, no `.env`, commit+push to main per STEP 7) rather than the harness's pre-assigned feature branch, consistent with prior entries.
