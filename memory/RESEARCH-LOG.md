@@ -153,6 +153,8 @@ Both GTC trailing stops confirmed live. Deployed 27.6% — far below 60% Rule-12
 ### Decision
 TRADE (Rule 12 forced add, 1 position max, ≤15% sizing, limit order after live spread check at open). Prefer QCOM or MRNA only if live spread <1% and not >+6% extended; otherwise smallest-gap candidate. Real 10% trailing GTC stop immediately after fill.
 
+--- TRIMMED 2026-10-08 ---
+
 ## 2026-10-02 — Pre-market Research
 
 ### Account
@@ -194,53 +196,46 @@ Both GTC trailing stops confirmed live. Deployed 27.4% — far below 60% Rule-12
 ### Decision
 TRADE (Rule 12 forced add, 1 position max, ≤15% sizing, limit order after live spread check at open). Prefer MRNA or SNPS only if live spread <1% and not >+10% extended; otherwise smallest-gap candidate. Stops: real 10% trailing GTC immediately after fill.
 
-
---- TRIMMED 2026-10-07 ---
-
-## 2026-09-30 — Pre-market Research
+## 2026-10-08 — Pre-market Research
 
 ### Account
-- Equity: $98,199.30 | Cash: $51,925.98 (52.88%) | Deployed: $46,273.32 (47.12% — under the rule-12 60% floor; forced-add gate applies at market-open)
-- Buying power: $337,269.22 (day-trade) / $150,125.28 (reg T)
-- Daytrade count: not exposed by account endpoint; no same-day round trips, PDT not a concern
-- Open positions: CVE (390 sh), JPM (58 sh), META (20 sh) — 3/6 slots used
-- Week trades: 1/3 (week of Sep 28) — 2 slots available
-- Overnight: equity flat (last_equity $98,205.02 → $98,199.30, -$5.72/-0.01%)
+- Equity: $97,609.41
+- Cash: $70,972.11 (72.7%)
+- Buying power: $358,472.88
+- Daytrade count: 0 (not flagged by API)
+- Week trades: 0/3 (week of Oct 5) — 3 slots available
+- Overnight: equity $97,344.01 (last_equity) → $97,609.41, +$265 (+0.27%)
 
 ### Positions
 | Ticker | Shares | Entry | Current | Unrealized P&L | Stop | Cushion to stop |
 |--------|--------|-------|---------|----------------|------|------------------|
-| CVE | 390 | $30.83 | $30.99 | +$62.40 (+0.52%) | $28.116/390sh (trailing 10%, HWM $31.24) | 9.27% |
-| JPM | 58 (31+27 lots) | $343.562586 avg | $335.99 | -$439.21 (-2.20%) | $329.85/31sh (fixed, e0a4df64), $327.213/27sh (HWM $363.57) | 1.83%/2.61% |
-| META | 20 | $755.722 | $734.99 | -$414.64 (-2.74%) | $685.197/20sh (trailing 10%, HWM $761.33) | 6.78% |
+| CVE | 390 | $30.83 | $31.33 | +$195.00 (+1.62%) | $29.25 (trailing 10%, HWM $32.50) | 6.6% |
+| META | 20 | $755.722 | $720.93 | -$695.84 (-4.60%) | $685.197 (trailing 10%, HWM $761.33) | 5.0% |
 
-All 4 GTC stop orders confirmed live via `alpaca.sh orders` (CVE 15c0f7bf, META f4a3e26c, JPM e0a4df64 fixed, JPM 695819c9 trailing). Weights: CVE 12.31%, JPM 19.84%, META 14.97%.
+Both GTC trailing stops confirmed live (CVE 15c0f7bf, META f4a3e26c). Deployed 27.3% — far below 60% Rule-12 floor. No add executed Oct 5/6/7.
 
 ### Market Context
-- S&P 500 futures: +0.27% premarket, Dow +0.46%, Nasdaq-100 +0.22% — modest bounce after Tuesday's yield-driven pressure; last day of Q3
-- VIX: ~15.7-16.3 (sources vary), calm, below the 22 gate threshold
-- Today's catalysts: 8:30am ET BEA/Census data cluster (inflation read); Cook (Fed) speech 3:25pm ET; 30-yr Treasury yield >5.6% (highest since 2002), 30-yr mortgage 7.58% — rate pressure on financials/real-estate; quarter-end rebalancing flows; Trump AI meeting (Musk/Huang/Zuckerberg/Pichai) supportive of AI names
-- Earnings before open: none relevant to held names (CVE, JPM, META)
+- S&P 500 futures: not found (searches returned no Oct 8 data). Last verified: S&P 7,722.72 on Oct 2 (+12.6% YTD)
+- VIX: not found for today; last verified 15.31 (Oct 2) — calm, below 22 gate
+- Today's catalysts: 10-yr yield ~5.34%, 30-yr ~5.70% (highest since 2002); ~25% odds of Oct Fed hike, full hike priced by Dec; ISM services prices 74.0; WTI ~$91 (Middle East war); earnings season ramping
+- Earnings before open: none relevant to held names (CVE, META)
 
 ### Position News
-- **CVE** (+0.52%): no new headlines; oil elevated on US-Iran standoff, Zacks #1 thesis intact. HOLD
-- **JPM** (-2.20%): banks slid Sep 29 on rising Treasury yields. Tightest cushion 1.83% on the 31sh fixed stop — already inside the 3% band (fixed stop, cannot be moved down; no action). 4.5pp above -7% cut line. HOLD, watch
-- **META** (-2.74%): JPMorgan raised PT $820→$920 (Overweight); stock +~30% over the month per reports; Muse agentic AI model ramping; AI-meeting tailwind. No thesis break. HOLD
+- **CVE** (+1.62%): no new headlines found; oil elevated, thesis intact. HOLD
+- **META** (-4.60%): no verified Oct 8 news. Background: Q2 EPS miss, capex guide $130-145B, NM jury $375M penalty (undated). -2.4pp from -7% cut line ($702.82). HOLD, watch
+- Rate/yield pressure is the dominant headwind for long-duration tech
 
 ### Trade Ideas
-1. Energy add/second name — Energy — catalyst: oil elevated (Iran), Zacks estimate revisions; sector OK, CVE already 12.3%. Entry/stop/target to be set on live quote at open; stop 10% trail, target +20%. Not quote-verified pre-market.
-2. Industrials/Healthcare defensive name (non-rate-sensitive) — no specific catalyst surfaced within research budget; do not force.
-3. No idea has a verified catalyst + quote; fresh screening needed at open.
+1. Energy add — Energy — catalyst: oil ~$91, Energy led Oct 2 (+2%); CVE already 12.5%. Entry/stop/target to be set on live quote at open; 10% trail, target +20%. Not quote-verified.
+2. Technology (non-META) semis/AI leader — Technology — catalyst: Nasdaq-100/NVDA near records; Tech status OK (0 losses). Only if live spread <1% and not >+6% extended. Not quote-verified.
+3. No idea has verified catalyst + quote; fresh screening needed at open.
 
 ### Risk Factors
-- Deployment gap: 47.12% — rule-12 gate trips at open (VIX ~16, futures +0.27%; no exemption). Must add ≥1 position this session (week trades 1/3)
-- Long-end yields at 24-year highs; inflation data 8:30am could reprice rates hard (JPM, META sensitivity)
-- JPM 31sh fixed stop at 1.83% cushion; 27sh lot at 2.61%
-- Missing ClickUp credentials — no automated urgent-alert channel; console-only
+- Deployment gap: 72.7% cash — Rule-12 gate trips at open (VIX ~15, no exemption unless futures gap < -2%). Must add ≥1 position unless exempt
+- Yields at 24-yr highs; hike risk could hit META/growth
+- META 5.0% cushion to stop; -7% cut at ~$702.82
+- ClickUp env vars missing — no alert channel; console-only
 
 ### Decision
-HOLD existing positions (no position at/below -7%, no thesis break). Market-open: rule-12 forced add required (47% deployed) — prefer a non-rate-sensitive name with live-verified catalyst and spread; 10% trailing GTC on fill.
+TRADE (Rule 12 forced add, 1 position max, ≤15% sizing, limit order after live spread check at open; skip only if futures gap < -2% or VIX > 22). 10% trailing GTC stop immediately after fill. HOLD existing positions.
 
-**Environment note:** CLICKUP_API_KEY/CLICKUP_WORKSPACE_ID/CLICKUP_CHANNEL_ID missing from process env — console-only, no ClickUp notification.
-
---- TRIMMED 2026-10-06 ---
