@@ -27,6 +27,46 @@ Format each entry:
 ### Decision
 TRADE or HOLD (default HOLD if no edge)
 
+## 2026-10-14 — Pre-market Research
+
+### Account
+- Equity: $99,121.31
+- Cash: $70,972.11 (71.6%)
+- Buying power: $362,706.20
+- Daytrade count: 0 (not flagged by API)
+- Week trades: 0/3 (week of Oct 12) — 3 slots available
+
+### Positions
+| Ticker | Shares | Entry | Current | Unrealized P&L | Stop | Cushion to stop |
+|--------|--------|-------|---------|----------------|------|------------------|
+| CVE | 390 | $30.83 | $33.00 | +$846.30 (+7.04%) | $29.55 (trailing 10%, HWM $32.84) | 10.5% |
+| META | 20 | $755.722 | $763.96 | +$164.76 (+1.09%) | $694.14 (trailing 10%, HWM $771.27) | 9.1% |
+
+Both GTC trailing stops confirmed live. Deployed 28.4% — far below 60% Rule-12 floor. No add executed Oct 12/13 despite Oct 13 plan.
+
+### Market Context
+- S&P 500 futures: no Oct 14 print found (search returned stale results) — treat as unknown; S&P last record close ~7,811 (Oct 9)
+- VIX: no fresh print found; last known ~15-16 — assume well under 22 gate
+- Today's catalysts: no dated list surfaced; bank earnings season, oil (Brent >$100)/US-Iran headlines, 24-yr-high Treasury yields; breadth poor at highs
+- Earnings before open: none of CVE/META (META Oct 29, CVE Oct 29-30)
+
+### Position News
+- **CVE** ($33.00, +7.04%): Athabasca Oil acquisition (C$5.7B EV, announced Oct 5, close Dec); oil strength tailwind. HOLD, trail tightens at +15%
+- **META** ($763.96, +1.09%): no new news; Q3 earnings Oct 29. HOLD
+
+### Trade Ideas
+No catalyst-backed idea verified this pass (searches stale/undated; not fabricating entries). Rule-12 forced add still applies at market-open (no VIX>22 / gap<-2% evidence): market-open must run a fresh-catalyst search and add ≥1 position, ≤15% size, non-Technology preferred (Energy-adjacent / Industrials / Healthcare / Financials). Sector status: none in EXIT. Week trades 0/3.
+
+### Risk Factors
+- Deployment 28.4% under Rule-12 floor — cash drag vs benchmark
+- Rates/yield spike pressure on META
+- US-Iran/oil volatility (CVE event risk both ways)
+- Data gaps: no live futures/VIX read this run
+- ClickUp credentials missing — no alerts possible
+
+### Decision
+TRADE (Rule 12 forced add, 1 position max, ≤15% sizing, limit order after live spread check at open; skip only if futures gap < -2% or VIX > 22). 10% trailing GTC stop immediately after fill. HOLD existing positions.
+
 ## 2026-10-13 — Pre-market Research
 
 ### Account
@@ -151,6 +191,8 @@ Both GTC trailing stops confirmed live. Deployed 27.3% — far below 60% Rule-12
 ### Decision
 TRADE (Rule 12 forced add unless VIX > 22 or futures gap < -2% at open; 1 position max, ≤15% sizing, limit order after live spread check, real 10% trailing GTC stop on fill).
 
+--- TRIMMED 2026-10-14 ---
+
 ## 2026-10-08 — Pre-market Research
 
 ### Account
@@ -193,47 +235,3 @@ Both GTC trailing stops confirmed live (CVE 15c0f7bf, META f4a3e26c). Deployed 2
 
 ### Decision
 TRADE (Rule 12 forced add, 1 position max, ≤15% sizing, limit order after live spread check at open; skip only if futures gap < -2% or VIX > 22). 10% trailing GTC stop immediately after fill. HOLD existing positions.
-
---- TRIMMED 2026-10-13 ---
-
-## 2026-10-07 — Pre-market Research
-
-### Account
-- Equity: $98,005.01
-- Cash: $70,972.11 (72.4%)
-- Buying power: $359,580.56
-- Daytrade count: 0 (not flagged by API)
-- Week trades: 0/3 (week of Oct 5) — 3 slots available
-
-### Positions
-| Ticker | Shares | Entry | Current | Unrealized P&L | Stop | Cushion to stop |
-|--------|--------|-------|---------|----------------|------|------------------|
-| CVE | 390 | $30.83 | $31.37 | +$210.60 (+1.75%) | $29.25 (trailing 10%, HWM $32.50) | 6.8% |
-| META | 20 | $755.722 | $739.93 | -$315.84 (-2.09%) | $685.197 (trailing 10%, HWM $761.33) | 7.4% |
-
-Both GTC trailing stops confirmed live. Deployed 27.6% — far below 60% Rule-12 floor. No add executed Oct 5/6.
-
-### Market Context
-- S&P 500 futures: no Oct 7 print found (search returned stale results) — treat as unknown/flat; last close S&P ~7,780 area
-- VIX: no fresh print found; last known ~15.3 — assume well under 22 gate
-- Today's catalysts: no dated catalyst list surfaced; Q3 earnings season approaching (META Oct 29, CVE Oct 30); macro/Fed-hike odds and US-Iran/oil headlines remain the overhang
-- Earnings before open: none of CVE/META
-
-### Position News
-- **CVE** ($31.37, +1.75%): no new news; Q2 beat/raised production guidance, analyst PTs raised; Q3 earnings ~Oct 30. HOLD
-- **META** ($739.93, -2.09%): no new news; sideways since Aug high ($789), Q3 earnings Oct 29 (guide $47.5-50.5B). HOLD
-
-### Trade Ideas
-No catalyst-backed idea verified this pass (searches returned stale/undated data; not fabricating entries). Rule-12 forced add still applies at market-open (no VIX>22 / gap<-2% evidence): market-open must run a fresh-catalyst search and add ≥1 position, modest size, non-Technology preferred (Energy-adjacent / Industrials / Healthcare / Financials). Sector status: none in EXIT. Week trades 0/3.
-
-### Risk Factors
-- Deployment 27.6% under Rule-12 floor — cash drag vs benchmark
-- Rates/Fed-hike odds pressure on META
-- US-Iran/oil volatility (CVE event risk both ways)
-- Data gaps: no live futures/VIX read this run
-- ClickUp credentials missing — no alerts possible
-
-### Decision
-HOLD (pre-market) — no position near -7%, no thesis break. Market-open action item: rule-12 forced add.
-
-**Environment note:** CLICKUP_API_KEY/CLICKUP_WORKSPACE_ID/CLICKUP_CHANNEL_ID missing from process env — no ClickUp alert sent. No urgent items.
