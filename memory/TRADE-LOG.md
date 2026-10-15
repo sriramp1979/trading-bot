@@ -2146,3 +2146,4 @@ No positions cut, no stops changed, no new trades. Week trades 0/3 (week of Sep 
 | CVE | 390 | $30.83 | $32.63 | −0.61% | +$701.57 (+5.84%) | $29.862 (trailing 10%, HWM $33.18) |
 | META | 20 | $755.722 | $737.43 | −3.29% | −$365.79 (−2.42%) | $694.143 (trailing 10%, HWM $771.27) |
 **Notes:** No trades today; week trades 0/3 (week of Oct 12), 2 positions, cash 72.1% — still under 75% deployment target. META −3.3% on day, −2.4% vs entry (above −7% cut line); CVE −0.6%, stops intact. Yesterday's equity baseline $99,007.11 from Oct 13 log.
+## 2026-10-15 midday — All within band, no action
