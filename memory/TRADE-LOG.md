@@ -2156,3 +2156,11 @@ No positions cut, no stops changed, no new trades. Week trades 0/3 (week of Sep 
 | META | 20 | $755.722 | $737.00 | −0.07% | −$374.44 (−2.48%) | $694.143 (trailing 10%, HWM $771.27) |
 **Notes:** No trades today; week trades 0/3 (week of Oct 12), 2 positions, cash 72.3% — still under 75% deployment target. CVE −2.0% on day, META flat; both above −7% cut line, stops intact. Yesterday's equity baseline $98,446.03 from Oct 14 log.
 ## 2026-10-16 midday — All within band, no action
+
+### Oct 16 — EOD Snapshot (Day 103, Friday)
+**Portfolio:** $98,085.51 | **Cash:** $71,071.51 (72.46%) | **Day P&L:** −$94.90 (−0.10%) | **Phase P&L:** −$1,914.49 (−1.91%)
+| Ticker | Shares | Entry | Close | Day Chg | Unrealized P&L | Stop |
+|--------|--------|-------|-------|---------|----------------|------|
+| CVE | 390 | $30.83 | $32.90 | +2.91% | +$807.30 (+6.71%) | $29.862 (trailing 10%, HWM $33.18) |
+| META | 20 | $755.722 | $709.15 | −3.74% | −$931.44 (−6.16%) | $694.143 (trailing 10%, HWM $771.27) |
+**Notes:** No trades today; week trades 0/3 (week of Oct 12), 2 positions, cash 72.5% — still under 75% deployment target. META −3.7% on day, −6.2% vs entry — within 0.8% of the −7% cut line ($702.78); CVE +2.9%, stops intact. Yesterday's equity baseline $98,180.41 from Oct 15 log.
