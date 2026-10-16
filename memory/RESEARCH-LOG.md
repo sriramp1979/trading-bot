@@ -27,6 +27,45 @@ Format each entry:
 ### Decision
 TRADE or HOLD (default HOLD if no edge)
 
+## 2026-10-16 — Pre-market Research
+
+### Account
+- Equity: $98,270.31
+- Cash: $71,071.51 (72.3%)
+- Buying power: $360,442.68
+- Daytrade count: 0 (not flagged by API)
+- Week trades: 0/3 (week of Oct 12) — 3 slots available
+
+### Positions
+| Ticker | Shares | Entry | Current | Unrealized P&L | Stop | Cushion to stop |
+|--------|--------|-------|---------|----------------|------|------------------|
+| CVE | 390 | $30.83 | $31.92 | +$425.10 (+3.54%) | $29.862 (trailing 10%, HWM $33.18) | 6.5% |
+| META | 20 | $755.722 | $737.50 | -$364.44 (-2.41%) | $694.143 (trailing 10%, HWM $771.27) | 5.9% |
+
+Both GTC trailing stops confirmed live. Deployed 27.7% — far below 60% Rule-12 floor. No add executed since Oct 5.
+
+### Market Context
+- S&P 500 futures: no Oct 16 print found (searches stale) — unknown
+- VIX: no fresh print found; last known ~15-16 — assume under 22 gate
+- Today's catalysts: none verified; thin-catalyst week, yields/oil driving tape
+- Earnings before open: none of CVE/META (CVE ~Oct 30 unconfirmed, META Oct 29)
+
+### Position News
+- **CVE** ($31.92, +3.54%): no new headlines; Q3 ~Oct 30; 13/14 analysts Buy, avg PT ~$36.67. HOLD
+- **META** ($737.50, -2.41%): no verified new news. -7% cut line ~$702.8 (4.7% away). HOLD
+
+### Trade Ideas
+No catalyst-backed idea verified this pass (searches stale/undated; not fabricating entries). Rule-12 forced add still applies at market-open: fresh-catalyst search, add ≥1 position, ≤15% size, non-Technology preferred (Industrials / Healthcare / Financials). Sector status: none in EXIT.
+
+### Risk Factors
+- Deployment 27.7% under Rule-12 floor — cash drag vs benchmark
+- META 5.9% from stop; yield pressure
+- Oil/geopolitical volatility (CVE both ways)
+- Data gaps: no live futures/VIX read; ClickUp credentials missing — no alerts possible
+
+### Decision
+TRADE (Rule 12 forced add, 1 position max, ≤15% sizing, limit order after live spread check at open; skip only if futures gap < -2% or VIX > 22). 10% trailing GTC stop immediately after fill. HOLD existing positions.
+
 ## 2026-10-15 — Pre-market Research
 
 ### Account
@@ -149,6 +188,8 @@ Both GTC trailing stops confirmed live. Deployed 27.7% — far below 60% Rule-12
 ### Decision
 TRADE (Rule 12 forced add, 1 position max, ≤15% sizing, limit order after live spread check). Prefer QCOM or MRNA; HOLD instead if futures gap < -2% or VIX >22. Real 10% trailing GTC stop immediately after fill.
 
+--- TRIMMED 2026-10-16 ---
+
 ## 2026-10-12 — Pre-market Research
 
 ### Account
@@ -190,45 +231,3 @@ Both GTC trailing stops confirmed live. Deployed 27.5% — far below 60% Rule-12
 
 ### Decision
 TRADE (Rule 12 forced add, 1 position max, ≤15% sizing, limit order after live spread check at open). Prefer QCOM or MRNA only if live spread <1% and not >+6% extended; HOLD instead if futures gap < -2% or VIX >22. Real 10% trailing GTC stop immediately after fill.
-
---- TRIMMED 2026-10-15 ---
-
-## 2026-10-09 — Pre-market Research
-
-### Account
-- Equity: $97,663.81
-- Cash: $70,972.11 (72.7%)
-- Buying power: $358,625.20
-- Daytrade count: 0 (none in log)
-- Week trades: 0/3 (week of Oct 5)
-
-### Positions
-| Ticker | Shares | Entry | Current | Unrealized P&L | Stop | Cushion to stop |
-|--------|--------|-------|---------|----------------|------|------------------|
-| CVE | 390 | $30.83 | $31.33 | +$195.00 (+1.62%) | $29.25 (trailing 10%, HWM $32.50) | 6.6% |
-| META | 20 | $755.722 | $723.65 | -$641.44 (-4.24%) | $685.197 (trailing 10%, HWM $761.33) | 5.3% |
-
-Both GTC trailing stops confirmed live. Deployed 27.3% — far below 60% Rule-12 floor.
-
-### Market Context
-- S&P 500 futures: no reliable Oct 9 reading found (searches returned stale data). Last known Oct 2: +0.4%, week -1.2% worst since Aug; markets pricing possible Fed hike (~24% Oct odds)
-- VIX: no Oct 9 US reading found; last known ~16 (under 22 gate). Assume gate not triggered
-- Today's catalysts: nothing verified for Oct 9; Q3 earnings season starts soon (CVE ~Oct 29-30, META late Oct)
-- Earnings before open: none held
-
-### Position News
-- **CVE** ($31.33, +1.62%): no new news; oil ~$89 WTI, mixed analyst views (JPM upgrade, UBS Hold). HOLD
-- **META** ($723.65, -4.24%): NM seeks up to $40B penalties (Oct 1); capex $130-145B overhang; Muse AI +26% in month. Above -7% cut line (~$702.8). HOLD
-
-### Trade Ideas
-1. Rule 12 add — candidate from Oct 8 list (QCOM/MRNA) — Technology/Healthcare — no fresh catalyst verified; need live quote + spread at open. Stop 10% trailing, target +16% (2:1). Sector OK.
-2. Energy/Financials add (non-held sector peer to CVE/JPM momentum) — unverified, defer to market-open live scan.
-
-### Risk Factors
-- Rates/yields elevated, Fed hike odds — growth/META pressure
-- No live futures/VIX data — gate check must be redone at open
-- Oct 5-8 plans called TRADE but no trades executed; cash drag persists (Rule 12)
-- ClickUp env vars missing — no alert channel (console-only)
-
-### Decision
-TRADE (Rule 12 forced add unless VIX > 22 or futures gap < -2% at open; 1 position max, ≤15% sizing, limit order after live spread check, real 10% trailing GTC stop on fill).
