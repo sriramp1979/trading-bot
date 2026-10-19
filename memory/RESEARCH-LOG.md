@@ -230,5 +230,3 @@ Both GTC trailing stops confirmed live. Deployed 27.7% — far below 60% Rule-12
 
 ### Decision
 TRADE (Rule 12 forced add, 1 position max, ≤15% sizing, limit order after live spread check). Prefer QCOM or MRNA; HOLD instead if futures gap < -2% or VIX >22. Real 10% trailing GTC stop immediately after fill.
-
---- TRIMMED 2026-10-16 ---
