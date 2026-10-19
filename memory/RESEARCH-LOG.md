@@ -27,6 +27,47 @@ Format each entry:
 ### Decision
 TRADE or HOLD (default HOLD if no edge)
 
+## 2026-10-19 — Pre-market Research
+
+### Account
+- Equity: $98,162.61
+- Cash: $71,071.51 (72.4%)
+- Buying power: $360,141.12
+- Daytrade count: 0 (not flagged by API)
+- Week trades: 0/3 (week of Oct 19) — 3 slots available
+
+### Positions
+| Ticker | Shares | Entry | Current | Unrealized P&L | Stop | Cushion to stop |
+|--------|--------|-------|---------|----------------|------|------------------|
+| CVE | 390 | $30.83 | $32.87 | +$795.60 (+6.62%) | $29.862 (trailing 10%, HWM $33.18) | 9.2% |
+| META | 20 | $755.722 | $713.59 | -$842.64 (-5.58%) | $694.143 (trailing 10%, HWM $771.27) | 2.7% |
+
+Both GTC trailing stops confirmed live. Deployed 27.6% — far below 60% Rule-12 floor. META −5.6% vs −7% cut line ($702.78, 1.5% away).
+
+### Market Context
+- S&P 500 futures: no same-day data found via search (stale results only). Check live at open
+- VIX: no same-day reading found; last known ~16 (Jul 31) / ~15.3 (Oct 2) — assume <22 gate, verify live
+- Today's catalysts: no dated catalyst list found. Big-bank/Q3 earnings season ongoing; macro calendar unverified
+- Earnings before open: none held (META ~Oct 28 AMC est., CVE ~Oct 29)
+
+### Position News
+- **CVE** ($32.87, +6.62%): No new news found. Athabasca deal digestion. Cushion 9.2%. HOLD
+- **META** ($713.59, -5.58%): No new catalyst; AI-capex worries ahead of ~Oct 28 Q3 print (Q2 EPS missed on costs). Stop $694.14 is 2.7% below. Cut at ≤$702.78 (−7%) per rule. HOLD unless breached
+
+### Trade Ideas
+1. QCOM — Technology — AI/semis carry-over from prior ideas (unfilled). Tech OK (INTC loss = 1). Limit ≤ +0.5% of ask, stop 8% below entry, target +16% (2:1). Skip if >+6% extended or spread >1%.
+2. MRNA — Healthcare — Nasdaq-100 inclusion carry-over. Live spread <1% required; stop 8%, target +16%, R:R 2:1. Sector OK.
+3. JPM-adjacent financials add — Financials — watch big-bank earnings reaction; not actionable pre-open.
+
+### Risk Factors
+- Cash 72.4%: Rule 12 gate (deployed <60%) forces ≥1 add at open unless VIX >22 or futures gap < -2% — verify live
+- META near −7% cut line; weak into earnings
+- Search data stale again: futures/VIX unverified, confirm via Alpaca quotes
+- ClickUp env vars missing — no alert channel; no urgent items today
+
+### Decision
+TRADE (Rule 12 forced add, 1 position max, ≤15% sizing, limit order after live spread check). Prefer QCOM or MRNA; HOLD instead if futures gap < -2% or VIX >22. Real 10% trailing GTC stop immediately after fill.
+
 ## 2026-10-16 — Pre-market Research
 
 ### Account
@@ -146,6 +187,8 @@ No catalyst-backed idea verified this pass (searches stale/undated; not fabricat
 ### Decision
 TRADE (Rule 12 forced add, 1 position max, ≤15% sizing, limit order after live spread check at open; skip only if futures gap < -2% or VIX > 22). 10% trailing GTC stop immediately after fill. HOLD existing positions.
 
+--- TRIMMED 2026-10-19 ---
+
 ## 2026-10-13 — Pre-market Research
 
 ### Account
@@ -189,45 +232,3 @@ Both GTC trailing stops confirmed live. Deployed 27.7% — far below 60% Rule-12
 TRADE (Rule 12 forced add, 1 position max, ≤15% sizing, limit order after live spread check). Prefer QCOM or MRNA; HOLD instead if futures gap < -2% or VIX >22. Real 10% trailing GTC stop immediately after fill.
 
 --- TRIMMED 2026-10-16 ---
-
-## 2026-10-12 — Pre-market Research
-
-### Account
-- Equity: $97,918.03
-- Cash: $70,972.11 (72.5%)
-- Buying power: $359,337.01
-- Daytrade count: 0 (not flagged by API; no day trades in log)
-- Week trades: 0/3 (week of Oct 12) — 3 slots available
-
-### Positions
-| Ticker | Shares | Entry | Current | Unrealized P&L | Stop | Cushion to stop |
-|--------|--------|-------|---------|----------------|------|------------------|
-| CVE | 390 | $30.83 | $31.60 | +$300.30 (+2.50%) | $29.25 (trailing 10%, HWM $32.50) | 7.4% |
-| META | 20 | $755.722 | $731.10 | -$492.52 (-3.26%) | $685.197 (trailing 10%, HWM $761.33) | 6.3% |
-
-Both GTC trailing stops confirmed live. Deployed 27.5% — far below 60% Rule-12 floor.
-
-### Market Context
-- S&P 500 futures: no same-day data found via search (stale results only); prior close Oct 9 equity -0.1% day. Check live at open
-- VIX: no same-day reading found; last known ~15.3 (Oct 2) — assume <22 gate
-- Today's catalysts: no dated catalyst list found. Oct 12 = Columbus Day (equities open, bond market closed → thin liquidity). Q3 earnings season ramps this week (big banks); CPI/FOMC minutes timing unverified
-- Earnings before open: none held (CVE Oct 29, META ~Oct 28)
-
-### Position News
-- **CVE** ($31.60, +2.50%): No new news found. Athabasca Oil deal (announced Oct 5) digestion continues; +0.7% pre-open vs Fri close. Cushion 7.4%. HOLD
-- **META** ($731.10, -3.26%): No new news found; +1.7% vs Fri close. Capex/AI-spend concerns persist into Oct ~28 earnings. No thesis break; −3.3% vs −7% cut line. HOLD
-
-### Trade Ideas
-1. QCOM — Technology — AI/semis momentum carry-over from Oct 5 idea (unfilled). Tech OK (INTC loss = 1). Live quote/spread needed; limit ≤ +0.5% of ask, stop 8% below entry, target +16% (2:1). Skip if >+6% extended.
-2. MRNA — Healthcare — Nasdaq-100 inclusion (eff. Oct 9) carry-over. Live spread <1% required; stop 8%, target +16%. Sector OK.
-3. JPM-adjacent financials add — Financials — big-bank Q3 earnings this week; JPM already held in sector log, watch reaction before adding. Not actionable pre-open.
-
-### Risk Factors
-- Cash 72.5%: Rule 12 gate (deployed <60%) forces ≥1 add at open unless VIX >22 or futures gap < -2% — verify live at open
-- Holiday-thin liquidity; wide spreads → limit orders only
-- Search data stale/thin today: futures/VIX unverified, confirm via Alpaca quotes
-- META capex narrative; CVE deal-digestion
-- ClickUp env vars missing — no ClickUp alert channel (console-only); no urgent items today
-
-### Decision
-TRADE (Rule 12 forced add, 1 position max, ≤15% sizing, limit order after live spread check at open). Prefer QCOM or MRNA only if live spread <1% and not >+6% extended; HOLD instead if futures gap < -2% or VIX >22. Real 10% trailing GTC stop immediately after fill.
