@@ -2175,3 +2175,10 @@ No positions cut, no stops changed, no new trades. Week trades 0/3 (week of Sep 
 
 ## 2026-10-20 market-open — No trades. Rule 12 add blocked: QCOM spread ~3.5-6%, MRNA ~1.3-7%, JPM ~5% (plan requires <1%; IEX-only quotes, no reliable NBBO). CVE held, stop intact. Deployed ~13%. Retry at midday.
 ## 2026-10-20 midday — All within band, no action
+
+### Oct 20 — EOD Snapshot (Day 105, Tuesday)
+**Portfolio:** $97,945.12 | **Cash:** $84,954.22 (86.74%) | **Day P&L:** +$30.90 (+0.03%) | **Phase P&L:** −$2,054.88 (−2.05%)
+| Ticker | Shares | Entry | Close | Day Chg | Unrealized P&L | Stop |
+|--------|--------|-------|-------|---------|----------------|------|
+| CVE | 390 | $30.83 | $33.31 | +0.24% | +$967.20 (+8.04%) | $30.4065 (trailing 10%, HWM $33.785) |
+**Notes:** No trades today; week trades 0/3 (week of Oct 19). 1 position, cash 86.7% — above 75–85% deployment target; market-open add blocked by wide IEX spreads (QCOM, MRNA, JPM). CVE +0.2%, stop intact. Yesterday's equity baseline $97,914.22 from Oct 19 log.
