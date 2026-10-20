@@ -2174,3 +2174,4 @@ No positions cut, no stops changed, no new trades. Week trades 0/3 (week of Sep 
 **Notes:** META trailing stop filled 20 @ $694.15 (~14:07 ET), realized −$1,231.44 (−8.1% vs $755.722 entry); not a new buy, week trades 0/3 (week of Oct 19). 1 position, cash 86.8% — well under 75–85% deployment target, redeploy needs a fresh catalyst (META sector exit counts as a failed trade). Yesterday's equity baseline $98,085.51 from Oct 16 log.
 
 ## 2026-10-20 market-open — No trades. Rule 12 add blocked: QCOM spread ~3.5-6%, MRNA ~1.3-7%, JPM ~5% (plan requires <1%; IEX-only quotes, no reliable NBBO). CVE held, stop intact. Deployed ~13%. Retry at midday.
+## 2026-10-20 midday — All within band, no action
