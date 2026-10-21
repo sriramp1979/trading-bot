@@ -2182,3 +2182,4 @@ No positions cut, no stops changed, no new trades. Week trades 0/3 (week of Sep 
 |--------|--------|-------|-------|---------|----------------|------|
 | CVE | 390 | $30.83 | $33.31 | +0.24% | +$967.20 (+8.04%) | $30.4065 (trailing 10%, HWM $33.785) |
 **Notes:** No trades today; week trades 0/3 (week of Oct 19). 1 position, cash 86.7% — above 75–85% deployment target; market-open add blocked by wide IEX spreads (QCOM, MRNA, JPM). CVE +0.2%, stop intact. Yesterday's equity baseline $97,914.22 from Oct 19 log.
+## 2026-10-21 midday — All within band, no action
