@@ -2190,3 +2190,4 @@ No positions cut, no stops changed, no new trades. Week trades 0/3 (week of Sep 
 |--------|--------|-------|-------|---------|----------------|------|
 | CVE | 390 | $30.83 | $33.05 | −0.36% | +$865.80 (+7.20%) | $30.4065 (trailing 10%, HWM $33.785) |
 **Notes:** No trades today; week trades 0/3 (week of Oct 19). 1 position, cash 86.8% — above 75–85% deployment target, no qualifying catalyst yet. CVE −0.4%, stop intact. Yesterday's equity baseline $97,945.12 from Oct 20 log.
+## 2026-10-22 midday — All within band, no action
