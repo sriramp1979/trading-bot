@@ -419,3 +419,62 @@ Template for each entry:
 *Portfolio −1.14% vs S&P +0.87% = −2.01% relative — genuine underperformance on an up week, not a defensively-explained one. Process was mixed: the deployment gate and stale-quote discipline worked exactly as designed, but the −7% cut sat unactioned for 1.5 sessions and SECTOR-LOG.md bookkeeping was dropped entirely on both this week's closes. No strategy rule change warranted (process/execution gaps, not a rule failure) — see Adjustments above for the operational fixes. Net C.*
 
 **Environment note:** CLICKUP_API_KEY/CLICKUP_WORKSPACE_ID/CLICKUP_CHANNEL_ID missing from process env this run (consistent with every session this week) — Step 6 ClickUp alert not sent; summary delivered via direct notification instead.
+
+---
+
+## Week ending 2026-10-23
+
+### Stats
+| Metric | Value |
+|--------|-------|
+| Starting portfolio | $98,085.51 (Oct 16 EOD) |
+| Ending portfolio | $97,777.42 |
+| Week return | −$308.09 (−0.31%) |
+| S&P 500 week | ≈−0.5% (CNBC; Reuters prelim close 7,623.86) |
+| Bot vs S&P | ≈+0.2% |
+| Phase P&L | −$2,222.58 (−2.22% from $100,000) |
+| Trades | 0 new entries (W:0 / L:1 / open:1) |
+| Win rate | 0% (0 of 1 closed trade) |
+| Best trade | CVE +6.65% unrealized |
+| Worst trade | META −8.1% (realized) |
+| Profit factor | 0.00 ($0 / $1,231.44) |
+| Deployment at week end | 13.1% ($12,823.20 deployed; cash 86.9%) |
+
+### Closed Trades
+| Ticker | Entry | Exit | P&L | Notes |
+|--------|-------|------|-----|-------|
+| META | $755.722 (20sh) | $694.15 | −$1,231.44 (−8.1%) | 10% trailing stop filled Oct 19 ~14:07 ET; gapped through −7% cut line ($702.78) before a scheduled scan could act |
+
+### Open Positions at Week End
+| Ticker | Entry | Close | Unrealized | Stop |
+|--------|-------|-------|------------|------|
+| CVE | $30.83 (390sh) | $32.88 | +$799.50 (+6.65%) | $30.4065 (10% trail, HWM $33.785) |
+
+### What Worked
+- CVE held through a −3.4% oil-driven day (Oct 22) and recovered +2.7% Friday; trail intact, 7.5% cushion
+- Beat the S&P by ≈0.2% on a down week purely via 87% cash
+- No rule violations; no options; stop on sole holding stayed a live GTC order
+
+### What Didn't Work
+- Deployment 13% vs 75–85% target — rule 12 forced adds blocked all week (QCOM/MRNA/JPM IEX spreads 1–7% vs <1% requirement); zero new trades, 3/3 slots unused
+- META stop-out realized −$1,231 (−8.1%), worse than the −7% manual cut line — the cut was a scan too late
+- Pre-market research Oct 23 had no live futures/VIX or fresh catalysts; trade ideas carried over unverified from Oct 22
+- SECTOR-LOG.md again not updated on closes (INTC, JPM, META) — third review in a row flagging this
+
+### Key Lessons
+- The <1% spread gate on IEX-only quotes is effectively unsatisfiable, so rule 12 cannot fire; the gate needs a workable quote source or a modified threshold
+- A winner-to-loser drift on META (−6.2% on Oct 16, 0.8% above the cut line) needed a pre-emptive action once within 1% of −7%
+- Phase P&L has bled −2.2% largely via stop-outs (INTC, JPM, META) with no redeployment
+
+### Adjustments for Next Week
+- Needs user decision: relax/replace the <1% IEX spread requirement (e.g. limit order at mid with ≤2% spread) so rule 12 can deploy
+- Deploy 2–3 positions next week from momentum names with verified catalysts (Fed meeting, mega-cap earnings Alphabet/Microsoft/Amazon this coming week — avoid holding unhedged binary earnings)
+- CVE Q3 earnings ~Oct 29–30: stop is 7.5% away; consider tightening to 7% trail once +15%
+- Update SECTOR-LOG.md in the same session as any close (corrected here)
+- ClickUp env vars missing — restore CLICKUP_API_KEY / WORKSPACE_ID / CHANNEL_ID
+
+### Overall Grade: D
+*Slightly beat a down tape only through idle cash; −2.22% phase P&L, 13% deployed, rule 12 inoperative, META cut slipped past −7%. No strategy file change this week (the spread-gate issue is a research-plan threshold, flagged for user decision).*
+
+**Environment note:** CLICKUP_* vars missing from process env this run — Step 6 ClickUp message not sent; summary sent via push notification.
+

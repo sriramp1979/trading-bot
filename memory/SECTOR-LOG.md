@@ -3,11 +3,11 @@
 ## Active Sector Tracking
 | Sector | Tickers Held | Consecutive Losses | Status |
 |--------|-------------|-------------------|--------|
-| Technology | INTC | 1 | OK |
+| Technology | — | 1 | OK |
 | Healthcare | — | 1 | OK |
-| Communication Services | META | 0 | OK |
+| Communication Services | — | 1 | OK |
 | Consumer Discretionary | — | 1 | OK |
-| Financials | JPM | 0 | OK |
+| Financials | — | 1 | OK |
 | Consumer Staples | — | 1 | OK |
 | Energy | CVE | 0 | OK |
 | Real Estate | — | 1 | OK |
@@ -51,3 +51,9 @@ not evidence of a real loss. Real Estate's XLRE cut (2026-09-24, -7.57%) was Rea
 only trade ever, so its pre-existing "1" was treated the same way: this week's loss is
 logged as the sector's 1st verified loss (Status stays OK), not a 2nd. Needs a one-time
 manual audit/reset with the user rather than further automated changes.
+
+## Data Note (2026-10-23 weekly review)
+Stale rows corrected: INTC (stop-out Sep 30, -5.8%), JPM (stops Oct 1, ~-$870) and META (stop-out Oct 19, -8.1%)
+all closed at a loss without SECTOR-LOG updates. Technology, Financials, Communication Services each
+logged as 1 verified loss (Status OK, none at EXIT). Healthcare/Consumer Discretionary/Consumer Staples/Real Estate
+"1" seed values still unaudited. No EXIT sectors this week; no resets due.
