@@ -2207,3 +2207,10 @@ No positions cut, no stops changed, no new trades. Week trades 0/3 (week of Sep 
 | CVE | 390 | $30.83 | $32.88 | +2.72% | +$799.50 (+6.65%) | $30.4065 (trailing 10%, HWM $33.785) |
 **Notes:** No trades today; week trades 0/3 (week of Oct 19). 1 position, cash 86.9% — above 75–85% deployment target, no qualifying catalyst yet. CVE +2.7%, 7.5% above stop, no action; yesterday's equity baseline $97,438.12 from Oct 22 log.
 ## 2026-10-26 midday — All within band, no action
+
+### Oct 26 — EOD Snapshot (Day 109, Monday)
+**Portfolio:** $97,894.42 | **Cash:** $84,954.22 (86.78%) | **Day P&L:** +$117.00 (+0.12%) | **Phase P&L:** −$2,105.58 (−2.11%)
+| Ticker | Shares | Entry | Close | Day Chg | Unrealized P&L | Stop |
+|--------|--------|-------|-------|---------|----------------|------|
+| CVE | 390 | $30.83 | $33.18 | +0.91% | +$916.50 (+7.62%) | $30.4065 (trailing 10%, HWM $33.785) |
+**Notes:** No trades today; week trades 0/3 (week of Oct 26). 1 position, cash 86.8% — above 75–85% deployment target, no qualifying catalyst yet. CVE +0.9%, 8.4% above stop, no action; yesterday's equity baseline $97,777.42 from Oct 23 log.
