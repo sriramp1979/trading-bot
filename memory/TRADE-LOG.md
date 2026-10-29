@@ -2231,3 +2231,11 @@ No positions cut, no stops changed, no new trades. Week trades 0/3 (week of Sep 
 |--------|--------|-------|-------|---------|----------------|------|
 | CVE | 390 | $30.83 | $32.29 | +1.99% | +$569.40 (+4.74%) | $30.4065 (trailing 10%, HWM $33.785) |
 **Notes:** No trades today; week trades 0/3 (week of Oct 26). 1 position, cash 87.1% — above 75–85% target; market-open adds skipped on wide spreads (QCOM, MRNA). CVE +2.0%, 5.8% above stop, no action; yesterday's equity baseline $97,325.02 from Oct 27 log.
+
+## Week of 2026-10-26 | Trades: 1/3
+### 2026-10-29 market-open — BUY QCOM
+- 80 sh @ $180.55 (cost $14,444, ~14.8% equity) | Sector: Technology
+- Stop: 10% trailing GTC [1a6edee3-d160-4d9d-8aa6-7dc1f208278f] (~$162.50)
+- Thesis: AI/semis momentum carry-over; Rule 12 deployment add (deployed 13% < 60%). Spread 0.2% at entry.
+- Target: $209 (+16%) | R:R 2:1
+- ClickUp env vars missing — no alert sent

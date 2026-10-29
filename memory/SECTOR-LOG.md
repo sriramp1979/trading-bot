@@ -3,7 +3,7 @@
 ## Active Sector Tracking
 | Sector | Tickers Held | Consecutive Losses | Status |
 |--------|-------------|-------------------|--------|
-| Technology | — | 1 | OK |
+| Technology | QCOM | 1 | OK |
 | Healthcare | — | 1 | OK |
 | Communication Services | — | 1 | OK |
 | Consumer Discretionary | — | 1 | OK |
