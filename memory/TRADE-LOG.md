@@ -2240,3 +2240,11 @@ No positions cut, no stops changed, no new trades. Week trades 0/3 (week of Sep 
 - Target: $209 (+16%) | R:R 2:1
 - ClickUp env vars missing — no alert sent
 ## 2026-10-29 midday — All within band, no action
+
+### Oct 29 — EOD Snapshot (Day 112, Thursday)
+**Portfolio:** $97,541.02 | **Cash:** $70,510.22 (72.29%) | **Day P&L:** −$6.30 (−0.01%) | **Phase P&L:** −$2,458.98 (−2.46%)
+| Ticker | Shares | Entry | Close | Day Chg | Unrealized P&L | Stop |
+|--------|--------|-------|-------|---------|----------------|------|
+| CVE | 390 | $30.83 | $32.12 | −0.53% | +$503.10 (+4.18%) | $30.4065 (trailing 10%, HWM $33.785) |
+| QCOM | 80 | $180.55 | $181.30 | −0.91% | +$60.00 (+0.42%) | $167.031 (trailing 10%, HWM $185.59) |
+**Notes:** Bought QCOM 80 sh at open; week trades 1/3 (week of Oct 26). 2 positions, cash 72.3% — deployed 27.7%, still below 75–85% target. Both stops intact, CVE 5.3% and QCOM 7.9% above stop, no action; yesterday's equity baseline $97,547.32 from Oct 28 log.
