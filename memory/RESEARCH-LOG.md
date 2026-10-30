@@ -27,6 +27,49 @@ Format each entry:
 ### Decision
 TRADE or HOLD (default HOLD if no edge)
 
+## 2026-10-30 — Pre-market Research
+
+### Account
+- Equity: $97,327.61
+- Cash: $70,510.21 (72.4%)
+- Buying power: $357,129.56
+- Daytrade count: 0 (not flagged by API)
+- Week trades: 1/3 (week of Oct 26) — 2 slots available
+
+### Positions
+| Ticker | Shares | Entry | Current | Unrealized P&L | Stop | Cushion to stop |
+|--------|--------|-------|---------|----------------|------|------------------|
+| CVE | 390 | $30.83 | $32.50 | +$651.30 (+5.42%) | $30.4065 (trailing 10%, HWM $33.785) | 6.4% |
+| QCOM | 80 | $180.55 | $176.78 | −$301.60 (−2.09%) | $167.031 (trailing 10%, HWM $185.59) | 5.5% |
+
+Both GTC trailing stops confirmed live. Deployed 27.6% — below 60% Rule-12 floor. QCOM −4.7% on day (prior close $185.41); -7% cut line ~$167.90 (stop $167.03 is close to it).
+
+### Market Context
+- S&P 500 futures: no same-day data found (stale results only) — check live at open
+- VIX: no same-day reading found; last known ~15-16 — assume <22 gate
+- Today's catalysts: none verified (searches returned no Oct 30 coverage)
+- Earnings before open: CVE Q3 possibly ~Oct 29-30 (unconfirmed)
+
+### Position News
+- **CVE** ($32.50, +5.4%): no new news found. Stop 6.4% away. HOLD
+- **QCOM** ($176.78, −2.1%): no news found explaining −4.7% day. Stop 5.5% away; -7% cut at ~$167.90. HOLD, watch at open.
+
+### Trade Ideas
+1. MRNA — Healthcare — Nasdaq-100 inclusion carry-over. Spread <1% required; stop 8%, target +16%, R:R 2:1.
+2. JPM add — Financials — limit order, spread check first; stop 8%, target +16%.
+3. Energy/Industrials momentum add — no verified catalyst; skip unless fresh news.
+(Unverified today — no fresh catalyst search results.)
+
+### Risk Factors
+- Cash 72.4%: Rule 12 gate applies at open (<60% deployed → add) unless VIX >22 or futures gap < -2%
+- QCOM down 4.7% yesterday into a fresh entry; could hit -7% cut line
+- IEX-only quotes gave wide spreads Oct 28 (QCOM 5.6%, MRNA ~5%) — limit orders near last trade, retry at midday
+- Search data stale: no live futures/VIX
+- ClickUp env vars missing — no alert channel
+
+### Decision
+HOLD (patience > activity; deployed 27.6% so Rule 12 add allowed only if spreads <1% and gate conditions clear — max 1 position, ≤15%, limit order, 10% trailing GTC stop after fill). HOLD CVE, QCOM.
+
 ## 2026-10-29 — Pre-market Research
 
 ### Account
@@ -189,47 +232,5 @@ CVE GTC trailing stop confirmed live. Deployed 12.9% — far below 60% Rule-12 f
 ### Decision
 TRADE (Rule 12 forced add; up to 2 positions, <=15% each, limit orders after live spread check; skip if futures gap < -2% or VIX > 22). 10% trailing GTC stop immediately after fill. HOLD CVE.
 
---- TRIMMED 2026-10-29 ---
 
-## 2026-10-23 — Pre-market Research
-
-### Account
-- Equity: $97,434.22
-- Cash: $84,954.22 (87.2%)
-- Buying power: $374,760.88
-- Daytrade count: 0 (not flagged by API)
-- Week trades: 0/3 (week of Oct 19) — 3 slots available
-
-### Positions
-| Ticker | Shares | Entry | Current | Unrealized P&L | Stop | Cushion to stop |
-|--------|--------|-------|---------|----------------|------|------------------|
-| CVE | 390 | $30.83 | $32.00 | +$456.30 (+3.80%) | $30.4065 (trailing 10%, HWM $33.785) | 5.0% |
-
-CVE GTC trailing stop confirmed live. Deployed 12.8% — far below 60% Rule-12 floor.
-
-### Market Context
-- S&P 500 futures: no same-day data found (stale results only) — check live at open
-- VIX: no same-day reading found; last known ~15-16 — assume <22 gate
-- Today's catalysts: none verified; next week busy (Fed meeting, Trump–Xi, mega-cap earnings)
-- Earnings before open: none held (CVE ~Oct 29-30)
-
-### Position News
-- **CVE** ($32.00, +3.80%): no new news found; fell -3.4% Oct 22 (oil). Q3 ~Oct 29-30. Stop 5.0% away, -7% cut line ~$28.67. HOLD
-
-### Trade Ideas
-1. QCOM — Technology — AI/semis momentum carry-over. Sector OK. Limit <= +0.5% of ask, stop 8%, target +16%. Skip if spread >1%.
-2. MRNA — Healthcare — Nasdaq-100 inclusion carry-over. Spread <1% required; stop 8%, target +16%.
-3. JPM add — Financials — limit order, spread check first.
-(Unverified today — no fresh catalyst search results; carried from Oct 22.)
-
-### Risk Factors
-- Cash 87.2%: Rule 12 gate applies at open unless VIX >22 or futures gap < -2%
-- IEX-only quotes gave wide spreads Oct 20 — limit orders near last trade, retry at midday
-- CVE oil-driven weakness; stop 5% away
-- Search data stale: no live futures/VIX
-- ClickUp env vars missing — no alert channel; no urgent items today
-
-### Decision
-TRADE (Rule 12 forced add; up to 2 positions, <=15% each, limit orders after live spread check; skip if futures gap < -2% or VIX > 22). 10% trailing GTC stop immediately after fill. HOLD CVE.
-
---- TRIMMED 2026-10-28 ---
+--- TRIMMED 2026-10-30 ---
