@@ -3,7 +3,7 @@
 ## Active Sector Tracking
 | Sector | Tickers Held | Consecutive Losses | Status |
 |--------|-------------|-------------------|--------|
-| Technology | QCOM | 1 | OK |
+| Technology | — | 2 | EXIT |
 | Healthcare | — | 1 | OK |
 | Communication Services | — | 1 | OK |
 | Consumer Discretionary | — | 1 | OK |
@@ -17,6 +17,7 @@
 |--------|-----------|--------|
 | Communication Services | 2026-06-22 | 2 consecutive losses (META stop-out Jun 11, GOOGL thesis-break exit Jun 22 — dilution + FCF collapse + AI talent flight) |
 | Technology | 2026-06-25 | 2 consecutive losses (NVDA stop-out Jun 5, NVDA stop-out Jun 25 — Micron sell-the-news selloff dragged GPU names; chip sector multiple compression) |
+| Technology | 2026-10-30 | 2 consecutive losses (INTC stop-out Sep 30 -5.8%, QCOM stop-out Oct 30 -7.6%, 1 day after entry) |
 
 ## Sector Reset Log
 | Sector | Reset Date | Reason |
@@ -57,3 +58,6 @@ Stale rows corrected: INTC (stop-out Sep 30, -5.8%), JPM (stops Oct 1, ~-$870) a
 all closed at a loss without SECTOR-LOG updates. Technology, Financials, Communication Services each
 logged as 1 verified loss (Status OK, none at EXIT). Healthcare/Consumer Discretionary/Consumer Staples/Real Estate
 "1" seed values still unaudited. No EXIT sectors this week; no resets due.
+
+## Data Note (2026-10-30 weekly review)
+QCOM (entered Oct 29, trailing stop filled Oct 30 @ $166.90, -7.6%) closed at a loss; Tickers Held row was stale until this review. Technology: INTC (Sep 30) + QCOM (Oct 30) = 2 consecutive verified losses -> Status = EXIT. Buy-side gate must reject Technology until reset. Other sectors unchanged; Healthcare/Consumer Discretionary/Consumer Staples/Real Estate "1" seed values still unaudited.

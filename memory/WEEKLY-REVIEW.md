@@ -478,3 +478,62 @@ Template for each entry:
 
 **Environment note:** CLICKUP_* vars missing from process env this run — Step 6 ClickUp message not sent; summary sent via push notification.
 
+
+---
+
+## Week ending 2026-10-30
+
+### Stats
+| Metric | Value |
+|--------|-------|
+| Starting portfolio | $97,777.42 (Oct 23 EOD) |
+| Ending portfolio | $96,627.26 |
+| Week return | −$1,150.16 (−1.18%) |
+| S&P 500 week | N/A (WebSearch returned no Oct 30 close; Oct 23 close 7,623.68 only) |
+| Bot vs S&P | N/A |
+| Phase P&L | −$3,372.74 (−3.37% from $100,000) |
+| Trades | 1 new entry (QCOM) (W:0 / L:1 / open:1) |
+| Win rate | 0% (0 of 1 closed trade) |
+| Best trade | CVE +6.16% unrealized |
+| Worst trade | QCOM −7.6% (realized) |
+| Profit factor | 0.00 ($0 / $1,092) |
+| Deployment at week end | 13.2% ($12,764.70 deployed; cash 86.8%) |
+
+### Closed Trades
+| Ticker | Entry | Exit | P&L | Notes |
+|--------|-------|------|-----|-------|
+| QCOM | $180.55 (80sh) | $166.90 | −$1,092 (−7.6%) | Rule-12 add Oct 29 open; 10% trail filled Oct 30 (HWM $185.59), 1 day after entry; Technology 2nd consecutive loss → EXIT |
+
+### Open Positions at Week End
+| Ticker | Entry | Close | Unrealized | Stop |
+|--------|-------|-------|------------|------|
+| CVE | $30.83 | $32.73 | +$741.00 (+6.16%) | $30.4065 (10% trail, HWM $33.785) — 7.1% cushion |
+
+### What Worked
+- Rule 12 finally fired Oct 29 (QCOM, spread 0.2% at entry) after a week+ of spread blocks
+- CVE held through a −4.4% day (Oct 27) with trail intact; still +6.2%
+- GTC trailing stop executed QCOM automatically; no rule violations, no options
+
+### What Didn't Work
+- QCOM entered after a +% run into fresh highs (HWM $185.59), gave back −7.6% in one session; no pre-entry check for next-day risk
+- Deployment 13% vs 75–85% target, 6th+ week of cash drag; phase P&L now −3.37%
+- Pre-market research Oct 30 had no live futures/VIX/catalysts; ideas unverified
+- SECTOR-LOG.md again stale (QCOM still listed as held) — 4th review flagging this
+- S&P comparison unavailable this week (no Oct 30 data from search)
+
+### Key Lessons
+- Entering a momentum name after a sharp run with no catalyst check is a coin flip; forced Rule-12 adds need a real catalyst, not just gate satisfaction
+- Two Technology losses in ~1 month (INTC, QCOM) → sector gate now closed; redeploy must come from other sectors
+- Slippage on trailing stop: fill $166.90 was below stop $167.03 — loss exceeded −7% line again
+
+### Adjustments for Next Week
+- Technology = EXIT: reject any Tech buy; source from Healthcare, Industrials, Energy, Financials, Utilities
+- Use all open slots (2/3 used-or-available) with verified catalysts early Monday; deploy toward 75–85%
+- CVE: tighten trail to 7% at +15% (~$35.45); Q3 earnings window
+- Update SECTOR-LOG.md in the same session as any close
+- Still pending user decision: workable quote source/spread threshold for Rule 12; restore CLICKUP_* env vars
+
+### Overall Grade: D
+*−1.18% week, −3.37% phase, 13% deployed, one quick stop-out. Process held (stops, no options) but the forced add had no edge and cash drag persists. No TRADING-STRATEGY.md change; Technology set to EXIT in SECTOR-LOG.md.*
+
+**Environment note:** CLICKUP_* vars missing from process env this run — Step 6 ClickUp message not sent; summary sent via push notification.
