@@ -2248,3 +2248,10 @@ No positions cut, no stops changed, no new trades. Week trades 0/3 (week of Sep 
 | CVE | 390 | $30.83 | $32.12 | −0.53% | +$503.10 (+4.18%) | $30.4065 (trailing 10%, HWM $33.785) |
 | QCOM | 80 | $180.55 | $181.30 | −0.91% | +$60.00 (+0.42%) | $167.031 (trailing 10%, HWM $185.59) |
 **Notes:** Bought QCOM 80 sh at open; week trades 1/3 (week of Oct 26). 2 positions, cash 72.3% — deployed 27.7%, still below 75–85% target. Both stops intact, CVE 5.3% and QCOM 7.9% above stop, no action; yesterday's equity baseline $97,547.32 from Oct 28 log.
+
+### Oct 30 — EOD Snapshot (Day 113, Friday)
+**Portfolio:** $96,627.26 | **Cash:** $83,862.56 (86.79%) | **Day P&L:** −$913.76 (−0.94%) | **Phase P&L:** −$3,372.74 (−3.37%)
+| Ticker | Shares | Entry | Close | Day Chg | Unrealized P&L | Stop |
+|--------|--------|-------|-------|---------|----------------|------|
+| CVE | 390 | $30.83 | $32.73 | +1.87% | +$741.00 (+6.16%) | $30.4065 (trailing 10%, HWM $33.785) |
+**Notes:** QCOM trailing stop filled 80 sh @ $166.90 (entry $180.55, −$1,092, −7.6%) — Technology sector failed trade #1; week trades 1/3 (week of Oct 26). 1 position, cash 86.8% — above 75–85% target; CVE 7.1% above stop, no action. Yesterday's equity baseline $97,541.02 from Oct 29 log.
